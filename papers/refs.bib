@@ -1,0 +1,435 @@
+% refs.bib for the code cue-conflict plan (codecue). Created 2026-09-14.
+% Keys are author-year-keyword. Entries in Part 1 are copied verbatim from
+% ../../probing/paper/refs.bib and ../../obtune/papers/references.bib (verified there);
+% Part 2 is new. `file` fields name the PDF in this directory. Venue lines marked
+% "verify" in REFERENCES.md are given as arXiv preprints here.
+
+% ============================================================================
+% PART 1 - entries reused from probing/ and obtune/
+% ============================================================================
+
+@inproceedings{kudo2026faithful,
+  title     = {{LLMs} Faithfully and Iteratively Compute Answers During {CoT}: A Systematic Analysis With Multi-step Arithmetics},
+  author    = {Kudo, Keito and Aoki, Yoichi and Kuribayashi, Tatsuki and Sone, Shusaku and Taniguchi, Masaya and Brassard, Ana and Sakaguchi, Keisuke and Inui, Kentaro},
+  booktitle = {Findings of the Association for Computational Linguistics: EACL 2026},
+  pages     = {1114--1153},
+  year      = {2026},
+  note      = {Code: \url{https://github.com/keitokudo/faithful-cot-multistep-arithmetic}}
+}
+
+@article{wang2026stroop,
+  title   = {Persistent Priors, Preserved Targets: A {Stroop}-Style Paradigm for Lexical Override},
+  author  = {Wang, Han-yu},
+  journal = {arXiv preprint arXiv:2606.07555},
+  year    = {2026}
+}
+
+@article{hu2026conflict,
+  title   = {Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task},
+  author  = {Hu, Xiaoyang and Angstadt, Mike and Storks, Shane and Huang, Zan and Taxali, Aman and Weigard, Alex and Lewis, Richard L. and Sripada, Chandra},
+  journal = {arXiv preprint arXiv:2608.11510},
+  year    = {2026}
+}
+
+@article{le2026obfuscated,
+  title   = {Do Machines Struggle Where Humans Do? {LLM} and Human Comprehension of Obfuscated Code},
+  author  = {Le, Jack and Nguyen, Anh H. N. and Nguyen, Tien N.},
+  journal = {arXiv preprint arXiv:2606.31725},
+  year    = {2026},
+  note    = {Cite in the third person under [review].}
+}
+
+@article{le2025names,
+  title   = {When Names Disappear: Revealing What {LLMs} Actually Understand About Code},
+  author  = {Le, Cuong Chi and Pham, Minh V. T. and Van, Cuong Duc and Phan, Hoang N. and Phan, Huy N. and Nguyen, Tien N.},
+  journal = {arXiv preprint arXiv:2510.03178},
+  year    = {2025}
+}
+
+@inproceedings{lam2025codecrash,
+  title     = {{CodeCrash}: Exposing {LLM} Fragility to Misleading Natural Language in Code Reasoning},
+  author    = {Lam, Man Ho and Wang, Chaozheng and Huang, Jen-tse and Lyu, Michael R.},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {38},
+  year      = {2025},
+  note      = {arXiv:2504.14119}
+}
+
+@article{orvalho2025mutations,
+  title   = {Are Large Language Models Robust in Understanding Code Against Semantics-Preserving Mutations?},
+  author  = {Orvalho, Pedro and Kwiatkowska, Marta},
+  journal = {arXiv preprint arXiv:2505.10443},
+  year    = {2025}
+}
+
+@inproceedings{gao2023cream,
+  title     = {Two Sides of the Same Coin: Exploiting the Impact of Identifiers in Neural Code Comprehension},
+  author    = {Gao, Shuzheng and Gao, Cuiyun and Wang, Chaozheng and Sun, Jun and Lo, David and Yu, Yue},
+  booktitle = {Proceedings of the 45th International Conference on Software Engineering (ICSE)},
+  year      = {2023},
+  pages     = {1933--1945},
+  note      = {arXiv:2207.11104}
+}
+
+@inproceedings{yang2022naturalattack,
+  title     = {Natural Attack for Pre-trained Models of Code},
+  author    = {Yang, Zhou and Shi, Jieke and He, Junda and Lo, David},
+  booktitle = {Proceedings of the 44th International Conference on Software Engineering (ICSE)},
+  year      = {2022},
+  note      = {arXiv:2201.08698}
+}
+
+@inproceedings{turpin2023unfaithful,
+  title     = {Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting},
+  author    = {Turpin, Miles and Michael, Julian and Perez, Ethan and Bowman, Samuel},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  pages     = {74952--74965},
+  year      = {2023}
+}
+
+@article{lanham2023measuring,
+  title   = {Measuring Faithfulness in Chain-of-Thought Reasoning},
+  author  = {Lanham, Tamera and Chen, Anna and Radhakrishnan, Ansh and Steiner, Benoit and Denison, Carson and Hernandez, Danny and Li, Dustin and Durmus, Esin and Hubinger, Evan and Kernion, Jackson and Luko{\v{s}}i{\={u}}t{\.{e}}, Kamil{\.{e}} and Nguyen, Karina and Cheng, Newton and Joseph, Nicholas and Schiefer, Nicholas and Rausch, Oliver and Larson, Robin and McCandlish, Sam and Kundu, Sandipan and Kadavath, Saurav and Yang, Shannon and Henighan, Thomas and Maxwell, Timothy and Telleen-Lawton, Timothy and Hume, Tristan and Hatfield-Dodds, Zac and Kaplan, Jared and Brauner, Jan and Bowman, Samuel R. and Perez, Ethan},
+  journal = {arXiv preprint arXiv:2307.13702},
+  year    = {2023}
+}
+
+@inproceedings{zhang2024patching,
+  title     = {Towards Best Practices of Activation Patching in Language Models: Metrics and Methods},
+  author    = {Zhang, Fred and Nanda, Neel},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2024}
+}
+
+@inproceedings{hewitt2019control,
+  title     = {Designing and Interpreting Probes with Control Tasks},
+  author    = {Hewitt, John and Liang, Percy},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  year      = {2019}
+}
+
+@inproceedings{geirhos2019texture,
+  title     = {{ImageNet}-trained {CNNs} are Biased Towards Texture; Increasing Shape Bias Improves Accuracy and Robustness},
+  author    = {Geirhos, Robert and Rubisch, Patricia and Michaelis, Claudio and Bethge, Matthias and Wichmann, Felix A. and Brendel, Wieland},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2019}
+}
+
+@inproceedings{yang2025shortcuts,
+  title     = {Do Large Language Models Perform Latent Multi-Hop Reasoning without Exploiting Shortcuts?},
+  author    = {Yang, Sohee and Kassner, Nora and Gribovskaya, Elena and Riedel, Sebastian and Geva, Mor},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
+  pages     = {3971--3992},
+  year      = {2025}
+}
+
+@article{arcuschin2025wild,
+  title   = {Chain-of-Thought Reasoning in the Wild is Not Always Faithful},
+  author  = {Arcuschin, Iv{\'a}n and Janiak, Jett and Krzyzanowski, Robert and Rajamanoharan, Senthooran and Nanda, Neel and Conmy, Arthur},
+  journal = {arXiv preprint arXiv:2503.08679},
+  year    = {2025}
+}
+
+@inproceedings{shi2023distracted,
+  title     = {Large Language Models Can Be Easily Distracted by Irrelevant Context},
+  author    = {Shi, Freda and Chen, Xinyun and Misra, Kanishka and Scales, Nathan and Dohan, David and Chi, Ed H. and Sch{\"a}rli, Nathanael and Zhou, Denny},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  year      = {2023}
+}
+
+@article{gu2024cruxeval,
+  title   = {{CRUXEval}: A Benchmark for Code Reasoning, Understanding and Execution},
+  author  = {Gu, Alex and Rozi{\`e}re, Baptiste and Leather, Hugh and Solar-Lezama, Armando
+             and Synnaeve, Gabriel and Wang, Sida I.},
+  journal = {arXiv preprint arXiv:2401.03065},
+  year    = {2024},
+  eprint  = {2401.03065},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  note    = {800 Python functions, input + output prediction. GPT-4+CoT 81\% pass@1 on
+             CRUXEval-O; Code Llama 34B 46\%. NOTE: cruxeval is a tier-1 TRAINING source
+             in configs/sources.yaml --- see RELATED_WORK.md §4.3 before reporting it},
+  file    = {gu2024cruxeval.pdf}
+}
+
+@inproceedings{liu2023codeexecutor,
+  title     = {Code Execution with Pre-trained Language Models},
+  author    = {Liu, Chenxiao and Lu, Shuai and Chen, Weizhu and Jiang, Daxin and Svyatkovskiy, Alexey
+               and Fu, Shengyu and Sundaresan, Neel and Duan, Nan},
+  booktitle = {Findings of the Association for Computational Linguistics (ACL Findings)},
+  year      = {2023},
+  eprint    = {2305.05383},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.PL},
+  note      = {Execution-trace pretraining + curriculum learning. ~94\% single-line;
+               76.42\% output accuracy vs Codex 13.07\%; 48.06\% on CodeNetMut},
+  file      = {liu2023codeexecutor.pdf}
+}
+
+@inproceedings{ding2024semcoder,
+  title     = {{SemCoder}: Training Code Language Models with Comprehensive Semantics Reasoning},
+  author    = {Ding, Yangruibo and Peng, Jinjun and Min, Marcus J. and Kaiser, Gail
+               and Yang, Junfeng and Ray, Baishakhi},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2024},
+  eprint    = {2406.01006},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note      = {THE DIRECT METHODOLOGICAL NEIGHBOUR: same task, comparable scale (6.7B).
+               "Monologue reasoning". CRUXEval-O 63.9\%, CRUXEval-I 63.6\%, HumanEval 79.3\%
+               --- beats GPT-3.5-turbo (59.0 / 50.3 / 76.8)},
+  file      = {ding2024semcoder.pdf}
+}
+
+@inproceedings{ni2024next,
+  title     = {{NExT}: Teaching Large Language Models to Reason about Code Execution},
+  author    = {Ni, Ansong and Allamanis, Miltiadis and Cohan, Arman and Deng, Yinlin
+               and Shi, Kensen and Sutton, Charles and Yin, Pengcheng},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  eprint    = {2404.14662},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  note      = {Self-training on execution-trace rationales. +26.1 pts fix rate on MBPP,
+               +14.3 on HumanEval (PaLM 2); generalizes without traces at test time},
+  file      = {ni2024next.pdf}
+}
+
+@article{nye2021scratchpads,
+  title   = {Show Your Work: Scratchpads for Intermediate Computation with Language Models},
+  author  = {Nye, Maxwell and Andreassen, Anders Johan and Gur-Ari, Guy and Michalewski, Henryk
+             and Austin, Jacob and Bieber, David and Dohan, David and Lewkowycz, Aitor
+             and Bosma, Maarten and Luan, David and Sutton, Charles and Odena, Augustus},
+  journal = {arXiv preprint arXiv:2112.00114},
+  year    = {2021},
+  eprint  = {2112.00114},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  note    = {The method ancestor: emit intermediate execution state before the answer},
+  file    = {nye2021scratchpads.pdf}
+}
+
+% ============================================================================
+% PART 2 - new entries (2026-09-14)
+% ============================================================================
+
+@inproceedings{micelibarone2023swaps,
+  title     = {The Larger They Are, the Harder They Fail: Language Models do not Recognize Identifier Swaps in {Python}},
+  author    = {Miceli-Barone, Antonio Valerio and Barez, Fazl and Konstas, Ioannis and Cohen, Shay B.},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2023},
+  year      = {2023},
+  eprint    = {2305.15507},
+  archivePrefix = {arXiv},
+  file      = {micelibarone2023swaps.pdf}
+}
+
+@article{chen2024reval,
+  title   = {Reasoning Runtime Behavior of a Program with {LLM}: How Far Are We?},
+  author  = {Chen, Junkai and Pan, Zhiyuan and Hu, Xing and Li, Zhenhao and Li, Ge and Xia, Xin},
+  journal = {arXiv preprint arXiv:2403.16437},
+  year    = {2024},
+  note    = {Accepted at ICSE 2025 per the arXiv listing; verify pages},
+  file    = {chen2024reval.pdf}
+}
+
+@article{liu2024codemind,
+  title   = {{CodeMind}: Evaluating Large Language Models for Implicit and Explicit Code Execution Reasoning},
+  author  = {Liu, Changshu and Chen, Yang and Jabbarvand, Reyhaneh},
+  journal = {IEEE Transactions on Software Engineering},
+  year    = {2026},
+  note    = {arXiv:2402.09664 (first version 2024); volume and pages not printed in the PDF on disk},
+  file    = {liu2024codemind.pdf}
+}
+
+@inproceedings{li2023chainofcode,
+  title     = {Chain of Code: Reasoning with a Language Model-Augmented Code Emulator},
+  author    = {Li, Chengshu and Liang, Jacky and Zeng, Andy and Chen, Xinyun and Hausman, Karol and Sadigh, Dorsa and Levine, Sergey and Fei-Fei, Li and Xia, Fei and Ichter, Brian},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  eprint    = {2312.04474},
+  archivePrefix = {arXiv},
+  file      = {li2023chainofcode.pdf}
+}
+
+@inproceedings{xue2024selfpico,
+  title     = {{SelfPiCo}: Self-Guided Partial Code Execution with {LLMs}},
+  author    = {Xue, Zhipeng and Gao, Zhipeng and Wang, Shaohua and Hu, Xing and Xia, Xin and Li, Shanping},
+  booktitle = {Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)},
+  year      = {2024},
+  eprint    = {2407.16974},
+  archivePrefix = {arXiv},
+  file      = {xue2024selfpico.pdf}
+}
+
+@article{gao2023pal,
+  title   = {{PAL}: Program-aided Language Models},
+  author  = {Gao, Luyu and Madaan, Aman and Zhou, Shuyan and Alon, Uri and Liu, Pengfei and Yang, Yiming and Callan, Jamie and Neubig, Graham},
+  journal = {arXiv preprint arXiv:2211.10435},
+  year    = {2023},
+  note    = {Venue to verify (ICML 2023); no venue line in the PDF on disk},
+  file    = {gao2023pal.pdf}
+}
+
+@article{chen2023pot,
+  title   = {Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks},
+  author  = {Chen, Wenhu and Ma, Xueguang and Wang, Xinyi and Cohen, William W.},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2023},
+  eprint  = {2211.12588},
+  archivePrefix = {arXiv},
+  file    = {chen2023pot.pdf}
+}
+
+@article{jain2024livecodebench,
+  title   = {{LiveCodeBench}: Holistic and Contamination Free Evaluation of Large Language Models for Code},
+  author  = {Jain, Naman and Han, King and Gu, Alex and Li, Wen-Ding and Yan, Fanjia and Zhang, Tianjun and Wang, Sida I. and Solar-Lezama, Armando and Sen, Koushik and Stoica, Ion},
+  journal = {arXiv preprint arXiv:2403.07974},
+  year    = {2024},
+  note    = {Venue to verify (ICLR 2025); no venue line in the PDF on disk},
+  file    = {jain2024livecodebench.pdf}
+}
+
+@inproceedings{ding2024traced,
+  title     = {{TRACED}: Execution-aware Pre-training for Source Code},
+  author    = {Ding, Yangruibo and Steenhoek, Ben and Pei, Kexin and Kaiser, Gail and Le, Wei and Ray, Baishakhi},
+  booktitle = {Proceedings of the 46th IEEE/ACM International Conference on Software Engineering (ICSE)},
+  year      = {2024},
+  eprint    = {2306.07487},
+  archivePrefix = {arXiv},
+  file      = {ding2024traced.pdf}
+}
+
+@inproceedings{jin2024emergent,
+  title     = {Emergent Representations of Program Semantics in Language Models Trained on Programs},
+  author    = {Jin, Charles and Rinard, Martin},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  series    = {PMLR},
+  volume    = {235},
+  year      = {2024},
+  eprint    = {2305.11169},
+  archivePrefix = {arXiv},
+  file      = {jin2024emergent.pdf}
+}
+
+@article{lamalfa2024simulation,
+  title   = {Code Simulation Challenges for Large Language Models},
+  author  = {La Malfa, Emanuele and Weinhuber, Christoph and Torre, Orazio and Lin, Fangru and Marro, Samuele and Cohn, Anthony and Shadbolt, Nigel and Wooldridge, Michael},
+  journal = {arXiv preprint arXiv:2401.09074},
+  year    = {2024},
+  file    = {lamalfa2024simulation.pdf}
+}
+
+@inproceedings{li2025codeio,
+  title     = {{CodeI/O}: Condensing Reasoning Patterns via Code Input-Output Prediction},
+  author    = {Li, Junlong and Guo, Daya and Yang, Dejian and Xu, Runxin and Wu, Yu and He, Junxian},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  series    = {PMLR},
+  volume    = {267},
+  year      = {2025},
+  eprint    = {2502.07316},
+  archivePrefix = {arXiv},
+  file      = {li2025codeio.pdf}
+}
+
+@inproceedings{jung2025grounded,
+  title     = {Code Execution as Grounded Supervision for {LLM} Reasoning},
+  author    = {Jung, Dongwon and Zhou, Wenxuan and Chen, Muhao},
+  booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2025},
+  eprint    = {2506.10343},
+  archivePrefix = {arXiv},
+  note      = {ACL Anthology 2025.emnlp-main.1260},
+  file      = {jung2025grounded.pdf}
+}
+
+@article{chen2026brewing,
+  title   = {From Brewing into Resolution: Tracing Internal Reasoning Trajectories in {LLMs}},
+  author  = {Chen, Siyue and Guo, Yifu and Lu, Yuquan and Xu, Zishan and Lin, Jiaye and Lin, Jianbo and Zhang, Siyu and Yang, Cheng and Li, Junxin and Li, Yujia and Huo, Yu and Wang, Ruixuan},
+  journal = {arXiv preprint arXiv:2606.17648},
+  year    = {2026},
+  note    = {arXiv listing title: ``From Brewing to Resolution: Tracing the Internal Lifecycle of Code Reasoning in LLMs''},
+  file    = {chen2026brewing.pdf}
+}
+
+@article{abdollahi2025errors,
+  title   = {Demystifying Errors in {LLM} Reasoning Traces: An Empirical Study of Code Execution Simulation},
+  author  = {Abdollahi, Mohammad and Tasnia, Khandaker Rifah and Saha, Soumit Kanti and Yang, Jinqiu and Wang, Song and Hemmati, Hadi},
+  journal = {arXiv preprint arXiv:2512.00215},
+  year    = {2025},
+  file    = {abdollahi2025errors.pdf}
+}
+
+@inproceedings{gao2026core,
+  title     = {{CoRE}: A Fine-Grained Code Reasoning Benchmark Beyond Output Prediction},
+  author    = {Gao, Jun and Peng, Yun and Qiao, Qian and Zhou, Changhai and Zhou, Yuhua and Zhang, Shiyang and Weng, Shichao and Xing, Zhenchang and Ren, Xiaoxue},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year      = {2026},
+  eprint    = {2604.25399},
+  archivePrefix = {arXiv},
+  file      = {gao2026core.pdf}
+}
+
+@inproceedings{hasanov2026dexbench,
+  title     = {The Path Not Taken: Duality in Reasoning about Program Execution},
+  author    = {Hasanov, Eshgin and Sibat, Md Mahadi Hassan and Karmaker, Santu and Yadavally, Aashish},
+  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year      = {2026},
+  eprint    = {2604.20917},
+  archivePrefix = {arXiv},
+  note      = {ACL Anthology 2026.acl-long.735},
+  file      = {hasanov2026dexbench.pdf}
+}
+
+@inproceedings{li2025statetracking,
+  title     = {(How) Do Language Models Track State?},
+  author    = {Li, Belinda Z. and Guo, Zifan Carl and Andreas, Jacob},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  year      = {2025},
+  eprint    = {2503.02854},
+  archivePrefix = {arXiv},
+  file      = {li2025statetracking.pdf}
+}
+
+@article{roh2025collapse,
+  title   = {Chain-of-Code Collapse: Reasoning Failures in {LLMs} via Adversarial Prompting in Code Generation},
+  author  = {Roh, Jaechul and Gandhi, Varun and Anilkumar, Shivani and Garg, Arin},
+  journal = {arXiv preprint arXiv:2506.06971},
+  year    = {2025},
+  file    = {roh2025collapse.pdf}
+}
+
+@article{kou2024attention,
+  title   = {Do Large Language Models Pay Similar Attention Like Human Programmers When Generating Code?},
+  author  = {Kou, Bonan and Chen, Shengmai and Wang, Zhijie and Ma, Lei and Zhang, Tianyi},
+  journal = {Proceedings of the ACM on Software Engineering},
+  volume  = {1},
+  number  = {FSE},
+  pages   = {Article 100},
+  year    = {2024},
+  eprint  = {2306.01220},
+  archivePrefix = {arXiv},
+  file    = {kou2024attention.pdf}
+}
+
+@inproceedings{lucchetti2025steering,
+  title     = {Understanding How {CodeLLMs} (Mis)Predict Types with Activation Steering},
+  author    = {Lucchetti, Francesca and Guha, Arjun},
+  booktitle = {Proceedings of the 8th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP},
+  year      = {2025},
+  eprint    = {2404.01903},
+  archivePrefix = {arXiv},
+  note      = {ACL Anthology 2025.blackboxnlp-1.22},
+  file      = {lucchetti2025steering.pdf}
+}
+
+@inproceedings{tang2026entities,
+  title     = {Do Language Models Track Entities Across State Changes?},
+  author    = {Tang, Zilu and Zhao, Qiao and Franco, Gabriel and Wijaya, Derry and Mueller, Aaron and Schuster, Sebastian and Kim, Najoung},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  year      = {2026},
+  eprint    = {2605.30233},
+  archivePrefix = {arXiv},
+  note      = {Venue from the icml.cc 2026 listing; PDF is the arXiv version},
+  file      = {tang2026entities.pdf}
+}
