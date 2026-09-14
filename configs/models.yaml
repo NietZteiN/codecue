@@ -1,0 +1,19 @@
+# Panel (PLAN.md §6). Scope rule inherited from probing/obtune: no Chinese-origin model, so no
+# Qwen and no DeepSeek-R1-Distill-Qwen (Le et al.'s strongest row; the one gap relative to them).
+# All hf_ids are already in /scratch/juno/jvl210002/hf_home (checked 2026-09-14).
+# `kind`: internals = probes + patching too; behaviour = behaviour only; weak = the P6 row.
+# `verified` is flipped by the tokenizer/layout check once the model loads in a job.
+default_model: codellama-7b-it
+
+models:
+  codellama-7b-it:   {hf_id: codellama/CodeLlama-7b-Instruct-hf,   origin: Meta,   kind: internals, partition: h100, batch_size: 16, verified: false}
+  codellama-13b-it:  {hf_id: codellama/CodeLlama-13b-Instruct-hf,  origin: Meta,   kind: behaviour, partition: h100, batch_size: 8,  verified: false}
+  codellama-34b-it:  {hf_id: codellama/CodeLlama-34b-Instruct-hf,  origin: Meta,   kind: behaviour, partition: h200, batch_size: 4,  verified: false}
+  starcoder2-15b-it: {hf_id: bigcode/starcoder2-15b-instruct-v0.1, origin: BigCode, kind: behaviour, partition: h100, batch_size: 8, verified: false}
+  codegemma-7b-it:   {hf_id: google/codegemma-7b-it,               origin: Google, kind: internals, partition: h100, batch_size: 16, verified: false}
+  llama32-3b-it:     {hf_id: meta-llama/Llama-3.2-3B-Instruct,     origin: Meta,   kind: behaviour, partition: a30,  batch_size: 32, verified: false}
+  llama31-8b-it:     {hf_id: meta-llama/Llama-3.1-8B-Instruct,     origin: Meta,   kind: internals, partition: h100, batch_size: 16, verified: false}
+  gemma3-4b-it:      {hf_id: google/gemma-3-4b-it,                 origin: Google, kind: behaviour, partition: a30,  batch_size: 32, verified: false}
+  gemma3-12b-it:     {hf_id: google/gemma-3-12b-it,                origin: Google, kind: behaviour, partition: h100, batch_size: 8,  verified: false}
+  olmo2-1b-it:       {hf_id: allenai/OLMo-2-0425-1B-Instruct,      origin: AI2,    kind: weak,      partition: a30,  batch_size: 32, verified: false}
+  olmo2-7b-it:       {hf_id: allenai/OLMo-2-1124-7B-Instruct,      origin: AI2,    kind: behaviour, partition: h100, batch_size: 16, verified: false}
