@@ -202,8 +202,14 @@ def legal_lures(prog: Program, target: str, values: dict[str, int]) -> list[tupl
     forbidden = set(values[r] for r in prog.roles) | set(prog.xs) | prog.constants()
     out = []
     for name in LURE_NAMES:
-        if FAMILY_OF_NAME[name].key == s.family_key():
+        fam = FAMILY_OF_NAME[name]
+        if fam.key == s.family_key():
             continue                                        # that is the congruent name
+        # a unary or binary name is only a clear assertion when the definition has the same
+        # shape (`double = ww + p` does not clearly assert 2*ww); list names assert something
+        # about xs and are clear anywhere (hand check, 2026-09-14)
+        if fam.kind != "list" and fam.kind != s.kind:
+            continue
         lv = implied_value(name, prog.xs, operands)
         if lv is None or lv not in DIGITS or lv in forbidden:
             continue

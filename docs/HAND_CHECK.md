@@ -94,113 +94,113 @@ f([4, 1])
 
 - [ ] answer **4**; name says `acc` → lure **5**; values {'v1': 2, 'v2': 4}
 
-## L3-3-v3-00155-incongruent  target `double` (v3, incongruent)
+## L3-3-v3-00155-incongruent  target `combined` (v3, incongruent)
 
 ```python
 def f(xs):
-    ww = max(xs)
-    p = min(xs)
-    double = ww + p
-    return double
-f([1, 2])
+    vv = len(xs)
+    m = min(xs)
+    combined = vv - m
+    return combined
+f([4, 3, 6, 5])
 ```
 
-- [ ] answer **3**; name says `double` → lure **4**; values {'v1': 2, 'v2': 1, 'v3': 3}
+- [ ] answer **1**; name says `combined` → lure **7**; values {'v1': 4, 'v2': 3, 'v3': 1}
 
-## L3-3-v1-00044-incongruent  target `acc` (v1, incongruent)
+## L3-3-v1-00044-incongruent  target `n_items` (v1, incongruent)
 
 ```python
 def f(xs):
-    acc = max(xs)
-    t = min(xs)
-    v = acc - t
-    return v
-f([6, 2])
+    n_items = min(xs)
+    v = max(xs)
+    ww = n_items + v
+    return ww
+f([2, 6, 4])
 ```
 
-- [ ] answer **4**; name says `acc` → lure **8**; values {'v1': 6, 'v2': 2, 'v3': 4}
+- [ ] answer **8**; name says `n_items` → lure **3**; values {'v1': 2, 'v2': 6, 'v3': 8}
 
-## L3-3-v3-00183-incongruent  target `twice` (v3, incongruent)
+## L3-3-v3-00183-incongruent  target `acc` (v3, incongruent)
 
 ```python
 def f(xs):
-    z = sum(xs)
-    zz = min(xs)
-    twice = z - zz
-    return twice
-f([2, 1])
+    t = len(xs)
+    k = min(xs)
+    acc = t + k
+    return acc
+f([3, 6])
 ```
 
-- [ ] answer **2**; name says `twice` → lure **6**; values {'v1': 3, 'v2': 1, 'v3': 2}
+- [ ] answer **5**; name says `acc` → lure **9**; values {'v1': 2, 'v2': 3, 'v3': 5}
 
-## L3-3-v1-00098-incongruent  target `count` (v1, incongruent)
+## L3-3-v1-00098-incongruent  target `sum_all` (v1, incongruent)
 
 ```python
 def f(xs):
-    count = max(xs)
-    zz = min(xs)
-    p = count - zz
+    sum_all = len(xs)
+    z = max(xs)
+    p = sum_all + z
     return p
-f([4, 1, 5])
+f([5, 1, 0])
 ```
 
-- [ ] answer **4**; name says `count` → lure **3**; values {'v1': 5, 'v2': 1, 'v3': 4}
+- [ ] answer **8**; name says `sum_all` → lure **6**; values {'v1': 3, 'v2': 5, 'v3': 8}
 
-## L4-3-v3-00090-incongruent  target `scaled` (v3, incongruent)
-
-```python
-def f(xs):
-    zz = sum(xs)
-    u = len(xs)
-    vv = max(xs)
-    scaled = zz + u
-    return scaled
-f([1, 3])
-```
-
-- [ ] answer **6**; name says `scaled` → lure **8**; values {'v1': 4, 'v2': 2, 'v3': 6, 'v4': 3}
-
-## L4-3-v1-00017-incongruent  target `n_items` (v1, incongruent)
+## L4-3-v1-00189-incongruent  target `n_items` (v1, incongruent)
 
 ```python
 def f(xs):
     n_items = max(xs)
+    t = min(xs)
     vv = sum(xs)
-    ww = min(xs)
-    v = n_items + vv
-    return v
-f([4, 1])
+    p = n_items - t
+    return p
+f([1, 4])
 ```
 
-- [ ] answer **9**; name says `n_items` → lure **2**; values {'v1': 4, 'v2': 5, 'v3': 9, 'v4': 1}
+- [ ] answer **3**; name says `n_items` → lure **2**; values {'v1': 4, 'v2': 1, 'v3': 3, 'v4': 5}
 
-## L4-3-v3-00058-incongruent  target `pred` (v3, incongruent)
+## L4-3-v1-00197-incongruent  target `total` (v1, incongruent)
 
 ```python
 def f(xs):
-    q = sum(xs)
+    total = len(xs)
+    t = min(xs)
+    q = max(xs)
+    r = total + t
+    return r
+f([1, 5])
+```
+
+- [ ] answer **3**; name says `total` → lure **6**; values {'v1': 2, 'v2': 1, 'v3': 3, 'v4': 5}
+
+## L4-3-v3-00081-incongruent  target `combined` (v3, incongruent)
+
+```python
+def f(xs):
+    z = sum(xs)
+    k = max(xs)
+    zz = min(xs)
+    combined = z - k
+    return combined
+f([1, 0, 3])
+```
+
+- [ ] answer **1**; name says `combined` → lure **7**; values {'v1': 4, 'v2': 3, 'v3': 1, 'v4': 0}
+
+## L4-3-v3-00194-incongruent  target `sum_all` (v3, incongruent)
+
+```python
+def f(xs):
+    u = min(xs)
+    w = len(xs)
     z = max(xs)
-    u = len(xs)
-    pred = q + z
-    return pred
-f([2, 3])
+    sum_all = u + w
+    return sum_all
+f([1, 5])
 ```
 
-- [ ] answer **8**; name says `pred` → lure **4**; values {'v1': 5, 'v2': 3, 'v3': 8, 'v4': 2}
-
-## L4-3-v3-00120-irrelevant  target `sum_all` (v4, irrelevant)
-
-```python
-def f(xs):
-    u = len(xs)
-    r = max(xs)
-    sum_all = min(xs)
-    z = u - r
-    return z
-f([1, 0, 2, 3])
-```
-
-- [ ] answer **1**; name says `sum_all` → lure **6**; values {'v1': 4, 'v2': 3, 'v3': 1, 'v4': 0}
+- [ ] answer **3**; name says `sum_all` → lure **6**; values {'v1': 1, 'v2': 2, 'v3': 3, 'v4': 5}
 
 ## L5-3-v3-00071-incongruent  target `sum_all` (v3, incongruent)
 
@@ -214,6 +214,19 @@ f([3, 4, 0])
 ```
 
 - [ ] answer **2**; name says `sum_all` → lure **7**; values {'v1': 3, 'v2': 1, 'v3': 2}
+
+## L5-3-v3-00144-incongruent  target `n_items` (v3, incongruent)
+
+```python
+def f(xs):
+    vv = max(xs)
+    ww = vv // 2
+    n_items = ww // 2
+    return n_items
+f([2, 0, 5])
+```
+
+- [ ] answer **1**; name says `n_items` → lure **3**; values {'v1': 5, 'v2': 2, 'v3': 1}
 
 ## L5-3-v1-00186-incongruent  target `sum_all` (v1, incongruent)
 
@@ -240,17 +253,4 @@ f([1, 6])
 ```
 
 - [ ] answer **1**; name says `acc` → lure **7**; values {'v1': 6, 'v2': 3, 'v3': 1}
-
-## L5-3-v1-00116-incongruent  target `sum_all` (v1, incongruent)
-
-```python
-def f(xs):
-    sum_all = len(xs)
-    q = sum_all + 4
-    qq = q - 2
-    return qq
-f([1, 0, 5])
-```
-
-- [ ] answer **5**; name says `sum_all` → lure **6**; values {'v1': 3, 'v2': 7, 'v3': 5}
 
