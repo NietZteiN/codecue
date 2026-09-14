@@ -106,7 +106,9 @@ where displacement and surprisal are both high) and of the user's original motiv
 
 CRUXEval (cached in `hf_home`) with **one** identifier renamed per function using the
 obtune L1b tier machinery: neutral (`v1`), congruent (a synonym), misleading (a name from
-the table whose implied operation type-checks in context). No executable lure here; report
+the table whose implied operation type-checks in context), plus CRUXEval's own `x1, x2, …`
+anonymisation of *every* identifier (their App. C.5 ablation, about −2 points for CodeLlama)
+as the published reference point. No executable lure here; report
 accuracy only, three regimes. This is the external-validity row, not the mechanism.
 
 ## 4. Regimes
@@ -188,6 +190,11 @@ probe curve split by whether the value was written, which is P5's picture.
 | E8 | Natural code: CRUXEval renamed, three regimes, full panel | ~15 GPU-h | P7 |
 | E9 | Equivalence bounds on every chain cell; seed sweep; self-check | CPU | claim rule |
 | E10 | Free-form value-forcing: prose regime with the single instruction "state each variable's value" — the minimal intervention that should close the gap | ~10 GPU-h | the applied message |
+
+Expected difficulty (from the literature, see RELATED_WORK.md): REval reports CodeLlama-7B-Instruct
+at 25% on statement-level *variable value* prediction against 63% on output prediction, and
+a chain of thought that *lowers* output accuracy by 7 points. So the trace regime is not a
+free lunch for code models; E2 measures where each model sits before the design is frozen.
 
 Go/no-go after E2: if direct accuracy on CodeLlama-7B is above 90% at level 3 the task is
 too easy and levels go to 4–5; if below 20% the value range or list length shrinks. If the
