@@ -27,13 +27,28 @@ def generate_free(tok, model, prompts: Sequence[str], max_new_tokens: int, batch
                   stop_at_blank_line: bool = True) -> list[str]:
     """Greedy decoding. For the few-shot regimes we stop at a blank line (the separator between
     worked examples), so a model that starts a new problem does not run to the token limit."""
+    from transformers import StoppingCriteria, StoppingCriteriaList
+
+    class BlankLine(StoppingCriteria):
+        """Llama-2-family tokenizers emit a blank line as two '\\n' tokens, so no single eos id
+        catches it; look at the decoded tail of every sequence instead."""
+        def __init__(self, start: int):
+            self.start = start
+        def __call__(self, input_ids, scores, **kw):
+            import torch as _t
+            done = []
+            for row in input_ids:
+                tail = tok.decode(row[self.start:][-6:], skip_special_tokens=True)
+                done.append("\n\n" in tail or "\n \n" in tail)
+            return _t.tensor(done, device=input_ids.device)
+
     outs: list[str] = []
-    stop = sorted({i for s in ("\n\n", "6\n\n", "a\n\n") for i in tok(s, add_special_tokens=False)["input_ids"]
-                   if tok.decode([i]).count("\n") >= 2}) if stop_at_blank_line else []
     for i in range(0, len(prompts), batch_size):
         batch = prompts[i:i + batch_size]
         enc = tok(batch, return_tensors="pt", padding=True).to(model.device)
+        crit = StoppingCriteriaList([BlankLine(enc["input_ids"].shape[1])]) if stop_at_blank_line else None
         gen = model.generate(**enc, max_new_tokens=max_new_tokens, do_sample=False,
-                             pad_token_id=tok.pad_token_id, eos_token_id=stop + [tok.eos_token_id])
+                             pad_token_id=tok.pad_token_id, eos_token_id=tok.eos_token_id,
+                             stopping_criteria=crit)
         outs.extend(tok.batch_decode(gen[:, enc["input_ids"].shape[1]:], skip_special_tokens=True))
     return outs

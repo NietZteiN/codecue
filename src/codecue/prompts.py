@@ -22,7 +22,7 @@ from .generator import Instance, LEVELS, Program, Stmt, render, sample_sets, tra
 
 REGIMES = ("direct", "trace", "prose", "codechain")
 N_DEMOS = 3
-MAX_NEW = {"direct": 8, "trace": 96, "prose": 400, "codechain": 200}
+MAX_NEW = {"direct": 8, "trace": 96, "prose": 400, "codechain": 448}
 
 PROSE_INSTRUCTION = ("What does the call return? Think step by step, then finish with a line "
                      "of the form `Answer: <number>`.")
@@ -80,11 +80,14 @@ ANS_RE = re.compile(r"Answer:\s*(-?\d+)")
 
 
 def parse_answer(text: str) -> int | None:
-    block = text.split("\n\n", 1)[0] if text.startswith(("Answer", " ")) or "Trace" in text[:6] else text
+    """Few-shot regimes: the answer to THIS problem is the last `Answer: <int>` before the first
+    blank line. Models that keep going invent new problems after the blank line (CodeLlama in the
+    pilot, 2026-09-15); those must never be read."""
+    block = text.split("\n\n", 1)[0]
     hits = ANS_RE.findall(block)
     if not hits:
         # direct regime: the continuation after "Answer:" is the number itself
-        m = re.match(r"\s*(-?\d+)", text)
+        m = re.match(r"\s*(-?\d+)", block)
         return int(m.group(1)) if m else None
     return int(hits[-1])
 
