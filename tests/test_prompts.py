@@ -33,6 +33,12 @@ def test_parse_takes_last_answer_before_blank_line():
     assert parse_answer_free("Therefore the function returns 4.") == 4
 
 
+def test_value_written_takes_the_final_value_of_a_worked_expression():
+    assert value_written("In this case, `xs = [2, 1, 5]`, so `count = 2 + 1 + 5 = 8`. Then\nAnswer: 8", "count") == 8
+    assert value_written("so `length = 4 + 5 = 9`.", "length") == 9
+    assert value_written("n_items = 0 + 4 + 5 =\n9\nAnswer: 9", "n_items") == 9  # value continued on the next line
+
+
 def test_value_written_detects_only_the_named_variable():
     t = "First, total = sum([1,2,3]) = 6. Then count is 3 because count = total - 3.\nAnswer: 3"
     assert value_written(t, "total") == 6

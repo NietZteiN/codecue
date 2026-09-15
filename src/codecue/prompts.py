@@ -110,11 +110,25 @@ def parse_answer_free(text: str) -> int | None:
 VALUE_RE = r"[^\n.;]{0,40}?(?:=|is|:|->|equals)\s*(-?\d+)\b"
 
 
-def value_written(text: str, name: str, before: str = "Answer:") -> int | None:
-    """The first value the model WRITES for variable `name` before the answer line, or None.
+CLAUSE_END = r"[\n.;`]"
 
-    This is the per-instance measurement behind P3: in a prose chain the misleading variable's
-    value is sometimes written (`count = 7`, `count is 7`) and sometimes not."""
+
+def value_written(text: str, name: str, before: str = "Answer:") -> int | None:
+    """The value the model WRITES for variable `name` before the answer line, or None.
+
+    Takes the LAST `= <int>` (or `is`, `:`, `->`, `equals`) inside the clause that starts at the
+    first mention of the name: prose chains write `count = 2 + 1 + 5 = 8`, and the first digit
+    there is an operand, not the value (bug found 2026-09-15). A clause ends at a newline,
+    period, semicolon or backtick."""
     head = text.split(before, 1)[0]
-    m = re.search(rf"\b{re.escape(name)}\b{VALUE_RE}", head)
-    return int(m.group(1)) if m else None
+    m = re.search(rf"\b{re.escape(name)}\b", head)
+    if not m:
+        return None
+    rest = head[m.end():]
+    clause = re.split(CLAUSE_END, rest, maxsplit=1)[0][:80]
+    if clause.rstrip().endswith("="):
+        # `count = 2 + 1 + 5 =` with the value on the next line
+        tail = re.match(r"\s*(-?\d+)\b", rest[len(clause):].lstrip("\n"))
+        return int(tail.group(1)) if tail else None
+    hits = re.findall(r"(?:=|\bis\b|:|->|\bequals\b)\s*(-?\d+)\b", clause)
+    return int(hits[-1]) if hits else None
