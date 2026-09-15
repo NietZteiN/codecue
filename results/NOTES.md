@@ -79,3 +79,33 @@ from the full runs, kept in the pilot record.
 
 Queued next on the single worker: full level-3 behaviour (1,000 sets/target, direct+trace with
 three demonstration seeds, prose) for seven models; the lure-table gate (E2b) per model.
+
+## 2026-09-15 — full level 3, seven models, three demonstration seeds (E3, level 3)
+
+1,000 sets per target. Claim rule: same sign in all three seeds and cluster-bootstrap CI
+excluding zero (`*`). Lure and written-lure are excesses over the matched neutral twin.
+
+| model | direct: lure excess (queried / intermediate) | trace: written-lure excess, intermediate | trace: accuracy interference, intermediate |
+|---|---|---|---|
+| codellama-7b-it | +1.6* / +0.4 | +2.3 | -4.5 |
+| codegemma-7b-it | +2.9* / +2.2* | +3.0* | -2.3* |
+| llama32-3b-it | +3.3* / +3.8* | +4.9* | -6.3* |
+| llama31-8b-it | +2.0* / +3.3* | +0.5 | +0.2 |
+| gemma3-4b-it | +0.9* / +4.8* | +0.0 | -0.1 |
+| olmo2-7b-it | +2.3* / +3.2* | +2.6 | -6.4* |
+| olmo2-1b-it | +6.6* / +5.7* | -4.1* | -1.7 |
+
+- **P1 holds across the panel:** without a chain every model answers the name's implied value
+  above its twin's rate on at least one target (+0.9 to +6.6, all claimable).
+- **The value-step contamination survives the seed rule for two of seven models** (CodeGemma
+  +3.0, Llama-3.2-3B +4.9, both with accuracy interference); OLMo-2-7B shows the accuracy drop
+  (−6.4) without a claimable written-lure excess; CodeLlama's pilot effect (+5.0 at seed 7) is
+  not sign-consistent across seeds. **The demonstration set moves this effect as much as it
+  moved arithmetic accuracy** (Llama-3.2-3B: +7.2 / +1.3 / +6.1 by seed).
+- OLMo-2-1B is lured in every regime, including at the trace's value step for the queried
+  variable (+5.2).
+- Llama-3.1-8B and Gemma-3-4B: trace at ceiling, nothing claimable on the intermediate.
+
+**Gate v1 was broken:** every model completes `count = ` with `0` (a counter), so free
+completion cannot reveal which list operation a name evokes. Gate v2 scores the candidate
+expressions' log-probabilities instead (queued).

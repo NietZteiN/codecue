@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-"""E2b, the lure-table gate: does the model's own prior agree with the table? For each lure name
-the model completes `def f(xs):\n    <name> = ` greedily; the completion is scored by which
-family's expression it starts with (len(xs), sum(xs), max(xs), min(xs), ...). Names on which the
-panel agrees with the table below 80% are flagged in results/summary/lure_gate.json and dropped
-from analysis (PREREGISTRATION.md).
+"""E2b, the lure-table gate, v2 (2026-09-15). v1 asked for a free completion of `count = ` and
+every model wrote `0` (a counter initialised to zero), which says nothing about which list
+operation the name evokes. v2 SCORES candidate continuations: given `def f(xs):\n    <name> = `,
+the log-probability of each family's expression (`len(xs)`, `sum(xs)`, `max(xs)`, `min(xs)`, and
+for unary/binary families their forms over earlier variables). A name passes when its table
+family is the argmax; the same scoring on neutral names gives the baseline preference.
 
     python scripts/12_lure_gate.py --model codellama-7b-it
 """
@@ -11,45 +12,49 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from pathlib import Path
 
+import torch
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.config import RESULTS_DIR, model_entry  # noqa: E402
-from codecue.lures import FAMILIES, FAMILY_OF_NAME, NEUTRAL_NAMES  # noqa: E402
-from codecue.models import generate_free, load_model  # noqa: E402
+from codecue.lures import FAMILIES, NEUTRAL_NAMES  # noqa: E402
+from codecue.models import load_model  # noqa: E402
 
-PATTERNS = {"len": r"len\(", "sum": r"sum\(", "max": r"max\(", "min": r"min\(",
-            "double": r"2\s*\*|\*\s*2", "half": r"//\s*2|/\s*2", "succ": r"\+\s*1\b", "pred": r"-\s*1\b",
-            "add": r"\w+\s*\+\s*\w+", "sub": r"\w+\s*-\s*\w+", "mul": r"\w+\s*\*\s*\w+"}
+CANDS = {"list": {"len": "len(xs)", "sum": "sum(xs)", "max": "max(xs)", "min": "min(xs)"},
+         "unary": {"double": "a * 2", "half": "a // 2", "succ": "a + 1", "pred": "a - 1"},
+         "binary": {"add": "a + b", "sub": "a - b", "mul": "a * b"}}
+CTX = {"list": "def f(xs):\n    {n} = ", "unary": "def f(xs):\n    a = sum(xs)\n    {n} = ", "binary": "def f(xs):\n    a = sum(xs)\n    b = min(xs)\n    {n} = "}
+
+
+@torch.no_grad()
+def logprob(tok, model, prefix: str, cont: str) -> float:
+    ids_p = tok(prefix, return_tensors="pt", add_special_tokens=True)["input_ids"]
+    ids_c = tok(cont, return_tensors="pt", add_special_tokens=False)["input_ids"]
+    ids = torch.cat([ids_p, ids_c], dim=1).to(model.device)
+    lp = torch.log_softmax(model(input_ids=ids).logits.float(), dim=-1)[0]
+    n = ids_p.shape[1]
+    return float(sum(lp[n - 1 + i, ids[0, n + i]] for i in range(ids_c.shape[1])))
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--n", type=int, default=8)
-    a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); a = ap.parse_args()
     m = model_entry(a.model); tok, model = load_model(m["hf_id"])
-    # several contexts per name, so a single lucky completion does not decide
-    ctx = ["def f(xs):\n    {n} = ", "def g(xs):\n    a = max(xs)\n    {n} = ", "def h(xs):\n    total_len = len(xs)\n    {n} = ",
-           "def k(xs):\n    s = sum(xs)\n    m = min(xs)\n    {n} = "]
     out = {}
     for fam in FAMILIES:
+        cands = CANDS[fam.kind]
         for name in fam.names:
-            prompts = [c.format(n=name) for c in ctx][: a.n]
-            gens = generate_free(tok, model, prompts, 12, len(prompts), stop_at_blank_line=False)
-            hits = {}
-            for g in gens:
-                first = g.split("\n", 1)[0]
-                for key, pat in PATTERNS.items():
-                    if re.search(pat, first):
-                        hits[key] = hits.get(key, 0) + 1; break
-            agree = hits.get(fam.key, 0) / len(gens)
-            out[name] = {"family": fam.key, "agree": agree, "completions": [g.split("\n", 1)[0][:40] for g in gens]}
-            print(f"{name:10s} table={fam.key:7s} agree={agree:.2f}  {out[name]['completions'][:2]}")
+            scores = {k: logprob(tok, model, CTX[fam.kind].format(n=name), c) for k, c in cands.items()}
+            best = max(scores, key=scores.get)
+            out[name] = {"family": fam.key, "kind": fam.kind, "argmax": best, "pass": best == fam.key, "scores": scores}
+            print(f"{name:10s} table={fam.key:7s} argmax={best:7s} {'PASS' if best == fam.key else 'fail'}  "
+                  + " ".join(f"{k}:{v:6.1f}" for k, v in scores.items()))
     for name in NEUTRAL_NAMES[:6]:
-        gens = generate_free(tok, model, [c.format(n=name) for c in ctx], 12, 4, stop_at_blank_line=False)
-        out[name] = {"family": None, "completions": [g.split("\n", 1)[0][:40] for g in gens]}
-    p = RESULTS_DIR / "summary" / "lure_gate.json"
+        for kind, cands in CANDS.items():
+            scores = {k: logprob(tok, model, CTX[kind].format(n=name), c) for k, c in cands.items()}
+            out[f"{name}/{kind}"] = {"family": None, "kind": kind, "argmax": max(scores, key=scores.get), "scores": scores}
+    p = RESULTS_DIR / "summary" / "lure_gate_v2.json"
     allm = json.loads(p.read_text()) if p.exists() else {}
     allm[a.model] = out; p.write_text(json.dumps(allm, indent=1))
     return 0
