@@ -21,6 +21,16 @@ Because `value_written` is not randomly assigned, P3 is confirmed only together 
 the randomised version: the same prose instruction with and without the clause "state each
 variable's value as you go". Prediction: the clause removes the lure effect (within δ).
 
+## E10, fixed 2026-09-15 before the runs exist
+
+Three prose instructions differing only in whether the model is told to state each computed
+value (`plain`, `state`, `recompute`), level 5, 500 matched sets, three models. On the cell where
+the effect lives (a variable computed as `len(xs)` and named like a sum), predicted: written-lure
+rate under `state` and `recompute` is lower than under `plain`, and lowest under `recompute`.
+Claim requires the ordering to hold in every model and a cluster bootstrap over sets excluding
+zero for the `plain` minus `recompute` difference. A null here means the contamination is not
+under instructional control and the mechanism section says so.
+
 ## Secondary contrasts
 
 - Lure excess (lure rate − pseudo-lure rate on the neutral twin) per regime, per level, per
