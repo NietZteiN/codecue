@@ -47,3 +47,35 @@ same accuracy and lure as direct.
 
 Round 2 queued: level 5 for both pilot models; levels 3 and 5 for OLMo-2-1B and Llama-3.2-3B
 (weak models, to get cells off the ceiling); codechain rerun for Llama-8B at 448 tokens.
+
+## 2026-09-15 — round 2 (levels 3 and 5, four models): the lure enters the TRACE at the value step
+
+The answer-level lure excess is small in every regime (direct +1 to +4 against a pseudo-lure of
+5–23%; trace/prose ≈ 0 for the strong models). What moves is different from arithmetic:
+
+| model | L | acc neutral→incongruent (intermediate, trace) | trace writes the LURE at the value step: incongruent / twin | answer-level lure excess |
+|---|---|---|---|---|
+| llama31-8b-it | 3 | 99.5 → 99.0 | 0.5% / 0.0% (excess +0.5) | +0.0 |
+| llama31-8b-it | 5 | 99.5 → 97.5 | 2.0% / 0.0% (excess +2.0) | +0.5 |
+| codellama-7b-it | 3 | 95.0 → 81.5 | 5.0% / 0.0% (excess +5.0) | +2.0 |
+| codellama-7b-it | 5 | 91.0 → 80.5 | 4.0% / 0.5% (excess +3.5) | +2.0 |
+| llama32-3b-it | 3 | 96.5 → 87.0 | 6.5% / 0.5% (excess +6.0) | +0.0 |
+| llama32-3b-it | 5 | 96.0 → 82.0 | 15.0% / 0.0% (excess +15.0) | +1.5 |
+| olmo2-1b-it | 3 | 34.5 → 40.5 | 3.5% / 10.0% (excess -6.5) | +4.5 |
+| olmo2-1b-it | 5 | 33.0 → 27.5 | 6.5% / 5.5% (excess +1.0) | +3.5 |
+
+With a misleading name on a list-defined intermediate (`count = sum(xs)`), the trace writes the
+name's implied value (`count = 3`, i.e. len) instead of computing it, 3.5–15 points more often than
+the matched twin, and accuracy falls 10–14 points. The final answer is then wrong but is not the
+lure (it is v1 op v2 with a wrong v1), which is why the answer-level metric misses it. In
+arithmetic the free chain wrote the lure 0.0–0.15% of the time. **In code the chain itself is
+contaminated at the step that writes the value.** No such effect on the queried (binary) variable
+(0% written lure): the lure substitutes for a list computation, not for a combination of known
+values. Prose chains are near ceiling for the 3B–8B models; OLMo-2-1B is off-ceiling everywhere
+(direct +3.5/+4.0; trace on the queried variable writes the lure +8.5 above twin).
+
+Codechain (comments, no values) never protects and is unparsable for Llama-3.2-3B (21%); dropped
+from the full runs, kept in the pilot record.
+
+Queued next on the single worker: full level-3 behaviour (1,000 sets/target, direct+trace with
+three demonstration seeds, prose) for seven models; the lure-table gate (E2b) per model.
