@@ -109,3 +109,10 @@ excluding zero (`*`). Lure and written-lure are excesses over the matched neutra
 **Gate v1 was broken:** every model completes `count = ` with `0` (a counter), so free
 completion cannot reveal which list operation a name evokes. Gate v2 scores the candidate
 expressions' log-probabilities instead (queued).
+
+**Prose (free reasoning, chat template), level 3, seed 7 only:** written-lure excess is 0.0 to
++0.7 for every model and both targets after the `value_written` fix (the regex had been taking
+the first operand of `count = 2 + 1 + 5 = 8`). So the contamination at the value step is specific
+to the terse few-shot trace; a model reasoning in its own words is not contaminated even where its
+trace is (Llama-3.2-3B: trace +4.9, prose +0.7). Prose accuracy is at ceiling for the 3B–8B
+models and 69% for OLMo-2-1B.
