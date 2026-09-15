@@ -17,7 +17,7 @@ def main() -> int:
             wrote = value_written(r["generation"], r["names"][role]) if regime != "direct" else None
             new = {**r, "pred": pred, "correct": pred == r["answer"], "pred_is_lure": r["lure"] is not None and pred == r["lure"],
                    "value_written": wrote, "wrote_true_value": wrote is not None and wrote == r["values"][role]}
-            moved += (new["pred"], new["correct"]) != (r["pred"], r["correct"]); out.append(new)
+            moved += (new["pred"], new["correct"], new["value_written"]) != (r["pred"], r["correct"], r.get("value_written")); out.append(new)
         if moved:
             acc0 = sum(r["correct"] for r in rows) / len(rows); acc1 = sum(r["correct"] for r in out) / len(out)
             print(f"{str(bf.parent.relative_to(OUT_DIR / 'runs')):58s} acc {100*acc0:5.1f} -> {100*acc1:5.1f} ({moved} rows)")
