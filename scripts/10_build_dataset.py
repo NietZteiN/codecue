@@ -29,8 +29,8 @@ def main() -> int:
     a = ap.parse_args()
     for L in a.levels:
         d = ROOT / "data" / f"L{L}"
-        test = [x for s in sample_sets(L, a.n_test, seed=a.seed_test) for x in s]
-        train = [x for s in sample_sets(L, a.n_train // len({x.target for x in test if x.target}), seed=a.seed_train, tag="tr")
+        test = [x for s in sample_sets(L, a.n_test, seed=a.seed_test, strict=False) for x in s]
+        train = [x for s in sample_sets(L, a.n_train // len({x.target for x in test if x.target}), seed=a.seed_train, tag="tr", strict=False)
                  for x in s if x.condition == "neutral"]
         test_programs = {x.program for x in test}
         train = [x for x in train if x.program not in test_programs]

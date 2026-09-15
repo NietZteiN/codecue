@@ -27,6 +27,28 @@ the model writes the variable's concrete value, and not before?
 code for the same reason: protection comes from writing the value, and code reasoning does
 not write values unless it is made to.
 
+## 1b. What the arithmetic paper found after this plan was written (2026-09-15)
+
+Three results from `../probing` change the predictions below and are folded in:
+
+1. **Writing the value as text does not protect.** Splitting arithmetic instances by whether
+   the chain stated the value, against the matched neutral twin under the same split, gives a
+   lure excess of +0.1 in both halves. The 20× raw gap was the chance baseline of a broken
+   chain. So **P3 as originally worded is refuted in advance** and is reformulated: the
+   per-instance split stays as a *control that must come out null after baseline correction*.
+2. **What lines up with protection is whether the value is linearly *represented* at the step
+   that writes it.** 7 of 8 (model, target) cells with probes are decodable there and null;
+   the one that is not (OLMo-2-1B, intermediate, accuracy .22) is the one lured (+3.3), and
+   injection moves its answer through a correct chain at layer 5. P3/P5 are therefore
+   stated over probe decodability, not over the written token.
+3. **A digit inside an identifier (`q4`) is never answered as the value, while a number word
+   is.** The lure must be a *word with a meaning*, which the lure table already is
+   (`count`, `total`, ...), and the identifier-digit family is dead.
+
+Also: a number word on an *unused* variable is answered ~2 points above chance without a
+chain, so P1's pseudo-lure baseline must be the matched twin, and "irrelevant" identifiers are
+expected to show a small effect too.
+
 ## 2. Predictions, fixed before any data exist
 
 δ = 2 points, TOST, as in paper 1. "Lure" = the answer the misleading name implies.
@@ -35,15 +57,15 @@ not write values unless it is made to.
 |---|---|---|
 | **P1** direct answering | lure rate above pseudo-lure; congruent name helps | code models do not read values off names; Le et al.'s effect is something else |
 | **P2** trace chain (writes values) | lure excess within δ, as in arithmetic | writing the value is not what protects |
-| **P3** prose chain ("think step by step") | lure persists; **within** prose chains, lure errors concentrate in chains that never wrote the misleading variable's value | protection is about reasoning in general, not about writing the value |
+| **P3** prose chain ("think step by step") | lure persists relative to the trace regime. Within prose chains, splitting by whether the value was *written* shows **no** excess after the matched-twin baseline (the arithmetic null, expected to replicate); splitting by whether the value is *decodable* at the use site (probes, P5) does | if the written-token split shows an excess after baseline correction, code differs from arithmetic and the mechanism section is rewritten |
 | **P4** code generation | lure persists with prose reasoning; removed by trace reasoning | same as P3, in the generation setting |
 | **P5** probes | direct: lure decodable at the name and at its use site through the answer. Trace: erased after the value token. Prose: persists to the answer when the value was not written | the representational story from paper 1 does not transfer |
 | **P6** weak models | models with low trace accuracy show the lure returning (the OLMo-2-1B pattern) | protection is a property of the format after all |
 | **P7** natural code | accuracy drop on renamed CRUXEval is largest under direct, smaller under prose, smallest under trace | synthetic result does not reach real code |
 
-P3 is the paper. It is the test the arithmetic paper could not run: there, every chain
-writes the value by construction. Here, the model's own free reasoning sometimes does and
-sometimes does not, and the prediction is instance-level.
+P3 is the paper, in its revised form: the arithmetic paper showed that the written token is
+not what protects; code is where the *represented* value and the *written* value come apart
+most, because code reasoning names variables without stating their values.
 
 ## 3. Task
 

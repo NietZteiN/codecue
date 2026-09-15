@@ -10,12 +10,12 @@ the direct regime as the positive control that the equivalence test can detect a
 
 ## Primary contrast (the paper)
 
-**P3.** Within the prose regime, for each model and level, lure rate on incongruent instances
-whose chain wrote the misleading variable's true value vs. instances whose chain did not
-(`value_written` in `codecue.prompts`). Clustered logit on matched set:
-`lure ~ value_written * condition`. Claim: lure rate is higher when the value was not written,
-sign-consistent across ≥3 prompt variants of the prose instruction (the analogue of
-demonstration seeds), pooled CI excluding 0.
+**P3 (amended 2026-09-15, before any code data exist).** Within the prose regime, the split by
+`value_written` is a CONTROL: after subtracting the matched neutral twin's rate under the same
+split, the excess is predicted to be within δ in both halves (as in arithmetic). The claim is
+instead over representation: cells whose target value is linearly decodable at the use site
+(neutral-trained probe accuracy ≥ .9) have a lure excess within δ; cells where it is not do not.
+Sign-consistent across ≥3 prompt variants, pooled CI excluding 0.
 
 Because `value_written` is not randomly assigned, P3 is confirmed only together with **E10**,
 the randomised version: the same prose instruction with and without the clause "state each

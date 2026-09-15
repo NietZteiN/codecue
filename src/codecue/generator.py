@@ -282,8 +282,10 @@ def targets_for(level: int) -> list[str]:
     return [q] + inter[:1]          # queried variable, and the first intermediate
 
 
-def sample_sets(level: int, n: int, seed: int, tag: str = "") -> Iterator[list[Instance]]:
-    """`n` matched sets per target role, unique at the rendered-program level."""
+def sample_sets(level: int, n: int, seed: int, tag: str = "", strict: bool = True) -> Iterator[list[Instance]]:
+    """`n` matched sets per target role, unique at the rendered-program level. Level 1 has only
+    ~1,800 distinct programs (one list op over short inputs); with strict=False the generator
+    yields what exists and the caller records the shortfall."""
     rng = random.Random(seed * 1000 + level)
     for target in targets_for(level):
         seen: set[str] = set()
@@ -291,7 +293,11 @@ def sample_sets(level: int, n: int, seed: int, tag: str = "") -> Iterator[list[I
         while made < n:
             tries += 1
             if tries > 200 * n:
-                raise RuntimeError(f"L{level}/{target}: only {made}/{n} unique sets after {tries} tries")
+                if strict:
+                    raise RuntimeError(f"L{level}/{target}: only {made}/{n} unique sets after {tries} tries")
+                import warnings
+                warnings.warn(f"L{level}/{target}: only {made}/{n} unique sets exist; using them")
+                break
             prog = sample_program(level, rng)
             key = render(prog, {r: r for r in prog.roles})
             if key in seen:
