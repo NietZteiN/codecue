@@ -17,4 +17,6 @@ Status legend: planned · blocked · running · done. Numbers go in results/NOTE
 | E9 | Equivalence bounds, seed sweep, self-check | CPU | planned |
 | E10 | Randomised value-forcing clause in the prose instruction | ~10 GPU-h | planned |
 
-| E3b | **New (round 2):** value-step lure rate in the trace — written value == lure vs the matched twin — the metric on which code differs from arithmetic | CPU | measured on the pilot; needs seeds and the full panel |
+| E3b | Value-step lure rate in the trace (written value == lure vs the matched twin) | CPU | **done L3+L5, 3 seeds, 7 models (2026-09-15).** Effect is one cell: `len(xs)` named as a sum is traced as the sum (59% OLMo-2-7B, 44% Llama-3.2-3B at L5); all other pairings 0–2% |
+
+| E3c | Validity pass (2026-09-15): `value_written` clause bug fixed and re-scored; hits verified by eye; demos leak-free; parser ≥99.7%; direct pseudo-lure explained (sum is the default wrong answer); `99_selfcheck.py` 0 failures | CPU | **done** |

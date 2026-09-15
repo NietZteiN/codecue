@@ -125,7 +125,10 @@ def value_written(text: str, name: str, before: str = "Answer:") -> int | None:
     if not m:
         return None
     rest = head[m.end():]
-    clause = re.split(CLAUSE_END, rest, maxsplit=1)[0][:80]
+    # the clause ends at punctuation OR at the next assignment to another variable: in the
+    # trace format `count = 5, zz = 1, vv = 4` the old clause ran to the end of the line and
+    # the last `= int` was another variable's value (bug found 2026-09-15 in the validity pass)
+    clause = re.split(CLAUSE_END + r"|,\s*[A-Za-z_]\w*\s*=", rest, maxsplit=1)[0][:80]
     if clause.rstrip().endswith("="):
         # `count = 2 + 1 + 5 =` with the value on the next line
         tail = re.match(r"\s*(-?\d+)\b", rest[len(clause):].lstrip("\n"))

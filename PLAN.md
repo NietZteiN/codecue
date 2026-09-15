@@ -49,6 +49,16 @@ Also: a number word on an *unused* variable is answered ~2 points above chance w
 chain, so P1's pseudo-lure baseline must be the matched twin, and "irrelevant" identifiers are
 expected to show a small effect too.
 
+## 1c. What the data say so far (2026-09-15, after the validity pass)
+
+The trace-regime contamination is real, verified by eye, seed-stable at level 5, and **confined
+to one cell**: a variable computed as `len(xs)` but named as a sum is traced as the sum (59% /
+44% / 12% for OLMo-2-7B / Llama-3.2-3B / Llama-3.1-8B). No other (operation, name-family)
+pairing exceeds 2%. Prose chains show none of it. So the paper's mechanism section is about a
+name overriding a *plausibly buggy* line of code rather than about names in general; the
+lure-table gate (E2b) should show sum-family names carry the strongest prior. P3/P5 are to be
+tested on this cell first.
+
 ## 2. Predictions, fixed before any data exist
 
 δ = 2 points, TOST, as in paper 1. "Lure" = the answer the misleading name implies.

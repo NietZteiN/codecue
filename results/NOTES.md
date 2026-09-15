@@ -116,3 +116,47 @@ the first operand of `count = 2 + 1 + 5 = 8`). So the contamination at the value
 to the terse few-shot trace; a model reasoning in its own words is not contaminated even where its
 trace is (Llama-3.2-3B: trace +4.9, prose +0.7). Prose accuracy is at ceiling for the 3B–8B
 models and 69% for OLMo-2-1B.
+
+## 2026-09-15 (validity pass, on request) — what checked out, what was wrong, what the finding really is
+
+**Bug found and fixed:** `value_written` took the last `= <int>` in the clause, which in the
+trace format `count = 5, zz = 1, vv = 4` is ANOTHER variable's value. The clause now also ends at
+the next assignment (`, name =`); regression test added; every run re-scored. The level-3 numbers
+did not change (the sweep had been reading rows the earlier re-parse had left intact), but the
+metric was wrong in principle and would have produced false hits on any line ending in the lure.
+
+**Verified by eye (not by metric):** random written-lure hits at levels 3 and 5, both models.
+`sum_all = len(xs)` on `[5, 4]` is traced as `sum_all = 9` — the sum — and the rest of the chain
+is computed faithfully from that wrong start (`zz = 14, vv = 28`). The name wins over the code
+at the step that writes the value. Demos contain no table name (checked all seeds, both levels).
+Parser: ≥99.7% parsed in every (model, regime); spot checks agree with a human reading.
+Direct-regime pseudo-lure is high (11–23%) because a failing model's default wrong answer is
+often `sum(xs)`: twins hit sum-family lures 30–40%, len-family 5–11%. The matched baseline handles
+it; report per family. `99_selfcheck.py`: 0 failures over datasets, runs and sweeps.
+
+**The finding, stated precisely.** Level 5, trace regime, pooled over 3 seeds, written-lure
+excess over the matched twin on the first intermediate:
+
+| model | excess | by seed | accuracy interference |
+|---|---|---|---|
+| OLMo-2-7B | +16.8* | +19.4 / +15.5 / +15.5 | −18.3* |
+| Llama-3.2-3B | +12.3* | +14.3 / +7.8 / +14.8 | −12.9* |
+| Llama-3.1-8B | +3.5* | +4.2 / +3.6 / +2.7 | −3.3* |
+| CodeLlama-7B | +3.5* | +3.1 / +5.2 / +2.1 | −12.2* |
+| CodeGemma-7B | −0.2 | | −0.4 |
+| OLMo-2-1B | +0.2 | | −3.0* |
+
+**It is one cell.** By (true operation → name family), pooled over seeds: `len(xs)` named as a
+sum (`total`, `sum_all`, `acc`) is traced as the sum in 59% (OLMo-2-7B), 44% (Llama-3.2-3B),
+12% (Llama-3.1-8B) of instances. Every other pairing — max→sum, min→sum, sum→len, max→len,
+min→len — is 0–2%. So the claim is not "names contaminate chains"; it is: **when a variable is
+computed as the length of a list but named as its sum, models trace it as the sum**, as if
+repairing a perceived bug from the identifier. The `incongruent_alt` twin (same variable, a
+non-sum name) shows ~0%, so it is the name family, not the variable. At level 3 the same cell
+carries the effect but with 30× seed variation for CodeGemma; level 5 is seed-stable.
+
+Prose chains: 0.0–0.7 everywhere. Direct: P1 holds panel-wide (+0.9 to +6.6).
+
+Still needed: the lure-table gate v2 (queued) to confirm sum-family names carry the strongest
+prior; per-family reporting in the sweep; the mechanism section of PLAN.md must be rewritten
+around this one cell.

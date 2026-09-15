@@ -33,6 +33,14 @@ def test_parse_takes_last_answer_before_blank_line():
     assert parse_answer_free("Therefore the function returns 4.") == 4
 
 
+def test_value_written_stops_at_the_next_assignment_in_a_trace():
+    # the trace format lists every variable on one line; the value for `count` is 5, not the 4
+    # that follows for `vv` (this exact case produced a false "wrote the lure" hit)
+    assert value_written(" count = 5, zz = 1, vv = 4\nAnswer: 4", "count") == 5
+    assert value_written(" count = 5, zz = 1, vv = 4\nAnswer: 4", "vv") == 4
+    assert value_written(" total = 3, k = 6, m = 9\nAnswer: 9", "total") == 3
+
+
 def test_value_written_takes_the_final_value_of_a_worked_expression():
     assert value_written("In this case, `xs = [2, 1, 5]`, so `count = 2 + 1 + 5 = 8`. Then\nAnswer: 8", "count") == 8
     assert value_written("so `length = 4 + 5 = 9`.", "length") == 9
