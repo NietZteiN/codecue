@@ -10,7 +10,7 @@ Status legend: planned · blocked · running · done. Numbers go in results/NOTE
 | E2b | Lure-table validation gate: each model completes `def f(xs):\n    <name> = ` (`12_lure_gate.py`) | 1 GPU-h | queued 2026-09-15 |
 | E3 | Behaviour, full panel, L3 (then L5), all conditions, direct+trace × 3 demo seeds + prose (codechain dropped) | ~20 GPU-h | L3 queued 2026-09-15 for 7 models |
 | E4 | Prose annotation (`value_written`) and the P3 logit | CPU | planned |
-| E5 | Caches + probes, 3 internals models, direct/trace/prose | ~30 GPU-h, ~1 TB | planned |
+| E5 | Caches + probes, 3 models, trace regime, the affected cell | ~3 GPU-h | **done 2026-09-16**: code value decodable 85–100% at the decision token, name value ≤2% at any layer, yet the sum is written 12–59% → readout failure |
 | E6 | Patching removal/injection + controls, 3 models | ~10 GPU-h | planned |
 | E7 | Code generation task, 300 sets, instruct models | ~10 GPU-h | planned (generator not written) |
 | E8 | Natural code: CRUXEval with one identifier renamed, 3 regimes | ~15 GPU-h | planned (renamer not written) |

@@ -273,3 +273,36 @@ expression removes it.
 The paper's claim, restated: a sum-family identifier makes a model trace a list aggregate as the
 sum, overriding `len` in general models and `max` in code models, only under a format that
 lets it write the value without stating the expression.
+
+## 2026-09-16 — probes (E5, three models): the value is intact; the name wins at readout
+
+Neutral-trained linear probes, tested on the affected cell (computed `len(xs)`, named like a
+sum), level 5, trace regime. The decision token `pre@v1` is the `=` before the trace writes the
+variable's value; the variable is the first traced step, so the state there is identical in
+forced and free generation — it is what the model holds when it decides.
+
+| model | best layer | neutral acc | reads CODE (len) | reads NAME (sum) | max "reads name" over all layers | writes the sum (behaviour) |
+|---|---|---|---|---|---|---|
+| Llama-3.2-3B | 28 | 0.99 | **0.90** | 0.01 | 0.02 | 44% |
+| OLMo-2-7B | 32 | 1.00 | **0.85** | 0.01 | 0.02 | 59% |
+| Llama-3.1-8B | 16 | 1.00 | **1.00** | 0.00 | 0.02 | 12% |
+
+The name's value is not linearly decodable at ANY layer (≤ 0.02). The code's value is
+decodable at 85–100% at the best layer and rises monotonically through the network. Yet the
+model writes the sum in 12–59% of these instances. **This is a readout failure, not a
+representation failure**: the computation is correct in the residual stream and the output
+head produces the name's value anyway.
+
+This is the opposite of the arithmetic paper's exception (OLMo-2-1B: value NOT decodable at
+the value step, lured). The two papers therefore do not share a mechanism. Arithmetic: the
+chain protects where the value is represented. Code: the value is represented and the chain
+still writes the name's value. The bridge between the papers is the contrast, not a common law.
+
+Caveat to report: the control probe (labels = hash of the variable's name) also scores 1.00 at
+`pre@v1` for two models (0.80 for the third), so name identity is trivially decodable there and
+Hewitt–Liang selectivity is ~0. The value probe cannot be reading the name, because (a) on
+neutral training data name and value are independent, and (b) the misleading test names never
+occur in training. But the selectivity number must be stated.
+
+Next: patching (E6). If the value is intact and the name's tokens are the cause, replacing the
+name's activations with the neutral twin's at the decision token should restore the output.
