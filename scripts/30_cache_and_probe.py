@@ -34,16 +34,20 @@ def main() -> int:
     a = ap.parse_args()
     xs = read_jsonl(DATA_DIR / f"L{a.level}" / "test_sets.jsonl")
     sel = [x for x in xs if x.target in (None, a.role)]
-    if a.cell_only:
-        sel = [x for x in sel if x.stmts[0]["op"] == "len" and (x.lure_name is None or FAMILY_OF_NAME[x.lure_name].key == "sum")]
-    groups = defaultdict(list)
+    # the probe TRAINS on every neutral program (it learns "the value of v1" in general, as in the
+    # arithmetic paper); `--cell-only` restricts only the TEST groups to the affected cell
+    in_cell = lambda x: x.stmts[0]["op"] == "len" and (x.lure_name is None or FAMILY_OF_NAME[x.lure_name].key == "sum")
+    groups, train_pool = defaultdict(list), []
     for x in sel:
-        groups[x.condition if x.target is None else f"{x.condition}@{x.target}"].append(x)
+        if x.condition == "neutral":
+            train_pool.append(x)
+        if not a.cell_only or in_cell(x):
+            groups[x.condition if x.target is None else f"{x.condition}@{x.target}"].append(x)
     m = model_entry(a.model); tok, model = load_model(m["hf_id"])
     bs = a.batch_size or max(4, m.get("batch_size", 16) // 2)
     root = OUT_DIR / "probecache" / a.model / f"L{a.level}" / a.regime
     # train on neutral, test on everything (neutral included, as the accuracy reference)
-    tr = groups["neutral"][: a.n_train]
+    tr = train_pool[: a.n_train]
     cache_group(tok, model, tr, a.role, a.regime, a.level, root / "train_neutral", bs, a.layer_stride)
     print(f"cached train_neutral: {len(tr)}", flush=True)
     tests = {}

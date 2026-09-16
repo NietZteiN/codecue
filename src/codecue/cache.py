@@ -68,24 +68,31 @@ def cache_group(tok, model, instances: Sequence[Instance], role: str, regime: st
     pos = []
     for e, p, g, x in zip(enc, prompts, gens, instances):
         pos.append(spans_to_tokens(cache_spans(p, g, x, role), e["offset_mapping"]))
+    # Programs differ in length (list size, constants, operators), so positions are PER INSTANCE
+    # (rule 3, span-based); the arithmetic paper's absolute-alignment guard does not apply and
+    # rejected 57% of instances when first ported (2026-09-16). Keep every instance whose
+    # spans all resolved; right-pad batches so per-instance positions stay valid.
     labels = sorted(set.intersection(*[set(d) for d in pos]))
-    ref = tuple(pos[0][k] for k in labels)
-    keep = [i for i, d in enumerate(pos) if tuple(d[k] for k in labels) == ref and len(enc[i]["input_ids"]) == len(enc[0]["input_ids"])]
+    keep = [i for i, d in enumerate(pos) if all(k in d for k in labels)]
     if len(keep) < 0.99 * len(instances):
-        raise RuntimeError(f"{out_dir.name}: only {len(keep)}/{len(instances)} share a token layout")
-    n_layers = model.config.num_hidden_layers + 1
-    layers = list(range(0, n_layers, layer_stride))
-    H = np.zeros((len(keep), len(labels), len(layers), model.config.hidden_size), dtype=np.float16)
+        raise RuntimeError(f"{out_dir.name}: only {len(keep)}/{len(instances)} resolve every span")
+    cfg = getattr(model.config, "text_config", model.config)
+    layers = list(range(0, cfg.num_hidden_layers + 1, layer_stride))
+    H = np.zeros((len(keep), len(labels), len(layers), cfg.hidden_size), dtype=np.float16)
+    pad = tok.pad_token_id
     for i in range(0, len(keep), batch_size):
         chunk = keep[i:i + batch_size]
-        ids = torch.tensor([enc[k]["input_ids"] for k in chunk]).to(model.device)
-        hs = model(input_ids=ids, output_hidden_states=True).hidden_states
+        seqs = [enc[k]["input_ids"] for k in chunk]; T = max(len(q) for q in seqs)
+        ids = torch.full((len(chunk), T), pad, dtype=torch.long); att = torch.zeros_like(ids)
+        for b, q in enumerate(seqs):
+            ids[b, :len(q)] = torch.tensor(q); att[b, :len(q)] = 1
+        hs = model(input_ids=ids.to(model.device), attention_mask=att.to(model.device), output_hidden_states=True).hidden_states
         st = torch.stack([hs[l] for l in layers], dim=2)          # [B, T, L, d]
         for b, k in enumerate(chunk):
             H[i + b] = st[b, [pos[k][lab] for lab in labels]].to(torch.float16).cpu().numpy()
     np.save(out_dir / "hidden.npy", H)
     meta = {"role": role, "level": level, "regime": regime, "pos_labels": labels, "layers": layers,
-            "hidden_dim": int(model.config.hidden_size), "n": len(keep),
+            "hidden_dim": int(cfg.hidden_size), "n": len(keep), "n_dropped": len(instances) - len(keep),
             "instances": [{"id": instances[k].id, "set_id": instances[k].set_id, "names": instances[k].names,
                            "values": instances[k].values, "lure": instances[k].lure, "target": instances[k].target,
                            "condition": instances[k].condition} for k in keep]}
