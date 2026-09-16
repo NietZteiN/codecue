@@ -1,0 +1,3418 @@
+{
+ "gemma3-4b-it": {
+  "count": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -23.969270706176758,
+    "sum": -31.270912170410156,
+    "max": -26.04747772216797,
+    "min": -26.494089126586914
+   }
+  },
+  "n_items": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -18.329988479614258,
+    "sum": -27.719226837158203,
+    "max": -27.51000213623047,
+    "min": -32.53556823730469
+   }
+  },
+  "length": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -18.313108444213867,
+    "sum": -31.545242309570312,
+    "max": -28.898117065429688,
+    "min": -34.739749908447266
+   }
+  },
+  "total": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -22.750694274902344,
+    "sum": -23.82449722290039,
+    "max": -26.25727653503418,
+    "min": -26.189828872680664
+   }
+  },
+  "sum_all": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -21.502099990844727,
+    "sum": -21.66343116760254,
+    "max": -24.449506759643555,
+    "min": -24.351478576660156
+   }
+  },
+  "acc": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -23.440114974975586,
+    "sum": -25.10992431640625,
+    "max": -26.23961067199707,
+    "min": -26.31686782836914
+   }
+  },
+  "largest": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -27.379043579101562,
+    "sum": -30.184242248535156,
+    "max": -22.440271377563477,
+    "min": -24.95982551574707
+   }
+  },
+  "max_val": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -25.878652572631836,
+    "sum": -29.573049545288086,
+    "max": -22.566843032836914,
+    "min": -30.633981704711914
+   }
+  },
+  "peak": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -21.637245178222656,
+    "sum": -23.92801856994629,
+    "max": -14.880887031555176,
+    "min": -22.949995040893555
+   }
+  },
+  "smallest": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "max",
+   "pass": false,
+   "scores": {
+    "len": -29.812543869018555,
+    "sum": -34.76200866699219,
+    "max": -26.190126419067383,
+    "min": -27.939809799194336
+   }
+  },
+  "min_val": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -29.201807022094727,
+    "sum": -31.72209358215332,
+    "max": -27.297740936279297,
+    "min": -23.26384925842285
+   }
+  },
+  "low": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -21.536157608032227,
+    "sum": -25.21349334716797,
+    "max": -21.63046646118164,
+    "min": -20.68911361694336
+   }
+  },
+  "double": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -22.50215721130371,
+    "half": -30.504924774169922,
+    "succ": -36.39629364013672,
+    "pred": -40.12563705444336
+   }
+  },
+  "twice": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -18.966794967651367,
+    "half": -27.90524673461914,
+    "succ": -35.279544830322266,
+    "pred": -35.562255859375
+   }
+  },
+  "half": {
+   "family": "half",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": true,
+   "scores": {
+    "double": -60.31793975830078,
+    "half": -40.066688537597656,
+    "succ": -57.3227653503418,
+    "pred": -60.341548919677734
+   }
+  },
+  "succ": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -43.421756744384766,
+    "half": -42.12398910522461,
+    "succ": -34.04709243774414,
+    "pred": -42.30278015136719
+   }
+  },
+  "next_val": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -29.698827743530273,
+    "half": -28.44341468811035,
+    "succ": -25.884885787963867,
+    "pred": -37.54294967651367
+   }
+  },
+  "pred": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": false,
+   "scores": {
+    "double": -32.77705383300781,
+    "half": -26.476282119750977,
+    "succ": -34.725921630859375,
+    "pred": -33.22431564331055
+   }
+  },
+  "prev_val": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": false,
+   "scores": {
+    "double": -39.79523849487305,
+    "half": -30.42677879333496,
+    "succ": -30.729331970214844,
+    "pred": -35.10691833496094
+   }
+  },
+  "combined": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -52.17232894897461,
+    "sub": -47.91059875488281,
+    "mul": -57.41721725463867
+   }
+  },
+  "both": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -32.72651290893555,
+    "sub": -27.83440589904785,
+    "mul": -34.72079086303711
+   }
+  },
+  "diff": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -62.262332916259766,
+    "sub": -50.88200759887695,
+    "mul": -63.268531799316406
+   }
+  },
+  "gap": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -47.87986373901367,
+    "sub": -37.62797164916992,
+    "mul": -50.13050842285156
+   }
+  },
+  "product": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -39.28767013549805,
+    "sub": -38.52220916748047,
+    "mul": -30.64679718017578
+   }
+  },
+  "scaled": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -42.52818298339844,
+    "sub": -40.40392303466797,
+    "mul": -42.48063659667969
+   }
+  },
+  "v/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.384231567382812,
+    "sum": -19.58704376220703,
+    "max": -20.71181297302246,
+    "min": -20.482738494873047
+   }
+  },
+  "v/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -37.96870040893555,
+    "half": -38.58172607421875,
+    "succ": -39.74363327026367,
+    "pred": -43.95079040527344
+   }
+  },
+  "v/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -48.492095947265625,
+    "sub": -41.8535270690918,
+    "mul": -50.17101287841797
+   }
+  },
+  "w/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -19.263507843017578,
+    "sum": -21.41978645324707,
+    "max": -21.020061492919922,
+    "min": -22.29741096496582
+   }
+  },
+  "w/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -31.11858558654785,
+    "half": -34.13297653198242,
+    "succ": -35.11430740356445,
+    "pred": -40.52515411376953
+   }
+  },
+  "w/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -35.370582580566406,
+    "sub": -28.355674743652344,
+    "mul": -35.5086555480957
+   }
+  },
+  "u/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -19.801118850708008,
+    "sum": -21.3353214263916,
+    "max": -21.061899185180664,
+    "min": -22.650331497192383
+   }
+  },
+  "u/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -44.065006256103516,
+    "half": -45.38329315185547,
+    "succ": -46.123897552490234,
+    "pred": -48.79363250732422
+   }
+  },
+  "u/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -35.56657791137695,
+    "sub": -30.92227554321289,
+    "mul": -36.964622497558594
+   }
+  },
+  "t/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -20.314556121826172,
+    "sum": -21.076990127563477,
+    "max": -22.417695999145508,
+    "min": -23.554590225219727
+   }
+  },
+  "t/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -33.40120315551758,
+    "half": -32.43035888671875,
+    "succ": -34.468162536621094,
+    "pred": -41.99675369262695
+   }
+  },
+  "t/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -38.66469192504883,
+    "sub": -34.160213470458984,
+    "mul": -41.669944763183594
+   }
+  },
+  "r/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -19.949007034301758,
+    "sum": -22.348682403564453,
+    "max": -23.401287078857422,
+    "min": -23.23377799987793
+   }
+  },
+  "r/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -33.57675552368164,
+    "half": -34.918514251708984,
+    "succ": -35.50200271606445,
+    "pred": -39.624107360839844
+   }
+  },
+  "r/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -38.66122817993164,
+    "sub": -31.279443740844727,
+    "mul": -39.163265228271484
+   }
+  },
+  "k/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -16.042484283447266,
+    "sum": -19.98712730407715,
+    "max": -18.047286987304688,
+    "min": -19.23706817626953
+   }
+  },
+  "k/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -31.862499237060547,
+    "half": -31.18277931213379,
+    "succ": -35.0927619934082,
+    "pred": -37.55339050292969
+   }
+  },
+  "k/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -31.484331130981445,
+    "sub": -25.098447799682617,
+    "mul": -32.391414642333984
+   }
+  }
+ },
+ "codegemma-7b-it": {
+  "count": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -20.051557540893555,
+    "sum": -21.481172561645508,
+    "max": -22.921157836914062,
+    "min": -24.547115325927734
+   }
+  },
+  "n_items": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -9.879798889160156,
+    "sum": -16.39714241027832,
+    "max": -16.06141471862793,
+    "min": -20.787113189697266
+   }
+  },
+  "length": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -10.317705154418945,
+    "sum": -19.51245880126953,
+    "max": -16.682586669921875,
+    "min": -20.712604522705078
+   }
+  },
+  "total": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -20.011348724365234,
+    "sum": -18.063722610473633,
+    "max": -22.209562301635742,
+    "min": -24.211034774780273
+   }
+  },
+  "sum_all": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -22.04563331604004,
+    "sum": -18.069786071777344,
+    "max": -24.199953079223633,
+    "min": -26.21507453918457
+   }
+  },
+  "acc": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -22.165658950805664,
+    "sum": -20.314220428466797,
+    "max": -22.230501174926758,
+    "min": -24.16878890991211
+   }
+  },
+  "largest": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -24.143089294433594,
+    "sum": -22.130552291870117,
+    "max": -18.0380916595459,
+    "min": -20.047372817993164
+   }
+  },
+  "max_val": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -26.037988662719727,
+    "sum": -24.093585968017578,
+    "max": -20.012798309326172,
+    "min": -22.14120864868164
+   }
+  },
+  "peak": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -22.237319946289062,
+    "sum": -20.40436553955078,
+    "max": -16.206409454345703,
+    "min": -22.235137939453125
+   }
+  },
+  "smallest": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -20.881013870239258,
+    "sum": -21.048744201660156,
+    "max": -16.87093734741211,
+    "min": -14.861462593078613
+   }
+  },
+  "min_val": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -22.87740135192871,
+    "sum": -20.915813446044922,
+    "max": -18.98597526550293,
+    "min": -16.853336334228516
+   }
+  },
+  "low": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -22.218673706054688,
+    "sum": -20.4233455657959,
+    "max": -18.254552841186523,
+    "min": -16.238380432128906
+   }
+  },
+  "double": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -16.810827255249023,
+    "half": -20.741498947143555,
+    "succ": -21.907350540161133,
+    "pred": -23.37346076965332
+   }
+  },
+  "twice": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -15.030333518981934,
+    "half": -19.078914642333984,
+    "succ": -21.265289306640625,
+    "pred": -20.549177169799805
+   }
+  },
+  "half": {
+   "family": "half",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": true,
+   "scores": {
+    "double": -20.69685173034668,
+    "half": -12.508003234863281,
+    "succ": -19.536054611206055,
+    "pred": -22.26327896118164
+   }
+  },
+  "succ": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -18.937808990478516,
+    "half": -19.485212326049805,
+    "succ": -14.84028148651123,
+    "pred": -20.259355545043945
+   }
+  },
+  "next_val": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -18.43644142150879,
+    "half": -20.467422485351562,
+    "succ": -14.755900382995605,
+    "pred": -18.790910720825195
+   }
+  },
+  "pred": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": false,
+   "scores": {
+    "double": -17.141067504882812,
+    "half": -15.884913444519043,
+    "succ": -15.969646453857422,
+    "pred": -18.571002960205078
+   }
+  },
+  "prev_val": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": false,
+   "scores": {
+    "double": -27.27906608581543,
+    "half": -24.288331985473633,
+    "succ": -22.518171310424805,
+    "pred": -24.883451461791992
+   }
+  },
+  "combined": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -9.632383346557617,
+    "sub": -11.855722427368164,
+    "mul": -11.783119201660156
+   }
+  },
+  "both": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -11.402472496032715,
+    "sub": -13.414700508117676,
+    "mul": -13.386030197143555
+   }
+  },
+  "diff": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -16.34107208251953,
+    "sub": -10.439286231994629,
+    "mul": -18.557981491088867
+   }
+  },
+  "gap": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -13.483227729797363,
+    "sub": -9.584030151367188,
+    "mul": -15.606431007385254
+   }
+  },
+  "product": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -14.886903762817383,
+    "sub": -16.868228912353516,
+    "mul": -10.86644172668457
+   }
+  },
+  "scaled": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -13.91423225402832,
+    "sub": -11.670832633972168,
+    "mul": -12.883747100830078
+   }
+  },
+  "v/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -20.180801391601562,
+    "sum": -16.540536880493164,
+    "max": -18.317628860473633,
+    "min": -20.222719192504883
+   }
+  },
+  "v/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -23.14685821533203,
+    "half": -24.978309631347656,
+    "succ": -22.082773208618164,
+    "pred": -23.557037353515625
+   }
+  },
+  "v/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "mul",
+   "scores": {
+    "add": -15.091646194458008,
+    "sub": -15.167922973632812,
+    "mul": -15.088454246520996
+   }
+  },
+  "w/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -16.999982833862305,
+    "sum": -17.409204483032227,
+    "max": -19.04731559753418,
+    "min": -19.030458450317383
+   }
+  },
+  "w/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -20.916950225830078,
+    "half": -20.340944290161133,
+    "succ": -18.121559143066406,
+    "pred": -21.58796501159668
+   }
+  },
+  "w/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "mul",
+   "scores": {
+    "add": -13.456844329833984,
+    "sub": -13.448942184448242,
+    "mul": -13.360615730285645
+   }
+  },
+  "u/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -16.312986373901367,
+    "sum": -14.70416259765625,
+    "max": -16.36724853515625,
+    "min": -18.339120864868164
+   }
+  },
+  "u/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -21.089317321777344,
+    "half": -22.56610679626465,
+    "succ": -19.21641731262207,
+    "pred": -22.57196807861328
+   }
+  },
+  "u/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -12.512359619140625,
+    "sub": -12.506632804870605,
+    "mul": -14.83383846282959
+   }
+  },
+  "t/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -18.197689056396484,
+    "sum": -16.411561965942383,
+    "max": -18.315509796142578,
+    "min": -18.250131607055664
+   }
+  },
+  "t/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -22.117658615112305,
+    "half": -19.713743209838867,
+    "succ": -19.592571258544922,
+    "pred": -21.235578536987305
+   }
+  },
+  "t/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -13.980889320373535,
+    "sub": -13.974477767944336,
+    "mul": -14.117864608764648
+   }
+  },
+  "r/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -20.17049217224121,
+    "sum": -19.217004776000977,
+    "max": -20.224056243896484,
+    "min": -22.3179988861084
+   }
+  },
+  "r/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -20.549869537353516,
+    "half": -19.98777961730957,
+    "succ": -17.957366943359375,
+    "pred": -20.192556381225586
+   }
+  },
+  "r/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -14.537878036499023,
+    "sub": -12.528664588928223,
+    "mul": -14.549036979675293
+   }
+  },
+  "k/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -14.48833179473877,
+    "sum": -16.807512283325195,
+    "max": -16.578763961791992,
+    "min": -16.673526763916016
+   }
+  },
+  "k/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -19.675161361694336,
+    "half": -15.802821159362793,
+    "succ": -15.961950302124023,
+    "pred": -17.290170669555664
+   }
+  },
+  "k/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -11.71521282196045,
+    "sub": -11.714332580566406,
+    "mul": -13.859265327453613
+   }
+  }
+ },
+ "llama31-8b-it": {
+  "count": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -21.862659454345703,
+    "sum": -24.017475128173828,
+    "max": -25.864376068115234,
+    "min": -28.29701805114746
+   }
+  },
+  "n_items": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -18.408445358276367,
+    "sum": -23.682388305664062,
+    "max": -23.613264083862305,
+    "min": -27.422670364379883
+   }
+  },
+  "length": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -18.59154510498047,
+    "sum": -23.76563835144043,
+    "max": -24.282852172851562,
+    "min": -27.127004623413086
+   }
+  },
+  "total": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -21.57582664489746,
+    "sum": -19.20854377746582,
+    "max": -23.720218658447266,
+    "min": -26.031375885009766
+   }
+  },
+  "sum_all": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -20.663047790527344,
+    "sum": -17.95539093017578,
+    "max": -24.012704849243164,
+    "min": -27.22510528564453
+   }
+  },
+  "acc": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -21.446962356567383,
+    "sum": -20.19151496887207,
+    "max": -24.652530670166016,
+    "min": -25.79218292236328
+   }
+  },
+  "largest": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -20.79412841796875,
+    "sum": -22.39594268798828,
+    "max": -20.722673416137695,
+    "min": -22.87396812438965
+   }
+  },
+  "max_val": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -21.373092651367188,
+    "sum": -21.165315628051758,
+    "max": -20.17233657836914,
+    "min": -24.551464080810547
+   }
+  },
+  "peak": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -18.171226501464844,
+    "sum": -19.290714263916016,
+    "max": -20.978601455688477,
+    "min": -23.121227264404297
+   }
+  },
+  "smallest": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -19.24287986755371,
+    "sum": -20.21902084350586,
+    "max": -19.346847534179688,
+    "min": -20.32904815673828
+   }
+  },
+  "min_val": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": false,
+   "scores": {
+    "len": -19.925811767578125,
+    "sum": -19.018230438232422,
+    "max": -20.90478515625,
+    "min": -19.481374740600586
+   }
+  },
+  "low": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -18.036073684692383,
+    "sum": -19.75112533569336,
+    "max": -21.820417404174805,
+    "min": -21.197147369384766
+   }
+  },
+  "double": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -17.324626922607422,
+    "half": -21.413328170776367,
+    "succ": -23.499691009521484,
+    "pred": -24.804805755615234
+   }
+  },
+  "twice": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -17.066253662109375,
+    "half": -20.19280242919922,
+    "succ": -22.616634368896484,
+    "pred": -23.771770477294922
+   }
+  },
+  "half": {
+   "family": "half",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": true,
+   "scores": {
+    "double": -22.489316940307617,
+    "half": -15.224515914916992,
+    "succ": -21.823476791381836,
+    "pred": -22.958507537841797
+   }
+  },
+  "succ": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -24.637622833251953,
+    "half": -24.284133911132812,
+    "succ": -19.811777114868164,
+    "pred": -23.154537200927734
+   }
+  },
+  "next_val": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -18.471355438232422,
+    "half": -20.713102340698242,
+    "succ": -16.96174430847168,
+    "pred": -19.432287216186523
+   }
+  },
+  "pred": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "pred",
+   "pass": true,
+   "scores": {
+    "double": -23.61380386352539,
+    "half": -23.798297882080078,
+    "succ": -24.100997924804688,
+    "pred": -23.046653747558594
+   }
+  },
+  "prev_val": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "pred",
+   "pass": true,
+   "scores": {
+    "double": -26.12499237060547,
+    "half": -25.407068252563477,
+    "succ": -23.94887351989746,
+    "pred": -23.49596405029297
+   }
+  },
+  "combined": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -16.136014938354492,
+    "sub": -17.13510513305664,
+    "mul": -17.649394989013672
+   }
+  },
+  "both": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -19.485353469848633,
+    "sub": -19.879993438720703,
+    "mul": -20.58496856689453
+   }
+  },
+  "diff": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -21.45430564880371,
+    "sub": -16.109413146972656,
+    "mul": -21.732826232910156
+   }
+  },
+  "gap": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -21.470821380615234,
+    "sub": -16.414457321166992,
+    "mul": -22.775789260864258
+   }
+  },
+  "product": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -20.699726104736328,
+    "sub": -19.751358032226562,
+    "mul": -16.408376693725586
+   }
+  },
+  "scaled": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -19.79096221923828,
+    "sub": -18.982812881469727,
+    "mul": -19.788427352905273
+   }
+  },
+  "v/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -21.414134979248047,
+    "sum": -19.70465660095215,
+    "max": -24.323652267456055,
+    "min": -25.096158981323242
+   }
+  },
+  "v/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -22.74401092529297,
+    "half": -23.37523078918457,
+    "succ": -23.339365005493164,
+    "pred": -24.159326553344727
+   }
+  },
+  "v/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.973512649536133,
+    "sub": -18.570589065551758,
+    "mul": -20.49818992614746
+   }
+  },
+  "w/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -20.394487380981445,
+    "sum": -20.772869110107422,
+    "max": -23.332378387451172,
+    "min": -24.856931686401367
+   }
+  },
+  "w/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -23.14395523071289,
+    "half": -23.74937629699707,
+    "succ": -23.374900817871094,
+    "pred": -24.7823486328125
+   }
+  },
+  "w/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -20.15876007080078,
+    "sub": -19.0163631439209,
+    "mul": -21.05709457397461
+   }
+  },
+  "u/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -20.545316696166992,
+    "sum": -19.21862030029297,
+    "max": -23.270034790039062,
+    "min": -24.82155990600586
+   }
+  },
+  "u/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -22.749879837036133,
+    "half": -23.652111053466797,
+    "succ": -22.298492431640625,
+    "pred": -23.154577255249023
+   }
+  },
+  "u/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.915212631225586,
+    "sub": -18.76895523071289,
+    "mul": -21.323486328125
+   }
+  },
+  "t/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -20.87000846862793,
+    "sum": -20.41326141357422,
+    "max": -24.025293350219727,
+    "min": -24.653547286987305
+   }
+  },
+  "t/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -22.973012924194336,
+    "half": -23.114715576171875,
+    "succ": -23.21376609802246,
+    "pred": -24.44019889831543
+   }
+  },
+  "t/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.381351470947266,
+    "sub": -18.410911560058594,
+    "mul": -20.56525421142578
+   }
+  },
+  "r/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -20.484821319580078,
+    "sum": -20.975305557250977,
+    "max": -23.781421661376953,
+    "min": -25.09440040588379
+   }
+  },
+  "r/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -21.831052780151367,
+    "half": -21.800989151000977,
+    "succ": -22.10945701599121,
+    "pred": -22.390823364257812
+   }
+  },
+  "r/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.36206817626953,
+    "sub": -17.859577178955078,
+    "mul": -20.092304229736328
+   }
+  },
+  "k/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -17.68785285949707,
+    "sum": -18.610843658447266,
+    "max": -21.254554748535156,
+    "min": -22.35541343688965
+   }
+  },
+  "k/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -22.59759521484375,
+    "half": -21.0047664642334,
+    "succ": -21.703651428222656,
+    "pred": -22.186716079711914
+   }
+  },
+  "k/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.098791122436523,
+    "sub": -17.882837295532227,
+    "mul": -20.4819393157959
+   }
+  }
+ },
+ "olmo2-1b-it": {
+  "count": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -22.93389892578125,
+    "sum": -24.303279876708984,
+    "max": -25.66754722595215,
+    "min": -25.528406143188477
+   }
+  },
+  "n_items": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -14.609453201293945,
+    "sum": -18.344499588012695,
+    "max": -19.08252716064453,
+    "min": -19.849367141723633
+   }
+  },
+  "length": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -17.505176544189453,
+    "sum": -20.482982635498047,
+    "max": -21.505002975463867,
+    "min": -22.45907211303711
+   }
+  },
+  "total": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -23.34851837158203,
+    "sum": -22.25173568725586,
+    "max": -25.47757339477539,
+    "min": -25.6580753326416
+   }
+  },
+  "sum_all": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -19.319700241088867,
+    "sum": -19.610855102539062,
+    "max": -25.129718780517578,
+    "min": -24.553077697753906
+   }
+  },
+  "acc": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -20.450468063354492,
+    "sum": -21.640884399414062,
+    "max": -24.043163299560547,
+    "min": -24.068744659423828
+   }
+  },
+  "largest": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -16.09958839416504,
+    "sum": -20.063505172729492,
+    "max": -17.710554122924805,
+    "min": -17.799983978271484
+   }
+  },
+  "max_val": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -16.656084060668945,
+    "sum": -20.67028045654297,
+    "max": -17.27341079711914,
+    "min": -21.41109275817871
+   }
+  },
+  "peak": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -18.07550048828125,
+    "sum": -21.12527847290039,
+    "max": -19.547761917114258,
+    "min": -19.283374786376953
+   }
+  },
+  "smallest": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -14.586318969726562,
+    "sum": -18.935121536254883,
+    "max": -21.506576538085938,
+    "min": -16.569232940673828
+   }
+  },
+  "min_val": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -14.935953140258789,
+    "sum": -18.389726638793945,
+    "max": -27.934436798095703,
+    "min": -14.701944351196289
+   }
+  },
+  "low": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -19.072635650634766,
+    "sum": -22.57231330871582,
+    "max": -24.283308029174805,
+    "min": -20.52498435974121
+   }
+  },
+  "double": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -20.857177734375,
+    "half": -24.52680778503418,
+    "succ": -34.49590301513672,
+    "pred": -34.475318908691406
+   }
+  },
+  "twice": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -21.40876007080078,
+    "half": -28.657958984375,
+    "succ": -38.626068115234375,
+    "pred": -34.403079986572266
+   }
+  },
+  "half": {
+   "family": "half",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": true,
+   "scores": {
+    "double": -26.69581413269043,
+    "half": -15.5244722366333,
+    "succ": -31.062021255493164,
+    "pred": -30.291406631469727
+   }
+  },
+  "succ": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -22.605201721191406,
+    "half": -22.35517692565918,
+    "succ": -17.861331939697266,
+    "pred": -23.52159881591797
+   }
+  },
+  "next_val": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": false,
+   "scores": {
+    "double": -18.681964874267578,
+    "half": -21.355731964111328,
+    "succ": -18.7552547454834,
+    "pred": -22.674779891967773
+   }
+  },
+  "pred": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": false,
+   "scores": {
+    "double": -24.903894424438477,
+    "half": -23.895530700683594,
+    "succ": -24.310869216918945,
+    "pred": -24.33390235900879
+   }
+  },
+  "prev_val": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": false,
+   "scores": {
+    "double": -25.127443313598633,
+    "half": -20.874164581298828,
+    "succ": -24.198606491088867,
+    "pred": -21.6926212310791
+   }
+  },
+  "combined": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -11.291040420532227,
+    "sub": -15.541337013244629,
+    "mul": -16.854991912841797
+   }
+  },
+  "both": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -20.897436141967773,
+    "sub": -22.52250099182129,
+    "mul": -20.96108055114746
+   }
+  },
+  "diff": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -24.15192413330078,
+    "sub": -13.962555885314941,
+    "mul": -28.857629776000977
+   }
+  },
+  "gap": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -23.66034698486328,
+    "sub": -17.77703094482422,
+    "mul": -30.601768493652344
+   }
+  },
+  "product": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -33.73311996459961,
+    "sub": -32.11017608642578,
+    "mul": -17.73021697998047
+   }
+  },
+  "scaled": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -18.480648040771484,
+    "sub": -19.393043518066406,
+    "mul": -15.020222663879395
+   }
+  },
+  "v/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.081079483032227,
+    "sum": -19.653322219848633,
+    "max": -20.498414993286133,
+    "min": -20.759735107421875
+   }
+  },
+  "v/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -24.81283187866211,
+    "half": -23.342491149902344,
+    "succ": -26.65049934387207,
+    "pred": -28.485851287841797
+   }
+  },
+  "v/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.722448348999023,
+    "sub": -17.712106704711914,
+    "mul": -22.276155471801758
+   }
+  },
+  "w/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.072505950927734,
+    "sum": -19.728065490722656,
+    "max": -20.466060638427734,
+    "min": -20.997264862060547
+   }
+  },
+  "w/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -26.82990074157715,
+    "half": -24.9771785736084,
+    "succ": -28.55980682373047,
+    "pred": -30.283048629760742
+   }
+  },
+  "w/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -21.912830352783203,
+    "sub": -21.15208625793457,
+    "mul": -23.40626335144043
+   }
+  },
+  "u/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.155855178833008,
+    "sum": -20.519855499267578,
+    "max": -21.016590118408203,
+    "min": -21.529783248901367
+   }
+  },
+  "u/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -25.38178825378418,
+    "half": -24.07570457458496,
+    "succ": -25.907390594482422,
+    "pred": -28.301517486572266
+   }
+  },
+  "u/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.878684997558594,
+    "sub": -19.24650764465332,
+    "mul": -24.12883758544922
+   }
+  },
+  "t/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.300247192382812,
+    "sum": -19.345823287963867,
+    "max": -19.477067947387695,
+    "min": -20.39000129699707
+   }
+  },
+  "t/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -24.8110408782959,
+    "half": -23.15242576599121,
+    "succ": -24.225994110107422,
+    "pred": -26.596097946166992
+   }
+  },
+  "t/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -17.471384048461914,
+    "sub": -17.455636978149414,
+    "mul": -22.025243759155273
+   }
+  },
+  "r/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.02522850036621,
+    "sum": -19.91130256652832,
+    "max": -20.46966552734375,
+    "min": -21.46446990966797
+   }
+  },
+  "r/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -27.377466201782227,
+    "half": -24.21613121032715,
+    "succ": -27.791790008544922,
+    "pred": -28.182037353515625
+   }
+  },
+  "r/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -20.871810913085938,
+    "sub": -20.489234924316406,
+    "mul": -24.55539321899414
+   }
+  },
+  "k/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -17.320051193237305,
+    "sum": -20.731521606445312,
+    "max": -20.65738868713379,
+    "min": -21.552433013916016
+   }
+  },
+  "k/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -27.678653717041016,
+    "half": -23.280628204345703,
+    "succ": -27.186439514160156,
+    "pred": -28.36568832397461
+   }
+  },
+  "k/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "add",
+   "scores": {
+    "add": -21.180240631103516,
+    "sub": -21.42521858215332,
+    "mul": -24.177993774414062
+   }
+  }
+ },
+ "olmo2-7b-it": {
+  "count": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "max",
+   "pass": false,
+   "scores": {
+    "len": -26.53352928161621,
+    "sum": -25.623109817504883,
+    "max": -21.445703506469727,
+    "min": -24.80931282043457
+   }
+  },
+  "n_items": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "max",
+   "pass": false,
+   "scores": {
+    "len": -19.224010467529297,
+    "sum": -18.857189178466797,
+    "max": -14.932174682617188,
+    "min": -18.084951400756836
+   }
+  },
+  "length": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "max",
+   "pass": false,
+   "scores": {
+    "len": -20.134700775146484,
+    "sum": -21.18056297302246,
+    "max": -15.892406463623047,
+    "min": -19.556804656982422
+   }
+  },
+  "total": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "max",
+   "pass": false,
+   "scores": {
+    "len": -25.802339553833008,
+    "sum": -22.462257385253906,
+    "max": -22.24459457397461,
+    "min": -27.639503479003906
+   }
+  },
+  "sum_all": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -22.023887634277344,
+    "sum": -20.051542282104492,
+    "max": -22.308910369873047,
+    "min": -26.37604331970215
+   }
+  },
+  "acc": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -23.738529205322266,
+    "sum": -21.140100479125977,
+    "max": -22.600114822387695,
+    "min": -27.241539001464844
+   }
+  },
+  "largest": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -21.97554588317871,
+    "sum": -19.60049057006836,
+    "max": -18.59249496459961,
+    "min": -20.711589813232422
+   }
+  },
+  "max_val": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -19.82530403137207,
+    "sum": -16.320850372314453,
+    "max": -14.996861457824707,
+    "min": -19.959230422973633
+   }
+  },
+  "peak": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": false,
+   "scores": {
+    "len": -21.648807525634766,
+    "sum": -18.431198120117188,
+    "max": -18.737958908081055,
+    "min": -21.735063552856445
+   }
+  },
+  "smallest": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "max",
+   "pass": false,
+   "scores": {
+    "len": -18.446130752563477,
+    "sum": -17.203044891357422,
+    "max": -14.486315727233887,
+    "min": -17.79891586303711
+   }
+  },
+  "min_val": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -17.290435791015625,
+    "sum": -15.44906997680664,
+    "max": -21.355573654174805,
+    "min": -15.30926513671875
+   }
+  },
+  "low": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "max",
+   "pass": false,
+   "scores": {
+    "len": -19.996826171875,
+    "sum": -19.772720336914062,
+    "max": -15.79865837097168,
+    "min": -19.32400131225586
+   }
+  },
+  "double": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -16.57221221923828,
+    "half": -28.165821075439453,
+    "succ": -35.656883239746094,
+    "pred": -34.39408493041992
+   }
+  },
+  "twice": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -16.636220932006836,
+    "half": -28.44869041442871,
+    "succ": -38.79304504394531,
+    "pred": -38.521484375
+   }
+  },
+  "half": {
+   "family": "half",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": true,
+   "scores": {
+    "double": -29.89299774169922,
+    "half": -11.261459350585938,
+    "succ": -22.147974014282227,
+    "pred": -24.24857521057129
+   }
+  },
+  "succ": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -19.61933708190918,
+    "half": -18.759963989257812,
+    "succ": -15.788037300109863,
+    "pred": -22.466400146484375
+   }
+  },
+  "next_val": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -18.403785705566406,
+    "half": -22.224449157714844,
+    "succ": -14.727709770202637,
+    "pred": -20.72005844116211
+   }
+  },
+  "pred": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "pred",
+   "pass": true,
+   "scores": {
+    "double": -25.819135665893555,
+    "half": -17.14315414428711,
+    "succ": -19.699695587158203,
+    "pred": -14.756256103515625
+   }
+  },
+  "prev_val": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": false,
+   "scores": {
+    "double": -30.528564453125,
+    "half": -22.736522674560547,
+    "succ": -24.918611526489258,
+    "pred": -26.768468856811523
+   }
+  },
+  "combined": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -9.20236873626709,
+    "sub": -10.701104164123535,
+    "mul": -11.29190731048584
+   }
+  },
+  "both": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -14.152756690979004,
+    "sub": -12.089516639709473,
+    "mul": -15.593165397644043
+   }
+  },
+  "diff": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -18.425701141357422,
+    "sub": -9.407395362854004,
+    "mul": -19.792512893676758
+   }
+  },
+  "gap": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -20.499147415161133,
+    "sub": -10.268087387084961,
+    "mul": -23.031911849975586
+   }
+  },
+  "product": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -31.28789710998535,
+    "sub": -31.204648971557617,
+    "mul": -18.96150016784668
+   }
+  },
+  "scaled": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -14.364343643188477,
+    "sub": -11.042462348937988,
+    "mul": -11.384879112243652
+   }
+  },
+  "v/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -23.46369171142578,
+    "sum": -19.238792419433594,
+    "max": -19.848819732666016,
+    "min": -23.105405807495117
+   }
+  },
+  "v/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -23.96439552307129,
+    "half": -28.029890060424805,
+    "succ": -25.409122467041016,
+    "pred": -28.607892990112305
+   }
+  },
+  "v/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -15.588916778564453,
+    "sub": -13.229881286621094,
+    "mul": -16.04352378845215
+   }
+  },
+  "w/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "max",
+   "scores": {
+    "len": -20.726696014404297,
+    "sum": -17.69091796875,
+    "max": -16.417381286621094,
+    "min": -18.977807998657227
+   }
+  },
+  "w/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -21.354644775390625,
+    "half": -27.422321319580078,
+    "succ": -23.774703979492188,
+    "pred": -29.22091293334961
+   }
+  },
+  "w/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "mul",
+   "scores": {
+    "add": -22.49837875366211,
+    "sub": -20.46317481994629,
+    "mul": -19.514070510864258
+   }
+  },
+  "u/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -23.375629425048828,
+    "sum": -19.094594955444336,
+    "max": -20.089290618896484,
+    "min": -23.44646644592285
+   }
+  },
+  "u/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -23.00796127319336,
+    "half": -22.772415161132812,
+    "succ": -23.233633041381836,
+    "pred": -26.908536911010742
+   }
+  },
+  "u/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "add",
+   "scores": {
+    "add": -16.289352416992188,
+    "sub": -16.380767822265625,
+    "mul": -20.643678665161133
+   }
+  },
+  "t/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "max",
+   "scores": {
+    "len": -25.736726760864258,
+    "sum": -22.1578369140625,
+    "max": -22.052671432495117,
+    "min": -24.906856536865234
+   }
+  },
+  "t/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -23.93854522705078,
+    "half": -24.04888153076172,
+    "succ": -23.091705322265625,
+    "pred": -26.75882911682129
+   }
+  },
+  "t/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -16.186708450317383,
+    "sub": -15.153850555419922,
+    "mul": -18.96741485595703
+   }
+  },
+  "r/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -23.658523559570312,
+    "sum": -19.136371612548828,
+    "max": -19.832679748535156,
+    "min": -22.154170989990234
+   }
+  },
+  "r/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -24.131925582885742,
+    "half": -24.354209899902344,
+    "succ": -24.913055419921875,
+    "pred": -27.256107330322266
+   }
+  },
+  "r/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -15.284151077270508,
+    "sub": -12.574530601501465,
+    "mul": -16.218948364257812
+   }
+  },
+  "k/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "max",
+   "scores": {
+    "len": -22.071470260620117,
+    "sum": -20.711563110351562,
+    "max": -20.445764541625977,
+    "min": -23.249649047851562
+   }
+  },
+  "k/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -27.080360412597656,
+    "half": -19.838056564331055,
+    "succ": -24.494182586669922,
+    "pred": -27.59384536743164
+   }
+  },
+  "k/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -24.184377670288086,
+    "sub": -22.099699020385742,
+    "mul": -26.54542350769043
+   }
+  }
+ },
+ "codellama-7b-it": {
+  "count": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -12.619028091430664,
+    "sum": -14.83674430847168,
+    "max": -16.0367431640625,
+    "min": -19.53826904296875
+   }
+  },
+  "n_items": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -6.397018909454346,
+    "sum": -9.882719039916992,
+    "max": -13.7904691696167,
+    "min": -16.547975540161133
+   }
+  },
+  "length": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -5.732083797454834,
+    "sum": -11.879243850708008,
+    "max": -13.90047550201416,
+    "min": -17.40257453918457
+   }
+  },
+  "total": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -14.490740776062012,
+    "sum": -12.205406188964844,
+    "max": -15.473865509033203,
+    "min": -17.473756790161133
+   }
+  },
+  "sum_all": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -14.257842063903809,
+    "sum": -10.55204963684082,
+    "max": -15.746779441833496,
+    "min": -17.955018997192383
+   }
+  },
+  "acc": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -15.391326904296875,
+    "sum": -15.227724075317383,
+    "max": -16.25164794921875,
+    "min": -17.551620483398438
+   }
+  },
+  "largest": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -11.847001075744629,
+    "sum": -14.43590259552002,
+    "max": -7.990833282470703,
+    "min": -10.827834129333496
+   }
+  },
+  "max_val": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -11.409317970275879,
+    "sum": -14.060186386108398,
+    "max": -7.9711174964904785,
+    "min": -10.850606918334961
+   }
+  },
+  "peak": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "max",
+   "pass": true,
+   "scores": {
+    "len": -11.10809326171875,
+    "sum": -11.874940872192383,
+    "max": -7.752184867858887,
+    "min": -10.902427673339844
+   }
+  },
+  "smallest": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -9.798369407653809,
+    "sum": -12.95418643951416,
+    "max": -10.276175498962402,
+    "min": -7.0027756690979
+   }
+  },
+  "min_val": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -9.657988548278809,
+    "sum": -11.51046371459961,
+    "max": -11.200249671936035,
+    "min": -7.3382954597473145
+   }
+  },
+  "low": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "min",
+   "pass": true,
+   "scores": {
+    "len": -11.440147399902344,
+    "sum": -14.969575881958008,
+    "max": -11.880334854125977,
+    "min": -9.484241485595703
+   }
+  },
+  "double": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -6.491846561431885,
+    "half": -12.001522064208984,
+    "succ": -12.649109840393066,
+    "pred": -14.00916862487793
+   }
+  },
+  "twice": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -8.405792236328125,
+    "half": -13.062527656555176,
+    "succ": -14.679876327514648,
+    "pred": -15.345157623291016
+   }
+  },
+  "half": {
+   "family": "half",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": true,
+   "scores": {
+    "double": -11.040122032165527,
+    "half": -6.384921073913574,
+    "succ": -11.915783882141113,
+    "pred": -14.056917190551758
+   }
+  },
+  "succ": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -11.260601043701172,
+    "half": -12.796055793762207,
+    "succ": -8.303922653198242,
+    "pred": -12.215812683105469
+   }
+  },
+  "next_val": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -9.893404960632324,
+    "half": -11.042522430419922,
+    "succ": -8.77056884765625,
+    "pred": -11.350295066833496
+   }
+  },
+  "pred": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": false,
+   "scores": {
+    "double": -11.353620529174805,
+    "half": -12.120089530944824,
+    "succ": -10.594265937805176,
+    "pred": -10.90604019165039
+   }
+  },
+  "prev_val": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": false,
+   "scores": {
+    "double": -14.48961353302002,
+    "half": -14.558236122131348,
+    "succ": -12.748708724975586,
+    "pred": -13.296134948730469
+   }
+  },
+  "combined": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -4.368002891540527,
+    "sub": -5.8283514976501465,
+    "mul": -5.523902416229248
+   }
+  },
+  "both": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -5.002031326293945,
+    "sub": -6.09274959564209,
+    "mul": -6.0820746421813965
+   }
+  },
+  "diff": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -8.558914184570312,
+    "sub": -4.590433120727539,
+    "mul": -9.820966720581055
+   }
+  },
+  "gap": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -9.128342628479004,
+    "sub": -5.501572608947754,
+    "mul": -10.954593658447266
+   }
+  },
+  "product": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -11.802377700805664,
+    "sub": -10.567061424255371,
+    "mul": -9.144546508789062
+   }
+  },
+  "scaled": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -7.075616836547852,
+    "sub": -6.115828037261963,
+    "mul": -6.599321365356445
+   }
+  },
+  "v/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -13.056451797485352,
+    "sum": -11.388057708740234,
+    "max": -13.307602882385254,
+    "min": -14.179728507995605
+   }
+  },
+  "v/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -11.810723304748535,
+    "half": -12.678049087524414,
+    "succ": -11.143135070800781,
+    "pred": -12.494070053100586
+   }
+  },
+  "v/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -7.9601616859436035,
+    "sub": -7.258153915405273,
+    "mul": -8.667137145996094
+   }
+  },
+  "w/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -10.072903633117676,
+    "sum": -10.291360855102539,
+    "max": -11.255470275878906,
+    "min": -13.607521057128906
+   }
+  },
+  "w/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -11.473360061645508,
+    "half": -13.154195785522461,
+    "succ": -11.162263870239258,
+    "pred": -13.023852348327637
+   }
+  },
+  "w/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -9.370352745056152,
+    "sub": -7.832608222961426,
+    "mul": -9.94338607788086
+   }
+  },
+  "u/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -12.25256633758545,
+    "sum": -10.12355899810791,
+    "max": -12.04073429107666,
+    "min": -12.842180252075195
+   }
+  },
+  "u/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -11.700214385986328,
+    "half": -11.450896263122559,
+    "succ": -10.79420280456543,
+    "pred": -12.53825855255127
+   }
+  },
+  "u/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -8.770561218261719,
+    "sub": -7.716487884521484,
+    "mul": -9.886113166809082
+   }
+  },
+  "t/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -10.967547416687012,
+    "sum": -9.556476593017578,
+    "max": -12.1716890335083,
+    "min": -12.822269439697266
+   }
+  },
+  "t/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -12.284149169921875,
+    "half": -12.651701927185059,
+    "succ": -11.653986930847168,
+    "pred": -13.173479080200195
+   }
+  },
+  "t/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -8.599688529968262,
+    "sub": -7.587818145751953,
+    "mul": -9.480338096618652
+   }
+  },
+  "r/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "sum",
+   "scores": {
+    "len": -12.011548042297363,
+    "sum": -11.25998306274414,
+    "max": -12.61552906036377,
+    "min": -13.741196632385254
+   }
+  },
+  "r/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -11.668862342834473,
+    "half": -12.925373077392578,
+    "succ": -11.429346084594727,
+    "pred": -13.130298614501953
+   }
+  },
+  "r/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -7.102949619293213,
+    "sub": -6.55662727355957,
+    "mul": -7.740835666656494
+   }
+  },
+  "k/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -9.787287712097168,
+    "sum": -11.212115287780762,
+    "max": -11.530350685119629,
+    "min": -13.123716354370117
+   }
+  },
+  "k/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "succ",
+   "scores": {
+    "double": -12.46656608581543,
+    "half": -12.508468627929688,
+    "succ": -12.137643814086914,
+    "pred": -13.65434741973877
+   }
+  },
+  "k/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -9.906899452209473,
+    "sub": -8.68872356414795,
+    "mul": -10.950825691223145
+   }
+  }
+ },
+ "llama32-3b-it": {
+  "count": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -21.85542869567871,
+    "sum": -26.27429962158203,
+    "max": -22.70986557006836,
+    "min": -24.983572006225586
+   }
+  },
+  "n_items": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -17.03590202331543,
+    "sum": -25.1215877532959,
+    "max": -21.589487075805664,
+    "min": -24.760469436645508
+   }
+  },
+  "length": {
+   "family": "len",
+   "kind": "list",
+   "argmax": "len",
+   "pass": true,
+   "scores": {
+    "len": -17.159435272216797,
+    "sum": -25.101253509521484,
+    "max": -23.73116111755371,
+    "min": -26.172122955322266
+   }
+  },
+  "total": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -20.523923873901367,
+    "sum": -20.361209869384766,
+    "max": -20.78215980529785,
+    "min": -22.912796020507812
+   }
+  },
+  "sum_all": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -21.181316375732422,
+    "sum": -19.985990524291992,
+    "max": -21.551631927490234,
+    "min": -24.25933265686035
+   }
+  },
+  "acc": {
+   "family": "sum",
+   "kind": "list",
+   "argmax": "sum",
+   "pass": true,
+   "scores": {
+    "len": -21.31157875061035,
+    "sum": -19.918882369995117,
+    "max": -23.182884216308594,
+    "min": -24.029510498046875
+   }
+  },
+  "largest": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -19.000473022460938,
+    "sum": -20.485645294189453,
+    "max": -20.182931900024414,
+    "min": -21.83946990966797
+   }
+  },
+  "max_val": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -19.789400100708008,
+    "sum": -21.268253326416016,
+    "max": -20.3684139251709,
+    "min": -25.33333396911621
+   }
+  },
+  "peak": {
+   "family": "max",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -16.80931282043457,
+    "sum": -19.830631256103516,
+    "max": -19.932498931884766,
+    "min": -21.251720428466797
+   }
+  },
+  "smallest": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -17.518043518066406,
+    "sum": -20.540225982666016,
+    "max": -20.09624481201172,
+    "min": -20.17312240600586
+   }
+  },
+  "min_val": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -18.15289878845215,
+    "sum": -19.980077743530273,
+    "max": -23.440155029296875,
+    "min": -19.137937545776367
+   }
+  },
+  "low": {
+   "family": "min",
+   "kind": "list",
+   "argmax": "len",
+   "pass": false,
+   "scores": {
+    "len": -16.83199119567871,
+    "sum": -20.206499099731445,
+    "max": -21.242216110229492,
+    "min": -20.19464683532715
+   }
+  },
+  "double": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -15.868874549865723,
+    "half": -21.49484634399414,
+    "succ": -23.36391830444336,
+    "pred": -24.91048812866211
+   }
+  },
+  "twice": {
+   "family": "double",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": true,
+   "scores": {
+    "double": -15.108421325683594,
+    "half": -19.88604736328125,
+    "succ": -21.681060791015625,
+    "pred": -22.78402328491211
+   }
+  },
+  "half": {
+   "family": "half",
+   "kind": "unary",
+   "argmax": "half",
+   "pass": true,
+   "scores": {
+    "double": -20.60793113708496,
+    "half": -15.512711524963379,
+    "succ": -21.434309005737305,
+    "pred": -23.94601058959961
+   }
+  },
+  "succ": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -21.587114334106445,
+    "half": -22.22702980041504,
+    "succ": -18.889179229736328,
+    "pred": -21.84036636352539
+   }
+  },
+  "next_val": {
+   "family": "succ",
+   "kind": "unary",
+   "argmax": "succ",
+   "pass": true,
+   "scores": {
+    "double": -19.606426239013672,
+    "half": -20.04224967956543,
+    "succ": -18.584461212158203,
+    "pred": -21.38172721862793
+   }
+  },
+  "pred": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "pred",
+   "pass": true,
+   "scores": {
+    "double": -21.681318283081055,
+    "half": -20.75490379333496,
+    "succ": -20.962684631347656,
+    "pred": -20.537363052368164
+   }
+  },
+  "prev_val": {
+   "family": "pred",
+   "kind": "unary",
+   "argmax": "double",
+   "pass": false,
+   "scores": {
+    "double": -23.958477020263672,
+    "half": -24.93783950805664,
+    "succ": -24.140193939208984,
+    "pred": -25.28960418701172
+   }
+  },
+  "combined": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "add",
+   "pass": true,
+   "scores": {
+    "add": -14.171894073486328,
+    "sub": -18.509206771850586,
+    "mul": -16.229938507080078
+   }
+  },
+  "both": {
+   "family": "add",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": false,
+   "scores": {
+    "add": -17.54559898376465,
+    "sub": -17.472942352294922,
+    "mul": -17.99724578857422
+   }
+  },
+  "diff": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -18.931901931762695,
+    "sub": -13.943046569824219,
+    "mul": -18.640262603759766
+   }
+  },
+  "gap": {
+   "family": "sub",
+   "kind": "binary",
+   "argmax": "sub",
+   "pass": true,
+   "scores": {
+    "add": -20.30511474609375,
+    "sub": -14.755070686340332,
+    "mul": -21.36249542236328
+   }
+  },
+  "product": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -23.15195655822754,
+    "sub": -24.127124786376953,
+    "mul": -15.999190330505371
+   }
+  },
+  "scaled": {
+   "family": "mul",
+   "kind": "binary",
+   "argmax": "mul",
+   "pass": true,
+   "scores": {
+    "add": -20.069849014282227,
+    "sub": -18.966405868530273,
+    "mul": -17.641427993774414
+   }
+  },
+  "v/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.037689208984375,
+    "sum": -18.962907791137695,
+    "max": -20.445714950561523,
+    "min": -22.810466766357422
+   }
+  },
+  "v/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -20.62044334411621,
+    "half": -22.52709197998047,
+    "succ": -21.505367279052734,
+    "pred": -22.971378326416016
+   }
+  },
+  "v/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -18.350072860717773,
+    "sub": -17.61315155029297,
+    "mul": -17.943572998046875
+   }
+  },
+  "w/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -16.7165584564209,
+    "sum": -19.88237762451172,
+    "max": -20.53183364868164,
+    "min": -23.064977645874023
+   }
+  },
+  "w/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -21.420547485351562,
+    "half": -21.785327911376953,
+    "succ": -22.136058807373047,
+    "pred": -23.741323471069336
+   }
+  },
+  "w/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.558612823486328,
+    "sub": -18.7941837310791,
+    "mul": -20.095016479492188
+   }
+  },
+  "u/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.378026962280273,
+    "sum": -19.457590103149414,
+    "max": -22.219402313232422,
+    "min": -24.062257766723633
+   }
+  },
+  "u/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -22.47372055053711,
+    "half": -22.019506454467773,
+    "succ": -22.454925537109375,
+    "pred": -24.05785369873047
+   }
+  },
+  "u/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.147315979003906,
+    "sub": -18.345916748046875,
+    "mul": -20.296600341796875
+   }
+  },
+  "t/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -17.75763702392578,
+    "sum": -19.17222785949707,
+    "max": -20.1413516998291,
+    "min": -22.842605590820312
+   }
+  },
+  "t/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -21.27995491027832,
+    "half": -20.7835636138916,
+    "succ": -21.687740325927734,
+    "pred": -23.04985237121582
+   }
+  },
+  "t/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -18.46880340576172,
+    "sub": -18.028669357299805,
+    "mul": -19.189834594726562
+   }
+  },
+  "r/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -18.082380294799805,
+    "sum": -19.951810836791992,
+    "max": -20.6297607421875,
+    "min": -22.622238159179688
+   }
+  },
+  "r/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "double",
+   "scores": {
+    "double": -20.381465911865234,
+    "half": -20.867633819580078,
+    "succ": -21.566606521606445,
+    "pred": -22.83472442626953
+   }
+  },
+  "r/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -18.021406173706055,
+    "sub": -17.104398727416992,
+    "mul": -17.84095573425293
+   }
+  },
+  "k/list": {
+   "family": null,
+   "kind": "list",
+   "argmax": "len",
+   "scores": {
+    "len": -16.05354118347168,
+    "sum": -22.384401321411133,
+    "max": -21.611614227294922,
+    "min": -23.31387710571289
+   }
+  },
+  "k/unary": {
+   "family": null,
+   "kind": "unary",
+   "argmax": "half",
+   "scores": {
+    "double": -22.424774169921875,
+    "half": -19.76559066772461,
+    "succ": -21.663864135742188,
+    "pred": -24.090864181518555
+   }
+  },
+  "k/binary": {
+   "family": null,
+   "kind": "binary",
+   "argmax": "sub",
+   "scores": {
+    "add": -19.999675750732422,
+    "sub": -19.407880783081055,
+    "mul": -20.935914993286133
+   }
+  }
+ }
+}

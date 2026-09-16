@@ -160,3 +160,30 @@ Prose chains: 0.0–0.7 everywhere. Direct: P1 holds panel-wide (+0.9 to +6.6).
 Still needed: the lure-table gate v2 (queued) to confirm sum-family names carry the strongest
 prior; per-family reporting in the sweep; the mechanism section of PLAN.md must be rewritten
 around this one cell.
+
+## 2026-09-15 (night) — the lure-table gate, and a bug in E10
+
+**E2b gate (log-prob scoring, 7 models).** Only 12 of 25 names pass the pre-registered 80%
+agreement bar. What passes: the arithmetic families — `double`/`twice`, `half`, `succ`, `diff`,
+`gap`, `product`, and `count`/`n_items`/`length` (len, 6 of 7 models). What fails: **every
+min/max name** (`smallest` 0.29, `low` 0.43, `peak` 0.43, `largest`/`max_val` 0.71), the
+predecessor names (`prev_val` 0.14, `pred` 0.43), `scaled` (0.29, models read it as subtraction),
+and — importantly — **the sum family** (`total`, `sum_all`, `acc` all 0.71, failed by Gemma-3-4B
+and OLMo-2-1B, which read them as `len`).
+
+This matters for the headline. The effect lives in the cell "computed as `len(xs)`, named like a
+sum", and the gate says models do NOT uniformly read `total`/`sum_all`/`acc` as a sum; two of
+seven read them as a length. Under the pre-registered rule those three names are dropped from
+analysis, which would delete the cell. Two readings, to settle before the paper claims anything:
+(a) the gate's context (`def f(xs):\n    total = `) is not the context the effect occurs in, so
+the gate is mis-specified; (b) the effect is driven by the models for which the names DO evoke a
+sum, and the gate correctly identifies where it should and should not appear. Test: recompute the
+written-lure rate per model, restricted to sum-family names, and check it is near zero exactly for
+Gemma-3-4B and OLMo-2-1B. If it is, (b) holds and the gate supports the finding rather than
+killing it.
+
+**E10 bug.** The first run produced only `neutral` and `neutral_alt` groups. The selector kept
+sets whose instances had `target in (None, "v1")`, which every set satisfies through its neutral
+twin, and then filtered instances to the same predicate, dropping each set's misleading rows.
+Fixed to select sets by the role the misleading name sits on, with a guard that raises if no
+misleading group is selected. Output deleted and re-enqueued; no analysis had been run on it.
