@@ -198,3 +198,35 @@ failed to come out null. Recorded as a design error rather than a finding.
 **E10b replaces it:** randomise the trace FORMAT, not a prose instruction. `trace` demos write
 `count = 3`; `trace_expr` demos write `count = len(xs) = 3`. Same problems, seeds and models.
 Prediction fixed in PREREGISTRATION.md before the runs. Enqueued.
+
+## 2026-09-16 — E10b: the contamination is caused by the trace format, and removed by it
+
+Pre-registered before the runs. `trace` demonstrations write `count = 3`; `trace_expr`
+demonstrations write `count = len(xs) = 3`. Nothing else differs: same problems, same three
+demonstration seeds, same models, level 5. Paired over instances, bootstrap over matched sets.
+
+| model | wrote the lure, `trace` | `trace_expr` | paired drop [95% CI] |
+|---|---|---|---|
+| OLMo-2-7B | 58.8% | 3.6% | **+55.2 [49.9, 60.2]** |
+| Llama-3.2-3B | 43.5% | 0.4% | **+43.2 [38.2, 47.7]** |
+| Llama-3.1-8B | 12.4% | 0.0% | **+12.4 [8.8, 16.0]** |
+
+All three sign-consistent across seeds, all intervals excluding zero: the prediction holds.
+Accuracy in the affected cell rises with it, 37.1% → 92.6% (OLMo-2-7B) and 51.0% → 99.4%
+(Llama-3.2-3B).
+
+**The control that makes this a mechanism rather than a prompt trick.** `trace_expr` is not a
+general accuracy boost. On neutral problems it adds 0.3–2.8 points. On every (operation, name)
+pairing OTHER than the affected cell the written-lure rate is already 0.0–0.8% and stays there,
+with accuracy moving 92.6% → 99.3%. The 55-point drop is specific to the one cell.
+
+**So the claim is now causal and narrow.** When a demonstration writes only `name = value`, a
+model reading `acc = len(xs)` can produce the value the NAME implies without ever committing to
+the right-hand side; making the demonstration write `name = expression = value` removes that,
+because the expression has to be stated before the value. The identifier wins only where the
+format lets the model skip the code. This replaces the earlier "writing the value protects"
+account, which the arithmetic paper refuted, with something the arithmetic task could not have
+shown: there, every chain step restates the equation already.
+
+Remaining for a paper: probes/patching on the cell (E5/E6, now narrow), and CRUXEval renamed (E8)
+to see whether it survives outside synthetic code.
