@@ -66,6 +66,14 @@ toward len; which operation it overrides splits by family (general models: `len`
 `max`). Sum is not the default wrong value on neutral programs (max and len±1 are), so the name
 is the cause. Max/min names are untestable on list variables under R2. See results/NOTES.md.
 
+## 1e. Probes (2026-09-16)
+
+At the decision token the code's value is linearly decodable (85–100%) and the name's is not
+(≤2% at any layer), in all three models, yet the sum is written 12–59% of the time. Readout
+failure, not representation failure — the opposite of the arithmetic exception. P5 as written
+("lure decodable where the effect is") is refuted; the paper's mechanism section is now about
+the output head, and patching (E6) asks whether the name's tokens are the cause.
+
 ## 2. Predictions, fixed before any data exist
 
 δ = 2 points, TOST, as in paper 1. "Lure" = the answer the misleading name implies.
