@@ -74,6 +74,14 @@ failure, not representation failure — the opposite of the arithmetic exception
 ("lure decodable where the effect is") is refuted; the paper's mechanism section is now about
 the output head, and patching (E6) asks whether the name's tokens are the cause.
 
+## 1f. Patching and CRUXEval (2026-09-16) — experiments complete
+
+Name tokens are the origin (L0 patch removes 97–100%, decaying to 0 by L16–18); the influence
+reaches the decision token mid-network (patch there removes 97–100% from L9–15 on); both at
+~0 damage. Renamed CRUXEval (43 functions, direct + prose): null within noise; the trace format
+has no natural-code analogue, so the paper's claim is scoped to that format. No further GPU
+experiments planned.
+
 ## 2. Predictions, fixed before any data exist
 
 δ = 2 points, TOST, as in paper 1. "Lure" = the answer the misleading name implies.

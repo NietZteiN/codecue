@@ -372,3 +372,33 @@ because writing the expression forces the value into the output before the name 
 Limitation to state: `sum_all` (two tokens) could not be patched at the name in a token-aligned
 way, and Llama-3.1-8B's lure writes are all on that name; its name-site result is therefore
 missing, not null.
+
+## 2026-09-16 — E8, renamed CRUXEval: a null, and a bounded one
+
+48 CRUXEval functions assign a variable from `len(...)`; 43 use it downstream. Each rendered
+original / neutral (`v`) / misleading (`total`), AST-renamed, execution-verified. Direct and prose
+regimes, seven models. Paired misleading-minus-neutral accuracy on the 43 used-downstream
+functions: every model's interval includes zero (e.g. Llama-3.1-8B direct +7.0 [0.0, +16.3];
+OLMo-2-7B prose −4.7 [−16.3, +7.0]). The reasoning states the SUM for the length variable in
+0–6% of the 16 summable cases under either name.
+
+**Why this is consistent with the synthetic result rather than against it.** The contamination
+lives in the terse few-shot TRACE format (`v = 3`). Prose reasoning never showed it on synthetic
+code either (0.0–0.7%), and the direct regime's effect there was answer-level and small. CRUXEval
+has no trace-format analogue for arbitrary code with loops and strings, so the regime in which
+the effect occurs was not testable here. What E8 shows is that in the two regimes people
+actually use on real code, renaming a length variable to a sum-like name does not move accuracy
+beyond noise on this subset.
+
+**Power.** n = 43, baseline accuracy 8–54%, CI half-width ≈ 12–16 points. A 5-point effect
+would not be detectable. So: no evidence of an effect on natural code in these regimes, and no
+power to rule out a small one. The paper states it that way and does not claim generality to
+real code.
+
+**Scope of the paper, final.** The claim is about the terse worked-example trace on synthetic
+programs: a sum-family identifier makes the model write the sum for a variable the code computes
+otherwise, the code's value is represented but not read out, the name's tokens are the causal
+origin, and showing the expression in the demonstration removes it. External validity beyond
+that format is an open question the paper names, not a result it has.
+
+All GPU experiments for this paper are complete as of this entry.
