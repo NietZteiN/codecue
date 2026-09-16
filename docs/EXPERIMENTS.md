@@ -11,7 +11,7 @@ Status legend: planned · blocked · running · done. Numbers go in results/NOTE
 | E3 | Behaviour, full panel, L3 (then L5), all conditions, direct+trace × 3 demo seeds + prose (codechain dropped) | ~20 GPU-h | L3 queued 2026-09-15 for 7 models |
 | E4 | Prose annotation (`value_written`) and the P3 logit | CPU | planned |
 | E5 | Caches + probes, 3 models, trace regime, the affected cell | ~3 GPU-h | **done 2026-09-16**: code value decodable 85–100% at the decision token, name value ≤2% at any layer, yet the sum is written 12–59% → readout failure |
-| E6 | Patching from the twin at the name's last token and at the decision token, read at the decision token; main + word control + alt-lure control; 3 models, 300 pairs | ~2 GPU-h | **decision-token site done 2026-09-16**: a single-position, single-layer patch from the twin removes 97–100% of lure writes at ~0% damage from L9–L15 on; name site redone (all occurrences, token-aligned) and queued |
+| E6 | Patching from the twin at the name's last token and at the decision token, read at the decision token; main + word control + alt-lure control; 3 models, 300 pairs | ~2 GPU-h | **decision-token site done 2026-09-16**: a single-position, single-layer patch from the twin removes 97–100% of lure writes at ~0% damage from L9–L15 on; name site **done**: replacing the name's tokens at L0 removes 97–100% at ≤2% damage, decaying to 0 by L16–18, the mirror of the decision-token curve |
 | E7 | Code generation task, 300 sets, instruct models | ~10 GPU-h | planned (generator not written) |
 | E8 | Natural code: CRUXEval with one identifier renamed, 3 regimes | ~15 GPU-h | planned (renamer not written) |
 | E9 | Equivalence bounds, seed sweep, self-check | CPU | planned |

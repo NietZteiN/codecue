@@ -342,3 +342,33 @@ occurrence of the name, every token, token-aligned pairs only (`total`, `acc`; `
 skipped and counted). Queued. From the first attempt, single early layers already showed
 partial removal at ~0 damage (L3: 56% Llama-3.1-8B; L6: 40% OLMo-2-7B, 23% Llama-3.2-3B), so
 the name's early representation is at least part of the cause.
+
+## 2026-09-16 — patching, name site (redone): the name's tokens are the origin
+
+Every occurrence of the name (definition, uses, trace prefix), every token, replaced with the
+neutral twin's at one layer; token-aligned pairs only (`total`, `acc`: 181 pairs per model;
+104 `sum_all` pairs skipped). Read at the decision token.
+
+| model | lure before | removed, single layer L0 / L6 / L10 / L12 / L14 / L16 / L18+ | damage | word control |
+|---|---|---|---|---|
+| OLMo-2-7B | 44% | 97 / 95 / 67 / 47 / 34 / 11 / ≤1% | 0–2% | 0.7% |
+| Llama-3.2-3B | 30% | 100 / 93 / 69 / 58 / 15 / 5 / ≤5% | 0–1% | 1.0% |
+| Llama-3.1-8B | 0% | (all of its lure writes are on `sum_all`, which is two tokens — no aligned pairs) | | |
+
+Replacing the name at layer 0 alone removes the effect completely with no damage. Removal
+decays with layer and is gone by L16–L18. The decision-token curve is the mirror image: removal
+there begins at L9–L12 and is complete by L15–L18. The two curves cross where the information
+has moved from the name's tokens into the decision token. That is the causal path:
+
+    name tokens (L0–L12)  →  decision token (L12–L18 onward)  →  output head writes the sum,
+    while the code's value sits in the same decision-token vector, probe-decodable at 85–100%.
+
+Three independent measurements now converge on one account: the value is computed (probe), the
+name's tokens are the origin (name-site patch), the influence arrives at the readout position
+mid-network and is separable from the value there (decision-token patch), and the output head
+reads the name's contribution rather than the value. The format manipulation (E10b) removes it
+because writing the expression forces the value into the output before the name can.
+
+Limitation to state: `sum_all` (two tokens) could not be patched at the name in a token-aligned
+way, and Llama-3.1-8B's lure writes are all on that name; its name-site result is therefore
+missing, not null.
