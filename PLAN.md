@@ -59,6 +59,13 @@ name overriding a *plausibly buggy* line of code rather than about names in gene
 lure-table gate (E2b) should show sum-family names carry the strongest prior. P3/P5 are to be
 tested on this cell first.
 
+## 1d. Refined 2026-09-16
+
+Corrected baseline (twin read on the same role). The effect is always TOWARD sum and never
+toward len; which operation it overrides splits by family (general models: `len`; code models:
+`max`). Sum is not the default wrong value on neutral programs (max and len±1 are), so the name
+is the cause. Max/min names are untestable on list variables under R2. See results/NOTES.md.
+
 ## 2. Predictions, fixed before any data exist
 
 δ = 2 points, TOST, as in paper 1. "Lure" = the answer the misleading name implies.

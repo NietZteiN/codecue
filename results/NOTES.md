@@ -230,3 +230,46 @@ shown: there, every chain step restates the equation already.
 
 Remaining for a paper: probes/patching on the cell (E5/E6, now narrow), and CRUXEval renamed (E8)
 to see whether it survives outside synthetic code.
+
+## 2026-09-16 — baseline bug fixed; the effect is a family split, and sum is NOT a default
+
+**Bug.** `value_written` was stored for one role per row: the target for misleading rows, the
+QUERIED variable for neutral rows. Every written-lure baseline therefore compared a misleading
+row's intermediate against its twin's queried variable. Fixed: rows now carry `values_written`
+per role (runner + `61_reparse.py` backfill), and the sweep reads the twin on the same role.
+Corrected L5 excess on the intermediate, trace regime: OLMo-2-7B +17.2*, Llama-3.2-3B +12.4*,
+CodeLlama-7B +4.4*, Llama-3.1-8B +3.5*, OLMo-2-1B +3.7*, CodeGemma-7B 0.0, Gemma-3-4B 0.0. The
+numbers barely moved because neutral v1 accuracy is 94–100%, so the twin baseline is ~0 either
+way — but the metric was wrong and would not have been for a weaker model.
+
+**Two design facts a reader needs.** (1) Max- and min-family names can never be lures on a
+list-defined variable: `max(xs)` is an element of `xs`, which rule R2 forbids (a lure must not
+be copyable from the prompt). The testable name space is therefore {len, sum}. (2) The full
+matrix, excess over twin, L3+L5 pooled, three seeds:
+
+| model | len→sum | max→sum | min→sum | sum→len | max→len |
+|---|---|---|---|---|---|
+| Llama-3.2-3B | **+35.3** | +0.5 | 0 | 0 | 0 |
+| OLMo-2-7B | **+41.8** | +1.4 | 0 | +3.0 | 0 |
+| Llama-3.1-8B | **+8.0** | +0.4 | 0 | 0 | 0 |
+| CodeLlama-7B | +2.6 | **+9.1** | +1.4 | +1.0 | +0.8 |
+| CodeGemma-7B | +0.1 | **+5.4** | 0 | 0 | 0 |
+| Gemma-3-4B | 0 | 0 | 0 | 0 | 0 |
+| OLMo-2-1B | +2.7 | +3.5 | 0 | +10.8 | +8.1 |
+
+**Reading.** The direction is always toward SUM: a sum-named variable gets traced as the sum;
+a len-named variable is never traced as the length (sum→len ≈ 0 for every model above floor).
+Which code operation the name overrides splits by family: general instruct models override
+`len`, the two code models override `max`. Gemma-3-4B shows nothing (its gate reads sum-names
+as `len`). OLMo-2-1B is at floor (76% neutral accuracy on this variable) and noisy in every
+direction; it should be reported as such, not as evidence.
+
+**Sum is not a default.** On NEUTRAL programs (no misleading name), when the trace gets a
+len-variable wrong it writes `max(xs)` (23–44%) or the length ±1 (41–50%), and `sum(xs)` only
+5–32%. So the sum appears only when the NAME says sum. This rules out "sum is what the model
+computes anyway" and leaves the name as the cause — consistent with E10b, where showing the
+expression removes it.
+
+The paper's claim, restated: a sum-family identifier makes a model trace a list aggregate as the
+sum, overriding `len` in general models and `max` in code models, only under a format that
+lets it write the value without stating the expression.

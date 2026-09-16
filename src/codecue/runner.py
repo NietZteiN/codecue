@@ -54,12 +54,18 @@ def run_group(tok, model, model_key: str, level: int, regime: str, group: str, i
             correct = pred == x.answer
             is_lure = x.lure is not None and pred == x.lure
             role = x.target or x.query
-            wrote = value_written(g, x.names[role]) if base != "direct" else None
+            # per-role written values: the neutral twin has no target, and comparing it on the
+            # QUERIED variable while its sibling is compared on the INTERMEDIATE mis-specified
+            # every written-lure baseline until 2026-09-16
+            values_written = ({r: value_written(g, nm) for r, nm in x.names.items()} if base != "direct"
+                              else {r: None for r in x.names})
+            wrote = values_written[role]
             wrote_true = (wrote == x.values[role]) if wrote is not None else False
             n_correct += correct; n_lure += is_lure; n_parsed += pred is not None; n_wrote += wrote_true
             rows.append({"id": x.id, "set_id": x.set_id, "condition": x.condition, "target": x.target, "query": x.query,
                          "answer": x.answer, "lure": x.lure, "lure_name": x.lure_name, "pred": pred, "correct": bool(correct),
                          "pred_is_lure": bool(is_lure), "value_written": wrote, "wrote_true_value": bool(wrote_true),
+                         "values_written": values_written,
                          "generation": g, "names": x.names, "values": x.values, "level": x.level})
             f.write(json.dumps(rows[-1]) + "\n")
     n = len(rows)

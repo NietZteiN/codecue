@@ -61,7 +61,8 @@ def main() -> int:
                 for name, fn in (("acc_int", lambda r, n: (r["correct"] - n["correct"])),
                                  ("facilitation", None),
                                  ("lure_excess", lambda r, n: (r["pred_is_lure"] - (n["pred"] == r["lure"]))),
-                                 ("wlure_excess", lambda r, n: ((r["value_written"] == r["lure"]) - (n["value_written"] == r["lure"])))):
+                                 ("wlure_excess", lambda r, n: ((r["value_written"] == r["lure"])
+                                                                - (n.get("values_written", {}).get(r["target"]) == r["lure"])))):
                     if name == "wlure_excess" and reg == "direct": continue
                     cond = "congruent" if name == "facilitation" else "incongruent"
                     if name == "facilitation": fn = lambda r, n: (r["correct"] - n["correct"])
