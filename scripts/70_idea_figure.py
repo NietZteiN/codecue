@@ -44,8 +44,8 @@ def main() -> int:
     p, r, q = pick
     name = r["names"]["v1"]
 
-    fig = plt.figure(figsize=(12.6, 4.5))
-    gs = fig.add_gridspec(1, 3, width_ratios=[1.05, 1.25, 0.9], wspace=0.24)
+    fig = plt.figure(figsize=(14.0, 4.2))
+    gs = fig.add_gridspec(1, 3, width_ratios=[1.00, 1.50, 0.92], wspace=0.30)
     axl, axm, axr = (fig.add_subplot(gs[i]) for i in range(3))
     for ax in (axl, axm):
         ax.axis("off")
@@ -64,16 +64,19 @@ def main() -> int:
     axm.set_title("(b)  what the model then writes", loc="left", fontsize=11.5)
     rows = [("worked examples write  “v = 3”", r["generation"].split("\n")[0].strip(), r["pred"], RED),
             ("worked examples write  “v = len(xs) = 3”", q["generation"].split("\n")[0].strip(), q["pred"], GREEN)]
-    y = 0.86
+    import textwrap
+    y = 0.92
     for lab, gen, pred, col in rows:
         axm.text(0, y, lab, fontsize=10, color="0.25", transform=axm.transAxes)
-        axm.text(0, y - 0.11, gen[:64], family="monospace", fontsize=9.6, color=col, transform=axm.transAxes)
+        wrapped = textwrap.wrap(gen, 44) or [gen]
+        for k, line in enumerate(wrapped[:2]):
+            axm.text(0, y - 0.11 - 0.085 * k, line, family="monospace", fontsize=9.3, color=col, transform=axm.transAxes)
         mark = "wrong" if pred != r["answer"] else "correct"
-        axm.text(0, y - 0.21, f"answers {pred}  ({mark})", fontsize=10, color=col, weight="bold", transform=axm.transAxes)
-        y -= 0.42
-    axm.text(0, 0.03, "Same problem, same model, same three worked examples.\n"
-                      "Only the format of those examples differs.", fontsize=9.4, color="0.4",
-             style="italic", transform=axm.transAxes)
+        axm.text(0, y - 0.135 - 0.085 * len(wrapped[:2]), f"answers {pred}  ({mark})", fontsize=10,
+                 color=col, weight="bold", transform=axm.transAxes)
+        y -= 0.46
+    axm.text(0, -0.04, "Same problem, same model, same three worked\nexamples. Only their format differs.",
+             fontsize=9.4, color="0.4", style="italic", transform=axm.transAxes)
 
     # --- (c) the effect across models
     models = [("olmo2-7b-it", "OLMo-2-7B"), ("llama32-3b-it", "Llama-3.2-3B"), ("llama31-8b-it", "Llama-3.1-8B")]
@@ -96,10 +99,10 @@ def main() -> int:
         axr.text(pv + 1.5, i + 0.19, f"{pv:.0f}%", va="center", fontsize=9.5, color=RED)
         axr.text(ev + 1.5, i - 0.19, f"{ev:.0f}%", va="center", fontsize=9.5, color=GREEN)
     axr.set_yticks(y); axr.set_yticklabels([lab for _, lab in models], fontsize=10)
-    axr.invert_yaxis(); axr.set_xlim(0, max(plain) * 1.25)
+    axr.invert_yaxis(); axr.set_xlim(0, max(plain) * 1.30)
     axr.set_xlabel("how often the model writes the value\nthe NAME implies instead of the code's", fontsize=9.6)
     axr.set_title("(c)  across models, 3 example sets", loc="left", fontsize=11.5)
-    axr.legend(frameon=False, fontsize=9.2, loc="lower right")
+    axr.legend(frameon=False, fontsize=9.0, loc="upper center", bbox_to_anchor=(0.5, -0.22), ncol=2)
     axr.grid(axis="x", color="0.92", lw=0.7)
 
     FIG.mkdir(parents=True, exist_ok=True)
