@@ -187,3 +187,14 @@ sets whose instances had `target in (None, "v1")`, which every set satisfies thr
 twin, and then filtered instances to the same predicate, dropping each set's misleading rows.
 Fixed to select sets by the role the misleading name sits on, with a guard that raises if no
 misleading group is selected. Output deleted and re-enqueued; no analysis had been run on it.
+
+**E10 (randomised prose instruction) is a null, and an uninformative one.** Level 5, 500 sets,
+three models, three instructions (`plain` / `state` / `recompute`). Written-lure in the target
+cell: OLMo-2-7B 1.4% → 0.0% / 0.0%; Llama-3.2-3B and Llama-3.1-8B 0.0% throughout. Prose accuracy
+is 87–99%, so there was nothing for the instruction to remove. My pre-registered prediction
+assumed prose carried the effect; it does not, and the experiment as designed could not have
+failed to come out null. Recorded as a design error rather than a finding.
+
+**E10b replaces it:** randomise the trace FORMAT, not a prose instruction. `trace` demos write
+`count = 3`; `trace_expr` demos write `count = len(xs) = 3`. Same problems, seeds and models.
+Prediction fixed in PREREGISTRATION.md before the runs. Enqueued.

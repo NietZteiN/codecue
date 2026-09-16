@@ -29,7 +29,7 @@ def run_group(tok, model, model_key: str, level: int, regime: str, group: str, i
               out_dir: Path, batch_size: int, use_chat: bool = True) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     base, seed = parse_regime(regime)
-    few_shot = base in ("direct", "trace")
+    few_shot = base in ("direct", "trace", "trace_expr")
     demo_insts = demos(level, seed, base) if few_shot else []
     prompts = [build_prompt(x, regime, demo_insts) for x in instances]
     if not few_shot and use_chat:
@@ -54,7 +54,7 @@ def run_group(tok, model, model_key: str, level: int, regime: str, group: str, i
             correct = pred == x.answer
             is_lure = x.lure is not None and pred == x.lure
             role = x.target or x.query
-            wrote = value_written(g, x.names[role]) if base in ("prose", "codechain", "trace") else None
+            wrote = value_written(g, x.names[role]) if base != "direct" else None
             wrote_true = (wrote == x.values[role]) if wrote is not None else False
             n_correct += correct; n_lure += is_lure; n_parsed += pred is not None; n_wrote += wrote_true
             rows.append({"id": x.id, "set_id": x.set_id, "condition": x.condition, "target": x.target, "query": x.query,

@@ -31,6 +31,21 @@ Claim requires the ordering to hold in every model and a cluster bootstrap over 
 zero for the `plain` minus `recompute` difference. A null here means the contamination is not
 under instructional control and the mechanism section says so.
 
+## E10b, fixed 2026-09-15 after E10 came out uninformative
+
+E10 randomised the PROSE instruction, but prose shows no contamination to begin with (written-lure
+0.0–1.4%, accuracy at ceiling), so the null there says nothing. The contamination lives in the
+terse few-shot trace. E10b therefore randomises the TRACE FORMAT instead: `trace` demonstrations
+write `count = 3`, `trace_expr` demonstrations write `count = len(xs) = 3`. Nothing else differs —
+same problems, same three demonstration seeds, same models (OLMo-2-7B, Llama-3.2-3B,
+Llama-3.1-8B), level 5.
+
+Prediction: on the cell where the effect lives (computed as `len(xs)`, named like a sum), the
+written-lure rate under `trace_expr` is lower than under `trace` for all three models, with the
+paired difference's bootstrap interval excluding zero. A null means the contamination is not
+removed by pointing the demonstration at the code, and the mechanism is not "the format lets the
+model skip reading the right-hand side".
+
 ## Secondary contrasts
 
 - Lure excess (lure rate − pseudo-lure rate on the neutral twin) per regime, per level, per

@@ -20,9 +20,9 @@ import re
 
 from .generator import Instance, LEVELS, Program, Stmt, render, sample_sets, trace_steps
 
-REGIMES = ("direct", "trace", "prose", "codechain")
+REGIMES = ("direct", "trace", "trace_expr", "prose", "codechain")
 N_DEMOS = 3
-MAX_NEW = {"direct": 8, "trace": 96, "prose": 400, "codechain": 448}
+MAX_NEW = {"direct": 8, "trace": 96, "trace_expr": 160, "prose": 400, "codechain": 448}
 
 PROSE_INSTRUCTION = ("What does the call return? Think step by step, then finish with a line "
                      "of the form `Answer: <number>`.")
@@ -50,6 +50,12 @@ def demo_block(x: Instance, regime: str) -> str:
     if regime == "trace":
         tr = ", ".join(f"{n} = {v}" for n, v in steps)
         return f"{x.program}\nTrace: {tr}\nAnswer: {x.answer}"
+    if regime == "trace_expr":
+        # same trace, but each step shows the right-hand side it came from: `count = len(xs) = 3`.
+        # The only difference from `trace` is whether the demonstration points at the code.
+        src = {st.lhs: st.source(x.names).split("=", 1)[1].strip() for st in _prog(x).stmts}
+        tr = ", ".join(f"{n} = {src[r]} = {v}" for (n, v), r in zip(steps, _prog(x).roles))
+        return f"{x.program}\nTrace: {tr}\nAnswer: {x.answer}"
     raise ValueError(regime)
 
 
@@ -66,8 +72,8 @@ def demos(level: int, seed: int, regime: str) -> list[Instance]:
 
 def build_prompt(x: Instance, regime: str, demo_insts: list[Instance]) -> str:
     base, _ = parse_regime(regime)
-    if base in ("direct", "trace"):
-        blocks = [demo_block(d, base) for d in demo_insts] + [x.program + ("\nTrace:" if base == "trace" else "\nAnswer:")]
+    if base in ("direct", "trace", "trace_expr"):
+        blocks = [demo_block(d, base) for d in demo_insts] + [x.program + ("\nAnswer:" if base == "direct" else "\nTrace:")]
         return "\n\n".join(blocks)
     if base == "prose":
         return f"{x.program}\n\n{PROSE_INSTRUCTION}\n"
