@@ -46,13 +46,21 @@ def main() -> int:
     a = ap.parse_args()
     import codecue.prompts as P
     xs = read_jsonl(DATA_DIR / f"L{a.level}" / "test_sets.jsonl")
-    keep, groups = set(), defaultdict(list)
+    # select sets by the role their MISLEADING name sits on. Filtering on `target in (None, "v1")`
+    # instead keeps every set, because each set also contains neutral instances whose target is
+    # None, and then drops all of their misleading instances (bug found 2026-09-15: the first run
+    # produced only neutral groups).
+    role = args_role = "v1"
+    keep = set()
     for x in xs:
-        if x.target in (None, "v1") and (len(keep) < a.n_sets or x.set_id in keep):
+        if x.target == role and (len(keep) < a.n_sets or x.set_id in keep):
             keep.add(x.set_id)
+    groups = defaultdict(list)
     for x in xs:
-        if x.set_id in keep and x.target in (None, "v1"):
+        if x.set_id in keep and x.target in (None, role):
             groups[x.condition if x.target is None else f"{x.condition}@{x.target}"].append(x)
+    if not any("@" in g for g in groups):
+        raise RuntimeError(f"no misleading groups selected for role {role}; groups={sorted(groups)}")
     m = model_entry(a.model); tok, model = load_model(m["hf_id"])
     bs = a.batch_size or m.get("batch_size", 16)
     for variant, text in VARIANTS.items():
