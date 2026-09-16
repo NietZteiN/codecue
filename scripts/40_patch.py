@@ -44,6 +44,7 @@ def main() -> int:
     n_layers = len(decoder_layers(model)); sets = layer_sets(n_layers)
     out_dir = OUT_DIR / "runs" / a.model / f"L{a.level}" / "patch"; out_dir.mkdir(parents=True, exist_ok=True)
 
+    import re
     def prep(x):
         p = build_prompt(x, "trace", dem); g = trace_text(x)
         # the decision token is the LAST prompt token once "Trace: name = " has been written by
@@ -51,24 +52,38 @@ def main() -> int:
         prefix = g[: g.index(" = ") + 3] if g.startswith(" " + x.names[a.role] + " = ") else None
         text = p + (prefix or "")
         e = tok(text, return_offsets_mapping=True, add_special_tokens=True)
-        pos = spans_to_tokens([s for s in cache_spans(p, g, x, a.role) if s.key in (f"def@{a.role}",)], e["offset_mapping"])
-        return e["input_ids"], pos[f"def@{a.role}"], len(e["input_ids"]) - 1   # ids, name pos, decision pos
+        # EVERY occurrence of the name inside the instance region (definition, each use, the trace
+        # prefix), every token of each. Patching the definition alone left later uses referring
+        # to an undefined variable and broke the program at layer 0 (2026-09-16).
+        b = p.rfind(x.program); name = x.names[a.role]
+        occ = [(b + m_.start(), b + m_.end()) for m_ in re.finditer(rf"\b{re.escape(name)}\b", text[b:])]
+        name_pos = [i for (cs, ce) in occ for i, (ts, te) in enumerate(e["offset_mapping"]) if ts < ce and te > cs]
+        return e["input_ids"], sorted(set(name_pos)), len(e["input_ids"]) - 1   # ids, name positions, decision pos
 
     for contrast in a.contrasts:
         src_c, dst_c = CONTRASTS[contrast]
         pairs = [(v[src_c], v[dst_c]) for v in by_set.values() if src_c in v and dst_c in v][: a.n_pairs]
         for site in a.sites:
             recs, agg = [], defaultdict(lambda: defaultdict(int))
+            n_skipped = 0
             for src, dst in pairs:
                 s_ids, s_name, s_pre = prep(src); d_ids, d_name, d_pre = prep(dst)
-                s_pos, d_pos = ((s_name, d_name) if site == "name" else (s_pre, d_pre))
-                src_h = hidden_at(model, s_ids, range(n_layers), [s_pos])
+                if site == "name":
+                    # token-aligned only: the name must occupy the same number of tokens in both
+                    # twins at every occurrence (`sum_all` is 2 tokens, no neutral name is; those
+                    # pairs are skipped and counted)
+                    if len(s_name) != len(d_name):
+                        n_skipped += 1; continue
+                    s_pos, d_pos = s_name, d_name
+                else:
+                    s_pos, d_pos = [s_pre], [d_pre]
+                src_h = hidden_at(model, s_ids, range(n_layers), s_pos)
                 base = digit_scores(model, tokd, d_ids, d_pre); b = max(base, key=base.get)
                 true, lure = str(dst.values[a.role]), (str(dst.lure) if dst.lure is not None else None)
                 new_lure = str(src.lure) if (contrast == "ctl_lure" and src.lure is not None) else None
                 rec = {"set_id": dst.set_id, "true": true, "lure": lure, "new_lure": new_lure, "base": b, "patched": {}}
                 for sname, lids in sets:
-                    with patch_hooks(model, lids, [d_pos], {l: src_h[l] for l in lids}):
+                    with patch_hooks(model, lids, d_pos, {l: src_h[l] for l in lids}):
                         sc = digit_scores(model, tokd, d_ids, d_pre)
                     p_ = max(sc, key=sc.get); rec["patched"][sname] = p_
                     A = agg[sname]; A["n"] += 1
@@ -84,7 +99,8 @@ def main() -> int:
                            "damage": (A["damage"] / A["true_before"]) if A["true_before"] else None,
                            "follows_new_lure": (A["follows_new_lure"] / A["n"]) if new_lure else None}
                        for s, A in agg.items()}
-            (out_dir / f"{contrast}_{site}.json").write_text(json.dumps({"contrast": contrast, "site": site, "n_layers": n_layers, "summary": summary, "rows": recs}))
+            (out_dir / f"{contrast}_{site}.json").write_text(json.dumps({"contrast": contrast, "site": site, "n_layers": n_layers,
+                                                                          "n_skipped_unaligned": n_skipped, "summary": summary, "rows": recs}))
             best = max((s for s in summary if s.startswith("L")), key=lambda s: summary[s]["lure_removed"] or 0) if contrast != "ctl_word" else "ALL"
             print(f"{a.model} {contrast}/{site}: n={len(pairs)} base lure {100*summary['ALL']['base_lure_rate']:.0f}% -> ALL-layers {100*summary['ALL']['patched_lure_rate']:.0f}%; "
                   f"best single layer {best}: removed {summary[best]['lure_removed']}, damage {summary['ALL']['damage']}", flush=True)

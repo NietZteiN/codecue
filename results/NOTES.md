@@ -306,3 +306,39 @@ occur in training. But the selectivity number must be stated.
 
 Next: patching (E6). If the value is intact and the name's tokens are the cause, replacing the
 name's activations with the neutral twin's at the decision token should restore the output.
+
+## 2026-09-16 — patching (E6), decision-token site: one position, one layer, restores the output
+
+Source = matched neutral twin, destination = the incongruent instance, read = the digit the
+model would write at `pre@v1`. Three models, ~285 pairs each in the affected cell.
+
+**Decision token (`pre@v1`), main contrast.** Replacing the residual stream at that single
+position with the twin's, at a single layer, removes the lure write almost completely from the
+middle of the network on, with ~0% damage to correct instances:
+
+| model | layers | lure removed by single layer (L0 / L6 / L9 / L12 / L15 / L18+) | ALL layers |
+|---|---|---|---|
+| OLMo-2-7B | 32 | 0 / 4 / 14 / 25 / 84 / 96–97% | 97% removed, 2% damage |
+| Llama-3.2-3B | 28 | 1 / 13 / 49 / 91 / 99 / 99–100% | 100% removed, 0% damage |
+| Llama-3.1-8B | 32 | 0 / 2 / 100 / 100 / 100 / 100% | 100% removed, 0% damage |
+
+So whatever drives the sum write is present in the decision token's residual stream from
+roughly the middle of the network (L9–L15), and it is separable from the code's value: the
+probe reads the code's value at those same layers, and swapping in the twin's vector (which
+also holds the code's value) removes the sum without touching anything else. Two things live
+in one vector; the output head reads the wrong one. This is the readout account, now causal.
+
+**Word control** (`neutral_alt → neutral`, both sites): damage 0.0–1.8%. Swapping one neutral
+name's activation for another changes nothing, at either site.
+
+**Alt-lure control is degenerate in this cell** and is not reported: every sum-family name
+implies the same value, so `incongruent_alt` has the same lure.
+
+**Name site: first attempt invalid, redone.** Patching only the name's DEFINITION token left
+every later use (`ww = total + 3`, `Trace: total =`) unpatched, so at layer 0 (token identity)
+the program referred to an undefined variable — damage 75–80% at L0, ~0 at L6+. Two-token
+`sum_all` was patched at one token (no neutral name is two tokens), removal 0%. Redone: every
+occurrence of the name, every token, token-aligned pairs only (`total`, `acc`; `sum_all` pairs
+skipped and counted). Queued. From the first attempt, single early layers already showed
+partial removal at ~0 damage (L3: 56% Llama-3.1-8B; L6: 40% OLMo-2-7B, 23% Llama-3.2-3B), so
+the name's early representation is at least part of the cause.
