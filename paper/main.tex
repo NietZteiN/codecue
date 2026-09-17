@@ -40,14 +40,13 @@ misleading names on matched twins, and traced line by line by \NUM{n-models} ins
 models with three sets of worked examples. When a variable computed as \texttt{len(xs)} carries
 a sum-like name, general models write the sum at that step \NUM{cell-llama8-excess} to
 \NUM{cell-olmo7-excess} points above the twin's rate, and a code model does the same on
-\texttt{max(xs)}. Linear probes read the code's value from the token at which the model writes
-the step in \NUM{probe-olmo7-code}--\NUM{probe-llama8-code}\% of these instances and the name's
-value in \NUM{probe-olmo7-name}\%; activation patching places the origin at the name's tokens
-and shows the influence arriving at the writing position in the middle of the network, where a
-single-layer replacement removes it. Writing the expression beside the value in the worked
-examples removes the effect. It is several times weaker in a REPL transcript, reduced to a residue at 34B
-parameters, and not detectable on renamed CRUXEval functions. A trace can hold the right value
-and write the wrong one.
+\texttt{max(xs)}. At the token where the model writes that step, linear probes read the code's value in
+\NUM{probe-olmo7-code}--\NUM{probe-llama8-code}\% of these instances and the name's value in
+\NUM{probe-olmo7-name}\%. Activation patching places the origin of the effect at the name's
+tokens and shows it arriving at the writing position in the middle of the network, where
+replacing a single layer removes it. Writing the expression beside the value in the worked
+examples also removes it. The effect is several times weaker in a REPL transcript, reduced to
+a residue at 34B parameters, and not detectable on renamed CRUXEval functions.
 \end{abstract}
 
 \section{Introduction}
@@ -78,17 +77,16 @@ the computation may be corrupted, or a correct computation may be misread at the
 \citet{kudo2026faithful} locate, with probes and patching on arithmetic, the point in a chain of
 thought at which each intermediate value becomes decodable, and \citet{anon2026arith} add a
 cue conflict to that setting and find that a written chain removes the influence of a
-misleading variable name wherever the value is represented. Code traces differ from arithmetic chains in one respect that turns out to be decisive: a trace
-writes a variable's value without restating the expression that produced it.
+misleading variable name wherever the value is represented. Code traces differ from arithmetic chains in one respect: a trace writes a variable's value
+without restating the expression that produced it. We find that this is where the name enters.
 
 \paragraph{This paper.} We place two cues in conflict, as in the Stroop task \cite{stroop1935}
 and the shape--texture experiments on vision models \cite{geirhos2019texture}, inside a
-CRUXEval-style output-prediction task \cite{gu2024cruxeval} on synthetic Python. The lure is a
-program rather than a word: each misleading name comes from a table of (name, operation) pairs,
-and the lure value is obtained by executing the function with the implied operation in place of
-the real one. Matched twins differ in a single identifier, so every number below is an excess over the neutral
-twin. The name's influence turns out to be confined to one kind of step, one kind of name and one
-kind of format, and we locate it: the value is computed and decodable where the model writes the
+CRUXEval-style output-prediction task \cite{gu2024cruxeval} on synthetic Python. Each misleading name comes from a table of (name, operation) pairs, and the lure value is
+obtained by executing the function with the implied operation in place of the real one, so the
+lure is itself a program. Matched twins differ in a single identifier, so every number below is an excess over the neutral
+twin. The name's influence is confined to one kind of step, one kind of name and one kind of format,
+and we locate it: the value is computed and decodable where the model writes the
 step, the name's tokens are the causal origin, and the output head writes the name's value anyway.
 
 \section{Setup}
@@ -177,10 +175,10 @@ points above it for OLMo-2-7B at level 3; no other pairing moves any step
 other, OLMo-2-1B, is at \NUM{cell-olmo1-acc}\% neutral accuracy and moves a few points in every
 direction.
 
-\paragraph{The sum is not a default.} When a neutral trace gets a \texttt{len} step wrong, it
+\paragraph{Errors on neutral traces.} When a neutral trace gets a \texttt{len} step wrong, it
 writes the maximum in \NUM{neuerr-max-lo}--\NUM{neuerr-max-hi}\% of cases and the length
-off by one in \NUM{neuerr-lenpm1-lo}--\NUM{neuerr-lenpm1-hi}\%; it writes the sum in
-\NUM{neuerr-sum-lo}--\NUM{neuerr-sum-hi}\%. The sum appears when the name says sum.
+off by one in \NUM{neuerr-lenpm1-lo}--\NUM{neuerr-lenpm1-hi}\%; it writes the sum in \NUM{neuerr-sum-lo}--\NUM{neuerr-sum-hi}\%. The sum is therefore
+not the model's default error for this step; it appears under a sum-like name.
 
 \begin{table}[t]
 \centering\small
@@ -190,8 +188,8 @@ off by one in \NUM{neuerr-lenpm1-lo}--\NUM{neuerr-lenpm1-hi}\%; it writes the su
 \label{tab:formats}
 \end{table}
 
-\paragraph{The format causes it.} The trace format writes a value without its expression.
-Table~\ref{tab:formats} holds problems, models and example sets fixed and changes the format.
+\paragraph{Format.} Table~\ref{tab:formats} holds problems, models and example sets fixed
+and changes the format of a step.
 Writing \texttt{qq = len(xs) = 3} in the examples lowers the written-lure rate by
 \NUM{expr-olmo7-drop}, \NUM{expr-llama3-drop} and \NUM{expr-llama8-drop} points, paired over
 instances, and raises accuracy in the cell from \NUM{cell-olmo7-acc} to
@@ -203,7 +201,7 @@ predicted it within a factor of two. Values as comments on the code remove the e
 models and leave \NUM{cell-llama3-comment-excess} points for Llama-3.2-3B. Prose reasoning
 never shows it (appendix).
 
-\paragraph{The value is there.} Probes trained on neutral traces and tested on the misleading
+\paragraph{Probes.} Probes trained on neutral traces and tested on the misleading
 cell read the code's value at the decision token in \NUM{probe-olmo7-code}\%,
 \NUM{probe-llama3-code}\% and \NUM{probe-llama8-code}\% of instances at the best layer, rising
 through the network (Figure~\ref{fig:mechanism}, green). The name's value is read in at most
@@ -226,17 +224,14 @@ twin, so its name-site curve is missing rather than flat.}
 \label{fig:mechanism}
 \end{figure*}
 
-\paragraph{Where it comes from and where it acts.} Figure~\ref{fig:mechanism} shows the two
-patching sites. Replacing the name's tokens at layer 0 alone removes \NUM{patch-olmo7-name-best}\%
-and \NUM{patch-llama3-name-best}\% of the lure writes at \NUM{patch-olmo7-name-alldamage}\%
-damage, and the removal decays to below 10\% by layers \NUM{patch-olmo7-name-gone} and
-\NUM{patch-llama3-name-gone}. Replacing the decision token alone removes half of the writes
-from layers \NUM{patch-olmo7-pre-half}, \NUM{patch-llama3-pre-half} and
-\NUM{patch-llama8-pre-half}, 90\% from layers \NUM{patch-olmo7-pre-full},
-\NUM{patch-llama3-pre-full} and \NUM{patch-llama8-pre-full}, and
-\NUM{patch-olmo7-pre-all}--\NUM{patch-llama8-pre-all}\% at every layer at once, with
-\NUM{patch-olmo7-pre-alldamage}\% damage or less. The neutral-for-neutral control changes at
-most \NUM{patch-llama3-wordctl}\% of outputs at either site. The two curves cross where the name's contribution has moved from its own tokens into the
+\paragraph{Patching.} Figure~\ref{fig:mechanism} shows the two patching sites, and
+Table~\ref{tab:patch} in the appendix the layers. Replacing the name's tokens at layer 0 alone
+removes \NUM{patch-olmo7-name-best}\% and \NUM{patch-llama3-name-best}\% of the lure writes
+with no damage to correct instances, and the removal decays to nothing by the middle of the
+network. Replacing the decision token alone removes nothing at the early layers and
+\NUM{patch-olmo7-pre-all}--\NUM{patch-llama8-pre-all}\% from the middle of the network on.
+The neutral-for-neutral control changes at most \NUM{patch-llama3-wordctl}\% of outputs at
+either site. The two curves cross where the name's contribution has moved from its own tokens into the
 decision token, where the probe reads the code's value at those same layers. The twin's vector
 there also holds the code's value; substituting it removes the sum and nothing else.
 
@@ -268,7 +263,8 @@ prediction \cite{wang2026stroop,hu2026conflict}, not to a step inside a chain.
 In a terse trace, small models write the value a sum-like name implies for a variable the code
 computes otherwise, while the code's value is decodable at the token that writes the step. The
 name's tokens are the origin, the decision token is where the influence acts, and one
-replacement at either removes it, as does showing the expression beside the value.
+replacement at either removes it, as does showing the expression beside the value. The effect
+is largely confined to that format and to models of 8B parameters and below.
 
 \section*{Limitations}
 
@@ -366,6 +362,20 @@ sets of worked examples pooled; $^{*}$ as in Table~\ref{tab:cells}.}
 \tabinput{formats_ci}
 \caption{Table~\ref{tab:formats} with 95\% bootstrap intervals over matched problems.}
 \label{tab:formats-ci}
+\end{table}
+
+\section{Patching layers}
+
+\begin{table}[H]
+\centering\small
+\tabinput{patch}
+\caption{Layers behind Figure~\ref{fig:mechanism}. Name tokens: lure writes removed by
+replacing every token of the name at layer 0, damage to correct instances, and the first
+layer after which removal falls below 10\%. Decision token: first layer at which a
+single-layer replacement removes 50\% and 90\% of lure writes, removal with every layer
+replaced, and its damage. Llama-3.1-8B's lure writes fall on a two-token name without a
+token-aligned twin.}
+\label{tab:patch}
 \end{table}
 
 \section{Renamed CRUXEval}
