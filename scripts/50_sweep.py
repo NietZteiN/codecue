@@ -44,7 +44,7 @@ def main() -> int:
     for m in load_config("models.yaml")["models"]:
         base = OUT_DIR / "runs" / m / f"L{a.level}{a.tag}"
         if not base.exists(): continue
-        for reg in ("direct", "trace", "prose"):
+        for reg in ("direct", "trace", "trace_expr", "repl", "comment", "prose"):
             per = {}
             for sd in SEEDS:
                 d = base / (reg if sd == 7 else f"{reg}_s{sd}")
