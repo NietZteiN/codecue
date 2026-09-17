@@ -51,9 +51,7 @@ def main() -> int:
         ax.set_ylim(0, 104); ax.set_xlim(-0.5, nL - 0.5); ax.grid(axis="y", color="0.92", lw=0.7)
     axes[0].set_ylabel("% of lure writes removed  /  probe accuracy")
     axes[0].legend(loc="center right", frameon=False, fontsize=8.6)
-    fig.suptitle("Where the name's influence lives: it starts in the name's tokens (red falls with depth) and "
-                 "arrives at the decision token mid-network (blue rises), where the code's value is already "
-                 "decodable (green)", x=0.01, ha="left", fontsize=9.6)
+    # (title line removed for the paper; the caption carries it)
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     FIG.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIG / "mechanism.pdf", bbox_inches="tight"); fig.savefig(FIG / "mechanism.png", dpi=160, bbox_inches="tight")

@@ -1,0 +1,385 @@
+% Cue conflict in code traces -- ARR short-paper draft (4 pages of body).
+% Every quantity is a \NUM{} key written by scripts/51_numbers.py; an unfilled key renders red.
+% Tables are generated into paper/tables/ by the same script. Build: make paper.
+
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{float}
+
+\providecommand{\NUM}[1]{\textcolor{red}{$\langle\langle$\texttt{#1}$\rangle\rangle$}}
+\providecommand{\tabinput}[1]{\IfFileExists{tables/#1.tex}{\input{tables/#1.tex}}{\textcolor{red}{[table \texttt{#1} not generated yet]}}}
+\IfFileExists{numbers.tex}{\input{numbers.tex}}{}
+
+\definecolor{con}{RGB}{0,110,60}
+\definecolor{inc}{RGB}{180,30,30}
+
+\title{Computed but Not Written: Where a Misleading Identifier Enters a Code Trace}
+
+\author{Anonymous ACL submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Misleading identifiers lower the accuracy of language models on code, and step-by-step
+reasoning does not restore it. We ask where the identifier enters. We construct a cue-conflict
+version of output prediction: short Python functions in which one identifier implies an
+executable value different from the one the code computes, rendered with congruent, neutral and
+misleading names on matched twins, and traced line by line by \NUM{n-models} instruction-tuned
+models with three sets of worked examples. When a variable computed as \texttt{len(xs)} carries
+a sum-like name, general models write the sum at that step \NUM{cell-llama8-excess} to
+\NUM{cell-olmo7-excess} points above the twin's rate, and a code model does the same on
+\texttt{max(xs)}. Linear probes read the code's value from the token at which the model writes
+the step in \NUM{probe-olmo7-code}--\NUM{probe-llama8-code}\% of these instances and the name's
+value in \NUM{probe-olmo7-name}\%; activation patching places the origin at the name's tokens
+and shows the influence arriving at the writing position in the middle of the network, where a
+single-layer replacement removes it. Writing the expression beside the value in the worked
+examples removes the effect. It is several times weaker in a REPL transcript, reduced to a residue at 34B
+parameters, and not detectable on renamed CRUXEval functions. A trace can hold the right value
+and write the wrong one.
+\end{abstract}
+
+\section{Introduction}
+
+Consider the function in Figure~\ref{fig:idea}(a). The variable \texttt{sum\_all} is assigned
+\texttt{len(xs)}, so on the input \texttt{[5, 3]} it holds 2 and the call returns 9. The name
+says that it holds \texttt{sum(xs)}, which would be 8 and would make the call return 15. Both
+readings are executable, and only one is the code. We call 8 the \emph{lure value} of the name
+and 2 its \emph{true value}. If a model writes 8 for that step, or 15 as the answer, the meaning
+of the name has reached the computation.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/idea.pdf}
+\caption{\textbf{(a)} One function under two readings of its first variable. \textbf{(b)} What
+OLMo-2-7B writes for it under two formats of the same three worked examples. \textbf{(c)} How
+often three models write the name's value instead of the code's at that step, for variables
+computed as \texttt{len(xs)} and named like a sum, mean over three sets of worked examples;
+red when the examples write \texttt{v = 3}, green when they write \texttt{v = len(xs) = 3}.}
+\label{fig:idea}
+\end{figure*}
+
+\paragraph{Motivation.} Identifiers that contradict the code they name reduce model accuracy on
+code comprehension \cite{le2025names,lam2025codecrash}, and \citet{le2026obfuscated} report
+that the loss is largest for the strongest code models and is not removed by step-by-step
+reasoning. A drop in accuracy does not say where the name interferes: the input may be misread,
+the computation may be corrupted, or a correct computation may be misread at the output.
+\citet{kudo2026faithful} locate, with probes and patching on arithmetic, the point in a chain of
+thought at which each intermediate value becomes decodable, and \citet{anon2026arith} add a
+cue conflict to that setting and find that a written chain removes the influence of a
+misleading variable name wherever the value is represented. Code traces differ from arithmetic chains in one respect that turns out to be decisive: a trace
+writes a variable's value without restating the expression that produced it.
+
+\paragraph{This paper.} We place two cues in conflict, as in the Stroop task \cite{stroop1935}
+and the shape--texture experiments on vision models \cite{geirhos2019texture}, inside a
+CRUXEval-style output-prediction task \cite{gu2024cruxeval} on synthetic Python. The lure is a
+program rather than a word: each misleading name comes from a table of (name, operation) pairs,
+and the lure value is obtained by executing the function with the implied operation in place of
+the real one. Matched twins differ in a single identifier, so every number below is an excess over the neutral
+twin. The name's influence turns out to be confined to one kind of step, one kind of name and one
+kind of format, and we locate it: the value is computed and decodable where the model writes the
+step, the name's tokens are the causal origin, and the output head writes the name's value anyway.
+
+\section{Setup}
+
+\paragraph{Task.} A problem is a Python function of one list argument, a chain of one to three
+assignments, a return, and a call on a short list of distinct digits. The first assignment
+applies a list aggregate (\texttt{len}, \texttt{sum}, \texttt{max}, \texttt{min}); later ones
+apply a unary or binary integer operation. Every intermediate and final value is a single digit,
+as in \citet{kudo2026faithful}, so probes are 10-way classifiers. Table~\ref{tab:levels} in the
+appendix lists the levels. Our main level has three assignments (level~5); the one-aggregate
+level (3) is reported in the appendix.
+
+\paragraph{Naming conditions.} Each problem is generated once and rendered with different names
+for one variable, the \emph{target}: a \emph{congruent} name whose implied operation is the
+code's own, a \emph{neutral} name of one or two letters, and a \emph{misleading} name whose
+implied operation differs. Names come from a fixed table of \NUM{gate-names} identifiers in
+eleven families (\texttt{count}, \texttt{n\_items}, \texttt{length} for \texttt{len};
+\texttt{total}, \texttt{sum\_all}, \texttt{acc} for \texttt{sum}; and so on; Table~\ref{tab:gate}).
+The lure value is computed by execution and must differ from the true value and from every
+other value in the program and its input, so a lure answer cannot be correct for another
+reason and cannot be copied from the prompt. This last rule removes \texttt{max} and
+\texttt{min} names as lures on a list-defined variable, since their implied value is an element
+of the input. The testable misleading pairs on the aggregate step are therefore a
+\texttt{len}-, \texttt{max}- or \texttt{min}-computed variable named like a sum, and a
+\texttt{sum}-, \texttt{max}- or \texttt{min}-computed variable named like a length. A name is a
+lure for a model only if that model reads it as the intended operation; a log-probability gate
+records which operation each name evokes for each model (Appendix~\ref{app:gate}).
+
+\paragraph{Formats.} In the \emph{direct} regime the model writes only the return value after
+three worked examples. In the \emph{trace} regime the three examples trace the execution as
+\texttt{qq = 3, v = 6, vv = 9} and then answer, and the model does the same for the problem.
+Three further formats change only what a step looks like: \emph{trace-expr} writes
+\texttt{qq = len(xs) = 3}; \emph{REPL} writes \texttt{>{}>{}>~qq} and then \texttt{3};
+\emph{comment} rewrites the program with each value as an end-of-line comment. A \emph{prose}
+regime asks the model to think step by step in its own words with no examples. Every few-shot
+result is the mean over three fixed sets of worked examples.
+
+\paragraph{Measures.} Our main measure is the \emph{written-lure excess}: the rate at which the trace's step for the
+target states the lure value, minus the rate at which the neutral twin's step for the same
+variable states that same number, so that an arbitrary wrong number counts in both. We count an effect as reliable when its sign is the same
+under all three sets of worked examples and a cluster bootstrap over matched problems excludes
+zero, and we treat effects inside two points as equivalent to zero.
+
+\paragraph{Probes and patching.} A linear probe is trained on neutral problems only, one per
+layer and position, to read the target's value from the residual stream, with the recipe and
+hyperparameters of \citet{kudo2026faithful} and a control probe keyed on the name's identity
+\cite{hewitt2019control}. We test it on misleading problems at the \emph{decision token}, the \texttt{=} after which the
+trace writes the target's value, the first step of the trace. To test cause, we
+replace the residual stream at one layer with the matched neutral twin's, either at every
+token of the name or at the decision token, and read the digit the model writes
+\cite{zhang2024patching}; a neutral-for-neutral replacement bounds the damage of any patch.
+
+\paragraph{Models.} Seven instruction-tuned models (Table~\ref{tab:cells}) on every behavioural experiment, with
+1{,}000 matched problems per cell and set of worked examples; CodeLlama-34B on the main level;
+probes and patching on the first three.
+
+\section{Results}
+
+\begin{table*}[t]
+\centering\small
+\tabinput{cells}\vspace{-2pt}
+\caption{Level 5, mean over three sets of worked examples. \emph{Trace acc.}: accuracy on
+neutral problems. \emph{Direct: lure}: lure answers above the twin's rate, queried variable.
+Last two columns: written-lure excess at the aggregate step when a variable computed as
+\texttt{len(xs)} or \texttt{max(xs)} carries a sum-like name, with 95\% bootstrap intervals.
+$^{*}$: same sign under all three sets and interval excluding zero.}
+\label{tab:cells}
+\end{table*}
+
+\paragraph{Behaviour.} Table~\ref{tab:cells} gives the main level. Without a trace, the name
+moves the answer by \NUM{direct-lure-min-L5} to \NUM{direct-lure-max-L5} points, and the
+excess is reliable for \NUM{direct-lure-claimable-L5} of \NUM{direct-cells-L5} models. With a
+trace, the name enters at one step. A variable computed as \texttt{len(xs)} and named
+\texttt{total}, \texttt{sum\_all} or \texttt{acc} is traced as the sum \NUM{cell-olmo7-excess}
+points above the twin's rate by OLMo-2-7B, \NUM{cell-llama3-excess} by Llama-3.2-3B and
+\NUM{cell-llama8-excess} by Llama-3.1-8B, whose neutral traces are \NUM{cell-olmo7-acc},
+\NUM{cell-llama3-acc} and \NUM{cell-llama8-acc}\% accurate. The code models do this on
+\texttt{max(xs)} instead: CodeLlama-7B writes the sum for a \texttt{max}-computed variable
+\NUM{cellmax-codellama-excess} points above its twin, and CodeGemma-7B
+\NUM{cellL3-codegemma-max-excess} points at level 3. The reverse pairing is weaker: a
+\texttt{sum}-computed variable named like a length is traced as the length within two points of
+zero at this level for every model above the floor, and \NUM{pair-olmo7-L3-sumlen-excess}
+points above it for OLMo-2-7B at level 3; no other pairing moves any step
+(Table~\ref{tab:matrix}). Gemma-3-4B shows nothing, and it is one of the
+\NUM{gate-sum-len-readers} models whose gate reads most sum-family names as \texttt{len}; the
+other, OLMo-2-1B, is at \NUM{cell-olmo1-acc}\% neutral accuracy and moves a few points in every
+direction.
+
+\paragraph{The sum is not a default.} When a neutral trace gets a \texttt{len} step wrong, it
+writes the maximum in \NUM{neuerr-max-lo}--\NUM{neuerr-max-hi}\% of cases and the length
+off by one in \NUM{neuerr-lenpm1-lo}--\NUM{neuerr-lenpm1-hi}\%; it writes the sum in
+\NUM{neuerr-sum-lo}--\NUM{neuerr-sum-hi}\%. The sum appears when the name says sum.
+
+\begin{table}[t]
+\centering\small
+\tabinput{formats}\vspace{-2pt}
+\caption{The cell of Table~\ref{tab:cells} under four formats of the same worked examples
+(intervals in Table~\ref{tab:formats-ci}).}
+\label{tab:formats}
+\end{table}
+
+\paragraph{The format causes it.} The trace format writes a value without its expression.
+Table~\ref{tab:formats} holds problems, models and example sets fixed and changes the format.
+Writing \texttt{qq = len(xs) = 3} in the examples lowers the written-lure rate by
+\NUM{expr-olmo7-drop}, \NUM{expr-llama3-drop} and \NUM{expr-llama8-drop} points, paired over
+instances, and raises accuracy in the cell from \NUM{cell-olmo7-acc} to
+\NUM{cell-olmo7-traceexpr-acc}\% for OLMo-2-7B; on every other (operation, name) pairing the
+rate is already near zero and stays there, so this is not a general gain. The REPL transcript,
+which also writes values without expressions, shows \NUM{cell-olmo7-repl-ratio} and
+\NUM{cell-llama3-repl-ratio} times less than the trace, and nothing for Llama-3.1-8B; we had
+predicted it within a factor of two. Values as comments on the code remove the effect for two
+models and leave \NUM{cell-llama3-comment-excess} points for Llama-3.2-3B. Prose reasoning
+never shows it (appendix).
+
+\paragraph{The value is there.} Probes trained on neutral traces and tested on the misleading
+cell read the code's value at the decision token in \NUM{probe-olmo7-code}\%,
+\NUM{probe-llama3-code}\% and \NUM{probe-llama8-code}\% of instances at the best layer, rising
+through the network (Figure~\ref{fig:mechanism}, green). The name's value is read in at most
+\NUM{probe-olmo7-name}\% at any layer. The same models write the sum in
+\NUM{cell-olmo7-wrote}\%, \NUM{cell-llama3-wrote}\% and \NUM{cell-llama8-wrote}\% of these
+instances. The computation is intact in the residual stream and the output head does not use
+it. The control probe scores \NUM{probe-olmo7-ctl} at this position for two models and
+\NUM{probe-llama8-ctl} for the third, so the name is also decodable there; the value probe
+cannot be reading it, since name and value are independent in its training data.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.84\textwidth]{figures/mechanism.pdf}
+\caption{Proportion of lure writes removed by replacing the residual stream with the neutral
+twin's at one layer, at every token of the name (red) or at the decision token (blue), for
+the cell of Table~\ref{tab:formats}; the probe's accuracy for the code's value at the decision
+token (green, dashed); damage to correct instances from the name patch (grey). Llama-3.1-8B's
+lure writes fall on the two-token name \texttt{sum\_all}, which has no token-aligned neutral
+twin, so its name-site curve is missing rather than flat.}
+\label{fig:mechanism}
+\end{figure*}
+
+\paragraph{Where it comes from and where it acts.} Figure~\ref{fig:mechanism} shows the two
+patching sites. Replacing the name's tokens at layer 0 alone removes \NUM{patch-olmo7-name-best}\%
+and \NUM{patch-llama3-name-best}\% of the lure writes at \NUM{patch-olmo7-name-alldamage}\%
+damage, and the removal decays to below 10\% by layers \NUM{patch-olmo7-name-gone} and
+\NUM{patch-llama3-name-gone}. Replacing the decision token alone removes half of the writes
+from layers \NUM{patch-olmo7-pre-half}, \NUM{patch-llama3-pre-half} and
+\NUM{patch-llama8-pre-half}, 90\% from layers \NUM{patch-olmo7-pre-full},
+\NUM{patch-llama3-pre-full} and \NUM{patch-llama8-pre-full}, and
+\NUM{patch-olmo7-pre-all}--\NUM{patch-llama8-pre-all}\% at every layer at once, with
+\NUM{patch-olmo7-pre-alldamage}\% damage or less. The neutral-for-neutral control changes at
+most \NUM{patch-llama3-wordctl}\% of outputs at either site. The two curves cross where the name's contribution has moved from its own tokens into the
+decision token, where the probe reads the code's value at those same layers. The twin's vector
+there also holds the code's value; substituting it removes the sum and nothing else.
+
+\paragraph{Boundaries.} Three pre-registered tests bound the effect. On a level whose middle
+step is a unary operation, no family of names moves that step for any model above the floor
+(largest excess \NUM{l6-max-excess}). CodeLlama-34B traces the cell of Table~\ref{tab:cells}
+with a written-lure excess of \NUM{cell34-len-excess} and the \texttt{max} cell with
+\NUM{cell34-max-excess} [\NUM{cell34-max-lo}, \NUM{cell34-max-hi}], inside our equivalence
+margin; we had predicted it to behave like CodeLlama-7B. On \NUM{crux-n} CRUXEval functions
+that assign a length, a loop counter or a maximum, renamed by AST rewriting to \texttt{v} or
+\texttt{total} and verified by execution, every interval for the paired misleading-minus-neutral accuracy
+covers zero, and none extends beyond \NUM{crux-direct-bound} points in the direct regime or
+\NUM{crux-prose-bound} points in prose (Table~\ref{tab:crux}). Natural code has no analogue of the trace format, so this bounds the regimes people use.
+
+\section{Related Work}
+
+\citet{kudo2026faithful} established when intermediate values are computed during arithmetic
+chains, and \citet{anon2026arith} found the chain protective against a misleading name wherever
+the value is represented; ours is the case in which the value is represented and the trace still
+writes the name's. Misleading identifiers lower accuracy on real code
+\cite{le2025names,lam2025codecrash,le2026obfuscated,orvalho2025mutations,gao2023cream} without
+localisation inside the model. Chain faithfulness has been measured by perturbing prompts and
+chains \cite{turpin2023unfaithful,lanham2023measuring,chen2025reasoning}; we measure it at the
+token where the chain commits to a value. The Stroop design has been applied to next-token
+prediction \cite{wang2026stroop,hu2026conflict}, not to a step inside a chain.
+
+\section{Conclusion}
+
+In a terse trace, small models write the value a sum-like name implies for a variable the code
+computes otherwise, while the code's value is decodable at the token that writes the step. The
+name's tokens are the origin, the decision token is where the influence acts, and one
+replacement at either removes it, as does showing the expression beside the value.
+
+\section*{Limitations}
+
+The programs are synthetic and short, with single-digit values, so the internal analysis has a
+clean ground truth at the cost of realism; the renamed CRUXEval functions are the only natural
+code, and only in regimes where the effect does not occur, with power to exclude effects above
+about five points. The effect depends on the worked-example format, and the format that shows
+it is one we constructed; the REPL and comment formats are closer to what people write and show
+much less. The models are at most 34B, and the largest shows only a residue; two of four
+pre-registered predictions about the boundaries were wrong, which we report as such. The
+name-site patch cannot be applied to two-token names with token-aligned twins, so one model's
+name-site result is missing. Probes read linearly decodable information only, and patching a
+single position cannot exclude side effects, which is why a neutral-for-neutral control
+accompanies every intervention. Models of Chinese origin were outside the scope of this study,
+which leaves out the strongest open code models of \citet{le2026obfuscated}.
+
+\bibliography{refs}
+
+\appendix
+\onecolumn
+
+\section{Levels and the lure table}
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}clc@{}}
+\toprule
+Level & Neutral program (body) & Traced steps \\
+\midrule
+1 & \texttt{v = len(xs); return v} & 1 \\
+2 & \texttt{v = len(xs); w = v * 2; return w} & 2 \\
+3 & \texttt{v = len(xs); w = max(xs); u = v + w; return u} & 3 \\
+4 & level 3 with an unused fourth assignment & 3 \\
+5 & \texttt{v = len(xs); w = v * 2; u = w + 3; return u} & 3 \\
+6 & level 5 with the misleading name on the middle step & 3 \\
+\bottomrule
+\end{tabular}
+\caption{The levels, one example each. The aggregate in the first statement is any of
+\texttt{len}, \texttt{sum}, \texttt{max}, \texttt{min}; unary operations are \texttt{*2},
+\texttt{//2}, \texttt{+c}, \texttt{-c}. The misleading name sits on the first statement at
+levels 1--5 and on the second at level 6.}
+\label{tab:levels}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Family & Names & Implied operation \\
+\midrule
+len & \texttt{count}, \texttt{n\_items}, \texttt{length} & \texttt{len(xs)} \\
+sum & \texttt{total}, \texttt{sum\_all}, \texttt{acc} & \texttt{sum(xs)} \\
+max & \texttt{largest}, \texttt{max\_val}, \texttt{peak} & \texttt{max(xs)} \\
+min & \texttt{smallest}, \texttt{min\_val}, \texttt{low} & \texttt{min(xs)} \\
+double & \texttt{double}, \texttt{twice} & \texttt{2 * a} \\
+half & \texttt{half} & \texttt{a // 2} \\
+succ & \texttt{succ}, \texttt{next\_val} & \texttt{a + 1} \\
+pred & \texttt{pred}, \texttt{prev\_val} & \texttt{a - 1} \\
+add & \texttt{combined}, \texttt{both} & \texttt{a + b} \\
+sub & \texttt{diff}, \texttt{gap} & \texttt{a - b} \\
+mul & \texttt{product}, \texttt{scaled} & \texttt{a * b} \\
+\bottomrule
+\end{tabular}
+\caption{The lure table. The gate (Appendix~\ref{app:gate}) scores each name by the log-probability each
+model assigns to the candidate right-hand sides; \NUM{gate-pass} of \NUM{gate-names} names are
+read as intended by at least 80\% of models. The min and max names cannot be lures on the
+aggregate step (their value is an input element) and are used as congruent and
+alternative-lure names.}
+\label{tab:gate}
+\end{table}
+
+\section{Lure gate}
+\label{app:gate}
+ A name is a lure for a model only if that model reads it as the intended
+operation. We score, for each model, the log-probability of each candidate right-hand side
+after \texttt{def f(xs):\textbackslash n\ \ \ \ total =}, and record which operation each name
+evokes (Table~\ref{tab:gate}). \NUM{gate-pass} of the \NUM{gate-names} names are read as
+intended by at least 80\% of the models; most sum-family names are read as \texttt{len} rather than \texttt{sum} by
+\NUM{gate-sum-len-readers} of the \NUM{n-models} models.
+
+\section{Full matrix of pairings}
+
+\begin{table}[H]
+\centering\small
+\tabinput{matrix}
+\caption{Written-lure excess at the aggregate step, trace regime, level 3 / level 5, three
+sets of worked examples pooled; $^{*}$ as in Table~\ref{tab:cells}.}
+\label{tab:matrix}
+\end{table}
+
+\section{Formats with intervals}
+
+\begin{table}[H]
+\centering\small
+\tabinput{formats_ci}
+\caption{Table~\ref{tab:formats} with 95\% bootstrap intervals over matched problems.}
+\label{tab:formats-ci}
+\end{table}
+
+\section{Renamed CRUXEval}
+
+\begin{table}[H]
+\centering\small
+\tabinput{crux}
+\caption{\NUM{crux-n} CRUXEval functions that assign a variable from \texttt{len(\ldots)}
+(\NUM{crux-kind-len}), a loop counter (\NUM{crux-kind-counter}) or \texttt{max(\ldots)}
+(\NUM{crux-kind-max}), of which \NUM{crux-used} use it downstream; each rendered with the
+original name, the neutral name \texttt{v}, and the misleading name \texttt{total}. Accuracy
+on the neutral rendering and the paired misleading-minus-neutral difference in points with a
+bootstrap interval over functions.}
+\label{tab:crux}
+\end{table}
+
+\end{document}

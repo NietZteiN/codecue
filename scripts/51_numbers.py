@@ -54,20 +54,21 @@ def main() -> int:
     #      keys: cell-<m>-{wrote,excess,lo,hi,n} (trace), cell-<m>-<reg>-{wrote,excess,lo,hi,n,claim,acc} for repl/comment/trace_expr,
     #      cell34-{len,max}-{excess,lo,hi,n} and cell34-acc for CodeLlama-34B (L5 only, so outside with_runs)
     progs = {json.loads(l)["id"]: json.loads(l) for l in (DATA_DIR / "L5" / "test_sets.jsonl").open()}
+    progsL = {5: progs, 3: {json.loads(l)["id"]: json.loads(l) for l in (DATA_DIR / "L3" / "test_sets.jsonl").open()}}
     rng = np.random.default_rng(0)
 
-    def cell(m, reg, op, fam="sum"):
+    def cell(m, reg, op, fam="sum", L=5):
         """paired per-set (hit - twin_hit) for the (op -> fam) cell at v1, plus by-seed means and neutral accuracy"""
         deltas, by_seed, acc = [], {}, []
         for sfx in ("", "_s11", "_s13"):
-            gi = OUT_DIR / "runs" / m / "L5" / f"{reg}{sfx}" / "incongruent@v1" / "behavior.jsonl"
-            gn = OUT_DIR / "runs" / m / "L5" / f"{reg}{sfx}" / "neutral" / "behavior.jsonl"
+            gi = OUT_DIR / "runs" / m / f"L{L}" / f"{reg}{sfx}" / "incongruent@v1" / "behavior.jsonl"
+            gn = OUT_DIR / "runs" / m / f"L{L}" / f"{reg}{sfx}" / "neutral" / "behavior.jsonl"
             if not gi.exists() or not gn.exists(): continue
             neu = {json.loads(l)["set_id"]: json.loads(l) for l in gn.open()}
             acc += [r["correct"] for r in neu.values()]; sd = []
             for l in gi.open():
                 r = json.loads(l); t = neu.get(r["set_id"])
-                if not t or progs[r["id"]]["stmts"][0]["op"] != op or FAMILY_OF_NAME[r["lure_name"]].key != fam: continue
+                if not t or progsL[L][r["id"]]["stmts"][0]["op"] != op or FAMILY_OF_NAME[r["lure_name"]].key != fam: continue
                 sd.append((int(r["value_written"] == r["lure"]), int(t.get("values_written", {}).get("v1") == r["lure"])))
             if sd: by_seed[sfx or "_s7"] = sd; deltas += sd
         if not deltas: return None
@@ -95,6 +96,82 @@ def main() -> int:
             if c is None: continue
             N[f"cell34-{op}-excess"] = pct(c["excess"], True); N[f"cell34-{op}-lo"] = pct(c["lo"], True); N[f"cell34-{op}-hi"] = pct(c["hi"], True)
             N[f"cell34-{op}-n"] = str(c["n"]); N[f"cell34-{op}-claim"] = "yes" if c["claim"] else "no"; N["cell34-acc"] = pct(c["acc"])
+    # ---- level-3 cells, trace
+    for m in with_runs:
+        for op in ("len", "max"):
+            c = cell(m, "trace", op, L=3)
+            if c is None: continue
+            N[f"cellL3-{SHORT[m]}-{op}-excess"] = pct(c["excess"], True); N[f"cellL3-{SHORT[m]}-{op}-lo"] = pct(c["lo"], True)
+            N[f"cellL3-{SHORT[m]}-{op}-hi"] = pct(c["hi"], True); N[f"cellL3-{SHORT[m]}-{op}-claim"] = "yes" if c["claim"] else "no"; N[f"cellL3-{SHORT[m]}-{op}-n"] = str(c["n"])
+    # ---- max -> sum cell (the code models' cell), trace, L5
+    for m in with_runs:
+        c = cell(m, "trace", "max")
+        if c is None: continue
+        N[f"cellmax-{SHORT[m]}-excess"] = pct(c["excess"], True); N[f"cellmax-{SHORT[m]}-lo"] = pct(c["lo"], True)
+        N[f"cellmax-{SHORT[m]}-hi"] = pct(c["hi"], True); N[f"cellmax-{SHORT[m]}-n"] = str(c["n"]); N[f"cellmax-{SHORT[m]}-claim"] = "yes" if c["claim"] else "no"
+    # ---- sum is not a default: on NEUTRAL L5 programs whose first step is len(xs), what does a wrong trace write?
+    fr = {}
+    for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
+        wrong = {"max": 0, "sum": 0, "lenpm1": 0, "n": 0}
+        for sfx in ("", "_s11", "_s13"):
+            gn = OUT_DIR / "runs" / m / "L5" / f"trace{sfx}" / "neutral" / "behavior.jsonl"
+            if not gn.exists(): continue
+            for l in gn.open():
+                r = json.loads(l); pr = progs[r["id"]]
+                if pr["stmts"][0]["op"] != "len": continue
+                w = r.get("values_written", {}).get("v1"); xs = pr["xs"]
+                if w is None or w == len(xs): continue
+                wrong["n"] += 1; wrong["max"] += w == max(xs); wrong["sum"] += w == sum(xs); wrong["lenpm1"] += abs(w - len(xs)) == 1
+        if wrong["n"]:
+            fr[m] = {k: wrong[k] / wrong["n"] for k in ("max", "sum", "lenpm1")}; N[f"neuerr-{SHORT[m]}-n"] = str(wrong["n"])
+            for k in ("max", "sum", "lenpm1"): N[f"neuerr-{SHORT[m]}-{k}"] = pct(fr[m][k], d=0)
+    if fr:
+        for k in ("max", "sum", "lenpm1"):
+            N[f"neuerr-{k}-lo"] = pct(min(v[k] for v in fr.values()), d=0); N[f"neuerr-{k}-hi"] = pct(max(v[k] for v in fr.values()), d=0)
+    # ---- generated tables
+    DISPLAY = {"olmo2-7b-it": "OLMo-2-7B", "llama32-3b-it": "Llama-3.2-3B", "llama31-8b-it": "Llama-3.1-8B", "codellama-7b-it": "CodeLlama-7B",
+               "codegemma-7b-it": "CodeGemma-7B", "gemma3-4b-it": "Gemma-3-4B", "olmo2-1b-it": "OLMo-2-1B", "codellama-34b-it": "CodeLlama-34B"}
+    tdir = PROJECT_ROOT / "paper" / "tables"; tdir.mkdir(exist_ok=True)
+
+    def fmt(c, star=True):
+        if c is None: return "--"
+        return f"{100*c['excess']:+.1f}{'$^{*}$' if c['claim'] and star else ''} [{100*c['lo']:+.1f}, {100*c['hi']:+.1f}]"
+
+    sw5 = json.loads((RESULTS_DIR / "summary" / "sweep_L5.json").read_text())
+    order = ["olmo2-7b-it", "llama32-3b-it", "llama31-8b-it", "codellama-7b-it", "codegemma-7b-it", "gemma3-4b-it", "olmo2-1b-it"]
+    lines = ["\\begin{tabular}{@{}lrrrr@{}}", "\\toprule",
+             "Model & Trace acc. & Direct: lure & Trace: len$\\to$sum & Trace: max$\\to$sum \\\\", "\\midrule"]
+    for m in order + ["codellama-34b-it"]:
+        cl = cell(m, "trace", "len"); cm = cell(m, "trace", "max")
+        if cl is None: continue
+        d = sw5.get(f"{m}/direct", {}).get("contrasts", {}).get("lure_excess@v3")
+        dl = f"{100*d['pooled_mean']:+.1f}{'$^{*}$' if d['claimable'] else ''}" if d else "--"
+        lines.append(f"{DISPLAY[m]} & {100*cl['acc']:.1f} & {dl} & {fmt(cl)} & {fmt(cm)} \\\\")
+    lines += ["\\bottomrule", "\\end{tabular}"]
+    (tdir / "cells.tex").write_text("\n".join(lines) + "\n")
+    lines = ["\\begin{tabular}{@{}lrrrr@{}}", "\\toprule", "Model & trace & REPL & comment & trace-expr \\\\", "\\midrule"]
+    short = list(lines)
+    for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
+        cs = [cell(m, reg, "len") for reg in ("trace", "repl", "comment", "trace_expr")]
+        lines.append(f"{DISPLAY[m]} & " + " & ".join(fmt(c) for c in cs) + " \\\\")
+        short.append(f"{DISPLAY[m]} & " + " & ".join((f"{100*c['excess']:+.1f}{'$^{*}$' if c['claim'] else ''}" if c else "--") for c in cs) + " \\\\")
+    lines += ["\\bottomrule", "\\end{tabular}"]; short += ["\\bottomrule", "\\end{tabular}"]
+    (tdir / "formats_ci.tex").write_text("\n".join(lines) + "\n")
+    (tdir / "formats.tex").write_text("\n".join(short) + "\n")
+    pairs = (("len", "sum"), ("max", "sum"), ("min", "sum"), ("sum", "len"), ("max", "len"))
+    lines = ["\\begin{tabular}{@{}l" + "r" * len(pairs) + "@{}}", "\\toprule",
+             "Model & " + " & ".join(f"{a}$\\to${b}" for a, b in pairs) + " \\\\", "\\midrule"]
+    for m in order:
+        row = []
+        for a, b in pairs:
+            c3 = cell(m, "trace", a, b, L=3); c5 = cell(m, "trace", a, b, L=5)
+            f = lambda c: (f"{100*c['excess']:+.1f}{'$^{*}$' if c['claim'] else ''}" if c else "--")
+            row.append(f"{f(c3)} / {f(c5)}")
+            for L, c in ((3, c3), (5, c5)):
+                if c: N[f"pair-{SHORT[m]}-L{L}-{a}{b}-excess"] = pct(c["excess"], True); N[f"pair-{SHORT[m]}-L{L}-{a}{b}-claim"] = "yes" if c["claim"] else "no"
+        lines.append(f"{DISPLAY[m]} & " + " & ".join(row) + " \\\\")
+    lines += ["\\bottomrule", "\\end{tabular}"]
+    (tdir / "matrix.tex").write_text("\n".join(lines) + "\n")
     # ---- R3b: level 6, unary middle step, overall written-lure excess on v2 (trace, 3 seeds)
     f6 = RESULTS_DIR / "summary" / "sweep_L6.json"
     if f6.exists():
@@ -128,7 +205,8 @@ def main() -> int:
         g = json.loads(gf.read_text()); ms = sorted(g); names = [k for k in g[ms[0]] if "/" not in k]
         passed = [k for k in names if np.mean([g[m][k]["pass"] for m in ms if k in g[m]]) >= 0.8]
         N["gate-pass"] = str(len(passed)); N["gate-names"] = str(len(names))
-        N["gate-sum-len-readers"] = str(sum(1 for m in ms if g[m]["total"]["argmax"] == "len"))
+        sumnames = [n for n in ("total", "sum_all", "acc") if n in g[ms[0]]]
+        N["gate-sum-len-readers"] = str(sum(1 for m in ms if sum(g[m][n]["argmax"] == "len" for n in sumnames) * 2 > len(sumnames)))
     # ---- probes at the decision token (best layer by neutral accuracy)
     for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
         pj = OUT_DIR / "probes" / m / "L5" / "trace" / "v1.json"
@@ -158,6 +236,11 @@ def main() -> int:
             N[f"patch-{SHORT[m]}-{site}-bestlayer"] = str(int(np.argmax(rem)))
             half = next((l for l in range(nL) if rem[l] >= 0.5), None)
             N[f"patch-{SHORT[m]}-{site}-half"] = str(half) if half is not None else "--"
+            full = next((l for l in range(nL) if rem[l] >= 0.9), None)          # decision site: first layer at >= 90% removal
+            N[f"patch-{SHORT[m]}-{site}-full"] = str(full) if full is not None else "--"
+            peak = int(np.argmax(rem))                                           # name site: first layer after the peak below 10% removal
+            gone = next((l for l in range(peak, nL) if rem[l] < 0.10), None)
+            N[f"patch-{SHORT[m]}-{site}-gone"] = str(gone) if gone is not None else "--"
             N[f"patch-{SHORT[m]}-{site}-n"] = str(S["ALL"]["n"])
             if site == "name": N[f"patch-{SHORT[m]}-name-skipped"] = str(d.get("n_skipped_unaligned", 0))
         c = OUT_DIR / "runs" / m / "L5" / "patch" / "ctl_word_name.json"
@@ -191,12 +274,23 @@ def main() -> int:
                     wn = [x["wrote_sum"] for s, x in by["neutral"].items() if x["lure_sum"] is not None]
                     N[f"crux-{SHORT[m]}-wrotesum-mis"] = pct(np.mean(ws), d=0) if ws else "--"
                     N[f"crux-{SHORT[m]}-wrotesum-neu"] = pct(np.mean(wn), d=0) if wn else "--"
+    if rows:
+        lines = ["\\begin{tabular}{@{}lrrrr@{}}", "\\toprule", "Model & Direct acc. & Direct $\\Delta$ & Prose acc. & Prose $\\Delta$ \\\\", "\\midrule"]
+        for m in order:
+            if f"crux-{SHORT[m]}-direct-delta" not in N: continue
+            lines.append(f"{DISPLAY[m]} & {N[f'crux-{SHORT[m]}-direct-neutral']} & {N[f'crux-{SHORT[m]}-direct-delta']} [{N[f'crux-{SHORT[m]}-direct-lo']}, {N[f'crux-{SHORT[m]}-direct-hi']}]"
+                         f" & {N[f'crux-{SHORT[m]}-prose-neutral']} & {N[f'crux-{SHORT[m]}-prose-delta']} [{N[f'crux-{SHORT[m]}-prose-lo']}, {N[f'crux-{SHORT[m]}-prose-hi']}] \\\\")
+        lines += ["\\bottomrule", "\\end{tabular}"]
+        (tdir / "crux.tex").write_text("\n".join(lines) + "\n")
+        for reg in ("direct", "prose"):
+            b = max(max(abs(float(N[f"crux-{SHORT[m]}-{reg}-lo"])), abs(float(N[f"crux-{SHORT[m]}-{reg}-hi"]))) for m in order if f"crux-{SHORT[m]}-{reg}-lo" in N)
+            N[f"crux-{reg}-bound"] = f"{b:.0f}"
     out = PROJECT_ROOT / "paper" / "numbers.tex"
     with out.open("w") as f:
         f.write("% generated by scripts/51_numbers.py; do not edit\n")
         for k, v in sorted(N.items()):
             f.write(f"\\expandafter\\def\\csname NUMval@{k}\\endcsname{{{v}}}\n")
-        f.write("\\newcommand{\\NUM}[1]{\\ifcsname NUMval@#1\\endcsname\\csname NUMval@#1\\endcsname\\else\\textcolor{red}{$\\langle\\langle$\\texttt{#1}$\\rangle\\rangle$}\\fi}\n")
+        f.write("\\renewcommand{\\NUM}[1]{\\ifcsname NUMval@#1\\endcsname\\csname NUMval@#1\\endcsname\\else\\textcolor{red}{$\\langle\\langle$\\texttt{#1}$\\rangle\\rangle$}\\fi}\n")
     print(f"wrote {len(N)} numbers to {out}")
     for k in ("cell-olmo7-excess", "cell-olmo7-repl-excess", "cell-olmo7-comment-excess", "cell-llama3-comment-claim", "cell34-len-excess", "cell34-max-excess", "l6-max-excess", "crux-olmo7-direct-lo", "expr-olmo7-drop", "probe-olmo7-code", "probe-olmo7-name", "patch-olmo7-pre-half", "patch-olmo7-name-best", "gate-pass"):
         print(f"  {k} = {N.get(k)}")
