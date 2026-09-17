@@ -402,3 +402,64 @@ origin, and showing the expression in the demonstration removes it. External val
 that format is an open question the paper names, not a result it has.
 
 All GPU experiments for this paper are complete as of this entry.
+
+## 2026-09-17 — Round 3: the boundaries of the effect (R3a–R3d, pre-registered)
+
+Four pre-registered follow-ups ran on one h200 worker (80 jobs, 0 failed). Two predictions were
+refuted, one partly refuted, one bound tightened. Together they shrink the claim to a specific
+format and a specific model size, and they say so cleanly.
+
+**R3a — format. Refuted for the REPL, holds for comments in two of three models.** The
+len→sum cell at L5, written-lure excess over the matched twin, three demonstration seeds pooled:
+
+| model | trace | repl | comment | trace_expr |
+|---|---|---|---|---|
+| OLMo-2-7B | +58.4 | +9.5 [7.6, 11.5] | +0.0 | +3.4 [2.1, 4.7] |
+| Llama-3.2-3B | +43.4 | +12.6 [10.4, 14.9] | +6.8 [5.1, 8.4] | +0.4 |
+| Llama-3.1-8B | +12.4 | +0.2 | +0.1 | +0.0 |
+
+The prediction was that a REPL transcript (`>>> total` / value) would show an excess within a
+factor of two of the trace. It shows 3–60× less. The comment format (`total = len(xs)  # 3`)
+was predicted within 2 points of zero: true for OLMo-2-7B and Llama-3.1-8B, false for
+Llama-3.2-3B (+6.8, claimable). The ordering trace > repl > comment ≈ trace_expr holds in every
+model, which is what the mechanism predicts (the closer the expression sits to the value, the
+less room the name has), but the magnitudes fall off far faster than "any value-only format".
+Neutral accuracy: repl is the LEAST accurate format (86 / 92 / 98%), comment and trace_expr the
+most (96–100%), so the REPL's smaller excess is not greater care; the transcript form simply
+does not read the value off the name the way the assignment-list form does.
+
+**R3b — level 6, a unary middle step. Null.** 3,000 incongruent instances per model on `v2`
+(`//2`, `*2`, `+c`, `-c`), lure families double/half/succ/pred/sum/len/max/min. Overall excess
+on v2: OLMo-2-7B +0.3, Llama-3.2-3B +0.1, Llama-3.1-8B +0.0, CodeLlama-7B +0.6, CodeGemma
++0.2, Gemma-3-4B +0.0; OLMo-2-1B +2.3 at 38% neutral accuracy (not interpretable). The largest
+single (op, family) cell in a reliable model is CodeLlama-7B `//2` with a `len` name, +7.1
+(n ≈ 100); nothing in the sum family moves. The contamination is a property of the list
+aggregate step, not of "a strong-prior name on any step".
+
+**R3c — CodeLlama-34B. Refuted.** Trace, L5, three seeds: len→sum +0.0 (n = 855), max→sum +1.8
+[1.0, 2.8] (n = 831), every other (op, family) 0.0; neutral trace accuracy 98.9%. The max→sum
+residue is sign-consistent across seeds and its interval excludes zero, so it passes the claim
+rule, but it sits inside the pre-registered equivalence margin (δ = 2), which is the refutation
+criterion. The prediction was that the 34B code model would behave like the 7B code models
+(CodeLlama-7B max→sum +9). It shows at most a fifth of that. In this
+panel the effect is a ≤8B phenomenon; two 7B-class models (CodeGemma, Gemma-3-4B) were already
+near zero, so size is a sufficient but not the only condition for immunity.
+
+**R3d — CRUXEval widened to 89 functions (48 `len`, 38 loop counters, 3 `max`; 84 used
+downstream). Null, tighter.** Paired misleading − neutral accuracy, direct: OLMo-2-7B +1.2
+[0.0, 3.6], Llama-3.2-3B +1.2 [−2.4, 4.8], Llama-3.1-8B −3.6 [−9.5, 2.4], CodeLlama +2.4
+[0.0, 7.1], CodeGemma +0.0, Gemma-3-4B −2.4 [−6.0, 0.0], OLMo-2-1B −3.6 [−8.3, 0.0]. Prose:
+−1.2 to +6.0, every interval covering zero. By kind, one of 28 intervals excludes zero
+(Llama-3.1-8B direct, counters, −10.5 [−21.1, −2.6]) — one nominal exclusion in 28 uncorrected
+tests, not claimed. Reasoning writes the sum for the renamed variable in ≤5% of summable cases
+under either name. Bound: ±5 points (direct), ±10 (prose), against ±12–16 before.
+
+**What the paper can now say.** A sum-family identifier makes small (≤8B) models write the sum
+for a list aggregate in a terse `name = value` trace; the value is computed and not read out;
+the name's tokens are the causal origin. The effect is largely specific to that trace format
+(3–60× weaker as a REPL transcript, ≈0 as code comments), specific to the aggregate step (null
+on a unary step), reduced to ≤2 points at 34B, and undetectable on real code in the direct and prose regimes to
+within ±5/±10 points. That is a located, format-dependent unfaithfulness with a measured
+mechanism and measured boundaries — a short paper, not a general vulnerability claim.
+
+GPU worker released 2026-09-17 (job 409808). No further runs planned.

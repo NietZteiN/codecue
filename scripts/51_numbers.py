@@ -50,21 +50,64 @@ def main() -> int:
         vals = [sw[f"{m}/direct"]["contrasts"][f"lure_excess@{t}"]["pooled_mean"] for m in with_runs if f"{m}/direct" in sw
                 for t in ("v1", "v3") if f"lure_excess@{t}" in sw[f"{m}/direct"]["contrasts"]]
         N[f"direct-lure-min-L{L}"] = pct(min(vals), True); N[f"direct-lure-max-L{L}"] = pct(max(vals), True)
-    # ---- the cell: len -> sum, written-lure excess, L5, per model
+    # ---- the cell: len -> sum (and max -> sum), written-lure excess, L5, per model and per format
+    #      keys: cell-<m>-{wrote,excess,lo,hi,n} (trace), cell-<m>-<reg>-{wrote,excess,lo,hi,n,claim,acc} for repl/comment/trace_expr,
+    #      cell34-{len,max}-{excess,lo,hi,n} and cell34-acc for CodeLlama-34B (L5 only, so outside with_runs)
     progs = {json.loads(l)["id"]: json.loads(l) for l in (DATA_DIR / "L5" / "test_sets.jsonl").open()}
-    for m in with_runs:
-        n = h = th = 0
-        for d in ("trace", "trace_s11", "trace_s13"):
-            gi = OUT_DIR / "runs" / m / "L5" / d / "incongruent@v1" / "behavior.jsonl"
-            gn = OUT_DIR / "runs" / m / "L5" / d / "neutral" / "behavior.jsonl"
+    rng = np.random.default_rng(0)
+
+    def cell(m, reg, op, fam="sum"):
+        """paired per-set (hit - twin_hit) for the (op -> fam) cell at v1, plus by-seed means and neutral accuracy"""
+        deltas, by_seed, acc = [], {}, []
+        for sfx in ("", "_s11", "_s13"):
+            gi = OUT_DIR / "runs" / m / "L5" / f"{reg}{sfx}" / "incongruent@v1" / "behavior.jsonl"
+            gn = OUT_DIR / "runs" / m / "L5" / f"{reg}{sfx}" / "neutral" / "behavior.jsonl"
             if not gi.exists() or not gn.exists(): continue
             neu = {json.loads(l)["set_id"]: json.loads(l) for l in gn.open()}
+            acc += [r["correct"] for r in neu.values()]; sd = []
             for l in gi.open():
                 r = json.loads(l); t = neu.get(r["set_id"])
-                if not t or progs[r["id"]]["stmts"][0]["op"] != "len" or FAMILY_OF_NAME[r["lure_name"]].key != "sum": continue
-                n += 1; h += r["value_written"] == r["lure"]; th += t.get("values_written", {}).get("v1") == r["lure"]
-        if n:
-            N[f"cell-{SHORT[m]}-wrote"] = pct(h / n, d=0); N[f"cell-{SHORT[m]}-excess"] = pct((h - th) / n, True); N[f"cell-{SHORT[m]}-n"] = str(n)
+                if not t or progs[r["id"]]["stmts"][0]["op"] != op or FAMILY_OF_NAME[r["lure_name"]].key != fam: continue
+                sd.append((int(r["value_written"] == r["lure"]), int(t.get("values_written", {}).get("v1") == r["lure"])))
+            if sd: by_seed[sfx or "_s7"] = sd; deltas += sd
+        if not deltas: return None
+        d = np.array(deltas); ex = d[:, 0] - d[:, 1]
+        boot = [rng.choice(ex, len(ex)).mean() for _ in range(2000)]
+        seeds = [np.mean([a - b for a, b in v]) for v in by_seed.values()]
+        lo, hi = np.percentile(boot, 2.5), np.percentile(boot, 97.5)
+        claim = len(seeds) >= 3 and (all(x > 0 for x in seeds) or all(x < 0 for x in seeds)) and (lo > 0 or hi < 0)
+        return dict(wrote=d[:, 0].mean(), excess=ex.mean(), lo=lo, hi=hi, n=len(ex), claim=claim, acc=np.mean(acc))
+
+    for m in with_runs:
+        for reg in ("trace", "repl", "comment", "trace_expr"):
+            c = cell(m, reg, "len")
+            if c is None: continue
+            pre = f"cell-{SHORT[m]}" if reg == "trace" else f"cell-{SHORT[m]}-{reg.replace('_', '')}"
+            N[f"{pre}-wrote"] = pct(c["wrote"], d=0); N[f"{pre}-excess"] = pct(c["excess"], True); N[f"{pre}-n"] = str(c["n"])
+            N[f"{pre}-lo"] = pct(c["lo"], True); N[f"{pre}-hi"] = pct(c["hi"], True); N[f"{pre}-claim"] = "yes" if c["claim"] else "no"
+            N[f"{pre}-acc"] = pct(c["acc"])
+            if reg != "trace":
+                t = cell(m, "trace", "len")
+                N[f"{pre}-ratio"] = f"{t['excess'] / c['excess']:.0f}" if c["excess"] > 0.005 else "--"
+    if (OUT_DIR / "runs" / "codellama-34b-it" / "L5").exists():
+        for op in ("len", "max"):
+            c = cell("codellama-34b-it", "trace", op)
+            if c is None: continue
+            N[f"cell34-{op}-excess"] = pct(c["excess"], True); N[f"cell34-{op}-lo"] = pct(c["lo"], True); N[f"cell34-{op}-hi"] = pct(c["hi"], True)
+            N[f"cell34-{op}-n"] = str(c["n"]); N[f"cell34-{op}-claim"] = "yes" if c["claim"] else "no"; N["cell34-acc"] = pct(c["acc"])
+    # ---- R3b: level 6, unary middle step, overall written-lure excess on v2 (trace, 3 seeds)
+    f6 = RESULTS_DIR / "summary" / "sweep_L6.json"
+    if f6.exists():
+        sw6 = json.loads(f6.read_text()); claim6 = []
+        for m in with_runs:
+            r = sw6.get(f"{m}/trace")
+            if not r or "wlure_excess@v2" not in r["contrasts"]: continue
+            c = r["contrasts"]["wlure_excess@v2"]
+            N[f"l6-{SHORT[m]}-excess"] = pct(c["pooled_mean"], True); N[f"l6-{SHORT[m]}-lo"] = pct(c["ci95"][0], True)
+            N[f"l6-{SHORT[m]}-hi"] = pct(c["ci95"][1], True); N[f"l6-{SHORT[m]}-acc"] = pct(np.mean(list(r["acc"].values())))
+            claim6.append(c["pooled_mean"] if c["claimable"] else None)
+        N["l6-models"] = str(len(claim6)); N["l6-max-excess"] = pct(max(abs(sw6[f"{m}/trace"]["contrasts"]["wlure_excess@v2"]["pooled_mean"])
+                                                                        for m in with_runs if f"{m}/trace" in sw6 and m != "olmo2-1b-it"), True)
     # ---- E10b: trace vs trace_expr, paired, the cell
     for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
         pa = pb = n = 0
@@ -123,6 +166,7 @@ def main() -> int:
     rows = [json.loads(l) for l in (DATA_DIR / "cruxeval_len.jsonl").open()] if (DATA_DIR / "cruxeval_len.jsonl").exists() else []
     if rows:
         N["crux-n"] = str(len({r["src"] for r in rows})); N["crux-used"] = str(len({r["src"] for r in rows if r["used"]}))
+        for k in ("len", "counter", "max"): N[f"crux-kind-{k}"] = str(len({r["src"] for r in rows if r["kind"] == k}))
         for m in with_runs:
             for reg in ("direct", "prose"):
                 f = OUT_DIR / "runs" / m / "cruxeval" / reg / "behavior.jsonl"
@@ -135,6 +179,13 @@ def main() -> int:
                 common = [s for s in by["neutral"] if s in by["misleading"] and used.get(s)]
                 d = [by["misleading"][s]["correct"] - by["neutral"][s]["correct"] for s in common]
                 N[f"crux-{SHORT[m]}-{reg}-delta"] = pct(np.mean(d), True) if d else "--"
+                kind = {r["src"]: r["kind"] for r in rows}
+                for lab, dd in (("", d), ("-len", [x for x, s_ in zip(d, common) if kind[s_] == "len"]),
+                                ("-counter", [x for x, s_ in zip(d, common) if kind[s_] == "counter"])):
+                    if not dd: continue
+                    dd = np.array(dd); boot = [rng.choice(dd, len(dd)).mean() for _ in range(2000)]
+                    N[f"crux-{SHORT[m]}-{reg}{lab}-delta"] = pct(dd.mean(), True); N[f"crux-{SHORT[m]}-{reg}{lab}-lo"] = pct(np.percentile(boot, 2.5), True)
+                    N[f"crux-{SHORT[m]}-{reg}{lab}-hi"] = pct(np.percentile(boot, 97.5), True); N[f"crux-{SHORT[m]}-{reg}{lab}-n"] = str(len(dd))
                 if reg == "prose":
                     ws = [x["wrote_sum"] for s, x in by["misleading"].items() if x["lure_sum"] is not None]
                     wn = [x["wrote_sum"] for s, x in by["neutral"].items() if x["lure_sum"] is not None]
@@ -147,7 +198,7 @@ def main() -> int:
             f.write(f"\\expandafter\\def\\csname NUMval@{k}\\endcsname{{{v}}}\n")
         f.write("\\newcommand{\\NUM}[1]{\\ifcsname NUMval@#1\\endcsname\\csname NUMval@#1\\endcsname\\else\\textcolor{red}{$\\langle\\langle$\\texttt{#1}$\\rangle\\rangle$}\\fi}\n")
     print(f"wrote {len(N)} numbers to {out}")
-    for k in ("cell-olmo7-excess", "expr-olmo7-drop", "probe-olmo7-code", "probe-olmo7-name", "patch-olmo7-pre-half", "patch-olmo7-name-best", "gate-pass"):
+    for k in ("cell-olmo7-excess", "cell-olmo7-repl-excess", "cell-olmo7-comment-excess", "cell-llama3-comment-claim", "cell34-len-excess", "cell34-max-excess", "l6-max-excess", "crux-olmo7-direct-lo", "expr-olmo7-drop", "probe-olmo7-code", "probe-olmo7-name", "patch-olmo7-pre-half", "patch-olmo7-name-best", "gate-pass"):
         print(f"  {k} = {N.get(k)}")
     return 0
 

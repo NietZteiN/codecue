@@ -74,6 +74,10 @@ least one of the two. Refuted if both are within δ — then the failure diminis
 counters, 3 max), all renamed to `total`. No prediction of an effect: this tightens the bound.
 Reported as the paired misleading-minus-neutral accuracy with its interval, used-downstream only.
 
+**Outcomes (2026-09-17, results/NOTES.md):** R3a refuted for the REPL format (3–60× weaker than the trace) and
+partly for comments (≈0 in two models, +6.8 in Llama-3.2-3B). R3b null. R3c refuted (34B: len→sum +0.0, max→sum +1.8 [1.0, 2.8], inside δ).
+R3d null with the bound tightened to ±5/±10 points.
+
 ## Secondary contrasts
 
 - Lure excess (lure rate − pseudo-lure rate on the neutral twin) per regime, per level, per

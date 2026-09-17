@@ -20,3 +20,8 @@ Status legend: planned · blocked · running · done. Numbers go in results/NOTE
 | E3b | Value-step lure rate in the trace (written value == lure vs the matched twin) | CPU | **done L3+L5, 3 seeds, 7 models (2026-09-15).** Effect is one cell: `len(xs)` named as a sum is traced as the sum (59% OLMo-2-7B, 44% Llama-3.2-3B at L5); all other pairings 0–2% |
 
 | E3c | Validity pass (2026-09-15): `value_written` clause bug fixed and re-scored; hits verified by eye; demos leak-free; parser ≥99.7%; direct pseudo-lure explained (sum is the default wrong answer); `99_selfcheck.py` 0 failures | CPU | **done** |
+
+| R3a | Format manipulation: repl and comment regimes, 3 seeds, 3 models, L5 (PREREGISTRATION.md) | ~6 GPU-h | **done 2026-09-17: refuted for repl** (3–60× weaker than trace), comment ≈0 in 2/3 models (Llama-3.2-3B +6.8) |
+| R3b | Level 6: unary middle step as target, 8 lure families, 7 models | ~8 GPU-h | **done 2026-09-17: null** (overall excess ≤0.6 in reliable models) |
+| R3c | CodeLlama-34B, trace, L5, 3 seeds (h200) | ~6 GPU-h | **done 2026-09-17: refuted** — len→sum +0.0, max→sum +1.8, neutral acc 98.9% |
+| R3d | CRUXEval widened to 89 functions (len/counter/max), direct + prose, 7 models | ~2 GPU-h | **done 2026-09-17: null**, bound ±5 (direct) / ±10 (prose) |
