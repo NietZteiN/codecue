@@ -84,6 +84,10 @@ LEVELS: dict[int, dict] = {
     3: {"stmts": [("v1", "list", ()), ("v2", "list", ()), ("v3", "binary", ("v1", "v2"))], "query": "v3", "distractor": None, "steps": 3},
     4: {"stmts": [("v1", "list", ()), ("v2", "list", ()), ("v4", "list", ()), ("v3", "binary", ("v1", "v2"))], "query": "v3", "distractor": "v4", "steps": 3},
     5: {"stmts": [("v1", "list", ()), ("v2", "unary", ("v1",)), ("v3", "unary", ("v2",))], "query": "v3", "distractor": None, "steps": 3},
+    # 6 = the level-5 program with the MIDDLE unary step as the target (added 2026-09-16 to test
+    # whether strong-prior unary names — double/half/succ/pred, gate 100% — contaminate a
+    # middle step the way sum-names contaminate the first). Same prompts as level 5.
+    6: {"stmts": [("v1", "list", ()), ("v2", "unary", ("v1",)), ("v3", "unary", ("v2",))], "query": "v3", "distractor": None, "steps": 3},
 }
 
 
@@ -276,6 +280,8 @@ def make_set(prog: Program, set_id: str, rng: random.Random, target: str) -> lis
 
 
 def targets_for(level: int) -> list[str]:
+    if level == 6:
+        return ["v2"]
     spec = LEVELS[level]
     q = spec["query"]
     inter = [r for r, _, _ in spec["stmts"] if r != q and r != spec["distractor"]]

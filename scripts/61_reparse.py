@@ -5,16 +5,18 @@ import json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.config import OUT_DIR
-from codecue.prompts import parse_answer, parse_answer_free, parse_regime, value_written
+from codecue.prompts import (FEW_SHOT, parse_answer, parse_answer_free, parse_regime, value_written,
+                             value_written_comment, value_written_repl)
 
 def main() -> int:
     for bf in sorted(OUT_DIR.glob("runs/*/*/*/*/behavior.jsonl")):
-        regime = parse_regime(bf.parents[1].name)[0]; few = regime in ("direct", "trace")
+        regime = parse_regime(bf.parents[1].name)[0]; few = regime in FEW_SHOT
+        extract = {"repl": value_written_repl, "comment": value_written_comment}.get(regime, value_written)
         rows = [json.loads(l) for l in bf.open()]; out = []; moved = 0
         for r in rows:
             pred = parse_answer(r["generation"]) if few else parse_answer_free(r["generation"])
             role = r["target"] or r["query"]
-            vw = ({rr: value_written(r["generation"], nm) for rr, nm in r["names"].items()} if regime != "direct"
+            vw = ({rr: extract(r["generation"], nm) for rr, nm in r["names"].items()} if regime != "direct"
                   else {rr: None for rr in r["names"]})
             wrote = vw[role]
             new = {**r, "pred": pred, "correct": pred == r["answer"], "pred_is_lure": r["lure"] is not None and pred == r["lure"],

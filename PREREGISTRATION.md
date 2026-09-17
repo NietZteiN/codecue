@@ -46,6 +46,34 @@ paired difference's bootstrap interval excluding zero. A null means the contamin
 removed by pointing the demonstration at the code, and the mechanism is not "the format lets the
 model skip reading the right-hand side".
 
+## Round 3, fixed 2026-09-16 before any of these runs exist
+
+The mechanism found so far: in the terse trace, a sum-family name on a `len(xs)` variable makes
+the model write the sum although the code's value is represented; the name's tokens cause it;
+showing the expression removes it. Four tests of that account's boundaries.
+
+**R3a. Format.** Same cell, level 5, three models (OLMo-2-7B, Llama-3.2-3B, Llama-3.1-8B), three
+demonstration seeds, two further formats: `repl` (`>>> total` / `2`: a value without its
+expression) and `comment` (`total = len(xs)  # 2`: expression and value on one line).
+Prediction: written-lure excess under `repl` is comparable to `trace` (within a factor of two)
+and under `comment` is within δ = 2 points of zero, for every model that shows the effect under
+`trace`. Refuted if `repl` is null (the effect is specific to our format) or `comment` is not
+(the expression on the line does not protect).
+
+**R3b. Other names, a middle step.** Level 6 = the level-5 program with the middle unary step
+as target; congruent names are `double`/`half`/`succ`/`pred` (gate 100%), lures are unary names
+of other families and list names. Seven models, three seeds, trace. Prediction: at least one
+unary lure family shows a claimable written-lure excess on at least two models. Refuted if none
+does — then the effect is specific to sum-names on list aggregates and the paper says so.
+
+**R3c. Scale.** CodeLlama-34B-Instruct, level 5, the cell, trace, three seeds. Prediction: it
+behaves like the other code models (max→sum rather than len→sum) with a claimable excess on at
+least one of the two. Refuted if both are within δ — then the failure diminishes with scale.
+
+**R3d. Real code, more power.** The CRUXEval subset widened to 89 functions (48 length, 38 loop
+counters, 3 max), all renamed to `total`. No prediction of an effect: this tightens the bound.
+Reported as the paired misleading-minus-neutral accuracy with its interval, used-downstream only.
+
 ## Secondary contrasts
 
 - Lure excess (lure rate − pseudo-lure rate on the neutral twin) per regime, per level, per

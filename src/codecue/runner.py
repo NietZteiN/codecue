@@ -14,7 +14,8 @@ from typing import Sequence
 from .generator import Instance
 from .layout import spans, spans_to_tokens
 from .models import generate_free
-from .prompts import MAX_NEW, build_prompt, demos, parse_answer, parse_answer_free, parse_regime, value_written
+from .prompts import (FEW_SHOT, MAX_NEW, build_prompt, demos, parse_answer, parse_answer_free, parse_regime,
+                      value_written, value_written_comment, value_written_repl)
 
 
 def chat_wrap(tok, prompt: str) -> str:
@@ -29,7 +30,8 @@ def run_group(tok, model, model_key: str, level: int, regime: str, group: str, i
               out_dir: Path, batch_size: int, use_chat: bool = True) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     base, seed = parse_regime(regime)
-    few_shot = base in ("direct", "trace", "trace_expr")
+    few_shot = base in FEW_SHOT
+    extract = {"repl": value_written_repl, "comment": value_written_comment}.get(base, value_written)
     demo_insts = demos(level, seed, base) if few_shot else []
     prompts = [build_prompt(x, regime, demo_insts) for x in instances]
     if not few_shot and use_chat:
@@ -57,7 +59,7 @@ def run_group(tok, model, model_key: str, level: int, regime: str, group: str, i
             # per-role written values: the neutral twin has no target, and comparing it on the
             # QUERIED variable while its sibling is compared on the INTERMEDIATE mis-specified
             # every written-lure baseline until 2026-09-16
-            values_written = ({r: value_written(g, nm) for r, nm in x.names.items()} if base != "direct"
+            values_written = ({r: extract(g, nm) for r, nm in x.names.items()} if base != "direct"
                               else {r: None for r in x.names})
             wrote = values_written[role]
             wrote_true = (wrote == x.values[role]) if wrote is not None else False

@@ -111,7 +111,7 @@ def test_conditions_present(sets):
 def test_target_alternates_between_queried_and_intermediate(sets):
     for L, ss in sets.items():
         tg = {x.target for s in ss for x in s if x.condition == "incongruent"}
-        assert len(tg) == (1 if L == 1 else 2), (L, tg)
+        assert len(tg) == (1 if L in (1, 6) else 2), (L, tg)   # level 6 targets the middle step only
 
 
 def test_lure_variety(sets):

@@ -20,9 +20,10 @@ import re
 
 from .generator import Instance, LEVELS, Program, Stmt, render, sample_sets, trace_steps
 
-REGIMES = ("direct", "trace", "trace_expr", "prose", "codechain")
+REGIMES = ("direct", "trace", "trace_expr", "repl", "comment", "prose", "codechain")
+FEW_SHOT = ("direct", "trace", "trace_expr", "repl", "comment")
 N_DEMOS = 3
-MAX_NEW = {"direct": 8, "trace": 96, "trace_expr": 160, "prose": 400, "codechain": 448}
+MAX_NEW = {"direct": 8, "trace": 96, "trace_expr": 160, "repl": 120, "comment": 200, "prose": 400, "codechain": 448}
 
 PROSE_INSTRUCTION = ("What does the call return? Think step by step, then finish with a line "
                      "of the form `Answer: <number>`.")
@@ -50,6 +51,20 @@ def demo_block(x: Instance, regime: str) -> str:
     if regime == "trace":
         tr = ", ".join(f"{n} = {v}" for n, v in steps)
         return f"{x.program}\nTrace: {tr}\nAnswer: {x.answer}"
+    if regime == "repl":
+        # a Python-session transcript: each variable is queried and its value printed. Writes a
+        # value WITHOUT its expression, like `trace`, in a format people actually read.
+        tr = "\n".join(f">>> {n}\n{v}" for n, v in steps)
+        return f"{x.program}\n{tr}\nAnswer: {x.answer}"
+    if regime == "comment":
+        # the program rewritten with the value of each assignment as an end-of-line comment: the
+        # expression and its value sit on one line, as in `trace_expr`.
+        prog = _prog(x); lines = x.program.split("\n")
+        vals = dict(steps); out = []
+        for ln in lines:
+            m = re.match(r"^(\s*)([A-Za-z_]\w*) = (.+)$", ln)
+            out.append(f"{ln}  # {vals[m.group(2)]}" if m and m.group(2) in vals else ln)
+        return f"{x.program}\nAnnotated:\n" + "\n".join(out) + f"\nAnswer: {x.answer}"
     if regime == "trace_expr":
         # same trace, but each step shows the right-hand side it came from: `count = len(xs) = 3`.
         # The only difference from `trace` is whether the demonstration points at the code.
@@ -72,8 +87,9 @@ def demos(level: int, seed: int, regime: str) -> list[Instance]:
 
 def build_prompt(x: Instance, regime: str, demo_insts: list[Instance]) -> str:
     base, _ = parse_regime(regime)
-    if base in ("direct", "trace", "trace_expr"):
-        blocks = [demo_block(d, base) for d in demo_insts] + [x.program + ("\nAnswer:" if base == "direct" else "\nTrace:")]
+    if base in FEW_SHOT:
+        tail = {"direct": "\nAnswer:", "repl": "\n>>>", "comment": "\nAnnotated:\n"}.get(base, "\nTrace:")
+        blocks = [demo_block(d, base) for d in demo_insts] + [x.program + tail]
         return "\n\n".join(blocks)
     if base == "prose":
         return f"{x.program}\n\n{PROSE_INSTRUCTION}\n"
@@ -117,6 +133,18 @@ VALUE_RE = r"[^\n.;]{0,40}?(?:=|is|:|->|equals)\s*(-?\d+)\b"
 
 
 CLAUSE_END = r"[\n.;`]"
+
+
+def value_written_repl(text: str, name: str) -> int | None:
+    """`>>> total` on one line, the value on the next."""
+    m = re.search(rf"^\s*(?:>>>\s*)?{re.escape(name)}\s*\n\s*(-?\d+)\b", text, re.M)
+    return int(m.group(1)) if m else None
+
+
+def value_written_comment(text: str, name: str) -> int | None:
+    """`total = len(xs)  # 2`: the end-of-line comment on the line that assigns the name."""
+    m = re.search(rf"^\s*{re.escape(name)} = [^\n#]*#\s*(-?\d+)\b", text, re.M)
+    return int(m.group(1)) if m else None
 
 
 def value_written(text: str, name: str, before: str = "Answer:") -> int | None:
