@@ -1,6 +1,21 @@
 # One paper, not two: a narrative for the merged cue-conflict study
 
-*Drafted 2026-09-18. A plan, not a result. Targets the ARR cycle after October.*
+*Drafted 2026-09-18. **Superseded 2026-09-19: the experiment this plan required was run and it
+refutes the plan.** Kept as the record of what was tried and why it failed.*
+
+> **Outcome.** E31, the arithmetic value-only chain, was run on eight models with three
+> demonstration seeds (probing/results/NOTES.md, 2026-09-19). Both pre-registered predictions
+> failed. Behaviourally the format does not reliably let the name in: Llama-3.1-8B is +0.15 on
+> the intermediate, inside the equivalence margin, and Llama-3.2-3B's +9.2 is one demonstration
+> seed out of three. Internally it fails in the wrong way: the true value is decodable at the
+> step that writes it at 0.81/0.59 for the 8B and 0.58/0.38 for OLMo-2-1B, against 0.99–1.00
+> under the full chain. Dropping the equations degrades the computation rather than leaving it
+> intact and breaking the readout.
+>
+> The ladder below therefore does not hold, and its empty bottom-left quadrant is not the only
+> empty one: arithmetic supplies no readout-failure point at all. The two tasks do not share a
+> mechanism across the format ladder. **Recommendation: do not merge.** Submit the two short
+> papers as they stand; neither depends on any number from E31.
 
 ## The thesis in one paragraph
 
