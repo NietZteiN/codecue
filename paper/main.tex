@@ -128,7 +128,10 @@ result is the mean over three fixed sets of worked examples.
 target states the lure value, minus the rate at which the neutral twin's step for the same
 variable states that same number, so that an arbitrary wrong number counts in both. We count an effect as reliable when its sign is the same
 under all three sets of worked examples and a cluster bootstrap over matched problems excludes
-zero, and we treat effects inside two points as equivalent to zero.
+zero, and we call a cell equivalent to zero when its interval lies inside a margin of
+\NUM{eq-delta} points, fixed in advance. Of the \NUM{eq-cells} cells so tested,
+\NUM{eq-equivalent} are equivalent, \NUM{eq-witheffect} carry an effect and
+\NUM{eq-inconclusive} are neither, which we report as inconclusive rather than as null.
 
 \paragraph{Probes and patching.} A linear probe is trained on neutral problems only, one per
 layer and position, to read the target's value from the residual stream, with the recipe and
