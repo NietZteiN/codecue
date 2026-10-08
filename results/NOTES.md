@@ -726,3 +726,19 @@ zero failures (49 historical warnings). Strict submission build passes. Audit ar
 Prompt-position comparison: Llama-3.2-3B completed all three demonstration sets in job
 449113 (exit 0). Job 449114 remains queued and release 449115 waits for it. No validated
 comparison is available or included in the paper.
+
+
+### 2026-10-08 — Figures that explain the paper
+
+Rebuilt the main figures around the task, comparison and finding, with plain-language
+labels and the necessary definitions inside the image. The code paper shows the actual
+length-versus-sum program and complete generated assignment values, then separates
+original-name error readouts from the independent screened-name format replication.
+The arithmetic paper shows the unchanged equations, compares requested response formats,
+and summarizes the broad name-error result separately from its two-operation plot.
+Its second figure shows all generated-calculation readout checks in the two tested models.
+Detailed layer curves and patching controls remain in the appendices; arithmetic full-size
+captions now explain how to read each plot type. Numerical summaries and abstracts are
+unchanged. Companion figure JSON files record the displayed data. Four-page text through
+Limitations and strict submission checks were verified; artifacts:
+`log/figure_understandability_2026-10-08/`.

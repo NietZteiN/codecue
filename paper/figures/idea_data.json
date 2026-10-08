@@ -1,0 +1,13 @@
+{
+  "id": "L5-3-v1-00001-incongruent",
+  "program": "def f(xs):\n    sum_all = len(xs)\n    ww = sum_all + 3\n    qq = ww + 4\n    return qq\nf([5, 3])",
+  "correct_values": {
+    "v1": 2,
+    "v2": 5,
+    "v3": 9
+  },
+  "correct_answer": 9,
+  "name_suggested_digit": 8,
+  "values_only_generation": " sum_all = 8, ww = 11, qq = 15\nAnswer: 15\n\n",
+  "operation_and_value_generation": " sum_all = len(xs) = 2, ww = sum_all + 3 = 5, qq = ww + 4 = 9\nAnswer: 9\n\n"
+}

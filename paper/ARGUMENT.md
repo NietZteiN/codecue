@@ -87,16 +87,19 @@ intervals, probe and patch details, scope checks and statistical conventions.
 ## Writing conventions
 
 Keep final-answer accuracy distinct from accuracy of intermediate value writes. The main
-probe result pools three demonstration sets with cross-fitted layer selection; Figure 2's
-curves and name-identity controls use the separate full-neutral analysis. Explain controls
+probe result pools three demonstration sets with cross-fitted layer selection; the appendix's
+layer curves and name-identity controls use the separate full-neutral analysis. Explain controls
 through the task they predict and report accuracy as a percentage. Caption the direction
 of paired changes and identify each table's comparison and denominator.
 
-Figure 1 shows the actual program and all three assignments from each generated output
-side by side, without introducing another numeric example. Figure 2 separates removal
-of incorrect sum writes, correct-digit prediction and damage to correct writes; each
-has its own axis and stated denominator. Removal of a sum write does not itself establish
-recovery of the correct value. Methods and appendix retain the design-rule disclosures;
+Figure 1 explains the task and length-versus-sum conflict, then shows every actual
+assignment and final answer from the same program under the two example formats. Template
+labels explain what the examples demonstrate without introducing another numeric task.
+Figure 2 tells the two central aggregate findings: error-conditioned correct-digit readouts
+on original names, and the independently screened-name format replication on fresh programs.
+Its panels explicitly identify separate cohorts and define the added-error measure.
+Technical layer curves remain in the appendix, with distinct outcome axes and denominators.
+Removal of a sum write does not itself establish recovery of the correct value. Methods and appendix retain the design-rule disclosures;
 the Limitations section contains the Scope and Internal measurements bullets.
 
 For readers outside this project, keep the abstract's result–evidence–implication order

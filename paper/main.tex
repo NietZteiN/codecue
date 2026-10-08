@@ -63,9 +63,9 @@ affect which value a model writes?
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/idea.pdf}
-\caption{\textbf{(a)} The code assigns length 2 to \texttt{sum\_all}; its name suggests sum 8.
-\textbf{(b,c)} OLMo-2-7B's complete assignment values under two worked-example formats.
-Showing the operation changes the first value from 8 to 2 and the final answer from 15 to 9.}
+\caption{An observed OLMo-2-7B trace. The name suggests sum 8, but the code counts two
+items. Showing operations in worked examples changes the first reported value from 8 to 2
+and the final answer from 15 to 9. Only the example format changes.}
 \label{fig:idea}
 \end{figure*}
 
@@ -156,7 +156,7 @@ smaller: \NUM{direct-lure-min-L5} to \NUM{direct-lure-max-L5} points at this lev
 
 \subsection{The correct digit is decodable on error cases}
 
-On actual incorrect sum writes, neutral-trained probes recover the computed digit with
+On actual incorrect sum writes (Figure~\ref{fig:story}a), neutral-trained probes recover the computed digit with
 \NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy. Table~\ref{tab:central}A gives intervals
 and the number of independent computations; repeated demonstrations remain clustered.
 The prefixes match through the decision token in all \NUM{errorprobe-prefix-n} generations
@@ -183,13 +183,12 @@ hidden-state vector, so they cannot identify which feature changes the output.
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=\textwidth]{figures/mechanism.pdf}
-\caption{\textbf{(a)} Incorrect sum writes removed by replacing internal activity with the
-ordinary-name program's activity, at the name (red) or just before the value (blue).
-\textbf{(b)} A separate predictor reads the correct digit on held-out misleading-name
-programs. \textbf{(c)} Correct writes made wrong by name replacement; note the smaller scale.
-Columns show distinct measurements, not a common error rate.}
-\label{fig:mechanism}
+\includegraphics[width=\textwidth]{figures/story_evidence.pdf}
+\caption{\textbf{(a)} On actual wrong sum writes, a separate predictor reads the computed
+digit immediately before the write. \textbf{(b)} Showing operations reduces added wrong
+sum writes in an independent replication. Panels use different names and computations;
+Table~\ref{tab:central} gives counts and intervals.}
+\label{fig:story}
 \end{figure*}
 
 \subsection{Showing the operation reduces wrong writes}
@@ -206,7 +205,7 @@ elaborations (\texttt{v = 3 + 0 = 3}) lower it to \NUM{format-olmo7-numeric-mean
 (Appendix~\ref{app:round5-formats}). Extra tokens do not reproduce the expression benefit;
 adding arithmetic accounts for part of it.
 
-The format contrast replicates on \NUM{r6-program-n} fresh computations with
+Figure~\ref{fig:story}b shows the format contrast on \NUM{r6-program-n} fresh computations with
 \NUM{r6-name-n} names selected by meaning checks before observing any traces
 (Table~\ref{tab:central}B). CodeGemma shows no observed excess in either format.
 This independent behavioral cohort is separate from the original-name probe cohort;
@@ -398,6 +397,17 @@ Llama-3.1-8B. These 95\% intervals keep each matched program's demonstration-see
 
 \section{Probe and patching details}
 \label{app:probes}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/mechanism.pdf}
+\caption{\textbf{(a)} Incorrect sum writes removed by replacing internal activity with the
+ordinary-name program's activity, at the name (red) or just before the value (blue).
+\textbf{(b)} A separate predictor reads the correct digit on held-out misleading-name
+programs. \textbf{(c)} Correct writes made wrong by name replacement; note the smaller scale.
+Columns show distinct measurements, not a common error rate.}
+\label{fig:mechanism}
+\end{figure*}
 
 We follow \citeauthor{kudo2026faithful}'s 10-class linear-probe recipe, with three seeds and
 neutral-only training. Each probe predicts a target digit from one residual-stream position

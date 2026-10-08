@@ -41,49 +41,53 @@ def main() -> int:
         raise RuntimeError("No paired length-to-sum example changes from wrong to correct")
     p, r, q = pick
 
-    # Match manuscript width so labels retain their intended point size in the PDF.
-    # The aggregate rates are already reported in the formats table.
-    fig = plt.figure(figsize=(7.2, 3.1))
-    gs = fig.add_gridspec(1, 3, width_ratios=[1.0, 1.0, 1.15], wspace=0.25)
-    axl, axv, axe = (fig.add_subplot(gs[i]) for i in range(3))
-    for ax in (axl, axv, axe):
+    # Layout reads left to right: task, conflict, two observed responses.
+    fig = plt.figure(figsize=(7.2, 3.45))
+    fig.text(.02, .96, "Showing the operation changes this wrong trace to a correct one",
+             fontsize=12, weight="bold", va="top")
+    fig.text(.02, .88, "Task: write each assigned value, then the function's final answer.", fontsize=10)
+    axes = [fig.add_axes(box) for box in
+            [(.02, .10, .31, .67), (.36, .10, .27, .67), (.66, .10, .33, .67)]]
+    for ax in axes:
         ax.axis("off")
-
-    # --- (a) the problem
-    axl.set_title("(a) Same Python\nprogram", loc="left", fontsize=10.5)
-    axl.text(0, 0.88, p["program"], family="monospace", fontsize=10.5,
-             va="top", linespacing=1.3, transform=axl.transAxes)
-    axl.text(0, 0.35, f"Correct length: {r['values']['v1']}", fontsize=10.5,
-             color=GREEN, va="top", transform=axl.transAxes)
-    axl.text(0, 0.22, f"Name suggests sum: {r['lure']}", fontsize=10.5,
-             color=RED, va="top", transform=axl.transAxes)
-    axl.text(0, 0.09, f"Correct final answer: {r['answer']}", fontsize=10.5,
-             color=GREY, va="top", transform=axl.transAxes)
-
-    # --- (b) what the model writes, under each demonstration format
-    rows = [(axv, "(b) Examples show\nvalues only", r, RED),
-            (axe, "(c) Examples show\noperation and value", q, GREEN)]
-    for ax, title, record, color in rows:
-        ax.set_title(title, loc="left", fontsize=10.5)
-        ax.text(0, 0.88, "OLMo-2-7B writes:", fontsize=10.5,
-                color=GREY, va="top", transform=ax.transAxes)
+    axl, axv, axe = axes
+    axl.text(0, 1, "Same program and input", weight="bold", fontsize=10, va="top")
+    axl.text(0, .87, p["program"], family="monospace", fontsize=9,
+             va="top", linespacing=1.25)
+    axl.text(0, .31, "len counts items: 2", color=GREEN, fontsize=10, weight="bold")
+    axl.text(0, .18, "sum_all suggests 5 + 3 = 8", color=RED, fontsize=9)
+    axl.text(0, .05, "Correct final answer: 9", fontsize=10)
+    for ax, title, fmt, record, color in [
+        (axv, "Examples show values", "name = value", r, RED),
+        (axe, "Examples show operations", "name = operation = value", q, GREEN),
+    ]:
+        ax.text(0, 1, title, weight="bold", fontsize=10, va="top")
+        ax.text(0, .87, fmt, fontsize=8.5, family="monospace", color=GREY, va="top")
+        ax.text(0, .73, "Actual OLMo-2-7B output:", fontsize=9, color=GREY)
         assignments = record["generation"].split("\n")[0].strip().split(", ")
-        if len(assignments) != 3:
-            raise ValueError("Expected three complete generated assignments")
-        for k, assignment in enumerate(assignments):
-            ax.text(0, 0.68 - 0.15 * k, assignment, family="monospace", fontsize=10.0,
-                    color=color, weight="bold" if k == 0 else "normal",
-                    va="top", transform=ax.transAxes)
-        mark = "wrong" if record["pred"] != r["answer"] else "correct"
-        ax.text(0, 0.15, f"Final answer: {record['pred']}\n({mark})", fontsize=10.5,
-                color=color, weight="bold", va="top", transform=ax.transAxes)
-    fig.text(0.5, -0.015, "Same program and model; only the worked examples' format changes.",
-             ha="center", fontsize=9.5, color=GREY)
+        assert len(assignments) == 3
+        for j, assignment in enumerate(assignments):
+            # Only line breaks change; preserve all observed assignment text.
+            if record is q and j > 0:
+                lhs, value = assignment.rsplit(" = ", 1)
+                assignment = lhs + "\n     = " + value
+            ax.text(0, .61 - j*.18, assignment, family="monospace", fontsize=8.8,
+                    color=color if j == 0 else "#252525", va="top", linespacing=1.1)
+        ax.text(0, .02, f"Answer: {record['pred']}  ({'correct' if record['correct'] else 'wrong'})",
+                color=color, fontsize=10, weight="bold")
+    fig.text(.02, .025, "Only the worked-example format changes; the model solves the same program.",
+             fontsize=9, color=GREY)
 
     FIG.mkdir(parents=True, exist_ok=True)
     stem = FIG / "idea"
     fig.savefig(stem.with_suffix(".pdf"), bbox_inches="tight")
     fig.savefig(stem.with_suffix(".png"), dpi=160, bbox_inches="tight")
+    (FIG / "idea_data.json").write_text(json.dumps({
+        "id": r["id"], "program": p["program"], "correct_values": r["values"],
+        "correct_answer": r["answer"], "name_suggested_digit": r["lure"],
+        "values_only_generation": r["generation"],
+        "operation_and_value_generation": q["generation"],
+    }, indent=2) + "\n")
     print(f"wrote {stem}.png using {r['id']}")
     return 0
 

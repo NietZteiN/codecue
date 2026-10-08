@@ -26,14 +26,15 @@ def main() -> int:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
-    fig, axes = plt.subplots(len(MODELS), 3, figsize=(7.2, 3.7))
-    fig.subplots_adjust(left=0.095, right=0.99, top=0.84, bottom=0.20,
+    fig, axes = plt.subplots(len(MODELS), 3, figsize=(7.2, 4.3))
+    fig.subplots_adjust(left=0.095, right=0.99, top=0.78, bottom=0.24,
                         wspace=0.34, hspace=0.38)
-    headers = ["(a) Incorrect sum writes\nremoved (%)", "(b) Correct digit\npredicted (%)",
+    fig.text(.02, .97, "Replacing internal activity can change wrong sum writes", fontsize=12, weight="bold", va="top")
+    headers = ["(a) Incorrect sum writes\nremoved (%)", "(b) Correct digit read (%)\nAll held-out misleading names",
                "(c) Correct writes\nmade wrong (%)"]
     for ax, title in zip(axes[0], headers):
         box = ax.get_position()
-        fig.text((box.x0 + box.x1) / 2, 0.89, title, ha="center", fontsize=10)
+        fig.text((box.x0 + box.x1) / 2, 0.83, title, ha="center", fontsize=10)
     for row, (key, label) in enumerate(MODELS):
         ax_patch, ax_probe, ax_damage = axes[row]
         R = OUT_DIR / "runs" / key / "L5" / "patch"
@@ -65,13 +66,14 @@ def main() -> int:
             ax.grid(axis="y", color="0.92", lw=0.7)
             ax.tick_params(labelsize=8.5)
             if row == len(MODELS) - 1:
-                ax.set_xlabel("Model layer", fontsize=9)
+                ax.set_xlabel("Model layer (early → late)", fontsize=8.5)
         box = ax_patch.get_position()
         fig.text(0.012, (box.y0 + box.y1) / 2, label, rotation=90,
                  ha="center", va="center", fontsize=10)
     handles, labels = axes[0, 0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, fontsize=9,
-               bbox_to_anchor=(0.54, 0.01))
+               bbox_to_anchor=(0.54, 0.05))
+    fig.text(.02, .02, "Replacement uses the ordinary-name twin; removing a sum write can produce another wrong value.", fontsize=8.5)
     FIG.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIG / "mechanism.pdf", bbox_inches="tight"); fig.savefig(FIG / "mechanism.png", dpi=160, bbox_inches="tight")
     print("wrote", FIG / "mechanism.png")
