@@ -1,7 +1,6 @@
 #!/usr/bin/env python
-"""The mechanism in one figure: where patching from the neutral twin removes the lure write, by
-layer, at the name's tokens (origin) and at the decision token (destination), plus what a probe
-reads at the decision token. Two models with token-aligned name pairs.
+"""Separate activation-replacement effects, digit prediction and disruption by layer.
+Two models with token-aligned name pairs; each outcome gets its own axis.
 
     python scripts/71_mechanism_figure.py
 """
@@ -15,7 +14,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.config import OUT_DIR, PROJECT_ROOT  # noqa: E402
-from codecue.reporting import probe_directory, probe_output  # noqa: E402
+from codecue.reporting import probe_output  # noqa: E402
 
 FIG = PROJECT_ROOT / "paper" / "figures"
 RED, GREEN, BLUE, GREY = "#B5321F", "#157A55", "#2B4A9E", "#5B6470"
@@ -27,8 +26,16 @@ def main() -> int:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
-    fig, axes = plt.subplots(1, len(MODELS), figsize=(7.2, 3.2), sharey=True)
-    for ax, (key, label) in zip(axes, MODELS):
+    fig, axes = plt.subplots(len(MODELS), 3, figsize=(7.2, 3.7))
+    fig.subplots_adjust(left=0.095, right=0.99, top=0.84, bottom=0.20,
+                        wspace=0.34, hspace=0.38)
+    headers = ["(a) Incorrect sum writes\nremoved (%)", "(b) Correct digit\npredicted (%)",
+               "(c) Correct writes\nmade wrong (%)"]
+    for ax, title in zip(axes[0], headers):
+        box = ax.get_position()
+        fig.text((box.x0 + box.x1) / 2, 0.89, title, ha="center", fontsize=10)
+    for row, (key, label) in enumerate(MODELS):
+        ax_patch, ax_probe, ax_damage = axes[row]
         R = OUT_DIR / "runs" / key / "L5" / "patch"
         name = json.loads((R / "main_name.json").read_text()); pre = json.loads((R / "main_pre.json").read_text())
         nL = name["n_layers"]; L = np.arange(nL)
@@ -44,18 +51,27 @@ def main() -> int:
                 if ev is not None:
                     acc.setdefault(r["layer"], []).append(ev[0] if isinstance(ev, list) else ev)
         pl = sorted(acc); pa = [100 * np.mean(acc[l]) for l in pl]
-        ax.plot(L, r_name, "-o", ms=3.5, lw=2, color=RED, label="name-token patch")
-        ax.plot(L, r_pre, "-s", ms=3.5, lw=2, color=BLUE, label="decision-token patch")
-        probe_label = "held-out probe accuracy" if probe_directory() == "probes_disjoint" else "probe accuracy (overlapping programs)"
-        ax.plot(pl, pa, "--", lw=1.6, color=GREEN, label=probe_label)
-        ax.fill_between(L, 0, d_name, color=GREY, alpha=0.18, lw=0, label="name-patch damage")
-        ax.set_xlabel("layer"); ax.set_title(label, loc="left", fontsize=10)
-        ax.set_ylim(0, 104); ax.set_xlim(-0.5, nL - 0.5); ax.grid(axis="y", color="0.92", lw=0.7)
-    axes[0].set_ylabel("removed / accuracy (%)", fontsize=9)
-    handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, fontsize=8)
-    # (title line removed for the paper; the caption carries it)
-    fig.tight_layout(rect=(0, 0.16, 1, 1))
+        ax_patch.plot(L, r_name, "-o", ms=2.5, lw=1.7, color=RED,
+                      label="Replace activity at the name")
+        ax_patch.plot(L, r_pre, "-s", ms=2.5, lw=1.7, color=BLUE,
+                      label="Replace activity before the value")
+        ax_probe.plot(pl, pa, "--", lw=1.7, color=GREEN)
+        ax_damage.plot(L, d_name, "-", lw=1.7, color=GREY)
+        ax_patch.set_ylim(0, 104); ax_probe.set_ylim(0, 104)
+        ax_damage.set_ylim(0, 5); ax_damage.set_yticks([0, 2, 4])
+        for ax in axes[row]:
+            ax.set_xlim(-0.5, nL - 0.5)
+            ax.set_xticks(np.arange(0, nL, 10))
+            ax.grid(axis="y", color="0.92", lw=0.7)
+            ax.tick_params(labelsize=8.5)
+            if row == len(MODELS) - 1:
+                ax.set_xlabel("Model layer", fontsize=9)
+        box = ax_patch.get_position()
+        fig.text(0.012, (box.y0 + box.y1) / 2, label, rotation=90,
+                 ha="center", va="center", fontsize=10)
+    handles, labels = axes[0, 0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, fontsize=9,
+               bbox_to_anchor=(0.54, 0.01))
     FIG.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIG / "mechanism.pdf", bbox_inches="tight"); fig.savefig(FIG / "mechanism.png", dpi=160, bbox_inches="tight")
     print("wrote", FIG / "mechanism.png")

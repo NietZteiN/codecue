@@ -75,6 +75,13 @@ intervals, probe and patch details, scope checks and statistical conventions.
 
 ## Writing conventions
 
+Figure 1 shows the actual program and all three assignments from each generated output
+side by side, without introducing another numeric example. Figure 2 separates removal
+of incorrect sum writes, correct-digit prediction and damage to correct writes; each
+has its own axis and stated denominator. Removal of a sum write does not itself establish
+recovery of the correct value. Methods and appendix retain the design-rule disclosures;
+the Limitations section contains the Scope and Internal measurements bullets.
+
 For readers outside this project, keep the abstract's result–evidence–implication order
 but explain the task and comparison in ordinary words. Define the requested calculation
 or reported variable values before using technical labels. Avoid unexplained equivalence,

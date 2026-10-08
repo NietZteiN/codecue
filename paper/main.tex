@@ -62,8 +62,9 @@ affect which value a model writes?
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/idea.pdf}
-\caption{\textbf{(a)} Code and name imply different values. \textbf{(b)} OLMo-2-7B's traces
-under demonstrations showing values alone (red) or expressions with values (green).}
+\caption{\textbf{(a)} The code assigns length 2 to \texttt{sum\_all}; its name suggests sum 8.
+\textbf{(b,c)} OLMo-2-7B's complete assignment values under two worked-example formats.
+Showing the operation changes the first value from 8 to 2 and the final answer from 15 to 9.}
 \label{fig:idea}
 \end{figure*}
 
@@ -175,10 +176,12 @@ hidden-state vector, so they cannot identify which feature changes the output.
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/mechanism.pdf}
-\caption{Name-error removal at name tokens (red) and the decision token (blue).
-Dashed green: probe accuracy on held-out misleading-name programs; grey: damage to correct answers.
-Llama-3.1-8B's \texttt{sum\_all} lacks an aligned twin for name-site patching.}
+\includegraphics[width=\textwidth]{figures/mechanism.pdf}
+\caption{\textbf{(a)} Incorrect sum writes removed by replacing internal activity with the
+ordinary-name program's activity, at the name (red) or just before the value (blue).
+\textbf{(b)} A separate predictor reads the correct digit on held-out misleading-name
+programs. \textbf{(c)} Correct writes made wrong by name replacement; note the smaller scale.
+Columns show distinct measurements, not a common error rate.}
 \label{fig:mechanism}
 \end{figure*}
 
@@ -251,10 +254,6 @@ code models in \citet{le2026obfuscated}.
 not use. Error readouts select layers independently; full-neutral curves and name controls
 are descriptive. Patches replace mixed representations and may have side effects.
 Llama-3.1-8B's \texttt{sum\_all} lacks an aligned twin for name-site patching.
-\item \textbf{Design deviations.} The registered REPL prediction failed. All three main-cell
-names fail the planned panel meaning gate, leaving its filtered estimate unavailable.
-Screened-name replication supports the format contrast but does not repair that deviation;
-probes and patches retain the original names (Appendix~\ref{app:round6-identifiers}).
 \end{itemize}
 
 \bibliography{refs}

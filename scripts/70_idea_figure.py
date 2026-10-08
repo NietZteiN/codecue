@@ -15,7 +15,6 @@ from codecue.lures import FAMILY_OF_NAME  # noqa: E402
 
 FIG = PROJECT_ROOT / "paper" / "figures"
 RED, GREEN, GREY, BLUE = "#B5321F", "#157A55", "#5B6470", "#2B4A9E"
-EXAMPLE = "L5-5-v1-00012"          # chosen in the text below; any paired flip works
 
 
 def main() -> int:
@@ -38,44 +37,48 @@ def main() -> int:
         q = b.get(i)
         if q and r["value_written"] == r["lure"] and not r["correct"] and q["correct"] and len(p["xs"]) == 2:
             pick = (p, r, q); break
+    if pick is None:
+        raise RuntimeError("No paired length-to-sum example changes from wrong to correct")
     p, r, q = pick
-    name = r["names"]["v1"]
 
     # Match manuscript width so labels retain their intended point size in the PDF.
     # The aggregate rates are already reported in the formats table.
-    fig = plt.figure(figsize=(7.2, 3.5))
-    gs = fig.add_gridspec(1, 2, width_ratios=[1.00, 1.30], wspace=0.22)
-    axl, axm = (fig.add_subplot(gs[i]) for i in range(2))
-    for ax in (axl, axm):
+    fig = plt.figure(figsize=(7.2, 3.1))
+    gs = fig.add_gridspec(1, 3, width_ratios=[1.0, 1.0, 1.15], wspace=0.25)
+    axl, axv, axe = (fig.add_subplot(gs[i]) for i in range(3))
+    for ax in (axl, axv, axe):
         ax.axis("off")
 
     # --- (a) the problem
-    axl.set_title("(a)  conflicting values", loc="left", fontsize=10.5)
-    axl.text(0, 0.90, p["program"], family="monospace", fontsize=10.5, va="top", transform=axl.transAxes)
-    axl.text(0, 0.40, f"code: len(xs) = {r['values']['v1']}", family="monospace",
-             fontsize=10.5, color=GREEN, va="top", transform=axl.transAxes)
-    axl.text(0, 0.27, f"name: sum(xs) = {r['lure']}", family="monospace",
-             fontsize=10.5, color=RED, va="top", transform=axl.transAxes)
-    axl.text(0, 0.16, f"the call returns {r['answer']}", fontsize=10.5, color="0.3", va="top",
-             style="italic", transform=axl.transAxes)
+    axl.set_title("(a) Same Python\nprogram", loc="left", fontsize=10.5)
+    axl.text(0, 0.88, p["program"], family="monospace", fontsize=10.5,
+             va="top", linespacing=1.3, transform=axl.transAxes)
+    axl.text(0, 0.35, f"Correct length: {r['values']['v1']}", fontsize=10.5,
+             color=GREEN, va="top", transform=axl.transAxes)
+    axl.text(0, 0.22, f"Name suggests sum: {r['lure']}", fontsize=10.5,
+             color=RED, va="top", transform=axl.transAxes)
+    axl.text(0, 0.09, f"Correct final answer: {r['answer']}", fontsize=10.5,
+             color=GREY, va="top", transform=axl.transAxes)
 
     # --- (b) what the model writes, under each demonstration format
-    axm.set_title("(b)  OLMo-2-7B's traces", loc="left", fontsize=10.5)
-    rows = [("Examples show: v = 3", r["generation"].split("\n")[0].strip(), r["pred"], RED),
-            ("Examples show: v = len(xs) = 3", q["generation"].split("\n")[0].strip(), q["pred"], GREEN)]
-    import textwrap
-    y = 0.92
-    for lab, gen, pred, col in rows:
-        axm.text(0, y, lab, fontsize=10, color="0.25", transform=axm.transAxes)
-        wrapped = textwrap.wrap(gen, 34) or [gen]
-        for k, line in enumerate(wrapped[:2]):
-            axm.text(0, y - 0.11 - 0.085 * k, line, family="monospace", fontsize=9.3, color=col, transform=axm.transAxes)
-        mark = "wrong" if pred != r["answer"] else "correct"
-        axm.text(0, y - 0.135 - 0.085 * len(wrapped[:2]), f"answers {pred}  ({mark})", fontsize=10,
-                 color=col, weight="bold", transform=axm.transAxes)
-        y -= 0.46
-    axm.text(0, -0.04, "Same problem and worked examples.\nOnly the examples' format changes.",
-             fontsize=9.4, color="0.4", style="italic", transform=axm.transAxes)
+    rows = [(axv, "(b) Examples show\nvalues only", r, RED),
+            (axe, "(c) Examples show\noperation and value", q, GREEN)]
+    for ax, title, record, color in rows:
+        ax.set_title(title, loc="left", fontsize=10.5)
+        ax.text(0, 0.88, "OLMo-2-7B writes:", fontsize=10.5,
+                color=GREY, va="top", transform=ax.transAxes)
+        assignments = record["generation"].split("\n")[0].strip().split(", ")
+        if len(assignments) != 3:
+            raise ValueError("Expected three complete generated assignments")
+        for k, assignment in enumerate(assignments):
+            ax.text(0, 0.68 - 0.15 * k, assignment, family="monospace", fontsize=10.0,
+                    color=color, weight="bold" if k == 0 else "normal",
+                    va="top", transform=ax.transAxes)
+        mark = "wrong" if record["pred"] != r["answer"] else "correct"
+        ax.text(0, 0.15, f"Final answer: {record['pred']}\n({mark})", fontsize=10.5,
+                color=color, weight="bold", va="top", transform=ax.transAxes)
+    fig.text(0.5, -0.015, "Same program and model; only the worked examples' format changes.",
+             ha="center", fontsize=9.5, color=GREY)
 
     FIG.mkdir(parents=True, exist_ok=True)
     stem = FIG / "idea"

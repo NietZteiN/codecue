@@ -668,3 +668,13 @@ what the models report, what changes between the two problem versions, and how t
 internal predictions are measured. Preserved the main result numbers and scientific
 scope; no experimental results changed.
 Verification: `log/accessible_abstracts_2026-10-08/verification.json`.
+
+### 2026-10-08 — Figure readability and shorter limitations
+
+Removed the Design deviations limitations bullet. Figure 1 now places the real program
+and both complete generated assignment sequences side by side, with correct length,
+name-suggested sum and final answers labeled. Figure 2 separates incorrect sum writes
+removed by activation replacement, correct-digit prediction and damage to correct writes.
+The damage panel uses an explicit 0–5% scale. All eight plotted numerical series and
+the selected real example are unchanged; methods and appendix retain the design disclosures.
+Verification: `log/figure_clarity_2026-10-08/verification.json`.
