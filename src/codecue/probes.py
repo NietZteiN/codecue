@@ -161,7 +161,8 @@ def to_device(h: np.ndarray, device: str, standardize: tuple[np.ndarray, np.ndar
 def train_and_eval(train_dir: Path, test_dirs: dict[str, Path], role: str, out_path: Path,
                    seeds=(0, 1, 2), optimizer: str = "sgd", epochs: int = 10_000, lr: float = 1e-3,
                    layers: list[int] | None = None, positions: list[str] | None = None,
-                   device: str = "cuda", control: bool = True, standardize: bool = False) -> None:
+                   device: str = "cuda", control: bool = True, standardize: bool = False,
+                   save_control_predictions: bool = False) -> None:
     """Sweep (position, layer, seed); write one JSON with aggregates and per-instance outputs."""
     from .probe_data import assert_disjoint_metadata
     assert_disjoint_metadata(json.loads((train_dir / "meta.json").read_text()),
@@ -233,7 +234,10 @@ def train_and_eval(train_dir: Path, test_dirs: dict[str, Path], role: str, out_p
                         Xte = torch.tensor(np.asarray(Hte[:, pj, li, :]), device=device).float()
                         if stds is not None:
                             Xte = (Xte - stds[0][a_]) / stds[1][a_]
-                        ctl[cond] = float((cprobe.logprobs(Xte).argmax(-1).cpu().numpy() == control_labels(mte, role)).mean())
+                        control_pred = cprobe.logprobs(Xte).argmax(-1).cpu().numpy()
+                        ctl[cond] = float((control_pred == control_labels(mte, role)).mean())
+                        if save_control_predictions:
+                            per_inst[f"{pl}/L{mtr['layers'][li]}/s{seed}/{cond}/control_pred"] = control_pred
                     rec["control_acc"] = ctl
                 results.append(rec)
                 print(f"{role} {pl} L{mtr['layers'][li]} s{seed} train={rec['train_acc']:.3f} "

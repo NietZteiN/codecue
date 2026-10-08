@@ -103,3 +103,13 @@ the statement end, last token of the span.
 Before any result is claimed, each model is asked on the neutral twin what a variable named
 `<name>` most likely holds; names with < 80% panel agreement with the lure table are dropped
 from analysis (kept in the data, flagged). This gate is fixed now so it cannot be tuned later.
+
+## 2026-10-08 follow-up: prompt-end comparison
+
+Before the new extraction and fits, freeze the follow-up specified in
+`docs/PROMPT_PROBE_COMPARISON.md`: original three models, three demonstration sets,
+training splits, test computations, probe recipe and independently selected layers.
+Compare the last full-prompt token with the pre-write position on the same previously
+observed errors, with paired canonical-computation bootstrap intervals and controls.
+Both higher and already-high prompt readouts are reportable outcomes; neither establishes
+causal use. The original artifacts and prior design deviations remain documented.
