@@ -1,6 +1,7 @@
 % Cue conflict in code traces -- ARR short-paper draft (4 pages of body).
-% Every quantity is a \NUM{} key written by scripts/51_numbers.py; an unfilled key renders red.
-% Tables are generated into paper/tables/ by the same script. Build: make paper.
+% Quantities use generated \NUM{} keys; an unfilled key renders red.
+% Tables come from scripts/51_numbers.py and follow-up generators, including
+% scripts/83_main_evidence.py. Build: make paper-submission.
 
 \documentclass[11pt]{article}
 \usepackage[review]{acl}
@@ -33,8 +34,8 @@
 \begin{abstract}
 Language models can report a wrong value even when their internal activity contains
 information about the correct value. We extend \citeauthor{kudo2026faithful}'s arithmetic
-study to Python programs, asking \NUM{n-models} models to report each variable's value as
-the program runs. We compare versions of the same program that differ only in a variable
+study to Python programs, asking \NUM{n-models} models to predict each variable's value.
+We compare versions of the same program that differ only in a variable
 name. Three models more often report a sum when a variable holding a list's length has a
 sum-like name. Yet small predictors trained on other programs read the correct value
 from the model's internal activity with \NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy
@@ -87,19 +88,19 @@ suggested by the name.
 
 \section{Study design}
 
-Each problem is a short Python function over a list of distinct digits. Assignments apply
-list aggregates (\texttt{len}, \texttt{sum}, \texttt{max}, \texttt{min}) or integer operations,
-followed by a return and a call. True intermediate and final values are single digits.
-The main level has three dependent assignments; Appendix~\ref{app:levels} gives the full design.
-We test \NUM{n-models} instruction-tuned models with 1,000 matched problems per level and target,
+Each problem is a short Python function over a list of distinct digits. Assignments
+compute length, sum, maximum or minimum, or apply integer arithmetic. All correct variable
+values and return values are single digits. The main level has three dependent assignments
+(Appendix~\ref{app:levels}).
+We test \NUM{n-models} instruction-tuned models at levels 3 and 5, with 1,000 matched problems per target,
 with three fixed sets of three worked examples. CodeLlama-34B supplies an additional scale check.
 
-Each matched pair differs only in one target identifier. A congruent name implies the assigned operation;
-a misleading name implies another. Its name-suggested value must differ from every value, constant and
-input element in the problem. This prevents copying from explaining a name error and excludes \texttt{max} and \texttt{min}
-as name-suggested operations on the aggregate step. We also check which operation each model associates
-with each identifier. The original main names fail the planned 80\% panel gate, a selection-rule
-deviation. We disclose it and independently replicate with screened names and fresh programs
+Each pair differs only in one variable name. A congruent name suggests the assigned
+operation; a misleading name suggests another. The suggested digit must be absent from
+the inputs, constants and computed values. This excludes maximum and minimum as competing
+operations on the first assignment. We also check which operation each model associates
+with each name. The original main names fail the planned meaning check: agreement in 80\%
+of models. We report that departure and replicate with independently screened names and fresh programs
 (Appendix~\ref{app:round6-identifiers}).
 
 In the \emph{direct} regime, models write the return value. In \emph{trace}, they first write
@@ -107,8 +108,8 @@ each assignment's value, as in \texttt{qq = 3, v = 6, vv = 9}. The \emph{trace-e
 adds the expression to each demonstrated step, as in \texttt{qq = len(xs) = 3}.
 REPL, comment and free-prose formats test the effect's scope (Appendix~\ref{app:formats}).
 
-Our main measure is \emph{excess name errors}: the rate at which a misleading trace writes
-the name-suggested value at the target step, minus the neutral twin's rate of writing that same digit.
+Our main measure is \emph{excess name errors}: how often a misleading-name trace writes
+the suggested digit, minus how often the ordinary-name version writes that same digit.
 We measure name errors similarly in the direct regime. We call an effect reliable when its sign
 agrees across all three demonstration sets and a 95\% cluster-bootstrap interval excludes
 zero. To support a small-effect claim, a 90\% interval must fit inside the preregistered
@@ -129,8 +130,8 @@ details are in Appendix~\ref{app:probes}.
 \tabinput{central_evidence}
 \caption{A: original names; excess sum writes, correct-digit probe accuracy on actual wrong
 writes, and probe counts (writes / independent computations). B: screened names on
-\NUM{r6-program-n} fresh computations. Excesses and changes are points [95\% intervals].
-Panels use separate cohorts.}
+\NUM{r6-program-n} fresh computations; change is operation + value minus values only.
+Excesses and changes are points [95\% intervals]. Panels use separate cohorts.}
 \label{tab:central}
 \end{table*}
 
@@ -138,12 +139,12 @@ Panels use separate cohorts.}
 
 \subsection{Terse traces follow a misleading name}
 
-Table~\ref{tab:central}A shows excess sum writes on length-computed variables in the
-three affected models. Their ordinary-name trace accuracies are
-\NUM{cell-olmo7-acc}, \NUM{cell-llama3-acc} and \NUM{cell-llama8-acc}\%, respectively:
-they usually trace these programs correctly (full panel: Appendix~\ref{app:matrix}).
+Table~\ref{tab:central}A shows excess sum writes when the code computes a list's length in
+three affected models. Across ordinary-name programs at this level, their final-answer
+accuracies are \NUM{cell-olmo7-acc}, \NUM{cell-llama3-acc} and \NUM{cell-llama8-acc}\%
+(full panel: Appendix~\ref{app:matrix}).
 
-The sum is not these models' usual error on a length step. On wrong neutral traces, sum writes
+The sum is not these models' usual error on a length step. On parsed wrong neutral writes, sums
 account for only \NUM{neuerr-sum-lo}--\NUM{neuerr-sum-hi}\% of errors; maximum values and
 off-by-one lengths are more common. The sum-like name changes which wrong value they write.
 CodeLlama-7B's larger effect occurs on a maximum-computed variable
@@ -163,8 +164,11 @@ across the three demonstration sets. The cached state therefore also precedes th
 actual value write. Appendix~\ref{app:round6-probes} reports clustered intervals and the
 correct-write and other-error strata.
 
-Five-fold layer selection excludes each test computation. Neutral name-identity controls
-score \NUM{probe-olmo7-ctl}, \NUM{probe-llama3-ctl} and \NUM{probe-llama8-ctl}.
+Five-fold layer selection excludes each test computation. Separately, controls trained to
+predict a random digit for each name reach \NUM{probe-olmo7-ctl-pct},
+\NUM{probe-llama3-ctl-pct} and \NUM{probe-llama8-ctl-pct}\% neutral accuracy.
+These measure name identity; their layers are selected on all neutral programs
+(Appendix~\ref{app:probes}).
 Recovering the correct digit on an error establishes decodability, not its use in generation.
 \input{tables/prompt_comparison_note}
 
@@ -188,7 +192,7 @@ Columns show distinct measurements, not a common error rate.}
 \label{fig:mechanism}
 \end{figure*}
 
-\subsection{Showing the expression reduces the effect}
+\subsection{Showing the operation reduces wrong writes}
 
 We keep the programs, models and demonstration sets fixed and change the examples from
 \texttt{v = 3} to \texttt{v = len(xs) = 3}. Name-error rates fall by
@@ -234,8 +238,9 @@ Our synthetic tasks separate computed and name-suggested values.
 Here we test readouts before actual wrong trace writes and change their demonstration format.
 Faithfulness studies perturb prompts and chains
 \cite{turpin2023unfaithful,lanham2023measuring,chen2025reasoning}; we intervene at the
-value-writing position. Stroop studies focus on next-token prediction
-\cite{stroop1935,geirhos2019texture,wang2026stroop,hu2026conflict}.
+value-writing position. Conflict tasks isolate competing cues
+\cite{stroop1935,geirhos2019texture}; recent language-model studies test lexical responses
+\cite{wang2026stroop,hu2026conflict}.
 
 \section{Conclusion}
 
@@ -337,9 +342,9 @@ concern these named groups; they do not establish that every model reads each na
 \begin{table*}[t]
 \centering\small
 \tabinput{cells}
-\caption{Full level-5 panel. Ordinary-name trace accuracy (\%); excess name errors in points
-[95\% intervals]. Stars mark consistent signs across demonstration sets and intervals
-excluding zero. Length and maximum are paired with sum-like names.}
+\caption{Full level-5 panel: ordinary-name final-answer accuracy (\%) and excess name errors (points).
+Direct contrasts rename the returned variable; trace contrasts rename the first assignment.
+Trace columns include 95\% intervals. Stars mark consistent signs and intervals excluding zero.}
 \label{tab:full-panel}
 \end{table*}
 
@@ -356,7 +361,7 @@ harder to interpret as a specific trace failure.
 \centering\small
 \tabinput{matrix}
 \caption{Excess name errors at the aggregate step, trace regime, level 3 / level 5, three
-sets of worked examples pooled; $^{*}$ as in Table~\ref{tab:cells}.}
+sets of worked examples pooled; $^{*}$ as in Table~\ref{tab:full-panel}.}
 \label{tab:matrix}
 \end{table*}
 
@@ -404,7 +409,7 @@ evaluate \NUM{probe-n-test} misleading-name programs, with overlap guards that i
 spelling. Table~\ref{tab:probe-repeats} reports the name controls alongside digit accuracy.
 
 % Disjoint-probe demonstration repeats
-The main scores use demonstration set 7. Repeating training and evaluation with sets 11 and 13
+Figure~\ref{fig:mechanism}'s probe curves use demonstration set 7. Repeating training and evaluation with sets 11 and 13
 gives true-digit accuracies of \NUM{probe-olmo7-demo-lo}--\NUM{probe-olmo7-demo-hi}\%,
 \NUM{probe-llama3-demo-lo}--\NUM{probe-llama3-demo-hi}\% and
 \NUM{probe-llama8-demo-lo}--\NUM{probe-llama8-demo-hi}\% across the three sets. Each repeat

@@ -31,7 +31,7 @@ two batch allocations on a30 and h100, keeping h200's shared account pool free.
 
 Submitted GPU jobs: 449113 (Llama-3.2-3B, a30, 8-hour limit) and 449114
 (OLMo-2-7B followed by Llama-3.1-8B, h100, 12-hour limit). Llama-3.2-3B started on g-02-01 at
-2026-10-08 21:11 UTC; the second allocation is queued. CPU release job 449115 depends on both succeeding. Request
+2026-10-08 21:11 UTC and completed at 21:30 UTC (exit 0); the second allocation is queued. CPU release job 449115 depends on both succeeding. Request
 metadata are recorded in `docs/PROMPT_COMPARISON_STATUS.json`; job outputs go to
 `log/slurm/<job-id>_<name>.out`.
 

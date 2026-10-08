@@ -701,3 +701,28 @@ added to the paper. Integration remains pending; `make evidence` adds the compar
 after a validated release. Protocol and submission records are in
 `docs/PROMPT_PROBE_COMPARISON.md` and `docs/PROMPT_COMPARISON_STATUS.json`.
 Verification of the current revision: `log/naacl_revisions_2026-10-08/verification.json`.
+
+### 2026-10-08 — Accuracy pass, then readability pass
+
+Regenerated all numerical inputs and checked them against the saved summaries. Existing
+number values and all 17 result summaries are unchanged; three added keys display the
+same control accuracies as percentages at greater precision. The reported ordinary-name
+accuracy is now explicitly final-answer accuracy. The methods identify the two fully
+evaluated program levels. Main error-conditioned results pool three demonstration sets;
+Figure 2 and the separate name controls use the full-neutral analysis, now labeled.
+
+Fixed the appendix's broken reference to the moved behavioral table. The former PDF
+checker missed LaTeX's `??` placeholder; both papers' checkers now inspect the PDF and
+compiler log. The new guard fails on the original broken code PDF and passes after repair.
+Related work now distinguishes general conflict tasks from language-model lexical-response
+studies, checked against the locally archived primary papers. Figure and table descriptions
+identify their outcomes, denominators and paired-change direction.
+
+The readability pass explains the task, meaning check, error measure and name-identity
+control in direct language. Both body and Limitations fit on four pages. Data self-check:
+zero failures (49 historical warnings). Strict submission build passes. Audit artifacts:
+`log/accuracy_readability_2026-10-08/`.
+
+Prompt-position comparison: Llama-3.2-3B completed all three demonstration sets in job
+449113 (exit 0). Job 449114 remains queued and release 449115 waits for it. No validated
+comparison is available or included in the paper.

@@ -152,7 +152,7 @@ def main() -> int:
     sw5 = json.loads((RESULTS_DIR / "summary" / "sweep_L5.json").read_text())
     order = ["olmo2-7b-it", "llama32-3b-it", "llama31-8b-it", "codellama-7b-it", "codegemma-7b-it", "gemma3-4b-it", "olmo2-1b-it"]
     lines = ["\\begin{tabular}{@{}lrrrr@{}}", "\\toprule",
-             "Model & Trace acc. & Direct: errors & Trace: len$\\to$sum & Trace: max$\\to$sum \\\\", "\\midrule"]
+             "Model & Return acc. & Direct: errors & Trace: len$\\to$sum & Trace: max$\\to$sum \\\\", "\\midrule"]
     for m in order + ["codellama-34b-it"]:
         cl = cell(m, "trace", "len"); cm = cell(m, "trace", "max")
         if cl is None: continue
@@ -246,6 +246,7 @@ def main() -> int:
         N[f"probe-{SHORT[m]}-layer"] = str(best)
         ctl = [r["control_acc"]["neutral"] for r in by[best] if isinstance(r.get("control_acc"), dict)]
         N[f"probe-{SHORT[m]}-ctl"] = f"{np.mean(ctl):.2f}" if ctl else "--"
+        N[f"probe-{SHORT[m]}-ctl-pct"] = pct(np.mean(ctl)) if ctl else "--"
     replication = RESULTS_DIR / "summary" / "disjoint_probes.json"
     if replication.exists():
         summary = json.loads(replication.read_text())
