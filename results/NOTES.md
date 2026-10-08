@@ -678,3 +678,26 @@ removed by activation replacement, correct-digit prediction and damage to correc
 The damage panel uses an explicit 0–5% scale. All eight plotted numerical series and
 the selected real example are unchanged; methods and appendix retain the design disclosures.
 Verification: `log/figure_clarity_2026-10-08/verification.json`.
+
+### 2026-10-08 — NAACL review revisions and queued comparison
+
+The main evidence table now combines correct-digit readouts on actual wrong writes,
+95% intervals and independent computation counts with the independently screened-name
+replication. Its two panels label the separate cohorts; the full behavioral model panel
+is retained in the appendix. The introduction distinguishes the contribution from known
+identifier sensitivity and from the companion arithmetic study. Existing results, abstract
+and figures are unchanged. Both the body and Limitations fit within four pages.
+
+The prospective prompt-end versus pre-write design was committed as `68b64f2` before
+submission. It reuses the original 2,000-row neutral training split, the nine model/demo
+combinations, three probe seeds and observed outcome cohorts, with independently selected
+layers and paired canonical-computation intervals. Added boundary/cohort/prediction guards
+pass seven tests; the full CPU suite passes 55 tests. All nine input dry runs pass.
+
+GPU job 449113 (a30) started on g-02-01 at 21:11 UTC; extraction is progressing
+without an error in the observed training batches. Job 449114 (h100) is queued. CPU release
+job 449115 depends on both succeeding. No validated comparison has been released or
+added to the paper. Integration remains pending; `make evidence` adds the comparison only
+after a validated release. Protocol and submission records are in
+`docs/PROMPT_PROBE_COMPARISON.md` and `docs/PROMPT_COMPARISON_STATUS.json`.
+Verification of the current revision: `log/naacl_revisions_2026-10-08/verification.json`.

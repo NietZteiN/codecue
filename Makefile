@@ -12,7 +12,11 @@ data:
 	$(PY) scripts/10_build_dataset.py
 
 TECTONIC ?= /work/jvl210002/migration/envs/tex/bin/tectonic
-.PHONY: paper numbers
+.PHONY: paper numbers evidence
+## regenerate central evidence; add prompt comparison only after its validated release
+evidence:
+	$(PY) scripts/83_main_evidence.py
+
 ## build paper/main.pdf and print the body page count against the 4-page limit
 paper:
 	@$(MAKE) -C paper TECTONIC="$(TECTONIC)" PY="$(PY)" paper

@@ -69,8 +69,9 @@ Showing the operation changes the first value from 8 to 2 and the final answer f
 \end{figure*}
 
 Earlier work shows that misleading identifiers reduce code accuracy
-\cite{le2025names,lam2025codecrash,le2026obfuscated}. The wrong trace raises a further question:
-when the model writes 8, can we still recover 2 from its internal activations? We build on
+\cite{le2025names,lam2025codecrash,le2026obfuscated}. We ask whether the correct value remains
+readable immediately before an incorrect write: when the model writes 8, can a separate
+predictor still recover 2? We build on
 \citet{kudo2026faithful}'s analysis of intermediate values during arithmetic reasoning.
 Their probes test what values can be recovered from activations; their patching experiments
 replace activations to test how outputs change. We apply these tools to code with a
@@ -125,21 +126,22 @@ details are in Appendix~\ref{app:probes}.
 
 \begin{table*}[t]
 \centering\small
-\tabinput{cells}
-\caption{Level~5 means across three demonstration sets. \emph{Trace acc.}: neutral accuracy;
-other columns: excess name errors (percentage points [95\% intervals]). $^{*}$: consistent
-signs and intervals excluding zero. Trace columns pair length or maximum with sum-like names.}
-\label{tab:cells}
+\tabinput{central_evidence}
+\caption{A: original names; excess sum writes, correct-digit probe accuracy on actual wrong
+writes, and probe counts (writes / independent computations). B: screened names on
+\NUM{r6-program-n} fresh computations. Excesses and changes are points [95\% intervals].
+Panels use separate cohorts.}
+\label{tab:central}
 \end{table*}
 
 \section{Results}
 
 \subsection{Terse traces follow a misleading name}
 
-Table~\ref{tab:cells} shows the main level. Under sum-like names, length-computed variables
-produce \NUM{cell-olmo7-excess}, \NUM{cell-llama3-excess} and \NUM{cell-llama8-excess} points
-of excess name errors in OLMo-2-7B, Llama-3.2-3B and Llama-3.1-8B. On neutral programs, their trace accuracies are \NUM{cell-olmo7-acc}, \NUM{cell-llama3-acc} and \NUM{cell-llama8-acc}\%,
-respectively. These models usually trace neutral programs correctly.
+Table~\ref{tab:central}A shows excess sum writes on length-computed variables in the
+three affected models. Their ordinary-name trace accuracies are
+\NUM{cell-olmo7-acc}, \NUM{cell-llama3-acc} and \NUM{cell-llama8-acc}\%, respectively:
+they usually trace these programs correctly (full panel: Appendix~\ref{app:matrix}).
 
 The sum is not these models' usual error on a length step. On wrong neutral traces, sum writes
 account for only \NUM{neuerr-sum-lo}--\NUM{neuerr-sum-hi}\% of errors; maximum values and
@@ -153,9 +155,9 @@ smaller: \NUM{direct-lure-min-L5} to \NUM{direct-lure-max-L5} points at this lev
 
 \subsection{The correct digit is decodable on error cases}
 
-On generations that write the name-suggested value, neutral-trained probes recover the computed digit with
-\NUM{crossfit-olmo7-accuracy}\%, \NUM{crossfit-llama3-accuracy}\% and
-\NUM{crossfit-llama8-accuracy}\% accuracy in OLMo-2-7B, Llama-3.2-3B and Llama-3.1-8B.
+On actual incorrect sum writes, neutral-trained probes recover the computed digit with
+\NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy. Table~\ref{tab:central}A gives intervals
+and the number of independent computations; repeated demonstrations remain clustered.
 The prefixes match through the decision token in all \NUM{errorprobe-prefix-n} generations
 across the three demonstration sets. The cached state therefore also precedes the model's
 actual value write. Appendix~\ref{app:round6-probes} reports clustered intervals and the
@@ -164,6 +166,7 @@ correct-write and other-error strata.
 Five-fold layer selection excludes each test computation. Neutral name-identity controls
 score \NUM{probe-olmo7-ctl}, \NUM{probe-llama3-ctl} and \NUM{probe-llama8-ctl}.
 Recovering the correct digit on an error establishes decodability, not its use in generation.
+\input{tables/prompt_comparison_note}
 
 Patching independently tests sensitivity to the name and the writing position
 (Figure~\ref{fig:mechanism}). Replacing name tokens at layer~0 removes
@@ -199,12 +202,11 @@ elaborations (\texttt{v = 3 + 0 = 3}) lower it to \NUM{format-olmo7-numeric-mean
 (Appendix~\ref{app:round5-formats}). Extra tokens do not reproduce the expression benefit;
 adding arithmetic accounts for part of it.
 
-With \NUM{r6-name-n} independently screened names on \NUM{r6-program-n} fresh computations,
-trace excess in OLMo-2-7B, Llama-3.2-3B and Llama-3.1-8B is
-\NUM{r6-olmo7-trace-mean}, \NUM{r6-llama3-trace-mean} and
-\NUM{r6-llama8-trace-mean} points; expression excess is \NUM{r6-olmo7-expression-mean},
-\NUM{r6-llama3-expression-mean} and \NUM{r6-llama8-expression-mean}.
-CodeGemma shows no observed excess in either format (Appendix~\ref{app:round6-identifiers}).
+The format contrast replicates on \NUM{r6-program-n} fresh computations with
+\NUM{r6-name-n} names selected by meaning checks before observing any traces
+(Table~\ref{tab:central}B). CodeGemma shows no observed excess in either format.
+This independent behavioral cohort is separate from the original-name probe cohort;
+selection and per-name results are in Appendix~\ref{app:round6-identifiers}.
 
 \begin{table}[t]
 \centering\small
@@ -227,20 +229,20 @@ trace format (Appendix~\ref{app:boundaries}).
 Misleading identifiers affect real-code accuracy
 \cite{le2025names,lam2025codecrash,le2026obfuscated,orvalho2025mutations,gao2023cream}.
 Our synthetic tasks separate computed and name-suggested values.
-\citet{kudo2026faithful} study arithmetic readouts; \citet{anon2026arith} find their association
-with arithmetic name errors sensitive to task competence. Neither establishes a mechanism
-shared with code traces. Faithfulness studies perturb prompts and chains
+\citet{kudo2026faithful} study arithmetic readouts; the companion arithmetic study
+\cite{anon2026arith} tests whether writing calculations limits misleading-digit answers.
+Here we test readouts before actual wrong trace writes and change their demonstration format.
+Faithfulness studies perturb prompts and chains
 \cite{turpin2023unfaithful,lanham2023measuring,chen2025reasoning}; we intervene at the
 value-writing position. Stroop studies focus on next-token prediction
 \cite{stroop1935,geirhos2019texture,wang2026stroop,hu2026conflict}.
 
 \section{Conclusion}
 
-Terse code traces can write a name-implied value while the computed digit remains decodable.
-Patches and expression demonstrations reduce these errors; the format contrast replicates
-with independently screened names. Length-matched annotations leave
-large effects, while numeric elaboration helps partly. The finding concerns the tested names
-and formats; it does not establish a general failure of code computation.
+Terse traces can write a name-implied value while the correct digit remains decodable.
+Demonstrating the operation reduces these errors, including with independently screened
+names. Length-matched annotations leave large effects; numeric elaboration helps partly.
+These results concern the tested names and formats.
 
 \section*{Limitations}
 
@@ -253,7 +255,7 @@ code models in \citet{le2026obfuscated}.
 \item \textbf{Internal measurements.} Probes on three smaller models establish decodability,
 not use. Error readouts select layers independently; full-neutral curves and name controls
 are descriptive. Patches replace mixed representations and may have side effects.
-Llama-3.1-8B's \texttt{sum\_all} lacks an aligned twin for name-site patching.
+Llama-3.1-8B's \texttt{sum\_all} lacks an aligned name-site twin.
 \end{itemize}
 
 \bibliography{refs}
@@ -332,6 +334,14 @@ concern these named groups; they do not establish that every model reads each na
 
 \section{Operation and name pairings}
 \label{app:matrix}
+\begin{table*}[t]
+\centering\small
+\tabinput{cells}
+\caption{Full level-5 panel. Ordinary-name trace accuracy (\%); excess name errors in points
+[95\% intervals]. Stars mark consistent signs across demonstration sets and intervals
+excluding zero. Length and maximum are paired with sum-like names.}
+\label{tab:full-panel}
+\end{table*}
 
 Table~\ref{tab:matrix} reports all tested aggregate/name pairings. The reverse of the main
 length-to-sum conflict is weak at level~5: sum-computed variables with length-like names have
@@ -483,5 +493,6 @@ A small estimate or an interval covering zero does not by itself establish equiv
 
 \input{tables/round5_followups}
 \input{tables/round6_followups}
+\input{tables/prompt_comparison_appendix}
 
 \end{document}

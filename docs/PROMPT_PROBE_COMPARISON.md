@@ -29,5 +29,16 @@ Execution: `scripts/81_prompt_end_probe.py` extracts/fits; `scripts/82_prompt_co
 validates and releases the paired summary. GPU partitions are currently occupied; request
 two batch allocations on a30 and h100, keeping h200's shared account pool free.
 
+Submitted GPU jobs: 449113 (Llama-3.2-3B, a30, 8-hour limit) and 449114
+(OLMo-2-7B followed by Llama-3.1-8B, h100, 12-hour limit). Llama-3.2-3B started on g-02-01 at
+2026-10-08 21:11 UTC; the second allocation is queued. CPU release job 449115 depends on both succeeding. Request
+metadata are recorded in `docs/PROMPT_COMPARISON_STATUS.json`; job outputs go to
+`log/slurm/<job-id>_<name>.out`.
+
+After the release validates, run `make evidence` to add both positions to the main
+evidence table and the paired differences and controls to the appendix. Then run
+`make paper-submission`, inspect the PDF and interpret the measured differences
+before committing the results. Pending experiments contribute no numbers to the paper.
+
 The dependent-assignment extension discussed in the review is a subsequent study, rather
 than part of this fixed comparison; no new model sweep is included.

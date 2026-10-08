@@ -43,6 +43,17 @@ information, not its use by the model.
    seven-model meaning gate before collecting behavior on fresh computations. Report
    trace and expression effects in the three affected models and the CodeGemma control.
 
+The main evidence table reports error-conditioned probe intervals and independent computation
+counts alongside the replication with independently screened names. Its panels explicitly
+separate the original-name readouts from the fresh behavioral cohort. The full model panel
+remains in the appendix. This evidence extends known identifier sensitivity by testing
+correct-digit availability immediately before actual wrong writes and a controlled change
+to the demonstrated format.
+
+The prompt-end versus pre-write comparison is queued, not a completed finding. Its fixed
+design is in `../docs/PROMPT_PROBE_COMPARISON.md`. Once validated, report both positions on
+the same observed errors; do not infer causal use from their difference.
+
 The appendix holds task levels, identifier-meaning checks, the operation matrix, format
 intervals, probe and patch details, scope checks and statistical conventions.
 
