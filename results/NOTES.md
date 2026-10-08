@@ -463,3 +463,182 @@ within ±5/±10 points. That is a located, format-dependent unfaithfulness with 
 mechanism and measured boundaries — a short paper, not a general vulnerability claim.
 
 GPU worker released 2026-09-17 (job 409808). No further runs planned.
+
+## Verification after the manuscript rewrite (2026-10-02)
+
+This entry supersedes stronger causal and equivalence interpretations in the earlier ledger.
+The main numerical effects remain, with corrected inference and explicit protocol limits.
+
+- Initial number/table regeneration was identical. Behavioral dataset/run checks pass with
+  46 warnings, all in archived 200-instance pilot datasets. Level 6 is now checked too.
+  The final self-check has **3 failures** from the newly added probe split audit (below).
+- Cell intervals previously treated demonstration repeats independently. They now resample
+  matched sets with all their repeats together; cached deterministic cell estimates keep
+  narrative macros and tables identical. Regression tests cover clustering and unequal
+  cluster sizes; all 33 CPU tests pass. `cell_inference.json` records cell and format inference.
+- Main written-lure excess remains +58.4, +43.4 and +12.4 points. Corrected 95% intervals
+  are [53.0, 63.5], [38.5, 48.1] and [8.8, 16.0]. All retain consistent signs across three
+  demonstration sets. Paired format reductions also retain positive intervals in all models.
+- Equivalence now uses actual 90% cluster intervals from raw observations, while reliable
+  effects use 95%. Of 192 contrasts, 150 are equivalent, 36 have reliable effects without
+  equivalence, and 6 are inconclusive. Earlier summaries used conservative 95% equivalence.
+- CodeLlama-34B maximum-to-sum is +1.8 [0.7, 3.1] points: a reliable positive effect outside
+  the equivalence criterion. It supports the registered pairing and reliable-effect
+  criterion; the earlier claim that this prediction was refuted was incorrect.
+- CRUXEval neutral accuracies cover all 89 functions; paired contrasts use the 84 functions
+  whose renamed target is used downstream. The manuscript now distinguishes those denominators.
+- The runs retained identifiers that failed the planned 80% panel meaning gate. This is a
+  protocol deviation, now disclosed in the methods, appendix and limitations. It remains a
+  substantive limit on interpreting the groups as meanings shared by every model.
+- Removed an editorial instruction from the printed bibliography. Both papers anonymously
+  cite their companion and distinguish their tasks. Strict builds and PDF review are logged
+  in `log/verification_2026-10-02/`. No fresh GPU run was performed during the audit.
+- **Blocking probe finding:** each saved probe trained on 2,000 neutral programs from
+  `test_sets.jsonl`. All 587 neutral and 285 misleading-name evaluation programs overlap
+  training in each of the three models. Unseen identifiers do not make the programs held out.
+  The 85/90/100% readouts cannot support the claimed held-out decodability.
+- The selector now reads `train_neutral.jsonl`, excludes canonical test computations, and
+  training/self-check guards reject shared matched-set IDs or program keys. Regression tests
+  cover renamed copies and saved-cache overlap. Fresh outputs go to `probecache_disjoint/`
+  and `probes_disjoint/`, preserving the original caches and results for the audit.
+- **Required rerun:** OLMo-2-7B, Llama-3.2-3B and Llama-3.1-8B, level 5, trace, queried role v1,
+  three probe seeds plus controls, independent neutral training. Recompute probe numbers and
+  figures from the validated new outputs before restoring any decodability claim. Patching
+  uses matched neutral interventions rather than a fitted probe and is unaffected by this
+  training-pool error. The manuscript labels all current probe scores provisional.
+
+## Readability and experiment follow-up (2026-10-02)
+
+Both manuscripts received a readability pass: concrete opening questions, simpler definitions
+of probes and controls, shorter claims, and explicit separation of aggregate associations
+from causal explanations. Both strict builds retain a four-page body. The author authorized
+the blockers and additional experiments with one or two GPUs for about a day. Two 24-hour
+H100/H200 workers were requested (439652, 439653); A30/H100 cards were occupied. The workers remain pending. The fixed task
+list and analysis rules are in `../probing/log/round4_2026-10-02/manifest.json`. This pass
+includes disjoint code probes under all three demonstration sets, six additional arithmetic
+model-variable pairs, and a Gemma per-token sweep. Results remain pending; existing caches
+are preserved, and no scientific claim is restored on the strength of submission alone.
+
+Preflight now passes 62 arithmetic CPU tests, four tokenizer/probe checks in CPU job
+439688, and 42 code CPU tests. CPU job 439757 validates 2,464 sampled layouts across all
+five tokenizers: no pre-value token contains the supplied digit. New caches enforce this
+per row, and collectors require that validation flag. An initial preflight job (439735)
+used the wrong arithmetic training filename; that path was corrected before the successful
+rerun. Both rendered bodies have no out-of-page text. Layout-only builds with synthetic
+values confirm the added appendix fits without expanding either four-page body; those
+files live under the explicitly marked `layout_dryrun/` folder and never supply results.
+CPU collector 439676 will audit completed experiments and rebuild both papers after the
+workers exit. Current code probe claims remain provisional pending the disjoint reruns.
+
+### Disjoint probe collection
+
+Split validation passed for all nine reruns. Build status: True. Current scores and demonstration-set repeats are in `summary/disjoint_probes.json`. The original overlapping caches are historical and no longer supply paper numbers.
+
+### Reviewer follow-ups (2026-10-03)
+
+The nine disjoint probe reruns pass split validation and now supply the manuscript. All 2,565 generated prefixes match the cached pre-value state. Pooled true-digit probe accuracy on lure writes is 96.4%, 95.7% and 99.7% for OLMo-7B, Llama-3B and Llama-8B, respectively; intervals cluster programs across demonstrations. None of total/sum_all/acc passes the original 80% panel gate; its estimate is unavailable. Model-specific and per-name sensitivities are exploratory, preserving the deviation. Both new format controls have completed and passed validation for both models and all three demonstration sets. All 3,420 annotation evaluation prompts match expression prompt token counts. Paired pooled excess remains 56.6/49.6 points under annotations, versus 41.3/14.9 under numeric elaboration (OLMo/Llama). Summary and appendix tables retain clustered intervals and differences relative to trace/expression baselines. Final strict build passes with a four-page body; PDF tables were inspected.
+
+### Disjoint probe collection
+
+Split validation passed for all nine reruns. Build status: True. Current scores and demonstration-set repeats are in `summary/disjoint_probes.json`. The original overlapping caches are historical and no longer supply paper numbers.
+
+### Disjoint probe collection
+
+Split validation passed for all nine reruns. Build status: True. Current scores and demonstration-set repeats are in `summary/disjoint_probes.json`. The original overlapping caches are historical and no longer supply paper numbers.
+
+### Final manuscript integration (2026-10-03)
+
+The abstract, main results, conclusion and limitations now incorporate the error-conditioned
+probes, identifier-gate audit and both format controls. Correct-digit accuracy on actual lure
+writes is 96.4/95.7/99.7% for OLMo-7B/Llama-3B/Llama-8B. The verified pre-value prefixes and
+name-control limitations accompany that result. Neutral annotations retain 56.6/49.6 points
+of excess, while numeric elaborations reduce it to 41.3/14.9 (OLMo/Llama). The paper states
+that none of the main identifiers passes the original panel gate and its filtered estimate
+is unavailable. All quoted follow-up values are generated from the collected summaries.
+The selfcheck and strict anonymous ACL ARR build pass: four-page body, 133-word abstract,
+no missing assets or unresolved references. Rendered pages were inspected. Logs are in
+`../log/paper_update_2026-10-03/`; the joint verification record is in the arithmetic repository.
+
+### Targeted validation launch (2026-10-03)
+
+Round-six independent layer selection has completed in all nine model/demo cells. Five-fold cross-fitting groups canonical computations, selects layers from neutral validation folds only and evaluates each program in its held-out fold. Pooled correct-digit accuracy on lure writes is 96.4% (OLMo-7B), 95.5% (Llama-3B), 99.7% (Llama-8B); conditional canonical-program intervals and paired changes are in `summary/round6_crossfit_probes.json`. The independent name replication has a fixed 16-name candidate list, the original seven-model 80% panel gate, and 200 fresh computations excluding old training/test/demo programs. Screened names will freeze before behavioral evaluation in three affected models and CodeGemma-7B control, two formats, three demo sets. Empty qualifying sets are unavailable. Two GPU workers (440673/440674) are pending priority; collection follows as 440686. All 47 code tests and three updated selection tests pass. Protocol and provenance: `../../probing/log/round6_2026-10-03/manifest.json`. Current manuscript numbers remain unchanged.
+
+### Targeted validation completed (2026-10-03)
+
+The original seven-model meaning gate selects sum_of_values, sum_of_items and sum_of_elements from the fixed fresh candidate list. All 24 replication cells on 200 fresh computations validate. Pooled trace/expression excess in points is 91.1/0.8 (OLMo-7B), 61.5/0.0 (Llama-3B), 16.7/0.0 (Llama-8B), and 0.0/0.0 (CodeGemma-7B); canonical-program clustered intervals, per-name and per-seed results are in `summary/round6_identifier_replication.json`. A collector tuple/list comparison was repaired through JSON normalization; the dataset and behavioral results are unchanged. Four regression checks and all three joint analyses validate. The round-six outputs are separate from current manuscript numbers.
+
+### Round-six manuscript integration (2026-10-03)
+
+The current draft now uses cross-fitted error readouts: 96.4/95.5/99.7% correct-digit
+accuracy in OLMo-7B/Llama-3B/Llama-8B. The earlier full-neutral readouts remain explicitly
+labeled in the appendix. The main results and new appendix report all 16 screened names,
+the three frozen selections, and their replication on 200 fresh computations. The original
+gate deviation remains disclosed; new probes and patches were not run on the screened
+names. Conditional bootstrap intervals and empirical-zero limitations accompany the
+results. `scripts/80_round6_tables.py` supplies numbers and four new tables through
+`scripts/51_numbers.py`. Selfcheck: zero failures, 49 existing warnings. Strict anonymous
+build: four-page body, 12 pages total, 146-word abstract; rendered body and new tables
+inspected. Logs: `../log/paper_update_round6_2026-10-03/`; joint verification:
+`../../probing/log/paper_update_round6_2026-10-03/verification.json`.
+
+### Terminology (2026-10-06)
+
+The abstract and opening example now define name errors: a trace writes the name-suggested
+value rather than the computed value. The main metric is excess name errors relative to
+the matched neutral baseline. All prose and generated table labels use this wording; the
+companion arithmetic citation uses its new title. Main tables remain alongside the results.
+Number macros and result summaries are unchanged. The strict build and rendered-page
+review pass with a four-page main body. Verification: `../log/terminology_2026-10-06/`.
+
+### Abstract clarity (2026-10-07)
+
+Rewrote the abstract around a length-versus-sum example, explained what a code trace writes,
+and identified the extension of Kudo et al.'s arithmetic analysis. The naming effect compares
+the rate of incorrect name-suggested writes against ordinary names. Internal measurements
+and the worked-expression intervention are explained in plain language. Abstract: 192 words.
+Strict build and visual review pass with all main content inside four pages. Only the
+abstract changed in the LaTeX source; number macros and result summaries are unchanged.
+Before/after evidence: `../log/abstracts_2026-10-07/`.
+
+### Introduction and explanation (2026-10-07)
+
+Rewrote the opening around a length-computed variable named `sum_all`: the model writes
+8 instead of 2 for `[5, 3]`. Changing worked examples to include the computation changes
+this trace, motivating the behavioral study before introducing internal measurements.
+Linear probes predict the true digit from activations immediately before the model writes
+the value. Recovering 2 while the model writes 8 establishes recoverable information,
+not its use. The abstract uses the same explanation (199 words). The screened-name
+replication remains in the body and appendix. Strict checks and visual review of all four
+main pages pass. Number macros and result summaries are unchanged; LaTeX edits are confined
+to the abstract and introduction. Evidence: `../log/narrative_2026-10-07/`.
+
+### Four-page text including limitations (2026-10-07)
+
+Shortened the main figure/table captions, a repeated probe explanation and related work.
+The abstract, introduction narrative and numerical results remain unchanged. Limitations
+now use three bullets for scope, internal measurements and design deviations, preserving
+the identifier-selection deviation, unsupported REPL prediction and limits of the screened
+replication. All text through Limitations fits four pages; References starts on page five.
+Number-macro occurrences, generated numbers, result summaries and figure assets are unchanged.
+The appendix source is unchanged. Strict checks and visual review of pages 1--4 pass.
+Evidence: `../log/concise_2026-10-07/`.
+
+### Abstract narrative (2026-10-07)
+
+The abstract now follows the 2-versus-8 trace through the behavioral comparison, error-case
+probe readouts, patches, and worked-example intervention. It describes incorrect sum writes
+directly and includes the independently screened-name replication on 200 fresh programs.
+The ending states that showing the operation helps the trace follow the code rather than
+the name. The body and limitations retain the decodability-versus-use distinction, patching
+caveats and original identifier-selection deviation. Only the abstract changed; all numerical
+inputs and figure assets are unchanged. Evidence: `../log/abstract_story_2026-10-07/`.
+
+### Contribution and implication (2026-10-07)
+
+The abstract connects the misleading trace to the question of whether the correct digit
+can be recovered immediately before the wrong write. The observed separation motivates
+the demonstration-format intervention; the ending explains how showing the operation
+helps traces report computed values. The argument guide reflects this connection.
+LaTeX edits are confined to the abstract. Decodability-versus-use, patching caveats and
+identifier-selection deviations remain in the unchanged body and limitations.
+Numerical inputs and figures are unchanged. Evidence: `../log/contribution_2026-10-07/`.

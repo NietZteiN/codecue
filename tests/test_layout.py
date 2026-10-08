@@ -4,6 +4,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.generator import sample_sets
 from codecue.layout import spans, spans_to_tokens
 from codecue.prompts import build_prompt, demos
+import pytest
+
+
+def test_pre_value_token_excludes_supplied_digit():
+    from codecue.layout import assert_before_value
+    assert_before_value([(0, 1), (1, 2), (2, 3)], 1, 2)
+    with pytest.raises(ValueError, match="includes"):
+        assert_before_value([(0, 1), (1, 3)], 1, 2)
+    with pytest.raises(ValueError, match="unresolved"):
+        assert_before_value([(0, 1)], -1, 1)
 
 
 def _inc(level=3):

@@ -16,6 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.config import DATA_DIR, OUT_DIR, RESULTS_DIR  # noqa: E402
 from codecue.generator import DIGITS, read_jsonl  # noqa: E402
 from codecue.lures import LURE_NAMES, NEUTRAL_NAMES  # noqa: E402
+from codecue.probe_data import assert_disjoint_metadata  # noqa: E402
+from codecue.reporting import probe_directory  # noqa: E402
 from codecue.prompts import parse_regime  # noqa: E402
 
 FAIL, WARN = [], []
@@ -91,9 +93,28 @@ def check_sweeps():
                     check(False, f"{f.name} {k}: only {len(r['seeds'])} seeds", warn=True)
 
 
+def check_probe_splits():
+    for cache in ("probecache", "probecache_disjoint"):
+        for path in sorted((OUT_DIR / cache).glob("*/L*/*/train_neutral/meta.json")):
+            train = json.loads(path.read_text())
+            tests = {p.parent.name: json.loads(p.read_text())
+                     for p in path.parent.parent.glob("*/meta.json")
+                     if not p.parent.name.startswith("train_")}
+            try:
+                assert_disjoint_metadata(train, tests)
+            except ValueError as error:
+                historical = cache == "probecache" and probe_directory() == "probes_disjoint"
+                check(False, f"{path.parent.parent.relative_to(OUT_DIR)}: {error}", warn=historical)
+    if probe_directory() == "probes_disjoint":
+        for model in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
+            for regime in ("trace", "trace_s11", "trace_s13"):
+                result = OUT_DIR / "probes_disjoint" / model / "L5" / regime / "v1.json"
+                check(result.exists(), f"released probes missing: {result}")
+
+
 def main() -> int:
-    for L in (1, 2, 3, 4, 5): check_dataset(L)
-    check_runs(); check_sweeps()
+    for L in (1, 2, 3, 4, 5, 6): check_dataset(L)
+    check_runs(); check_sweeps(); check_probe_splits()
     for m in FAIL: print("FAIL", m)
     for m in WARN[:15]: print("warn", m)
     print(f"\nchecks complete: {len(FAIL)} failures, {len(WARN)} warnings")

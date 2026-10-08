@@ -21,16 +21,13 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.config import OUT_DIR, RESULTS_DIR, load_config  # noqa: E402
+from codecue.stats import bootstrap_ci  # noqa: E402
 
 SEEDS = (7, 11, 13)
 
 
-def boot(d: np.ndarray, sets: np.ndarray, n=2000, seed=0):
-    rng = np.random.default_rng(seed); u = np.unique(sets); idx = {s: np.where(sets == s)[0] for s in u}
-    means = []
-    for _ in range(n):
-        pick = rng.choice(u, len(u), replace=True); means.append(np.mean(np.concatenate([d[idx[s]] for s in pick])))
-    return float(d.mean()), float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))
+def boot(d: np.ndarray, sets: np.ndarray, n=2000, seed=0, confidence=0.95):
+    return bootstrap_ci(d, sets, n_boot=n, seed=seed, confidence=confidence)
 
 
 def rows_of(p: Path):
@@ -74,8 +71,9 @@ def main() -> int:
                         if dd: by[sd] = float(np.mean(dd)); ds += dd; ss += [s for s in inc if s in neu]
                     if not ds: continue
                     mean, lo, hi = boot(np.array(ds), np.array(ss))
+                    _, lo90, hi90 = boot(np.array(ds), np.array(ss), confidence=0.90)
                     sign = all(v > 0 for v in by.values()) or all(v < 0 for v in by.values())
-                    rec["contrasts"][f"{name}@{t}"] = {"pooled_mean": mean, "ci95": [lo, hi], "by_seed": by,
+                    rec["contrasts"][f"{name}@{t}"] = {"pooled_mean": mean, "ci95": [lo, hi], "ci90": [lo90, hi90], "by_seed": by,
                                                        "claimable": len(by) >= 3 and sign and (lo > 0 or hi < 0)}
             out[f"{m}/{reg}"] = rec
             print(f"=== L{a.level} {m} {reg}: seeds {rec['seeds']}  neutral acc " + " ".join(f"{sd}:{100*v:.1f}" for sd, v in rec["acc"].items()))

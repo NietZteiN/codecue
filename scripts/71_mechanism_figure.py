@@ -15,6 +15,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.config import OUT_DIR, PROJECT_ROOT  # noqa: E402
+from codecue.reporting import probe_directory, probe_output  # noqa: E402
 
 FIG = PROJECT_ROOT / "paper" / "figures"
 RED, GREEN, BLUE, GREY = "#B5321F", "#157A55", "#2B4A9E", "#5B6470"
@@ -26,7 +27,7 @@ def main() -> int:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
-    fig, axes = plt.subplots(1, len(MODELS), figsize=(11.5, 4.0), sharey=True)
+    fig, axes = plt.subplots(1, len(MODELS), figsize=(7.2, 3.2), sharey=True)
     for ax, (key, label) in zip(axes, MODELS):
         R = OUT_DIR / "runs" / key / "L5" / "patch"
         name = json.loads((R / "main_name.json").read_text()); pre = json.loads((R / "main_pre.json").read_text())
@@ -35,7 +36,7 @@ def main() -> int:
         r_pre = [100 * (pre["summary"][f"L{l}"]["lure_removed"] or 0) for l in L]
         d_name = [100 * (name["summary"][f"L{l}"]["damage"] or 0) for l in L]
         # probe: reads the code's value at the decision token, best layer per layer index
-        pj = json.loads((OUT_DIR / "probes" / key / "L5" / "trace" / "v1.json").read_text())
+        pj = json.loads(probe_output(key).read_text())
         acc = {}
         for r in pj["results"]:
             if r["position"] == "pre@v1":
@@ -43,16 +44,18 @@ def main() -> int:
                 if ev is not None:
                     acc.setdefault(r["layer"], []).append(ev[0] if isinstance(ev, list) else ev)
         pl = sorted(acc); pa = [100 * np.mean(acc[l]) for l in pl]
-        ax.plot(L, r_name, "-o", ms=3.5, lw=2, color=RED, label="patch the NAME's tokens")
-        ax.plot(L, r_pre, "-s", ms=3.5, lw=2, color=BLUE, label="patch the DECISION token")
-        ax.plot(pl, pa, "--", lw=1.6, color=GREEN, label="probe reads the code's value\nat the decision token")
-        ax.fill_between(L, 0, d_name, color=GREY, alpha=0.18, lw=0, label="damage from the name patch")
-        ax.set_xlabel("layer patched (or probed)"); ax.set_title(label, loc="left", fontsize=11)
+        ax.plot(L, r_name, "-o", ms=3.5, lw=2, color=RED, label="name-token patch")
+        ax.plot(L, r_pre, "-s", ms=3.5, lw=2, color=BLUE, label="decision-token patch")
+        probe_label = "held-out probe accuracy" if probe_directory() == "probes_disjoint" else "probe accuracy (overlapping programs)"
+        ax.plot(pl, pa, "--", lw=1.6, color=GREEN, label=probe_label)
+        ax.fill_between(L, 0, d_name, color=GREY, alpha=0.18, lw=0, label="name-patch damage")
+        ax.set_xlabel("layer"); ax.set_title(label, loc="left", fontsize=10)
         ax.set_ylim(0, 104); ax.set_xlim(-0.5, nL - 0.5); ax.grid(axis="y", color="0.92", lw=0.7)
-    axes[0].set_ylabel("% of lure writes removed  /  probe accuracy")
-    axes[0].legend(loc="center right", frameon=False, fontsize=8.6)
+    axes[0].set_ylabel("removed / accuracy (%)", fontsize=9)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, fontsize=8)
     # (title line removed for the paper; the caption carries it)
-    fig.tight_layout(rect=(0, 0, 1, 0.94))
+    fig.tight_layout(rect=(0, 0.16, 1, 1))
     FIG.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIG / "mechanism.pdf", bbox_inches="tight"); fig.savefig(FIG / "mechanism.png", dpi=160, bbox_inches="tight")
     print("wrote", FIG / "mechanism.png")

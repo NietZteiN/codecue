@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
@@ -15,6 +16,8 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from codecue.config import DATA_DIR, OUT_DIR, PROJECT_ROOT, RESULTS_DIR, load_config  # noqa: E402
 from codecue.lures import FAMILY_OF_NAME  # noqa: E402
+from codecue.stats import bootstrap_ci  # noqa: E402
+from codecue.reporting import probe_output  # noqa: E402
 
 SHORT = {"olmo2-7b-it": "olmo7", "llama32-3b-it": "llama3", "llama31-8b-it": "llama8", "codellama-7b-it": "codellama",
          "codegemma-7b-it": "codegemma", "gemma3-4b-it": "gemma4", "olmo2-1b-it": "olmo1"}
@@ -43,23 +46,28 @@ def main() -> int:
                     N[key] = pct(c["pooled_mean"], True); N[key + "-lo"] = pct(c["ci95"][0], True); N[key + "-hi"] = pct(c["ci95"][1], True)
                     N[key + "-claim"] = "yes" if c["claimable"] else "no"
                 N[f"{SHORT[m]}-L{L}-{reg}-acc"] = pct(np.mean(list(r["acc"].values())))
-        # direct lure excess: how many models claimable on at least one target
+        # direct excess name errors: how many models claimable on at least one target
         dl = [any(sw[f"{m}/direct"]["contrasts"].get(f"lure_excess@{t}", {}).get("claimable") for t in ("v1", "v3"))
               for m in with_runs if f"{m}/direct" in sw]
         N[f"direct-lure-claimable-L{L}"] = str(sum(dl)); N[f"direct-cells-L{L}"] = str(len(dl))
         vals = [sw[f"{m}/direct"]["contrasts"][f"lure_excess@{t}"]["pooled_mean"] for m in with_runs if f"{m}/direct" in sw
                 for t in ("v1", "v3") if f"lure_excess@{t}" in sw[f"{m}/direct"]["contrasts"]]
         N[f"direct-lure-min-L{L}"] = pct(min(vals), True); N[f"direct-lure-max-L{L}"] = pct(max(vals), True)
-    # ---- the cell: len -> sum (and max -> sum), written-lure excess, L5, per model and per format
+    # ---- the cell: len -> sum (and max -> sum), excess name errors, L5, per model and per format
     #      keys: cell-<m>-{wrote,excess,lo,hi,n} (trace), cell-<m>-<reg>-{wrote,excess,lo,hi,n,claim,acc} for repl/comment/trace_expr,
     #      cell34-{len,max}-{excess,lo,hi,n} and cell34-acc for CodeLlama-34B (L5 only, so outside with_runs)
     progs = {json.loads(l)["id"]: json.loads(l) for l in (DATA_DIR / "L5" / "test_sets.jsonl").open()}
     progsL = {5: progs, 3: {json.loads(l)["id"]: json.loads(l) for l in (DATA_DIR / "L3" / "test_sets.jsonl").open()}}
     rng = np.random.default_rng(0)
 
+    inference = {"confidence": 0.95, "n_boot": 2000, "seed": 0,
+                 "cluster": "matched set, including all demonstration-seed replicates",
+                 "cells": {}, "format_differences": {}}
+
+    @lru_cache(maxsize=None)
     def cell(m, reg, op, fam="sum", L=5):
         """paired per-set (hit - twin_hit) for the (op -> fam) cell at v1, plus by-seed means and neutral accuracy"""
-        deltas, by_seed, acc = [], {}, []
+        deltas, clusters, by_seed, acc = [], [], {}, []
         for sfx in ("", "_s11", "_s13"):
             gi = OUT_DIR / "runs" / m / f"L{L}" / f"{reg}{sfx}" / "incongruent@v1" / "behavior.jsonl"
             gn = OUT_DIR / "runs" / m / f"L{L}" / f"{reg}{sfx}" / "neutral" / "behavior.jsonl"
@@ -70,14 +78,18 @@ def main() -> int:
                 r = json.loads(l); t = neu.get(r["set_id"])
                 if not t or progsL[L][r["id"]]["stmts"][0]["op"] != op or FAMILY_OF_NAME[r["lure_name"]].key != fam: continue
                 sd.append((int(r["value_written"] == r["lure"]), int(t.get("values_written", {}).get("v1") == r["lure"])))
+                clusters.append(r["set_id"])
             if sd: by_seed[sfx or "_s7"] = sd; deltas += sd
         if not deltas: return None
         d = np.array(deltas); ex = d[:, 0] - d[:, 1]
-        boot = [rng.choice(ex, len(ex)).mean() for _ in range(2000)]
+        _, lo, hi = bootstrap_ci(ex, clusters)
         seeds = [np.mean([a - b for a, b in v]) for v in by_seed.values()]
-        lo, hi = np.percentile(boot, 2.5), np.percentile(boot, 97.5)
         claim = len(seeds) >= 3 and (all(x > 0 for x in seeds) or all(x < 0 for x in seeds)) and (lo > 0 or hi < 0)
-        return dict(wrote=d[:, 0].mean(), excess=ex.mean(), lo=lo, hi=hi, n=len(ex), claim=claim, acc=np.mean(acc))
+        result = dict(wrote=float(d[:, 0].mean()), excess=float(ex.mean()), lo=lo, hi=hi,
+                      n=len(ex), n_sets=len(set(clusters)), claim=bool(claim), acc=float(np.mean(acc)),
+                      by_seed={k:float(np.mean([a-b for a,b in v])) for k,v in by_seed.items()})
+        inference["cells"][f"L{L}/{m}/{reg}/{op}-to-{fam}"] = result
+        return result
 
     for m in with_runs:
         for reg in ("trace", "repl", "comment", "trace_expr"):
@@ -140,7 +152,7 @@ def main() -> int:
     sw5 = json.loads((RESULTS_DIR / "summary" / "sweep_L5.json").read_text())
     order = ["olmo2-7b-it", "llama32-3b-it", "llama31-8b-it", "codellama-7b-it", "codegemma-7b-it", "gemma3-4b-it", "olmo2-1b-it"]
     lines = ["\\begin{tabular}{@{}lrrrr@{}}", "\\toprule",
-             "Model & Trace acc. & Direct: lure & Trace: len$\\to$sum & Trace: max$\\to$sum \\\\", "\\midrule"]
+             "Model & Trace acc. & Direct: errors & Trace: len$\\to$sum & Trace: max$\\to$sum \\\\", "\\midrule"]
     for m in order + ["codellama-34b-it"]:
         cl = cell(m, "trace", "len"); cm = cell(m, "trace", "max")
         if cl is None: continue
@@ -172,7 +184,7 @@ def main() -> int:
         lines.append(f"{DISPLAY[m]} & " + " & ".join(row) + " \\\\")
     lines += ["\\bottomrule", "\\end{tabular}"]
     (tdir / "matrix.tex").write_text("\n".join(lines) + "\n")
-    # ---- R3b: level 6, unary middle step, overall written-lure excess on v2 (trace, 3 seeds)
+    # ---- R3b: level 6, unary middle step, overall excess name errors on v2 (trace, 3 seeds)
     f6 = RESULTS_DIR / "summary" / "sweep_L6.json"
     if f6.exists():
         sw6 = json.loads(f6.read_text()); claim6 = []
@@ -188,6 +200,7 @@ def main() -> int:
     # ---- E10b: trace vs trace_expr, paired, the cell
     for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
         pa = pb = n = 0
+        differences, clusters, by_seed = [], [], {}
         for sfx in ("", "_s11", "_s13"):
             A = OUT_DIR / "runs" / m / "L5" / f"trace{sfx}" / "incongruent@v1" / "behavior.jsonl"
             B = OUT_DIR / "runs" / m / "L5" / f"trace_expr{sfx}" / "incongruent@v1" / "behavior.jsonl"
@@ -197,8 +210,18 @@ def main() -> int:
                 r = json.loads(l); q = b.get(r["id"])
                 if not q or progs[r["id"]]["stmts"][0]["op"] != "len" or FAMILY_OF_NAME[r["lure_name"]].key != "sum": continue
                 n += 1; pa += r["value_written"] == r["lure"]; pb += q["value_written"] == q["lure"]
+                delta = int(r["value_written"] == r["lure"]) - int(q["value_written"] == q["lure"])
+                differences.append(delta); clusters.append(r["set_id"])
+                by_seed.setdefault(sfx or "_s7", []).append(delta)
         if n:
             N[f"expr-{SHORT[m]}-plain"] = pct(pa / n, d=0); N[f"expr-{SHORT[m]}-expr"] = pct(pb / n, d=0); N[f"expr-{SHORT[m]}-drop"] = pct((pa - pb) / n, d=0)
+            mean, lo, hi = bootstrap_ci(differences, clusters)
+            N[f"expr-{SHORT[m]}-drop-lo"] = pct(lo)
+            N[f"expr-{SHORT[m]}-drop-hi"] = pct(hi)
+            inference["format_differences"][m] = {
+                "mean":mean, "ci95":[lo,hi], "n":n, "n_sets":len(set(clusters)),
+                "by_seed":{k:float(np.mean(v)) for k,v in by_seed.items()},
+                "claimable":len(by_seed)==3 and all(np.mean(v)>0 for v in by_seed.values()) and lo>0}
     # ---- gate
     gf = RESULTS_DIR / "summary" / "lure_gate_v2.json"
     if gf.exists():
@@ -209,7 +232,7 @@ def main() -> int:
         N["gate-sum-len-readers"] = str(sum(1 for m in ms if sum(g[m][n]["argmax"] == "len" for n in sumnames) * 2 > len(sumnames)))
     # ---- probes at the decision token (best layer by neutral accuracy)
     for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
-        pj = OUT_DIR / "probes" / m / "L5" / "trace" / "v1.json"
+        pj = probe_output(m)
         if not pj.exists(): continue
         d = json.loads(pj.read_text()); by = {}
         for r in d["results"]:
@@ -223,6 +246,27 @@ def main() -> int:
         N[f"probe-{SHORT[m]}-layer"] = str(best)
         ctl = [r["control_acc"]["neutral"] for r in by[best] if isinstance(r.get("control_acc"), dict)]
         N[f"probe-{SHORT[m]}-ctl"] = f"{np.mean(ctl):.2f}" if ctl else "--"
+    replication = RESULTS_DIR / "summary" / "disjoint_probes.json"
+    if replication.exists():
+        summary = json.loads(replication.read_text())
+        probe_rows = [r"\begin{tabular}{@{}lrrrrrrr@{}}", r"\toprule",
+                      r"Model & Set & Layer & Neutral & Control & Misleading & Control & Majority \\", r"\midrule"]
+        labels = {"olmo2-7b-it": "OLMo-2-7B", "llama32-3b-it": "Llama-3.2-3B", "llama31-8b-it": "Llama-3.1-8B"}
+        for m, runs in summary["models"].items():
+            if len(runs) != 3:
+                continue
+            rates = [r["misleading_accuracy"] for r in runs.values()]
+            N[f"probe-{SHORT[m]}-demo-lo"] = pct(min(rates), d=0)
+            N[f"probe-{SHORT[m]}-demo-hi"] = pct(max(rates), d=0)
+            N["probe-n-train"] = f"{runs['trace']['n_train']:,}"
+            N["probe-n-test"] = str(runs['trace']['n_misleading'])
+            for regime, run in runs.items():
+                seed = 7 if regime == "trace" else int(regime.removeprefix("trace_s"))
+                fields = [pct(run[key]) for key in ("neutral_accuracy", "neutral_control", "misleading_accuracy", "misleading_control", "majority_accuracy")]
+                probe_rows.append(f"{labels[m]} & {seed} & {run['layer']} & " + " & ".join(fields) + r" \\")
+        probe_rows += [r"\bottomrule", r"\end{tabular}"]
+        if summary.get("validated"):
+            (PROJECT_ROOT / "paper/tables/probe_repeats.tex").write_text("\n".join(probe_rows) + "\n")
     # ---- patching
     for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
         for site in ("pre", "name"):
@@ -296,7 +340,7 @@ def main() -> int:
         lines.append(f"{DISPLAY[m]} & {nm} & L{N[f'patch-{k}-pre-half']} & L{N[f'patch-{k}-pre-full']} & {N[f'patch-{k}-pre-all']}\\% & {N[f'patch-{k}-pre-alldamage']}\\% \\\\")
     lines += ["\\bottomrule", "\\end{tabular}"]
     (tdir / "patch.tex").write_text("\n".join(lines) + "\n")
-    # ---- E9: the equivalence bound as a TOST (57_equivalence.py), not an eyeballed margin
+    # ---- E9: 90% cluster intervals for equivalence; 95% intervals for reliable effects.
     eqf = RESULTS_DIR / "summary" / "equivalence.json"
     if eqf.exists():
         e = json.loads(eqf.read_text()); su = e["summary"]
@@ -304,7 +348,13 @@ def main() -> int:
         for k in ("cells", "equivalent", "with_effect", "inconclusive", "trace_cells", "trace_with_effect"):
             N[f"eq-{k.replace('_','')}"] = str(su[k])
 
+    import runpy
+    followup = runpy.run_path(str(Path(__file__).with_name("77_followup_tables.py")))
+    N.update(followup["narrative_numbers"]())
+    independent = runpy.run_path(str(Path(__file__).with_name("80_round6_tables.py")))
+    N.update(independent["narrative_numbers"]())
     out = PROJECT_ROOT / "paper" / "numbers.tex"
+    (RESULTS_DIR / "summary" / "cell_inference.json").write_text(json.dumps(inference, indent=2) + "\n")
     with out.open("w") as f:
         f.write("% generated by scripts/51_numbers.py; do not edit\n")
         for k, v in sorted(N.items()):
@@ -313,6 +363,9 @@ def main() -> int:
     print(f"wrote {len(N)} numbers to {out}")
     for k in ("cell-olmo7-excess", "cell-olmo7-repl-excess", "cell-olmo7-comment-excess", "cell-llama3-comment-claim", "cell34-len-excess", "cell34-max-excess", "l6-max-excess", "crux-olmo7-direct-lo", "expr-olmo7-drop", "probe-olmo7-code", "probe-olmo7-name", "patch-olmo7-pre-half", "patch-olmo7-name-best", "gate-pass"):
         print(f"  {k} = {N.get(k)}")
+    import runpy
+    runpy.run_path(str(Path(__file__).with_name("77_followup_tables.py")), run_name="__main__")
+    runpy.run_path(str(Path(__file__).with_name("80_round6_tables.py")), run_name="__main__")
     return 0
 
 

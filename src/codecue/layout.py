@@ -66,6 +66,15 @@ def spans(prompt: str, x: Instance, role: str, regime_base: str, generation: str
     return out
 
 
+def assert_before_value(offsets, token_index: int, value_start: int) -> None:
+    """A pre-value token must end before the first character of the supplied value."""
+    if token_index < 0 or token_index >= len(offsets):
+        raise ValueError("unresolved pre-value token")
+    start, end = offsets[token_index]
+    if end <= start or end > value_start:
+        raise ValueError("pre-value token includes the supplied value")
+
+
 def spans_to_tokens(spans_: list[Span], offsets: list[tuple[int, int]]) -> dict[str, int]:
     """Map each span to the index of the LAST token overlapping it, given the tokenizer's
     `return_offsets_mapping` output for the same string."""

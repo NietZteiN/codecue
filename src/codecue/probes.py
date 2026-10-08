@@ -163,6 +163,9 @@ def train_and_eval(train_dir: Path, test_dirs: dict[str, Path], role: str, out_p
                    layers: list[int] | None = None, positions: list[str] | None = None,
                    device: str = "cuda", control: bool = True, standardize: bool = False) -> None:
     """Sweep (position, layer, seed); write one JSON with aggregates and per-instance outputs."""
+    from .probe_data import assert_disjoint_metadata
+    assert_disjoint_metadata(json.loads((train_dir / "meta.json").read_text()),
+                             {c: json.loads((p / "meta.json").read_text()) for c, p in test_dirs.items()})
     Htr, mtr = load_cache(train_dir)
     ytr = labels_for(mtr, role)
     ctr = control_labels(mtr, role)

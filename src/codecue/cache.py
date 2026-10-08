@@ -16,6 +16,7 @@ positions are absolute indices as in Kudo et al.
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 from pathlib import Path
 from typing import Sequence
@@ -24,8 +25,9 @@ import numpy as np
 import torch
 
 from .generator import Instance
-from .layout import Span, spans_to_tokens
+from .layout import Span, assert_before_value, spans_to_tokens
 from .prompts import build_prompt, demo_block, demos, parse_regime
+from .probe_data import program_key
 
 
 def trace_text(x: Instance) -> str:
@@ -60,6 +62,19 @@ def cache_spans(prompt: str, gen: str, x: Instance, role: str) -> list[Span]:
 def cache_group(tok, model, instances: Sequence[Instance], role: str, regime: str, level: int,
                 out_dir: Path, batch_size: int, layer_stride: int = 2) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
+    fingerprint = hashlib.sha256(json.dumps({"instances": [x.to_json() for x in instances],
+        "role": role, "regime": regime, "level": level, "layer_stride": layer_stride},
+        sort_keys=True).encode()).hexdigest()
+    meta_path = out_dir / "meta.json"
+    if meta_path.exists() and (out_dir / "hidden.npy").exists():
+        cached = json.loads(meta_path.read_text())
+        if cached.get("data_fingerprint") != fingerprint or not cached.get("pre_value_boundary_checked"):
+            raise ValueError(f"{out_dir}: existing cache belongs to different inputs; use a new directory")
+        shape = np.load(out_dir / "hidden.npy", mmap_mode="r").shape
+        if shape == (cached["n"], len(cached["pos_labels"]), len(cached["layers"]), cached["hidden_dim"]):
+            print(f"skip {out_dir} (validated cache)", flush=True)
+            return cached
+        raise ValueError(f"{out_dir}: cache shape does not match metadata")
     base, seed = parse_regime(regime)
     dem = demos(level, seed, base)
     prompts = [build_prompt(x, regime, dem) for x in instances]
@@ -67,7 +82,14 @@ def cache_group(tok, model, instances: Sequence[Instance], role: str, regime: st
     enc = [tok(p + g, return_offsets_mapping=True, add_special_tokens=True) for p, g in zip(prompts, gens)]
     pos = []
     for e, p, g, x in zip(enc, prompts, gens, instances):
-        pos.append(spans_to_tokens(cache_spans(p, g, x, role), e["offset_mapping"]))
+        mapped = spans_to_tokens(cache_spans(p, g, x, role), e["offset_mapping"])
+        step = re.search(rf"\b{re.escape(x.names[role])} = ", g)
+        if step is None:
+            raise ValueError(f"{x.id}: target missing from supplied trace")
+        assert_before_value(e["offset_mapping"], mapped[f"pre@{role}"], len(p) + step.end())
+        answer_start = len(p + g) - len(str(x.answer))
+        assert_before_value(e["offset_mapping"], mapped["anspre"], answer_start)
+        pos.append(mapped)
     # Programs differ in length (list size, constants, operators), so positions are PER INSTANCE
     # (rule 3, span-based); the arithmetic paper's absolute-alignment guard does not apply and
     # rejected 57% of instances when first ported (2026-09-16). Keep every instance whose
@@ -91,9 +113,11 @@ def cache_group(tok, model, instances: Sequence[Instance], role: str, regime: st
         for b, k in enumerate(chunk):
             H[i + b] = st[b, [pos[k][lab] for lab in labels]].to(torch.float16).cpu().numpy()
     np.save(out_dir / "hidden.npy", H)
-    meta = {"role": role, "level": level, "regime": regime, "pos_labels": labels, "layers": layers,
+    meta = {"data_fingerprint": fingerprint, "pre_value_boundary_checked": True,
+            "role": role, "level": level, "regime": regime, "pos_labels": labels, "layers": layers,
             "hidden_dim": int(cfg.hidden_size), "n": len(keep), "n_dropped": len(instances) - len(keep),
-            "instances": [{"id": instances[k].id, "set_id": instances[k].set_id, "names": instances[k].names,
+            "instances": [{"id": instances[k].id, "set_id": instances[k].set_id,
+                           "program_key": program_key(instances[k]), "names": instances[k].names,
                            "values": instances[k].values, "lure": instances[k].lure, "target": instances[k].target,
                            "condition": instances[k].condition} for k in keep]}
     (out_dir / "meta.json").write_text(json.dumps(meta))

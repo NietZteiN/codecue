@@ -1,0 +1,227 @@
+{
+  "collected_utc": "2026-10-03T12:50:01.310299+00:00",
+  "models": {
+    "olmo2-7b-it": {
+      "trace": {
+        "layer": 18,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 0.9948892674616695,
+        "misleading_accuracy": 0.9450292397660819,
+        "neutral_control": 1.0,
+        "misleading_control": 0.3298245614035088,
+        "misleading_lure_rate": 0.0,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/olmo2-7b-it/L5/trace/v1.json"
+      },
+      "trace_s11": {
+        "layer": 18,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 0.9727427597955707,
+        "misleading_accuracy": 0.9543859649122807,
+        "neutral_control": 1.0,
+        "misleading_control": 0.0,
+        "misleading_lure_rate": 0.0011695906432748538,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/olmo2-7b-it/L5/trace_s11/v1.json"
+      },
+      "trace_s13": {
+        "layer": 18,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 0.9977285633162976,
+        "misleading_accuracy": 0.9742690058479532,
+        "neutral_control": 1.0,
+        "misleading_control": 0.23391812865497075,
+        "misleading_lure_rate": 0.0,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/olmo2-7b-it/L5/trace_s13/v1.json"
+      }
+    },
+    "llama32-3b-it": {
+      "trace": {
+        "layer": 24,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 0.9880749574105622,
+        "misleading_accuracy": 0.9368421052631579,
+        "neutral_control": 0.9965928449744463,
+        "misleading_control": 0.2,
+        "misleading_lure_rate": 0.004678362573099415,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/llama32-3b-it/L5/trace/v1.json"
+      },
+      "trace_s11": {
+        "layer": 20,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 1.0,
+        "misleading_accuracy": 0.9543859649122807,
+        "neutral_control": 0.9982964224872232,
+        "misleading_control": 0.050292397660818715,
+        "misleading_lure_rate": 0.0,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/llama32-3b-it/L5/trace_s11/v1.json"
+      },
+      "trace_s13": {
+        "layer": 28,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 0.9943214082907439,
+        "misleading_accuracy": 0.9988304093567252,
+        "neutral_control": 1.0,
+        "misleading_control": 0.01871345029239766,
+        "misleading_lure_rate": 0.0,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/llama32-3b-it/L5/trace_s13/v1.json"
+      }
+    },
+    "llama31-8b-it": {
+      "trace": {
+        "layer": 16,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 1.0,
+        "misleading_accuracy": 0.9988304093567252,
+        "neutral_control": 0.8784781374219194,
+        "misleading_control": 0.3298245614035088,
+        "misleading_lure_rate": 0.0,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/llama31-8b-it/L5/trace/v1.json"
+      },
+      "trace_s11": {
+        "layer": 20,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 1.0,
+        "misleading_accuracy": 1.0,
+        "neutral_control": 0.8160136286201022,
+        "misleading_control": 0.0011695906432748538,
+        "misleading_lure_rate": 0.0,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/llama31-8b-it/L5/trace_s11/v1.json"
+      },
+      "trace_s13": {
+        "layer": 20,
+        "n_train": 2000,
+        "n_neutral": 587,
+        "n_misleading": 285,
+        "neutral_accuracy": 1.0,
+        "misleading_accuracy": 1.0,
+        "neutral_control": 0.871663827370812,
+        "misleading_control": 0.0304093567251462,
+        "misleading_lure_rate": 0.0,
+        "training_majority_digit": 3,
+        "majority_accuracy": 0.45614035087719296,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "program_overlap": 0,
+        "source": "/scratch/juno/jvl210002/codecue/probes_disjoint/llama31-8b-it/L5/trace_s13/v1.json"
+      }
+    }
+  },
+  "errors": [],
+  "validated": true,
+  "stages": [
+    {
+      "argv": [
+        "/work/jvl210002/migration/envs/probe-cu129/bin/python",
+        "scripts/51_numbers.py"
+      ],
+      "exit_code": 0,
+      "log": "/work/jvl210002/migration/codecue/log/round4_2026-10-02/collect_stage1.out"
+    },
+    {
+      "argv": [
+        "/work/jvl210002/migration/envs/probe-cu129/bin/python",
+        "scripts/71_mechanism_figure.py"
+      ],
+      "exit_code": 0,
+      "log": "/work/jvl210002/migration/codecue/log/round4_2026-10-02/collect_stage2.out"
+    },
+    {
+      "argv": [
+        "/work/jvl210002/migration/envs/probe-cu129/bin/python",
+        "scripts/99_selfcheck.py"
+      ],
+      "exit_code": 0,
+      "log": "/work/jvl210002/migration/codecue/log/round4_2026-10-02/collect_stage3.out"
+    },
+    {
+      "argv": [
+        "make",
+        "paper-submission"
+      ],
+      "exit_code": 0,
+      "log": "/work/jvl210002/migration/codecue/log/round4_2026-10-02/collect_stage4.out"
+    }
+  ]
+}

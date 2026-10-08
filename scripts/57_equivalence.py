@@ -10,8 +10,8 @@ bootstrap interval lies entirely inside [-delta, +delta], which is the same as r
 one-sided nulls at 5%. Cells whose interval is neither inside the margin nor excluding zero are
 INCONCLUSIVE, and saying so is the point of the exercise.
 
-Reads results/summary/sweep_L<level>.json (written by 50_sweep.py, which already stores the
-per-seed values and the pooled cluster bootstrap) and writes results/summary/equivalence.json.
+Reads the 90% intervals in results/summary/sweep_L<level>.json, written from raw paired
+observations by 50_sweep.py, and writes results/summary/equivalence.json.
 """
 from __future__ import annotations
 
@@ -31,7 +31,8 @@ def main() -> int:
     ap.add_argument("--delta", type=float, default=0.02)
     ap.add_argument("--levels", type=int, nargs="+", default=[3, 5, 6])
     a = ap.parse_args()
-    out = {"delta": a.delta, "cells": {}}
+    out = {"delta": a.delta, "confidence": 0.90, "n_boot": 2000,
+           "cluster": "matched set, including all demonstration-seed replicates", "cells": {}}
     print(f"equivalence bound delta = {100*a.delta:.0f} points; the interval must lie inside it\n")
     print(f"{'level':6s} {'model/regime':28s} {'contrast':20s} {'mean':>7s} {'interval':>18s}  verdict")
     for L in a.levels:
@@ -43,12 +44,12 @@ def main() -> int:
             for name, c in sorted(rec.get("contrasts", {}).items()):
                 if not name.startswith(CONTRASTS):
                     continue
-                lo, hi = c["ci95"]
+                lo, hi = c["ci90"]
                 inside = abs(lo) < a.delta and abs(hi) < a.delta
                 claim = bool(c.get("claimable"))
                 verdict = "EQUIVALENT" if inside else ("effect" if claim else "inconclusive")
                 out["cells"][f"L{L}/{key}/{name}"] = {
-                    "mean": c["pooled_mean"], "ci95": c["ci95"],
+                    "mean": c["pooled_mean"], "ci90": c["ci90"], "ci95": c["ci95"],
                     "equivalent": bool(inside), "claimable": claim, "verdict": verdict}
                 print(f"L{L:<5d} {key:28s} {name:20s} {100*c['pooled_mean']:+6.2f} "
                       f"[{100*lo:+6.2f},{100*hi:+6.2f}]  {verdict}")

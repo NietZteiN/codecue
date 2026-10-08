@@ -22,6 +22,7 @@ from codecue.generator import read_jsonl  # noqa: E402
 from codecue.lures import FAMILY_OF_NAME  # noqa: E402
 from codecue.models import load_model  # noqa: E402
 from codecue.probes import train_and_eval  # noqa: E402
+from codecue.probe_data import disjoint_training  # noqa: E402
 
 
 def main() -> int:
@@ -31,23 +32,24 @@ def main() -> int:
     ap.add_argument("--n-train", type=int, default=3000); ap.add_argument("--n-test", type=int, default=1000)
     ap.add_argument("--cell-only", action="store_true", help="restrict tests to the len->sum cell")
     ap.add_argument("--batch-size", type=int, default=None); ap.add_argument("--layer-stride", type=int, default=2)
+    ap.add_argument("--positions", nargs="+", default=None, help="probe only these cached positions")
     a = ap.parse_args()
     xs = read_jsonl(DATA_DIR / f"L{a.level}" / "test_sets.jsonl")
+    candidates = read_jsonl(DATA_DIR / f"L{a.level}" / "train_neutral.jsonl")
+    tr = disjoint_training(candidates, xs, a.n_train)
     sel = [x for x in xs if x.target in (None, a.role)]
     # the probe TRAINS on every neutral program (it learns "the value of v1" in general, as in the
     # arithmetic paper); `--cell-only` restricts only the TEST groups to the affected cell
     in_cell = lambda x: x.stmts[0]["op"] == "len" and (x.lure_name is None or FAMILY_OF_NAME[x.lure_name].key == "sum")
-    groups, train_pool = defaultdict(list), []
+    groups = defaultdict(list)
     for x in sel:
-        if x.condition == "neutral":
-            train_pool.append(x)
         if not a.cell_only or in_cell(x):
             groups[x.condition if x.target is None else f"{x.condition}@{x.target}"].append(x)
     m = model_entry(a.model); tok, model = load_model(m["hf_id"])
     bs = a.batch_size or max(4, m.get("batch_size", 16) // 2)
-    root = OUT_DIR / "probecache" / a.model / f"L{a.level}" / a.regime
+    # Keep the original overlapping caches and probe outputs intact for the audit.
+    root = OUT_DIR / "probecache_disjoint" / a.model / f"L{a.level}" / a.regime
     # train on neutral, test on everything (neutral included, as the accuracy reference)
-    tr = train_pool[: a.n_train]
     cache_group(tok, model, tr, a.role, a.regime, a.level, root / "train_neutral", bs, a.layer_stride)
     print(f"cached train_neutral: {len(tr)}", flush=True)
     tests = {}
@@ -60,8 +62,11 @@ def main() -> int:
         print(f"cached {g}: {len(rows)}", flush=True)
     del model
     import torch; torch.cuda.empty_cache()
-    out = OUT_DIR / "probes" / a.model / f"L{a.level}" / a.regime / f"{a.role}.json"
-    train_and_eval(root / "train_neutral", tests, a.role, out)
+    out = OUT_DIR / "probes_disjoint" / a.model / f"L{a.level}" / a.regime / f"{a.role}.json"
+    if out.exists() and out.with_suffix(".npz").exists():
+        print(f"skip {out} (probe outputs exist; caches validated)", flush=True)
+    else:
+        train_and_eval(root / "train_neutral", tests, a.role, out, positions=a.positions)
     print(f"wrote {out}")
     return 0
 
