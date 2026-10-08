@@ -1,6 +1,6 @@
 # Misleading Identifiers Change What Code Traces Write
 
-Updated 2026-10-07 to match the completed follow-ups and revised manuscript.
+Updated 2026-10-08 to match the completed follow-ups and revised manuscript.
 
 The contribution separates the correct value recoverable from internal activations from
 the incorrect value written in a trace. That separation motivates changing the worked
@@ -79,6 +79,14 @@ Follow the problem through the evidence. Keep headings concrete, paragraphs shor
 interpretations beside the measurements that support them. Avoid contribution lists and
 repeated scope statements. Use generated `\NUM{}` macros for measured quantities and state
 the interval convention actually used by the analysis.
+
+The abstract first explains what a trace reports, then follows the length-versus-sum
+example into the pre-write probe result and the demonstration intervention. Keep the
+2-versus-8 example throughout; describe the demonstration change in words rather than
+introducing a second numeric example. Auxiliary experiments belong in the body.
+End the introduction with what we show about predicted digits, wrong writes and the
+effect of showing the operation. Keep causal-use and generalization caveats with the
+results and limitations that support them.
 
 Terminology: a name-suggested value is the incorrect digit implied by the misleading name.
 A name error writes that digit; excess name errors subtract the matched neutral twin's

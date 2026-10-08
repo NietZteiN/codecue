@@ -642,3 +642,14 @@ helps traces report computed values. The argument guide reflects this connection
 LaTeX edits are confined to the abstract. Decodability-versus-use, patching caveats and
 identifier-selection deviations remain in the unchanged body and limitations.
 Numerical inputs and figures are unchanged. Evidence: `../log/contribution_2026-10-07/`.
+
+### Direct introduction ending and code abstract (2026-10-08)
+
+The abstract now explains what a trace reports before introducing the 2-versus-8 example.
+It follows that conflict through the correct digit predicted immediately before wrong
+writes and the worked-example intervention. The demonstration change is described in
+words, avoiding a second numeric example; secondary result lists are omitted. The
+introduction keeps the opening on the same 2-versus-8 example and ends with the observed
+probe/write contrast and the effect of showing the
+operation. Decodability-versus-use, patching and scope caveats remain in the unchanged
+Results and Limitations. Evidence: `../log/direct_story_2026-10-08/`.

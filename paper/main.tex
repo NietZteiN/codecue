@@ -31,23 +31,20 @@
 \maketitle
 
 \begin{abstract}
-A variable assigned a list's length should keep that value when renamed \texttt{sum\_all}.
-Yet a language model may write the sum instead: 8 rather than 2 for \texttt{[5, 3]}.
-We test whether the correct value can still be recovered from internal activations before
-an incorrect write, extending \citeauthor{kudo2026faithful}'s arithmetic analysis to code.
-Matched Python functions differ only in one identifier, keeping the executed calculation
-fixed. Across \NUM{n-models} models, traces write each assignment's value before the return
-value. In three models, sum-like
-names increase incorrect sum writes by \NUM{cell-llama8-excess}--\NUM{cell-olmo7-excess}
-percentage points over ordinary names, yet linear probes trained on separate programs
-predict the correct digit from internal activations immediately before those writes with
-\NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy. This separation motivates changing how
-the computation is demonstrated: examples showing \texttt{v = len(xs) = 3} sharply reduce
-incorrect sum writes, while descriptive text of the same length leaves large effects.
-The contrast replicates with screened names on \NUM{r6-program-n} fresh programs.
-These results show that a correct value can remain internally recoverable while a trace
-writes the wrong one, and that demonstrating the operation helps the trace report the
-computed value.
+A language model tracing code is asked to report the value assigned to each variable.
+For \texttt{[5, 3]}, a variable holding the list's length should be 2, yet naming it
+\texttt{sum\_all} can make the model write 8, the sum. Extending
+\citeauthor{kudo2026faithful}'s arithmetic analysis, we introduce matched Python problems
+that change only a variable name and test whether the correct digit is readable inside
+the model before it writes the wrong one. In three of \NUM{n-models} models, sum-like
+names increase incorrect sum writes over ordinary names, yet linear probes, small
+predictors trained on separate programs, recover the correct digit from internal
+activations with \NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy immediately before those
+writes. To help the trace follow the code, we change only the worked examples. Showing
+the operation together with its result sharply reduces incorrect sum writes; extra
+descriptive text of the same length does not reproduce this reduction. The written trace
+reflects both the program and the worked examples: demonstrating the operation helps it
+report the code's value despite a misleading name.
 \end{abstract}
 
 \section{Introduction}
@@ -59,8 +56,8 @@ writes 8 for this variable, following the sum suggested by the name. We call thi
 \emph{name error}.
 
 Changing only the worked examples changes this trace. When examples show values alone,
-as in \texttt{v = 3}, the model writes 8. When they also show the computation,
-as in \texttt{v = len(xs) = 3}, it writes 2. The program, input and model are unchanged.
+the model writes 8. When they also show the operation used to obtain each value,
+it writes 2. The program, input and model are unchanged.
 This contrast motivates our study: how do variable names and the format of worked examples
 affect which value a model writes?
 
@@ -81,12 +78,12 @@ replace activations to test how outputs change. We apply these tools to code wit
 deliberate conflict between a variable's assigned operation and its name.
 
 We train a \emph{linear probe}, a small predictor of the true digit, on separate programs.
-The probe reads the model's activations immediately before the model writes the traced value.
-It can predict 2 even when the model writes 8; that establishes recoverable information,
-not that the model uses it. Across the tested programs, names change which incorrect value
-is written. Examples that show the computation reduce those errors more than extra descriptive
-text of the same length. The finding concerns how the trace is produced; it does not establish a general
-failure to compute the correct value.
+It reads activations immediately before the model writes a value. We show that this
+predictor usually returns the computed digit even when the trace follows the misleading
+name. Showing the operation in worked examples sharply reduces those wrong writes;
+extra descriptive text of the same length leaves large effects. The worked examples
+therefore change whether the trace writes the value computed by the code or the value
+suggested by the name.
 
 \section{Study design}
 
