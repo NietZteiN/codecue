@@ -75,6 +75,11 @@ intervals, probe and patch details, scope checks and statistical conventions.
 
 ## Writing conventions
 
+For readers outside this project, keep the abstract's result–evidence–implication order
+but explain the task and comparison in ordinary words. Define the requested calculation
+or reported variable values before using technical labels. Avoid unexplained equivalence,
+matched-pair, activation and trace terminology; keep the central numbers and precise scope.
+
 Follow the problem through the evidence. Keep headings concrete, paragraphs short and
 interpretations beside the measurements that support them. Avoid contribution lists and
 repeated scope statements. Use generated `\NUM{}` macros for measured quantities and state

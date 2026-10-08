@@ -31,18 +31,18 @@
 \maketitle
 
 \begin{abstract}
-Language models can write an incorrect intermediate value in a code trace even when
-the correct value is recoverable from their internal activations. Extending
-\citeauthor{kudo2026faithful}'s arithmetic analysis to code, we evaluate \NUM{n-models}
-models on matched Python programs that differ only in a variable name. When a variable
-holds a list's length but its name suggests a sum, three models write the sum more often
-than under ordinary names. On these incorrect traces, linear predictors trained on
-separate programs recover the correct digit with \NUM{crossfit-min}--\NUM{crossfit-max}\%
-accuracy immediately before the model writes the wrong value. Worked examples that show
-the operation alongside its result sharply reduce these errors; equally long descriptive
-annotations leave large effects. These findings distinguish values recoverable inside a
-model from those reported in its trace, and show that demonstrating the operation helps
-the written trace follow the program despite a misleading name.
+Language models can report a wrong value even when their internal activity contains
+information about the correct value. We extend \citeauthor{kudo2026faithful}'s arithmetic
+study to Python programs, asking \NUM{n-models} models to report each variable's value as
+the program runs. We compare versions of the same program that differ only in a variable
+name. Three models more often report a sum when a variable holding a list's length has a
+sum-like name. Yet small predictors trained on other programs read the correct value
+from the model's internal activity with \NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy
+immediately before the wrong value is written. Showing how each value is calculated in
+worked examples sharply reduces these errors. Adding descriptive text of the same length
+leaves many of them. These findings separate the values a model reports from those
+readable inside it. Demonstrating the calculation helps the written output follow the
+program.
 \end{abstract}
 
 \section{Introduction}
