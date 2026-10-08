@@ -653,3 +653,10 @@ introduction keeps the opening on the same 2-versus-8 example and ends with the 
 probe/write contrast and the effect of showing the
 operation. Decodability-versus-use, patching and scope caveats remain in the unchanged
 Results and Limitations. Evidence: `../log/direct_story_2026-10-08/`.
+
+### 2026-10-08 — Direct scientific abstract
+
+Rewrote the abstract to lead with the main result, summarize its experimental evidence,
+and state the implication directly. Illustrative examples remain in the introduction;
+secondary results remain in the body. No scientific results or numerical inputs changed.
+Build and layout verification: `log/result_first_abstracts_2026-10-08/verification.json`.

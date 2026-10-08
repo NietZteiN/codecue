@@ -80,10 +80,11 @@ interpretations beside the measurements that support them. Avoid contribution li
 repeated scope statements. Use generated `\NUM{}` macros for measured quantities and state
 the interval convention actually used by the analysis.
 
-The abstract first explains what a trace reports, then follows the length-versus-sum
-example into the pre-write probe result and the demonstration intervention. Keep the
-2-versus-8 example throughout; describe the demonstration change in words rather than
-introducing a second numeric example. Auxiliary experiments belong in the body.
+The abstract states the main finding first: a wrong trace value can coexist with a
+recoverable correct digit. Summarize the matched-program design, the error-conditioned
+probe result and the demonstration intervention, then state their implications for
+interpreting and improving traces. Keep concrete examples in the introduction and
+auxiliary experiments in the body.
 End the introduction with what we show about predicted digits, wrong writes and the
 effect of showing the operation. Keep causal-use and generalization caveats with the
 results and limitations that support them.

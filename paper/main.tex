@@ -31,20 +31,18 @@
 \maketitle
 
 \begin{abstract}
-A language model tracing code is asked to report the value assigned to each variable.
-For \texttt{[5, 3]}, a variable holding the list's length should be 2, yet naming it
-\texttt{sum\_all} can make the model write 8, the sum. Extending
-\citeauthor{kudo2026faithful}'s arithmetic analysis, we introduce matched Python problems
-that change only a variable name and test whether the correct digit is readable inside
-the model before it writes the wrong one. In three of \NUM{n-models} models, sum-like
-names increase incorrect sum writes over ordinary names, yet linear probes, small
-predictors trained on separate programs, recover the correct digit from internal
-activations with \NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy immediately before those
-writes. To help the trace follow the code, we change only the worked examples. Showing
-the operation together with its result sharply reduces incorrect sum writes; extra
-descriptive text of the same length does not reproduce this reduction. The written trace
-reflects both the program and the worked examples: demonstrating the operation helps it
-report the code's value despite a misleading name.
+Language models can write an incorrect intermediate value in a code trace even when
+the correct value is recoverable from their internal activations. Extending
+\citeauthor{kudo2026faithful}'s arithmetic analysis to code, we evaluate \NUM{n-models}
+models on matched Python programs that differ only in a variable name. When a variable
+holds a list's length but its name suggests a sum, three models write the sum more often
+than under ordinary names. On these incorrect traces, linear predictors trained on
+separate programs recover the correct digit with \NUM{crossfit-min}--\NUM{crossfit-max}\%
+accuracy immediately before the model writes the wrong value. Worked examples that show
+the operation alongside its result sharply reduce these errors; equally long descriptive
+annotations leave large effects. These findings distinguish values recoverable inside a
+model from those reported in its trace, and show that demonstrating the operation helps
+the written trace follow the program despite a misleading name.
 \end{abstract}
 
 \section{Introduction}
