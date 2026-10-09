@@ -32,18 +32,17 @@
 \maketitle
 
 \begin{abstract}
-Language models can report a wrong value even when their internal activity contains
-information about the correct value. We extend \citeauthor{kudo2026faithful}'s arithmetic
-study to Python programs, asking \NUM{n-models} models to predict each variable's value.
-We compare versions of the same program that differ only in a variable
-name. Three models more often report a sum when a variable holding a list's length has a
-sum-like name. Yet small predictors trained on other programs read the correct value
-from the model's internal activity with \NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy
-immediately before the wrong value is written. Showing how each value is calculated in
-worked examples sharply reduces these errors. Adding descriptive text of the same length
-leaves many of them. These findings separate the values a model reports from those
-readable inside it. Demonstrating the calculation helps the written output follow the
-program.
+Misleading variable names can change the values a language model reports even when the
+correct values remain readable in its internal activity. We extend
+\citeauthor{kudo2026faithful}'s arithmetic study to Python programs, asking \NUM{n-models}
+models to report each assigned value. Renaming a variable holding a list's length to
+suggest a sum makes three models more often write the sum. Yet predictors trained on
+other programs recover the correct value with \NUM{crossfit-min}--\NUM{crossfit-max}\%
+accuracy immediately before these wrong writes. Worked examples that include the code
+expression beside each value sharply reduce the errors; descriptive text of the same
+length leaves many of them. A correct internal readout therefore cannot certify a written
+trace: the model can still report the name-suggested value. Including source expressions
+in worked examples offers a practical way to improve trace reliability.
 \end{abstract}
 
 \section{Introduction}
@@ -55,8 +54,8 @@ writes 8 for this variable, following the sum suggested by the name. We call thi
 \emph{name error}.
 
 Changing only the worked examples changes this trace. When examples show values alone,
-the model writes 8. When they also show the operation used to obtain each value,
-it writes 2. The program, input and model are unchanged.
+the model writes 8. When they show the code expression beside the value, as in
+\texttt{sum\_all = len(xs) = 2}, it writes 2. The program, input and model are unchanged.
 This contrast motivates our study: how do variable names and the format of worked examples
 affect which value a model writes?
 
@@ -64,7 +63,7 @@ affect which value a model writes?
 \centering
 \includegraphics[width=\textwidth]{figures/idea.pdf}
 \caption{An observed OLMo-2-7B trace. The name suggests sum 8, but the code counts two
-items. Showing operations in worked examples changes the first reported value from 8 to 2
+items. Including source expressions in worked examples changes the first reported value from 8 to 2
 and the final answer from 15 to 9. Only the example format changes.}
 \label{fig:idea}
 \end{figure*}
@@ -81,7 +80,7 @@ deliberate conflict between a variable's assigned operation and its name.
 We train a \emph{linear probe}, a small predictor of the true digit, on separate programs.
 It reads activations immediately before the model writes a value. We show that this
 predictor usually returns the computed digit even when the trace follows the misleading
-name. Showing the operation in worked examples sharply reduces those wrong writes;
+name. Including the code expression beside each demonstrated value sharply reduces wrong writes;
 extra descriptive text of the same length leaves large effects. The worked examples
 therefore change whether the trace writes the value computed by the code or the value
 suggested by the name.
@@ -103,10 +102,10 @@ with each name. The original main names fail the planned meaning check: agreemen
 of models. We report that departure and replicate with independently screened names and fresh programs
 (Appendix~\ref{app:round6-identifiers}).
 
-In the \emph{direct} regime, models write the return value. In \emph{trace}, they first write
-each assignment's value, as in \texttt{qq = 3, v = 6, vv = 9}. The \emph{trace-expr} comparison
-adds the expression to each demonstrated step, as in \texttt{qq = len(xs) = 3}.
-REPL, comment and free-prose formats test the effect's scope (Appendix~\ref{app:formats}).
+Models either give only the return value or first list each variable's value.
+Worked examples demonstrate values alone (\texttt{v = 2}) or expressions with values
+(\texttt{v = len(xs) = 2}). We also test transcripts resembling an interactive Python
+session, values added as code comments, and free prose (Appendix~\ref{app:formats}).
 
 Our main measure is \emph{excess name errors}: how often a misleading-name trace writes
 the suggested digit, minus how often the ordinary-name version writes that same digit.
@@ -128,18 +127,18 @@ details are in Appendix~\ref{app:probes}.
 \begin{table*}[t]
 \centering\small
 \tabinput{central_evidence}
-\caption{A: original names; excess sum writes, correct-digit probe accuracy on actual wrong
-writes, and probe counts (writes / independent computations). B: screened names on
-\NUM{r6-program-n} fresh computations; change is operation + value minus values only.
-Excesses and changes are points [95\% intervals]. Panels use separate cohorts.}
+\caption{The code computes length; the name suggests a sum. Extra sum writes are the
+misleading-name rate minus the ordinary-name rate. Correct-digit predictions are measured
+on actual wrong sum writes, before the trace starts and before the wrong value.
+Brackets: 95\% intervals.}
 \label{tab:central}
 \end{table*}
 
 \section{Results}
 
-\subsection{Terse traces follow a misleading name}
+\subsection{Listing values can follow a misleading name}
 
-Table~\ref{tab:central}A shows excess sum writes when the code computes a list's length in
+Table~\ref{tab:central} shows excess sum writes when the code computes a list's length in
 three affected models. Across ordinary-name programs at this level, their final-answer
 accuracies are \NUM{cell-olmo7-acc}, \NUM{cell-llama3-acc} and \NUM{cell-llama8-acc}\%
 (full panel: Appendix~\ref{app:matrix}).
@@ -157,7 +156,7 @@ smaller: \NUM{direct-lure-min-L5} to \NUM{direct-lure-max-L5} points at this lev
 \subsection{The correct digit is decodable on error cases}
 
 On actual incorrect sum writes (Figure~\ref{fig:story}a), neutral-trained probes recover the computed digit with
-\NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy. Table~\ref{tab:central}A gives intervals
+\NUM{crossfit-min}--\NUM{crossfit-max}\% accuracy. Table~\ref{tab:central} gives intervals
 and the number of independent computations; repeated demonstrations remain clustered.
 The prefixes match through the decision token in all \NUM{errorprobe-prefix-n} generations
 across the three demonstration sets. The cached state therefore also precedes the model's
@@ -184,42 +183,44 @@ hidden-state vector, so they cannot identify which feature changes the output.
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/story_evidence.pdf}
-\caption{\textbf{(a)} On actual wrong sum writes, a separate predictor reads the computed
-digit immediately before the write. \textbf{(b)} Showing operations reduces added wrong
-sum writes in an independent replication. Panels use different names and computations;
-Table~\ref{tab:central} gives counts and intervals.}
+\caption{\textbf{(a)} Correct digits predicted immediately before wrong sum writes.
+\textbf{(b)} Worked examples use \texttt{v = 2} or \texttt{v = len(xs) = 2}; including
+\texttt{len(xs)} reduces extra sum writes. The replication uses independently screened
+names and fresh programs; Table~\ref{tab:round6-replication} gives intervals.}
 \label{fig:story}
 \end{figure*}
 
-\subsection{Showing the operation reduces wrong writes}
+\subsection{Including the code expression reduces wrong writes}
 
 We keep the programs, models and demonstration sets fixed and change the examples from
-\texttt{v = 3} to \texttt{v = len(xs) = 3}. Name-error rates fall by
+\texttt{v = 2} to \texttt{v = len(xs) = 2}. Name-error rates fall by
 \NUM{expr-olmo7-drop}, \NUM{expr-llama3-drop} and \NUM{expr-llama8-drop} points in the three
 models (Table~\ref{tab:formats}). OLMo-2-7B retains
 \NUM{cell-olmo7-traceexpr-excess} points of excess; the two Llama effects approach zero.
 Length-matched neutral annotations leave \NUM{format-olmo7-annotation-mean} and
 \NUM{format-llama3-annotation-mean} points of excess in OLMo and Llama-3.2. Valid numeric
-elaborations (\texttt{v = 3 + 0 = 3}) lower it to \NUM{format-olmo7-numeric-mean} and
+elaborations (\texttt{v = 2 + 0 = 2}) lower it to \NUM{format-olmo7-numeric-mean} and
 \NUM{format-llama3-numeric-mean} points, still above source-expression demonstrations
 (Appendix~\ref{app:round5-formats}). Extra tokens do not reproduce the expression benefit;
 adding arithmetic accounts for part of it.
 
 Figure~\ref{fig:story}b shows the format contrast on \NUM{r6-program-n} fresh computations with
 \NUM{r6-name-n} names selected by meaning checks before observing any traces
-(Table~\ref{tab:central}B). CodeGemma shows no observed excess in either format.
+(Table~\ref{tab:round6-replication}). CodeGemma shows no observed excess in either format.
 This independent behavioral cohort is separate from the original-name probe cohort;
 selection and per-name results are in Appendix~\ref{app:round6-identifiers}.
 
-\begin{table}[t]
+\begin{table*}[t]
 \centering\small
 \tabinput{formats}
-\caption{Length-to-sum excess name errors (percentage points) by demonstration format;
-programs and examples fixed. Intervals: Table~\ref{tab:formats-ci}.}
+\caption{Extra sum writes when the code computes length (percentage points).
+Rows show the output format demonstrated in worked examples; snippets illustrate a value
+of 2. Larger numbers mean more answers follow the misleading name.
+$^{*}$Reliable across demonstration sets; intervals: Table~\ref{tab:formats-ci}.}
 \label{tab:formats}
-\end{table}
+\end{table*}
 
-REPL transcripts also omit expressions, yet their effects are several times smaller;
+Interactive Python transcripts also omit expressions, yet their effects are several times smaller;
 comment traces reduce them further. The larger checkpoint has a smaller maximum-step effect:
 CodeLlama-34B has \NUM{cell34-len-excess} excess on length steps and
 \NUM{cell34-max-excess} [\NUM{cell34-max-lo}, \NUM{cell34-max-hi}] on maximum steps.
@@ -243,8 +244,8 @@ value-writing position. Conflict tasks isolate competing cues
 
 \section{Conclusion}
 
-Terse traces can write a name-implied value while the correct digit remains decodable.
-Demonstrating the operation reduces these errors, including with independently screened
+Traces listing only values can write a name-suggested value while the correct digit remains decodable.
+Including the source expression in worked examples reduces these errors, including with independently screened
 names. Length-matched annotations leave large effects; numeric elaboration helps partly.
 These results concern the tested names and formats.
 
@@ -252,7 +253,7 @@ These results concern the tested names and formats.
 
 \begin{itemize}
 \item \textbf{Scope.} Programs are synthetic with single-digit values; the largest effect
-uses a constructed trace format. REPL and comments show smaller effects. The
+uses a constructed trace format. Interactive Python transcripts and code comments show smaller effects. The
 \NUM{crux-n}-function CRUXEval check bounds direct-answer and prose accuracy, not synthetic
 trace errors. Models reach 34B; the panel excludes Chinese-origin models, including strong
 code models in \citet{le2026obfuscated}.
@@ -368,17 +369,18 @@ sets of worked examples pooled; $^{*}$ as in Table~\ref{tab:full-panel}.}
 \label{app:formats}
 
 All few-shot comparisons hold programs, demonstration identities and model weights fixed.
-The trace writes \texttt{qq = 3}; trace-expr writes \texttt{qq = len(xs) = 3}; REPL writes
+The values-only format writes \texttt{qq = 3}; the expression-and-value format writes
+\texttt{qq = len(xs) = 3}; the interactive Python format writes
 \texttt{>{}>{}> qq} followed by \texttt{3}; comment mode annotates each assignment with its
-value. Prose asks for step-by-step reasoning without demonstrations. Table~\ref{tab:formats-ci}
+value. These are model-generated transcripts, not interpreter executions. Prose asks for step-by-step reasoning without demonstrations. Table~\ref{tab:formats-ci}
 gives the paired excess and interval for each few-shot format.
 
-On the main conflict, REPL excess is \NUM{cell-olmo7-repl-excess} and
+On the main conflict, interactive-transcript excess is \NUM{cell-olmo7-repl-excess} and
 \NUM{cell-llama3-repl-excess} points for OLMo-2-7B and Llama-3.2-3B, compared with
 \NUM{cell-llama8-repl-excess} for Llama-3.1-8B. Comments leave
 \NUM{cell-llama3-comment-excess} points in Llama-3.2-3B and near-zero excess in the other two.
 Prose has little initial name errors, so asking it to state or recompute values does not test
-removal of the large trace effect. The prediction that REPL would stay within a factor of two
+removal of the large trace effect. The prediction that interactive transcripts would stay within a factor of two
 of trace was not supported; the comment prediction held only for two models.
 
 The paired trace-minus-trace-expr name-error-rate reductions are \NUM{expr-olmo7-drop} points
@@ -477,7 +479,7 @@ and verify execution after renaming. Direct and prose accuracy contrasts all hav
 covering zero on the \NUM{crux-used} functions whose renamed target is used downstream.
 Their endpoints stay within \NUM{crux-direct-bound} and
 \NUM{crux-prose-bound} points, respectively (Table~\ref{tab:crux}). These are bounded results
-for those functions and prompts; they do not test the terse few-shot trace used in the synthetic
+for those functions and prompts; they do not test the trace that lists values without expressions used in the synthetic
 study.
 
 

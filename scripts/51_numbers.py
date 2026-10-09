@@ -161,13 +161,23 @@ def main() -> int:
         lines.append(f"{DISPLAY[m]} & {100*cl['acc']:.1f} & {dl} & {fmt(cl)} & {fmt(cm)} \\\\")
     lines += ["\\bottomrule", "\\end{tabular}"]
     (tdir / "cells.tex").write_text("\n".join(lines) + "\n")
-    lines = ["\\begin{tabular}{@{}lrrrr@{}}", "\\toprule", "Model & trace & REPL & comment & trace-expr \\\\", "\\midrule"]
+    format_labels = [
+        ("trace", "Values only", r"\texttt{v = 2}"),
+        ("repl", "Interactive Python transcript", r"\shortstack[l]{\texttt{>{}>{}> v}\\\texttt{2}}"),
+        ("comment", "Code with value comments", r"\texttt{v = len(xs) \# 2}"),
+        ("trace_expr", "Expression and value", r"\texttt{v = len(xs) = 2}"),
+    ]
+    models = ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it")
+    header = "Format shown in examples & Example & " + " & ".join(DISPLAY[m] for m in models) + r" \\"
+    lines = [r"\begin{tabular}{@{}llrrr@{}}", r"\toprule", header, r"\midrule"]
     short = list(lines)
-    for m in ("olmo2-7b-it", "llama32-3b-it", "llama31-8b-it"):
-        cs = [cell(m, reg, "len") for reg in ("trace", "repl", "comment", "trace_expr")]
-        lines.append(f"{DISPLAY[m]} & " + " & ".join(fmt(c) for c in cs) + " \\\\")
-        short.append(f"{DISPLAY[m]} & " + " & ".join((f"{100*c['excess']:+.1f}{'$^{*}$' if c['claim'] else ''}" if c else "--") for c in cs) + " \\\\")
-    lines += ["\\bottomrule", "\\end{tabular}"]; short += ["\\bottomrule", "\\end{tabular}"]
+    for regime, label, example in format_labels:
+        cs = [cell(m, regime, "len") for m in models]
+        lines.append(" & ".join([label, example] + [fmt(c) for c in cs]) + r" \\")
+        short.append(" & ".join([label, example] + [
+            f"{100*c['excess']:+.1f}{'$^{*}$' if c['claim'] else ''}" if c else "--"
+            for c in cs]) + r" \\")
+    lines += [r"\bottomrule", r"\end{tabular}"]; short += [r"\bottomrule", r"\end{tabular}"]
     (tdir / "formats_ci.tex").write_text("\n".join(lines) + "\n")
     (tdir / "formats.tex").write_text("\n".join(short) + "\n")
     pairs = (("len", "sum"), ("max", "sum"), ("min", "sum"), ("sum", "len"), ("max", "len"))

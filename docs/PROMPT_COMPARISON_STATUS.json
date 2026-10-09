@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-09T02:08:55Z",
-  "status": "results_available",
+  "checked_at_utc": "2026-10-09T15:13:48Z",
+  "status": "integrated",
   "results_available": true,
   "protocol": "docs/PROMPT_PROBE_COMPARISON.md",
   "requests": [
@@ -69,11 +69,13 @@
       "finished_utc": "2026-10-08T23:04:32Z"
     }
   ],
-  "pending_steps": [
-    "manuscript integration and strict build",
-    "commit and push updated manuscript artifacts"
-  ],
+  "pending_steps": [],
   "runtime_check": "All three jobs completed with exit 0. Validated release contains all nine runs and matches the reference outcome cohorts and pre-write readouts.",
   "summary": "results/summary/round7_prompt_comparison.json",
-  "summary_sha256": "5c9b15e2db9a84e8a6ab4fe7de3354c3b3dcc2dd7db35ecf57a44e09e3818db2"
+  "summary_sha256": "5c9b15e2db9a84e8a6ab4fe7de3354c3b3dcc2dd7db35ecf57a44e09e3818db2",
+  "manuscript_integration": {
+    "main_table": "paper/tables/central_evidence.tex",
+    "appendix": "paper/tables/prompt_comparison_appendix.tex",
+    "strict_submission_check": "passed"
+  }
 }

@@ -43,7 +43,7 @@ def main() -> int:
 
     # Layout reads left to right: task, conflict, two observed responses.
     fig = plt.figure(figsize=(7.2, 3.45))
-    fig.text(.02, .96, "Showing the operation changes this wrong trace to a correct one",
+    fig.text(.02, .96, "Examples with code expressions change the reported values",
              fontsize=12, weight="bold", va="top")
     fig.text(.02, .88, "Task: write each assigned value, then the function's final answer.", fontsize=10)
     axes = [fig.add_axes(box) for box in
@@ -59,7 +59,7 @@ def main() -> int:
     axl.text(0, .05, "Correct final answer: 9", fontsize=10)
     for ax, title, fmt, record, color in [
         (axv, "Examples show values", "name = value", r, RED),
-        (axe, "Examples show operations", "name = operation = value", q, GREEN),
+        (axe, "Examples include expressions", "name = expression = value", q, GREEN),
     ]:
         ax.text(0, 1, title, weight="bold", fontsize=10, va="top")
         ax.text(0, .87, fmt, fontsize=8.5, family="monospace", color=GREY, va="top")

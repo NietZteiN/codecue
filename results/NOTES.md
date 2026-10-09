@@ -751,3 +751,21 @@ summary `round7_prompt_comparison.json` contains all three models and nine demon
 runs. Before committing, checked the reference hash, observation identities, all stratum
 counts and the unchanged pre-write estimates against the earlier validated release.
 The result summary is available; manuscript integration and its strict build remain pending.
+
+
+### 2026-10-09 — Concrete reporting implications and formats
+
+The abstract now connects the recoverable-value result to trace reliability and a practical
+prompt intervention: include each source expression beside its demonstrated value. It does
+not claim distinct causal channels or a purely superficial failure. Replaced “terse trace”
+and unexplained REPL labels with concrete output descriptions. Table 1 now contains the
+original-name probe cohort alone; Table 2 shows four output formats with literal snippets.
+Figure 2b labels the actual compared example formats. The independent screened-name
+replication remains in the figure and appendix, without mixing its cohort into Table 1.
+
+Integrated the already validated prompt-position comparison in Table 1 and its appendix.
+It uses the same observed errors and leaves the earlier pre-write readouts unchanged.
+Correct-digit prediction is lower before the trace starts than immediately before the
+wrong write; independent neutral-only layer selection and paired intervals are retained.
+Numerical inputs and earlier results are unchanged. Strict builds and four-page layout
+checks pass; evidence: `log/concrete_code_2026-10-09/`.

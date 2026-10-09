@@ -30,7 +30,7 @@ def main():
              weight='bold', va='top')
     fig.text(.02, .83, '(a) Correct digit read before a wrong sum write', weight='bold')
     fig.text(.02, .755, 'Separate predictor reads internal activity.\nOriginal names; training uses other programs.', fontsize=8.5, va='top')
-    fig.text(.55, .83, '(b) Does showing the operation help?', weight='bold')
+    fig.text(.55, .83, '(b) Include the code expression in examples', weight='bold')
     fig.text(.55, .755, 'Fresh programs; names screened before testing.', fontsize=8.5)
     ax = fig.add_axes([.18, .30, .29, .36])
     payload = {'probe': {}, 'replication': {}}
@@ -53,8 +53,8 @@ def main():
         rows[-1] = (next(k for k in repl['models'] if 'codegemma' in k), 'CodeGemma-7B')
     for y, (key, label) in zip([3, 2, 1, 0], rows):
         for regime, offset, color, marker, legend in [
-            ('trace', .12, RED, 'o', 'Examples: values only'),
-            ('trace_expr', -.12, BLUE, 's', 'Examples: operation + value')]:
+            ('trace', .12, RED, 'o', 'Examples: v = 2'),
+            ('trace_expr', -.12, BLUE, 's', 'Examples: v = len(xs) = 2')]:
             triple = repl['models'][key][regime]['excess_ci95']
             mean, lo, hi = [100*x for x in triple]
             ax.errorbar(mean, y+offset, xerr=[[mean-lo], [hi-mean]], fmt=marker,

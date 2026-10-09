@@ -15,10 +15,11 @@ Status legend: planned · blocked · queued · running · done · not run. Numbe
   combinations (exit 0).
 - [x] Validate and release results. CPU job **449115** completed (exit 0), releasing
   `results/summary/round7_prompt_comparison.json` through `scripts/82_prompt_comparison.py`.
-- [ ] Integrate validated results using `make evidence`, rebuild with
+- [x] Integrate validated results using `make evidence`, rebuild with
   `make paper-submission`, check the paired interpretation and push the updated artifacts.
 
-The validated result summary is available; manuscript integration remains pending.
+The validated comparison is integrated in the main evidence table and appendix; strict
+submission checks pass.
 The dependent-assignment extension is a subsequent study, outside this comparison.
 
 ## Historical experiment ledger

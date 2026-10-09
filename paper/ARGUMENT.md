@@ -14,7 +14,7 @@ A terse trace can write the sum. The revised probes train on disjoint programs a
 and name controls under all three demonstration sets. The correct digit is decodable
 before actual name errors, with the generated prefixes verified against the cached states;
 five-fold layer selection keeps each test computation out of its neutral selection pool.
-Decodability does not establish use. Showing the expression in demonstrations sharply
+Decodability does not establish use. Including the source expression in demonstrations sharply
 reduces the effect. Neutral annotations preserve a large effect, while numeric elaboration
 reduces part of it.
 An independent replication on fresh computations with names passing the original meaning
@@ -37,23 +37,23 @@ information, not its use by the model.
    model uses the decoded digit.
 4. **Change the demonstrated format.** Hold the program and example identities fixed.
    Compare expressions with neutral annotations of the same token length and numeric
-   elaborations. Report the remaining OLMo effect, then use REPL, comments, scale and
+   elaborations. Report the remaining OLMo effect, then use interactive Python transcripts, comments, scale and
    natural code to bound the finding.
 5. **Replicate with independently screened names.** Freeze names using the original
    seven-model meaning gate before collecting behavior on fresh computations. Report
    trace and expression effects in the three affected models and the CodeGemma control.
 
-The main evidence table reports error-conditioned probe intervals and independent computation
-counts alongside the replication with independently screened names. Its panels explicitly
-separate the original-name readouts from the fresh behavioral cohort. The full model panel
-remains in the appendix. This evidence extends known identifier sensitivity by testing
-correct-digit availability immediately before actual wrong writes and a controlled change
-to the demonstrated format.
+Table 1 reports correct-digit predictions on actual wrong sum writes at two positions:
+before any trace is generated and immediately before the wrong value. It gives clustered
+intervals and counts of writes and distinct programs. The lower prompt-position readouts
+are now integrated from the validated paired comparison; they do not establish a causal
+role for either position. Table 2 lists demonstrated output formats with literal examples
+and reports extra sum writes in each model. The independently screened-name replication
+is in Figure 2b and its appendix table, keeping it separate from the original probe cohort.
 
-The prompt-end versus pre-write comparison has a validated release in
-`../results/summary/round7_prompt_comparison.json`; manuscript integration remains pending.
-Its fixed design is in `../docs/PROMPT_PROBE_COMPARISON.md`. Report both positions on
-the same observed errors; do not infer causal use from their difference.
+The prompt-position design is in `../docs/PROMPT_PROBE_COMPARISON.md`; the validated source
+is `../results/summary/round7_prompt_comparison.json`. The main table compares the same
+observed errors; the appendix reports paired changes and name controls.
 
 The appendix holds task levels, identifier-meaning checks, the operation matrix, format
 intervals, probe and patch details, scope checks and statistical conventions.
@@ -125,3 +125,11 @@ results and limitations that support them.
 Terminology: a name-suggested value is the incorrect digit implied by the misleading name.
 A name error writes that digit; excess name errors subtract the matched neutral twin's
 rate of writing the same digit. Probe predictions of that value are a separate readout.
+
+The abstract states the practical implication: correct internal readouts do not certify a
+correct written trace, and including source expressions in worked examples improves the
+reported values. Avoid claiming distinct causal channels or a purely superficial failure.
+Replace “terse trace” with a concrete description of traces listing only values. Present
+interactive Python transcripts by their `>>> v` / `2` format and clarify that the model
+generates them without executing an interpreter. Figure 2b uses literal example formats
+rather than the ambiguous label “showing the operation.”
