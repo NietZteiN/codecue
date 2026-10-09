@@ -11,13 +11,14 @@ Status legend: planned · blocked · queued · running · done · not run. Numbe
   55 tests. Dry-run validation passes all nine model/demonstration combinations.
 - [x] Request two GPU allocations: **449113** (a30, Llama-3.2-3B, 8-hour limit) and
   **449114** (h100, OLMo-2-7B then Llama-3.1-8B, 12-hour limit).
-- [ ] Run the GPU comparison. Llama-3.2-3B **completed** all three demonstration sets (exit 0); the second allocation is **queued**.
-- [ ] Validate and release results. CPU job **449115** depends on both GPU jobs succeeding
-  and runs `scripts/82_prompt_comparison.py`.
+- [x] Run the GPU comparison. Both allocations completed all nine model/demonstration
+  combinations (exit 0).
+- [x] Validate and release results. CPU job **449115** completed (exit 0), releasing
+  `results/summary/round7_prompt_comparison.json` through `scripts/82_prompt_comparison.py`.
 - [ ] Integrate validated results using `make evidence`, rebuild with
   `make paper-submission`, check the paired interpretation and push the updated artifacts.
 
-No prompt-end finding is reported in the manuscript while the comparison is pending.
+The validated result summary is available; manuscript integration remains pending.
 The dependent-assignment extension is a subsequent study, outside this comparison.
 
 ## Historical experiment ledger

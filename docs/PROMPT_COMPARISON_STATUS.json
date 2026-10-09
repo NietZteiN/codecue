@@ -1,7 +1,7 @@
 {
-  "checked_at_utc": "2026-10-08T21:49:49.138142+00:00",
-  "status": "in_progress",
-  "results_available": false,
+  "checked_at_utc": "2026-10-09T02:08:55Z",
+  "status": "results_available",
+  "results_available": true,
   "protocol": "docs/PROMPT_PROBE_COMPARISON.md",
   "requests": [
     {
@@ -42,10 +42,13 @@
       "git": "68b64f2",
       "submitted_utc": "2026-10-08T20:56:34.586374+00:00",
       "job_id": 449114,
-      "state": "PENDING",
-      "reason": "Priority",
+      "state": "COMPLETED",
+      "reason": null,
       "dependency": null,
-      "walltime": "12:00:00"
+      "walltime": "12:00:00",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T22:57:16Z",
+      "finished_utc": "2026-10-08T23:04:19Z"
     },
     {
       "name": "prompt_end_release",
@@ -57,17 +60,20 @@
       "git": "68b64f2",
       "submitted_utc": "2026-10-08T20:56:40.793226+00:00",
       "job_id": 449115,
-      "state": "PENDING",
-      "reason": "Dependency",
+      "state": "COMPLETED",
+      "reason": null,
       "dependency": "afterok:449113:449114",
-      "walltime": "00:30:00"
+      "walltime": "00:30:00",
+      "exit_code": 0,
+      "started_utc": "2026-10-08T23:04:19Z",
+      "finished_utc": "2026-10-08T23:04:32Z"
     }
   ],
   "pending_steps": [
-    "GPU extraction and fits",
-    "validated paired release",
     "manuscript integration and strict build",
-    "commit and push results"
+    "commit and push updated manuscript artifacts"
   ],
-  "runtime_check": "Llama-3.2-3B completed all three demonstration-set extractions and fits; runner validation passed and job exited 0."
+  "runtime_check": "All three jobs completed with exit 0. Validated release contains all nine runs and matches the reference outcome cohorts and pre-write readouts.",
+  "summary": "results/summary/round7_prompt_comparison.json",
+  "summary_sha256": "5c9b15e2db9a84e8a6ab4fe7de3354c3b3dcc2dd7db35ecf57a44e09e3818db2"
 }

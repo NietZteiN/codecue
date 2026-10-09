@@ -50,8 +50,9 @@ remains in the appendix. This evidence extends known identifier sensitivity by t
 correct-digit availability immediately before actual wrong writes and a controlled change
 to the demonstrated format.
 
-The prompt-end versus pre-write comparison is queued, not a completed finding. Its fixed
-design is in `../docs/PROMPT_PROBE_COMPARISON.md`. Once validated, report both positions on
+The prompt-end versus pre-write comparison has a validated release in
+`../results/summary/round7_prompt_comparison.json`; manuscript integration remains pending.
+Its fixed design is in `../docs/PROMPT_PROBE_COMPARISON.md`. Report both positions on
 the same observed errors; do not infer causal use from their difference.
 
 The appendix holds task levels, identifier-meaning checks, the operation matrix, format

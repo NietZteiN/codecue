@@ -742,3 +742,12 @@ captions now explain how to read each plot type. Numerical summaries and abstrac
 unchanged. Companion figure JSON files record the displayed data. Four-page text through
 Limitations and strict submission checks were verified; artifacts:
 `log/figure_understandability_2026-10-08/`.
+
+
+### 2026-10-08 — Prompt-position comparison released
+
+Both GPU allocations and the dependent release job completed with exit 0. The validated
+summary `round7_prompt_comparison.json` contains all three models and nine demonstration
+runs. Before committing, checked the reference hash, observation identities, all stratum
+counts and the unchanged pre-write estimates against the earlier validated release.
+The result summary is available; manuscript integration and its strict build remain pending.
