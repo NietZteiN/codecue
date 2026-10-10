@@ -364,6 +364,8 @@ def main() -> int:
     N.update(followup["narrative_numbers"]())
     independent = runpy.run_path(str(Path(__file__).with_name("80_round6_tables.py")))
     N.update(independent["narrative_numbers"]())
+    shared = json.loads((RESULTS_DIR / "summary" / "compute_shared.json").read_text())
+    N["compute-shared-gpuh"] = f"{shared['gpu_hours']:.1f}"
     out = PROJECT_ROOT / "paper" / "numbers.tex"
     (RESULTS_DIR / "summary" / "cell_inference.json").write_text(json.dumps(inference, indent=2) + "\n")
     with out.open("w") as f:

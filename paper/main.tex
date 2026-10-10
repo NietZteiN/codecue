@@ -89,7 +89,7 @@ suggested by the name.
 
 Each problem is a short Python function over a list of distinct digits. Assignments
 compute length, sum, maximum or minimum, or apply integer arithmetic. All correct variable
-values and return values are single digits. The main level has three dependent assignments
+values and return values are single digits. Main results use level~5, with three dependent assignments
 (Appendix~\ref{app:levels}).
 We test \NUM{n-models} instruction-tuned models at levels 3 and 5, with 1,000 matched problems per target,
 with three fixed sets of three worked examples. CodeLlama-34B supplies an additional scale check.
@@ -176,8 +176,8 @@ Patching independently tests sensitivity to the name and the writing position
 \NUM{patch-olmo7-name-best}\% and \NUM{patch-llama3-name-best}\% of name errors in the two
 models with aligned twins. Name-site removal declines in later layers. At the decision token,
 removal is weak early and strong from the middle of the network onward; all-layer replacement
-removes \NUM{patch-olmo7-pre-all}--\NUM{patch-llama8-pre-all}\%. The neutral-word control
-changes at most \NUM{patch-llama3-wordctl}\% of outputs. The patches identify positions sensitive to the misleading name. They replace an entire
+removes \NUM{patch-olmo7-pre-all}--\NUM{patch-llama8-pre-all}\%. The all-layer neutral-word control
+changes at most \NUM{patch-llama3-wordctl}\% of initially correct outputs. The patches identify positions sensitive to the misleading name. They replace an entire
 hidden-state vector, so they cannot identify which feature changes the output.
 
 \begin{figure*}[t]
@@ -481,6 +481,7 @@ Their endpoints stay within \NUM{crux-direct-bound} and
 \NUM{crux-prose-bound} points, respectively (Table~\ref{tab:crux}). These are bounded results
 for those functions and prompts; they do not test the trace that lists values without expressions used in the synthetic
 study.
+The natural-code functions come from \citet{gu2024cruxeval}.
 
 
 \begin{table*}[t]
@@ -511,5 +512,6 @@ A small estimate or an interval covering zero does not by itself establish equiv
 \input{tables/round5_followups}
 \input{tables/round6_followups}
 \input{tables/prompt_comparison_appendix}
+\input{reproducibility}
 
 \end{document}
