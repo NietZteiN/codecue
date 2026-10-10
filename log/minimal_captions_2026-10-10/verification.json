@@ -1,0 +1,43 @@
+{
+  "before": [
+    {
+      "label": "fig:idea",
+      "words": 43,
+      "caption": "An observed OLMo-2-7B trace. The name suggests sum 8, but the code counts two\nitems. Including source expressions in worked examples changes the first reported value from 8 to 2\nand the final answer from 15 to 9. Only the example format changes."
+    },
+    {
+      "label": "fig:story",
+      "words": 40,
+      "caption": "\\textbf{(a)} Correct digits predicted immediately before wrong sum writes.\n\\textbf{(b)} Worked examples use \\texttt{v = 2} or \\texttt{v = len(xs) = 2}; including\n\\texttt{len(xs)} reduces extra sum writes. The replication uses independently screened\nnames and fresh programs; Table~\\ref{tab:round6-replication} gives intervals."
+    },
+    {
+      "label": "fig:mechanism",
+      "words": 57,
+      "caption": "\\textbf{(a)} Incorrect sum writes removed by replacing internal activity with the\nordinary-name program's activity, at the name (red) or just before the value (blue).\n\\textbf{(b)} A separate predictor reads the correct digit on held-out misleading-name\nprograms. \\textbf{(c)} Correct writes made wrong by name replacement; note the smaller scale.\nColumns show distinct measurements, not a common error rate."
+    }
+  ],
+  "after": [
+    {
+      "label": "fig:idea",
+      "words": 8,
+      "caption": "An OLMo-2-7B trace with values-only versus expression-and-value examples."
+    },
+    {
+      "label": "fig:story",
+      "words": 16,
+      "caption": "\\textbf{(a)} Correct-digit readout before wrong sum writes.\n\\textbf{(b)} Example-format effects on fresh programs with screened names."
+    },
+    {
+      "label": "fig:mechanism",
+      "words": 15,
+      "caption": "\\textbf{(a)} Name-error removal. \\textbf{(b)} Correct-digit readout.\n\\textbf{(c)} Damage to correct writes. Patches use ordinary-name twins."
+    }
+  ],
+  "scope": "Figure captions only; numerical results and figure assets unchanged",
+  "body_including_limitations_pages": 4,
+  "total_pdf_pages": 13,
+  "numerical_results_unchanged": true,
+  "figure_assets_unchanged": true,
+  "strict_arr_check": "passed",
+  "standalone_build": "passed"
+}

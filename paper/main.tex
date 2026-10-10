@@ -62,9 +62,7 @@ affect which value a model writes?
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/idea.pdf}
-\caption{An observed OLMo-2-7B trace. The name suggests sum 8, but the code counts two
-items. Including source expressions in worked examples changes the first reported value from 8 to 2
-and the final answer from 15 to 9. Only the example format changes.}
+\caption{An OLMo-2-7B trace with values-only versus expression-and-value examples.}
 \label{fig:idea}
 \end{figure*}
 
@@ -183,10 +181,8 @@ hidden-state vector, so they cannot identify which feature changes the output.
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/story_evidence.pdf}
-\caption{\textbf{(a)} Correct digits predicted immediately before wrong sum writes.
-\textbf{(b)} Worked examples use \texttt{v = 2} or \texttt{v = len(xs) = 2}; including
-\texttt{len(xs)} reduces extra sum writes. The replication uses independently screened
-names and fresh programs; Table~\ref{tab:round6-replication} gives intervals.}
+\caption{\textbf{(a)} Correct-digit readout before wrong sum writes.
+\textbf{(b)} Example-format effects on fresh programs with screened names.}
 \label{fig:story}
 \end{figure*}
 
@@ -403,11 +399,8 @@ Llama-3.1-8B. These 95\% intervals keep each matched program's demonstration-see
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/mechanism.pdf}
-\caption{\textbf{(a)} Incorrect sum writes removed by replacing internal activity with the
-ordinary-name program's activity, at the name (red) or just before the value (blue).
-\textbf{(b)} A separate predictor reads the correct digit on held-out misleading-name
-programs. \textbf{(c)} Correct writes made wrong by name replacement; note the smaller scale.
-Columns show distinct measurements, not a common error rate.}
+\caption{\textbf{(a)} Name-error removal. \textbf{(b)} Correct-digit readout.
+\textbf{(c)} Damage to correct writes. Patches use ordinary-name twins.}
 \label{fig:mechanism}
 \end{figure*}
 
