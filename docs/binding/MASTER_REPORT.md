@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **New overnight follow-up, October29–30:** [two-input arithmetic dependency and algebraic discovery plan](../../reports/binding/arithmetic_graph_overnight_20261029_plan_v3.md) · [live execution status](../../reports/binding/arithmetic_graph_overnight_20261029_status_v3.md). This queued work is separate from the completed results in this edition.
+
 > **GitHub edition.** This is the repository-relative edition of the October 29 master report. All scientific results are unchanged. For the interactive walkthrough, download the [self-contained HTML edition](../../reports/binding/master_research_report_v4.html) and open it in a browser. Large evidence files are losslessly compressed; see the [artifact catalog and restore commands](../../reproducibility/README.md). The [original plan](dependvar_20261025.txt) is included in this repository.
 
 **Status as of October 29, 2026.** This is the master record for the study proposed in `dependvar.txt`, including the subsequent user-requested dependency and algebraic relationship work. It summarizes completed work, preserves negative findings, and gives a concrete next plan. It is a research status report, not an empirical paper abstract or a claim that the original scientific objective is finished.

@@ -1,0 +1,182 @@
+{
+  "declared_plan": "reports/binding/arithmetic_graph_overnight_20261029_plan_v1.md",
+  "declared_plan_sha256": "10f1b60608991d6bb6112b4e017f1412765ecfef4fbc53700e24032c8e50b309",
+  "evaluation_role": "discovery_arithmetic_graph_suite_v1",
+  "morning_at": "2026-10-30T08:00:00-05:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/qa.json",
+      "config_sha256": "c1bffd425cfa6ca36f6b24bb33224c0262a078a6a50e73599dccc1b0397cb99a",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/suite/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/167_binding_arithmetic_graph_capture.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/llama8b_capture.json",
+      "config_sha256": "148b507d4b8f4797cea706c58e021adfc95899f69f14902841ec00b678dc68aa",
+      "cpus": 4,
+      "dependencies": [],
+      "expected_cases": 4608,
+      "key": "llama8b_prepare",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/llama8b/capture/preflight.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/167_binding_arithmetic_graph_capture.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/codellama34b_capture.json",
+      "config_sha256": "1b60384ab656b5c5cc0a93f60bc9a38e4d590756dbc9f1e0e0e23091cbc36a89",
+      "cpus": 4,
+      "dependencies": [],
+      "expected_cases": 4608,
+      "key": "codellama34b_prepare",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/codellama34b/capture/preflight.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/167_binding_arithmetic_graph_capture.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/llama8b_capture.json",
+      "config_sha256": "148b507d4b8f4797cea706c58e021adfc95899f69f14902841ec00b678dc68aa",
+      "cpus": 8,
+      "dependencies": [
+        "software_validation",
+        "llama8b_prepare"
+      ],
+      "expected_cases": 4608,
+      "key": "llama8b_capture",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/llama8b/capture/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "dev-a30,a30,h100,h200",
+      "phase": "gpu",
+      "script": "scripts/167_binding_arithmetic_graph_capture.py",
+      "time": "02:00:00",
+      "time_min": "00:15:00"
+    },
+    {
+      "command": "behavior",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/llama8b_behavior.json",
+      "config_sha256": "1dfe93592cd83ed09351b443a0289fb4e126a56a683a11aae2774ded7aead319",
+      "cpus": 8,
+      "dependencies": [
+        "llama8b_capture"
+      ],
+      "expected_cases": 1152,
+      "key": "llama8b_behavior",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/llama8b/behavior/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "dev-a30,a30,h100,h200",
+      "phase": "gpu",
+      "script": "scripts/169_binding_arithmetic_graph_behavior.py",
+      "time": "02:00:00",
+      "time_min": "00:15:00"
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/codellama34b_capture.json",
+      "config_sha256": "1b60384ab656b5c5cc0a93f60bc9a38e4d590756dbc9f1e0e0e23091cbc36a89",
+      "cpus": 8,
+      "dependencies": [
+        "software_validation",
+        "codellama34b_prepare"
+      ],
+      "expected_cases": 4608,
+      "key": "codellama34b_capture",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/codellama34b/capture/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "h100,h200",
+      "phase": "gpu",
+      "script": "scripts/167_binding_arithmetic_graph_capture.py",
+      "time": "2-00:00:00",
+      "time_min": "00:30:00"
+    },
+    {
+      "command": "behavior",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/codellama34b_behavior.json",
+      "config_sha256": "2a85ea03c6438e2acf5f9b6f3fed898e94cedbb3c4e97d246fd51594aec2373a",
+      "cpus": 8,
+      "dependencies": [
+        "codellama34b_capture"
+      ],
+      "expected_cases": 1152,
+      "key": "codellama34b_behavior",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/codellama34b/behavior/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "h100,h200",
+      "phase": "gpu",
+      "script": "scripts/169_binding_arithmetic_graph_behavior.py",
+      "time": "2-00:00:00",
+      "time_min": "00:30:00"
+    },
+    {
+      "command": "readouts",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/llama8b_readouts.json",
+      "config_sha256": "b488ba7ad4043dc7adcc5ff583d57fd1b3d56ffac64a20ccf6f18140f363856b",
+      "cpus": 16,
+      "dependencies": [
+        "llama8b_capture"
+      ],
+      "expected_cases": 4608,
+      "key": "llama8b_readouts",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/llama8b/readouts/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/168_binding_arithmetic_graph_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "readouts",
+      "config": "configs/binding/arithmetic_graph_20261029_v1/codellama34b_readouts.json",
+      "config_sha256": "597b397cb4288890b7012d6251001d175923c18762f1c136757eca7f002d4425",
+      "cpus": 16,
+      "dependencies": [
+        "codellama34b_capture"
+      ],
+      "expected_cases": 4608,
+      "key": "codellama34b_readouts",
+      "marker": "artifacts/binding/arithmetic_graph/20261029_v1/codellama34b/readouts/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/168_binding_arithmetic_graph_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_graph_overnight_20261029_status_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_graph/20261029_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_graph/20261029_v1/suite/regression.xml",
+    "minimum_tests": 2000,
+    "review": "artifacts/binding/arithmetic_graph/20261029_v1/suite/regression_review.json"
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="6" failures="0" skipped="0" tests="6" time="35.710" timestamp="2026-10-29T20:27:35.466203-05:00" hostname="c-01-01"><testcase classname="" name="artifacts.binding.arithmetic_graph.20261029_v1.regression_sources.tests.binding.test_algebraic_relationship_audit" time="0.000"><error message="collection failure">ImportError while importing test module '/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_algebraic_relationship_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_algebraic_relationship_audit.py:9: in &lt;module&gt;
+    from test_relationship_audit import row, config as structural_config
+E   ModuleNotFoundError: No module named 'test_relationship_audit'</error></testcase><testcase classname="" name="artifacts.binding.arithmetic_graph.20261029_v1.regression_sources.tests.binding.test_candidate_measurement" time="0.000"><error message="collection failure">ImportError while importing test module '/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_candidate_measurement.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_candidate_measurement.py:16: in &lt;module&gt;
+    from test_candidate_cache import Model as CausalModel,Tokenizer as CharacterTokenizer
+E   ModuleNotFoundError: No module named 'test_candidate_cache'</error></testcase><testcase classname="" name="artifacts.binding.arithmetic_graph.20261029_v1.regression_sources.tests.binding.test_candidate_prediction" time="0.000"><error message="collection failure">ImportError while importing test module '/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_candidate_prediction.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_candidate_prediction.py:17: in &lt;module&gt;
+    from test_confidence_prediction import chain, write, jsonl
+E   ModuleNotFoundError: No module named 'test_confidence_prediction'</error></testcase><testcase classname="" name="artifacts.binding.arithmetic_graph.20261029_v1.regression_sources.tests.binding.test_discovery_controls" time="0.000"><error message="collection failure">ImportError while importing test module '/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_discovery_controls.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_discovery_controls.py:16: in &lt;module&gt;
+    from test_discovery_prediction import cv_rows, cv_plan, paired_cases
+E   ModuleNotFoundError: No module named 'test_discovery_prediction'</error></testcase><testcase classname="" name="artifacts.binding.arithmetic_graph.20261029_v1.regression_sources.tests.binding.test_joint_confidence" time="0.000"><error message="collection failure">ImportError while importing test module '/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_joint_confidence.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_joint_confidence.py:14: in &lt;module&gt;
+    from test_confidence_prediction import chain, write
+E   ModuleNotFoundError: No module named 'test_confidence_prediction'</error></testcase><testcase classname="" name="artifacts.binding.arithmetic_graph.20261029_v1.regression_sources.tests.binding.test_stress_prediction" time="0.000"><error message="collection failure">ImportError while importing test module '/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_stress_prediction.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+artifacts/binding/arithmetic_graph/20261029_v1/regression_sources/tests/binding/test_stress_prediction.py:13: in &lt;module&gt;
+    from test_confidence_prediction import chain, write, jsonl
+E   ModuleNotFoundError: No module named 'test_confidence_prediction'</error></testcase></testsuite></testsuites>

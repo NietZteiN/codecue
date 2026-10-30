@@ -1,0 +1,97 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "codellama34b_behavior": [],
+    "codellama34b_capture": [],
+    "codellama34b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483439",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:31:34.521871+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_readouts": [],
+    "llama8b_behavior": [],
+    "llama8b_capture": [],
+    "llama8b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483438",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:31:33.824832+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_readouts": [],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "1:0",
+        "job_id": "483437",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "FAILED",
+        "submitted_utc": "2026-10-30T01:31:33.058868+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "9f4a292c14bf16b5b384ced6114fc7869eb3fa83ca15cfecde684d96aa1b4707",
+  "evaluation_role": "discovery_arithmetic_graph_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "observed_scientific_prefill_attempts": 0,
+  "planned_scientific_case_prefills": 11520,
+  "recorded_utc": "2026-10-30T01:47:44.383364+00:00",
+  "scheduler_errors": [],
+  "scientific_results": {},
+  "scope": "Controller metadata only. Scientific worker query counts remain in their own manifests.",
+  "source": {
+    "frozen_manifest_sha256": "ac6086ae9ba69758052126361dfae507a6b7cd2b698e876f8972701b7ed75efb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3c411ec730e449f0aeb9ac5b",
+    "snapshot_id": "3c411ec730e449f0aeb9ac5b",
+    "source_sha256": "26da0081fcb5cb8fa2a01d26d257585ffe915aa8743a4169fe0189b75a7608a0"
+  },
+  "stages": {
+    "codellama34b_behavior": {
+      "state": "blocked"
+    },
+    "codellama34b_capture": {
+      "state": "blocked"
+    },
+    "codellama34b_prepare": {
+      "job_id": "483439",
+      "state": "complete"
+    },
+    "codellama34b_readouts": {
+      "state": "blocked"
+    },
+    "llama8b_behavior": {
+      "state": "blocked"
+    },
+    "llama8b_capture": {
+      "state": "blocked"
+    },
+    "llama8b_prepare": {
+      "job_id": "483438",
+      "state": "complete"
+    },
+    "llama8b_readouts": {
+      "state": "blocked"
+    },
+    "software_validation": {
+      "job_id": "483437",
+      "reason": "None",
+      "state": "failed"
+    }
+  },
+  "status": "needs_attention"
+}

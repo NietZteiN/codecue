@@ -1,0 +1,97 @@
+{
+  "cases": 4608,
+  "chat_template_sha256": "ea2472f29dbd93c3eb696795f6403228fcc4b775518869c771f83fbae5c11dbf",
+  "config_hash": "b62083d06bc880fe93ef769accef0adb54ab6adddd1d23062ab1a81b1ac35969",
+  "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+  "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "prepared_sha256": "e929e1c878462ef171109222ed6b0deabc38edeadeac80fb51868a67e0129d00",
+  "recipe": {
+    "batch_size": 64,
+    "chunk_size": 512,
+    "context_limit": 4096,
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+    "hidden_size": 8192,
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "num_hidden_layers": 48,
+    "prefix_atol": 1e-05,
+    "tokenization_mode": "codellama_official_boundary_v1",
+    "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+  },
+  "registration_sha256": "f78e04098c5eb0d29d70903b73e9e7c6503fb52f2952933901ecfe56dc67fe6b",
+  "source": {
+    "frozen_manifest_sha256": "ac6086ae9ba69758052126361dfae507a6b7cd2b698e876f8972701b7ed75efb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3c411ec730e449f0aeb9ac5b",
+    "snapshot_id": "3c411ec730e449f0aeb9ac5b",
+    "source_sha256": "26da0081fcb5cb8fa2a01d26d257585ffe915aa8743a4169fe0189b75a7608a0"
+  },
+  "source_review": {
+    "components": {
+      "development": 12,
+      "train": 36
+    },
+    "dataset_manifest_sha256": "ebc17c94894dcb5514e15edea891ab815f497b809c5a0828551c9b2772feee50",
+    "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+    "feature_shape": [
+      4608,
+      3,
+      4,
+      8192
+    ],
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "ordered_case_ids_sha256": "1adaa2fb461c544ffb012a087fd917e20a549d77e79334144578b8fec7e896c4",
+    "query_rows": {
+      "v0": 1152,
+      "v1": 1152,
+      "v2": 1152,
+      "v3": 1152
+    },
+    "recipe": {
+      "batch_size": 64,
+      "chunk_size": 512,
+      "context_limit": 4096,
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+      "hidden_size": 8192,
+      "layers": [
+        12,
+        24,
+        36,
+        47
+      ],
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "num_hidden_layers": 48,
+      "prefix_atol": 1e-05,
+      "tokenization_mode": "codellama_official_boundary_v1",
+      "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+    },
+    "sites": [
+      "statement:3",
+      "statement:7",
+      "pre_answer"
+    ],
+    "source_rows": 4608,
+    "split_rows": {
+      "development": 1152,
+      "train": 3456
+    }
+  },
+  "status": "passed"
+}

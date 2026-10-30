@@ -1,0 +1,68 @@
+{
+  "attempts": {
+    "codellama34b_behavior": [],
+    "codellama34b_capture": [],
+    "codellama34b_prepare": [
+      {
+        "dependencies": [],
+        "job_id": "483434",
+        "progress_before": 0,
+        "state": "SUBMITTED",
+        "submitted_utc": "2026-10-30T01:27:26.761307+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_readouts": [],
+    "llama8b_behavior": [],
+    "llama8b_capture": [],
+    "llama8b_prepare": [
+      {
+        "dependencies": [],
+        "job_id": "483433",
+        "progress_before": 0,
+        "state": "SUBMITTED",
+        "submitted_utc": "2026-10-30T01:27:25.091105+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_readouts": [],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "job_id": "483432",
+        "progress_before": 0,
+        "state": "SUBMITTED",
+        "submitted_utc": "2026-10-30T01:27:24.316794+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "a0c3626d20da0eb3e547a758bbf62a7f91b6785ac0313250b3aadc7e44904611",
+  "config_path": "configs/binding/arithmetic_graph_20261029_v1/suite.json",
+  "controllers": [
+    "483431"
+  ],
+  "created_utc": "2026-10-30T01:27:22.685846+00:00",
+  "evaluation_role": "discovery_arithmetic_graph_suite_v1",
+  "source": {
+    "frozen_manifest_sha256": "fedeac1e8b0e2bf8d4f38b85c8ab6b5d0e411cea61ee72d2bb64eae5bc29ac2c",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8c163b4b0610c69af38ea08c",
+    "snapshot_id": "8c163b4b0610c69af38ea08c",
+    "source_sha256": "311a89808e21ae9534d021ea8398a2cf0aa50bf1483f260ed531a42e16d758d8"
+  },
+  "status": {
+    "codellama34b_prepare": {
+      "job_id": "483434",
+      "state": "submitted"
+    },
+    "llama8b_prepare": {
+      "job_id": "483433",
+      "state": "submitted"
+    },
+    "software_validation": {
+      "job_id": "483432",
+      "state": "submitted"
+    }
+  },
+  "submission_intents": {}
+}

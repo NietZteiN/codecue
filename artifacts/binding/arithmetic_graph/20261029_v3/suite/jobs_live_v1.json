@@ -1,0 +1,94 @@
+{
+  "attempts": {
+    "codellama34b_behavior": [],
+    "codellama34b_capture": [],
+    "codellama34b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483449",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:42:17.569535+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_readouts": [],
+    "llama8b_behavior": [],
+    "llama8b_capture": [],
+    "llama8b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483448",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:42:16.765599+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_readouts": [],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483447",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "RUNNING",
+        "submitted_utc": "2026-10-30T01:42:15.863638+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "2ca6603d48d1db619f0352c6be0514d8d32eb7c297b12e6f2e47b1966fa72b29",
+  "config_path": "configs/binding/arithmetic_graph_20261029_v3/suite.json",
+  "controllers": [
+    "483446",
+    "483454"
+  ],
+  "created_utc": "2026-10-30T01:42:14.031376+00:00",
+  "evaluation_role": "discovery_arithmetic_graph_suite_v1",
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "status": {
+    "codellama34b_behavior": {
+      "state": "planned"
+    },
+    "codellama34b_capture": {
+      "state": "planned"
+    },
+    "codellama34b_prepare": {
+      "job_id": "483449",
+      "state": "complete"
+    },
+    "codellama34b_readouts": {
+      "state": "planned"
+    },
+    "llama8b_behavior": {
+      "state": "planned"
+    },
+    "llama8b_capture": {
+      "state": "planned"
+    },
+    "llama8b_prepare": {
+      "job_id": "483448",
+      "state": "complete"
+    },
+    "llama8b_readouts": {
+      "state": "planned"
+    },
+    "software_validation": {
+      "job_id": "483447",
+      "reason": "None",
+      "state": "running"
+    }
+  },
+  "submission_intents": {}
+}

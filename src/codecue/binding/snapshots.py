@@ -44,7 +44,12 @@ SCRIPT_NAMES = ('87_binding_preflight.py', '88_binding_pipeline.py', '89_binding
                 '163_binding_direct_identity_readouts.py',
                 '164_binding_grammar_identity_review.py',
                 '165_binding_old_value.py',
-                '166_binding_old_value_overnight.py')
+                '166_binding_old_value_overnight.py',
+                '167_binding_arithmetic_graph_capture.py',
+                '168_binding_arithmetic_graph_readouts.py',
+                '169_binding_arithmetic_graph_behavior.py',
+                '170_binding_arithmetic_graph_suite.py',
+                '171_binding_arithmetic_graph_setup.py')
 
 
 def source_files(root):

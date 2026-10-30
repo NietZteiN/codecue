@@ -1,0 +1,21 @@
+{
+  "batch_size": 64,
+  "chunk_size": 512,
+  "context_limit": 4096,
+  "dataset": "artifacts/binding/arithmetic_graph/20261029_v2/sources.jsonl",
+  "dataset_manifest_sha256": "ebc17c94894dcb5514e15edea891ab815f497b809c5a0828551c9b2772feee50",
+  "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+  "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+  "hidden_size": 8192,
+  "layers": [
+    12,
+    24,
+    36,
+    47
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "prefix_atol": 1e-05,
+  "run_dir": "artifacts/binding/arithmetic_graph/20261029_v2/codellama34b/capture",
+  "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+}

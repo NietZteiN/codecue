@@ -1,0 +1,21 @@
+{
+  "batch_size": 128,
+  "chunk_size": 512,
+  "context_limit": 4096,
+  "dataset": "artifacts/binding/arithmetic_graph/20261029_v2/sources.jsonl",
+  "dataset_manifest_sha256": "ebc17c94894dcb5514e15edea891ab815f497b809c5a0828551c9b2772feee50",
+  "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+  "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+  "hidden_size": 4096,
+  "layers": [
+    8,
+    16,
+    24,
+    31
+  ],
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "prefix_atol": 1e-05,
+  "run_dir": "artifacts/binding/arithmetic_graph/20261029_v2/llama8b/capture",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

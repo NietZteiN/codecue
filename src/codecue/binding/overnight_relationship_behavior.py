@@ -19,6 +19,9 @@ from .interpreter import execute
 
 ROLE='discovery_overnight_relationship_behavior_v1'
 MAX_RESPONSES=32*1024**2
+LIMITATION='Adaptive discovery on reused structural components. No causal mechanism or confirmatory claim. Literal/computed formats also differ in tokens and operations.'
+REPORT_TITLE='Overnight relationship behavior'
+COMPARISON_LABEL='Computed-minus-literal DEV comparison'
 
 
 def protocol():
@@ -225,12 +228,12 @@ def run(config):
             result=dict(status='complete_exploratory',evaluation_role=ROLE,config_hash=digest(config),source=source,
                 model=cap['model'],cases=len(rows),new_model_queries=queries,generated_responses=len(rows),
                 metrics=summarize(rows),responses=_pin(response_path),protocol=protocol(),
-                generated_holdouts_opened=False,limitation='Adaptive discovery on reused structural components. No causal mechanism or confirmatory claim. Literal/computed formats also differ in tokens and operations.')
+                generated_holdouts_opened=False,limitation=LIMITATION)
             base._put(folder/'summary.json',result)
-            text=['# Overnight relationship behavior','',result['limitation'],'',f"{len(rows):,} exact generated responses; {queries:,} prefill attempts.",'',
+            text=['# '+REPORT_TITLE,'',result['limitation'],'',f"{len(rows):,} exact generated responses; {queries:,} prefill attempts.",'',
                 '| Cell | Cases | Accuracy | Invalid |','|---|---:|---:|---:|']
             for name,m in result['metrics']['cells'].items():text.append(f"| {name} | {m['rows']} | {100*m['accuracy']:.3f}% | {100*m['invalid_fraction']:.3f}% |")
-            text+=['','Computed-minus-literal DEV comparison: `'+json.dumps(result['metrics']['computed_literal'],sort_keys=True)+'`','']
+            text+=['',COMPARISON_LABEL+': `'+json.dumps(result['metrics']['computed_literal'],sort_keys=True)+'`','']
             base._publish(config['report'],'\n'.join(text).encode())
             base._put(folder/'completion_manifest_v1.json',dict(status='complete_exploratory',evaluation_role=ROLE,config_hash=digest(config),source=source,
                 artifacts={k:_pin(p) for k,p in {'registration':folder/'registration.json','manifest':path,'summary':folder/'summary.json','responses':response_path,'report':Path(config['report'])}.items()},

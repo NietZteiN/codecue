@@ -1,0 +1,80 @@
+{
+  "behavior_query_strata": {
+    "development": {
+      "arithmetic_written_query": 216,
+      "rows": 288,
+      "untouched_literal_query": 72
+    },
+    "train": {
+      "arithmetic_written_query": 576,
+      "rows": 864,
+      "untouched_literal_query": 288
+    }
+  },
+  "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+  "evaluation_role": "discovery_arithmetic_graph_source_coverage_v1",
+  "final_value_class_coverage": [
+    {
+      "development_classes": 30,
+      "development_classes_absent_from_train": [
+        -24,
+        -18,
+        13,
+        24
+      ],
+      "development_rows_with_unseen_class": 40,
+      "slot": 0,
+      "train_classes": 34
+    },
+    {
+      "development_classes": 31,
+      "development_classes_absent_from_train": [
+        15,
+        23
+      ],
+      "development_rows_with_unseen_class": 16,
+      "slot": 1,
+      "train_classes": 35
+    },
+    {
+      "development_classes": 31,
+      "development_classes_absent_from_train": [
+        -13,
+        19
+      ],
+      "development_rows_with_unseen_class": 16,
+      "slot": 2,
+      "train_classes": 36
+    },
+    {
+      "development_classes": 23,
+      "development_classes_absent_from_train": [
+        17
+      ],
+      "development_rows_with_unseen_class": 8,
+      "slot": 3,
+      "train_classes": 36
+    }
+  ],
+  "generated_holdouts_opened": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "relation_support": [
+    {
+      "development_cells_with_both_classes": 48,
+      "site": 0,
+      "train_supported_cells": 48
+    },
+    {
+      "development_cells_with_both_classes": 48,
+      "site": 1,
+      "train_supported_cells": 48
+    },
+    {
+      "development_cells_with_both_classes": 48,
+      "site": 2,
+      "train_supported_cells": 48
+    }
+  ],
+  "status": "passed"
+}

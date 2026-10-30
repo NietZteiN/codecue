@@ -6,6 +6,8 @@
 
 Updated October 29, 2026. This is the current entry point for the variable-binding study proposed in dependvar.txt.
 
+Overnight follow-up, October29–30: [two-input arithmetic dependency and algebraic discovery plan](arithmetic_graph_overnight_20261029_plan_v3.md) · [live execution status](arithmetic_graph_overnight_20261029_status_v3.md). This newly queued suite is separate from the completed results below; no outcomes are claimed yet.
+
 The report includes the original question and full plan, milestones M0–M6, all ten authorized experiments, datasets and checkpoint identities, behavioral/probe/intervention/relationship/prediction results, 19 central figures, including four conceptual illustrations, all 41 PNG figure revisions with historical corrections labeled, a 239-report archive index, the remaining nine scientific decisions, and an ordered next-experiment plan.
 
 Start with sections 1 (current findings), 3 (milestones), 12 (every original branch), and 14 (next work). The main causal mechanism and untouched unfamiliar-program validation remain unfinished; engineering completion and scoped discovery findings are tracked separately.
