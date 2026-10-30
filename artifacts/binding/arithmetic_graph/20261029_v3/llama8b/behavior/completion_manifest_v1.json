@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "manifest": {
+      "bytes": 2960,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/manifest.json",
+      "sha256": "b7e057834e32c8a2b6bde470247495e2c1540b045fc0fe2ed803abe7081ca364"
+    },
+    "registration": {
+      "bytes": 2032,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/registration.json",
+      "sha256": "4f7a3a4599850625a8b87433668c7fb39e6e0dede18a0f363369f01a736acc9d"
+    },
+    "report": {
+      "bytes": 724,
+      "path": "reports/binding/arithmetic_graph_llama8b_behavior_v3.md",
+      "sha256": "67128d4da7e60c1419ba4d7adee232502c0ee82581dcf557f14803af19e98fea"
+    },
+    "responses": {
+      "bytes": 491694,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/responses.jsonl",
+      "sha256": "c30b62c2a38e81345c5a68203a9bac28c60b8be9a8c51afa72c44a5572ee18d2"
+    },
+    "summary": {
+      "bytes": 2580,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/summary.json",
+      "sha256": "d88ea0d7305bf2542c54b1b601839b49c71031a0952acd330bf78d9bfe1c37af"
+    }
+  },
+  "cases": 1152,
+  "config_hash": "d69efb2bffec76b8cefe212b2d8031210631832f2326b3ca57f3d92bab9f6ca3",
+  "evaluation_role": "discovery_arithmetic_graph_behavior_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 1152,
+  "new_model_queries": 1152,
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "status": "complete_exploratory"
+}

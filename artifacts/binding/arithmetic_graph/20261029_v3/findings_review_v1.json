@@ -1,0 +1,188 @@
+{
+  "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+  "evaluation_role": "discovery_arithmetic_graph_findings_v1",
+  "models": {
+    "codellama34b": {
+      "behavior_development": {
+        "all": {
+          "accuracy": 0.2013888888888889,
+          "correct": 58,
+          "invalid": 0,
+          "rows": 288,
+          "structural_families": 12
+        },
+        "arithmetic_written": {
+          "accuracy": 0.10185185185185185,
+          "correct": 22,
+          "invalid": 0,
+          "rows": 216,
+          "structural_families": 12
+        },
+        "untouched_literal": {
+          "accuracy": 0.5,
+          "correct": 36,
+          "invalid": 0,
+          "rows": 72,
+          "structural_families": 9
+        }
+      },
+      "behavior_responses_sha256": "260c6235fe908a5023600ee09cf475e75aaa3ae665d7188cf511c34349f707bf",
+      "readout_results_sha256": "34153c0a228496954cd75d0ee2d0154dc1d239eeb9c968f8022fd1c32868d331",
+      "readouts": [
+        {
+          "backend": "hidden",
+          "direct_relations": 0.7888844959486402,
+          "parent_accuracy": null,
+          "site": 0,
+          "value_accuracy": 0.7989004629629629,
+          "value_derived_relations": 0.7741535930705369,
+          "whole_parent_accuracy": null,
+          "whole_state_accuracy": 0.39236111111111116
+        },
+        {
+          "backend": "source",
+          "direct_relations": 0.6146841874111688,
+          "parent_accuracy": null,
+          "site": 0,
+          "value_accuracy": 1.0,
+          "value_derived_relations": 1.0,
+          "whole_parent_accuracy": null,
+          "whole_state_accuracy": 1.0
+        },
+        {
+          "backend": "hidden",
+          "direct_relations": 0.5193229218322681,
+          "parent_accuracy": 0.2907986111111111,
+          "site": 1,
+          "value_accuracy": 0.0920138888888889,
+          "value_derived_relations": 0.501869082150307,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.0
+        },
+        {
+          "backend": "source",
+          "direct_relations": 0.516191271648892,
+          "parent_accuracy": 0.21050347222222224,
+          "site": 1,
+          "value_accuracy": 0.20601851851851852,
+          "value_derived_relations": 0.5248728370297359,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.004629629629629629
+        },
+        {
+          "backend": "hidden",
+          "direct_relations": 0.5403513005132903,
+          "parent_accuracy": 0.29390914351851855,
+          "site": 2,
+          "value_accuracy": 0.16232638888888887,
+          "value_derived_relations": 0.5201687478905654,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.0005787037037037037
+        },
+        {
+          "backend": "source",
+          "direct_relations": 0.5044031756444182,
+          "parent_accuracy": 0.22294560185185186,
+          "site": 2,
+          "value_accuracy": 0.2019675925925926,
+          "value_derived_relations": 0.5228743856958089,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.003472222222222222
+        }
+      ]
+    },
+    "llama8b": {
+      "behavior_development": {
+        "all": {
+          "accuracy": 0.1875,
+          "correct": 54,
+          "invalid": 8,
+          "rows": 288,
+          "structural_families": 12
+        },
+        "arithmetic_written": {
+          "accuracy": 0.10185185185185185,
+          "correct": 22,
+          "invalid": 5,
+          "rows": 216,
+          "structural_families": 12
+        },
+        "untouched_literal": {
+          "accuracy": 0.4444444444444444,
+          "correct": 32,
+          "invalid": 3,
+          "rows": 72,
+          "structural_families": 9
+        }
+      },
+      "behavior_responses_sha256": "c30b62c2a38e81345c5a68203a9bac28c60b8be9a8c51afa72c44a5572ee18d2",
+      "readout_results_sha256": "b7a4ed9c159caf0e3123b977efa104012f2d1a735babbe777bec3b3407d58470",
+      "readouts": [
+        {
+          "backend": "hidden",
+          "direct_relations": 0.7935933273887085,
+          "parent_accuracy": null,
+          "site": 0,
+          "value_accuracy": 0.7588252314814815,
+          "value_derived_relations": 0.7542544250098923,
+          "whole_parent_accuracy": null,
+          "whole_state_accuracy": 0.37991898148148145
+        },
+        {
+          "backend": "source",
+          "direct_relations": 0.6134849482321495,
+          "parent_accuracy": null,
+          "site": 0,
+          "value_accuracy": 1.0,
+          "value_derived_relations": 1.0,
+          "whole_parent_accuracy": null,
+          "whole_state_accuracy": 1.0
+        },
+        {
+          "backend": "hidden",
+          "direct_relations": 0.5314151631167051,
+          "parent_accuracy": 0.2975983796296296,
+          "site": 1,
+          "value_accuracy": 0.08101851851851852,
+          "value_derived_relations": 0.4988205542494148,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.0
+        },
+        {
+          "backend": "source",
+          "direct_relations": 0.51110440836367,
+          "parent_accuracy": 0.19994212962962962,
+          "site": 1,
+          "value_accuracy": 0.20572916666666666,
+          "value_derived_relations": 0.5309898114027135,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.004629629629629629
+        },
+        {
+          "backend": "hidden",
+          "direct_relations": 0.5460639790857061,
+          "parent_accuracy": 0.24341724537037038,
+          "site": 2,
+          "value_accuracy": 0.15371817129629628,
+          "value_derived_relations": 0.5432988268541689,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.00636574074074074
+        },
+        {
+          "backend": "source",
+          "direct_relations": 0.5082746077557081,
+          "parent_accuracy": 0.22157118055555555,
+          "site": 2,
+          "value_accuracy": 0.2047164351851852,
+          "value_derived_relations": 0.525663831031992,
+          "whole_parent_accuracy": 0.0,
+          "whole_state_accuracy": 0.003472222222222222
+        }
+      ]
+    }
+  },
+  "new_model_queries": 0,
+  "new_scientific_fits": 0,
+  "script_sha256": "d86ee7cf75a4b9ed94b66f61fe7aea9c99d2437fec4a771ad8292c8a1f24ec4c",
+  "status": "complete_exploratory"
+}

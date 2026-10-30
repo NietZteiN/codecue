@@ -1,0 +1,77 @@
+{
+  "cases": 1152,
+  "config_hash": "8e16c37a4cf7a8c8da3c6886dcf9553c28e2ce202cdbf09decaa72f842403577",
+  "evaluation_role": "discovery_arithmetic_graph_behavior_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 1152,
+  "limitation": "Adaptive discovery on two-input arithmetic programs. Numeric, lexical and query relatives are dependent. No causal or confirmatory claim.",
+  "metrics": {
+    "cells": {
+      "overall": {
+        "accuracy": 0.2144097222222222,
+        "invalid_fraction": 0.0,
+        "rows": 1152
+      },
+      "query/0": {
+        "accuracy": 0.2881944444444444,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "query/1": {
+        "accuracy": 0.1840277777777778,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "query/2": {
+        "accuracy": 0.1840277777777778,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "query/3": {
+        "accuracy": 0.2013888888888889,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "split/development": {
+        "accuracy": 0.2013888888888889,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "split/train": {
+        "accuracy": 0.21875,
+        "invalid_fraction": 0.0,
+        "rows": 864
+      }
+    },
+    "computed_literal": {
+      "accuracy": 0.20138888888888887,
+      "conditional_family_bootstrap_95": [
+        0.13194444444444445,
+        0.27083333333333337
+      ],
+      "families": 12
+    }
+  },
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "new_model_queries": 1152,
+  "protocol": {
+    "do_sample": false,
+    "max_new_tokens": 12,
+    "parser": "full signed decimal integer with whitespace only",
+    "selection": "all source rows with numeric_draw == 0",
+    "uncertainty": "12 whole development structural families; fixed fits, 2000 draws, seed117",
+    "use_cache": true
+  },
+  "responses": {
+    "bytes": 482186,
+    "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/responses.jsonl",
+    "sha256": "260c6235fe908a5023600ee09cf475e75aaa3ae665d7188cf511c34349f707bf"
+  },
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "status": "complete_exploratory"
+}

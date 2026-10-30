@@ -1,6 +1,6 @@
 # Variable binding, updating and relationships: master research report
 
-> **New overnight follow-up, October29–30:** [two-input arithmetic dependency and algebraic discovery plan](../../reports/binding/arithmetic_graph_overnight_20261029_plan_v3.md) · [live execution status](../../reports/binding/arithmetic_graph_overnight_20261029_status_v3.md). This queued work is separate from the completed results in this edition.
+> **New completed follow-up, October29–30:** [Arithmetic dependency/relationship findings](../../reports/binding/arithmetic_graph_overnight_findings_v1.md) · [plan](../../reports/binding/arithmetic_graph_overnight_20261029_plan_v3.md). The first suite completed: 9,216 captures, 2,304 generated answers and 36 readout fits. Answer-preparation relation balanced accuracy is 54.61% / 54.04% (8B / 34B), with zero complete eight-parent graphs recovered. Arithmetic-written DEV answers are 22/216 correct for each model. These are exploratory negative findings under the tested readouts, not evidence of representational absence.
 
 > **GitHub edition.** This is the repository-relative edition of the October 29 master report. All scientific results are unchanged. For the interactive walkthrough, download the [self-contained HTML edition](../../reports/binding/master_research_report_v4.html) and open it in a browser. Large evidence files are losslessly compressed; see the [artifact catalog and restore commands](../../reproducibility/README.md). The [original plan](dependvar_20261025.txt) is included in this repository.
 

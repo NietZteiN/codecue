@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "manifest": {
+      "bytes": 2974,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/manifest.json",
+      "sha256": "05481e15cda77e90e2f1dfae2a45143de98df44c27e9938f243f1fb0bf9a085d"
+    },
+    "registration": {
+      "bytes": 2047,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/registration.json",
+      "sha256": "60227e330001963fdeae20f321acfd49cf94283f0e61eafced9817865448e2b0"
+    },
+    "report": {
+      "bytes": 737,
+      "path": "reports/binding/arithmetic_graph_codellama34b_behavior_v3.md",
+      "sha256": "a846e82168e0c22a0e70463f62215b2100a6e94e5448235c303d9591636aaa15"
+    },
+    "responses": {
+      "bytes": 482186,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/responses.jsonl",
+      "sha256": "260c6235fe908a5023600ee09cf475e75aaa3ae665d7188cf511c34349f707bf"
+    },
+    "summary": {
+      "bytes": 2496,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/summary.json",
+      "sha256": "d4df8a65b028e3cfe06cf07ee72838446ce5994e007ed78427933ddb55860cd3"
+    }
+  },
+  "cases": 1152,
+  "config_hash": "8e16c37a4cf7a8c8da3c6886dcf9553c28e2ce202cdbf09decaa72f842403577",
+  "evaluation_role": "discovery_arithmetic_graph_behavior_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 1152,
+  "new_model_queries": 1152,
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "status": "complete_exploratory"
+}

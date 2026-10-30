@@ -1,15 +1,26 @@
 {
-  "all_terminal": false,
+  "all_terminal": true,
   "attempts": {
-    "codellama34b_behavior": [],
+    "codellama34b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483473",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:05:25.675533+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
     "codellama34b_capture": [
       {
         "dependencies": [],
         "exit_code": "0:0",
         "job_id": "483461",
         "progress_before": 0,
-        "reason": "Priority",
-        "state": "PENDING",
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
         "submitted_utc": "2026-10-30T01:55:16.038481+00:00",
         "time_min": "00:30:00"
       }
@@ -26,8 +37,30 @@
         "time_min": null
       }
     ],
-    "codellama34b_readouts": [],
-    "llama8b_behavior": [],
+    "codellama34b_readouts": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483485",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:15:03.987768+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483472",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:05:24.884808+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
     "llama8b_capture": [
       {
         "dependencies": [],
@@ -35,7 +68,7 @@
         "job_id": "483460",
         "progress_before": 0,
         "reason": "None",
-        "state": "RUNNING",
+        "state": "COMPLETED",
         "submitted_utc": "2026-10-30T01:55:15.186182+00:00",
         "time_min": "00:15:00"
       }
@@ -52,7 +85,18 @@
         "time_min": null
       }
     ],
-    "llama8b_readouts": [],
+    "llama8b_readouts": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483484",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:15:03.272462+00:00",
+        "time_min": null
+      }
+    ],
     "software_validation": [
       {
         "dependencies": [],
@@ -70,9 +114,9 @@
   "evaluation_role": "discovery_arithmetic_graph_suite_v1",
   "generated_holdouts_opened": false,
   "new_model_queries": 0,
-  "observed_scientific_prefill_attempts": 0,
+  "observed_scientific_prefill_attempts": 11520,
   "planned_scientific_case_prefills": 11520,
-  "recorded_utc": "2026-10-30T01:56:36.527361+00:00",
+  "recorded_utc": "2026-10-30T02:31:45.568852+00:00",
   "scheduler_errors": [],
   "scope": "Controller metadata only. Scientific worker query counts remain in their own manifests.",
   "source": {
@@ -83,39 +127,41 @@
   },
   "stages": {
     "codellama34b_behavior": {
-      "state": "planned"
+      "job_id": "483473",
+      "state": "complete"
     },
     "codellama34b_capture": {
       "job_id": "483461",
-      "reason": "Priority",
-      "state": "pending"
+      "state": "complete"
     },
     "codellama34b_prepare": {
       "job_id": "483449",
       "state": "complete"
     },
     "codellama34b_readouts": {
-      "state": "planned"
+      "job_id": "483485",
+      "state": "complete"
     },
     "llama8b_behavior": {
-      "state": "planned"
+      "job_id": "483472",
+      "state": "complete"
     },
     "llama8b_capture": {
       "job_id": "483460",
-      "reason": "None",
-      "state": "running"
+      "state": "complete"
     },
     "llama8b_prepare": {
       "job_id": "483448",
       "state": "complete"
     },
     "llama8b_readouts": {
-      "state": "planned"
+      "job_id": "483484",
+      "state": "complete"
     },
     "software_validation": {
       "job_id": "483447",
       "state": "complete"
     }
   },
-  "status": "running"
+  "status": "complete_exploratory"
 }

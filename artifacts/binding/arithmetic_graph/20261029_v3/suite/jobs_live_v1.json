@@ -1,12 +1,25 @@
 {
   "attempts": {
-    "codellama34b_behavior": [],
+    "codellama34b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483473",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:05:25.675533+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
     "codellama34b_capture": [
       {
         "dependencies": [],
+        "exit_code": "0:0",
         "job_id": "483461",
         "progress_before": 0,
-        "state": "SUBMITTED",
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
         "submitted_utc": "2026-10-30T01:55:16.038481+00:00",
         "time_min": "00:30:00"
       }
@@ -23,14 +36,38 @@
         "time_min": null
       }
     ],
-    "codellama34b_readouts": [],
-    "llama8b_behavior": [],
+    "codellama34b_readouts": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483485",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:15:03.987768+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483472",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:05:24.884808+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
     "llama8b_capture": [
       {
         "dependencies": [],
+        "exit_code": "0:0",
         "job_id": "483460",
         "progress_before": 0,
-        "state": "SUBMITTED",
+        "reason": "None",
+        "state": "COMPLETED",
         "submitted_utc": "2026-10-30T01:55:15.186182+00:00",
         "time_min": "00:15:00"
       }
@@ -47,7 +84,18 @@
         "time_min": null
       }
     ],
-    "llama8b_readouts": [],
+    "llama8b_readouts": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483484",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:15:03.272462+00:00",
+        "time_min": null
+      }
+    ],
     "software_validation": [
       {
         "dependencies": [],
@@ -66,7 +114,9 @@
   "controllers": [
     "483446",
     "483454",
-    "483459"
+    "483459",
+    "483471",
+    "483483"
   ],
   "created_utc": "2026-10-30T01:42:14.031376+00:00",
   "evaluation_role": "discovery_arithmetic_graph_suite_v1",
@@ -78,32 +128,36 @@
   },
   "status": {
     "codellama34b_behavior": {
-      "state": "planned"
+      "job_id": "483473",
+      "state": "complete"
     },
     "codellama34b_capture": {
       "job_id": "483461",
-      "state": "submitted"
+      "state": "complete"
     },
     "codellama34b_prepare": {
       "job_id": "483449",
       "state": "complete"
     },
     "codellama34b_readouts": {
-      "state": "planned"
+      "job_id": "483485",
+      "state": "complete"
     },
     "llama8b_behavior": {
-      "state": "planned"
+      "job_id": "483472",
+      "state": "complete"
     },
     "llama8b_capture": {
       "job_id": "483460",
-      "state": "submitted"
+      "state": "complete"
     },
     "llama8b_prepare": {
       "job_id": "483448",
       "state": "complete"
     },
     "llama8b_readouts": {
-      "state": "planned"
+      "job_id": "483484",
+      "state": "complete"
     },
     "software_validation": {
       "job_id": "483447",

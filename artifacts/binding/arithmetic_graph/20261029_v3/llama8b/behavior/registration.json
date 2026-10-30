@@ -1,0 +1,37 @@
+{
+  "capture_preflight_source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "case_ids_sha256": "4214cd084a42b6af415c21059edb7763d8233209cd9a7e17edbc497a190b01d0",
+  "cases": 1152,
+  "config": {
+    "capture_config": "configs/binding/arithmetic_graph_20261029_v3/llama8b_capture.json",
+    "capture_config_sha256": "41b80899c5847a0f6e53ed56871e3839a828a2fc0522b5d5fcb36dfdacc2bcb9",
+    "declared_plan": "reports/binding/arithmetic_graph_overnight_20261029_plan_v3.md",
+    "declared_plan_sha256": "7f077bbe480e2ca0ec64b543e1f80ec2b7cc027d41d59aa7dd50ab6294064285",
+    "evaluation_role": "discovery_arithmetic_graph_behavior_v1",
+    "generation_batch_size": 64,
+    "report": "reports/binding/arithmetic_graph_llama8b_behavior_v3.md",
+    "run_dir": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior"
+  },
+  "config_hash": "d69efb2bffec76b8cefe212b2d8031210631832f2326b3ca57f3d92bab9f6ca3",
+  "evaluation_role": "discovery_arithmetic_graph_behavior_v1",
+  "prepared_sha256": "bd899877bea32c770d494f2a5a2a37ab45d552659faeadc4468efcae2e92b8b4",
+  "protocol": {
+    "do_sample": false,
+    "max_new_tokens": 12,
+    "parser": "full signed decimal integer with whitespace only",
+    "selection": "all source rows with numeric_draw == 0",
+    "uncertainty": "12 whole development structural families; fixed fits, 2000 draws, seed117",
+    "use_cache": true
+  },
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  }
+}

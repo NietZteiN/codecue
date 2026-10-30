@@ -1,6 +1,6 @@
 # Versioned variable-binding study
 
-Current overnight work (October29–30): [arithmetic dependency/relationship plan](arithmetic_graph_overnight_20261029_plan_v3.md) and [live status](arithmetic_graph_overnight_20261029_status_v3.md). The new suite uses two-input arithmetic assignments, 48 structural families and both cached checkpoints; these are queued discovery measurements, not completed findings.
+Completed first overnight suite (October29–30): [findings](arithmetic_graph_overnight_findings_v1.md), [plan](arithmetic_graph_overnight_20261029_plan_v3.md), and [execution status](arithmetic_graph_overnight_20261029_status_v3.md). The first suite completed: 9,216 captures, 2,304 generated answers and 36 readout fits. Answer-preparation relation balanced accuracy is 54.61% / 54.04% (8B / 34B), with zero complete eight-parent graphs recovered. Arithmetic-written DEV answers are 22/216 correct for each model. These are exploratory negative findings under the tested readouts, not evidence of representational absence.
 
 **Start here: [Master research report — plan, results, figures and next steps](../../docs/binding/MASTER_REPORT.md)** ([Markdown version](master_research_report_v4.md)). Updated October 29, 2026; includes the full original plan, 19 main figures, including four conceptual illustrations, the complete figure archive, every research branch and an ordered next-experiment plan. The handoffs below retain their historical checkpoints; use the master report for current status.
 
