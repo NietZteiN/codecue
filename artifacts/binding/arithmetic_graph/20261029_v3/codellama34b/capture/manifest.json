@@ -1,0 +1,67 @@
+{
+  "attempts": [
+    {
+      "model_load_attempted": true,
+      "model_loaded": true,
+      "prefill_batch_calls": 8,
+      "prefill_cases_attempted": 512,
+      "prefill_cases_returned": 448,
+      "slurm_job_id": "483461"
+    }
+  ],
+  "identity": {
+    "config": {
+      "batch_size": 64,
+      "chunk_size": 512,
+      "context_limit": 4096,
+      "dataset": "artifacts/binding/arithmetic_graph/20261029_v3/sources.jsonl",
+      "dataset_manifest_sha256": "ebc17c94894dcb5514e15edea891ab815f497b809c5a0828551c9b2772feee50",
+      "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+      "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+      "hidden_size": 8192,
+      "layers": [
+        12,
+        24,
+        36,
+        47
+      ],
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "prefix_atol": 1e-05,
+      "run_dir": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture",
+      "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+    },
+    "config_hash": "6f46f979d15b5bcbb4dcb99650b3787276e3b95857bc622740ee23fc901c23cf",
+    "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+    "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+    "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+    "generated_holdouts_opened": false,
+    "generated_responses": 0,
+    "generation_calls": 0,
+    "hidden_size": 8192,
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "prefix_atol": 1e-05,
+    "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+    "preflight_sha256": "8b7cda8b2e83219999f87e48a2c4aaf3e2d22f056eda6ee8135c75b0ea511038",
+    "sites": [
+      "statement:3",
+      "statement:7",
+      "pre_answer"
+    ],
+    "source": {
+      "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+      "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+      "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+    },
+    "stored_dtype": "float32"
+  },
+  "status": "started"
+}

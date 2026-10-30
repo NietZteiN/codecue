@@ -2,7 +2,18 @@
   "all_terminal": false,
   "attempts": {
     "codellama34b_behavior": [],
-    "codellama34b_capture": [],
+    "codellama34b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483461",
+        "progress_before": 0,
+        "reason": "Priority",
+        "state": "PENDING",
+        "submitted_utc": "2026-10-30T01:55:16.038481+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
     "codellama34b_prepare": [
       {
         "dependencies": [],
@@ -17,7 +28,18 @@
     ],
     "codellama34b_readouts": [],
     "llama8b_behavior": [],
-    "llama8b_capture": [],
+    "llama8b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483460",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "RUNNING",
+        "submitted_utc": "2026-10-30T01:55:15.186182+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
     "llama8b_prepare": [
       {
         "dependencies": [],
@@ -37,8 +59,8 @@
         "exit_code": "0:0",
         "job_id": "483447",
         "progress_before": 0,
-        "reason": "None",
-        "state": "RUNNING",
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
         "submitted_utc": "2026-10-30T01:42:15.863638+00:00",
         "time_min": null
       }
@@ -50,7 +72,7 @@
   "new_model_queries": 0,
   "observed_scientific_prefill_attempts": 0,
   "planned_scientific_case_prefills": 11520,
-  "recorded_utc": "2026-10-30T01:52:25.192476+00:00",
+  "recorded_utc": "2026-10-30T01:56:36.527361+00:00",
   "scheduler_errors": [],
   "scope": "Controller metadata only. Scientific worker query counts remain in their own manifests.",
   "source": {
@@ -64,7 +86,9 @@
       "state": "planned"
     },
     "codellama34b_capture": {
-      "state": "planned"
+      "job_id": "483461",
+      "reason": "Priority",
+      "state": "pending"
     },
     "codellama34b_prepare": {
       "job_id": "483449",
@@ -77,7 +101,9 @@
       "state": "planned"
     },
     "llama8b_capture": {
-      "state": "planned"
+      "job_id": "483460",
+      "reason": "None",
+      "state": "running"
     },
     "llama8b_prepare": {
       "job_id": "483448",
@@ -88,8 +114,7 @@
     },
     "software_validation": {
       "job_id": "483447",
-      "reason": "None",
-      "state": "running"
+      "state": "complete"
     }
   },
   "status": "running"

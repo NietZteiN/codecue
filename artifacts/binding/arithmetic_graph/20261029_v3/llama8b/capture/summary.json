@@ -1,0 +1,177 @@
+{
+  "cases": 4608,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/000000.npz",
+      "rows": 512,
+      "sha256": "0d107c441bde64e2156441bca86f061158ea864dfe8812504e06825746c63bd2"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/000512.npz",
+      "rows": 512,
+      "sha256": "42457d0d5fbc08234237f40933378aa50ea553c56c939a493d06bdbe8b1fd53c"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/001024.npz",
+      "rows": 512,
+      "sha256": "404a1f1dec9ed590797f450daa51bf2d3a312bee6918304177deb6199fefec97"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/001536.npz",
+      "rows": 512,
+      "sha256": "a3154669923da4d84cfa4ebc1ba10ba22cfe34bc85ee35d599d92a21884612d3"
+    },
+    {
+      "first": 2048,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/002048.npz",
+      "rows": 512,
+      "sha256": "bf2f6ac347d55c75396b842d7f8a3e39212e8d5e0d243f9827200d0f336ff60b"
+    },
+    {
+      "first": 2560,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/002560.npz",
+      "rows": 512,
+      "sha256": "78472b0f497cfd6ee666163a289a0ffac49df4be5fe5708712db9f9e7a5d0097"
+    },
+    {
+      "first": 3072,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/003072.npz",
+      "rows": 512,
+      "sha256": "c8e5cfa486e2b294f07af6e3ed3f552477916a562b58e49c56a9dc387419a78f"
+    },
+    {
+      "first": 3584,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/003584.npz",
+      "rows": 512,
+      "sha256": "73f7d228d9b1f6f004433a9a9a6e11ae0d5c55dd038da2ce93a1aa0fd4c1fd3a"
+    },
+    {
+      "first": 4096,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture/chunks/004096.npz",
+      "rows": 512,
+      "sha256": "8e04f990c78b4f298fbd8862815d38255b3d482da5303cbd6626715c722b88fb"
+    }
+  ],
+  "collection_attempts": [
+    {
+      "model_load_attempted": true,
+      "model_loaded": true,
+      "prefill_batch_calls": 36,
+      "prefill_cases_attempted": 4608,
+      "prefill_cases_returned": 4608,
+      "runtime": {
+        "attention_backend": "sdpa",
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "dtype": "torch.bfloat16",
+        "forward": "causal-LM model.model backbone; no vocabulary logits or generation",
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+          "mean_gpu_utilization_percent": 59.46,
+          "mean_power_watts": 452.9176,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 18373.0,
+          "samples": 50,
+          "selector_verified": true
+        },
+        "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+        "gpu_uuid": "6a84f189-485f-ab4e-5b2f-86119881df62",
+        "position_ids": "(attention_mask.cumsum(-1)-1).clamp_min(0)",
+        "preload_memory": {
+          "actual_max_prompt_tokens": 111,
+          "headroom_scope": "Prospective short-prefill working allowance; scales with actual tokens and declared batch, not context_limit.",
+          "observed_free_bytes": 84463714304,
+          "observed_total_bytes": 85017493504,
+          "required_free_bytes": 18208040024,
+          "weight_bytes": 16060556376,
+          "working_headroom_bytes": 2147483648
+        },
+        "torch_peak_allocated_bytes": 17804191744,
+        "use_cache": false,
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1"
+        }
+      },
+      "slurm_job_id": "483460",
+      "status": "complete",
+      "wall_seconds": 127.11029293492902
+    }
+  ],
+  "committed_batch_groups": 36,
+  "complete": true,
+  "config": {
+    "batch_size": 128,
+    "chunk_size": 512,
+    "context_limit": 4096,
+    "dataset": "artifacts/binding/arithmetic_graph/20261029_v3/sources.jsonl",
+    "dataset_manifest_sha256": "ebc17c94894dcb5514e15edea891ab815f497b809c5a0828551c9b2772feee50",
+    "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+    "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+    "hidden_size": 4096,
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "prefix_atol": 1e-05,
+    "run_dir": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/capture",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+  },
+  "config_hash": "46ba261c06338f9b07ad4d0ce3d71c63dc67e5f680a1616932ab9e98b5998dee",
+  "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+  "different_padding_prefix_comparisons": 3456,
+  "different_padding_prefix_max_abs_diff": 0.5,
+  "distinct_committed_prefill_rows": 4608,
+  "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+  "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+  "feature_shape": [
+    4608,
+    3,
+    4,
+    4096
+  ],
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "hidden_size": 4096,
+  "layers": [
+    8,
+    16,
+    24,
+    31
+  ],
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_loaded": true,
+  "model_prefill_cases": 4608,
+  "model_prefill_cases_attempted": 4608,
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "new_model_queries": 4608,
+  "new_model_queries_semantics": "Durable source-case prefill attempts, including retry work; zero generation.",
+  "prefill_batch_calls": 36,
+  "prefix_atol": 1e-05,
+  "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+  "prefix_comparisons": 5760,
+  "prefix_max_abs_diff": 0.0,
+  "preflight_sha256": "b8265a9641fcb25c931eef4fc543240fa6d69868a7978cab9a344d16c3593ea6",
+  "sites": [
+    "statement:3",
+    "statement:7",
+    "pre_answer"
+  ],
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "storage_bytes": 937672294,
+  "stored_dtype": "float32"
+}

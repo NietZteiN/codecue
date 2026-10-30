@@ -1,0 +1,74 @@
+{
+  "active_suite": "configs/binding/arithmetic_graph_20261029_v3/suite.json",
+  "earlier_failed_revisions_released_no_scientific_collectors": true,
+  "evaluation_role": "discovery_arithmetic_graph_debug_pass_v1",
+  "generated_holdouts_opened": false,
+  "morning_job": "483450",
+  "morning_local": "2026-10-30T08:00:00-05:00",
+  "new_model_queries": 0,
+  "new_scientific_fits": 0,
+  "regression_revisions": [
+    {
+      "counts": {
+        "errors": 6,
+        "failures": 0,
+        "skipped": 0,
+        "tests": 6
+      },
+      "edition": 1,
+      "junit_sha256": "05a58bb26e43b6cf141f74914aa2925ff0fd2284f74758e6e4964bc8f8cc216d",
+      "review_sha256": "542d6d1a76a886db0c02212a8c5326a32dc225fec9a6b1629a9b6a1bc1261c7b",
+      "source_sha256": "311a89808e21ae9534d021ea8398a2cf0aa50bf1483f260ed531a42e16d758d8",
+      "status": "failed"
+    },
+    {
+      "counts": {
+        "errors": 0,
+        "failures": 3,
+        "skipped": 0,
+        "tests": 2315
+      },
+      "edition": 2,
+      "junit_sha256": "3b031e22974c8efdf120d4c68687745a6d679ec62f62fc367dc86eee4b5a3447",
+      "review_sha256": "e1c4c37f46626a607fbbd5eb01a332f79990b40d80f2831551eb0444c8ffedf2",
+      "source_sha256": "26da0081fcb5cb8fa2a01d26d257585ffe915aa8743a4169fe0189b75a7608a0",
+      "status": "failed"
+    },
+    {
+      "counts": {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "tests": 2315
+      },
+      "edition": 3,
+      "junit_sha256": "49b09b6178154d3e1596a41d5e778511a8557e14d72d38e5d5c62eb7a232318f",
+      "review_sha256": "b0c0dc6b3a5856b7d38bac821b77f36bfecf144003406e6d9edeefa7d35e74f5",
+      "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b",
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "successful_preflights": {
+    "codellama34b": {
+      "cases": 4608,
+      "prepared_sha256": "e929e1c878462ef171109222ed6b0deabc38edeadeac80fb51868a67e0129d00",
+      "source": {
+        "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+        "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+        "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+        "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+      }
+    },
+    "llama8b": {
+      "cases": 4608,
+      "prepared_sha256": "bd899877bea32c770d494f2a5a2a37ab45d552659faeadc4468efcae2e92b8b4",
+      "source": {
+        "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+        "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+        "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+        "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+      }
+    }
+  }
+}
