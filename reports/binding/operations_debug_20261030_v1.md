@@ -19,10 +19,12 @@ The following read-only checks have been submitted. Times are earliest eligibili
 | Job | Earliest time | Scope |
 |---|---|---|
 | 484603 | 12:16 p.m. | Deep artifact audit; completed successfully in 27 seconds |
-| 484604 | 12:26 p.m. | Recheck pinned metadata, logger freshness and watched job states |
+| 484604 | 12:26 p.m. | Passed at 12:26:19 p.m.; no attention items |
 | 484605 | 12:46 p.m. | Repeat the operational check |
 | 484606 | 1:16 p.m. | Repeat the operational check |
 
 Each follow-up writes an individual JSON snapshot under `artifacts/binding/operations/20261030_debug_v1/`. It flags failed jobs, broken dependencies, missing accounting records, changed pinned metadata or degraded logging. The checker verifies its own submitted source hash. These checks record findings and exit nonzero when attention is required; they do not cancel, resubmit or train anything. Scientific artifacts are preserved. The existing logger continues its separate recurring reconciliation.
 
 Implementation: [checker](../../scripts/175_binding_operations_check.py), [watch configuration](../../artifacts/binding/operations/20261030_debug_v1/watch_config.json), and [submitted job IDs](../../artifacts/binding/operations/20261030_debug_v1/jobs.json). Later snapshots may appear locally after this report is published; their absence from this initial publication does not mean they have run.
+
+The [first scheduled follow-up](../../artifacts/binding/operations/20261030_debug_v1/monitor_after_10_review.json) completed successfully in three seconds. All 15 metadata hashes were unchanged, the logger remained fresh with two queued successors, and watched job states required no attention. The 12:46 p.m. and 1:16 p.m. checks remain queued.
