@@ -314,7 +314,9 @@ def _analysis_record(root,path):
     data=_read(path,issues)
     if not data or not any(key in data for key in ('status','complete','results','models','aggregate','overall','correction','reason')):return None,issues
     record=_base('analysis',path,data.get('status','superseded' if 'superseded' in path.name else 'complete' if data.get('complete') else 'recorded'))
-    record.update(model=data.get('model'),source_hash=(data.get('analysis_source') or {}).get('source_sha256'),
+    source=data.get('analysis_source') or data.get('source') or {}
+    source=source if isinstance(source,dict) else {}
+    record.update(model=data.get('model'),source_hash=source.get('source_sha256'),
                   config_hash=data.get('config_hash'),stage='review',metrics={'review':_compact(data)},issues=issues)
     record['artifacts']['review']=_artifact(path)
     for key in ('report','figure'):
@@ -336,7 +338,7 @@ def _dataset_record(root,path):
 def _is_review(name):
     return (name.endswith('.json') and not name.startswith('submit_')
             and (any(word in name for word in ('review','comparison','_results','correction','superseded','entropy_audit'))
-                 or name in ('v1_status.json','completion_manifest_v2.json')))
+                 or name in ('v1_status.json','completion_manifest_v1.json','completion_manifest_v2.json','results.json')))
 
 
 def _sync_folder(conn,root,folder,*,snapshot=True):

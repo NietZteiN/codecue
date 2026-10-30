@@ -1,0 +1,177 @@
+{
+  "cases": 4608,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/000000.npz",
+      "rows": 512,
+      "sha256": "670a06ad8aaf7a3026027e2411b126dde6f9b701b32bb140f9e7ed2986c1b52b"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/000512.npz",
+      "rows": 512,
+      "sha256": "9de836de9ea284f7b8c66421053e904885756370e053c3824057bee0152d3f9f"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/001024.npz",
+      "rows": 512,
+      "sha256": "e33c0341748b4ce8a0daf696fa4ddf1b16fe24d63efd4e7ec404c26c9ce072db"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/001536.npz",
+      "rows": 512,
+      "sha256": "eb35deb6a4cf25ecb769bca8a4846426dc73176ab9d035ed29c47e3a792040fc"
+    },
+    {
+      "first": 2048,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/002048.npz",
+      "rows": 512,
+      "sha256": "533b8c1215cd0d5dc3c324817db9124a562b1f7e15b1d44a4273724548f3cf63"
+    },
+    {
+      "first": 2560,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/002560.npz",
+      "rows": 512,
+      "sha256": "c67f38ecc7a4f8254e40cc39eb0fb43f393d6e82acb0fbde2c304e7948743fe6"
+    },
+    {
+      "first": 3072,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/003072.npz",
+      "rows": 512,
+      "sha256": "f94a77adcda2e51f57450eee7f7f87e48d9bacaa453d8370674b4908b06a28eb"
+    },
+    {
+      "first": 3584,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/003584.npz",
+      "rows": 512,
+      "sha256": "ddd5fcac5f6d280367f60c8092407647401883c348b35f4abc44421dd1bce97d"
+    },
+    {
+      "first": 4096,
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture/chunks/004096.npz",
+      "rows": 512,
+      "sha256": "e91c6b091316cb1480709f894e4ae3a190e5beaac9265217a0cd2d5a7fdab2ba"
+    }
+  ],
+  "collection_attempts": [
+    {
+      "model_load_attempted": true,
+      "model_loaded": true,
+      "prefill_batch_calls": 72,
+      "prefill_cases_attempted": 4608,
+      "prefill_cases_returned": 4608,
+      "runtime": {
+        "attention_backend": "sdpa",
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "dtype": "torch.bfloat16",
+        "forward": "causal-LM model.model backbone; no vocabulary logits or generation",
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+          "mean_gpu_utilization_percent": 66.30833333333334,
+          "mean_power_watts": 580.837,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 66427.0,
+          "samples": 120,
+          "selector_verified": true
+        },
+        "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+        "gpu_uuid": "6a84f189-485f-ab4e-5b2f-86119881df62",
+        "position_ids": "(attention_mask.cumsum(-1)-1).clamp_min(0)",
+        "preload_memory": {
+          "actual_max_prompt_tokens": 87,
+          "headroom_scope": "Prospective short-prefill working allowance; scales with actual tokens and declared batch, not context_limit.",
+          "observed_free_bytes": 84463714304,
+          "observed_total_bytes": 85017493504,
+          "required_free_bytes": 71782958696,
+          "weight_bytes": 67487991400,
+          "working_headroom_bytes": 4294967296
+        },
+        "torch_peak_allocated_bytes": 68638070272,
+        "use_cache": false,
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1"
+        }
+      },
+      "slurm_job_id": "483461",
+      "status": "complete",
+      "wall_seconds": 178.9560744080227
+    }
+  ],
+  "committed_batch_groups": 72,
+  "complete": true,
+  "config": {
+    "batch_size": 64,
+    "chunk_size": 512,
+    "context_limit": 4096,
+    "dataset": "artifacts/binding/arithmetic_graph/20261029_v3/sources.jsonl",
+    "dataset_manifest_sha256": "ebc17c94894dcb5514e15edea891ab815f497b809c5a0828551c9b2772feee50",
+    "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+    "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+    "hidden_size": 8192,
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "prefix_atol": 1e-05,
+    "run_dir": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/capture",
+    "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+  },
+  "config_hash": "6f46f979d15b5bcbb4dcb99650b3787276e3b95857bc622740ee23fc901c23cf",
+  "dataset_sha256": "120f96e58dae52aab319d8a13a06eca7c01d584f55201e55deead7dd59f8329f",
+  "different_padding_prefix_comparisons": 0,
+  "different_padding_prefix_max_abs_diff": 0.0,
+  "distinct_committed_prefill_rows": 4608,
+  "evaluation_role": "discovery_arithmetic_graph_capture_v1",
+  "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+  "feature_shape": [
+    4608,
+    3,
+    4,
+    8192
+  ],
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "hidden_size": 8192,
+  "layers": [
+    12,
+    24,
+    36,
+    47
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_loaded": true,
+  "model_prefill_cases": 4608,
+  "model_prefill_cases_attempted": 4608,
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "new_model_queries": 4608,
+  "new_model_queries_semantics": "Durable source-case prefill attempts, including retry work; zero generation.",
+  "prefill_batch_calls": 72,
+  "prefix_atol": 1e-05,
+  "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+  "prefix_comparisons": 6912,
+  "prefix_max_abs_diff": 0.0,
+  "preflight_sha256": "8b7cda8b2e83219999f87e48a2c4aaf3e2d22f056eda6ee8135c75b0ea511038",
+  "sites": [
+    "statement:3",
+    "statement:7",
+    "pre_answer"
+  ],
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "storage_bytes": 1836881390,
+  "stored_dtype": "float32"
+}
