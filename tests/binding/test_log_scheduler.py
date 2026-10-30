@@ -215,7 +215,7 @@ def test_status_is_read_only_and_account_resolution_uses_actual_default(root,mon
     monkeypatch.delenv('SLURM_JOB_ACCOUNT',raising=False)
     fake=FakeSlurm();scheduler.enable(root,runner=fake,now=1000)
     before=scheduler.control_paths(root)['state'].read_bytes();count=fake.submit_count
-    result=scheduler.status(root,runner=fake)
+    result=scheduler.status(root,runner=fake,now=1001)
     assert result['healthy'] and result['account']=='test_account'
     assert fake.submit_count==count and scheduler.control_paths(root)['state'].read_bytes()==before
 

@@ -1,0 +1,146 @@
+{
+  "attention": [],
+  "checker_sha256": "b81bc5c538259270c6e0d565777b44b84773aa6a0fced6776b3242c31c0df605",
+  "evaluation_role": "binding_operations_debug_v1",
+  "jobs": {
+    "484390": {
+      "exit_code": "0:0",
+      "name": "arithmetic-morning-review",
+      "reason": "None",
+      "state": "COMPLETED"
+    },
+    "484443": {
+      "exit_code": "0:0",
+      "name": "rel-night-llama8b_behavior-d714533b",
+      "reason": "None",
+      "state": "COMPLETED"
+    },
+    "484444": {
+      "exit_code": "0:0",
+      "name": "rel-night-codellama34b_behavior-4af45082",
+      "reason": "None",
+      "state": "COMPLETED"
+    },
+    "484486": {
+      "exit_code": "0:0",
+      "name": "a27mtdate_train_s17_rt001",
+      "reason": "Dependency",
+      "state": "RUNNING"
+    },
+    "484487": {
+      "exit_code": "0:0",
+      "name": "a27mtdate_train_s17_gold001",
+      "reason": "Dependency",
+      "state": "RUNNING"
+    },
+    "484489": {
+      "exit_code": "0:0",
+      "name": "a27mtdate_train_s17_rt01",
+      "reason": "None",
+      "state": "PENDING"
+    },
+    "484490": {
+      "exit_code": "0:0",
+      "name": "a27mtdate_train_s17_gold01",
+      "reason": "None",
+      "state": "PENDING"
+    },
+    "484491": {
+      "exit_code": "0:0",
+      "name": "a27mtdate_train_s17_rt1",
+      "reason": "None",
+      "state": "PENDING"
+    },
+    "484492": {
+      "exit_code": "0:0",
+      "name": "a27mtdate_train_s17_gold1",
+      "reason": "None",
+      "state": "PENDING"
+    }
+  },
+  "logger": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "freshness_error": null,
+    "freshness_grace_seconds": 1800,
+    "freshness_status": "fresh",
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 474,
+        "dataset": 72,
+        "job": 481,
+        "run": 91
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 4172,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_success_age_seconds": 222.25173783302307,
+    "last_success_utc": "2026-10-30T17:12:59.434860+00:00",
+    "last_tick_utc": "2026-10-30T17:10:56.392567+00:00",
+    "next_reconcile_utc": "2026-10-30T17:20:56.392567+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "484591",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-30T12:30:56",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "484567",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-30T12:20:54",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "metadata_pins": {
+    "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/completion_manifest_v1.json": "2a3ef61218621bf862f2172ec4862f3d0a50e593b098ec19f574da01d9cd655b",
+    "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/summary.json": "d4df8a65b028e3cfe06cf07ee72838446ce5994e007ed78427933ddb55860cd3",
+    "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/completion_manifest_v1.json": "f06dfb0f5e57e169ff328de3cc4dac9e94e5b3937e0bf0af3ca5f979c2046581",
+    "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/results.json": "34153c0a228496954cd75d0ee2d0154dc1d239eeb9c968f8022fd1c32868d331",
+    "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/completion_manifest_v1.json": "dc06a778d5849f63e2cb051e7e875234396b1107a2e7d1fb98afe2fce086bc97",
+    "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/summary.json": "d88ea0d7305bf2542c54b1b601839b49c71031a0952acd330bf78d9bfe1c37af",
+    "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/completion_manifest_v1.json": "d90832c40bc883e53738bb5cd25baa2d5f736291e8bd00ff705a35b334cde026",
+    "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/results.json": "b7a4ed9c159caf0e3123b977efa104012f2d1a735babbe777bec3b3407d58470",
+    "artifacts/binding/arithmetic_graph/20261029_v3/suite/actual_morning_review_v1.json": "74ee7ee663278c624afe29c3a51bc1d03bcc6801fec3c077ee6cc5bbdeea3cde",
+    "artifacts/binding/arithmetic_graph_review/20261030_v1/review.json": "0a0bbabe2e0b2022448512ae573437d97a6c46f56a0a7cea0fa36d5ccac75893",
+    "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b/completion_manifest_v1.json": "ecd44bdf1c0810dc537e0738bacadd310007717fb42b18c85fd01ce9feb6b1c6",
+    "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b/summary.json": "783cc59f4ea2ccb716f3f9ff76c71f54e0dccd09604b06a2d41e3b708841ba50",
+    "artifacts/binding/arithmetic_prompt_control/20261030_v1/findings_review_v1.json": "51c53aa2171045def0831f9f9a91aa77c2a9382af8554a7f56edee0c7349f271",
+    "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b/completion_manifest_v1.json": "0d019b45fc3812e7056476cc92ca8e642838b3d3f01d38447d05ecdd6fe9b2d2",
+    "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b/summary.json": "08acf84cc4eed456c4a900da287df017c6b8d40a88fc41966300ef1bc5052b03"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "phase": "deep",
+  "recorded_utc": "2026-10-30T17:16:41.746346+00:00",
+  "scheduler_implementation_sha256": "df5605cbecf40321fff96fac9613a888b65536caffe62cb46f3b9cff9a97b2e6",
+  "scientific_artifact_audits": {
+    "codellama34b_prompt_control": "passed",
+    "codellama34b_readouts": "passed",
+    "llama8b_prompt_control": "passed",
+    "llama8b_readouts": "passed"
+  },
+  "slurm_job_id": "484603",
+  "status": "passed"
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "job_id": "484603",
+    "offset_minutes": 0,
+    "phase": "deep"
+  },
+  {
+    "dependency": "afterany:484603",
+    "job_id": "484604",
+    "offset_minutes": 10,
+    "phase": "monitor"
+  },
+  {
+    "dependency": "afterany:484603",
+    "job_id": "484605",
+    "offset_minutes": 30,
+    "phase": "monitor"
+  },
+  {
+    "dependency": "afterany:484603",
+    "job_id": "484606",
+    "offset_minutes": 60,
+    "phase": "monitor"
+  }
+]

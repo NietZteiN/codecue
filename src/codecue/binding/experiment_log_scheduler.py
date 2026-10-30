@@ -121,17 +121,41 @@ def _query(state,runner):
     return jobs
 
 
-def _view(state,jobs=None,*,cached=False,error=None):
+def _freshness(state,now):
+    interval=state.get('interval_minutes')
+    if type(interval) is not int or interval<1:
+        return dict(freshness_status='unknown',freshness_error='Invalid reconciliation interval',
+                    last_success_age_seconds=None,freshness_grace_seconds=None)
+    grace=3*interval*60
+    success=state.get('last_success_utc')
+    reference=success or state.get('enabled_utc')
+    try:
+        stamp=datetime.fromisoformat(reference)
+        if stamp.tzinfo is None:raise ValueError('timezone required')
+        age=max(0.,now-stamp.timestamp())
+    except (TypeError,ValueError,OverflowError):
+        return dict(freshness_status='unknown',freshness_error='Missing or invalid reconciliation timestamp',
+                    last_success_age_seconds=None,freshness_grace_seconds=grace)
+    overdue=age>grace
+    return dict(freshness_status='overdue' if overdue else 'fresh' if success else 'starting',
+                freshness_error='No successful reconciliation within three intervals' if overdue else None,
+                last_success_age_seconds=age if success else None,freshness_grace_seconds=grace)
+
+
+def _view(state,jobs=None,*,cached=False,error=None,now=None):
     if state is None:return dict(status='not_installed',installed=False,enabled=False,healthy=False)
     jobs=list((jobs or {}).values())
     pending=sum(job['state'] not in RUNNING for job in jobs)
     running=sum(job['state'] in RUNNING for job in jobs)
-    enabled=bool(state.get('enabled'));problem=error or state.get('last_scheduler_error') or state.get('last_tick_error')
+    now=time.time() if now is None else now
+    freshness=_freshness(state,now)
+    enabled=bool(state.get('enabled'));problem=error or state.get('last_scheduler_error') or state.get('last_tick_error') or freshness['freshness_error']
     return dict(status='disabled' if not enabled else 'degraded' if problem or pending<GUARDS else 'enabled',
                 installed=True,enabled=enabled,healthy=enabled and not problem and pending>=GUARDS,
                 root=state['root'],job_name=state['job_name'],account=state['account'],partition=state['partition'],
                 interval_minutes=state['interval_minutes'],pending_guards=pending,running_workers=running,
                 workers=jobs,cached=cached,last_tick_utc=state.get('last_tick_utc'),
+                last_success_utc=state.get('last_success_utc'),**freshness,
                 next_reconcile_utc=_utc(state['next_reconcile_epoch']) if state.get('next_reconcile_epoch') else None,
                 last_result=state.get('last_result'),error=problem,scheduler_error=error or state.get('last_scheduler_error'))
 
@@ -176,7 +200,7 @@ def _ensure_locked(state,paths,runner,now):
         active[job['job_id']]=entry;pending.append(entry)
     state['last_health_check_epoch']=now;state['last_scheduler_error']=None
     _save(paths['state'],state)
-    return _view(state,active)
+    return _view(state,active,now=now)
 
 
 def enable(root=None,*,interval_minutes=10,partition='dev',account=None,runner=None,now=None):
@@ -197,7 +221,7 @@ def enable(root=None,*,interval_minutes=10,partition='dev',account=None,runner=N
         try:return _ensure_locked(state,paths,runner,now)
         except SchedulerError as exc:
             state.update(last_scheduler_error=str(exc),last_health_check_epoch=now);_save(paths['state'],state)
-            return _view(state,error=str(exc))
+            return _view(state,error=str(exc),now=now)
 
 
 def ensure_enabled(root=None,*,runner=None,now=None,force=False):
@@ -205,33 +229,33 @@ def ensure_enabled(root=None,*,runner=None,now=None,force=False):
     runner=runner or subprocess.run;now=time.time() if now is None else now;paths=control_paths(root)
     try:state=_read(paths['state'])
     except (OSError,ValueError) as exc:return dict(status='degraded',installed=True,enabled=None,healthy=False,error=f'Invalid scheduler control state: {exc}')
-    if not state or not state.get('enabled'):return _view(state)
+    if not state or not state.get('enabled'):return _view(state,now=now)
     if not force and now-state.get('last_health_check_epoch',0)<CHECK_INTERVAL_SECONDS:
         jobs={j['job_id']:dict(job_id=j['job_id'],state='PENDING',verified=False) for j in state.get('jobs',[])}
-        return _view(state,jobs,cached=True)
+        return _view(state,jobs,cached=True,now=now)
     try:
         with _lock(paths['lock'],blocking=force):
             state=_read(paths['state'])
-            if not state or not state.get('enabled'):return _view(state)
+            if not state or not state.get('enabled'):return _view(state,now=now)
             try:return _ensure_locked(state,paths,runner,now)
             except SchedulerError as exc:
                 state.update(last_scheduler_error=str(exc),last_health_check_epoch=now);_save(paths['state'],state)
-                return _view(state,error=str(exc))
+                return _view(state,error=str(exc),now=now)
     except BlockingIOError:return dict(status='busy',installed=True,enabled=True,healthy=None)
 
 
-def status(root=None,*,runner=None):
-    runner=runner or subprocess.run;paths=control_paths(root)
+def status(root=None,*,runner=None,now=None):
+    runner=runner or subprocess.run;now=time.time() if now is None else now;paths=control_paths(root)
     try:state=_read(paths['state'])
     except (OSError,ValueError) as exc:return dict(status='degraded',installed=True,enabled=None,healthy=False,error=f'Invalid scheduler control state: {exc}')
-    if not state:return _view(state)
-    try:return _view(state,_query(state,runner))
-    except SchedulerError as exc:return _view(state,error=str(exc))
+    if not state:return _view(state,now=now)
+    try:return _view(state,_query(state,runner),now=now)
+    except SchedulerError as exc:return _view(state,error=str(exc),now=now)
 
 
 def disable(root=None,*,runner=None,now=None):
     runner=runner or subprocess.run;now=time.time() if now is None else now;paths=control_paths(root)
-    if not paths['state'].exists():return _view(None)
+    if not paths['state'].exists():return _view(None,now=now)
     with _lock(paths['lock']):
         state=_read(paths['state']);state.update(enabled=False,disabled_utc=_utc(now));_save(paths['state'],state)
         known={j['job_id'] for j in state.get('jobs',[])}
@@ -239,12 +263,12 @@ def disable(root=None,*,runner=None,now=None):
             active=_query(state,runner);verified=sorted(known & set(active))
             if verified:_run(['scancel',*verified],runner)
             _journal(paths,'disabled',now,cancelled_verified_jobs=verified)
-            result=_view(state);result['cancelled_jobs']=verified
+            result=_view(state,now=now);result['cancelled_jobs']=verified
             result['unrecorded_matching_jobs']=sorted(set(active)-known)
             return result
         except SchedulerError as exc:
             state['last_scheduler_error']=str(exc);_save(paths['state'],state)
-            result=_view(state,error=str(exc));result['cancellation_failed']=True
+            result=_view(state,error=str(exc),now=now);result['cancellation_failed']=True
             return result
 
 
@@ -258,7 +282,7 @@ def tick(root=None,*,runner=None,refresh_fn=None,now=None,force=False):
         with _lock(paths['run_lock'],blocking=False):
             with _lock(paths['lock']):
                 state=_read(paths['state'])
-                if not state.get('enabled'):return _view(state)
+                if not state.get('enabled'):return _view(state,now=now)
                 interval_seconds=state['interval_minutes']*60
                 # Guard slots are scheduled ahead of time. Small differences in
                 # startup delay must not turn every other worker into a skip.
@@ -280,5 +304,8 @@ def tick(root=None,*,runner=None,refresh_fn=None,now=None,force=False):
                 state=_read(paths['state']);state.update(last_success_utc=_utc(time.time()),last_tick_error=None,
                     last_result={k:v for k,v in result.items() if k in ('status','counts','events','runs','analyses','jobs','artifacts','report','database','root','indexed_events','new_events')})
                 _save(paths['state'],state);_journal(paths,'tick_complete',now,result=state['last_result'])
+            # Report the successful refresh rather than its pre-refresh stale view.
+            observed={job['job_id']:job for job in ensured.get('workers',[])}
+            ensured=_view(state,observed,now=time.time())
             return dict(status='complete',result=result,scheduler=ensured)
     except BlockingIOError:return dict(status='busy',scheduler=ensured)

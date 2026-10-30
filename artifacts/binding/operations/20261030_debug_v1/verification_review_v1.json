@@ -1,0 +1,102 @@
+{
+  "checker_matches_submission": true,
+  "deep_review_sha256": "92cb534ea5e85c2de0db34ab0317bad2d52f15c58199a507de0745e4106bec01",
+  "followup_jobs": [
+    {
+      "job_id": "484603",
+      "offset_minutes": 0,
+      "phase": "deep"
+    },
+    {
+      "dependency": "afterany:484603",
+      "job_id": "484604",
+      "offset_minutes": 10,
+      "phase": "monitor"
+    },
+    {
+      "dependency": "afterany:484603",
+      "job_id": "484605",
+      "offset_minutes": 30,
+      "phase": "monitor"
+    },
+    {
+      "dependency": "afterany:484603",
+      "job_id": "484606",
+      "offset_minutes": 60,
+      "phase": "monitor"
+    }
+  ],
+  "logger": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "freshness_error": null,
+    "freshness_grace_seconds": 1800,
+    "freshness_status": "fresh",
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 475,
+        "dataset": 72,
+        "job": 485,
+        "run": 91
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 4189,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_success_age_seconds": 91.44969606399536,
+    "last_success_utc": "2026-10-30T17:22:41.660927+00:00",
+    "last_tick_utc": "2026-10-30T17:20:58.230999+00:00",
+    "next_reconcile_utc": "2026-10-30T17:30:58.230999+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "484614",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-30T12:40:58",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "484591",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-30T12:30:56",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "recorded_utc": "2026-10-30T17:24:13.133228+00:00",
+  "regression": {
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "54",
+    "time": "38.355"
+  },
+  "scope": "Operational freshness regression and read-only scientific artifact audit; no new scientific inference or fitting",
+  "source_sha256": {
+    "scripts/175_binding_operations_check.py": "b81bc5c538259270c6e0d565777b44b84773aa6a0fced6776b3242c31c0df605",
+    "src/codecue/binding/experiment_log_scheduler.py": "df5605cbecf40321fff96fac9613a888b65536caffe62cb46f3b9cff9a97b2e6",
+    "tests/binding/test_log_freshness.py": "0388c1d2c16d5f941e6309e95cdcdd883a5db9cc071194253cfe72a534648cc7",
+    "tests/binding/test_log_scheduler.py": "b684db34350bb1dee1754ce8ba01fb46cafe5cab8c21f1a5ff926685ded063bb"
+  },
+  "status": "passed"
+}

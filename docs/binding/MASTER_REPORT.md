@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October30 operations:** [Debug pass and scheduled monitoring](../../reports/binding/operations_debug_20261030_v1.md). Saved readout and prompt-control artifacts passed their audits; logger freshness detection was fixed and verified with 54 tests.
+
 > **October30 morning review:** [Audit and next decisions](../../reports/binding/arithmetic_graph_morning_decision_v1.md) · [New TRAIN/DEV figure](../../reports/binding/figures/arithmetic_graph_train_dev_review_v2.png) · [Printed-query control results](../../reports/binding/arithmetic_prompt_control_findings_v1.md). Exact replay confirms the generalization gap. Explicit printing improves literal reporting but arithmetic remains unreliable.
 
 > **New completed follow-up, October29–30:** [Arithmetic dependency/relationship findings](../../reports/binding/arithmetic_graph_overnight_findings_v1.md) · [plan](../../reports/binding/arithmetic_graph_overnight_20261029_plan_v3.md). The first suite completed: 9,216 captures, 2,304 generated answers and 36 readout fits. Answer-preparation relation balanced accuracy is 54.61% / 54.04% (8B / 34B), with zero complete eight-parent graphs recovered. Arithmetic-written DEV answers are 22/216 correct for each model. These are exploratory negative findings under the tested readouts, not evidence of representational absence.
