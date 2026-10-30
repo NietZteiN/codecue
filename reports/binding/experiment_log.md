@@ -1,6 +1,6 @@
 # Automatic experiment log
 
-Updated 2026-10-30T00:00:08.073721+00:00. 991 indexed records: 388 analysis, 69 dataset, 449 job, 85 run.
+Updated 2026-10-30T00:11:03.095068+00:00. 991 indexed records: 388 analysis, 69 dataset, 449 job, 85 run.
 
 Execution status, audit status and scientific reliability are separate. A completed/audited experiment can have a failed reliability gate. Full results remain in their original artifacts. This index reads metadata only; sealed final/extrapolation outcomes and raw prediction/activation payloads are excluded.
 
