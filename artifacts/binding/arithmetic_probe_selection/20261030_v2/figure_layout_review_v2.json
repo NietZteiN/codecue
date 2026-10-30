@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    "png": {
+      "path": "reports/binding/figures/arithmetic_probe_selection_v2.png",
+      "sha256": "e8923da8cdb1a4109d73f18c2c78a5793415969a748467402da4e69c76546a6d"
+    },
+    "report": {
+      "path": "reports/binding/arithmetic_probe_selection_findings_v2.md",
+      "sha256": "99acb56340243b2096c1d559362f8e421f04db06a82d417858853824b256ec9d"
+    },
+    "svg": {
+      "path": "reports/binding/figures/arithmetic_probe_selection_v2.svg",
+      "sha256": "ac89da854174e819a6de976222e357b85a85a3e6dc812a95659d55f5529fa807"
+    }
+  },
+  "correction": "Separate shared legend and numeric labels from titles; increase numeric-axis headroom.",
+  "input_review": {
+    "path": "artifacts/binding/arithmetic_probe_selection/20261030_v2/findings_review_v1.json",
+    "sha256": "38f5e63de06ebef72176323dae3528062508e86557796f50d5d0586a4904e327"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "renderer": {
+    "path": "scripts/184_binding_probe_selection_figure_v2.py",
+    "sha256": "bb6bcbeda76e7e04fe0f348d0a6f144f5087ca9b6553425de215366f7deb402a"
+  },
+  "scientific_metrics_unchanged": true,
+  "score_reapplications": 0,
+  "status": "complete_exploratory"
+}

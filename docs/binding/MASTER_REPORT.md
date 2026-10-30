@@ -2,6 +2,8 @@
 
 > **October30 probe revision:** [Implementation and submitted experiments](../../reports/binding/arithmetic_probe_improvement_launch_v1.md). TRAIN-only layer/regularization/rank selection, a larger structural dataset and shared local dependency scorers are implemented. Original negative findings remain preserved.
 
+> **Completed archived-feature comparison:** [Results and figure](../../reports/binding/arithmetic_probe_selection_findings_v2.md). Complete-graph recovery remains zero; numeric error improves modestly. The new local experiment passed 2,408 software tests and both native layout checks before capture submission.
+
 > **October30 operations:** [Debug pass and scheduled monitoring](../../reports/binding/operations_debug_20261030_v1.md). Saved readout and prompt-control artifacts passed their audits; logger freshness detection was fixed and verified with 54 tests.
 
 > **October30 morning review:** [Audit and next decisions](../../reports/binding/arithmetic_graph_morning_decision_v1.md) · [New TRAIN/DEV figure](../../reports/binding/figures/arithmetic_graph_train_dev_review_v2.png) · [Printed-query control results](../../reports/binding/arithmetic_prompt_control_findings_v1.md). Exact replay confirms the generalization gap. Explicit printing improves literal reporting but arithmetic remains unreliable.

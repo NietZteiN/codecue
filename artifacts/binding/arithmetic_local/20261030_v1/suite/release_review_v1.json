@@ -1,0 +1,29 @@
+{
+  "archived_comparison": "artifacts/binding/arithmetic_probe_selection/20261030_v2/findings_review_v1.json",
+  "controllers": [
+    "484972",
+    "484989"
+  ],
+  "native_preflights": {
+    "codellama34b": "39b00bccdc69ea8b7bc4ee7afdcd1013cf39f69d11508c5547e9bb681884fbb4",
+    "llama8b": "876c4e72abe75bb3ef515fc28100a465ada46e569506ac537aee1afdb70e27f0"
+  },
+  "owned_jobs": [
+    "484973|COMPLETED|0:0|00:11:05",
+    "484974|COMPLETED|0:0|00:01:21",
+    "484975|COMPLETED|0:0|00:01:16",
+    "484990|PENDING|0:0|00:00:00",
+    "484991|PENDING|0:0|00:00:00"
+  ],
+  "recorded_utc": "2026-10-30T19:56:57.440813+00:00",
+  "regression": "passed",
+  "regression_tests": 2408,
+  "snapshot_scope": "Read-only operational snapshot; workers continue separately",
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  },
+  "status": "validated_and_released"
+}

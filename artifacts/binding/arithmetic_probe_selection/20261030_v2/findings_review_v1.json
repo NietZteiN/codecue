@@ -1,0 +1,732 @@
+{
+  "artifacts": {
+    "png": {
+      "path": "reports/binding/figures/arithmetic_probe_selection_v1.png",
+      "sha256": "f0ee55ffaf215eabeb99ed7b06b08a69f5c92abd695abfd06427ae020ac7e7df"
+    },
+    "report": {
+      "path": "reports/binding/arithmetic_probe_selection_findings_v1.md",
+      "sha256": "dbbd9e0550d74514c64a898eaaaf982341bccdff7afe4a795c8767b70db03b8c"
+    },
+    "svg": {
+      "path": "reports/binding/figures/arithmetic_probe_selection_v1.svg",
+      "sha256": "66e154cb2d63f3232b0e278e3ac809d90943433cf45df680cc6cce6c0ff25293"
+    }
+  },
+  "choices": {
+    "codellama34b": {
+      "hidden": {
+        "parent_accuracy": {
+          "alpha": 1.0,
+          "rank": "full",
+          "representation": "hidden_layer_12",
+          "selection_score": 0.24233217592592593
+        },
+        "relation_balanced_accuracy": {
+          "alpha": 1.0,
+          "rank": "full",
+          "representation": "hidden_layer_36",
+          "selection_score": 0.5243871422144551
+        },
+        "value_negative_mae": {
+          "alpha": 10000.0,
+          "rank": "full",
+          "representation": "hidden_layer_47",
+          "selection_score": -3.8903076838575146
+        }
+      },
+      "source": {
+        "parent_accuracy": {
+          "alpha": 10000.0,
+          "rank": "full",
+          "representation": "source_char",
+          "selection_score": 0.264600212191358
+        },
+        "relation_balanced_accuracy": {
+          "alpha": 10000.0,
+          "rank": "full",
+          "representation": "source_char",
+          "selection_score": 0.5064367141545829
+        },
+        "value_negative_mae": {
+          "alpha": 10000.0,
+          "rank": 32,
+          "representation": "source_char",
+          "selection_score": -4.289467992569406
+        }
+      }
+    },
+    "llama8b": {
+      "hidden": {
+        "parent_accuracy": {
+          "alpha": 100.0,
+          "rank": "full",
+          "representation": "hidden_layer_16",
+          "selection_score": 0.2426335841049383
+        },
+        "relation_balanced_accuracy": {
+          "alpha": 1.0,
+          "rank": "full",
+          "representation": "hidden_layer_31",
+          "selection_score": 0.5225246586368714
+        },
+        "value_negative_mae": {
+          "alpha": 10000.0,
+          "rank": "full",
+          "representation": "hidden_layer_24",
+          "selection_score": -3.9751338306137893
+        }
+      },
+      "source": {
+        "parent_accuracy": {
+          "alpha": 100.0,
+          "rank": "full",
+          "representation": "source_char",
+          "selection_score": 0.26982060185185186
+        },
+        "relation_balanced_accuracy": {
+          "alpha": 100.0,
+          "rank": 128,
+          "representation": "source_char",
+          "selection_score": 0.5070618773886806
+        },
+        "value_negative_mae": {
+          "alpha": 10000.0,
+          "rank": 32,
+          "representation": "source_char",
+          "selection_score": -4.3019870391529045
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "codellama34b": {
+      "hidden": {
+        "parent_accuracy": {
+          "after": 0.26558883101851855,
+          "after_family": [
+            0.24609375,
+            0.3311631944444444,
+            0.3763020833333333,
+            0.1796875,
+            0.4197048611111111,
+            0.28125,
+            0.0703125,
+            0.17274305555555555,
+            0.3736979166666667,
+            0.15451388888888887,
+            0.2521701388888889,
+            0.3294270833333333
+          ],
+          "after_interval": [
+            0.20951786747685183,
+            0.32148256655092583
+          ],
+          "after_minus_before_interval": [
+            -0.06677879050925926,
+            0.01263201678240736
+          ],
+          "before": 0.29390914351851855,
+          "before_family": [
+            0.3624131944444444,
+            0.29730902777777773,
+            0.3828125,
+            0.2951388888888889,
+            0.4131944444444445,
+            0.19401041666666666,
+            0.10850694444444443,
+            0.2868923611111111,
+            0.34375,
+            0.24392361111111108,
+            0.3298611111111111,
+            0.26909722222222227
+          ],
+          "before_interval": [
+            0.2447482638888889,
+            0.3355767144097222
+          ]
+        },
+        "parent_prior_before": 0.2569444444444444,
+        "relation_balanced_accuracy": {
+          "after": 0.5223132824134047,
+          "after_family": [
+            0.5055913487554112,
+            0.6275540055132858,
+            0.5662439123376625,
+            0.5161513761123137,
+            0.4990991261824595,
+            0.48050441167628666,
+            0.5163856884820427,
+            0.5308653875060125,
+            0.5364699825637326,
+            0.4909156670875421,
+            0.49284239342833097,
+            0.5051360893157768
+          ],
+          "after_interval": [
+            0.5029701852770428,
+            0.5469145904233648
+          ],
+          "after_minus_before_interval": [
+            -0.023092335879652325,
+            0.00048223040429776724
+          ],
+          "before": 0.53336560756601,
+          "before_family": [
+            0.5228303621532788,
+            0.6768932106053317,
+            0.6132738095238094,
+            0.5036682549703383,
+            0.5104125330687831,
+            0.49857785443722946,
+            0.5093567432760141,
+            0.521170315506253,
+            0.5657925986050986,
+            0.48525346470658975,
+            0.4964657738095238,
+            0.49669237012987016
+          ],
+          "before_interval": [
+            0.5058010343154385,
+            0.5683147805579544
+          ]
+        },
+        "value_mae": {
+          "after": 4.0418952650143645,
+          "after_family": [
+            5.2001088737730425,
+            3.3246336233613025,
+            3.797054612644601,
+            4.066803257767837,
+            3.515455954851168,
+            5.018688137374622,
+            3.2983877033647815,
+            5.288885058447625,
+            3.496452647736516,
+            3.604298574017735,
+            4.145660531844242,
+            3.746314204988902
+          ],
+          "after_interval": [
+            3.663865617064105,
+            4.451651737230424
+          ],
+          "after_minus_before_interval": [
+            -0.8877125649265829,
+            -0.31634505052588974
+          ],
+          "before": 4.631727430555556,
+          "before_family": [
+            5.5616319444444455,
+            3.688368055555556,
+            5.543402777777778,
+            4.232638888888888,
+            4.572048611111111,
+            5.5234375,
+            4.042534722222222,
+            6.025173611111112,
+            3.3880208333333335,
+            4.315104166666667,
+            5.100694444444444,
+            3.587673611111111
+          ],
+          "before_interval": [
+            4.118325014467593,
+            5.111376953124999
+          ]
+        },
+        "whole_parent_after": 0.0,
+        "whole_parent_before": 0.0
+      },
+      "source": {
+        "parent_accuracy": {
+          "after": 0.2237774884259259,
+          "after_family": [
+            0.23394097222222224,
+            0.24913194444444442,
+            0.2630208333333333,
+            0.25,
+            0.23828125,
+            0.05425347222222223,
+            0.2860243055555555,
+            0.14973958333333334,
+            0.15234375,
+            0.2703993055555555,
+            0.2912326388888889,
+            0.24696180555555558
+          ],
+          "after_interval": [
+            0.18174641927083335,
+            0.25694444444444436
+          ],
+          "after_minus_before_interval": [
+            -0.0459373191550926,
+            0.044452582465277786
+          ],
+          "before": 0.22294560185185183,
+          "before_family": [
+            0.22743055555555555,
+            0.25,
+            0.3125,
+            0.2708333333333333,
+            0.4127604166666667,
+            0.0,
+            0.25,
+            0.0625,
+            0.25,
+            0.1875,
+            0.1875,
+            0.2643229166666667
+          ],
+          "before_interval": [
+            0.16091399016203703,
+            0.28045699508101846
+          ]
+        },
+        "parent_prior_before": 0.2569444444444444,
+        "relation_balanced_accuracy": {
+          "after": 0.5111363106378692,
+          "after_family": [
+            0.4830470816798942,
+            0.6082940043699987,
+            0.5221613455988456,
+            0.4791849233906526,
+            0.5078308506693924,
+            0.4934925144300144,
+            0.505067264911015,
+            0.5131965112433862,
+            0.5017765076358827,
+            0.49628043831168833,
+            0.4880550294612795,
+            0.5352492559523809
+          ],
+          "after_interval": [
+            0.49584063542272094,
+            0.5325252920546801
+          ],
+          "after_minus_before_interval": [
+            -0.013099041389613113,
+            0.008465092481139207
+          ],
+          "before": 0.5129217268604304,
+          "before_family": [
+            0.4993825907888408,
+            0.6038239310493098,
+            0.5656177849927849,
+            0.5068052799823634,
+            0.4876109808401475,
+            0.4950871813371814,
+            0.4923560756373257,
+            0.5265662578162579,
+            0.5097120761183261,
+            0.47824645262145266,
+            0.47397796792328045,
+            0.5158741432178932
+          ],
+          "before_interval": [
+            0.4947331016352556,
+            0.5351745214326101
+          ]
+        },
+        "value_mae": {
+          "after": 4.3523752251185455,
+          "after_family": [
+            5.053730657735115,
+            3.1010943598521945,
+            5.861064714680886,
+            4.034630558327514,
+            4.030530136621224,
+            4.778455548085716,
+            3.450574589067873,
+            5.557953182715212,
+            4.082347898241626,
+            3.552634879822698,
+            4.814921155011221,
+            3.910565021261263
+          ],
+          "after_interval": [
+            3.875635207515671,
+            4.824402440974591
+          ],
+          "after_minus_before_interval": [
+            -0.8273332047094408,
+            -0.3926898003887116
+          ],
+          "before": 4.966001157407408,
+          "before_family": [
+            6.342013888888889,
+            3.640625,
+            6.596354166666667,
+            3.9262152777777772,
+            4.4131944444444455,
+            5.427951388888888,
+            4.490451388888889,
+            6.707465277777779,
+            4.504340277777778,
+            3.712673611111111,
+            5.415798611111111,
+            4.414930555555556
+          ],
+          "before_interval": [
+            4.353562644675926,
+            5.577879050925924
+          ]
+        },
+        "whole_parent_after": 0.0,
+        "whole_parent_before": 0.0
+      }
+    },
+    "llama8b": {
+      "hidden": {
+        "parent_accuracy": {
+          "after": 0.2601273148148148,
+          "after_family": [
+            0.1636284722222222,
+            0.48090277777777773,
+            0.36154513888888884,
+            0.19748263888888887,
+            0.4006076388888889,
+            0.24479166666666666,
+            0.11458333333333333,
+            0.07942708333333333,
+            0.26171875,
+            0.1957465277777778,
+            0.3680555555555555,
+            0.2530381944444444
+          ],
+          "after_interval": [
+            0.1929154007523148,
+            0.32219780815972215
+          ],
+          "after_minus_before_interval": [
+            -0.007632559317129659,
+            0.04200032552083327
+          ],
+          "before": 0.24341724537037038,
+          "before_family": [
+            0.22178819444444445,
+            0.4383680555555556,
+            0.2578125,
+            0.16232638888888887,
+            0.3229166666666667,
+            0.21527777777777776,
+            0.07899305555555557,
+            0.09418402777777778,
+            0.25347222222222227,
+            0.22222222222222224,
+            0.390625,
+            0.2630208333333333
+          ],
+          "before_interval": [
+            0.18532624421296298,
+            0.29945746527777767
+          ]
+        },
+        "parent_prior_before": 0.2569444444444444,
+        "relation_balanced_accuracy": {
+          "after": 0.530663150280614,
+          "after_family": [
+            0.5195320641935226,
+            0.6690330461222981,
+            0.5535698502886003,
+            0.5151520475088184,
+            0.4896237298581048,
+            0.4998920003607504,
+            0.49166507585778413,
+            0.5548054954304954,
+            0.5340791659151034,
+            0.5322561177248677,
+            0.5013754546957672,
+            0.5069737554112554
+          ],
+          "after_interval": [
+            0.508568469017118,
+            0.5605556326643318
+          ],
+          "after_minus_before_interval": [
+            -0.026772639854865953,
+            -0.0009176382578889599
+          ],
+          "before": 0.5431380740216165,
+          "before_family": [
+            0.5297512576158411,
+            0.7449462751842013,
+            0.5663002795815296,
+            0.5071553518819144,
+            0.5196358425525092,
+            0.5099047017797018,
+            0.4931996740720699,
+            0.5608278657106783,
+            0.5623493115680617,
+            0.5194325321669072,
+            0.5004660631613757,
+            0.503687732984608
+          ],
+          "before_interval": [
+            0.5140704182538223,
+            0.5855690488310857
+          ]
+        },
+        "value_mae": {
+          "after": 4.237725933722748,
+          "after_family": [
+            5.133574331562414,
+            3.239000833727274,
+            4.941959301433028,
+            4.014121293042802,
+            3.6614159225389744,
+            5.139661887255614,
+            3.271649615317753,
+            5.528903406020956,
+            3.6767053935125484,
+            3.570934340170847,
+            4.755812550415773,
+            3.9189723296749954
+          ],
+          "after_interval": [
+            3.780589126254849,
+            4.670893401193099
+          ],
+          "after_minus_before_interval": [
+            -0.6894542062478057,
+            -0.28698639465135495
+          ],
+          "before": 4.719328703703703,
+          "before_family": [
+            5.6171875,
+            3.387152777777778,
+            6.152777777777778,
+            4.585069444444444,
+            4.515625,
+            5.363715277777778,
+            4.096354166666667,
+            5.652777777777778,
+            3.828125,
+            4.395833333333333,
+            5.072916666666667,
+            3.964409722222222
+          ],
+          "before_interval": [
+            4.240923394097222,
+            5.1974862557870365
+          ]
+        },
+        "whole_parent_after": 0.0,
+        "whole_parent_before": 0.0
+      },
+      "source": {
+        "parent_accuracy": {
+          "after": 0.22157118055555555,
+          "after_family": [
+            0.125,
+            0.25,
+            0.25,
+            0.3532986111111111,
+            0.3294270833333333,
+            0.0,
+            0.3350694444444444,
+            0.0625,
+            0.2035590277777778,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "after_interval": [
+            0.1584499782986111,
+            0.2790174696180555
+          ],
+          "after_minus_before_interval": [
+            0.0,
+            0.0
+          ],
+          "before": 0.22157118055555555,
+          "before_family": [
+            0.125,
+            0.25,
+            0.25,
+            0.3532986111111111,
+            0.3294270833333333,
+            0.0,
+            0.3350694444444444,
+            0.0625,
+            0.2035590277777778,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "before_interval": [
+            0.1584499782986111,
+            0.2790174696180555
+          ]
+        },
+        "parent_prior_before": 0.2569444444444444,
+        "relation_balanced_accuracy": {
+          "after": 0.5143772152137052,
+          "after_family": [
+            0.4781635802469136,
+            0.6125178581677161,
+            0.5307517135642136,
+            0.4836383114377906,
+            0.5212768182820267,
+            0.48575426887926887,
+            0.49495261393698886,
+            0.5119781332671959,
+            0.5244491041366042,
+            0.5059233706108706,
+            0.4930013490560366,
+            0.530119460978836
+          ],
+          "after_interval": [
+            0.49744268265492236,
+            0.5366224336629658
+          ],
+          "after_minus_before_interval": [
+            -0.022948407909806557,
+            0.011355704431979814
+          ],
+          "before": 0.5185892938087738,
+          "before_family": [
+            0.4820947257796216,
+            0.6260424865538502,
+            0.5999742965367966,
+            0.5046020723104058,
+            0.48933331329164664,
+            0.48849642255892256,
+            0.49679915474186304,
+            0.5670431998557,
+            0.509781032046657,
+            0.47472447691197694,
+            0.4705631463443964,
+            0.5136171987734488
+          ],
+          "before_interval": [
+            0.4931991711118502,
+            0.5475697922381679
+          ]
+        },
+        "value_mae": {
+          "after": 4.359915021147424,
+          "after_family": [
+            5.082286726625963,
+            3.150802761199454,
+            5.8450570132120205,
+            4.033080344398505,
+            4.05565414121815,
+            4.8018242002067035,
+            3.379915270920007,
+            5.55584581954001,
+            4.167365746686156,
+            3.5676994745846407,
+            4.755369706735885,
+            3.924079048441594
+          ],
+          "after_interval": [
+            3.883631714250904,
+            4.829962558325626
+          ],
+          "after_minus_before_interval": [
+            -0.8682606801034604,
+            -0.2762512648183652
+          ],
+          "before": 4.943359375,
+          "before_family": [
+            6.568576388888889,
+            3.717013888888889,
+            6.777777777777778,
+            3.8038194444444446,
+            3.9375,
+            5.333333333333333,
+            4.214409722222222,
+            6.881076388888889,
+            4.340277777777778,
+            3.7465277777777772,
+            5.520833333333333,
+            4.479166666666667
+          ],
+          "before_interval": [
+            4.267641420717593,
+            5.625591362847222
+          ]
+        },
+        "whole_parent_after": 0.0,
+        "whole_parent_before": 0.0
+      }
+    }
+  },
+  "cv_fits_reused": 90,
+  "evaluation_role": "arithmetic_probe_postrun_comparison_v1",
+  "inputs": {
+    "codellama34b_hidden_seed11_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/site2_hidden_seed11_scores.npz",
+      "sha256": "6374fd840a3e1ae5362a6d955dc73f06c2e99947f92e7ed5b0579212388de242"
+    },
+    "codellama34b_hidden_seed29_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/site2_hidden_seed29_scores.npz",
+      "sha256": "23ee2e4a78ccf457bff675f11cc225333410dd982e18ff8a280f57c703cf97c3"
+    },
+    "codellama34b_hidden_seed47_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/site2_hidden_seed47_scores.npz",
+      "sha256": "56a63e67f530d47f3af06498a93d1d4aa01e395ac32c46683df2486cf4c39d43"
+    },
+    "codellama34b_original": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/results.json",
+      "sha256": "34153c0a228496954cd75d0ee2d0154dc1d239eeb9c968f8022fd1c32868d331"
+    },
+    "codellama34b_revised": {
+      "path": "artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b/results.json",
+      "sha256": "e4de2cf1433c8a2a178b17887369e3b54e337d071da0d0de4f7e065eb9c65e00"
+    },
+    "codellama34b_source_seed11_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/site2_source_seed11_scores.npz",
+      "sha256": "95b8197802767c0e29c45e916d6e718b1cc33d7e58d54d50dc55a9f23ea77bab"
+    },
+    "codellama34b_source_seed29_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/site2_source_seed29_scores.npz",
+      "sha256": "ae2d915130145e0dece93bd89d4f50ecfa92894c87de195854a5a93b14d46fdd"
+    },
+    "codellama34b_source_seed47_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/site2_source_seed47_scores.npz",
+      "sha256": "b0fa870140f21464efe97cedf8b548668f75be4139f7bf9df0579ebe724699a3"
+    },
+    "llama8b_hidden_seed11_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/site2_hidden_seed11_scores.npz",
+      "sha256": "0eb19a5a7a0f0eb571c8c5bb3ef6dde2168f1b4e7c9b7c563cb976f4f1269e50"
+    },
+    "llama8b_hidden_seed29_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/site2_hidden_seed29_scores.npz",
+      "sha256": "2447e210318fef3d28111241e38f0ab49cd4abf7f4c160a8dec8ba9016bbdd60"
+    },
+    "llama8b_hidden_seed47_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/site2_hidden_seed47_scores.npz",
+      "sha256": "74f08f5205dfddf5834c884eef2c0def7346b0f24794ed1b96ae7477ca263453"
+    },
+    "llama8b_original": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/results.json",
+      "sha256": "b7a4ed9c159caf0e3123b977efa104012f2d1a735babbe777bec3b3407d58470"
+    },
+    "llama8b_revised": {
+      "path": "artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b/results.json",
+      "sha256": "5603300b04d1e054d0cab8592bf079775aaf3124d4b6962bd1de4d7c8b15c490"
+    },
+    "llama8b_source_seed11_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/site2_source_seed11_scores.npz",
+      "sha256": "edb81eef11f56774a542abf0e4d4de6e628b0590983158ea03fa4741d57172cc"
+    },
+    "llama8b_source_seed29_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/site2_source_seed29_scores.npz",
+      "sha256": "f6e7744d0c22ea2510838ec1b3f2970ed5b7a754a0c42d05ca6b099b42a1a9fd"
+    },
+    "llama8b_source_seed47_original_scores": {
+      "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/site2_source_seed47_scores.npz",
+      "sha256": "a1d63301f688d68634f986d7761e46445f1303171371dc8d5afed9867e19f435"
+    }
+  },
+  "limitations": "Previously inspected12 DEV families; adaptive discovery. Relation aggregation aligned to family macro. Numeric target encoding changed.",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "renderer": {
+    "path": "scripts/183_binding_probe_selection_report.py",
+    "sha256": "b0fd648ed0d9cb165e923817a49090562480d2d5994233ada44f86d926ee5b5c"
+  },
+  "status": "complete_exploratory"
+}

@@ -1,0 +1,887 @@
+{
+  "config_hash": "b9ebc8120ef75f435d899bbc8d2782df9aec82202d6a4b0454c0ae7505a4a108",
+  "fit_groups": [
+    "arithmetic-graph:10b5c9c45576520b04baab48",
+    "arithmetic-graph:120e790005954852ea4bdf84",
+    "arithmetic-graph:34a92c97a6cc1d2f74593420",
+    "arithmetic-graph:37123bdb1ddd915233d8b5f9",
+    "arithmetic-graph:3719d98d6f3b69741bc20782",
+    "arithmetic-graph:3721d0da0e7560df76522290",
+    "arithmetic-graph:399a8fbf199f001898569065",
+    "arithmetic-graph:46088cabb419523af98b92ac",
+    "arithmetic-graph:58ad7990c2d29f505872c499",
+    "arithmetic-graph:60d8f4c3301b959b22112687",
+    "arithmetic-graph:612ad8065e86f3b147a66538",
+    "arithmetic-graph:62583aa5430a17bceaecb204",
+    "arithmetic-graph:6d45c24f53b0175f8a8b0717",
+    "arithmetic-graph:79bb3db2b75c8f11db130880",
+    "arithmetic-graph:7b26bac77e0dccbe77cf9e6e",
+    "arithmetic-graph:98066625eaa939bcc486e00a",
+    "arithmetic-graph:9e735828b81533e8c8773b25",
+    "arithmetic-graph:af7266be564bc1e38e33fdf9",
+    "arithmetic-graph:b59bc20ef0ddc036a48e1348",
+    "arithmetic-graph:d003a81657097017fd18c9b5",
+    "arithmetic-graph:d64c8d4f36ccd7151d69c6a9",
+    "arithmetic-graph:e5d90dc293bf4cd7a0408d51",
+    "arithmetic-graph:eb707ee8a5798760f54dc55f",
+    "arithmetic-graph:f6b65ca266472d0031641094"
+  ],
+  "records": [
+    {
+      "alpha": 1.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.13802083333333334,
+            "relation_balanced_accuracy": 0.5121659301346801,
+            "value_negative_mae": -4.497968731314661
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.17708333333333334,
+            "relation_balanced_accuracy": 0.5130983382936508,
+            "value_negative_mae": -3.4895731074116974
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.11979166666666667,
+            "relation_balanced_accuracy": 0.5022524350649351,
+            "value_negative_mae": -3.758564173602642
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.23697916666666666,
+            "relation_balanced_accuracy": 0.5070461309523809,
+            "value_negative_mae": -3.702754484866509
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.2916666666666667,
+            "relation_balanced_accuracy": 0.5066516166125541,
+            "value_negative_mae": -3.6136916198397784
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.29296875,
+            "relation_balanced_accuracy": 0.5347526605339106,
+            "value_negative_mae": -4.144052862186032
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.19921875,
+            "relation_balanced_accuracy": 0.49909102182539683,
+            "value_negative_mae": -2.615789970884547
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.14583333333333334,
+            "relation_balanced_accuracy": 0.5187967848124099,
+            "value_negative_mae": -3.6996604863749134
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.23697916666666666,
+            "relation_balanced_accuracy": 0.4997626939033189,
+            "value_negative_mae": -5.014606916192207
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.2786458333333333,
+            "relation_balanced_accuracy": 0.5042765827922078,
+            "value_negative_mae": -3.7505920220139912
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.07421875,
+            "relation_balanced_accuracy": 0.4743545011123136,
+            "value_negative_mae": -4.299897444336108
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.4036458333333333,
+            "relation_balanced_accuracy": 0.500350134529822,
+            "value_negative_mae": -3.9356869316051095
+          }
+        ],
+        "parent_accuracy": 0.2162543402777778,
+        "relation_balanced_accuracy": 0.5060499025472983,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.08441840277777778,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5081126038736578,
+        "value_negative_mae": -3.876903229219016,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0008680555555555555
+      },
+      "rank": 32,
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 1.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.2604166666666667,
+            "relation_balanced_accuracy": 0.513247711489899,
+            "value_negative_mae": -4.8399628194338105
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.18098958333333334,
+            "relation_balanced_accuracy": 0.5247463474025974,
+            "value_negative_mae": -4.134317906921267
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.20703125,
+            "relation_balanced_accuracy": 0.491390523538961,
+            "value_negative_mae": -4.125122128267635
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.2799479166666667,
+            "relation_balanced_accuracy": 0.5042373511904762,
+            "value_negative_mae": -3.7491917224493903
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.20703125,
+            "relation_balanced_accuracy": 0.5194001961580086,
+            "value_negative_mae": -3.612642340955691
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.31640625,
+            "relation_balanced_accuracy": 0.5683577779280904,
+            "value_negative_mae": -4.5699539851007485
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.18359375,
+            "relation_balanced_accuracy": 0.4857818136724387,
+            "value_negative_mae": -3.0686967115455523
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.3294270833333333,
+            "relation_balanced_accuracy": 0.5137407369829246,
+            "value_negative_mae": -4.346065004581431
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.3307291666666667,
+            "relation_balanced_accuracy": 0.5070461873196248,
+            "value_negative_mae": -4.545464260019283
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.11458333333333333,
+            "relation_balanced_accuracy": 0.5302196631493507,
+            "value_negative_mae": -3.890766227750874
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.16276041666666666,
+            "relation_balanced_accuracy": 0.4948314995189996,
+            "value_negative_mae": -4.003277292458003
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.40625,
+            "relation_balanced_accuracy": 0.49756531084656086,
+            "value_negative_mae": -3.8876414354998983
+          }
+        ],
+        "parent_accuracy": 0.24826388888888887,
+        "relation_balanced_accuracy": 0.5125470932664943,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.080078125,
+        "rounded_value_derived_relation_balanced_accuracy": 0.499843333255484,
+        "value_negative_mae": -4.064425152915299,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0
+      },
+      "rank": 128,
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 1.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.2604166666666667,
+            "relation_balanced_accuracy": 0.5152856691919191,
+            "value_negative_mae": -7.469242752741053
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.14583333333333334,
+            "relation_balanced_accuracy": 0.5257575757575758,
+            "value_negative_mae": -7.256981010517815
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.23828125,
+            "relation_balanced_accuracy": 0.5547250217953343,
+            "value_negative_mae": -6.0181841807573475
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.3125,
+            "relation_balanced_accuracy": 0.4783590367965368,
+            "value_negative_mae": -6.659908972759408
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.24348958333333334,
+            "relation_balanced_accuracy": 0.5030049377705628,
+            "value_negative_mae": -9.105440132490664
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.3190104166666667,
+            "relation_balanced_accuracy": 0.5411653739778739,
+            "value_negative_mae": -6.9404732757618826
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.16145833333333334,
+            "relation_balanced_accuracy": 0.47732977092352097,
+            "value_negative_mae": -5.187820174100056
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.2955729166666667,
+            "relation_balanced_accuracy": 0.5007226656445407,
+            "value_negative_mae": -7.108013220832607
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.2994791666666667,
+            "relation_balanced_accuracy": 0.46822803932178925,
+            "value_negative_mae": -7.065605286503591
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.06770833333333333,
+            "relation_balanced_accuracy": 0.5597866499819625,
+            "value_negative_mae": -7.254136206965877
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.18098958333333334,
+            "relation_balanced_accuracy": 0.5161047791907167,
+            "value_negative_mae": -7.947745413156068
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.4505208333333333,
+            "relation_balanced_accuracy": 0.4958655566077441,
+            "value_negative_mae": -7.77453611098701
+          }
+        ],
+        "parent_accuracy": 0.24793836805555558,
+        "relation_balanced_accuracy": 0.5113612564133397,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.04709201388888889,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5041269481566186,
+        "value_negative_mae": -7.149007228131115,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0
+      },
+      "rank": "full",
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 100.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.13932291666666666,
+            "relation_balanced_accuracy": 0.5121659301346801,
+            "value_negative_mae": -4.498143978433603
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.17708333333333334,
+            "relation_balanced_accuracy": 0.5124472966269842,
+            "value_negative_mae": -3.489648923571798
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.11848958333333333,
+            "relation_balanced_accuracy": 0.5022524350649351,
+            "value_negative_mae": -3.7584544859587
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.23697916666666666,
+            "relation_balanced_accuracy": 0.5070461309523809,
+            "value_negative_mae": -3.703043791375199
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.2916666666666667,
+            "relation_balanced_accuracy": 0.5066516166125541,
+            "value_negative_mae": -3.612965378381801
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.29296875,
+            "relation_balanced_accuracy": 0.5347526605339106,
+            "value_negative_mae": -4.143245270069234
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.19921875,
+            "relation_balanced_accuracy": 0.4995374503968254,
+            "value_negative_mae": -2.615420251373257
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.14583333333333334,
+            "relation_balanced_accuracy": 0.5191688086219336,
+            "value_negative_mae": -3.699652610598276
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.23697916666666666,
+            "relation_balanced_accuracy": 0.4997626939033189,
+            "value_negative_mae": -5.015130573368832
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.2786458333333333,
+            "relation_balanced_accuracy": 0.5042765827922078,
+            "value_negative_mae": -3.7502314956058456
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.07421875,
+            "relation_balanced_accuracy": 0.4743545011123136,
+            "value_negative_mae": -4.299046536250362
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.4036458333333333,
+            "relation_balanced_accuracy": 0.49948207897426655,
+            "value_negative_mae": -3.9351758099392504
+          }
+        ],
+        "parent_accuracy": 0.2162543402777778,
+        "relation_balanced_accuracy": 0.5059915154771927,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.08441840277777778,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5082825186300668,
+        "value_negative_mae": -3.8766799254105124,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0008680555555555555
+      },
+      "rank": 32,
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 100.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.2565104166666667,
+            "relation_balanced_accuracy": 0.5133562184343434,
+            "value_negative_mae": -4.826651798135257
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.18098958333333334,
+            "relation_balanced_accuracy": 0.524420826569264,
+            "value_negative_mae": -4.1192931320965265
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.20572916666666666,
+            "relation_balanced_accuracy": 0.491390523538961,
+            "value_negative_mae": -4.117737190604975
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.28125,
+            "relation_balanced_accuracy": 0.5043202110389611,
+            "value_negative_mae": -3.747265223029881
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.20703125,
+            "relation_balanced_accuracy": 0.5188793628246753,
+            "value_negative_mae": -3.6014901383702718
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.3177083333333333,
+            "relation_balanced_accuracy": 0.5679237501503127,
+            "value_negative_mae": -4.561367503709824
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.18619791666666666,
+            "relation_balanced_accuracy": 0.4851568136724387,
+            "value_negative_mae": -3.064013824419066
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.3294270833333333,
+            "relation_balanced_accuracy": 0.5128478798400673,
+            "value_negative_mae": -4.33243824563213
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.3307291666666667,
+            "relation_balanced_accuracy": 0.5065253539862914,
+            "value_negative_mae": -4.540451430660609
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.1171875,
+            "relation_balanced_accuracy": 0.5306536909271284,
+            "value_negative_mae": -3.882556528130776
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.16276041666666666,
+            "relation_balanced_accuracy": 0.4948314995189996,
+            "value_negative_mae": -3.996524467466358
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.4036458333333333,
+            "relation_balanced_accuracy": 0.4992797205687831,
+            "value_negative_mae": -3.878193052227681
+          }
+        ],
+        "parent_accuracy": 0.24826388888888887,
+        "relation_balanced_accuracy": 0.5124654875891856,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.080078125,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5004565421364467,
+        "value_negative_mae": -4.055665211206946,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0
+      },
+      "rank": 128,
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 100.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.3072916666666667,
+            "relation_balanced_accuracy": 0.5037661773989899,
+            "value_negative_mae": -5.734748597386869
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.15755208333333334,
+            "relation_balanced_accuracy": 0.533522445436508,
+            "value_negative_mae": -5.435265170605706
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.24348958333333334,
+            "relation_balanced_accuracy": 0.5487849476911976,
+            "value_negative_mae": -4.866960545600002
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.328125,
+            "relation_balanced_accuracy": 0.5118919101731602,
+            "value_negative_mae": -4.837816213749053
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.2630208333333333,
+            "relation_balanced_accuracy": 0.5112647118506494,
+            "value_negative_mae": -5.069776957524453
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.3580729166666667,
+            "relation_balanced_accuracy": 0.5786522216209716,
+            "value_negative_mae": -5.893429678340952
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.171875,
+            "relation_balanced_accuracy": 0.4845226821789322,
+            "value_negative_mae": -4.036041964450656
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.30078125,
+            "relation_balanced_accuracy": 0.5070338992604617,
+            "value_negative_mae": -5.549154122565362
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.3190104166666667,
+            "relation_balanced_accuracy": 0.49256713338744584,
+            "value_negative_mae": -5.19877525276788
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.08203125,
+            "relation_balanced_accuracy": 0.5960830402236653,
+            "value_negative_mae": -4.4662479064345675
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.22135416666666666,
+            "relation_balanced_accuracy": 0.48835208483645987,
+            "value_negative_mae": -6.036128241616194
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.42578125,
+            "relation_balanced_accuracy": 0.48876281415343914,
+            "value_negative_mae": -6.275369909153365
+          }
+        ],
+        "parent_accuracy": 0.2648654513888889,
+        "relation_balanced_accuracy": 0.52043367235099,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.06141493055555555,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5086495151351839,
+        "value_negative_mae": -5.283309546682921,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0
+      },
+      "rank": "full",
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 10000.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.14192708333333334,
+            "relation_balanced_accuracy": 0.5069608848905724,
+            "value_negative_mae": -4.515404218231093
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.1640625,
+            "relation_balanced_accuracy": 0.5115172371031746,
+            "value_negative_mae": -3.4966602187756064
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.11588541666666667,
+            "relation_balanced_accuracy": 0.4950791396103896,
+            "value_negative_mae": -3.750397949300972
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.234375,
+            "relation_balanced_accuracy": 0.5064918154761905,
+            "value_negative_mae": -3.7298167827188853
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.3072916666666667,
+            "relation_balanced_accuracy": 0.507903814935065,
+            "value_negative_mae": -3.553372191412761
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.2903645833333333,
+            "relation_balanced_accuracy": 0.5265568632756132,
+            "value_negative_mae": -4.072852817633815
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.19791666666666666,
+            "relation_balanced_accuracy": 0.5010776289682539,
+            "value_negative_mae": -2.587409664165947
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.13932291666666666,
+            "relation_balanced_accuracy": 0.5166086084054835,
+            "value_negative_mae": -3.703339389596845
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.23567708333333334,
+            "relation_balanced_accuracy": 0.5040544958513709,
+            "value_negative_mae": -5.065058228951864
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.2734375,
+            "relation_balanced_accuracy": 0.4937742379148629,
+            "value_negative_mae": -3.724578240916291
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.0703125,
+            "relation_balanced_accuracy": 0.475431960978836,
+            "value_negative_mae": -4.226205517554017
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.3997395833333333,
+            "relation_balanced_accuracy": 0.49698247354497355,
+            "value_negative_mae": -3.8916556149578896
+          }
+        ],
+        "parent_accuracy": 0.21419270833333334,
+        "relation_balanced_accuracy": 0.5035365967462322,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.07855902777777778,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5104822212455973,
+        "value_negative_mae": -3.859729236184666,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.001736111111111111
+      },
+      "rank": 32,
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 10000.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.23177083333333334,
+            "relation_balanced_accuracy": 0.49570246738215484,
+            "value_negative_mae": -4.410054504226671
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.18880208333333334,
+            "relation_balanced_accuracy": 0.522461783008658,
+            "value_negative_mae": -3.5797023203330496
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.19140625,
+            "relation_balanced_accuracy": 0.49308204816017315,
+            "value_negative_mae": -3.8133551380787885
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.2669270833333333,
+            "relation_balanced_accuracy": 0.5076386634199134,
+            "value_negative_mae": -3.683915738664421
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.23828125,
+            "relation_balanced_accuracy": 0.5240699404761905,
+            "value_negative_mae": -3.3170390219030033
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.3111979166666667,
+            "relation_balanced_accuracy": 0.524556671626984,
+            "value_negative_mae": -4.218086245573004
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.19401041666666666,
+            "relation_balanced_accuracy": 0.48880535263347763,
+            "value_negative_mae": -2.850639620744426
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.2578125,
+            "relation_balanced_accuracy": 0.5134243288540163,
+            "value_negative_mae": -3.864157383260576
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.2825520833333333,
+            "relation_balanced_accuracy": 0.5045169890873016,
+            "value_negative_mae": -4.561735683231611
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.17317708333333334,
+            "relation_balanced_accuracy": 0.5181116409632034,
+            "value_negative_mae": -3.48208422537031
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.09244791666666667,
+            "relation_balanced_accuracy": 0.47715708047739297,
+            "value_negative_mae": -3.8617614700650904
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.4049479166666667,
+            "relation_balanced_accuracy": 0.4776713376322751,
+            "value_negative_mae": -3.6225109711492163
+          }
+        ],
+        "parent_accuracy": 0.23611111111111113,
+        "relation_balanced_accuracy": 0.5039331919768117,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.09223090277777778,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5047813061579025,
+        "value_negative_mae": -3.7720868602166804,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0008680555555555555
+      },
+      "rank": 128,
+      "representation": "hidden_layer_16",
+      "seed": 29
+    },
+    {
+      "alpha": 10000.0,
+      "fold": 0,
+      "metrics": {
+        "family_metrics": [
+          {
+            "group": "arithmetic-graph:0663c79adb93eff5b2559789",
+            "parent_accuracy": 0.25390625,
+            "relation_balanced_accuracy": 0.48918876262626265,
+            "value_negative_mae": -4.366503645915233
+          },
+          {
+            "group": "arithmetic-graph:0aec5804d2da11f5463e1002",
+            "parent_accuracy": 0.18619791666666666,
+            "relation_balanced_accuracy": 0.522361167478355,
+            "value_negative_mae": -3.6074005091130794
+          },
+          {
+            "group": "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+            "parent_accuracy": 0.20442708333333334,
+            "relation_balanced_accuracy": 0.5126598011363637,
+            "value_negative_mae": -3.8698079793110622
+          },
+          {
+            "group": "arithmetic-graph:23f4605c78071266d8434eb0",
+            "parent_accuracy": 0.2526041666666667,
+            "relation_balanced_accuracy": 0.5113200081168832,
+            "value_negative_mae": -3.6164869016446164
+          },
+          {
+            "group": "arithmetic-graph:4ee3935c88844c68c0b39c55",
+            "parent_accuracy": 0.24348958333333334,
+            "relation_balanced_accuracy": 0.5203683035714286,
+            "value_negative_mae": -3.328252434070656
+          },
+          {
+            "group": "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+            "parent_accuracy": 0.3294270833333333,
+            "relation_balanced_accuracy": 0.5285728377525253,
+            "value_negative_mae": -4.270681683165297
+          },
+          {
+            "group": "arithmetic-graph:5c962bc3e1da02bb9696a400",
+            "parent_accuracy": 0.18619791666666666,
+            "relation_balanced_accuracy": 0.4853070887445888,
+            "value_negative_mae": -2.900171370788751
+          },
+          {
+            "group": "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+            "parent_accuracy": 0.2786458333333333,
+            "relation_balanced_accuracy": 0.518244197931698,
+            "value_negative_mae": -3.903146696668236
+          },
+          {
+            "group": "arithmetic-graph:84e223329adc551f2e672c21",
+            "parent_accuracy": 0.29296875,
+            "relation_balanced_accuracy": 0.5062313988095238,
+            "value_negative_mae": -4.47532569841358
+          },
+          {
+            "group": "arithmetic-graph:91d5fd624e9649dde1a3481d",
+            "parent_accuracy": 0.17578125,
+            "relation_balanced_accuracy": 0.5245634356962482,
+            "value_negative_mae": -3.2581297432656147
+          },
+          {
+            "group": "arithmetic-graph:b954bc663e9628035df33712",
+            "parent_accuracy": 0.1015625,
+            "relation_balanced_accuracy": 0.4804350235990861,
+            "value_negative_mae": -3.8792154172148536
+          },
+          {
+            "group": "arithmetic-graph:d3aae600bf37aa037ac1dfd6",
+            "parent_accuracy": 0.4140625,
+            "relation_balanced_accuracy": 0.47445953207671954,
+            "value_negative_mae": -3.680623114393787
+          }
+        ],
+        "parent_accuracy": 0.24327256944444442,
+        "relation_balanced_accuracy": 0.5061426297949736,
+        "relation_supported_cells": 48,
+        "rounded_value_accuracy": 0.09613715277777778,
+        "rounded_value_derived_relation_balanced_accuracy": 0.5048618557837824,
+        "value_negative_mae": -3.76297876616373,
+        "whole_parent_accuracy": 0.0,
+        "whole_rounded_state_accuracy": 0.0008680555555555555
+      },
+      "rank": "full",
+      "representation": "hidden_layer_16",
+      "seed": 29
+    }
+  ],
+  "reused_from": {
+    "config_hash": "6db5f29028c3485df568eb2cfa86931e3ca3f1c3b00cb9601305d6fb0657f501",
+    "path": "artifacts/binding/arithmetic_probe_selection/20261030_v1/llama8b/cv_hidden_layer_16_fold0_seed29.json",
+    "sha256": "faba4db44c158c2c2e778db6046479b69caa0f7681681d8f068b167a5757c103",
+    "source": {
+      "frozen_manifest_sha256": "758a1c786fd20f616d665d33fce775bbf298db07101a532c3d7541eb05f1e1db",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e6a5d626220a4e24b09d3576",
+      "snapshot_id": "e6a5d626220a4e24b09d3576",
+      "source_sha256": "f196946ad60e3c3291da70ecda053fd32be700caaae0559508bf1596cc506aa7"
+    }
+  },
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  },
+  "status": "complete_exploratory",
+  "training_hashes": {
+    "features": "ac38f6dffcb51a0603816ccbb9721b6e930df7a9a64c33b7fde76b9102a3bca6",
+    "sample_weight": "ec91a5497dea2cde5e1252fbbade5bd4976eacc3b9dbc4f53b396acd247ee9f4",
+    "targets": "a4ebba8e21bf02c0b9e41c5609665f43dbb26f9e9a5f9f143a13e83e276fd48d"
+  },
+  "validation_groups": [
+    "arithmetic-graph:0663c79adb93eff5b2559789",
+    "arithmetic-graph:0aec5804d2da11f5463e1002",
+    "arithmetic-graph:1d89dcb45f8166e1290f2a53",
+    "arithmetic-graph:23f4605c78071266d8434eb0",
+    "arithmetic-graph:4ee3935c88844c68c0b39c55",
+    "arithmetic-graph:5be45e3fcccd3b4419bb105b",
+    "arithmetic-graph:5c962bc3e1da02bb9696a400",
+    "arithmetic-graph:61dd7b1b786525ea9b1a8c28",
+    "arithmetic-graph:84e223329adc551f2e672c21",
+    "arithmetic-graph:91d5fd624e9649dde1a3481d",
+    "arithmetic-graph:b954bc663e9628035df33712",
+    "arithmetic-graph:d3aae600bf37aa037ac1dfd6"
+  ]
+}
