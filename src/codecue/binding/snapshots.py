@@ -52,7 +52,13 @@ SCRIPT_NAMES = ('87_binding_preflight.py', '88_binding_pipeline.py', '89_binding
                 '171_binding_arithmetic_graph_setup.py',
                 '172_binding_arithmetic_graph_review.py',
                 '173_binding_arithmetic_prompt_behavior.py',
-                '174_binding_arithmetic_prompt_suite.py')
+                '174_binding_arithmetic_prompt_suite.py',
+                '176_binding_arithmetic_probe_selection.py',
+                '177_binding_arithmetic_local_capture.py',
+                '178_binding_arithmetic_local_probes.py',
+                '179_binding_arithmetic_local_behavior.py',
+                '180_binding_arithmetic_local_suite.py',
+                '181_binding_probe_improvement_setup.py')
 
 
 def source_files(root):

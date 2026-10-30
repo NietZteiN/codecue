@@ -1,0 +1,25 @@
+{
+  "status": "submitted",
+  "source": {
+    "code": "f196946ad60e3c3291da70ecda053fd32be700caaae0559508bf1596cc506aa7",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e6a5d626220a4e24b09d3576",
+    "snapshot_id": "e6a5d626220a4e24b09d3576"
+  },
+  "jobs": [
+    {
+      "key": "software_validation",
+      "job_id": "484953"
+    },
+    {
+      "key": "llama8b",
+      "job_id": "484954",
+      "dependency": "afterok:484953"
+    },
+    {
+      "key": "codellama34b",
+      "job_id": "484955",
+      "dependency": "afterok:484953"
+    }
+  ],
+  "new_model_queries": 0
+}

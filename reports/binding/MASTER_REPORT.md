@@ -1,5 +1,7 @@
 # Master research document
 
+October30 probe revision: [implementation, source expansion and submitted experiments](arithmetic_probe_improvement_launch_v1.md). TRAIN-only layer/regularization/rank selection and shared local dependency scorers are implemented; original negative findings remain preserved.
+
 October30 operational follow-up: [debug pass and scheduled monitoring](operations_debug_20261030_v1.md). Saved readout and prompt-control artifacts passed their audits; logger freshness detection was fixed and verified with 54 tests.
 
 Morning follow-up, October30: [review and next decisions](arithmetic_graph_morning_decision_v1.md), [probe TRAIN/DEV audit](arithmetic_graph_morning_review_v2.md), and [completed printed-query controls](arithmetic_prompt_control_findings_v1.md). The replay is exact; probe generalization and arithmetic competence remain unresolved.

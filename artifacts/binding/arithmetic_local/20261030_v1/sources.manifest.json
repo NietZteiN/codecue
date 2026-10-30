@@ -1,0 +1,35 @@
+{
+  "canonical_split_overlap": 0,
+  "evaluation_role": "discovery_arithmetic_local_sources_v1",
+  "exact_body_overlap": 0,
+  "family_strata": {
+    "depth1_addition": 54,
+    "depth1_subtraction": 54,
+    "depth2_addition": 576,
+    "depth2_mixed": 576,
+    "depth2_subtraction": 576,
+    "depth4_addition": 576,
+    "depth4_mixed": 576,
+    "depth4_subtraction": 576,
+    "depth6_addition": 576,
+    "depth6_mixed": 576,
+    "depth6_subtraction": 576
+  },
+  "generated_holdouts_opened": false,
+  "independent_python_passed": true,
+  "limitations": "Adaptive discovery. Canonical grouping quotients slot renaming, not every semantic equivalence. One-update calibration is excluded from all probe fits; supplied source spans do not establish node discovery.",
+  "original_canonical_overlap": 0,
+  "rows": 5292,
+  "sha256": "7d4a1261da83e68ce0e95f17bb9be5ad658b728d42c4c8810c03f82f5ae40ca9",
+  "split_families": {
+    "calibration": 6,
+    "development": 72,
+    "train": 216
+  },
+  "split_rows": {
+    "calibration": 108,
+    "development": 1296,
+    "train": 3888
+  },
+  "status": "passed"
+}

@@ -1,0 +1,24 @@
+{
+  "alphas": [
+    1.0,
+    100.0,
+    10000.0
+  ],
+  "capture_config": "configs/binding/arithmetic_graph_20261029_v3/codellama34b_capture.json",
+  "capture_config_sha256": "81ee5c91db2a8beb9e2c5d44eee9965e1a8abb0f16d680f8a1b889e02f32e5e6",
+  "declared_plan": "reports/binding/arithmetic_probe_improvement_plan_v1.md",
+  "declared_plan_sha256": "f5982ccd222c593c0e24f803c5a11f493547ad37c086c9c3e4d9c1fcc22d700b",
+  "evaluation_role": "discovery_arithmetic_probe_selection_v1",
+  "ranks": [
+    32,
+    128,
+    "full"
+  ],
+  "run_dir": "artifacts/binding/arithmetic_probe_selection/20261030_v1/codellama34b",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "site": 2
+}

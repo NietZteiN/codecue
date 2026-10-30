@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October30 probe revision:** [Implementation and submitted experiments](../../reports/binding/arithmetic_probe_improvement_launch_v1.md). TRAIN-only layer/regularization/rank selection, a larger structural dataset and shared local dependency scorers are implemented. Original negative findings remain preserved.
+
 > **October30 operations:** [Debug pass and scheduled monitoring](../../reports/binding/operations_debug_20261030_v1.md). Saved readout and prompt-control artifacts passed their audits; logger freshness detection was fixed and verified with 54 tests.
 
 > **October30 morning review:** [Audit and next decisions](../../reports/binding/arithmetic_graph_morning_decision_v1.md) · [New TRAIN/DEV figure](../../reports/binding/figures/arithmetic_graph_train_dev_review_v2.png) · [Printed-query control results](../../reports/binding/arithmetic_prompt_control_findings_v1.md). Exact replay confirms the generalization gap. Explicit printing improves literal reporting but arithmetic remains unreliable.
