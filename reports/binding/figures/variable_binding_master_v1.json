@@ -1,0 +1,107 @@
+{
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "oracle": {
+    "algebraic_relations": [
+      "a < b",
+      "out = a + saved",
+      "b = out"
+    ],
+    "assignment_history": [
+      {
+        "definition": "a@1",
+        "value": 2,
+        "variable": "a",
+        "version": 1
+      },
+      {
+        "definition": "b@1",
+        "value": 7,
+        "variable": "b",
+        "version": 1
+      },
+      {
+        "definition": "saved@1",
+        "value": 2,
+        "variable": "saved",
+        "version": 1
+      },
+      {
+        "definition": "a@2",
+        "value": 5,
+        "variable": "a",
+        "version": 2
+      },
+      {
+        "definition": "out@1",
+        "value": 7,
+        "variable": "out",
+        "version": 1
+      }
+    ],
+    "conceptual_targets_not_model_predictions": true,
+    "current_definitions": {
+      "a": "a@2",
+      "b": "b@1",
+      "out": "out@1",
+      "saved": "saved@1"
+    },
+    "current_values": {
+      "a": 5,
+      "b": 7,
+      "out": 7,
+      "saved": 2
+    },
+    "current_versions": {
+      "a": 2,
+      "b": 1,
+      "out": 1,
+      "saved": 1
+    },
+    "direct_dependencies": [
+      [
+        "a@1",
+        "a@2"
+      ],
+      [
+        "a@1",
+        "saved@1"
+      ],
+      [
+        "a@2",
+        "out@1"
+      ],
+      [
+        "b@1",
+        "a@2"
+      ],
+      [
+        "saved@1",
+        "out@1"
+      ]
+    ],
+    "previous_values": {
+      "a": 2
+    },
+    "program": "a = 2\nb = 7\nsaved = a\na = b - a\nout = a + saved\nprint(out)\n",
+    "python_output": "7"
+  },
+  "outputs": [
+    {
+      "bytes": 519117,
+      "path": "reports/binding/figures/variable_binding_master_v1.png",
+      "sha256": "5d5f060c3f38e40f25c6a62d4816a583f227180511013ebc8d8abb58311e5aad"
+    },
+    {
+      "bytes": 33938,
+      "path": "reports/binding/figures/variable_binding_master_v1.svg",
+      "sha256": "9b464bde797fae702bf100eba6d5372fb7282037aac08029bbe42404c951ab33"
+    },
+    {
+      "bytes": 53443,
+      "path": "reports/binding/figures/variable_binding_master_v1.pdf",
+      "sha256": "436929b0d97e8bac377f35d7eb716ac962d90e98ffe4bcc9a033fae92271837d"
+    }
+  ],
+  "status": "complete"
+}

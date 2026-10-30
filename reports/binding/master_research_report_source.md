@@ -2,6 +2,12 @@
 
 **Status as of October 29, 2026.** This is the master record for the study proposed in `dependvar.txt`, including the subsequent user-requested dependency and algebraic relationship work. It summarizes completed work, preserves negative findings, and gives a concrete next plan. It is a research status report, not an empirical paper abstract or a claim that the original scientific objective is finished.
 
+## The idea in one figure
+
+{{figure:figures/variable_binding_master_v1.png|A conceptual readout suite for all current variable bindings, assignment history, directed dependencies and algebraic relations. Values and edges are illustrative program ground truth, not measured probe predictions.}}
+
+[Editable SVG](figures/variable_binding_master_v1.svg) · [Vector PDF](figures/variable_binding_master_v1.pdf)
+
 ## Start here: the idea in pictures
 
 A variable name can keep appearing while the value it refers to changes. The research asks whether a model keeps the right value attached to the right name and assignment, and whether that helps explain its answers.
@@ -10,7 +16,7 @@ A variable name can keep appearing while the value it refers to changes. The res
 
 The old value of `x` and the current value of `y` happen to be the same number here. That does not make them the same binding: they have different names and assignment histories. At the final subtraction, using obsolete `x` gives 0; exchanging the two inputs gives −5. These are illustrative possible errors, not measured error frequencies.
 
-[Open the interactive assignment walkthrough in the HTML edition](master_research_report_v3.html#binding-stepper). Use Next, Previous or the slider to see the state after each line.
+[Open the interactive assignment walkthrough in the HTML edition](master_research_report_v4.html#binding-stepper). Use Next, Previous or the slider to see the state after each line.
 
 <!-- BINDING_STEPPER -->
 

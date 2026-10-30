@@ -1,0 +1,162 @@
+{
+  "all_png_figures": 41,
+  "builder": {
+    "bytes": 5959,
+    "path": "scripts/publish_binding_master_figure.py",
+    "sha256": "e80bda9f8b39d19057228fca8fcbbff843033a91846b8f50409cc5b187797a69"
+  },
+  "figure_builder": {
+    "bytes": 10772,
+    "path": "scripts/build_binding_master_figure.py",
+    "sha256": "75d4b5958df5c588770ebb2fd0f255e042ff6adf621ccbd04d3f59c4747b7c59"
+  },
+  "figure_formats": [
+    {
+      "bytes": 519117,
+      "path": "reports/binding/figures/variable_binding_master_v1.png",
+      "sha256": "5d5f060c3f38e40f25c6a62d4816a583f227180511013ebc8d8abb58311e5aad"
+    },
+    {
+      "bytes": 33938,
+      "path": "reports/binding/figures/variable_binding_master_v1.svg",
+      "sha256": "9b464bde797fae702bf100eba6d5372fb7282037aac08029bbe42404c951ab33"
+    },
+    {
+      "bytes": 53443,
+      "path": "reports/binding/figures/variable_binding_master_v1.pdf",
+      "sha256": "436929b0d97e8bac377f35d7eb716ac962d90e98ffe4bcc9a033fae92271837d"
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 76861,
+      "path": "reports/binding/master_research_report_v3.md",
+      "sha256": "8d451e8a570491bc182a605dc7ba05287e670f56216c2226c4eeabd7d7b51fd2"
+    },
+    {
+      "bytes": 9525781,
+      "path": "reports/binding/master_research_report_v3.html",
+      "sha256": "c17ed2f49e3416ce0d0c9d9b4bdfe849f75c88eceddd425b04adfae409100f7d"
+    },
+    {
+      "bytes": 8781,
+      "path": "reports/binding/master_figure_archive_20261029_v3.csv",
+      "sha256": "1d90d94fba0887be750e7770331fecf13cc5c859579304a238e23128b5c6676f"
+    },
+    {
+      "bytes": 2167,
+      "path": "reports/binding/figures/variable_binding_master_v1.json",
+      "sha256": "ce001c9cf713bdd0e727f5777908bb1a517f6f62c3b2c6eb590a0ebb94eb8bd5"
+    }
+  ],
+  "main_figures": 19,
+  "new_edition": "v4",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "oracle": {
+    "algebraic_relations": [
+      "a < b",
+      "out = a + saved",
+      "b = out"
+    ],
+    "assignment_history": [
+      {
+        "definition": "a@1",
+        "value": 2,
+        "variable": "a",
+        "version": 1
+      },
+      {
+        "definition": "b@1",
+        "value": 7,
+        "variable": "b",
+        "version": 1
+      },
+      {
+        "definition": "saved@1",
+        "value": 2,
+        "variable": "saved",
+        "version": 1
+      },
+      {
+        "definition": "a@2",
+        "value": 5,
+        "variable": "a",
+        "version": 2
+      },
+      {
+        "definition": "out@1",
+        "value": 7,
+        "variable": "out",
+        "version": 1
+      }
+    ],
+    "conceptual_targets_not_model_predictions": true,
+    "current_definitions": {
+      "a": "a@2",
+      "b": "b@1",
+      "out": "out@1",
+      "saved": "saved@1"
+    },
+    "current_values": {
+      "a": 5,
+      "b": 7,
+      "out": 7,
+      "saved": 2
+    },
+    "current_versions": {
+      "a": 2,
+      "b": 1,
+      "out": 1,
+      "saved": 1
+    },
+    "direct_dependencies": [
+      [
+        "a@1",
+        "a@2"
+      ],
+      [
+        "a@1",
+        "saved@1"
+      ],
+      [
+        "a@2",
+        "out@1"
+      ],
+      [
+        "b@1",
+        "a@2"
+      ],
+      [
+        "saved@1",
+        "out@1"
+      ]
+    ],
+    "previous_values": {
+      "a": 2
+    },
+    "program": "a = 2\nb = 7\nsaved = a\na = b - a\nout = a + saved\nprint(out)\n",
+    "python_output": "7"
+  },
+  "outputs": [
+    {
+      "bytes": 77716,
+      "path": "reports/binding/master_research_report_v4.md",
+      "sha256": "949df38800a74cf4da063a9e2331ea0ca1c48ab530fe3132091d7895d638f67e"
+    },
+    {
+      "bytes": 10219028,
+      "path": "reports/binding/master_research_report_v4.html",
+      "sha256": "994b6463cce6141feb6d6bad828a5dd925c4e98f6ae7d0a9d3dba88ef9f6b492"
+    },
+    {
+      "bytes": 9031,
+      "path": "reports/binding/master_figure_archive_20261029_v4.csv",
+      "sha256": "ffe4fbe617344e29a8cd4b70471df2846a3fc6de33bebec18b74b35661e7c8e6"
+    }
+  ],
+  "prior_edition": "v3",
+  "purpose": "Add one master conceptual figure inspired by the user-supplied composition.",
+  "scientific_narrative_unchanged": true,
+  "status": "complete_audited"
+}

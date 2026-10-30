@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Create a repository-relative master document without editing frozen reports."""
 import csv
+import argparse
 import os
 from pathlib import Path
 import re
@@ -10,7 +11,9 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 def main():
-    source=ROOT/'reports/binding/master_research_report_v3.md'
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--edition',type=int,default=4);args=parser.parse_args()
+    version=f'v{args.edition}'
+    source=ROOT/f'reports/binding/master_research_report_{version}.md'
     destination=ROOT/'docs/binding/MASTER_REPORT.md'
     with (ROOT/'reproducibility/compressed_artifacts.csv').open() as stream:
         compressed={row['original_path']:row['stored_path'] for row in csv.DictReader(stream)}
@@ -31,7 +34,7 @@ def main():
         if parts.fragment:relative+='#'+parts.fragment
         return f'{label}({relative})'
     body=re.sub(r'(!?\[[^\]]*\])\(([^)]+)\)',link,source.read_text())
-    introduction='''> **GitHub edition.** This is the repository-relative edition of the October 29 master report. All scientific results are unchanged. For the interactive walkthrough, download the [self-contained HTML edition](../../reports/binding/master_research_report_v3.html) and open it in a browser. Large evidence files are losslessly compressed; see the [artifact catalog and restore commands](../../reproducibility/README.md). The [original plan](dependvar_20261025.txt) is included in this repository.\n\n'''
+    introduction=f'''> **GitHub edition.** This is the repository-relative edition of the October 29 master report. All scientific results are unchanged. For the interactive walkthrough, download the [self-contained HTML edition](../../reports/binding/master_research_report_{version}.html) and open it in a browser. Large evidence files are losslessly compressed; see the [artifact catalog and restore commands](../../reproducibility/README.md). The [original plan](dependvar_20261025.txt) is included in this repository.\n\n'''
     first,rest=body.split('\n\n',1);destination.write_text(first+'\n\n'+introduction+rest)
     for path in [ROOT/'README.md',ROOT/'reports/binding/README.md',ROOT/'reports/binding/implementation_checklist.md',ROOT/'reports/binding/research_backlog.md']:
         text=path.read_text()

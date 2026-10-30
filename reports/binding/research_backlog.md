@@ -1,6 +1,6 @@
 # Full research agenda and current status
 
-**Start here: [Master research report — plan, results, figures and next steps](../../docs/binding/MASTER_REPORT.md)** ([Markdown version](master_research_report_v3.md)). Updated October 29, 2026; includes the full original plan, 18 main figures, including three conceptual illustrations, the complete figure archive, every research branch and an ordered next-experiment plan.
+**Start here: [Master research report — plan, results, figures and next steps](../../docs/binding/MASTER_REPORT.md)** ([Markdown version](master_research_report_v4.md)). Updated October 29, 2026; includes the full original plan, 19 main figures, including four conceptual illustrations, the complete figure archive, every research branch and an ordered next-experiment plan.
 
 The [October 28–29 old-value suite](old_value_overnight_findings_v1.md) completed **40,320 audited responses**. Llama 8B scored **60.9%** overall and CodeLlama 34B **23.5%**; both failed all 24 fixed reliability cells. The [response diagnostics](old_value_postrun_response_diagnostics_v1.md) reconcile every score and oracle, identify CodeLlama’s formatting errors, and quantify Llama’s current-value answers on historical questions.
 

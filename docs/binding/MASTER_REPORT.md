@@ -1,8 +1,16 @@
 # Variable binding, updating and relationships: master research report
 
-> **GitHub edition.** This is the repository-relative edition of the October 29 master report. All scientific results are unchanged. For the interactive walkthrough, download the [self-contained HTML edition](../../reports/binding/master_research_report_v3.html) and open it in a browser. Large evidence files are losslessly compressed; see the [artifact catalog and restore commands](../../reproducibility/README.md). The [original plan](dependvar_20261025.txt) is included in this repository.
+> **GitHub edition.** This is the repository-relative edition of the October 29 master report. All scientific results are unchanged. For the interactive walkthrough, download the [self-contained HTML edition](../../reports/binding/master_research_report_v4.html) and open it in a browser. Large evidence files are losslessly compressed; see the [artifact catalog and restore commands](../../reproducibility/README.md). The [original plan](dependvar_20261025.txt) is included in this repository.
 
 **Status as of October 29, 2026.** This is the master record for the study proposed in `dependvar.txt`, including the subsequent user-requested dependency and algebraic relationship work. It summarizes completed work, preserves negative findings, and gives a concrete next plan. It is a research status report, not an empirical paper abstract or a claim that the original scientific objective is finished.
+
+## The idea in one figure
+
+![Master conceptual figure: code enters a language model; one hidden-state tap feeds readouts for all variable bindings, versions, dependencies and algebraic relations.](../../reports/binding/figures/variable_binding_master_v1.png)
+
+*Master figure. The proposed readout suite asks whether a checkpoint supports a structured view of all current bindings, previous assignment versions, directed dependencies and algebraic relationships. Displayed values and edges are Python ground truth, not observed probe predictions.*
+
+[PNG](../../reports/binding/figures/variable_binding_master_v1.png) · [Editable SVG](../../reports/binding/figures/variable_binding_master_v1.svg) · [Vector PDF](../../reports/binding/figures/variable_binding_master_v1.pdf)
 
 ## Start here: the idea in pictures
 
@@ -14,7 +22,7 @@ A variable name can keep appearing while the value it refers to changes. The res
 
 The old value of `x` and the current value of `y` happen to be the same number here. That does not make them the same binding: they have different names and assignment histories. At the final subtraction, using obsolete `x` gives 0; exchanging the two inputs gives −5. These are illustrative possible errors, not measured error frequencies.
 
-[Open the interactive assignment walkthrough in the HTML edition](../../reports/binding/master_research_report_v3.html#binding-stepper). Use Next, Previous or the slider to see the state after each line.
+[Open the interactive assignment walkthrough in the HTML edition](../../reports/binding/master_research_report_v4.html#binding-stepper). Use Next, Previous or the slider to see the state after each line.
 
 <!-- BINDING_STEPPER -->
 
@@ -536,7 +544,7 @@ This document replaces the need to infer current status from the chronological R
 - **Original plan:** [full unchanged dependvar.txt](dependvar_20261025.txt) from the repository root's parent; the HTML edition also includes an expandable full copy.
 - **Current task detail:** [implementation checklist](../../reports/binding/implementation_checklist.md) and [research backlog](../../reports/binding/research_backlog.md).
 - **Machine evidence:** the master-report publication review records source/report/figure hashes and the exact data used for the new synthesis figure.
-- **Archive:** [report archive CSV](../../reports/binding/master_report_archive_20261029_v3.csv) and [figure archive CSV](../../reports/binding/master_figure_archive_20261029_v3.csv). All locally available report documents and PNG figure revisions are indexed; a historical or superseded figure is not automatically valid evidence for a current claim.
+- **Archive:** [report archive CSV](../../reports/binding/master_report_archive_20261029_v3.csv) and [figure archive CSV](../../reports/binding/master_figure_archive_20261029_v4.csv). All locally available report documents and PNG figure revisions are indexed; a historical or superseded figure is not automatically valid evidence for a current claim.
 
 ### Complete figure index
 
@@ -582,6 +590,7 @@ This document replaces the need to infer current status from the chronological R
 | [value_owner_effects_v1.png](../../reports/binding/value_owner_effects_v1.png) | See originating report for endpoint, cohort and qualifications. |
 | [value_transfer_effects.png](../../reports/binding/value_transfer_effects.png) | Superseded formatting-space transfer; use value_transfer_effects_v2.png. |
 | [value_transfer_effects_v2.png](../../reports/binding/value_transfer_effects_v2.png) | See originating report for endpoint, cohort and qualifications. |
+| [figures/variable_binding_master_v1.png](../../reports/binding/figures/variable_binding_master_v1.png) | Master conceptual framework; oracle target values, not experimental predictions. |
 
 ### Additional figures from completed and historical studies
 
