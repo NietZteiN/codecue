@@ -1,0 +1,72 @@
+{
+  "activation_arrays_opened": false,
+  "checks": {
+    "capture_scientific_settings_unchanged_except_output_namespace": true,
+    "frozen_source_and_exact_config_hashes_verified": true,
+    "interrupted_completion_recovery_present": true,
+    "plan_v2_and_scientific_protocol_unchanged": true,
+    "prepared_case_jsonl_publication_atomic": true,
+    "readiness_v11_points_to_v3_jobs_results_and_new_capture": true,
+    "resolved_config_and_completion_publication_atomic": true,
+    "scheduled_execution_still_requires_current_frozen_source": true,
+    "scheduler_rpc_timeout_bounded": true,
+    "workspace_audit_uses_verified_original_frozen_source": true
+  },
+  "evaluation_role": "discovery_relationship_software_requalification_v3",
+  "final_regression": {
+    "expected_tests": 1537,
+    "pass_claimed": false,
+    "path": "artifacts/binding/relationship_readouts/regression_v3.xml",
+    "xml_present_at_review": false
+  },
+  "frozen_source": {
+    "code": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0"
+  },
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "model_or_tokenizer_loads": 0,
+  "new_model_queries": 0,
+  "pins": {
+    "artifacts/binding/relationship_readouts/recovery_source_review_v3.json": {
+      "path": "artifacts/binding/relationship_readouts/recovery_source_review_v3.json",
+      "sha256": "3fa466894540fafdab6b39f63e53cd575f131cb39de1e066d275de70515b58c9"
+    },
+    "artifacts/binding/relationship_readouts/regression_recovery_interim_v1.xml": {
+      "path": "artifacts/binding/relationship_readouts/regression_recovery_interim_v1.xml",
+      "sha256": "7b9ef8eb4feb7381410ce7fd4bf6ec24c686865b7d2f75ff48536d31600410c4"
+    },
+    "artifacts/binding/relationship_readouts/source_pipeline_v3.json": {
+      "path": "artifacts/binding/relationship_readouts/source_pipeline_v3.json",
+      "sha256": "7fc5d4ffe69dee301cb12b88d757aa36d657fc514eb65d5fd62237e22bda58f0"
+    },
+    "configs/binding/preparation/readiness_v11.json": {
+      "path": "configs/binding/preparation/readiness_v11.json",
+      "sha256": "c2bb61404c36bae42004f196442f82df8c27da75912585a5a676e1fc1fdbe2fd"
+    },
+    "configs/binding/relationships/capture_v2.json": {
+      "path": "configs/binding/relationships/capture_v2.json",
+      "sha256": "1e944fa658613954a116f07a016e1ed8c9da83d2f805bf1e4605a5ff54440a4e"
+    },
+    "configs/binding/relationships/readouts_pipeline_v3.json": {
+      "path": "configs/binding/relationships/readouts_pipeline_v3.json",
+      "sha256": "61bdf8018a1dcefc774d5cc776b13a922a193460dc5f61a41cf2a007229f9704"
+    },
+    "reports/binding/relationship_readout_plan_v2.md": {
+      "path": "reports/binding/relationship_readout_plan_v2.md",
+      "sha256": "ea8a4c4c1b1732c9f099ff5dd523b3fdab4ecb5f1be10440b5fda94ce64ed4b1"
+    }
+  },
+  "protocol_sha256": "12989784dfebc4f96264697f546a39b0c3bd45c970f4e1c87823b4244361510a",
+  "readout_fits_performed": 0,
+  "recorded_utc": "2026-10-28T00:15:29.892847+00:00",
+  "scheduler_mutations": 0,
+  "status": "passed_source_requalification_final_regression_not_claimed",
+  "verified_interim_regression": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1529
+  }
+}

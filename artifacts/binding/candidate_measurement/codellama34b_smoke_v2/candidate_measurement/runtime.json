@@ -1,0 +1,40 @@
+{
+  "actual_model_dtype": "float32",
+  "actual_model_dtype_verified": true,
+  "attention_backend": "sdpa",
+  "batch_size": 8,
+  "device": "cuda",
+  "dtype": "float32",
+  "event_batch_size": 32,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-f6a8c9f8-6812-8572-8e81-97cec152c9ad",
+    "mean_gpu_utilization_percent": 98.83108108108108,
+    "mean_power_watts": 518.9583783783784,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 142001.0,
+    "samples": 148,
+    "selector_verified": true
+  },
+  "gpu_scope": "current attempt only",
+  "load_seconds": 30.614263895899057,
+  "max_active_nodes": 4096,
+  "measured_this_attempt": 8,
+  "measurement_dtype": "float32",
+  "prompt_batch_size": 4,
+  "resumed_cases": 0,
+  "scoring_backend": "cached_trie",
+  "source_dtype": "bfloat16",
+  "status": "recorded",
+  "tf32_policy": "disabled_highest_float32",
+  "tf32_settings": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "float32_matmul_precision": "highest"
+  },
+  "tokenization_rule": "joint_prompt_candidate_v1",
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1"
+  }
+}

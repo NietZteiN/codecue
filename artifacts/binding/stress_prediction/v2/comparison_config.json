@@ -1,0 +1,14 @@
+{
+  "comparison_artifact": "artifacts/binding/stress_prediction/v2/comparison_v1.json",
+  "report": "reports/binding/stress_prediction_results_v2.md",
+  "runs": {
+    "codellama34b": {
+      "config": "artifacts/binding/stress_prediction/codellama34b_v2/effective_config.json",
+      "sha256": "3f4abf5bf6b7dc543feb1d7b1b5c31d47939975ec951b7a2e3e735c37ae59c2f"
+    },
+    "llama31_8b": {
+      "config": "artifacts/binding/stress_prediction/llama31_8b_v2/effective_config.json",
+      "sha256": "e3d1ec062554f7d84ef84f7ea7cf3729579835a42adb1fa698edbda2c2ea0c2a"
+    }
+  }
+}

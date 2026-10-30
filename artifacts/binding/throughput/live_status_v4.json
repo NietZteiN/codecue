@@ -1,0 +1,65 @@
+{
+  "budget": {
+    "cap_seconds": null,
+    "reserved_seconds": 0,
+    "unreserved_seconds": null,
+    "used_seconds": 0.0
+  },
+  "comparison_audited": true,
+  "completed_report": "reports/binding/throughput_results.md",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "jobs": {
+    "audit": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "job_id": "476865",
+      "state": "COMPLETED"
+    },
+    "preflight": {
+      "elapsed_seconds": 86,
+      "exit_code": "0:0",
+      "job_id": "476839",
+      "state": "COMPLETED"
+    },
+    "profile": {
+      "elapsed_seconds": 647,
+      "exit_code": "0:0",
+      "job_id": "476841",
+      "state": "COMPLETED"
+    },
+    "tests": {
+      "elapsed_seconds": 120,
+      "exit_code": "0:0",
+      "job_id": "476840",
+      "state": "COMPLETED"
+    }
+  },
+  "model_inference": false,
+  "plan_report": "throughput_plan.md",
+  "recorded_utc": "2026-10-26T03:13:14.289303+00:00",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/throughput/status_v4.json",
+  "scheduler_errors": [],
+  "scientific_artifacts_modified": false,
+  "stages": [
+    {
+      "best_profile_requests_per_second": 32.61712097241299,
+      "completed_profile_trials": 3,
+      "completed_validation_candidates": 3,
+      "evaluated": 1600,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "continuous_batching_v4",
+      "path": "artifacts/binding/throughput/tune_v4/throughput_profile",
+      "planned": 1600,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 1600
+      },
+      "validation_requests_per_second": 40.219507984494875
+    }
+  ],
+  "status": "complete",
+  "title": "GPU throughput tuning status"
+}

@@ -1,0 +1,3223 @@
+{
+  "activation_arrays_opened": false,
+  "checks": {
+    "all2160_fixed_target_slot_cells_checked": true,
+    "all540_query_task_cells_checked": true,
+    "all810_joint_pair_tables_checked": true,
+    "all90_bank_cells_preserved": true,
+    "all_primary_three_seed_means_checked": true,
+    "confusion_and_group_count_arithmetic_checked": true,
+    "original_completion_metadata_sha256_pins_verified": true,
+    "prediction_replay_proof_verified_as_metadata": true,
+    "raw_predictions_not_replayed_by_this_review": true
+  },
+  "coefficient_arrays_opened": false,
+  "counts": {
+    "categorical_group_points_checked": 7290,
+    "development_prediction_rows": 62640,
+    "fixed_target_slot_cells": 2160,
+    "fixed_target_units_per_seed": 696,
+    "graph_families": 5,
+    "joint_pair_tables": 810,
+    "matched_bodies": 174,
+    "other_query_decisions_per_seed": 2088,
+    "query_task_cells": 540,
+    "saved_score_rows_checked_by_original_analysis": 181440,
+    "score_banks": 90
+  },
+  "diversity_source_metadata_review": {
+    "canonical_families": 60,
+    "current_version_class_support": {
+      "development": {
+        "0": {
+          "1": {
+            "graph_groups": 15,
+            "rows": 600
+          },
+          "2": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "3": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "4": {
+            "graph_groups": 5,
+            "rows": 120
+          }
+        },
+        "1": {
+          "1": {
+            "graph_groups": 15,
+            "rows": 600
+          },
+          "2": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "3": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "4": {
+            "graph_groups": 5,
+            "rows": 120
+          }
+        },
+        "2": {
+          "1": {
+            "graph_groups": 15,
+            "rows": 600
+          },
+          "2": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "3": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "4": {
+            "graph_groups": 5,
+            "rows": 120
+          }
+        },
+        "3": {
+          "1": {
+            "graph_groups": 15,
+            "rows": 600
+          },
+          "2": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "3": {
+            "graph_groups": 10,
+            "rows": 360
+          },
+          "4": {
+            "graph_groups": 5,
+            "rows": 120
+          }
+        }
+      },
+      "train": {
+        "0": {
+          "1": {
+            "graph_groups": 45,
+            "rows": 1800
+          },
+          "2": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "3": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "4": {
+            "graph_groups": 15,
+            "rows": 360
+          }
+        },
+        "1": {
+          "1": {
+            "graph_groups": 45,
+            "rows": 1800
+          },
+          "2": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "3": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "4": {
+            "graph_groups": 15,
+            "rows": 360
+          }
+        },
+        "2": {
+          "1": {
+            "graph_groups": 45,
+            "rows": 1800
+          },
+          "2": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "3": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "4": {
+            "graph_groups": 15,
+            "rows": 360
+          }
+        },
+        "3": {
+          "1": {
+            "graph_groups": 45,
+            "rows": 1800
+          },
+          "2": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "3": {
+            "graph_groups": 30,
+            "rows": 1080
+          },
+          "4": {
+            "graph_groups": 15,
+            "rows": 360
+          }
+        }
+      }
+    },
+    "development_families": 15,
+    "fully_class_balanced": false,
+    "learned_readout_compatible": false,
+    "rows": 5760,
+    "source_only": true,
+    "status": "passed_metadata_consistency",
+    "train_families": 45
+  },
+  "evaluation_role": "independent_metadata_interpretation_schedule_score_review_v1",
+  "generated_holdouts_opened": false,
+  "input_pins": [
+    {
+      "bytes": 19209,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/summary.json",
+      "sha256": "b4031d0b23459f64613cb92f6d334dc920490f06de9d9251fe8f8197231d44bf"
+    },
+    {
+      "bytes": 24497320,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/results_v1.json",
+      "sha256": "01cf43013471e2651b1a611239542ef399666e81a1a1032646af41b5fa5ff24e"
+    },
+    {
+      "bytes": 458,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/audit.json",
+      "sha256": "7d22324d6508a09e6377dffd0c18db4688919f7061b3fb5e9d5d3f922103cec7"
+    },
+    {
+      "bytes": 27729,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/completion_manifest_v1.json",
+      "sha256": "2ce8a299e080163ff6dbe85058bd7fbddc5fd0ab736e75f96370dd1a3f36aa9c"
+    },
+    {
+      "bytes": 839,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/prediction_replay_review_v1.json",
+      "sha256": "f857fd248982a246b7b431fa1ed45838b7dbff0c279bc5993384ce17303329ba"
+    },
+    {
+      "bytes": 26555,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.manifest.json",
+      "sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f"
+    },
+    {
+      "bytes": 32119,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/source_review_v1.json",
+      "sha256": "a68a85aed40b135f596b8148dec51778c0da209955d58699636dd512eb372ccb"
+    }
+  ],
+  "interpretation": "Posthoc descriptive decoder query dependence and dissociated decoding tasks; heterogeneous five-graph effects do not establish general query tracing, natural binding/version tracking, causal use, or scientific qualification.",
+  "new_bootstraps": 0,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "prequery_prediction_and_score_diagnostics": {
+    "3": {
+      "bank_method_head_cells": 1080,
+      "margin_disagreement_body_head_occurrences": 0,
+      "maximum_margin_span": 0.0,
+      "maximum_top_score_span": 0.0,
+      "prediction_disagreement_body_head_occurrences": 0,
+      "top_score_disagreement_body_head_occurrences": 0
+    },
+    "7": {
+      "bank_method_head_cells": 1080,
+      "margin_disagreement_body_head_occurrences": 93,
+      "maximum_margin_span": 1.1102230246251565e-15,
+      "maximum_top_score_span": 1.1102230246251565e-15,
+      "prediction_disagreement_body_head_occurrences": 0,
+      "top_score_disagreement_body_head_occurrences": 61
+    }
+  },
+  "primary_joint_correctness_masses": {
+    "codellama34b/hidden/site7/direct": {
+      "current_definition__copy_parent": {
+        "current_definition_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.0,
+          "per_seed": [
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0
+        },
+        "current_definition_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.5305555555555556,
+          "per_seed": [
+            {
+              "count": 196,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 184,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 184,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.27011494252873564
+        },
+        "current_definition_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.011805555555555555,
+          "per_seed": [
+            {
+              "count": 24,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 20,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 24,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.032567049808429116
+        },
+        "current_definition_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.4576388888888889,
+          "per_seed": [
+            {
+              "count": 476,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 492,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 488,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.6973180076628352
+        }
+      },
+      "current_definition__current_version": {
+        "current_definition_correct__current_version_correct": {
+          "equal_graph_mass": 0.19722222222222222,
+          "per_seed": [
+            {
+              "count": 140,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 128,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 128,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.18965517241379312
+        },
+        "current_definition_correct__current_version_wrong": {
+          "equal_graph_mass": 0.3333333333333333,
+          "per_seed": [
+            {
+              "count": 56,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 56,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 56,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.08045977011494253
+        },
+        "current_definition_wrong__current_version_correct": {
+          "equal_graph_mass": 0.3361111111111111,
+          "per_seed": [
+            {
+              "count": 484,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 496,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 496,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.7068965517241379
+        },
+        "current_definition_wrong__current_version_wrong": {
+          "equal_graph_mass": 0.13333333333333333,
+          "per_seed": [
+            {
+              "count": 16,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 16,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 16,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.022988505747126436
+        }
+      },
+      "current_version__copy_parent": {
+        "current_version_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.011805555555555555,
+          "per_seed": [
+            {
+              "count": 24,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 20,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 24,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.032567049808429116
+        },
+        "current_version_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.5215277777777777,
+          "per_seed": [
+            {
+              "count": 600,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 604,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 600,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.8639846743295019
+        },
+        "current_version_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.0,
+          "per_seed": [
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0
+        },
+        "current_version_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.4666666666666666,
+          "per_seed": [
+            {
+              "count": 72,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 72,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 72,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.10344827586206896
+        }
+      }
+    },
+    "codellama34b/hidden/site8/direct": {
+      "current_definition__copy_parent": {
+        "current_definition_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.00034722222222222224,
+          "per_seed": [
+            {
+              "count": 1,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 1,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0009578544061302681
+        },
+        "current_definition_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.6692708333333334,
+          "per_seed": [
+            {
+              "count": 350,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 346,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 352,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.5019157088122606
+        },
+        "current_definition_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.003472222222222222,
+          "per_seed": [
+            {
+              "count": 9,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 4,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 7,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.009578544061302681
+        },
+        "current_definition_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.3269097222222222,
+          "per_seed": [
+            {
+              "count": 336,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 346,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 336,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.4875478927203065
+        }
+      },
+      "current_definition__current_version": {
+        "current_definition_correct__current_version_correct": {
+          "equal_graph_mass": 0.4835069444444445,
+          "per_seed": [
+            {
+              "count": 322,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 314,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 327,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.46120689655172414
+        },
+        "current_definition_correct__current_version_wrong": {
+          "equal_graph_mass": 0.18611111111111112,
+          "per_seed": [
+            {
+              "count": 29,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 32,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 26,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.041666666666666664
+        },
+        "current_definition_wrong__current_version_correct": {
+          "equal_graph_mass": 0.23315972222222223,
+          "per_seed": [
+            {
+              "count": 334,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 334,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 335,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.4803639846743295
+        },
+        "current_definition_wrong__current_version_wrong": {
+          "equal_graph_mass": 0.09722222222222221,
+          "per_seed": [
+            {
+              "count": 11,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 16,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 8,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.016762452107279693
+        }
+      },
+      "current_version__copy_parent": {
+        "current_version_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.0038194444444444448,
+          "per_seed": [
+            {
+              "count": 10,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 4,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 8,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.01053639846743295
+        },
+        "current_version_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.7128472222222223,
+          "per_seed": [
+            {
+              "count": 646,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 644,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 654,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.9310344827586207
+        },
+        "current_version_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.0,
+          "per_seed": [
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0
+        },
+        "current_version_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.2833333333333333,
+          "per_seed": [
+            {
+              "count": 40,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 48,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 34,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.05842911877394636
+        }
+      }
+    },
+    "llama8b/hidden/site7/direct": {
+      "current_definition__copy_parent": {
+        "current_definition_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.0,
+          "per_seed": [
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0
+        },
+        "current_definition_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.47754629629629636,
+          "per_seed": [
+            {
+              "count": 184,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 192,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 196,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.27394636015325674
+        },
+        "current_definition_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.024305555555555552,
+          "per_seed": [
+            {
+              "count": 48,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 44,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 44,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.06513409961685825
+        },
+        "current_definition_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.4981481481481482,
+          "per_seed": [
+            {
+              "count": 464,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 460,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 456,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.6609195402298851
+        }
+      },
+      "current_definition__current_version": {
+        "current_definition_correct__current_version_correct": {
+          "equal_graph_mass": 0.21458333333333332,
+          "per_seed": [
+            {
+              "count": 136,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 148,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 148,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.20689655172413793
+        },
+        "current_definition_correct__current_version_wrong": {
+          "equal_graph_mass": 0.26296296296296295,
+          "per_seed": [
+            {
+              "count": 48,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 44,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 48,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.06704980842911877
+        },
+        "current_definition_wrong__current_version_correct": {
+          "equal_graph_mass": 0.31875000000000003,
+          "per_seed": [
+            {
+              "count": 488,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 476,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 476,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.6896551724137931
+        },
+        "current_definition_wrong__current_version_wrong": {
+          "equal_graph_mass": 0.20370370370370372,
+          "per_seed": [
+            {
+              "count": 24,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 28,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 24,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.03639846743295019
+        }
+      },
+      "current_version__copy_parent": {
+        "current_version_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.024305555555555552,
+          "per_seed": [
+            {
+              "count": 48,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 44,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 44,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.06513409961685825
+        },
+        "current_version_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.5090277777777777,
+          "per_seed": [
+            {
+              "count": 576,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 580,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 580,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.8314176245210728
+        },
+        "current_version_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.0,
+          "per_seed": [
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0
+        },
+        "current_version_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.4666666666666666,
+          "per_seed": [
+            {
+              "count": 72,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 72,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 72,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.10344827586206896
+        }
+      }
+    },
+    "llama8b/hidden/site8/direct": {
+      "current_definition__copy_parent": {
+        "current_definition_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.0008680555555555556,
+          "per_seed": [
+            {
+              "count": 1,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 1,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 3,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0023946360153256703
+        },
+        "current_definition_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.5210069444444444,
+          "per_seed": [
+            {
+              "count": 249,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 221,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 220,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.33045977011494254
+        },
+        "current_definition_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.009027777777777779,
+          "per_seed": [
+            {
+              "count": 22,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 11,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 17,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.02394636015325671
+        },
+        "current_definition_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.4690972222222222,
+          "per_seed": [
+            {
+              "count": 424,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 463,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 456,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.6431992337164751
+        }
+      },
+      "current_definition__current_version": {
+        "current_definition_correct__current_version_correct": {
+          "equal_graph_mass": 0.44039351851851855,
+          "per_seed": [
+            {
+              "count": 243,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 193,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 205,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.30699233716475094
+        },
+        "current_definition_correct__current_version_wrong": {
+          "equal_graph_mass": 0.08148148148148147,
+          "per_seed": [
+            {
+              "count": 7,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 29,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 18,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.02586206896551724
+        },
+        "current_definition_wrong__current_version_correct": {
+          "equal_graph_mass": 0.41979166666666673,
+          "per_seed": [
+            {
+              "count": 440,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 455,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 471,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.6542145593869731
+        },
+        "current_definition_wrong__current_version_wrong": {
+          "equal_graph_mass": 0.05833333333333334,
+          "per_seed": [
+            {
+              "count": 6,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 19,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 2,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.01293103448275862
+        }
+      },
+      "current_version__copy_parent": {
+        "current_version_correct__copy_parent_correct": {
+          "equal_graph_mass": 0.009895833333333335,
+          "per_seed": [
+            {
+              "count": 23,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 12,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 20,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.026340996168582376
+        },
+        "current_version_correct__copy_parent_wrong": {
+          "equal_graph_mass": 0.8502893518518517,
+          "per_seed": [
+            {
+              "count": 660,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 636,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 656,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.9348659003831418
+        },
+        "current_version_wrong__copy_parent_correct": {
+          "equal_graph_mass": 0.0,
+          "per_seed": [
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 0,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.0
+        },
+        "current_version_wrong__copy_parent_wrong": {
+          "equal_graph_mass": 0.1398148148148148,
+          "per_seed": [
+            {
+              "count": 13,
+              "n": 696,
+              "seed": 17
+            },
+            {
+              "count": 48,
+              "n": 696,
+              "seed": 29
+            },
+            {
+              "count": 20,
+              "n": 696,
+              "seed": 43
+            }
+          ],
+          "row_mass": 0.03879310344827586
+        }
+      }
+    }
+  },
+  "primary_query_effects": {
+    "codellama34b/hidden/site7/direct/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1488,
+          "other_queries_total": 2088,
+          "queried_correct": 496,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1485,
+          "other_queries_total": 2088,
+          "queried_correct": 495,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1467,
+          "other_queries_total": 2088,
+          "queried_correct": 489,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/hidden/site7/direct/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2034,
+          "other_queries_total": 2088,
+          "queried_correct": 678,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2034,
+          "other_queries_total": 2088,
+          "queried_correct": 678,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2034,
+          "other_queries_total": 2088,
+          "queried_correct": 678,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/hidden/site7/random_prefix_control/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 171,
+          "other_queries_total": 2088,
+          "queried_correct": 57,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 327,
+          "other_queries_total": 2088,
+          "queried_correct": 109,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 228,
+          "other_queries_total": 2088,
+          "queried_correct": 76,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/hidden/site7/random_prefix_control/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 480,
+          "other_queries_total": 2088,
+          "queried_correct": 160,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 459,
+          "other_queries_total": 2088,
+          "queried_correct": 153,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 513,
+          "other_queries_total": 2088,
+          "queried_correct": 171,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/hidden/site7/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/hidden/site7/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/hidden/site8/direct/current_definition": {
+      "equal_graph_effect": 0.026041666666666654,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.047453703703703685,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.045717592592592525,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.00462962962962965,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.032407407407407406
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.026157407407407397,
+          "other_queries_correct": 1722,
+          "other_queries_total": 2088,
+          "queried_correct": 601,
+          "queried_total": 696,
+          "row_effect": 0.03879310344827591,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.024189814814814813,
+          "other_queries_correct": 1706,
+          "other_queries_total": 2088,
+          "queried_correct": 596,
+          "queried_total": 696,
+          "row_effect": 0.039272030651340994,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.027777777777777745,
+          "other_queries_correct": 1725,
+          "other_queries_total": 2088,
+          "queried_correct": 604,
+          "queried_total": 696,
+          "row_effect": 0.04166666666666663,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.03991060025542784
+    },
+    "codellama34b/hidden/site8/direct/current_version": {
+      "equal_graph_effect": 0.04166666666666668,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.04629629629629628,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.05555555555555558,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.10648148148148151
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.06481481481481484,
+          "other_queries_correct": 2029,
+          "other_queries_total": 2088,
+          "queried_correct": 687,
+          "queried_total": 696,
+          "row_effect": 0.015325670498084198,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.03981481481481482,
+          "other_queries_correct": 2021,
+          "other_queries_total": 2088,
+          "queried_correct": 682,
+          "queried_total": 696,
+          "row_effect": 0.011973180076628398,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.020370370370370372,
+          "other_queries_correct": 2043,
+          "other_queries_total": 2088,
+          "queried_correct": 685,
+          "queried_total": 696,
+          "row_effect": 0.005747126436781658,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.011015325670498085
+    },
+    "codellama34b/hidden/site8/random_prefix_control/current_definition": {
+      "equal_graph_effect": -0.016550925925925927,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": -0.005208333333333333,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": -0.008101851851851851,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.05555555555555556,
+        "schedule-graph:9892c99ba7c0702a2954311f": -4.625929269271485e-18,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": -0.013888888888888893
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": -0.00665509259259259,
+          "other_queries_correct": 239,
+          "other_queries_total": 2088,
+          "queried_correct": 79,
+          "queried_total": 696,
+          "row_effect": -0.0009578544061302624,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": -0.04947916666666667,
+          "other_queries_correct": 235,
+          "other_queries_total": 2088,
+          "queried_correct": 63,
+          "queried_total": 696,
+          "row_effect": -0.022030651340996174,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.006481481481481479,
+          "other_queries_correct": 196,
+          "other_queries_total": 2088,
+          "queried_correct": 64,
+          "queried_total": 696,
+          "row_effect": -0.0019157088122605387,
+          "seed": 43
+        }
+      ],
+      "row_effect": -0.008301404853128991
+    },
+    "codellama34b/hidden/site8/random_prefix_control/current_version": {
+      "equal_graph_effect": 0.010956790123456794,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.01909722222222222,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": -0.021412037037037025,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.08796296296296298,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0015432098765432074,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": -0.032407407407407406
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0008680555555555525,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 173,
+          "queried_total": 696,
+          "row_effect": 0.007183908045976989,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.03645833333333333,
+          "other_queries_correct": 447,
+          "other_queries_total": 2088,
+          "queried_correct": 139,
+          "queried_total": 696,
+          "row_effect": -0.014367816091954033,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": -0.004456018518518501,
+          "other_queries_correct": 463,
+          "other_queries_total": 2088,
+          "queried_correct": 150,
+          "queried_total": 696,
+          "row_effect": -0.006226053639846768,
+          "seed": 43
+        }
+      ],
+      "row_effect": -0.004469987228607937
+    },
+    "codellama34b/hidden/site8/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/hidden/site8/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site7/direct/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 513,
+          "other_queries_total": 2088,
+          "queried_correct": 171,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 495,
+          "other_queries_total": 2088,
+          "queried_correct": 165,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 510,
+          "other_queries_total": 2088,
+          "queried_correct": 170,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site7/direct/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2088,
+          "other_queries_total": 2088,
+          "queried_correct": 696,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2088,
+          "other_queries_total": 2088,
+          "queried_correct": 696,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2088,
+          "other_queries_total": 2088,
+          "queried_correct": 696,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site7/random_prefix_control/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 321,
+          "other_queries_total": 2088,
+          "queried_correct": 107,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 267,
+          "other_queries_total": 2088,
+          "queried_correct": 89,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 270,
+          "other_queries_total": 2088,
+          "queried_correct": 90,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site7/random_prefix_control/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 576,
+          "other_queries_total": 2088,
+          "queried_correct": 192,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 546,
+          "other_queries_total": 2088,
+          "queried_correct": 182,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 438,
+          "other_queries_total": 2088,
+          "queried_correct": 146,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site7/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site7/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site8/direct/current_definition": {
+      "equal_graph_effect": -0.00038580246913579535,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": -0.06828703703703705,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.02314814814814815,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.02777777777777779,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.015432098765432093,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 3.700743415417188e-17
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.019675925925925923,
+          "other_queries_correct": 505,
+          "other_queries_total": 2088,
+          "queried_correct": 166,
+          "queried_total": 696,
+          "row_effect": -0.0033524904214559392,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": -0.022453703703703698,
+          "other_queries_correct": 421,
+          "other_queries_total": 2088,
+          "queried_correct": 137,
+          "queried_total": 696,
+          "row_effect": -0.004789272030651354,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0016203703703703888,
+          "other_queries_correct": 443,
+          "other_queries_total": 2088,
+          "queried_correct": 146,
+          "queried_total": 696,
+          "row_effect": -0.0023946360153256907,
+          "seed": 43
+        }
+      ],
+      "row_effect": -0.0035121328224776613
+    },
+    "codellama34b/surface/site8/direct/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2034,
+          "other_queries_total": 2088,
+          "queried_correct": 678,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2034,
+          "other_queries_total": 2088,
+          "queried_correct": 678,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2034,
+          "other_queries_total": 2088,
+          "queried_correct": 678,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site8/random_prefix_control/current_definition": {
+      "equal_graph_effect": 0.0037808641975308616,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.005787037037037035,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.002314814814814816,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.004629629629629632,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0015432098765432029,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.013888888888888886
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": -0.004108796296296302,
+          "other_queries_correct": 257,
+          "other_queries_total": 2088,
+          "queried_correct": 86,
+          "queried_total": 696,
+          "row_effect": 0.00047892720306513814,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.010937499999999998,
+          "other_queries_correct": 285,
+          "other_queries_total": 2088,
+          "queried_correct": 104,
+          "queried_total": 696,
+          "row_effect": 0.012931034482758619,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.004513888888888889,
+          "other_queries_correct": 295,
+          "other_queries_total": 2088,
+          "queried_correct": 96,
+          "queried_total": 696,
+          "row_effect": -0.0033524904214559392,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0033524904214559392
+    },
+    "codellama34b/surface/site8/random_prefix_control/current_version": {
+      "equal_graph_effect": 0.0014853395061728374,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.009259259259259264,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.008969907407407404,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.013888888888888888,
+        "schedule-graph:9892c99ba7c0702a2954311f": -0.01080246913580247,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.013888888888888876
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.004224537037037035,
+          "other_queries_correct": 560,
+          "other_queries_total": 2088,
+          "queried_correct": 197,
+          "queried_total": 696,
+          "row_effect": 0.014846743295019171,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.010416666666666663,
+          "other_queries_correct": 516,
+          "other_queries_total": 2088,
+          "queried_correct": 177,
+          "queried_total": 696,
+          "row_effect": 0.007183908045976989,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": -0.010185185185185186,
+          "other_queries_correct": 477,
+          "other_queries_total": 2088,
+          "queried_correct": 157,
+          "queried_total": 696,
+          "row_effect": -0.002873563218390829,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.006385696040868444
+    },
+    "codellama34b/surface/site8/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "codellama34b/surface/site8/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site7/direct/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1479,
+          "other_queries_total": 2088,
+          "queried_correct": 493,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1482,
+          "other_queries_total": 2088,
+          "queried_correct": 494,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1476,
+          "other_queries_total": 2088,
+          "queried_correct": 492,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site7/direct/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2004,
+          "other_queries_total": 2088,
+          "queried_correct": 668,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1998,
+          "other_queries_total": 2088,
+          "queried_correct": 666,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2010,
+          "other_queries_total": 2088,
+          "queried_correct": 670,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site7/random_prefix_control/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 285,
+          "other_queries_total": 2088,
+          "queried_correct": 95,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 258,
+          "other_queries_total": 2088,
+          "queried_correct": 86,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 267,
+          "other_queries_total": 2088,
+          "queried_correct": 89,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site7/random_prefix_control/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 492,
+          "other_queries_total": 2088,
+          "queried_correct": 164,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 468,
+          "other_queries_total": 2088,
+          "queried_correct": 156,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 501,
+          "other_queries_total": 2088,
+          "queried_correct": 167,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site7/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site7/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site8/direct/current_definition": {
+      "equal_graph_effect": -0.013348765432098791,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.023726851851851822,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.07002314814814814,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.07407407407407411,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0015432098765431797,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": -0.08796296296296298
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.00046296296296295393,
+          "other_queries_correct": 1557,
+          "other_queries_total": 2088,
+          "queried_correct": 548,
+          "queried_total": 696,
+          "row_effect": 0.04166666666666663,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": -0.02557870370370372,
+          "other_queries_correct": 1507,
+          "other_queries_total": 2088,
+          "queried_correct": 527,
+          "queried_total": 696,
+          "row_effect": 0.03544061302681989,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": -0.014930555555555603,
+          "other_queries_correct": 1490,
+          "other_queries_total": 2088,
+          "queried_correct": 526,
+          "queried_total": 696,
+          "row_effect": 0.04214559386973182,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.03975095785440611
+    },
+    "llama8b/hidden/site8/direct/current_version": {
+      "equal_graph_effect": 0.02746913580246914,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.004629629629629613,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.04475308641975306,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.09722222222222225
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.02407407407407409,
+          "other_queries_correct": 2070,
+          "other_queries_total": 2088,
+          "queried_correct": 694,
+          "queried_total": 696,
+          "row_effect": 0.005747126436781547,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0037037037037036978,
+          "other_queries_correct": 2034,
+          "other_queries_total": 2088,
+          "queried_correct": 680,
+          "queried_total": 696,
+          "row_effect": 0.002873563218390829,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.054629629629629625,
+          "other_queries_correct": 2054,
+          "other_queries_total": 2088,
+          "queried_correct": 695,
+          "queried_total": 696,
+          "row_effect": 0.014846743295019227,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.007822477650063867
+    },
+    "llama8b/hidden/site8/random_prefix_control/current_definition": {
+      "equal_graph_effect": -0.008468364197530866,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.009837962962962965,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": -0.013599537037037035,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.05092592592592594,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0308641975308642,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": -0.018518518518518517
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": -0.008854166666666672,
+          "other_queries_correct": 287,
+          "other_queries_total": 2088,
+          "queried_correct": 85,
+          "queried_total": 696,
+          "row_effect": -0.015325670498084282,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": -0.005034722222222218,
+          "other_queries_correct": 298,
+          "other_queries_total": 2088,
+          "queried_correct": 104,
+          "queried_total": 696,
+          "row_effect": 0.0067049808429118785,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": -0.011516203703703706,
+          "other_queries_correct": 274,
+          "other_queries_total": 2088,
+          "queried_correct": 89,
+          "queried_total": 696,
+          "row_effect": -0.0033524904214559392,
+          "seed": 43
+        }
+      ],
+      "row_effect": -0.003991060025542781
+    },
+    "llama8b/hidden/site8/random_prefix_control/current_version": {
+      "equal_graph_effect": -0.021701388888888885,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.01620370370370372,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0049189814814814825,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.01851851851851853,
+        "schedule-graph:9892c99ba7c0702a2954311f": -0.02777777777777778,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": -0.08333333333333333
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": -0.021122685185185185,
+          "other_queries_correct": 494,
+          "other_queries_total": 2088,
+          "queried_correct": 164,
+          "queried_total": 696,
+          "row_effect": -0.0009578544061302763,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": -0.022106481481481484,
+          "other_queries_correct": 529,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": -0.0033524904214559115,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": -0.02187499999999999,
+          "other_queries_correct": 421,
+          "other_queries_total": 2088,
+          "queried_correct": 145,
+          "queried_total": 696,
+          "row_effect": 0.0067049808429118785,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0007982120051085636
+    },
+    "llama8b/hidden/site8/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/hidden/site8/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site7/direct/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 501,
+          "other_queries_total": 2088,
+          "queried_correct": 167,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 474,
+          "other_queries_total": 2088,
+          "queried_correct": 158,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 516,
+          "other_queries_total": 2088,
+          "queried_correct": 172,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site7/direct/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2088,
+          "other_queries_total": 2088,
+          "queried_correct": 696,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2088,
+          "other_queries_total": 2088,
+          "queried_correct": 696,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2088,
+          "other_queries_total": 2088,
+          "queried_correct": 696,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site7/random_prefix_control/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 294,
+          "other_queries_total": 2088,
+          "queried_correct": 98,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 294,
+          "other_queries_total": 2088,
+          "queried_correct": 98,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 255,
+          "other_queries_total": 2088,
+          "queried_correct": 85,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site7/random_prefix_control/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 573,
+          "other_queries_total": 2088,
+          "queried_correct": 191,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 525,
+          "other_queries_total": 2088,
+          "queried_correct": 175,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 456,
+          "other_queries_total": 2088,
+          "queried_correct": 152,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site7/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site7/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site8/direct/current_definition": {
+      "equal_graph_effect": -0.008796296296296293,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": -0.05555555555555555,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.020833333333333332,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.013888888888888876,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.004629629629629632,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.01938657407407407,
+          "other_queries_correct": 487,
+          "other_queries_total": 2088,
+          "queried_correct": 166,
+          "queried_total": 696,
+          "row_effect": 0.005268199233716464,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": -0.03072916666666666,
+          "other_queries_correct": 445,
+          "other_queries_total": 2088,
+          "queried_correct": 139,
+          "queried_total": 696,
+          "row_effect": -0.013409961685823757,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": -0.015046296296296285,
+          "other_queries_correct": 457,
+          "other_queries_total": 2088,
+          "queried_correct": 150,
+          "queried_total": 696,
+          "row_effect": -0.0033524904214559392,
+          "seed": 43
+        }
+      ],
+      "row_effect": -0.0038314176245210774
+    },
+    "llama8b/surface/site8/direct/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2061,
+          "other_queries_total": 2088,
+          "queried_correct": 687,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2052,
+          "other_queries_total": 2088,
+          "queried_correct": 684,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 2070,
+          "other_queries_total": 2088,
+          "queried_correct": 690,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site8/random_prefix_control/current_definition": {
+      "equal_graph_effect": 0.0067901234567901226,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.01736111111111112,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": -0.0034722222222222238,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.013888888888888888,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0015432098765432029,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0046296296296296224
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0009259259259259244,
+          "other_queries_correct": 253,
+          "other_queries_total": 2088,
+          "queried_correct": 86,
+          "queried_total": 696,
+          "row_effect": 0.002394636015325677,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.018402777777777775,
+          "other_queries_correct": 281,
+          "other_queries_total": 2088,
+          "queried_correct": 105,
+          "queried_total": 696,
+          "row_effect": 0.016283524904214558,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0010416666666666686,
+          "other_queries_correct": 277,
+          "other_queries_total": 2088,
+          "queried_correct": 87,
+          "queried_total": 696,
+          "row_effect": -0.007662835249042155,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.00367177522349936
+    },
+    "llama8b/surface/site8/random_prefix_control/current_version": {
+      "equal_graph_effect": -0.005574845679012342,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.008680555555555552,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0066550925925925875,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": -0.05092592592592593,
+        "schedule-graph:9892c99ba7c0702a2954311f": -0.010802469135802453,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.018518518518518528
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0030092592592592614,
+          "other_queries_correct": 541,
+          "other_queries_total": 2088,
+          "queried_correct": 185,
+          "queried_total": 696,
+          "row_effect": 0.0067049808429118785,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": -0.022106481481481477,
+          "other_queries_correct": 521,
+          "other_queries_total": 2088,
+          "queried_correct": 176,
+          "queried_total": 696,
+          "row_effect": 0.003352490421455967,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0023726851851851886,
+          "other_queries_correct": 489,
+          "other_queries_total": 2088,
+          "queried_correct": 164,
+          "queried_total": 696,
+          "row_effect": 0.0014367816091953867,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0038314176245210774
+    },
+    "llama8b/surface/site8/training_prior/current_definition": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 504,
+          "other_queries_total": 2088,
+          "queried_correct": 168,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 522,
+          "other_queries_total": 2088,
+          "queried_correct": 174,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    },
+    "llama8b/surface/site8/training_prior/current_version": {
+      "equal_graph_effect": 0.0,
+      "mean_per_graph_effect": {
+        "schedule-graph:3c64a41b37bfa609de5f80b1": 0.0,
+        "schedule-graph:5acaac52ff5ce8fac052fd1d": 0.0,
+        "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 0.0,
+        "schedule-graph:9892c99ba7c0702a2954311f": 0.0,
+        "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 0.0
+      },
+      "per_seed": [
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 17
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 29
+        },
+        {
+          "equal_graph_effect": 0.0,
+          "other_queries_correct": 1818,
+          "other_queries_total": 2088,
+          "queried_correct": 606,
+          "queried_total": 696,
+          "row_effect": 0.0,
+          "seed": 43
+        }
+      ],
+      "row_effect": 0.0
+    }
+  },
+  "raw_score_or_prediction_banks_opened": false,
+  "scientific_decisions_remaining": 9,
+  "source": {
+    "frozen_manifest_sha256": "ce23db34b7cf0708eac9cb3e4c5e571296df1c07a8418ea9e533e3490ff9fe50",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/76f592842abcad4d62c63857",
+    "snapshot_id": "76f592842abcad4d62c63857",
+    "source_sha256": "61c7104734cf8d7d4c5868983550bdf3a3cfe6f41dd89eca448d52fe191b7f5d"
+  },
+  "status": "passed"
+}

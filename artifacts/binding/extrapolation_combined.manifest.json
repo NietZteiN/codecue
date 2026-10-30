@@ -1,0 +1,139 @@
+{
+  "attempts": 181,
+  "base_instances": 30,
+  "cell_attempts": {
+    "accumulator:load6:updates5": 100,
+    "parallel:load6:updates5": 51,
+    "snapshot:load6:updates5": 30
+  },
+  "cell_rejections": {
+    "accumulator:load6:updates5": 90,
+    "parallel:load6:updates5": 41,
+    "snapshot:load6:updates5": 20
+  },
+  "cohort": "combined",
+  "evaluation_role": "structural_extrapolation",
+  "generation_config": {
+    "algorithm_version": 6,
+    "answer_magnitude_bins": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "arithmetic_controls": false,
+    "cohort": "combined",
+    "counterfactual_pairs": true,
+    "distance_padding": 8,
+    "evaluation_role": "structural_extrapolation",
+    "identifier_pool": "codellama-context-matched-v1",
+    "instances_per_cell": 10,
+    "load_levels": [
+      6
+    ],
+    "reference_datasets": [
+      "artifacts/binding/pilot_matched.jsonl"
+    ],
+    "seed": 20262004,
+    "split_override": "test",
+    "templates_per_cell": 10,
+    "update_levels": [
+      5
+    ],
+    "variable_count": 6
+  },
+  "generation_config_hash": "ceac2ad1e1dcd030f13e97c235a87bf9cba858b15a7242d4850d89e6c611423d",
+  "independent_template_clusters": 30,
+  "primary_answer_magnitude_bins": {
+    "0": 30
+  },
+  "reference_datasets": {
+    "artifacts/binding/pilot_matched.jsonl": "fce0a27061efdee3a15ebe597b34da0e9add672e56c6f3ac2350bd7f667921a4"
+  },
+  "reference_skeleton_overlap": 0,
+  "rejected": 151,
+  "rejection_rate": 0.8342541436464088,
+  "rows": 360,
+  "schema_version": 1,
+  "sha256": "1c3d5db015b143bbaf85889a905c045b8ef9934f837d85ac87931f4412d506f1",
+  "split_rows": {
+    "test": 360
+  },
+  "split_templates": {
+    "development": 0,
+    "test": 30,
+    "train": 0
+  },
+  "structural_templates": 30,
+  "token_counts": "filled by the selected tokenizer at model-run time",
+  "value_distribution": {
+    "-1": 48,
+    "-10": 9,
+    "-11": 18,
+    "-12": 43,
+    "-13": 12,
+    "-14": 19,
+    "-15": 11,
+    "-16": 8,
+    "-17": 9,
+    "-18": 18,
+    "-19": 15,
+    "-2": 35,
+    "-20": 4,
+    "-21": 3,
+    "-22": 17,
+    "-23": 3,
+    "-24": 4,
+    "-25": 4,
+    "-26": 2,
+    "-27": 4,
+    "-28": 12,
+    "-3": 27,
+    "-30": 2,
+    "-4": 14,
+    "-5": 18,
+    "-6": 16,
+    "-7": 22,
+    "-8": 29,
+    "-9": 13,
+    "0": 25,
+    "1": 20,
+    "10": 19,
+    "11": 17,
+    "12": 20,
+    "13": 16,
+    "14": 13,
+    "15": 21,
+    "16": 7,
+    "17": 8,
+    "18": 8,
+    "19": 16,
+    "2": 35,
+    "20": 6,
+    "21": 22,
+    "22": 3,
+    "23": 3,
+    "24": 3,
+    "25": 2,
+    "26": 2,
+    "27": 2,
+    "29": 1,
+    "3": 43,
+    "30": 1,
+    "33": 1,
+    "4": 25,
+    "5": 17,
+    "6": 18,
+    "7": 23,
+    "8": 21,
+    "9": 23
+  }
+}

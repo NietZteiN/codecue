@@ -1,0 +1,17 @@
+{
+  "declared_plan": "reports/binding/schedule_score_review_plan_v1.md",
+  "declared_plan_sha256": "4ab3cb07e92c255db8149a74907cdc41b85f1213b9fe926dea5f160dbc535335",
+  "evaluation_role": "discovery_schedule_score_review_v1",
+  "readout_configs": [
+    {
+      "path": "configs/binding/schedule_decoding_20261028_v1/llama8b_readouts.json",
+      "sha256": "01d83cffc24cf7140290ee997593763bf17c34f6ea10a281e174a3c90f157792"
+    },
+    {
+      "path": "configs/binding/schedule_decoding_20261028_v1/codellama34b_readouts.json",
+      "sha256": "68eb9eda08ba45d7271a958c89fddf68e64fd174d8eea56e7629c00c595f69cf"
+    }
+  ],
+  "report": "reports/binding/schedule_score_review_findings_v1.md",
+  "run_dir": "artifacts/binding/schedule_followup/20261028_v1/analysis"
+}

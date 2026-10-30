@@ -1,0 +1,15 @@
+{
+  "base": {
+    "diagnostic_kind": "arithmetic_free",
+    "dataset": "artifacts/binding/phase2/counterbalanced_base.jsonl",
+    "seed": 2026102505,
+    "unique_distractor_prefixes": true,
+    "exclude_datasets": [
+      "artifacts/binding/prompt_calibration_bank.jsonl",
+      "artifacts/binding/difficulty_ladder.jsonl",
+      "artifacts/binding/phase2/arithmetic_forms.jsonl",
+      "artifacts/binding/phase2/arithmetic_free.jsonl"
+    ]
+  },
+  "output": "artifacts/binding/phase2/counterbalanced_followup.jsonl"
+}

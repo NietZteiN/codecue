@@ -1,0 +1,298 @@
+{
+  "activation_arrays_opened": false,
+  "evaluation_role": "discovery_relationship_preparation_handoff_v1",
+  "family_schedule_and_surface_baselines_required_before_decoding_claim": true,
+  "generated_holdouts_opened": false,
+  "hidden_output_labels_absent": true,
+  "independent_artifact_review": {
+    "all_routing_canonical_programs_independently_reexecuted": 1296,
+    "all_same_state_different_graph_pairs_checked": 432,
+    "issues": [],
+    "reviewer": "representation_next",
+    "status": "passed"
+  },
+  "label_targets": [
+    "direct versioned def-use",
+    "strict transitive ancestry",
+    "same-variable assignment succession",
+    "current versus obsolete versions",
+    "output ancestry only when explicitly visible"
+  ],
+  "language_model_training": false,
+  "learned_relationship_decoder_fitted": false,
+  "limitations": [
+    "Source and oracle-target preparation only: no model responses, activations, probes or decoded graphs.",
+    "Adaptive discovery bank, not confirmatory evidence or qualification of a new model family.",
+    "Copy-only programs with four scalar variables and one final query, v0; no broad query replication.",
+    "Canonical destination order is fixed: four initializations followed by v0, v1, v2, v3 copies.",
+    "Numeric draws and lexical forms repeat a topology; they are not independent graph replications.",
+    "Equal numeric states may occur across components; structural components, not numeric uniqueness, define the split.",
+    "All oracle values, versions, dependencies, topology and counterfactual labels are targets, never readout features.",
+    "Full-program oracle targets include future information; a prefix study must mask unseen definitions and output relevance.",
+    "Syntactic ancestry and functional intervention effects are distinct; descendants can later be overwritten.",
+    "Prepared structural targets only: no learned relationship decoder, activation analysis, model query or causal intervention. Each graph uses only visible assignment versions; the output expression is absent unless explicitly visible at the final checkpoint. Relations are syntactic def-use, strict ancestry and version succession, not numerical equality, functional influence or evidence that a model represents these relationships. Support/prior summaries weight structural groups equally after deduplicating graph states within each group; numeric and naming relatives are not independent replications. Fixed or one-class labels can make later decoding trivial. Graph variation alone does not qualify captures, independent generalization, an ownership mechanism or mechanism C."
+  ],
+  "logging": {
+    "automatic_logging_enabled": true,
+    "counts_at_review": {
+      "analysis": 150,
+      "dataset": 63,
+      "job": 323,
+      "run": 72
+    },
+    "index_status": "ok",
+    "interval_minutes": 10,
+    "issues": [],
+    "notices": [
+      {
+        "bytes": 9590432,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/candidate_prediction/comparison_v1.json"
+      },
+      {
+        "bytes": 12324277,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/joint_confidence/comparison_v1.json"
+      },
+      {
+        "bytes": 10473597,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/summary.json"
+      },
+      {
+        "bytes": 10484733,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/review_v1.json"
+      },
+      {
+        "bytes": 15034398,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/stress_prediction/v2/comparison_v1.json"
+      }
+    ],
+    "pending_guards": 2,
+    "scheduler_healthy": true,
+    "status": "passed"
+  },
+  "mechanism_C_fitted": false,
+  "metadata_and_reports": [
+    {
+      "bytes": 367,
+      "path": "configs/binding/relationships/target_audit_v1.json",
+      "sha256": "6fe97bb0a7ea86d44c63d2661d6cdb223d679869b7ff785ea880aec3b429aaf9"
+    },
+    {
+      "bytes": 332,
+      "path": "configs/binding/relationships/routing_generation_v1.json",
+      "sha256": "9deca113ece4b41fd4e7d2ec526736d93f186448c00b492e84d5b584ad9dbb04"
+    },
+    {
+      "bytes": 387,
+      "path": "configs/binding/relationships/routing_target_audit_v1.json",
+      "sha256": "9d46be041a2801d2e5fdb8d38d08f39ceef7bd579a0a7554d6cdb60df6b5ae76"
+    },
+    {
+      "bytes": 34470,
+      "path": "configs/binding/preparation/readiness_v7.json",
+      "sha256": "67f1a61bfd69ce0c64026db13e8aee7938b02815d602b2ef36fa867a06f12ae3"
+    },
+    {
+      "bytes": 1672,
+      "path": "artifacts/binding/relationships/source_preparation_review_v1.json",
+      "sha256": "b79cd1d06d8168fe2681e23fee190a406a52a80e90562340993e71adf6fb130f"
+    },
+    {
+      "bytes": 766,
+      "path": "artifacts/binding/relationships/routing_source_projection_review_v1.json",
+      "sha256": "fdeb7c79ef1e883861f062c756e49e549205b44a71ab20b4481d85effb0657ed"
+    },
+    {
+      "bytes": 20687,
+      "path": "artifacts/binding/relationships/routing_preparation_review_v1.json",
+      "sha256": "51728166697bf4b0adfbd2d34673b3ed30dc0449b7f3dfa3a0bbc9afee9ea304"
+    },
+    {
+      "bytes": 1762585,
+      "path": "artifacts/binding/relationships/target_audit_review_v1.json",
+      "sha256": "849dde7a12b4546e33eb051a53e565c441e2b446eaa523f2094bd907e1aeb14a"
+    },
+    {
+      "bytes": 797822,
+      "path": "artifacts/binding/relationships/routing_target_audit_review_v1.json",
+      "sha256": "6a1fa80cf2ef1ca057ddd7dae45ce2f77f7e9c0d4f6a68ff0b84211632f811f5"
+    },
+    {
+      "bytes": 48222,
+      "path": "artifacts/binding/relationships/readiness_review_v1.json",
+      "sha256": "e1de6487aac7479b5f85aa6f97e66f8969e783a7aec2dac72630916573fb2a85"
+    },
+    {
+      "bytes": 199761,
+      "path": "artifacts/binding/relationships/regression_v2.xml",
+      "sha256": "14336bdd328be6054dfe4894e9ae60b953b0f167a9cf8b1d362863001149920d"
+    },
+    {
+      "bytes": 1915,
+      "path": "artifacts/binding/relationships/logging_review_v1.json",
+      "sha256": "64bccbc1a1a47530dc2a7f2d37b95f33500dd2cbdd27ea1a815b50cec41e9dbe"
+    },
+    {
+      "bytes": 5600,
+      "path": "reports/binding/relationship_decoding_plan.md",
+      "sha256": "2f554d6bf0cfcb80d29d16082fb32a0ba4e6bebc548ae69f03ccef836cc49689"
+    },
+    {
+      "bytes": 5148,
+      "path": "reports/binding/relationship_preparation_findings.md",
+      "sha256": "50bdb7b84350c513134ddd4e6758cf460ad082873a02bf6d51b8d5901636f21d"
+    },
+    {
+      "bytes": 7833,
+      "path": "reports/binding/relationship_target_audit_v1.md",
+      "sha256": "b8a81e94b4ab7052085d69954bbb5b56c4014a49f2ead98db559577e04915f39"
+    },
+    {
+      "bytes": 3032,
+      "path": "reports/binding/relationship_routing_target_audit_v1.md",
+      "sha256": "96b4b9db7563494af05290dc1e0fd06530d1c897e531aab92801e7924be45c4e"
+    },
+    {
+      "bytes": 2068,
+      "path": "reports/binding/relationship_routing_preparation_v1.md",
+      "sha256": "6fbe0fbc3d50d622c371d277d419cce5e8893c68d0a7e309b1dabc2c3ef2ab01"
+    }
+  ],
+  "model_responses_opened": false,
+  "new_model_or_tokenizer_loads": 0,
+  "new_model_queries": 0,
+  "new_research_jobs_submitted": 0,
+  "next_stage": "Capture aligned model representations and fit controlled relation decoders; no learned relationship recovery result is claimed by this handoff.",
+  "oracle_graphs_are_not_model_features": true,
+  "original_target_audit": {
+    "assignment_prefix_views": 26880,
+    "explicit_output_views": 2880,
+    "rows": 2880,
+    "semantic_graph_catalog_entries": 41,
+    "split_structural_groups": {
+      "development": 12,
+      "train": 36
+    }
+  },
+  "readiness": {
+    "counts": {
+      "deferred_optional": 3,
+      "needs_scientific_decision": 9,
+      "ready": 35
+    },
+    "historical_query_study_readiness_pin_preserved": true,
+    "tasks": 47
+  },
+  "recorded_utc": "2026-10-27T22:10:17.106977+00:00",
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "seconds": 212.626,
+    "skipped": 0,
+    "tests": 1302
+  },
+  "regression_test_sources": [
+    {
+      "bytes": 11488,
+      "path": "tests/binding/test_relationships.py",
+      "sha256": "69fd3b36a9d4457f5df573c47d2a880e6d41f6f96316810877e4db9480e127a5"
+    },
+    {
+      "bytes": 11090,
+      "path": "tests/binding/test_relationship_audit.py",
+      "sha256": "8f8d9d7a900d85652a88f5a95579626fb5daab5ba9156146b424d773158b95f6"
+    },
+    {
+      "bytes": 7615,
+      "path": "tests/binding/test_relationship_programs.py",
+      "sha256": "f4e9a800b2ab780c42e3c3e08abc5b49463a4207b610bd1db3be9c6662826d5d"
+    }
+  ],
+  "routing_target_audit": {
+    "assignment_prefix_views": 10368,
+    "early_shared_prefixes_reported": true,
+    "explicit_output_views": 1296,
+    "full_graph_overlap_across_splits": 0,
+    "rows": 1296,
+    "semantic_graph_catalog_entries": 205,
+    "split_structural_groups": {
+      "development": 9,
+      "train": 18
+    }
+  },
+  "source_bank": {
+    "cross_split_definition_graph_overlap": 0,
+    "cross_split_overlap": {
+      "alpha_structure": 0,
+      "canonical_ast": 0,
+      "source": 0
+    },
+    "distinct_definition_graphs": 81,
+    "independent_python_passed": true,
+    "independent_python_programs": 3240,
+    "paired_descendant_sensitivity_checks": 864,
+    "paired_same_values_all_checkpoints": true,
+    "paired_same_values_different_graph": 432,
+    "rows": 1296,
+    "split_components": {
+      "development": 9,
+      "train": 18
+    },
+    "split_definition_graphs": {
+      "development": 27,
+      "train": 54
+    },
+    "split_rows": {
+      "development": 432,
+      "train": 864
+    },
+    "structural_components": 27
+  },
+  "source_datasets": [
+    {
+      "bytes": 5967718,
+      "path": "artifacts/binding/relationships/routing_sources_v1.jsonl",
+      "sha256": "7a76b3e7ce1b82c8f1b869c492246cb22e2b7f64f672b1dd89f724f64a56e9dd"
+    },
+    {
+      "bytes": 4528936,
+      "path": "artifacts/binding/relationships/discovery_sources_v1.jsonl",
+      "sha256": "aae7843e8b847875a54f275acc455d04c881fb5c97350edbe70eb7d0c8fb62d2"
+    },
+    {
+      "bytes": 1822704,
+      "path": "artifacts/binding/relationships/routing_audit_sources_v1.jsonl",
+      "sha256": "31cdaba1f548394b0103e3525769addaa6420b255bdbc4ab1c386ecb2cc9a7f7"
+    }
+  ],
+  "source_snapshots": {
+    "audit_release": {
+      "code": "27d0259b223ccb90f3fa6b43a38b5ea3c93fffe1577713fa9a414289a69b28d4",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/06d5999384975e7bc4d34400",
+      "snapshot_id": "06d5999384975e7bc4d34400"
+    },
+    "generation": {
+      "code": "35147be2d5c16d9e683f73236a0dc833edc369e3cd56c10b646a005ad7b88a87",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3f42298b2a24e587ff3ed174",
+      "snapshot_id": "3f42298b2a24e587ff3ed174"
+    }
+  },
+  "status": "prepared_targets_only",
+  "structural_labels_value_free": true,
+  "syntactic_dependency_is_not_functional_influence": true,
+  "training_ready_relation_matrix_exported": false
+}

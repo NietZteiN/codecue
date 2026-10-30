@@ -1,0 +1,44 @@
+{
+  "case_ids_sha256": "587df3d97de960f718b6ffeae2ad56bb1b4ff1fc14e2f49fbf666229ff4fa68f",
+  "cases": 128,
+  "config_hash": "057216a7cd9d4600b3a95322a171fce071900721564a92397f66762c49faf958",
+  "execution": {
+    "actual_model_dtype": "bfloat16",
+    "actual_model_dtype_verified": true,
+    "backend": "vllm",
+    "chunked_prefill": true,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "device_name": "NVIDIA H100 80GB HBM3",
+    "device_total_memory_bytes": 85017493504,
+    "engine": {
+      "gpu_memory_utilization": 0.95,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 512,
+      "tensor_parallel_size": 1
+    },
+    "eos_token_ids": [
+      2
+    ],
+    "generation_config": "vllm",
+    "gpu_uuid": "6a84f189-485f-ab4e-5b2f-86119881df62",
+    "greedy_seed": 0,
+    "max_new_tokens": 32,
+    "prefix_caching": true,
+    "slurm_job_id": "479817",
+    "stop": [
+      "\n\n"
+    ],
+    "temperature": 0,
+    "top_p": 1,
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    }
+  },
+  "request_id": "a93721075a7147fc81c5010ab2500d5b",
+  "slurm_job_id": "479817",
+  "start": 0,
+  "state": "started"
+}

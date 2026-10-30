@@ -1,0 +1,2745 @@
+{
+  "accuracy": {
+    "ci95": [
+      0.004545454545454545,
+      0.05847953216374269
+    ],
+    "clusters": 38,
+    "estimate": 0.027777777777777776
+  },
+  "ambiguous_error_count": 21,
+  "analysis_source_sha256": "830beb21005e27e8da24b45b2ab13d1bdfe7f4d8c6754907766ddf92e3798518",
+  "analysis_status": "discovery; no frozen explanatory hypothesis or confirmatory holdout result",
+  "bases": 60,
+  "behavior_identity_hash": "08cf2e626172ad771deab91c0240097a8cd7f85b5a1da85dcd33137ff088a9a9",
+  "by_control_kind": {
+    "arithmetic_control": {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.07895455852746616
+        ],
+        "clusters": 38,
+        "estimate": 0.030555555555555555
+      },
+      "invalid_count": 9,
+      "n": 360
+    },
+    "primary": {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.06780624036979964
+        ],
+        "clusters": 38,
+        "estimate": 0.025
+      },
+      "invalid_count": 5,
+      "n": 360
+    }
+  },
+  "cells": [
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 6,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 6,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 6,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 6,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 6,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 6,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 2,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "development",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 4,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "clusters": 3,
+        "estimate": 0.25
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.42857142857142855
+        ],
+        "clusters": 4,
+        "estimate": 0.2
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 10,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 4,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "clusters": 3,
+        "estimate": 0.25
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 1,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.21428571428571427
+        ],
+        "clusters": 4,
+        "estimate": 0.1
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 10,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 1,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 1,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "accumulator",
+      "invalid": 1,
+      "load": 4,
+      "n": 6,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 2,
+      "load": 2,
+      "n": 4,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "clusters": 3,
+        "estimate": 0.25
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 1,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 1,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.42857142857142855
+        ],
+        "clusters": 4,
+        "estimate": 0.2
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 1,
+      "load": 4,
+      "n": 10,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "arithmetic_control",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "clusters": 3,
+        "estimate": 0.25
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 2,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.5
+        ],
+        "clusters": 3,
+        "estimate": 0.125
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 1,
+      "load": 2,
+      "n": 4,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 10,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "informative",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "clusters": 3,
+        "estimate": 0.25
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "clusters": 3,
+        "estimate": 0.25
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 4,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 10,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "misleading",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "clusters": 3,
+        "estimate": 0.25
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "accumulator",
+      "invalid": 0,
+      "load": 4,
+      "n": 6,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": null,
+        "clusters": 1,
+        "estimate": 0.0,
+        "uncertainty_status": "fewer than two independent clusters"
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 1,
+      "load": 2,
+      "n": 4,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "parallel",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 1,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 3,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 2,
+      "n": 8,
+      "split": "train",
+      "updates": 3
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 4,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 10,
+      "split": "train",
+      "updates": 1
+    },
+    {
+      "accuracy": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clusters": 2,
+        "estimate": 0.0
+      },
+      "condition": "neutral",
+      "control_kind": "primary",
+      "family": "snapshot",
+      "invalid": 0,
+      "load": 4,
+      "n": 4,
+      "split": "train",
+      "updates": 3
+    }
+  ],
+  "complete": true,
+  "counterfactual_consistent_error_counts_nonexclusive": {
+    "arithmetic_add_for_subtract": 12,
+    "competing_variable": 62,
+    "obsolete_assignment": 61
+  },
+  "diagnostically_distinct_error_count": 106,
+  "diagnostically_distinct_subset_n": 714,
+  "independent_template_clusters": 38,
+  "inference_unit": "structural template; all numeric, lexical and counterfactual relatives clustered",
+  "invalid_count": 14,
+  "n": 720,
+  "naming_factor_interactions": [
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "factor": "load",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "factor": "updates",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 27,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "factor": "load",
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 27,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "factor": "updates",
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": 0.0,
+      "factor": "load",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": 0.0,
+      "factor": "updates",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.08750000000000001
+      ],
+      "clusters": 27,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": 0.025,
+      "factor": "load",
+      "split": "train"
+    },
+    {
+      "ci95": [
+        -0.07608695652173912,
+        0.0
+      ],
+      "clusters": 27,
+      "condition": "informative",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": -0.021739130434782608,
+      "factor": "updates",
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "factor": "load",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "factor": "updates",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        -0.0715909090909091,
+        0.0
+      ],
+      "clusters": 27,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": -0.025,
+      "factor": "load",
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.062252964426877465
+      ],
+      "clusters": 27,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.021739130434782608,
+      "factor": "updates",
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": 0.0,
+      "factor": "load",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": 0.0,
+      "factor": "updates",
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.17500000000000002
+      ],
+      "clusters": 27,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": 0.05,
+      "factor": "load",
+      "split": "train"
+    },
+    {
+      "ci95": [
+        -0.15217391304347824,
+        0.0
+      ],
+      "clusters": 27,
+      "condition": "misleading",
+      "contrast": "high minus low naming effect",
+      "control_kind": "primary",
+      "estimate": -0.043478260869565216,
+      "factor": "updates",
+      "split": "train"
+    }
+  ],
+  "parsed_accuracy": 0.028328611898016998,
+  "templates": 49,
+  "within_base_naming_deltas": [
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 27,
+      "condition": "informative",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "informative",
+      "control_kind": "primary",
+      "estimate": 0.0,
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.041666666666666664
+      ],
+      "clusters": 27,
+      "condition": "informative",
+      "control_kind": "primary",
+      "estimate": 0.011904761904761904,
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "estimate": 0.0,
+      "split": "development"
+    },
+    {
+      "ci95": [
+        -0.03409090909090909,
+        0.0
+      ],
+      "clusters": 27,
+      "condition": "misleading",
+      "control_kind": "arithmetic_control",
+      "estimate": -0.011904761904761904,
+      "split": "train"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusters": 11,
+      "condition": "misleading",
+      "control_kind": "primary",
+      "estimate": 0.0,
+      "split": "development"
+    },
+    {
+      "ci95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "clusters": 27,
+      "condition": "misleading",
+      "control_kind": "primary",
+      "estimate": 0.023809523809523808,
+      "split": "train"
+    }
+  ]
+}

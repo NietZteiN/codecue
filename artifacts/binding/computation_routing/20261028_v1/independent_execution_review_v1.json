@@ -1,0 +1,451 @@
+{
+  "checked_frozen_source_files": 187,
+  "checked_metadata_and_text_pins": [
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/computation_routing/20261028_v1/execution_source_v1.json",
+      "sha256": "435b4dc3eca372ef33f9d3a6af9cc6e79c20b6c3a5c9582eaf9a6054cb7443d8"
+    },
+    {
+      "bytes": 51560,
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/frozen_manifest.json",
+      "sha256": "1666e9fd98fd5790167e4ad5e089f59a63e7aae5b60fc1f1c5e72d0899bf0009"
+    },
+    {
+      "bytes": 968,
+      "path": "artifacts/binding/computation_routing/20261028_v1/software_validation_review_v1.json",
+      "sha256": "92348510df0fcbf01fafc2cb2db407a2fb76239ddc20d4bfa7af70f4ebb1bf25"
+    },
+    {
+      "bytes": 283775,
+      "path": "artifacts/binding/computation_routing/20261028_v1/regression_v1.xml",
+      "sha256": "8eef591f2558080b0c999637f15544355e29a76d821e18bccdbf5e84ee927456"
+    },
+    {
+      "bytes": 23466,
+      "path": "artifacts/binding/computation_routing/20261028_v1/sources.manifest.json",
+      "sha256": "f7753f6e9f70f94746ad409044f55d27278552ee409cf84197489615cd5f94d8"
+    },
+    {
+      "bytes": 40573,
+      "path": "artifacts/binding/computation_routing/20261028_v1/source_review_v1.json",
+      "sha256": "c1816e0faf3d214522c2a0c77f9f8358dbcb2da0bd0b1912f914c577604abde1"
+    },
+    {
+      "bytes": 25762660,
+      "path": "artifacts/binding/computation_routing/20261028_v1/sources.jsonl",
+      "sha256": "a05908070277c191bc0a3b173cd7925be41e09ec48c59ad8cf19a1fbd049acce"
+    },
+    {
+      "bytes": 2869,
+      "path": "configs/binding/computation_routing_20261028_v1/llama8b.json",
+      "sha256": "87200669449d987000a79923425fb9d30edcea08dfa86d5a0c1249a76ff73b11"
+    },
+    {
+      "bytes": 23466,
+      "path": "artifacts/binding/computation_routing/20261028_v1/sources.manifest.json",
+      "sha256": "f7753f6e9f70f94746ad409044f55d27278552ee409cf84197489615cd5f94d8"
+    },
+    {
+      "bytes": 6790,
+      "path": "reports/binding/computation_routing_plan_v1.md",
+      "sha256": "d8116ea507adbb900cc8a886b43c256465b0642ff4f0a0d23a9dbdd3c9a3bdfe"
+    },
+    {
+      "bytes": 589,
+      "path": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+      "sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61"
+    },
+    {
+      "bytes": 1175,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_completion_v1.json",
+      "sha256": "6077b2d7ed957f5ec0c8433d7fb7fe594a2c750538e2eef2645ec243864d483a"
+    },
+    {
+      "bytes": 51560,
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/frozen_manifest.json",
+      "sha256": "1666e9fd98fd5790167e4ad5e089f59a63e7aae5b60fc1f1c5e72d0899bf0009"
+    },
+    {
+      "bytes": 39298,
+      "path": "reports/binding/computation_routing_llama8b_v1.md",
+      "sha256": "c1e4abe210f9d778934b6da54b9a714416e3a08ea102980da03aefef7d12569c"
+    },
+    {
+      "bytes": 2833652,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/review_v1.json",
+      "sha256": "2cb6c6f1e7345fb2792c23e4421f4b83dc7f355d0c1991511a02f3f3dced1540"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_attempts_v1.json",
+      "sha256": "b8a5930f2c03920c61d9096c77634086d8aadf9b20ae0ab8a480a16fe29a1c09"
+    },
+    {
+      "bytes": 5715,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/audit.json",
+      "sha256": "910a35ca31b1e897a6fb28d143afacb6c59a768e573b82fe06efac940fb31470"
+    },
+    {
+      "bytes": 51553,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/manifest.json",
+      "sha256": "5c1d5496a86ec0308205656b24f197a060cba10424f2b759999b597aa897d27a"
+    },
+    {
+      "bytes": 1373,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_preflight_v1.json",
+      "sha256": "87d4c26996707c7b7eefeeee3a88ef6bb21f76605752cf8a29b54d2784817bdb"
+    },
+    {
+      "bytes": 21551181,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/responses.jsonl",
+      "sha256": "38816525e059760d4ddde30df2a77bb227d679a0a98a9257f73c177e9f7afcde"
+    },
+    {
+      "bytes": 39298,
+      "path": "reports/binding/computation_routing_llama8b_v1.md",
+      "sha256": "c1e4abe210f9d778934b6da54b9a714416e3a08ea102980da03aefef7d12569c"
+    },
+    {
+      "bytes": 1373,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_preflight_v1.json",
+      "sha256": "87d4c26996707c7b7eefeeee3a88ef6bb21f76605752cf8a29b54d2784817bdb"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/tokenizer_preflight.json",
+      "sha256": "c5d64bc9e03edf4328c9e15ada0f0cd502d35c19438bd24b49f9e69734ccfd8c"
+    },
+    {
+      "bytes": 106334560,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/prepared_cases.jsonl",
+      "sha256": "e2c1a1d83793abd3ae8b2770dfbbcc357abd5548c2138bc766be5bbdd03876df"
+    },
+    {
+      "bytes": 21551181,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/responses.jsonl",
+      "sha256": "38816525e059760d4ddde30df2a77bb227d679a0a98a9257f73c177e9f7afcde"
+    },
+    {
+      "bytes": 4371,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/summary.json",
+      "sha256": "a2eb63d5b300d49ecfb77ce1e7b8047492279c385bb4fcbf37aa4532be657ef0"
+    },
+    {
+      "bytes": 752,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/runtime.json",
+      "sha256": "202cbc0ec52ceea50d0322dd06073ca346859fc51dac887411d4731646bfed19"
+    },
+    {
+      "bytes": 2893,
+      "path": "configs/binding/computation_routing_20261028_v1/codellama34b.json",
+      "sha256": "16fd74398a18246d4b6b01bcccd6f938d8a5b4c347a56fabb7f61a37046aeb22"
+    },
+    {
+      "bytes": 23466,
+      "path": "artifacts/binding/computation_routing/20261028_v1/sources.manifest.json",
+      "sha256": "f7753f6e9f70f94746ad409044f55d27278552ee409cf84197489615cd5f94d8"
+    },
+    {
+      "bytes": 6790,
+      "path": "reports/binding/computation_routing_plan_v1.md",
+      "sha256": "d8116ea507adbb900cc8a886b43c256465b0642ff4f0a0d23a9dbdd3c9a3bdfe"
+    },
+    {
+      "bytes": 589,
+      "path": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+      "sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61"
+    },
+    {
+      "bytes": 1185,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_completion_v1.json",
+      "sha256": "45623261edccade2d013d3bd73279035791a91b25da73fe21faa3bd872208b0b"
+    },
+    {
+      "bytes": 51560,
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/frozen_manifest.json",
+      "sha256": "1666e9fd98fd5790167e4ad5e089f59a63e7aae5b60fc1f1c5e72d0899bf0009"
+    },
+    {
+      "bytes": 39259,
+      "path": "reports/binding/computation_routing_codellama34b_v1.md",
+      "sha256": "a25a002b4a0ecdbbcc7f3da286a72334dc7033cc3bb247cedbad95e5c7544495"
+    },
+    {
+      "bytes": 2838827,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/review_v1.json",
+      "sha256": "c8d51c4d73c813f5daf78873345b5a6f1e7ce45583b91bc428281274191807df"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_attempts_v1.json",
+      "sha256": "e0144fff14c3144481722a9dc1c6863d0d0ed14d22f42cfef4acbc7fd1e2899e"
+    },
+    {
+      "bytes": 5704,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/audit.json",
+      "sha256": "374bfa25343165e7fc5f4e6f1bf4253e6c3390acaef6b6ff0f81be3bfda76628"
+    },
+    {
+      "bytes": 51576,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/manifest.json",
+      "sha256": "41fc1e986c6e9205425c637e213e0cada018600e7923db5c6e479c55fdbc2a7a"
+    },
+    {
+      "bytes": 1383,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_preflight_v1.json",
+      "sha256": "856e56b54423c610e8d46ce054056d95febcae749f405f4e152bff040d0f0ebc"
+    },
+    {
+      "bytes": 21491857,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/responses.jsonl",
+      "sha256": "3b187030ef23e2ecdc7bc6e9049438553354c70e062be12b14109577739d84cf"
+    },
+    {
+      "bytes": 39259,
+      "path": "reports/binding/computation_routing_codellama34b_v1.md",
+      "sha256": "a25a002b4a0ecdbbcc7f3da286a72334dc7033cc3bb247cedbad95e5c7544495"
+    },
+    {
+      "bytes": 1383,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_preflight_v1.json",
+      "sha256": "856e56b54423c610e8d46ce054056d95febcae749f405f4e152bff040d0f0ebc"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/tokenizer_preflight.json",
+      "sha256": "712c5b12cbdc354ab4403f53f80d2ad9d4cf26ef6fbff0c681568e3bf1823435"
+    },
+    {
+      "bytes": 101801820,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/prepared_cases.jsonl",
+      "sha256": "9645c7939e6bac0205b8d7b6b2362edd414d1903097bd0cc24c35d6f85630664"
+    },
+    {
+      "bytes": 21491857,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/responses.jsonl",
+      "sha256": "3b187030ef23e2ecdc7bc6e9049438553354c70e062be12b14109577739d84cf"
+    },
+    {
+      "bytes": 4358,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/summary.json",
+      "sha256": "10634f9b38f8212940a243c24c5a3ac0ca029de3058f143d53721f16e569c0cd"
+    },
+    {
+      "bytes": 751,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/runtime.json",
+      "sha256": "560787c70ac5f22cc3d32378c5059f7fb340e4754ef5d3d41f8aa6f7578a88d0"
+    }
+  ],
+  "checks": {
+    "assertions": 343051
+  },
+  "created_utc": "2026-10-28T14:58:14.615265+00:00",
+  "evaluation_role": "independent_computation_routing_execution_review_v1",
+  "execution_source": {
+    "code": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69",
+    "snapshot_id": "eb42de7a8ba9e27d987a5a69"
+  },
+  "issues": [],
+  "jobs": [
+    {
+      "allocated_cpus": "4",
+      "elapsed": "00:02:11",
+      "exit_code": "0:0",
+      "job_id": "481065",
+      "maximum_rss": "",
+      "requested_memory": "24G",
+      "state": "COMPLETED"
+    },
+    {
+      "allocated_cpus": "4",
+      "elapsed": "00:01:40",
+      "exit_code": "0:0",
+      "job_id": "481068",
+      "maximum_rss": "",
+      "requested_memory": "24G",
+      "state": "COMPLETED"
+    },
+    {
+      "allocated_cpus": "8",
+      "elapsed": "00:06:21",
+      "exit_code": "0:0",
+      "job_id": "481069",
+      "maximum_rss": "",
+      "requested_memory": "48G",
+      "state": "COMPLETED"
+    },
+    {
+      "allocated_cpus": "8",
+      "elapsed": "00:07:44",
+      "exit_code": "0:0",
+      "job_id": "481070",
+      "maximum_rss": "",
+      "requested_memory": "96G",
+      "state": "COMPLETED"
+    },
+    {
+      "allocated_cpus": "8",
+      "elapsed": "00:00:25",
+      "exit_code": "0:0",
+      "job_id": "481071",
+      "maximum_rss": "",
+      "requested_memory": "24G",
+      "state": "COMPLETED"
+    },
+    {
+      "allocated_cpus": "8",
+      "elapsed": "00:00:24",
+      "exit_code": "0:0",
+      "job_id": "481072",
+      "maximum_rss": "",
+      "requested_memory": "24G",
+      "state": "COMPLETED"
+    }
+  ],
+  "limitations": [
+    "This review checks saved response scoring, cell support, fixed gates and primary contrast points. It does not rerun the already completed grouped-bootstrap analysis or any model call.",
+    "Gate failure is a scientific outcome, not an execution failure. Familiar program forms, shared controls and conditional cluster intervals do not establish a causal mechanism or structural generalization."
+  ],
+  "models": {
+    "codellama34b": {
+      "all_contrasts": 324,
+      "correct": 8926,
+      "descriptive_cells": 2304,
+      "evaluation_role": "discovery_computation_routing_calibration_v1",
+      "finish_reasons": {
+        "stop": 20100
+      },
+      "gate_cells": 288,
+      "gates": {
+        "routing_execute_v1": {
+          "failed_required_cells": 72,
+          "numeric_development_qualified": false,
+          "status": "failed",
+          "training_qualified": false
+        },
+        "routing_output_v1": {
+          "failed_required_cells": 62,
+          "numeric_development_qualified": false,
+          "status": "failed",
+          "training_qualified": false
+        },
+        "routing_value_v1": {
+          "failed_required_cells": 60,
+          "numeric_development_qualified": false,
+          "status": "failed",
+          "training_qualified": false
+        }
+      },
+      "generation_seconds": 89.9071926191682,
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+        "mean_gpu_utilization_percent": 96.6951219512195,
+        "mean_power_watts": 675.8650609756097,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 78507.0,
+        "samples": 164,
+        "selector_verified": true
+      },
+      "invalid": 429,
+      "load_warmup_seconds": 248.27343320898945,
+      "logical_responses": 20736,
+      "new_model_queries": 20108,
+      "primary_DEV_contrasts": 108,
+      "requests_per_generation_second": 223.56387085892263,
+      "root_order_clusters_by_split": {
+        "development": 12,
+        "train": 12
+      },
+      "scored_cases": 20100,
+      "warmup_requests": 8
+    },
+    "llama8b": {
+      "all_contrasts": 324,
+      "correct": 15006,
+      "descriptive_cells": 2304,
+      "evaluation_role": "discovery_computation_routing_calibration_v1",
+      "finish_reasons": {
+        "length": 406,
+        "stop": 19694
+      },
+      "gate_cells": 288,
+      "gates": {
+        "routing_execute_v1": {
+          "failed_required_cells": 59,
+          "numeric_development_qualified": false,
+          "status": "failed",
+          "training_qualified": false
+        },
+        "routing_output_v1": {
+          "failed_required_cells": 35,
+          "numeric_development_qualified": false,
+          "status": "failed",
+          "training_qualified": false
+        },
+        "routing_value_v1": {
+          "failed_required_cells": 41,
+          "numeric_development_qualified": false,
+          "status": "failed",
+          "training_qualified": false
+        }
+      },
+      "generation_seconds": 16.750972406880464,
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+        "mean_gpu_utilization_percent": 84.47058823529412,
+        "mean_power_watts": 618.7688235294117,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 80767.0,
+        "samples": 34,
+        "selector_verified": true
+      },
+      "invalid": 671,
+      "load_warmup_seconds": 240.25679236097494,
+      "logical_responses": 20736,
+      "new_model_queries": 20108,
+      "primary_DEV_contrasts": 108,
+      "requests_per_generation_second": 1199.9303390735645,
+      "root_order_clusters_by_split": {
+        "development": 12,
+        "train": 12
+      },
+      "scored_cases": 20100,
+      "warmup_requests": 8
+    }
+  },
+  "review_costs": {
+    "generated_holdouts_opened": false,
+    "new_fits": 0,
+    "new_model_queries": 0,
+    "npz_loads": 0,
+    "parameter_replays": 0,
+    "raw_activations_loaded": false
+  },
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1843
+  },
+  "source_bank": {
+    "cross_split_literal_isolated_controls": 68,
+    "independent_python_programs": 10050,
+    "logical_views": 6912,
+    "minimum_gate_unique_sources": 30,
+    "unique_sources": 6700
+  },
+  "status": "passed",
+  "totals": {
+    "DEV_primary_contrasts": 216,
+    "descriptive_cells": 4608,
+    "gate_cells": 576,
+    "logical_responses": 41472,
+    "new_model_queries": 40216,
+    "scored_cases": 40200,
+    "warmup_requests": 16
+  }
+}

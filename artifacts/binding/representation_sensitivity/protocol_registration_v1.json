@@ -1,0 +1,88 @@
+{
+  "causal_intervention": false,
+  "config": {
+    "path": "configs/binding/representation_sensitivity/llama31_8b_v1.json",
+    "sha256": "0507b453ff3faecf4ae9502590391cf7ad50971aec164976737f24ec069b3bcf"
+  },
+  "config_hash": "c8bb9a132d861ce2692c31443caa63ed1dcb983a1305286b3b413e03fc0a5857",
+  "generated_holdouts_opened": false,
+  "mechanism_C_fitted": false,
+  "reason": "Existing neutral-to-transformed decoding deficits do not distinguish coordinate change from low-rank/finite-sample decoder behavior. Full4096D Procrustes is underidentified by available training anchors; test a fixed64D pooled-training projection with within-condition ceilings, exact train-only semantic pairing and complete64-output categorical targets.",
+  "recipe": {
+    "alpha": 100.0,
+    "capture_audit_sha256": "717f18e59741adac828fa075916114d51c18dbe3cee35fd1dcceed19acf9e6d1",
+    "capture_config": "configs/binding/competition/state_capture_v2.json",
+    "capture_config_sha256": "058f3de8993b8824bf686c4b7c8bb3afcbce6fda8a36c355d009ebf7cc542e0c",
+    "capture_manifest_sha256": "53795b277349616dcd98512894ef50d057920b0bb6db7aa6adfd8cbf991bd0e7",
+    "class_values": [
+      -16,
+      -15,
+      -14,
+      -13,
+      -12,
+      -11,
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "conditions": [
+      "neutral",
+      "informative",
+      "misleading"
+    ],
+    "control_seeds": [
+      11,
+      29,
+      47
+    ],
+    "evaluation_role": "discovery_representation_sensitivity_v1",
+    "layer": 24,
+    "pca": {
+      "algorithm": "randomized_svd",
+      "components": 64,
+      "n_iter": 5,
+      "seed": 17
+    },
+    "ranks": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "report": "reports/binding/representation_sensitivity_v1.md",
+    "run_dir": "artifacts/binding/representation_sensitivity/llama31_8b_v1",
+    "sites": [
+      "pre_query_state",
+      "pre_answer"
+    ]
+  },
+  "recorded_utc": "2026-10-27T17:59:34.387232+00:00",
+  "scope": "Adaptive discovery sensitivity on already consumed structures, not final confirmation or a causal mechanism. A common 64-dimensional training PCA projection is fitted separately at each fixed site and feature backend, using all three naming conditions equally. This changes the earlier neutral-only fitting contract explicitly. Within-condition ceilings and retained variance describe projection loss; failure in this projection cannot reject harmless change elsewhere in the 4096-dimensional space. Train-only orthogonal alignment has full anchor rank in the projected space but is a fitted descriptive map, not a causal correspondence. Both canonical current and saved targets are always predicted together. Linear class scores are not calibrated probabilities. Frequency-matched shuffles preserve labels but do not equate all task complexity. Three shuffle seeds are controls, not independent replications. The pre_answer site precedes the later formatting-space correction and is not the actual digit boundary used by subsequent interventions. No ownership-control capture exists in this bank, so these results cannot isolate owner coding from value recovery or show natural use.",
+  "status": "declared_adaptive_discovery_sensitivity"
+}

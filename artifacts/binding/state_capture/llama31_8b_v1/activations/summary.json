@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "device_name": "NVIDIA H200 NVL",
+  "evaluated": 9216,
+  "generated_holdouts_opened": false,
+  "interpretation": "Discovery captures only; no decoding or mechanism claim.",
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "planned": 9216,
+  "preflight": {
+    "cases": 9216,
+    "cases_sha256": "96a38d05dcc695054c0d96dcb4df23c192847e9fdd5fb64afa6187eeab4467ac",
+    "config_hash": "1214b894166de12886e4a6c5d63f28dcf0bddb49097bc30848425851ae638606",
+    "generated_holdouts_opened": false,
+    "source_sha256": "dbe66c1546526b5c80ff75e4b1ef7f9080509692f3ac087ea19024e9b62310f7",
+    "status": "passed",
+    "unique_state_prefixes": 4608,
+    "upstream_identity": "b836d5eae30c4d46646f23fa72cd2aaa6c7eded0f7ffd884da258e07ec1dde53"
+  },
+  "sites": [
+    "pre_query_state",
+    "after_query"
+  ],
+  "storage_bytes": 923860813,
+  "stored_dtype": "float32",
+  "target_slots": [
+    "current",
+    "saved"
+  ],
+  "torch_peak_memory_bytes": 17466181632,
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "dependency": "afterany:476841",
+  "job": "476842",
+  "reason": "Always run the CPU verifier after a terminal GPU result so the subsequent status job can report failed runs rather than waiting indefinitely on an after-success dependency. The verifier still requires completed full validation."
+}

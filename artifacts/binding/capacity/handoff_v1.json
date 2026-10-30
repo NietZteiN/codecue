@@ -1,0 +1,53 @@
+{
+  "cumulative_gpu_seconds_cap": null,
+  "generated_holdouts_opened": false,
+  "jobs": "artifacts/binding/capacity/jobs_v1.json",
+  "model_runs_state_at_handoff": {
+    "codellama13b_run": "RUNNING",
+    "codellama34b_run": "PENDING",
+    "llama32_3b_run": "PENDING"
+  },
+  "old_scientific_gates_modified": false,
+  "recorded_utc": "2026-10-26T03:18:06.267781+00:00",
+  "regression_tests_passed": 177,
+  "reports": [
+    "reports/binding/throughput_results.md",
+    "reports/binding/capacity_status.md"
+  ],
+  "requests_per_model": 5038,
+  "resource_policy": "artifacts/binding/resource_policy_20261025.json",
+  "source": "artifacts/binding/capacity/source_v1.json",
+  "tokenizer_preflight": {
+    "codellama13b": {
+      "cases": 5038,
+      "config_hash": "5c227738badf561905cbf325bada652cf26da6253d2b75bd6e2fc117cd01b329",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "4a55df76d09e128bd0b45d8e46383dd06b8e89d55b668fd72d88b1219b72019f",
+      "source_sha256": "07c464a9e1d1228124b046bc05dbdb4008450d3f68ba4ab60f820cc7fcd9feee",
+      "status": "passed"
+    },
+    "codellama34b": {
+      "cases": 5038,
+      "config_hash": "c1f0ac9f7a25598121256da6d8420641fe01b246cd78b4cce1907c3b783bc6aa",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "4a55df76d09e128bd0b45d8e46383dd06b8e89d55b668fd72d88b1219b72019f",
+      "source_sha256": "07c464a9e1d1228124b046bc05dbdb4008450d3f68ba4ab60f820cc7fcd9feee",
+      "status": "passed"
+    },
+    "llama32_3b": {
+      "cases": 5038,
+      "config_hash": "7321a7aa9cf16c423468e32dc3f9c5749ae5c9239cc1a6dbb3c3befc391a500b",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "1891d18030edceda59dd50a43eb3e87c6d8607e33b687d38860a370c03948154",
+      "source_sha256": "07c464a9e1d1228124b046bc05dbdb4008450d3f68ba4ab60f820cc7fcd9feee",
+      "status": "passed"
+    }
+  },
+  "total_additional_requests": 15114,
+  "usage_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "validated_preset": "artifacts/binding/throughput/selected_execution_v4.json",
+  "validated_throughput_audit": "artifacts/binding/throughput/audit_v4.json"
+}

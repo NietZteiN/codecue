@@ -1,0 +1,266 @@
+{
+  "all_actual_backend_audits_verified": true,
+  "arrays_opened": false,
+  "byte_identical_publication_required": true,
+  "causal_qualification": false,
+  "evaluation_role": "discovery_old_value_overnight_publication_v1",
+  "input_pins": [
+    {
+      "bytes": 5702,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/audit.json",
+      "sha256": "fa81fad77e849ddb0bd1e1ecd1a55960539084d06269ee7ad50cf6db39796fee"
+    },
+    {
+      "bytes": 58707,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/manifest.json",
+      "sha256": "803ec22ac7ddc53577d60eae4c5c642abddec12139cdcb7d892fd49b5b676fbb"
+    },
+    {
+      "bytes": 745,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/runtime.json",
+      "sha256": "769e6676ffbf29da80efc8d31524ec04b938c8b0519ae4562369e5b4194a2cf2"
+    },
+    {
+      "bytes": 4362,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/summary.json",
+      "sha256": "a29901a8d28dee75d75e6e37c1c1735547c20a94a81cd69eedd59433c22fd761"
+    },
+    {
+      "bytes": 1848693,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/review_v1.json",
+      "sha256": "2a39b863ae769e36462099bcbfb2ab80eb1df666cd6fb8e2c2ded78e79a2dae4"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/routing_attempts_v1.json",
+      "sha256": "5b7e3ae6e05f0144eb00cf295e010549d569895cb81be0a6665e227da2ef2c55"
+    },
+    {
+      "bytes": 1164,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/routing_completion_v1.json",
+      "sha256": "c4e16edba7f339c3c5d618eb71f1cac233d47f6f512fa4d3d836e166d7c03d40"
+    },
+    {
+      "bytes": 1372,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/routing_preflight_v1.json",
+      "sha256": "f215f8decee157ecdada9fbc002114167158b0b60ab6cf20a13b9b408d9e7aa8"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/tokenizer_preflight.json",
+      "sha256": "03d3cdd130ec6637beebf8c97439493844b78d740849022432a8128ec7cc5335"
+    },
+    {
+      "bytes": 2368,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "4dff2316cf25b2a68ef67896d123ae16b416111e42afd19263eee860be93a96e"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/execution_source_v1.json",
+      "sha256": "9c94f44d87c7990ff40df1fbec697adf9d7e7df42064cc649ceed34044eebee1"
+    },
+    {
+      "bytes": 219,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/jobs_v1.json",
+      "sha256": "b845345b19c2e28bac1f9ad8c49cbe6886f104db2b9490f48327d7022cec3705"
+    },
+    {
+      "bytes": 5696,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/audit.json",
+      "sha256": "b1f1826f27e1544bf4d66668272cd87874549b44d348f190c1ce97f12a810fbf"
+    },
+    {
+      "bytes": 58686,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/manifest.json",
+      "sha256": "6b4b4cd8f3d080858d26704f4d9d376f8fa9b1747c9ef0d2cba58948cd80d156"
+    },
+    {
+      "bytes": 740,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/runtime.json",
+      "sha256": "d2c6e7c70f6d3def1fe2339949bb654c3787dbe5e1c494952fd65bf0806c9b19"
+    },
+    {
+      "bytes": 4364,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/summary.json",
+      "sha256": "4cd23febe6ae0d2bb653862b481b3baa96d437658a5d9dbe2330c1086255974a"
+    },
+    {
+      "bytes": 1837849,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/review_v1.json",
+      "sha256": "62f1d9334c2695e92461bde2397173ef64f94efeeed626117f7b73ecaca67564"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/routing_attempts_v1.json",
+      "sha256": "406d74854c50a6f43e2a202f360fffcf394f2f3553e86c163360227b458e3967"
+    },
+    {
+      "bytes": 1154,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/routing_completion_v1.json",
+      "sha256": "0c70c8f231a6bf172e1a2113aa74fb0382afe0506c5c23f2c1e3e5e5438bb7db"
+    },
+    {
+      "bytes": 1362,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/routing_preflight_v1.json",
+      "sha256": "466844189bc769a6c72c052f071f9486cc873499f5412863bcf1258678bcfbdd"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/tokenizer_preflight.json",
+      "sha256": "9a727301c54cde32decfde6e49ecac4693488da353f6e73e0df7ec3d5ca8d762"
+    },
+    {
+      "bytes": 13622,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/software_validation_review_v1.json",
+      "sha256": "920fec808c78564435edfe37b5e553eb47b9a1e149a4a3ee3ce43d11e874adeb"
+    },
+    {
+      "bytes": 27039,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/sources.manifest.json",
+      "sha256": "df463929abb03688e9ba2ea82b29203f4c5c19419519575b0285c472905fd958"
+    },
+    {
+      "bytes": 988,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/configs/binding/old_value_overnight_20261028_v1/check.json",
+      "sha256": "56803a83f0ed0858564ccfd3dc9c2f07403ddc94e15b73a2afe1c2be76e61fec"
+    },
+    {
+      "bytes": 2889,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/configs/binding/old_value_overnight_20261028_v1/codellama34b.json",
+      "sha256": "c97b0a88b70ace575a8ffd2c6895e8741e0321a8630605313fa5fc35db34102f"
+    },
+    {
+      "bytes": 2865,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/configs/binding/old_value_overnight_20261028_v1/llama8b.json",
+      "sha256": "118573d02cef7041f51fd9d98490d176e7afe3547680a8cb750d5efaff0819cc"
+    },
+    {
+      "bytes": 58693,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/frozen_manifest.json",
+      "sha256": "dbba254b12a016928db3b7b2f778538a58fc706c26d2d1201beacec3658b9072"
+    },
+    {
+      "bytes": 2889,
+      "path": "configs/binding/old_value_overnight_20261028_v1/codellama34b.json",
+      "sha256": "c97b0a88b70ace575a8ffd2c6895e8741e0321a8630605313fa5fc35db34102f"
+    },
+    {
+      "bytes": 2865,
+      "path": "configs/binding/old_value_overnight_20261028_v1/llama8b.json",
+      "sha256": "118573d02cef7041f51fd9d98490d176e7afe3547680a8cb750d5efaff0819cc"
+    },
+    {
+      "bytes": 71965,
+      "path": "configs/binding/preparation/readiness_v24.json",
+      "sha256": "9d44a94aaf6c2ca9574dbbfb58fef3b5e44968368346fa3c889065f092cd630f"
+    }
+  ],
+  "logging": {
+    "enabled": true,
+    "fresh_within_two_intervals": true,
+    "guard_health": true,
+    "interval_minutes": 10,
+    "last_success_age_seconds": 0.024414,
+    "last_success_utc": "2026-10-29T01:04:56.425019+00:00",
+    "pending_guards": 2,
+    "recorded_utc": "2026-10-29T01:04:56.449433+00:00",
+    "status": "passed",
+    "tick_error": null,
+    "tick_status": "complete"
+  },
+  "model_gate_status": {
+    "codellama34b": "failed",
+    "llama8b": "failed"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "output_pins": [
+    {
+      "bytes": 4435347,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/comparison_v1.json",
+      "sha256": "358b40056ef2da9822b25aea80fe275acb86bf01d87f27eb1e558b92b151266d"
+    },
+    {
+      "bytes": 14961,
+      "path": "reports/binding/old_value_overnight_findings_v1.md",
+      "sha256": "e240923df85c6e1765202f52add48ad4647ca3d00756e2b2574cee8adc1fbb64"
+    },
+    {
+      "bytes": 358,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/completion_logging_review_v1.json",
+      "sha256": "a97c2f7d285bd5b2e13be371f210e9f958e47d34d14b59a187a608e8cd5c209b"
+    },
+    {
+      "bytes": 820,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/readiness_completion_review_v1.json",
+      "sha256": "84555cf2542c20a6bbbe3a38285ec3ea1fce9d3d7db76b67264bcce11b97661f"
+    }
+  ],
+  "prepared_records_opened": false,
+  "publisher_sha256": "5853d50cffcb8c26df61667ce15f65341d14ac54fba30e88707d4b8eab3a5add",
+  "readiness": {
+    "counts": {
+      "deferred_optional": 3,
+      "needs_scientific_decision": 9,
+      "ready": 62
+    },
+    "pins": [
+      {
+        "bytes": 82949,
+        "path": "artifacts/binding/old_value_overnight/20261028_v1/readiness_at_completion_v1.json",
+        "sha256": "1a2a898fc9de319469c96040283ee2434ae1b1888146fb2436de4d309a0cba2d"
+      },
+      {
+        "bytes": 8171,
+        "path": "artifacts/binding/old_value_overnight/20261028_v1/readiness_at_completion_v1.csv",
+        "sha256": "f9b0991d4fa605b31cd68fd9107d127abbcfe52946b398cf16a150c581697edd"
+      },
+      {
+        "bytes": 27448,
+        "path": "reports/binding/old_value_overnight_readiness_v1.md",
+        "sha256": "963e0a89879db7d81eda32097b31dcb2ba4695d22d040207a5edb0804f6f09cf"
+      }
+    ],
+    "shared_inventory_refreshed": true,
+    "status": "passed",
+    "tracked_tasks": 74
+  },
+  "response_records_opened": false,
+  "scientific_status": "gate_failed",
+  "source": {
+    "code": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55"
+  },
+  "source_records_opened": false,
+  "stages": {
+    "codellama34b_behavior": {
+      "exit_code": "0:0",
+      "job_id": "481705",
+      "state": "COMPLETED"
+    },
+    "codellama34b_preflight": {
+      "exit_code": "0:0",
+      "job_id": "481694",
+      "state": "COMPLETED"
+    },
+    "llama8b_behavior": {
+      "exit_code": "0:0",
+      "job_id": "481704",
+      "state": "COMPLETED"
+    },
+    "llama8b_preflight": {
+      "exit_code": "0:0",
+      "job_id": "481693",
+      "state": "COMPLETED"
+    },
+    "regression": {
+      "exit_code": "0:0",
+      "job_id": "481692",
+      "state": "COMPLETED"
+    }
+  },
+  "status": "complete_audited",
+  "total_scored_responses": 40320
+}

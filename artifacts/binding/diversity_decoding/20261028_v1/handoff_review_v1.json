@@ -1,0 +1,490 @@
+{
+  "actual_prefill_cases": {
+    "codellama34b": 5760,
+    "llama8b": 5760
+  },
+  "array_loading_by_completion_worker": false,
+  "binary_artifacts_stream_hashed_only": true,
+  "development_graph_families": 15,
+  "distinct_new_prefill_sources": 11520,
+  "evaluation_role": "discovery_diversity_completed_handoff_v1",
+  "factorizations": 90,
+  "fit_banks": 90,
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "independent_review": "passed",
+  "limitations": "Adaptive discovery on 15 DEV graph families of literal-root copy programs; no natural causal binding/version mechanism, behavioral reliability qualification, old-gate rescue or untouched unfamiliar-program prediction established. Dataset/train count/class coverage all change together.",
+  "maximum_assignment_version": 4,
+  "model_summaries": {
+    "codellama34b": {
+      "aggregation": "Mean of three weighting-seed point estimates; 15 dependent DEV graph families; no interval or reliability qualification.",
+      "cases": 5760,
+      "config_hash": "42c367be22236b8b0a60a1515194706577ca4f597e0a2113146e2adda19cf03d",
+      "development_groups": 15,
+      "development_rows": 1440,
+      "evaluation_role": "discovery_diversity_readouts_v1",
+      "factorizations": 45,
+      "fit_banks": 45,
+      "generated_holdouts_opened": false,
+      "limitations": [
+        "Adaptive discovery on 60 canonical SSA graph families: 45 TRAIN and 15 DEV, each containing 96 dependent source rows; numeric, lexical and query relatives are dependent.",
+        "All actual definition, parent and current-version identities are targets only. Hidden features contain no oracle source or target fields.",
+        "The exact-prefix character baseline and training prior are retained; neither positive decoding nor a hidden-minus-surface difference proves natural causal use.",
+        "Eligibility is descriptive TRAIN class support of at least three graph groups per observed class, distinct from historical behavioral qualification gates.",
+        "Every categorical head and held-out class is scored, including rare, unsupported and constant classes; absent classes do not count as successful discrimination.",
+        "Binary ridge scores use threshold 0.5 and categorical heads use argmax; scores are uncalibrated. No DEV threshold or hyperparameter selection occurs.",
+        "Weight seeds change graph weights and random-prefix control labels, not independent experimental replications.",
+        "Random-prefix controls preserve prefix consistency and visibility, not structural coherence, class marginals or task difficulty.",
+        "Point estimates and all 15 DEV graph outcomes are descriptive; no confirmatory or multiplicity-adjusted interval is claimed.",
+        "Changing assignment schedules also changes variable age, positions and dependency depth. Decoding does not establish a causal version-tracking algorithm."
+      ],
+      "new_model_queries": 0,
+      "parameter_replay_rows": 259200,
+      "primary": {
+        "hidden": {
+          "direct": {
+            "copy_parent": 0.37222222222222223,
+            "current_definition": 0.6981481481481481,
+            "current_version": 0.3509259259259259
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.0,
+            "current_definition": 0.0,
+            "current_version": 0.007407407407407408
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        },
+        "surface": {
+          "direct": {
+            "copy_parent": 0.07962962962962962,
+            "current_definition": 0.06481481481481481,
+            "current_version": 0.09537037037037037
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.0,
+            "current_definition": 0.0,
+            "current_version": 0.007407407407407408
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        }
+      },
+      "primary_group_macro": {
+        "hidden": {
+          "direct": {
+            "copy_parent": 0.37222222222222223,
+            "current_definition": 0.6981481481481481,
+            "current_version": 0.35092592592592586
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.0,
+            "current_definition": 0.0,
+            "current_version": 0.007407407407407407
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        },
+        "surface": {
+          "direct": {
+            "copy_parent": 0.07962962962962962,
+            "current_definition": 0.06481481481481481,
+            "current_version": 0.09537037037037037
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.0,
+            "current_definition": 0.0,
+            "current_version": 0.007407407407407407
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        }
+      },
+      "status": "complete_exploratory",
+      "training_groups": 45,
+      "training_rows": 4320
+    },
+    "llama8b": {
+      "aggregation": "Mean of three weighting-seed point estimates; 15 dependent DEV graph families; no interval or reliability qualification.",
+      "cases": 5760,
+      "config_hash": "71d1bfed04da53c308ce7a3435665541966e478c9a55571cd98d4a70c1bc8b4b",
+      "development_groups": 15,
+      "development_rows": 1440,
+      "evaluation_role": "discovery_diversity_readouts_v1",
+      "factorizations": 45,
+      "fit_banks": 45,
+      "generated_holdouts_opened": false,
+      "limitations": [
+        "Adaptive discovery on 60 canonical SSA graph families: 45 TRAIN and 15 DEV, each containing 96 dependent source rows; numeric, lexical and query relatives are dependent.",
+        "All actual definition, parent and current-version identities are targets only. Hidden features contain no oracle source or target fields.",
+        "The exact-prefix character baseline and training prior are retained; neither positive decoding nor a hidden-minus-surface difference proves natural causal use.",
+        "Eligibility is descriptive TRAIN class support of at least three graph groups per observed class, distinct from historical behavioral qualification gates.",
+        "Every categorical head and held-out class is scored, including rare, unsupported and constant classes; absent classes do not count as successful discrimination.",
+        "Binary ridge scores use threshold 0.5 and categorical heads use argmax; scores are uncalibrated. No DEV threshold or hyperparameter selection occurs.",
+        "Weight seeds change graph weights and random-prefix control labels, not independent experimental replications.",
+        "Random-prefix controls preserve prefix consistency and visibility, not structural coherence, class marginals or task difficulty.",
+        "Point estimates and all 15 DEV graph outcomes are descriptive; no confirmatory or multiplicity-adjusted interval is claimed.",
+        "Changing assignment schedules also changes variable age, positions and dependency depth. Decoding does not establish a causal version-tracking algorithm."
+      ],
+      "new_model_queries": 0,
+      "parameter_replay_rows": 259200,
+      "primary": {
+        "hidden": {
+          "direct": {
+            "copy_parent": 0.30370370370370375,
+            "current_definition": 0.5638888888888889,
+            "current_version": 0.22870370370370371
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.002777777777777778,
+            "current_definition": 0.000925925925925926,
+            "current_version": 0.003703703703703704
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        },
+        "surface": {
+          "direct": {
+            "copy_parent": 0.07962962962962962,
+            "current_definition": 0.06296296296296296,
+            "current_version": 0.09629629629629628
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.0,
+            "current_definition": 0.0,
+            "current_version": 0.007407407407407408
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        }
+      },
+      "primary_group_macro": {
+        "hidden": {
+          "direct": {
+            "copy_parent": 0.30370370370370364,
+            "current_definition": 0.563888888888889,
+            "current_version": 0.22870370370370371
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.002777777777777778,
+            "current_definition": 0.0009259259259259259,
+            "current_version": 0.0037037037037037034
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        },
+        "surface": {
+          "direct": {
+            "copy_parent": 0.07962962962962962,
+            "current_definition": 0.06296296296296296,
+            "current_version": 0.09629629629629631
+          },
+          "random_prefix_control": {
+            "copy_parent": 0.0,
+            "current_definition": 0.0,
+            "current_version": 0.007407407407407407
+          },
+          "training_prior": {
+            "copy_parent": 0.011111111111111112,
+            "current_definition": 0.0,
+            "current_version": 0.0
+          }
+        }
+      },
+      "status": "complete_exploratory",
+      "training_groups": 45,
+      "training_rows": 4320
+    }
+  },
+  "new_fits_by_completion_worker": 0,
+  "new_model_queries_by_completion_worker": 0,
+  "optional_extensions_deferred": 3,
+  "original_scientific_decisions_remaining": 9,
+  "parameter_replay_rows": 518400,
+  "pins": [
+    {
+      "bytes": 1354,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/build_review_v1.json",
+      "sha256": "7e9c3c2c491e33cd873b507ff028fd39760ca56936218c3523f755c553a1c16d"
+    },
+    {
+      "bytes": 555,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/closure_job_v1.json",
+      "sha256": "b1d53fd6c2d1edfd4595082385ee1f9512afde188c278bf9eaa425ab9ee77456"
+    },
+    {
+      "bytes": 4123,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/audit.json",
+      "sha256": "b825516e2ba2c072777898e73f23956095d0f250711e75bd5729d0aa1f126691"
+    },
+    {
+      "bytes": 5343,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/completion_manifest_v1.json",
+      "sha256": "87d400e5b1cdf7d570b39204365d1b5949f14249e105dd432baf72b626202d97"
+    },
+    {
+      "bytes": 7663,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/summary.json",
+      "sha256": "9c04643c7f52e7293a21b03cdf5a5441a288fee26e37a1f07533d7373b271ec0"
+    },
+    {
+      "bytes": 349,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/audit.json",
+      "sha256": "82315e220b995cbfad5caa9bf53bcfc434fba6bfbbb75e03fb3d29176e442ccf"
+    },
+    {
+      "bytes": 14474,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/completion_manifest_v1.json",
+      "sha256": "4ef5544683206f0141d873310dba5874c589ab4dfe8caa6bbd79ca5920eae03e"
+    },
+    {
+      "bytes": 14659,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json",
+      "sha256": "f9822ed00a78d29dacf548c65db17a3a0d3f5ac63af74f92d4073f78a8d1d5d5"
+    },
+    {
+      "bytes": 4141,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/summary.json",
+      "sha256": "24410462b85ce64f64b2b8269fd06256507344bcfedc8ad514c1ea3d134baa39"
+    },
+    {
+      "bytes": 15194826,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/comparison_v1.json",
+      "sha256": "e7b251711efbc3bdc96f0bb7b8434c75a78efc25a73a3bb723f1c806ce47dfd8"
+    },
+    {
+      "bytes": 297,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/completion_logging_review_v1.json",
+      "sha256": "8aa6c5ea8ecb9f5e98cbb9ebc0b500e3c866a143b4b24a5b5cbc900f0967bf92"
+    },
+    {
+      "bytes": 2017,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "40ec57d0aafe965d89fed5829dbbcc778eaa3d2e2eb84df71a87f5d10465a304"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/execution_source_v1.json",
+      "sha256": "69559abd128f176fc8269a9cfaaf365a0ce1df6767e3c4d231048b5679c20c7c"
+    },
+    {
+      "bytes": 9275,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/finish_suite_v1.py",
+      "sha256": "d0721c8d3ea53fb293a1297aa5be9aefa1fcc5ec02cfae4f129748deb94b0734"
+    },
+    {
+      "bytes": 7232555,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/form_cells_v1.csv",
+      "sha256": "5e56345ca43efc47cbc115c783e27f22b5eee5702428637d827420b78ca46a7d"
+    },
+    {
+      "bytes": 140366,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/independent_execution_review_v1.json",
+      "sha256": "61ccbfa0b61b2caea3d8d8e907e3ca9924deb5ae6ac45a47b39cc87773055037"
+    },
+    {
+      "bytes": 37306,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/independent_review_v1.py",
+      "sha256": "7a409230cae11a684c9e4b9919310c7f8db442052f91391af7f20986b53ea93e"
+    },
+    {
+      "bytes": 232,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/jobs_v1.json",
+      "sha256": "455029b54b7d66caca4013b48190af9720abd8caf2b4779ba2ad4d59c20fb52b"
+    },
+    {
+      "bytes": 4063,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/audit.json",
+      "sha256": "50911f07ff04862ed3120234f3a9dbd0b03cf78e381fce1d0df5b7b875a0d3ed"
+    },
+    {
+      "bytes": 5250,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+      "sha256": "ce1d4b0562df29a3b9d7e1385127a3e7cc2644d5f3002b44ead297fcdd725013"
+    },
+    {
+      "bytes": 7583,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/summary.json",
+      "sha256": "b7417c0e36ba45b4bc82a5fa671e21b20f4bf90fae00167b22a38918a475791b"
+    },
+    {
+      "bytes": 349,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/audit.json",
+      "sha256": "a3a845e956a5a9645fe595d2c5f78f661373c288e6dc70dfbf62309a2084c370"
+    },
+    {
+      "bytes": 14206,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/completion_manifest_v1.json",
+      "sha256": "ae3b1263ea8ad21f7fdcb787ba60fa6e88963c7a16f4cca0202f2716bda24bb6"
+    },
+    {
+      "bytes": 14391,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json",
+      "sha256": "ceca45c24dc939048fd1c83e26bfba55fb11116b906525518264ac917238766c"
+    },
+    {
+      "bytes": 4211,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/summary.json",
+      "sha256": "d9af192d2a77d362a3f61f03cdcc3f9897a22ff4f9509449f72dbeee089b9728"
+    },
+    {
+      "bytes": 8420,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/publication_review_v1.json",
+      "sha256": "fad6cd649b50e5362fbcc95386cff33ecaddef913b5cc39a76a30c0cc7d02045"
+    },
+    {
+      "bytes": 60622,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/publish_results_v1.py",
+      "sha256": "8f882bb7543b792ee1a7f0119bf0cac23eebc0e4e8c6b6b1be3907b9cd807816"
+    },
+    {
+      "bytes": 7563,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/readiness_at_completion_v1.csv",
+      "sha256": "ba1a954847a94ac46b2a4b0f262f60dc0f0b2ea4110f9721c2973b8a07810215"
+    },
+    {
+      "bytes": 73763,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/readiness_at_completion_v1.json",
+      "sha256": "e859cebb1e1cb4600ef37751ab0fc0e03c8f2bc0553283f129d47e535a9e14a4"
+    },
+    {
+      "bytes": 264,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "626882bf311ac816eb4dc6d6609340c1328cbfc7f7ec7c8ed91e88071ef6bd10"
+    },
+    {
+      "bytes": 292147,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/regression_sources_v1.zip",
+      "sha256": "132fe71b8b55ae7ada4819c38c39e9ce33c6b10b6acd5308f7c16905cbabbca2"
+    },
+    {
+      "bytes": 312506,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/regression_v1.xml",
+      "sha256": "9dd4724312a21b8cd61a701f9ac25aee00b5c5e4a1433450439c1d7fb4b9f9ae"
+    },
+    {
+      "bytes": 1864,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/run_stage_v1.py",
+      "sha256": "e47aa1c563f475165f8049faff27ce4f171c67ce4af69808745473cb739eb751"
+    },
+    {
+      "bytes": 2601,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/run_validation_v1.py",
+      "sha256": "f7b56d380711481b690ec54d54099a0718c0ce8d5d8e2ebe145a2acb34b9d784"
+    },
+    {
+      "bytes": 12551,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/software_validation_review_v1.json",
+      "sha256": "da9f5e0d28472a0cf5bee17d7b3605c0bcd335296418aba389c2c81a5d8c9c07"
+    },
+    {
+      "bytes": 808,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/source_availability_review_v1.json",
+      "sha256": "45a445936ffd37376d193b2c0d7e910fc1ae1cb3d05b488e6d7fed9d58df4d8b"
+    },
+    {
+      "bytes": 1563,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/submission_review_v1.json",
+      "sha256": "3f316a620fcc33789fc6e0b749f43997992853eae762e493ebdcf672e45a3758"
+    },
+    {
+      "bytes": 3906793,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/target_preflight_review_v1.json",
+      "sha256": "9e5b924f6424917978699d1fa4bac1b6aa2ab179624a5fb66797232901db300c"
+    },
+    {
+      "bytes": 32119,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/source_review_v1.json",
+      "sha256": "a68a85aed40b135f596b8148dec51778c0da209955d58699636dd512eb372ccb"
+    },
+    {
+      "bytes": 26555,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.manifest.json",
+      "sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f"
+    },
+    {
+      "bytes": 34399,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/handoff_review_v1.json",
+      "sha256": "6bff91d7bdef24d3ac13b22bc0b065cfb02a67cdf55f742caf1cd0890a950037"
+    },
+    {
+      "bytes": 55173,
+      "path": "artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8/frozen_manifest.json",
+      "sha256": "aebd4aac3e13f1361d3eb1109b7184982f0c2ee90b9e22145932435a0b996269"
+    },
+    {
+      "bytes": 8302,
+      "path": "reports/binding/diversity_decoding_findings_v1.md",
+      "sha256": "c49bf39709fc18eab5fb77436e289ca04fdfa008a9fa523aa73a584fd331cf85"
+    },
+    {
+      "bytes": 8573,
+      "path": "reports/binding/diversity_decoding_plan_v1.md",
+      "sha256": "fcb0ef8e81dc7c0e8c3f795d4ff6b6ae88746bdf3719e68a3cbcd676a85de44c"
+    },
+    {
+      "bytes": 25169,
+      "path": "reports/binding/diversity_decoding_readiness_v1.md",
+      "sha256": "c88b62e5301fbc82dd5eb6436ae6896a49d91c9d2651409335586dfa41945159"
+    },
+    {
+      "bytes": 159494,
+      "path": "reports/binding/figures/diversity_decoding_v1.png",
+      "sha256": "4a9b0797ac8c0b6278e28f402b224624c250354fd825caaee0f4758920acc656"
+    },
+    {
+      "bytes": 120383,
+      "path": "reports/binding/figures/diversity_decoding_v1.svg",
+      "sha256": "f08fae6e00ddfbce2243f036a18558a4ef912d81fec9b2dce8709adae86afb92"
+    }
+  ],
+  "publication": "Independent review followed by two byte-identical publications. Numerical replay was completed by each readout CPU worker.",
+  "publication_worker": {
+    "job_id": "481436",
+    "slurm_terminal_state": "Recorded by the job finish trap after this handoff is written."
+  },
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 56
+  },
+  "recorded_utc": "2026-10-28T20:13:31.852943+00:00",
+  "refreshed_shared_inventory": true,
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2044
+  },
+  "source": {
+    "code": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8"
+  },
+  "source_rows": 5760,
+  "status": "complete_audited",
+  "target_columns": 232,
+  "tracked_tasks": 68,
+  "training_graph_families": 45
+}

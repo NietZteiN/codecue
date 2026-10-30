@@ -1,0 +1,306 @@
+{
+  "attempts": [
+    {
+      "model_load_attempted": true,
+      "model_loaded": true,
+      "prefill_batch_calls": 251,
+      "prefill_cases_attempted": 16038,
+      "prefill_cases_returned": 16038,
+      "runtime": {
+        "attention_backend": "sdpa",
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "dtype": "torch.bfloat16",
+        "forward": "causal-LM model.model backbone; no vocabulary logits or generation",
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+          "mean_gpu_utilization_percent": 74.19003690036901,
+          "mean_power_watts": 595.6852767527675,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 67273.0,
+          "samples": 542,
+          "selector_verified": true
+        },
+        "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+        "gpu_uuid": "6a84f189-485f-ab4e-5b2f-86119881df62",
+        "position_ids": "(attention_mask.cumsum(-1)-1).clamp_min(0)",
+        "preload_memory": {
+          "actual_max_prompt_tokens": 134,
+          "headroom_scope": "Prospective short-prefill working allowance; scales with actual tokens and declared batch, not context_limit.",
+          "observed_free_bytes": 84463714304,
+          "observed_total_bytes": 85017493504,
+          "required_free_bytes": 71782958696,
+          "weight_bytes": 67487991400,
+          "working_headroom_bytes": 4294967296
+        },
+        "torch_peak_allocated_bytes": 69232816128,
+        "use_cache": false,
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1"
+        }
+      },
+      "slurm_job_id": "480521",
+      "status": "complete",
+      "wall_seconds": 408.258338329033
+    }
+  ],
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/000000.npz",
+      "rows": 512,
+      "sha256": "e607e9655580f04a2290d6b5c25320781bbf1b2b7efc65ba3051fe9dd841d493"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/000512.npz",
+      "rows": 512,
+      "sha256": "1538300e2a9e2ac9a65a1efb7f0e06d02daf327db7fc6a25b098e0ddde71eb4a"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/001024.npz",
+      "rows": 512,
+      "sha256": "3c5245b618a4334ad4fa290103a302ff5565294e8315b2d8cd3190a2ae797292"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/001536.npz",
+      "rows": 512,
+      "sha256": "ca04ea30b0d0ace5df4bf51a899016d16416de6cc2107d79308103158ec02a84"
+    },
+    {
+      "first": 2048,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/002048.npz",
+      "rows": 512,
+      "sha256": "c0b8e03f19989c849e7bafa6cb446fd0d5798a7f0c599dc6830de5f7b318f6d0"
+    },
+    {
+      "first": 2560,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/002560.npz",
+      "rows": 512,
+      "sha256": "8443c423d8f539b19996e406c4d07460f8ca83baac7fd3998876be9695315d85"
+    },
+    {
+      "first": 3072,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/003072.npz",
+      "rows": 512,
+      "sha256": "42d36f16d50c606ba7e93593dfd150b297fd4a0ec2d1b3d38f8207f99d5b95cc"
+    },
+    {
+      "first": 3584,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/003584.npz",
+      "rows": 512,
+      "sha256": "ecd413cebae53fb3b59ec50c96ebd3959ae5f5afea7d9a839c26f59d7c4cf95d"
+    },
+    {
+      "first": 4096,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/004096.npz",
+      "rows": 512,
+      "sha256": "8a8346e40976419f3e6d4de48b714f9cb393c7db8ba448a01b40ed538b6f2074"
+    },
+    {
+      "first": 4608,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/004608.npz",
+      "rows": 512,
+      "sha256": "c2d99ece0e38f2450f779456420a962116c86ed8d10c4de16d166325665afc79"
+    },
+    {
+      "first": 5120,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/005120.npz",
+      "rows": 512,
+      "sha256": "d70b40a345304b30c62ca3317c3bfbf747f205fae74f960844b149ec64d87660"
+    },
+    {
+      "first": 5632,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/005632.npz",
+      "rows": 512,
+      "sha256": "f7972bd117f2b8f7d90ea00a99bc62e677040d1aec0ff26267b13fd245e45217"
+    },
+    {
+      "first": 6144,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/006144.npz",
+      "rows": 512,
+      "sha256": "f05161312a2056b1f5c214d190bd75400acc17eeac62b1407df2866b09f9da67"
+    },
+    {
+      "first": 6656,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/006656.npz",
+      "rows": 512,
+      "sha256": "a5a98f1a38960a47ffdec899bab98164413bd485e379bedbc6eafa0239998fea"
+    },
+    {
+      "first": 7168,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/007168.npz",
+      "rows": 512,
+      "sha256": "dacbfd138f2d04bb33a6b623f6f1a8e5d77bc748e62e24249a3db5959b1477cf"
+    },
+    {
+      "first": 7680,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/007680.npz",
+      "rows": 512,
+      "sha256": "4c03001980a26e55ba8bfe35f378ccf7c2df463625c1de57c3f79839b4b61274"
+    },
+    {
+      "first": 8192,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/008192.npz",
+      "rows": 512,
+      "sha256": "bbe7f761f78f3034242ae9740c8fa5f9e16a37e5d0115ce288b0ade170300443"
+    },
+    {
+      "first": 8704,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/008704.npz",
+      "rows": 512,
+      "sha256": "26d3cfcf74d37038935426c7c456fd1ef6b8bb6560f1a669d51be3b9dd6b55ab"
+    },
+    {
+      "first": 9216,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/009216.npz",
+      "rows": 512,
+      "sha256": "79f4ac12a9db59cdb8182b2a32b1a8ff70819bcb895a3df99c6077248c086177"
+    },
+    {
+      "first": 9728,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/009728.npz",
+      "rows": 512,
+      "sha256": "6086610f48c3ede8e67480553cf1deb8018836b5d3af2d00f0f86f86e7a7a5bb"
+    },
+    {
+      "first": 10240,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/010240.npz",
+      "rows": 512,
+      "sha256": "34b08f7602fb72149fcc678c21abe89fb42c469a6a6afd5ff6bc9ed5d5b37d72"
+    },
+    {
+      "first": 10752,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/010752.npz",
+      "rows": 512,
+      "sha256": "8b31884971a787a283f03a909af4a88d819fd9db12dfb6f607b99a6a06ad1b46"
+    },
+    {
+      "first": 11264,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/011264.npz",
+      "rows": 512,
+      "sha256": "c627a20563e205ac84790806c318500f868147855c8ccc824efe9a3e345f1e08"
+    },
+    {
+      "first": 11776,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/011776.npz",
+      "rows": 512,
+      "sha256": "7b82a22c9c2189ac61b0353dbd6b752485dd821e827ff4d18445a445b1b423ff"
+    },
+    {
+      "first": 12288,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/012288.npz",
+      "rows": 512,
+      "sha256": "47b7b283a91f5e91efdbb210581c545a2f409dfea9afa9e7f76091d2856b7976"
+    },
+    {
+      "first": 12800,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/012800.npz",
+      "rows": 512,
+      "sha256": "fe5ab5e983edb6f98fe1fc6175b0fab566954180b127c4b08c6a0d472c7586f4"
+    },
+    {
+      "first": 13312,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/013312.npz",
+      "rows": 512,
+      "sha256": "a92ed29ab920e350ff821314dfe94d6d6128ea82dfc80dbfac5c6d00822e28b2"
+    },
+    {
+      "first": 13824,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/013824.npz",
+      "rows": 512,
+      "sha256": "ec7488d10eaef27a9cff0e9d2f0e8a310aee6069ff0399544e4a4c0100feb58e"
+    },
+    {
+      "first": 14336,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/014336.npz",
+      "rows": 512,
+      "sha256": "6f36e9a45eba0d8ddd015050b076888143887f8dbf371aca0a29ee4632daeca4"
+    },
+    {
+      "first": 14848,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/014848.npz",
+      "rows": 512,
+      "sha256": "82b47a1347674ede4af5391c0d287c0a593ea9ab4aae11a4bdcede060f00b918"
+    },
+    {
+      "first": 15360,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/015360.npz",
+      "rows": 512,
+      "sha256": "5310f4262add03cebd5fec34f696312e6c005dacba30f576a1a6dbffc9d1cd47"
+    },
+    {
+      "first": 15872,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/chunks/015872.npz",
+      "rows": 166,
+      "sha256": "251180dcd26945cb7e05b43e2384805fb9374e2c75a003dbc6843539eaffd773"
+    }
+  ],
+  "committed_batch_groups": 251,
+  "distinct_committed_prefill_rows": 16038,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "identity": {
+    "config": {
+      "batch_size": 64,
+      "chunk_size": 512,
+      "context_limit": 4096,
+      "dataset": "artifacts/binding/overnight_relationships/20261027_v1/union.jsonl",
+      "dataset_sha256": "75eeef184fd0513acb2d28f269574d38db4b09dee35b555abe5f4e93582345c3",
+      "evaluation_role": "discovery_overnight_relationship_capture_v1",
+      "hidden_size": 8192,
+      "layers": [
+        12,
+        24,
+        36,
+        47
+      ],
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "prefix_atol": 1e-05,
+      "run_dir": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture",
+      "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+    },
+    "config_hash": "fc0e206e8a8486874f29b07469dd83eee63f13868b48d803f95422bc9005f820",
+    "dataset_sha256": "75eeef184fd0513acb2d28f269574d38db4b09dee35b555abe5f4e93582345c3",
+    "evaluation_role": "discovery_overnight_relationship_capture_v1",
+    "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+    "generated_holdouts_opened": false,
+    "generated_responses": 0,
+    "generation_calls": 0,
+    "hidden_size": 8192,
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "prefix_atol": 1e-05,
+    "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+    "preflight_sha256": "486423aa8dc791557d761041f5627a1794d660227fedfb85e5d9848fca27fe86",
+    "sites": [
+      "statement:3",
+      "statement:7",
+      "pre_answer"
+    ],
+    "source": {
+      "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+      "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+      "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+    },
+    "stored_dtype": "float32"
+  },
+  "model_loaded": true,
+  "model_prefill_cases": 16038,
+  "model_prefill_cases_attempted": 16038,
+  "new_model_queries": 16038,
+  "prefill_batch_calls": 251,
+  "status": "complete",
+  "summary_sha256": "7cf3ba3e02d99ea6430eeac36b2e16fc0b03e64e83059c0a2479a148bac1eac0"
+}

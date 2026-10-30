@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-10-29T01:50:50.417312+00:00",
+  "current_operational_source_changes_after_measurement": [
+    "src/codecue/binding/experiment_log_scheduler.py",
+    "src/codecue/binding/old_value_overnight.py"
+  ],
+  "current_operational_source_sha256": "f60d6ba3aaa5e78aeebe700eee578032050c4df920139769a7711f407df4a7a9",
+  "diagnostics_synthetic_checks": 23,
+  "evaluation_role": "discovery_old_value_postrun_followup_v1",
+  "evidence_pins": [
+    {
+      "bytes": 10186,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/completion_review_v1.json",
+      "sha256": "93c00b35ac097c7d22e81bc8fc6f556ea02b02136387038d8e3123d76a0fbd47"
+    },
+    {
+      "bytes": 16752,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/postrun_integrity_review_v1.json",
+      "sha256": "814e96618db2aeba4c32e358773f3e599dc73e93d80b79e900231ccd881daabd"
+    },
+    {
+      "bytes": 2050,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/postrun_diagnostics_review_v1.json",
+      "sha256": "462d7b69e489d64553ef2be725f22876590813b7829b79c7730802424be12ba1"
+    },
+    {
+      "bytes": 160004,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/postrun_response_diagnostics_v1.json",
+      "sha256": "0ba80898b262fbceb3045b39faa506518419bdac14290931cb90914edd185d47"
+    },
+    {
+      "bytes": 3265,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/logging_timeout_build_review_v1.json",
+      "sha256": "9c24b05d8a682f09a51a61eeb356f2cbeff94631f82ab5a9dadb44aa63c5c0ca"
+    },
+    {
+      "bytes": 5966,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/logging_recovery_review_v1.json",
+      "sha256": "872a3d6aa5270d01a10889f7a7f64550b7407bcef183df211535db4cc2541fa8"
+    },
+    {
+      "bytes": 3143,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/checker_auxiliary_failure_build_review_v1.json",
+      "sha256": "8942e431be184d69831cd12f7f8edb2eb31f5094f8dc4e56ae0fa9a0f7259158"
+    }
+  ],
+  "focused_checker_tests_passed": 32,
+  "focused_logging_tests_passed": 58,
+  "frozen_configs_verified": 258,
+  "frozen_source": {
+    "code": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55"
+  },
+  "frozen_source_verified": true,
+  "live_check": {
+    "checked_at": "2026-10-29T01:49:38.051099+00:00",
+    "logging_fresh": true,
+    "needs_attention": false,
+    "status": "complete"
+  },
+  "models": [
+    {
+      "accuracy": 0.23506944444444444,
+      "correct": 4739,
+      "gate_cells": 24,
+      "gate_passed_cells": 0,
+      "generation_requests_per_second": 223.92900541305121,
+      "invalid": 9864,
+      "mean_gpu_utilization_percent": 95.98181818181818,
+      "n": 20160,
+      "name": "codellama34b"
+    },
+    {
+      "accuracy": 0.6087301587301587,
+      "correct": 12272,
+      "gate_cells": 24,
+      "gate_passed_cells": 0,
+      "generation_requests_per_second": 203.81063626271103,
+      "invalid": 0,
+      "mean_gpu_utilization_percent": 97.74301675977654,
+      "n": 20160,
+      "name": "llama8b"
+    }
+  ],
+  "morning_job_id": "481707",
+  "morning_scheduler_proof": "JobId=481707 JobName=oldvalue-morning UserId=jvl210002(736106) GroupId=sn(215) MCS_label=N/A Priority=28497 Nice=0 Account=tnguyen QOS=normal JobState=PENDING Reason=BeginTime Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-28T19:44:00 EligibleTime=2026-10-29T08:00:00 AccrueTime=Unknown StartTime=2026-10-29T08:00:00 EndTime=2026-10-29T10:00:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-28T19:44:00 Scheduler=Main Partition=dev,normal AllocNode:Sid=c-06-04:3916612 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=2,mem=8G,node=1,billing=2 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=2 MinMemoryNode=8G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/work/jvl210002/migration/codecue/log/slurm/submit_20261029T004400221737Z_oldvalue-morning.sbatch SubmitLine=sbatch --parsable /work/jvl210002/migration/codecue/log/slurm/submit_20261029T004400221737Z_oldvalue-morning.sbatch WorkDir=/work/jvl210002/migration/codecue StdErr=/work/jvl210002/migration/codecue/log/slurm/481707_oldvalue-morning.out StdIn=/dev/null StdOut=/work/jvl210002/migration/codecue/log/slurm/481707_oldvalue-morning.out KillOnInvalidDependent=Yes TresPerTask=cpu=2\n",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_confirmed_warmups": 16,
+  "original_full_regression_passed": 2280,
+  "overview_documents_updated": [
+    "README.md",
+    "reports/binding/implementation_checklist.md",
+    "reports/binding/research_backlog.md"
+  ],
+  "overview_pins_policy": "Mutable navigation documents are updated summaries, not immutable scientific inputs.",
+  "pipeline_helpers_verified": 8,
+  "report": {
+    "bytes": 3709,
+    "path": "reports/binding/old_value_overnight_followup_v1.md",
+    "sha256": "054c3d30b37b962e76a5d3fd41029d9ba6a5e8009f1c6a4aa50f7f36fa850ab5"
+  },
+  "scientific_status": "gate_failed",
+  "status": "complete_audited",
+  "total_scored_responses": 40320
+}

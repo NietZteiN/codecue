@@ -1,0 +1,46 @@
+{
+  "all_executed_jobs_completed_zero": true,
+  "enabled": true,
+  "evaluation_role": "discovery_direct_identity_completion_index_v1",
+  "healthy": true,
+  "independent_metadata_cells_checked": 1440,
+  "independent_review": "passed",
+  "indexed_counts": {
+    "analysis": 329,
+    "dataset": 68,
+    "job": 432,
+    "run": 83
+  },
+  "indexed_events": 3480,
+  "interval_minutes": 10,
+  "new_fits_by_index_review": 0,
+  "new_model_queries": 0,
+  "new_parameter_applications_by_index_review": 0,
+  "pending_guards": 2,
+  "pins": [
+    {
+      "bytes": 4714,
+      "path": "artifacts/binding/direct_identity/20261028_v1/log_tick_completion_stdout_v1.txt",
+      "sha256": "cd40b2a08f575e42853de9bc70ea141257d4b23717884564472bf6eb17acd2d2"
+    },
+    {
+      "bytes": 41647,
+      "path": "artifacts/binding/direct_identity/20261028_v1/independent_findings_review_v1.json",
+      "sha256": "6486c78b80b7eb1826e106cc7e1e80fd1a219988d67a414e9717afb91e8953e4"
+    },
+    {
+      "bytes": 2862,
+      "path": "artifacts/binding/direct_identity/20261028_v1/completion_followup_review_v1.json",
+      "sha256": "8066c4997d461ef71773173e610fb725d31f077f5a0ef9918fa83f970a5e8595"
+    },
+    {
+      "bytes": 6705,
+      "path": "reports/binding/direct_identity_decision_v1.md",
+      "sha256": "326552e8bf868cb450985e899a4b0625ae795e4070c72f3021318d6eefd36998"
+    }
+  ],
+  "reconciliation_issues": [],
+  "reconciliation_status": "ok",
+  "root_handoff_sha_pins_verified": 105,
+  "status": "passed"
+}

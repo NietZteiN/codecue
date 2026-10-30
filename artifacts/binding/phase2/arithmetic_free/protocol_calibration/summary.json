@@ -1,0 +1,54 @@
+{
+  "actual_model_dtype": "torch.bfloat16",
+  "complete": true,
+  "gate": "Fresh phase-two diagnostics use their own training/validation selection rule",
+  "heldout_outcomes_opened": false,
+  "interpretation": "training-only calibration; explicit reasoning changes computation and is kept separate from short answers",
+  "model_experiment": true,
+  "variants": [
+    {
+      "families": {
+        "copy_depth": {
+          "correct": 98,
+          "invalid": 0,
+          "n": 192
+        },
+        "overwrite_count": {
+          "correct": 75,
+          "invalid": 0,
+          "n": 192
+        }
+      },
+      "invalid": 0,
+      "n": 384,
+      "primitive_correct": 0,
+      "primitive_n": 0,
+      "promising_for_training_bank_only": false,
+      "training_correct": 173,
+      "training_n": 384,
+      "variant": "print_direct_v3"
+    },
+    {
+      "families": {
+        "copy_depth": {
+          "correct": 155,
+          "invalid": 3,
+          "n": 192
+        },
+        "overwrite_count": {
+          "correct": 127,
+          "invalid": 2,
+          "n": 192
+        }
+      },
+      "invalid": 5,
+      "n": 384,
+      "primitive_correct": 0,
+      "primitive_n": 0,
+      "promising_for_training_bank_only": false,
+      "training_correct": 282,
+      "training_n": 384,
+      "variant": "print_trace_long_v1"
+    }
+  ]
+}

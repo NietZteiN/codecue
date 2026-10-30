@@ -1,0 +1,1605 @@
+{
+  "csv": "artifacts/binding/schedule_followup/20261028_v1/readiness_live_v1.csv",
+  "environment": {
+    "cache": {
+      "hf_home": "/scratch/juno/jvl210002/hf_home",
+      "models": [
+        {
+          "model": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+        },
+        {
+          "model": "codellama/CodeLlama-34b-Instruct-hf",
+          "revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+        }
+      ]
+    },
+    "packages": [
+      "numpy",
+      "scipy",
+      "torch",
+      "transformers",
+      "matplotlib",
+      "pytest"
+    ],
+    "python": "../envs/probe-cu129/bin/python"
+  },
+  "items": [
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [],
+      "description": "Restricted integer programs and fresh numeric calibration use the existing independently checked builders.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/competition.py",
+          "purpose": "source"
+        },
+        {
+          "path": "src/codecue/binding/live_load.py",
+          "purpose": "source"
+        },
+        {
+          "path": "src/codecue/binding/arithmetic_readout.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "generator_software",
+      "title": "Semantic generators and independent oracles"
+    },
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [],
+      "description": "Previously cited CRUXEval and BBH source manifests retained; no new dataset citation is invented.",
+      "evidence": [
+        {
+          "path": "artifacts/binding/benchmarks/published_datasets_manifest.json",
+          "purpose": "source"
+        }
+      ],
+      "id": "cited_sources",
+      "title": "Pinned published benchmark sources"
+    },
+    {
+      "category": "setup",
+      "commands": [],
+      "dependencies": [],
+      "description": "Pinned local 8B and 34B checkpoints; shard existence and package versions checked below. All model/tokenizer loading goes through sbatch.",
+      "evidence": [
+        {
+          "path": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/env.sh",
+          "purpose": "source"
+        }
+      ],
+      "id": "runtime_setup",
+      "title": "Cached model/runtime setup"
+    },
+    {
+      "category": "operations",
+      "commands": [],
+      "dependencies": [],
+      "description": "Lifecycle events, immutable JSON spool, SQLite/CSV/dashboard, and CPU SLURM guards reconcile automatically.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/experiment_log.py",
+          "purpose": "source"
+        },
+        {
+          "path": "src/codecue/binding/experiment_log_scheduler.py",
+          "purpose": "source"
+        },
+        {
+          "path": "artifacts/binding/experiment_log/scheduler_state.json",
+          "purpose": "source"
+        }
+      ],
+      "id": "automatic_logging",
+      "title": "Persistent experiment and result logging"
+    },
+    {
+      "category": "validation",
+      "commands": [],
+      "dependencies": [],
+      "description": "A passing JUnit result is required; source availability alone is insufficient.",
+      "evidence": [
+        {
+          "kind": "tests",
+          "minimum_tests": 1974,
+          "path": "artifacts/binding/schedule_followup/20261028_v1/regression_v1.xml",
+          "purpose": "validation"
+        }
+      ],
+      "id": "regression",
+      "title": "Full binding software regression"
+    },
+    {
+      "category": "operations",
+      "commands": [
+        "python scripts/124_binding_readiness.py configs/binding/preparation/readiness_v17.json"
+      ],
+      "dependencies": [],
+      "description": "Separate ready code, missing validation, pending execution and scientific prerequisites. Never submits the displayed commands.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/preparation.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/124_binding_readiness.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "readiness",
+      "title": "Metadata-only readiness inventory"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "runtime_setup"
+      ],
+      "description": "Exact saved prompt IDs, label-free scalar exports, explicit SDPA, no generation; resumable immutable chunks. This is next-token confidence, with a new Transformers backend.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/confidence.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/121_binding_confidence.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "confidence_code",
+      "title": "Exact-prompt next-token confidence runner"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "confidence_code"
+      ],
+      "description": "Discovery informative/misleading prompts only. Gold and model correctness fields are stripped. Hash-selected smoke inputs are also prepared.",
+      "evidence": [
+        {
+          "equals": {
+            "cases": 6144,
+            "status": "passed",
+            "target_outcomes_read": false
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/confidence/llama31_8b_full_v1/preparation_review.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "confidence_inputs_llama31_8b",
+      "title": "Llama 3.1 8B: 6,144 label-free confidence inputs"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "confidence_inputs_llama31_8b"
+      ],
+      "description": "One prefill per target, four scalar distribution statistics and vocabulary size; no answer-token identity or target correctness feature. This does not fit predictor B or C.",
+      "evidence": [
+        {
+          "equals": {
+            "evaluated": 6144,
+            "status": "passed",
+            "target_outcomes_read": false
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/confidence/llama31_8b_full_v1/confidence/audit.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "confidence_measure_llama31_8b",
+      "title": "Llama 3.1 8B: next-token scalar collection and audit"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "confidence_code"
+      ],
+      "description": "Discovery informative/misleading prompts only. Gold and model correctness fields are stripped. Hash-selected smoke inputs are also prepared.",
+      "evidence": [
+        {
+          "equals": {
+            "cases": 6144,
+            "status": "passed",
+            "target_outcomes_read": false
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/confidence/codellama34b_full_v1/preparation_review.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "confidence_inputs_codellama34b",
+      "title": "CodeLlama 34B: 6,144 label-free confidence inputs"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "confidence_inputs_codellama34b"
+      ],
+      "description": "One prefill per target, four scalar distribution statistics and vocabulary size; no answer-token identity or target correctness feature. This does not fit predictor B or C.",
+      "evidence": [
+        {
+          "equals": {
+            "evaluated": 6144,
+            "status": "passed",
+            "target_outcomes_read": false
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/confidence/codellama34b_full_v1/confidence/audit.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "confidence_measure_codellama34b",
+      "title": "CodeLlama 34B: next-token scalar collection and audit"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [],
+      "description": "Exact prefix preservation and explicit EOS events make 1 and 16 disjoint; sums continuation plus EOS probabilities. Conditional finite-support summaries are separate from absolute support mass.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/candidate_confidence.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/126_binding_candidate_confidence.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "candidate_code",
+      "title": "Complete candidate-answer event scoring helper"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "candidate_code"
+      ],
+      "description": "Explicit decode-verified standalone numerals appended to unchanged saved prefix; original joint-tokenization failures retained.",
+      "evidence": [
+        {
+          "equals": {
+            "status": "passed",
+            "tokenization_rule": "standalone_decode_verified_v2"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/candidate_measurement/llama_standalone_declaration_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "candidate_plan_llama31_8b",
+      "title": "llama31_8b: signed-integer candidate-event contract"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "candidate_code"
+      ],
+      "description": "Complete pinned real-tokenizer QA and FP32 event collection passed with joint prompt-candidate tokenization, explicit EOS union and original parity checks.",
+      "evidence": [
+        {
+          "path": "artifacts/binding/preparation/candidate_codellama34b_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "candidate_plan_codellama34b",
+      "title": "codellama34b: signed-integer candidate-event contract"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "candidate_plan_llama31_8b",
+        "candidate_plan_codellama34b"
+      ],
+      "description": "Whole-bank tokenizer/event validation on both checkpoints; explicit joint versus standalone decode-verified tokenization rules, no prompt rewriting.",
+      "evidence": [
+        {
+          "equals": {
+            "cases": 12288,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/candidate_measurement/tokenizer_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "candidate_real_events",
+      "title": "Validate candidate events with pinned real tokenizers"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "candidate_real_events"
+      ],
+      "description": "FP32 SDPA with TF32 disabled after BF16 numerical qualification failed; cached scoring must pass unchanged per-event and scalar parity before full collection. Separate finite-support confidence, no correctness features.",
+      "evidence": [
+        {
+          "equals": {
+            "evaluated": 12288,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/candidate_measurement/collection_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "candidate_collect",
+      "title": "Collect full candidate-answer likelihood features"
+    },
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [
+        "generator_software"
+      ],
+      "description": "Three seeds for each of competition, live-load retention and arithmetic/readout; 30,960 source records. Seeds are generation replicates, not independent structures.",
+      "evidence": [
+        {
+          "path": "configs/binding/preparation/replication_v1.json",
+          "purpose": "source"
+        }
+      ],
+      "id": "cohort_recipes",
+      "title": "Nine independent-generation discovery recipes"
+    },
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [
+        "cohort_recipes"
+      ],
+      "description": "Immutable source-only banks with role/recipe/checksum/semantic validation; no model outcomes collected.",
+      "evidence": [
+        {
+          "path": "artifacts/binding/preparation/cohorts_v1/replication_manifest.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "cohort_build",
+      "title": "Generate and oracle-check 30,960 source records"
+    },
+    {
+      "category": "datasets",
+      "commands": [
+        "python scripts/123_binding_replication_prep.py audit configs/binding/preparation/replication_v1.json"
+      ],
+      "dependencies": [
+        "cohort_build"
+      ],
+      "description": "Exact source/canonical AST/alpha skeleton overlap, split-boundary sharing, recycled ID meanings, and conservative relation components. No automatic pooling or structural-independence claim.",
+      "evidence": [
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/cohorts_v1/replication_review.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "cohort_overlap",
+      "title": "Cross-cohort content and split overlap audit"
+    },
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [],
+      "description": "New numeric draws and recycled generator templates do not count as a new program family.",
+      "evidence": [],
+      "id": "new_family",
+      "scientific_decision_required": "Select a stable core claim and a useful genuinely new family before extension.",
+      "title": "Genuinely new structural program family"
+    },
+    {
+      "category": "statistics",
+      "commands": [],
+      "dependencies": [],
+      "description": "Ensemble the fixed OOF partition seeds first; resample whole group-mean paired losses, with balanced load strata and degenerate-pilot guards.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/precision_planning.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/122_binding_precision.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "precision_code",
+      "title": "Structural-group precision simulation"
+    },
+    {
+      "category": "statistics",
+      "commands": [
+        "python scripts/122_binding_precision.py run configs/binding/preparation/precision_v1.json"
+      ],
+      "dependencies": [
+        "precision_code"
+      ],
+      "description": "Both models, Brier/log loss, two fixed contrasts, six candidate group counts and five hypothetical effects. Conditional pilot planning, not guaranteed confirmatory power.",
+      "evidence": [
+        {
+          "equals": {
+            "confirmatory_sample_size_selected": false,
+            "status": "complete_conditional_planning"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/precision_v1/planning_review.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "precision_scenarios",
+      "title": "Conditional precision and detection scenarios"
+    },
+    {
+      "category": "statistics",
+      "commands": [],
+      "dependencies": [
+        "precision_scenarios",
+        "cohort_overlap"
+      ],
+      "description": "",
+      "evidence": [],
+      "id": "confirmatory_size",
+      "scientific_decision_required": "Requires a supported claim, independent structural units and a frozen sampling/uncertainty plan.",
+      "title": "Choose independent confirmatory structural cohort size"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [],
+      "description": "Paired training anchors, frozen train centering, orthogonal map and provenance; no aligned-equivalence result is implied.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/probe_sensitivities.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/125_binding_probe_sensitivities.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "alignment_code",
+      "title": "Train-only Procrustes alignment helper"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [],
+      "description": "Whiten the ridge objective before rank truncation, fit train-only normalization, reject incomplete/masked targets, preserve frozen heldout transforms.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/probe_sensitivities.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "rrr_code",
+      "title": "Proper reduced-rank ridge helper"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "alignment_code",
+        "rrr_code"
+      ],
+      "description": "Known-rotation and rank/objective synthetic checks. No real activation study fits have been run.",
+      "evidence": [
+        {
+          "equals": {
+            "status": "passed_preparation_preflight"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/probe_sensitivities_review_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "passed_synthetic_selfcheck"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/preparation/probe_sensitivities_selfcheck_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "probe_preflight",
+      "title": "Probe-sensitivity config and synthetic validation"
+    },
+    {
+      "category": "representations",
+      "commands": [
+        "python scripts/134_binding_representation_sensitivity.py run configs/binding/representation_sensitivity/llama31_8b_v1.json"
+      ],
+      "dependencies": [
+        "probe_preflight"
+      ],
+      "description": "Adaptive discovery sensitivity at block24 pre-query and earlier pre-answer sites. Fixed pooled training-only PCA64, complete64-column slot labels, ranks1/2/4/8/16/32/64, paired train-only alignment, within-condition/neutral-transfer, surface and frequency-matched shuffle controls; report projection/rank limits.",
+      "evidence": [
+        {
+          "equals": {
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "probe_study",
+      "title": "Run a targeted alignment/rank sensitivity on real captures"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [],
+      "description": "Oracle def-use/liveness exists; model-side directed dependency recovery remains conditional.",
+      "evidence": [],
+      "id": "dependency_study",
+      "scientific_decision_required": "Only run if the selected explanation requires directed dependency recovery.",
+      "title": "Learned dependency-recovery study"
+    },
+    {
+      "category": "prediction",
+      "commands": [],
+      "dependencies": [],
+      "description": "Previously completed 5,292 logistic fits, eight fixed tiers and exact anchor reproduction retained.",
+      "evidence": [
+        {
+          "equals": {
+            "complete": true
+          },
+          "kind": "json",
+          "path": "artifacts/binding/discovery_controls/comparison_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "discovery_controls",
+      "title": "Completed discovery predictive capacity/access controls"
+    },
+    {
+      "category": "prediction",
+      "commands": [],
+      "dependencies": [
+        "confidence_measure_llama31_8b",
+        "confidence_measure_codellama34b"
+      ],
+      "description": "Completed 13 tiers, 24 fixed contrasts and 9,072 logistic fits on 12,288 consumed targets, with exact eight-tier replay. Train-only preprocessing, fixed OOF aggregation and conditional structural bootstrap; explicit confidence/neutral/oracle costs. No final validation or mechanism C.",
+      "evidence": [
+        {
+          "equals": {
+            "complete": true,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/discovery_confidence/comparison_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/discovery_confidence/anchor_figure_review_v2.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "confidence_predictor",
+      "title": "Grouped discovery prediction with declared confidence access"
+    },
+    {
+      "category": "science",
+      "commands": [],
+      "dependencies": [],
+      "description": "Earlier computed reliability gates failed and ownership-site effects were weak/nonselective. No mechanism C has been qualified.",
+      "evidence": [],
+      "id": "mechanism_account",
+      "scientific_decision_required": "Select and support an account that predicts selective effects and distinguishes the competing explanations.",
+      "title": "Supported explanatory mechanism and selective intervention"
+    },
+    {
+      "category": "science",
+      "commands": [],
+      "dependencies": [
+        "mechanism_account",
+        "cohort_overlap"
+      ],
+      "description": "",
+      "evidence": [],
+      "id": "mechanism_replication",
+      "scientific_decision_required": "A selected reproducible causal mechanism must precede causal-mechanism replication; new numeric variants are insufficient.",
+      "title": "Independent-structure and second-family causal replication"
+    },
+    {
+      "category": "registration",
+      "commands": [],
+      "dependencies": [],
+      "description": "Bounded metadata checks, required fields, semantic digest, access-cost consistency and dry-run prerequisite DAG; never executes heldout steps.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/registration_readiness.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/127_binding_registration_readiness.py",
+          "purpose": "source"
+        }
+      ],
+      "id": "registration_code",
+      "title": "Metadata-only final-registration readiness linter"
+    },
+    {
+      "category": "registration",
+      "commands": [],
+      "dependencies": [
+        "registration_code"
+      ],
+      "description": "A deliberate draft reports remaining scientific choices. It is not a frozen registration or authorization to open final outcomes.",
+      "evidence": [
+        {
+          "path": "configs/binding/preparation/forecast_registration_draft_v1.json",
+          "purpose": "source"
+        },
+        {
+          "path": "artifacts/binding/preparation/registration_readiness_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "registration_draft",
+      "title": "Unfilled final-registration template and readiness report"
+    },
+    {
+      "category": "registration",
+      "commands": [],
+      "dependencies": [
+        "registration_draft",
+        "mechanism_account"
+      ],
+      "description": "",
+      "evidence": [],
+      "id": "frozen_registration",
+      "scientific_decision_required": "Fill hypotheses, intervention/behavior endpoints, feature/access contract, fitting, sites, exclusions and uncertainty before confirmation.",
+      "title": "Complete and freeze genuine scientific registration"
+    },
+    {
+      "category": "prediction",
+      "commands": [],
+      "dependencies": [
+        "frozen_registration"
+      ],
+      "description": "",
+      "evidence": [],
+      "id": "final_forecasts",
+      "scientific_decision_required": "Requires qualified measurements and immutable model fits/forecasts; original final outcomes remain sealed.",
+      "title": "Freeze A/B/C/stress-test forecasts before outcomes"
+    },
+    {
+      "category": "science",
+      "commands": [],
+      "dependencies": [
+        "final_forecasts"
+      ],
+      "description": "",
+      "evidence": [],
+      "id": "unfamiliar_scoring",
+      "scientific_decision_required": "Only after genuine registration and forecast freezing with explicit final-evaluation authorization from the study protocol.",
+      "title": "Score untouched unfamiliar-program outcomes"
+    },
+    {
+      "category": "writing",
+      "commands": [],
+      "dependencies": [],
+      "description": "Reviewed twelve original source identifiers and two confidence references. R4 title/venue and R8 author/version qualifications are explicit; the bounded review does not establish exhaustive or submission-level novelty.",
+      "evidence": [
+        {
+          "equals": {
+            "exhaustive_novelty_established": false,
+            "status": "completed_bounded_review_with_version_flags"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/literature/source_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "literature_review",
+      "title": "Primary-source/version and novelty-boundary review"
+    },
+    {
+      "category": "writing",
+      "commands": [],
+      "dependencies": [
+        "mechanism_account",
+        "unfamiliar_scoring"
+      ],
+      "description": "",
+      "evidence": [],
+      "id": "manuscript",
+      "scientific_decision_required": "Requires the final supported claim, complete prediction comparison and limitations; current pilot reports are available.",
+      "title": "New study manuscript and predictive figure"
+    },
+    {
+      "category": "optional",
+      "commands": [],
+      "dependencies": [],
+      "description": "The original document defers this extension; no automatic launch.",
+      "evidence": [],
+      "id": "optional_training",
+      "policy": "deferred_optional",
+      "title": "Targeted language-model training"
+    },
+    {
+      "category": "optional",
+      "commands": [],
+      "dependencies": [],
+      "description": "The original document defers this extension; no automatic launch.",
+      "evidence": [],
+      "id": "optional_unlearning",
+      "policy": "deferred_optional",
+      "title": "Unlearning extension"
+    },
+    {
+      "category": "optional",
+      "commands": [],
+      "dependencies": [],
+      "description": "The original document defers this extension; no automatic launch.",
+      "evidence": [],
+      "id": "optional_separate_paper",
+      "policy": "deferred_optional",
+      "title": "Separate paper or alignment-method project"
+    },
+    {
+      "category": "prediction",
+      "commands": [],
+      "dependencies": [
+        "candidate_collect",
+        "confidence_predictor"
+      ],
+      "description": "Eighteen fixed tiers and 37 contrasts compare alternative FP32 finite-event and BF16 next-token bundles on consumed discovery targets, with exact 13-tier replay. Event support, precision, encoding and access costs all differ; this is not a pure information or mechanism-C test.",
+      "evidence": [
+        {
+          "equals": {
+            "complete": true,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/candidate_prediction/pipeline_review_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/candidate_prediction/anchor_figure_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "candidate_prediction",
+      "title": "Grouped candidate-event versus next-token prediction"
+    },
+    {
+      "category": "prediction",
+      "commands": [],
+      "dependencies": [
+        "candidate_prediction"
+      ],
+      "description": "23fixed tiers and55contrasts combine both measurement bundles in5contexts; exact18-tier replay, no newmodelcalls, same consumed structuralgroups, conditional intervals and accessunion retained.",
+      "evidence": [
+        {
+          "equals": {
+            "complete": true,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/joint_confidence/pipeline_review_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/joint_confidence/anchor_figure_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "joint_confidence",
+      "title": "Nested joint next-token and candidate-event discovery prediction"
+    },
+    {
+      "category": "prediction",
+      "commands": [
+        "python scripts/136_binding_stress_prediction.py compare configs/binding/stress_prediction/comparison_pipeline_v2.json"
+      ],
+      "dependencies": [
+        "joint_confidence"
+      ],
+      "description": "One additional fixed instruction query per consumed target supplies five ungraded response features alongside next-token confidence. The 28 tiers and 70 contrasts retain all 23 parent tiers. Original target responses stay excluded; the distinct query response identity and smoke/retry costs are explicit. This is a behavioral comparator, not an isolated causal naming test.",
+      "evidence": [
+        {
+          "equals": {
+            "complete": true,
+            "evaluated": 6144,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/stress_measurement/llama31_8b_full_v1/stress_measurement/audit.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "complete": true,
+            "evaluated": 6144,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/stress_measurement/codellama34b_full_v1/stress_measurement/audit.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "complete": true,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/stress_prediction/v2/pipeline_review_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/stress_prediction/v2/anchor_figure_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "stress_comparator",
+      "title": "Cheap assignment-cue extra-query discovery comparator"
+    },
+    {
+      "category": "representations",
+      "commands": [
+        "python scripts/137_binding_query_selectivity.py audit configs/binding/query_selectivity/llama31_8b_v1.json",
+        "python scripts/138_binding_query_selectivity_review.py configs/binding/query_selectivity/review_v1.json"
+      ],
+      "dependencies": [
+        "regression"
+      ],
+      "description": "Fixed adaptive discovery study: 45 factorisations, 180 independent equal-capacity heads, complete saved-score replay and matched shuffle/surface controls. Saved token positions differ; accessibility does not establish absent values or a causal mechanism. Original fit artifacts are preserved behind a separate bounded completion receipt.",
+      "evidence": [
+        {
+          "equals": {
+            "cases": 9216,
+            "factorizations": 45,
+            "independent_heads": 180,
+            "parameter_replay_rows": 414720,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/query_selectivity/llama31_8b_v1/completion_manifest_v2.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "serialized_raw_scores_and_predictions_exact": true,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/query_selectivity/llama31_8b_v1/audit.json",
+          "purpose": "validation"
+        },
+        {
+          "equals": {
+            "new_model_queries": 0,
+            "new_readout_fits": 0,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/query_selectivity/figure_review_v1.json",
+          "purpose": "validation"
+        }
+      ],
+      "id": "query_selectivity",
+      "title": "Equal-capacity queried versus unqueried value accessibility"
+    },
+    {
+      "category": "representations",
+      "commands": [
+        "python scripts/139_binding_relationship_audit.py configs/binding/relationships/target_audit_v1.json",
+        "python scripts/139_binding_relationship_audit.py configs/binding/relationships/routing_target_audit_v1.json"
+      ],
+      "dependencies": [
+        "regression"
+      ],
+      "description": "User-prioritized relationship branch: direct versioned def-use, transitive ancestry, overwrite succession and explicitly visible output ancestry. Audit fixed historical graphs and prepare varied routing sources, including equal-value/different-provenance pairs. This item qualifies preparation only; no learned relationship decoder is fitted.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/relationships.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "distinct_definition_graphs": 81,
+            "graph_decoding_performed": false,
+            "rows": 1296,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationships/routing_preparation_review_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "prepared_targets_only"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationships/target_audit_review_v1.json",
+          "purpose": "validation"
+        },
+        {
+          "equals": {
+            "status": "prepared_targets_only"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationships/routing_target_audit_review_v1.json",
+          "purpose": "validation"
+        }
+      ],
+      "id": "relationship_targets",
+      "title": "Prefix-safe relationship targets and varied copy-routing source bank"
+    },
+    {
+      "category": "representations",
+      "commands": [
+        "python scripts/142_binding_algebraic_relationship_audit.py configs/binding/relationships/algebraic_target_audit_v1.json"
+      ],
+      "dependencies": [
+        "relationship_targets",
+        "regression"
+      ],
+      "description": "User selected both structural and algebraic relationships. Prepare equality/order/signed-difference and sum/subtraction triples, separate from value-free graph labels. Balanced numeric source strata reuse the same27routingcomponents and are not independent structural replication. Learned relation heads and value-derived probe comparisons remain unrun.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/algebraic_relationships.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "distinct_definition_graphs": 81,
+            "relation_decoding_performed": false,
+            "rows": 1944,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationships/algebraic_preparation_review_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "learned_relationship_decoder_fitted": false,
+            "status": "prepared_targets_only"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationships/algebraic_target_audit_review_v1.json",
+          "purpose": "validation"
+        },
+        {
+          "equals": {
+            "learned_relationship_decoder_fitted": false,
+            "status": "prepared_targets_only"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationships/algebraic_structural_target_audit_review_v1.json",
+          "purpose": "validation"
+        }
+      ],
+      "id": "algebraic_relationship_targets",
+      "title": "Prefix-visible algebraic relationship targets and balanced numeric controls"
+    },
+    {
+      "category": "measurement",
+      "commands": [
+        "python scripts/143_binding_relationship_capture.py audit configs/binding/relationships/capture_v2.json"
+      ],
+      "dependencies": [
+        "regression",
+        "algebraic_relationship_targets"
+      ],
+      "description": "Fixed cached 8B, BF16 SDPA prefill-only; nine audited sites/four blocks. Matching hardened-source native-tokenizer preflight must pass all 1,944 sources. Full capture is scheduled separately; no generated responses.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/relationship_capture.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "cases": 1944,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationship_capture/llama31_8b_v2/preflight.json",
+          "purpose": "validation"
+        }
+      ],
+      "id": "relationship_capture_runner",
+      "title": "Shared relationship activation capture runner and real tokenizer preflight"
+    },
+    {
+      "category": "representations",
+      "commands": [
+        "python scripts/145_binding_relationship_pipeline.py audit configs/binding/relationships/readouts_pipeline_v3.json"
+      ],
+      "dependencies": [
+        "relationship_capture_runner"
+      ],
+      "description": "Frozen automatic CPU continuation after captureaudit:45bank/seed factorizations, directrelations vs categoricalvalue-derived/surface/prior/coherent-shuffle controls; full3-seed/nine-group conditional comparisons. Completion evidence is required. Queued work is not a decoding result. Control amended before fits: initial-prefix base blocks keep identical prefixes from receiving contradictory numeric labels. Prior queued CPU attempts were canceled without fitting. Capture and fit recovery are hardened before model execution; scientific protocol and target eligibility are unchanged.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/relationship_readouts.py",
+          "purpose": "source"
+        },
+        {
+          "path": "src/codecue/binding/relationship_pipeline.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationship_capture/llama31_8b_v2/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "factorizations": 45,
+            "parameter_replay_rows": 87480,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationship_readouts/pipeline_v3/pipeline_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "learned_relationship_readouts",
+      "title": "Learned structural/algebraic readouts with value-derived controls"
+    },
+    {
+      "category": "representations",
+      "commands": [
+        "python scripts/147_binding_relationship_followup.py audit configs/binding/relationships/score_followup_v1.json"
+      ],
+      "dependencies": [
+        "learned_relationship_readouts"
+      ],
+      "description": "Posthoc reuse of18pinned saved-score banks: stronger source-value pipeline, equal-state provenance pairs and independent-edge graph validity. No new model queries, fits, raw activations or sealed outcomes.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/relationship_contrasts.py",
+          "purpose": "source"
+        },
+        {
+          "path": "src/codecue/binding/relationship_followup.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "metadata_audit": "passed",
+            "new_fits": 0,
+            "new_model_queries": 0,
+            "saved_score_rows_read": 34992,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationship_followup/llama31_8b_v1/followup_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "relationship_score_controls",
+      "title": "Stronger source and numeric-state-matched provenance controls"
+    },
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [
+        "algebraic_relationship_targets"
+      ],
+      "description": "16,038 unique rows with three5,832-row views; source-only state uniqueness, target support, matched-root and independent-Python checks. Reused81graphs/27components are not independent structural replication.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/overnight_relationship_programs.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/source_review_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/overnight_target_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "overnight_relationship_sources",
+      "title": "Numeric, query-twin and computed-root discovery source union"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "overnight_relationship_sources"
+      ],
+      "description": "Both cached models completed16,038 prefills each with exact native-prefix checks, BF16 SDPA and durable chunks; one union capture reused by three analyses.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/overnight_relationship_capture.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/capture/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/completion_manifest_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "overnight_relationship_captures",
+      "title": "Completed two-checkpoint shared relationship captures"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "overnight_relationship_captures"
+      ],
+      "description": "14,580 greedy full signed-integer responses; computed-minus-literal matchedDEVq0 comparisons retain invalid outputs and conditional component intervals.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/overnight_relationship_behavior.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/completion_manifest_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "overnight_relationship_behavior",
+      "title": "Completed two-checkpoint literal/computed answer evaluation"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "overnight_relationship_captures"
+      ],
+      "description": "270 neutral-TRAIN weighted-ridge factorizations and1,574,640 saved-parameter row replays. Report nominated layers, source-value controls and weak computed algebraic decoding; no dedicated-code or causal claim.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/overnight_relationship_readouts.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "factorizations": 45,
+            "parameter_replay_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_numeric_replication/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "factorizations": 45,
+            "parameter_replay_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_query_twins/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "factorizations": 45,
+            "parameter_replay_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_computed_roots/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "factorizations": 45,
+            "parameter_replay_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_numeric_replication/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "factorizations": 45,
+            "parameter_replay_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_query_twins/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "factorizations": 45,
+            "parameter_replay_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_computed_roots/completion_manifest_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "overnight_relationship_readouts",
+      "title": "Completed six relationship readout panels and exact replays"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "overnight_relationship_readouts"
+      ],
+      "description": "524,880 parameter applications without refitting; graph transfer partly survives while numeric-relation transfer is near its structural prior. Format/token/position differences remain limitations.",
+      "evidence": [
+        {
+          "equals": {
+            "literal_transfer_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_computed_roots/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "literal_transfer_rows": 262440,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_computed_roots/completion_manifest_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "overnight_relationship_transfer",
+      "title": "Completed frozen literal-to-computed parameter transfer"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "overnight_relationship_behavior",
+        "overnight_relationship_readouts"
+      ],
+      "description": "Posthoc DEV-only score/answer joins with fit-averaged joint masses, source comparators, invalid outputs and ninecomponent intervals. Matched-body fixed-slot query diagnostics include site7placebo. No new queries, fits or raw activations.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/overnight_relationship_behavior_link.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/completion_manifest_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "overnight_relationship_behavior_link",
+      "title": "Posthoc exact-ID relationship decoding and answer associations"
+    },
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [
+        "overnight_relationship_sources"
+      ],
+      "description": "6700unique sources map6912logical views:3operand regimes,4readout conditions,3relatedcopydepths,24root-order clusters and3instructions. Shared literalcontrols are explicitly reused; nonzero train/DEV sources are disjoint. This is numeric calibration, not independent structural confirmation.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/computation_routing_programs.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "independent_python_passed": true,
+            "logical_rows": 6912,
+            "rows": 6700,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/computation_routing/20261028_v1/source_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "computation_routing_sources",
+      "title": "Matched one-root computation and copy-readout calibration sources"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "computation_routing_sources",
+        "regression"
+      ],
+      "description": "Execute both cached checkpoints with all3fixedinstructions, strictinteger output, prospective complete-cell gates, identical-body root/leaf pairs and whole-root-order uncertainty. Completion is separate from scientific qualification; gatefailures cannot rescue old computed studies.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/computation_routing_run.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/154_binding_computation_routing.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "status": "complete_audited"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_completion_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "complete_audited"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_completion_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "computation_routing_calibration",
+      "title": "Two-model computation/context/copy feasibility decision"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "algebraic_relationship_targets"
+      ],
+      "description": "Source-only2016-row preparation covers28destination schedules and third/fourthversions. ActualSSA/read-from/current/obsolete labels use the genericprefixoracle; allslot/graph-equivalent relatives stay split-tied. The15canonicalgraphfamilies do not establish independent replication or learneddecoding; oldfixed readoutheads are explicitly incompatible.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/relationship_schedule_programs.py",
+          "purpose": "source"
+        },
+        {
+          "path": "scripts/155_binding_relationship_schedule_programs.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "learned_readout_compatible": false,
+            "new_model_queries": 0,
+            "rows": 2016,
+            "status": "passed",
+            "targets_prepared_only": true
+          },
+          "kind": "json",
+          "path": "artifacts/binding/relationships/schedule_source_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "relationship_schedule_targets",
+      "title": "Actual-version targets for varied copy/overwrite schedules"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "relationship_schedule_targets"
+      ],
+      "description": "232 targets resolve actual statement and variable/version identities on the2016-row varied-schedule bank. Class support is TRAIN-only; rare parent classes and constant DEV tasks remain visible. Source-keyed random-label controls preserve visible-prefix ties but not marginals.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/schedule_targets.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "columns": 232,
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_decoding/20261028_v1/target_preflight_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "dynamic_schedule_heads",
+      "title": "Dynamic assignment-version and dependency target heads"
+    },
+    {
+      "category": "measurement",
+      "commands": [],
+      "dependencies": [
+        "dynamic_schedule_heads",
+        "regression"
+      ],
+      "description": "New2016-row source bank captured once per cachedcheckpoint at3sites/4layers; selected float32 arrays, native boundaries, immutable chunks, prefixchecks, explicit prefillattempts and CPUaudit. No generated answers.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/schedule_capture.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "cases": 2016,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "cases": 2016,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/completion_manifest_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "dynamic_schedule_capture",
+      "title": "Two-model varied-schedule representation capture"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "dynamic_schedule_capture"
+      ],
+      "description": "Bothmodels:45fixed hidden/surface/seed/site banks; TRAIN-only maskedridge alpha100; priors,prefix-shamtasks,complete class/group support and exact savedparameter replay. FiveDEVfamilies and source-determined semantics limit interpretation; no causal mechanism or reliability qualification.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/schedule_readouts.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "fit_banks": 45,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "fit_banks": 45,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/completion_manifest_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "dynamic_schedule_readouts",
+      "title": "Learned dynamic version/current-definition/dependency readouts"
+    },
+    {
+      "category": "representations",
+      "commands": [],
+      "dependencies": [
+        "dynamic_schedule_readouts",
+        "regression"
+      ],
+      "description": "Reuses all90completedscorebanks with no activation/coefficient loads, fits orparameterapplications. Fullcategoricalconfusions,jointmasses andsamebody/fixedtarget queryeffects include174DEVbodyquads,fivegraphfamilies andprequeryplacebos; allfixedlayers/seeds/baselinesretained.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/schedule_score_review.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "new_fits": 0,
+            "new_model_queries": 0,
+            "parameters_reapplied": 0,
+            "score_banks": 90,
+            "status": "complete_exploratory"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/completion_manifest_v1.json",
+          "purpose": "result"
+        },
+        {
+          "equals": {
+            "status": "passed"
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/prediction_replay_review_v1.json",
+          "purpose": "validation"
+        }
+      ],
+      "id": "schedule_saved_score_diagnostics",
+      "title": "Posthoc dynamic schedule saved-score error/query diagnostics"
+    },
+    {
+      "category": "datasets",
+      "commands": [],
+      "dependencies": [
+        "relationship_schedule_targets"
+      ],
+      "description": "Source-only5760rows,60canonicalgraphfamilies45TRAIN/15DEV,threecountprofiles,allslotsversions1..4. Excludesoldrouting/schedulecanonicalgraphs; numeric/rotation/lex/queryrelativesremainfamilytied. No modelmeasurement ornewreadoutcompatibilityclaimed; discardedfullyupdatedprofileexhaustedoldroutinguniverse.",
+      "evidence": [
+        {
+          "path": "src/codecue/binding/schedule_diversity_programs.py",
+          "purpose": "source"
+        },
+        {
+          "equals": {
+            "canonical_graph_families": 60,
+            "learned_readout_compatible": false,
+            "new_model_queries": 0,
+            "rows": 5760,
+            "slot_complete_version_domain": true,
+            "status": "passed",
+            "targets_prepared_only": true
+          },
+          "kind": "json",
+          "path": "artifacts/binding/schedule_diversity/20261028_v1/source_review_v1.json",
+          "purpose": "result"
+        }
+      ],
+      "id": "schedule_diversity_sources",
+      "title": "Slot-complete novel overwrite graph source preparation"
+    }
+  ],
+  "jobs": "artifacts/binding/schedule_followup/20261028_v1/jobs_v1.json",
+  "output": "artifacts/binding/schedule_followup/20261028_v1/readiness_live_v1.json",
+  "report": "reports/binding/preparation_readiness.md"
+}

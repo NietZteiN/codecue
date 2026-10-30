@@ -1,0 +1,47 @@
+{
+  "case_ids_sha256": "bb3bc8022b5aab97dc89850d5030818e031a6aa3baa5f16dca51d70ada1cb132",
+  "cases": 6144,
+  "conditions": {
+    "informative": 3072,
+    "misleading": 3072
+  },
+  "config_hash": "7ca90af3d2b38a1475ee0926b9ca1db2ae48926414247df3edb2a2eee3295b6a",
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "evaluation_role": "discovery_prefill_confidence_v1",
+  "generated_holdouts_opened": false,
+  "generated_tokens": 0,
+  "limitation": "Next-token sign/format confidence at the exact saved prompt; not full integer-answer confidence. A new Transformers measurement backend is distinct from the original vLLM outcome backend.",
+  "measurement": "exact_saved_prompt_next_token_distribution_v1",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "oracle_fields_exported": false,
+  "original_splits": {
+    "development": 1536,
+    "train": 4608
+  },
+  "padded_width": 168,
+  "prepared_cases_sha256": "7f7b9de2893b8ce3156e74581ba255a99a83a9406793ab39dd28c0988a533bf6",
+  "selection": "fixed hash of selection_seed and case ID, no outcomes",
+  "smoke_subset": false,
+  "source_config_sha256": "3b542835908d782ca23f99a409312e2ab5c64c621c744a3804eb13039e1e5b36",
+  "source_provenance": {
+    "original_source_sha256": "879fe543236610c346d227a1d704848b35e308a1001e00412e9694bfc8ffba74",
+    "source_audit_sha256": "9662a9884862853184ae1b7f3687408a90d7f6d3e2b7e8402d3eb266f2fec337",
+    "source_config_sha256": "3b542835908d782ca23f99a409312e2ab5c64c621c744a3804eb13039e1e5b36",
+    "source_dataset_sha256": "baf0a1c52fff0160e7b195525be4e9083869d81d26c6e1a66e45d802c6beb0d5",
+    "source_identity_hash": "b836d5eae30c4d46646f23fa72cd2aaa6c7eded0f7ffd884da258e07ec1dde53",
+    "source_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "source_prepared_sha256": "18456b8d79fe04de1996a143c811faa115ba4c2d2213013ccc730afd346bd90e",
+    "source_responses_sha256": "a109fe159d4761ecf7d65a0aca70888440fc998b3338b0ffe9e480eeceec75af"
+  },
+  "source_sha256": "073f11ecdd6806a85e7372077215912c6b8962e337ea4292369e4e4ec893ad5a",
+  "status": "passed",
+  "target_outcomes_read": false,
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "upstream_identity": "b836d5eae30c4d46646f23fa72cd2aaa6c7eded0f7ffd884da258e07ec1dde53"
+}

@@ -1,0 +1,13 @@
+{
+  "software_preflight": "476445",
+  "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/c78e525d36a181718aa831c4",
+  "purpose": "One fixed 120-program training-only difficulty ladder, both existing protocols, 240-query cap and a predeclared stopping rule.",
+  "calibration": "476446",
+  "report": "476447",
+  "partition_update": {
+    "requested": "a30,h100",
+    "returncode": 0,
+    "message": "",
+    "reason": "One bounded generic-GPU job may use either existing partition; no duplicate submission and the same pinned BF16 checkpoint and predeclared analysis."
+  }
+}

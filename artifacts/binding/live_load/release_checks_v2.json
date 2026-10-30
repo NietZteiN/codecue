@@ -1,0 +1,28 @@
+{
+  "all_current_exit_codes_zero": true,
+  "audit_checksums": {
+    "artifacts/binding/live_load/backend/codellama34b_v2/interface_diagnostics/audit.json": "a3718e95bc4c4cc4065b92370ded8392486a6a741e7fa08d83da02ed544a23fa",
+    "artifacts/binding/live_load/backend/llama31_8b_v2/interface_diagnostics/audit.json": "8814c26b8db2f4117b0ab745e83510a4f58b6df05ffd530ad4fa990cd0bfec1c",
+    "artifacts/binding/live_load/codellama34b_v2/checkpoint_suite/audit.json": "273a5d5a06e12cf5296f10c0c016fc36e471112e3eebbb855c0e4e888b10a519",
+    "artifacts/binding/live_load/llama31_8b_v2/checkpoint_suite/audit.json": "9601968f9aa2e1d6cc4e37a64b2bb1cdb34b2d8e0d1dc2138fbc9cf753b53ad8"
+  },
+  "corrected_backend_replays": 792,
+  "current_completed_jobs": 17,
+  "dataset_sha256": "73ba280d54c602593501bf40704baec678cb2932b9947bc28e2c3bc021576362",
+  "frozen_regeneration_matches": true,
+  "generated_holdouts_opened": false,
+  "primary_reliability_gates_both_failed": true,
+  "prompts_per_model": 38016,
+  "regression_tests": 247,
+  "retired_revisions_preserved": true,
+  "same_backend_samples_before_and_after_stopping_fix": true,
+  "source": {
+    "code": "893a76ab12a7770efa81419624c603a186878b6dd09a90fbb5bde3c4939cf45f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8d1820e4299bac18460ac61b",
+    "snapshot_id": "8d1820e4299bac18460ac61b"
+  },
+  "status": "passed",
+  "total_primary_predictions": 76032,
+  "uncached_control_decodes": 24,
+  "uncached_raw_matches": 24
+}

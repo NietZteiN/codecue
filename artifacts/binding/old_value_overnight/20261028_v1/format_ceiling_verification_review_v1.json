@@ -1,0 +1,58 @@
+{
+  "actual_helper_executions": 2,
+  "byte_identical_republication": true,
+  "checked_at": "2026-10-29T01:54:24.463443+00:00",
+  "evaluation_role": "discovery_old_value_format_ceiling_verification_v1",
+  "independent_diagnostic_cells_matched": 48,
+  "logger": {
+    "fresh": true,
+    "last_success_age_seconds": 371.013214,
+    "last_success_utc": "2026-10-29T01:48:13.450229+00:00",
+    "pending_ten_minute_workers": [
+      "481760",
+      "481744"
+    ]
+  },
+  "morning": {
+    "independent": true,
+    "job_id": "481707",
+    "scheduler_proof": "JobId=481707 JobName=oldvalue-morning UserId=jvl210002(736106) GroupId=sn(215) MCS_label=N/A Priority=28497 Nice=0 Account=tnguyen QOS=normal JobState=PENDING Reason=BeginTime Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-28T19:44:00 EligibleTime=2026-10-29T08:00:00 AccrueTime=Unknown StartTime=2026-10-29T08:00:00 EndTime=2026-10-29T10:00:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-28T19:44:00 Scheduler=Main Partition=dev,normal AllocNode:Sid=c-06-04:3916612 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=2,mem=8G,node=1,billing=2 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=2 MinMemoryNode=8G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/work/jvl210002/migration/codecue/log/slurm/submit_20261029T004400221737Z_oldvalue-morning.sbatch SubmitLine=sbatch --parsable /work/jvl210002/migration/codecue/log/slurm/submit_20261029T004400221737Z_oldvalue-morning.sbatch WorkDir=/work/jvl210002/migration/codecue StdErr=/work/jvl210002/migration/codecue/log/slurm/481707_oldvalue-morning.out StdIn=/dev/null StdOut=/work/jvl210002/migration/codecue/log/slurm/481707_oldvalue-morning.out KillOnInvalidDependent=Yes TresPerTask=cpu=2\n",
+    "start": "2026-10-29T08:00:00-05:00"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "per_model": {
+    "codellama34b": {
+      "blocked_cells": 16,
+      "cells": 24
+    },
+    "llama8b": {
+      "blocked_cells": 24,
+      "cells": 24
+    }
+  },
+  "pins": [
+    {
+      "bytes": 8480,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/format_ceiling_review_v1.py",
+      "sha256": "768db7970cbc2e74fb0451ca00247d48bb2926955c582aababdb3ef45221a5c1"
+    },
+    {
+      "bytes": 28726,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/format_ceiling_review_v1.json",
+      "sha256": "8544628bd49c3de47e25236e9d27a8f3b542412d9116161d0fe63e5388f4f91d"
+    },
+    {
+      "bytes": 3456,
+      "path": "reports/binding/old_value_format_ceiling_v1.md",
+      "sha256": "8bf2520bd26ee1cd80ec25cfb431b7e3893ea18d79c63c4cb08ab31270c60bda"
+    },
+    {
+      "bytes": 160004,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/postrun_response_diagnostics_v1.json",
+      "sha256": "0ba80898b262fbceb3045b39faa506518419bdac14290931cb90914edd185d47"
+    }
+  ],
+  "scores_or_gates_changed": false,
+  "status": "passed"
+}

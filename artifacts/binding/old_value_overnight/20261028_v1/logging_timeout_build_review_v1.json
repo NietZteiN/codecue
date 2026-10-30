@@ -1,0 +1,80 @@
+{
+  "change": {
+    "current_source_changes": [
+      "src/codecue/binding/experiment_log_scheduler.py"
+    ],
+    "frozen_sources_changed": false,
+    "interval_minutes": 10,
+    "pinned_scientific_helpers_changed": false,
+    "scheduler_mutations_by_build_agent": false,
+    "source_change_scope": "Only worker allocation and its explanatory comment changed; cadence, identity checks, locks, accepted-ID persistence and successor scheduling are preserved.",
+    "successor_guards": 2,
+    "worker_allocation_after": "00:10:00",
+    "worker_allocation_before": "00:02:00"
+  },
+  "current_source": {
+    "bytes": 15486,
+    "path": "src/codecue/binding/experiment_log_scheduler.py",
+    "sha256": "b3ea63f059d4332a7490d8ef3c823be168b5439ddb281ee9f690b590c2f89a45"
+  },
+  "deployment_status": "Build validated; root separately deploys pending-guard allocation and verifies an actual reconciliation.",
+  "evaluation_role": "operational_logging_timeout_repair_v1",
+  "frozen_s7_source": {
+    "bytes": 15322,
+    "path": "artifacts/binding/sources/4206d21342e20115539c3b55/src/codecue/binding/experiment_log_scheduler.py",
+    "sha256": "785f339de8b6b4ee6371de523b894b90fcbd8afb2107a4c24a9d46babad94067"
+  },
+  "frozen_s7_source_matches_manifest": true,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "observed_timeouts": [
+    {
+      "elapsed": "00:02:03",
+      "job_id": "481719",
+      "state": "TIMEOUT",
+      "time_limit": "00:02:00"
+    },
+    {
+      "elapsed": "00:02:05",
+      "job_id": "481726",
+      "state": "TIMEOUT",
+      "time_limit": "00:02:00"
+    },
+    {
+      "elapsed": "00:02:05",
+      "job_id": "481730",
+      "state": "TIMEOUT",
+      "time_limit": "00:02:00"
+    }
+  ],
+  "problem": "Three recurring CPU log reconciliations hit the fixed two-minute SLURM worker allocation.",
+  "scientific_measurements_changed": false,
+  "scientific_run_source": {
+    "snapshot_id": "4206d21342e20115539c3b55",
+    "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334"
+  },
+  "status": "passed",
+  "validation": {
+    "command": "PYTHONPATH=src /work/jvl210002/migration/envs/probe-cu129/bin/python -m pytest -q tests/binding/test_log_scheduler.py tests/binding/test_experiment_log.py tests/binding/test_experiment_log_large_metadata.py",
+    "errors": 0,
+    "failures": 0,
+    "new_test": "test_abrupt_worker_loss_keeps_successors_and_next_tick_records_actual_success",
+    "new_test_guarantees": [
+      "Accepted successor IDs persist before a refresh terminated outside normal Exception handling.",
+      "The next worker recovers with exactly two pending guards and no cancellation or duplicate submission.",
+      "A refresh completing 150 seconds after start records its real completion timestamp while preserving ten-minute cadence."
+    ],
+    "passed": 58,
+    "pytest_seconds": 59.63,
+    "stdout": {
+      "bytes": 100,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/logging_timeout_validation_stdout_v1.txt",
+      "sha256": "08a9eeb4fdf272f13e99674118548861e411307c2e071e98b032234a3aa859dc"
+    },
+    "test_source": {
+      "bytes": 12777,
+      "path": "tests/binding/test_log_scheduler.py",
+      "sha256": "063cd4c9425ba4aaed71ea6143348f20213e44cab5e78033a5e80a964eaa8dce"
+    }
+  }
+}

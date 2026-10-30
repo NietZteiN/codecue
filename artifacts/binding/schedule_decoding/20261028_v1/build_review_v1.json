@@ -1,0 +1,29 @@
+{
+  "evaluation_role": "discovery_schedule_build_review_v1",
+  "focused_checks": {
+    "capture": 27,
+    "readouts": 17,
+    "snapshots": 5,
+    "targets": 35
+  },
+  "generated_holdouts_opened": false,
+  "integration": "Actual2016-rowbank\u2192sourcevalidation\u2192capturerecordwhitelist\u2192dynamic232-coltargets/support. Bothcachedmodelconfigs metadata checked without tokenizer/model loading.",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "peer_corrections": [
+    "Retain paired_group_id in captured source records.",
+    "Audit every recomputed scientific metric and control marginal table, alongside exact saved-parameter scores.",
+    "Preserve terminal attempt completion from verified receipt."
+  ],
+  "source": {
+    "code": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26"
+  },
+  "source_module_sha256": {
+    "src/codecue/binding/schedule_capture.py": "47d2a7809adbcbaa187dae3b1eaa9f240cdc3aa0ee276f95a0f30733f70728f5",
+    "src/codecue/binding/schedule_readouts.py": "a4d4f4d8e2a2708b84fddc552223e5ff20037b9baaa5f956d44641aee7768a9d",
+    "src/codecue/binding/schedule_targets.py": "14ef4779522f9596e276f10d3369701e771cf21c00697176631dbf25fddd1d93"
+  },
+  "status": "passed"
+}

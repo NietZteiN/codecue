@@ -1,0 +1,131 @@
+{
+  "actual_source_capture_accounting": {
+    "generated_responses": 0,
+    "model_prefill_cases": 1944,
+    "model_prefill_cases_attempted": 1944,
+    "prefill_batch_calls": 61
+  },
+  "additional_fits": 0,
+  "additional_parameter_replays": 0,
+  "array_loads_blocked_during_audit": true,
+  "audit_wall_seconds": 360.6929799001664,
+  "created_utc": "2026-10-28T01:42:39.140845+00:00",
+  "evaluation_role": "discovery_relationship_independent_completion_audit_v1",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "job_accounting": [
+    {
+      "elapsed": "00:03:45",
+      "exit_code": "0:0",
+      "job_id": "480286",
+      "state": "COMPLETED"
+    },
+    {
+      "elapsed": "00:04:53",
+      "exit_code": "0:0",
+      "job_id": "480292",
+      "state": "COMPLETED"
+    },
+    {
+      "elapsed": "00:02:09",
+      "exit_code": "0:0",
+      "job_id": "480293",
+      "state": "COMPLETED"
+    },
+    {
+      "elapsed": "00:10:48",
+      "exit_code": "0:0",
+      "job_id": "480294",
+      "state": "COMPLETED"
+    },
+    {
+      "elapsed": "00:00:06",
+      "exit_code": "0:0",
+      "job_id": "480295",
+      "state": "COMPLETED"
+    }
+  ],
+  "metadata_only": true,
+  "models_tokenizers_and_fitting_blocked_during_audit": true,
+  "new_model_queries": 0,
+  "pins": [
+    {
+      "path": "configs/binding/relationships/capture_v2.json",
+      "sha256": "1e944fa658613954a116f07a016e1ed8c9da83d2f805bf1e4605a5ff54440a4e"
+    },
+    {
+      "path": "configs/binding/relationships/readouts_pipeline_v3.json",
+      "sha256": "61bdf8018a1dcefc774d5cc776b13a922a193460dc5f61a41cf2a007229f9704"
+    },
+    {
+      "path": "configs/binding/preparation/readiness_v11.json",
+      "sha256": "c2bb61404c36bae42004f196442f82df8c27da75912585a5a676e1fc1fdbe2fd"
+    },
+    {
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/completion_manifest_v1.json",
+      "sha256": "258ae28c06219ba2568497e3307844782d7d9961144589a7debbccc74c73b5a1"
+    },
+    {
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/audit.json",
+      "sha256": "b33d716910cddf1e66426ce46480fbf755932664c8140c2e1814c0f8a052eaad"
+    },
+    {
+      "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/completion_manifest_v1.json",
+      "sha256": "f24c233a150538d884bc09554f00ff918d85252d32cb77a7e79f3506c81175e4"
+    },
+    {
+      "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/audit.json",
+      "sha256": "981011c2abeae102796aa303465047781729a90f437fe52b5e92e5acfc7fd9fc"
+    },
+    {
+      "path": "artifacts/binding/relationship_readouts/pipeline_v3/resolved_config.json",
+      "sha256": "81e006755f71a966a82f7e945104d6d2fea75564e4721b1a2601d9d18ff065fe"
+    },
+    {
+      "path": "artifacts/binding/relationship_readouts/pipeline_v3/resolution_review.json",
+      "sha256": "4d8595a4a7f1feccde34948358dace0ed001fb93d74c54a679d2b803b7c75d1f"
+    },
+    {
+      "path": "artifacts/binding/relationship_readouts/pipeline_v3/pipeline_review_v1.json",
+      "sha256": "5f9e4d95543d2e0c3808a1602f3485c236f35781c10fc79dce1c6e4f35b4e308"
+    },
+    {
+      "path": "reports/binding/relationship_readouts_v3.md",
+      "sha256": "5d5188ada1ca12d460f9cfa799c837f16743651ed75c43cf40b31bbee02bc3e9"
+    }
+  ],
+  "public_original_source_workspace_audit": {
+    "artifact_verification": {
+      "additional_fits": 0,
+      "config_hash": "0dfeb01238e12f4c5e5e39b55d0911a2b7ae5a613a9c50e4b64ebaf87582ffa4",
+      "evaluation_role": "discovery_relationship_readouts_v1",
+      "exact_parameter_replays_verified_during_fit": true,
+      "factorizations": 45,
+      "generated_holdouts_opened": false,
+      "new_model_queries": 0,
+      "parameter_replay_rows": 87480,
+      "source_artifact_hashes_verified": true,
+      "status": "passed"
+    },
+    "factorizations": 45,
+    "parameter_replay_rows": 87480,
+    "status": "complete_exploratory"
+  },
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 38
+  },
+  "source": {
+    "code": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0"
+  },
+  "status": "passed",
+  "verified_inventory": {
+    "capture_chunks": 16,
+    "capture_prefix_comparisons": 4980,
+    "readout_artifacts": 49,
+    "readout_npz_fits": 45
+  }
+}

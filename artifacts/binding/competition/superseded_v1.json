@@ -1,0 +1,8 @@
+{
+  "name_audits": [
+    "name_audit_v1.json",
+    "name_audit_v2.json",
+    "name_audit_v3.json"
+  ],
+  "reason": "CPU tokenizer audit found unequal lengths for the scratch-control name. No v1 model inference ran. Version 2 uses token-length-matched current/saved, new/old, and temp names; numeric draws, pair design and structural grouping are unchanged."
+}

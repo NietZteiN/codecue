@@ -1,0 +1,74 @@
+{
+  "actual_model_dtype": "torch.bfloat16",
+  "complete": true,
+  "gate": "The separately hashed difficulty-ladder plan governs selection; the original bank gate remains unchanged",
+  "heldout_outcomes_opened": false,
+  "interpretation": "training-only calibration; explicit reasoning changes computation and is kept separate from short answers",
+  "model_experiment": true,
+  "variants": [
+    {
+      "families": {
+        "computed_baseline": {
+          "correct": 5,
+          "invalid": 0,
+          "n": 12
+        },
+        "fresh_chain": {
+          "correct": 1,
+          "invalid": 0,
+          "n": 36
+        },
+        "independent_arithmetic": {
+          "correct": 14,
+          "invalid": 0,
+          "n": 36
+        },
+        "reassigned_chain": {
+          "correct": 3,
+          "invalid": 0,
+          "n": 36
+        }
+      },
+      "invalid": 0,
+      "n": 120,
+      "primitive_correct": 0,
+      "primitive_n": 0,
+      "promising_for_training_bank_only": false,
+      "training_correct": 23,
+      "training_n": 120,
+      "variant": "print_direct_v3"
+    },
+    {
+      "families": {
+        "computed_baseline": {
+          "correct": 8,
+          "invalid": 0,
+          "n": 12
+        },
+        "fresh_chain": {
+          "correct": 11,
+          "invalid": 0,
+          "n": 36
+        },
+        "independent_arithmetic": {
+          "correct": 33,
+          "invalid": 0,
+          "n": 36
+        },
+        "reassigned_chain": {
+          "correct": 10,
+          "invalid": 0,
+          "n": 36
+        }
+      },
+      "invalid": 0,
+      "n": 120,
+      "primitive_correct": 0,
+      "primitive_n": 0,
+      "promising_for_training_bank_only": false,
+      "training_correct": 62,
+      "training_n": 120,
+      "variant": "print_trace_long_v1"
+    }
+  ]
+}

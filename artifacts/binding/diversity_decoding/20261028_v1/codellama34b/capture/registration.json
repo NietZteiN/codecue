@@ -1,0 +1,124 @@
+{
+  "config": {
+    "batch_size": 128,
+    "chunk_size": 512,
+    "context_limit": 4096,
+    "dataset": "artifacts/binding/schedule_diversity/20261028_v1/sources.jsonl",
+    "dataset_manifest_sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f",
+    "dataset_sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1",
+    "evaluation_role": "discovery_diversity_capture_v1",
+    "hidden_size": 8192,
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "prefix_atol": 1e-05,
+    "run_dir": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture",
+    "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+  },
+  "config_hash": "7659b4aeb1176d3669e18ea870ede5d53093aaa061d010ee9ad2e9a88fd6e7b8",
+  "evaluation_role": "discovery_diversity_capture_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "schema_version": 1,
+  "source": {
+    "frozen_manifest_sha256": "aebd4aac3e13f1361d3eb1109b7184982f0c2ee90b9e22145932435a0b996269",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8",
+    "source_sha256": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918"
+  },
+  "source_review": {
+    "actual_generic_ssa_labels_validated": true,
+    "canonical_graph_families": 60,
+    "components": {
+      "development": 15,
+      "train": 45
+    },
+    "count_profiles": [
+      [
+        2,
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0,
+        0
+      ]
+    ],
+    "dataset_manifest_sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f",
+    "dataset_sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1",
+    "existing_fixed_readouts_compatible": false,
+    "feature_shape": [
+      5760,
+      3,
+      4,
+      8192
+    ],
+    "hardware_headroom_reference_batch": 64,
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "maximum_assignment_version": 4,
+    "ordered_case_ids_sha256": "0ee223e4df0bf55318ce0a9ea021db347b57562b24d047c707370e4e0e3ba1fb",
+    "query_rows": {
+      "v0": 1440,
+      "v1": 1440,
+      "v2": 1440,
+      "v3": 1440
+    },
+    "recipe": {
+      "batch_size": 128,
+      "chunk_size": 512,
+      "context_limit": 4096,
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+      "hidden_size": 8192,
+      "layers": [
+        12,
+        24,
+        36,
+        47
+      ],
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "num_hidden_layers": 48,
+      "prefix_atol": 1e-05,
+      "tokenization_mode": "codellama_official_boundary_v1",
+      "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+    },
+    "sites": [
+      "statement:3",
+      "statement:7",
+      "pre_answer"
+    ],
+    "slot_complete_version_domain": true,
+    "slot_rotations": 4,
+    "source_rows": 5760,
+    "source_targets_prepared_only": true,
+    "split_canonical_graph_units": {
+      "development": 15,
+      "train": 45
+    },
+    "split_rows": {
+      "development": 1440,
+      "train": 4320
+    }
+  }
+}

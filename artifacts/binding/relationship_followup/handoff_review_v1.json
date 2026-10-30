@@ -1,0 +1,291 @@
+{
+  "completed": {
+    "development_numeric_bases": 36,
+    "development_pairs": 72,
+    "development_structural_components": 9,
+    "new_fits": 0,
+    "new_model_queries": 0,
+    "parameter_replays": 0,
+    "raw_activation_arrays_loaded": false,
+    "saved_score_rows_read": 34992,
+    "selected_score_banks": 18
+  },
+  "conditional_uncertainty": "Same nine discovery components, bootstrap2000/seed117, no refits/multiplicity adjustment. Source comparison and pair controls selected after observing original results. Pairs and seeds are not independent replications.",
+  "created_utc": "2026-10-28T02:11:03.463471+00:00",
+  "evaluation_role": "posthoc_discovery_relationship_completion_handoff_v1",
+  "generated_holdouts_opened": false,
+  "highlights": {
+    "algebraic": {
+      "bootstrap": {
+        "draws": 2000,
+        "minimum_valid_draws": 1900,
+        "seed": 117
+      },
+      "comparisons": {
+        "direct_minus_source_categorical_value_derived": {
+          "conditional_group_bootstrap_95": [
+            -0.1619152857649523,
+            -0.10419760613689026
+          ],
+          "mean": -0.1308865845189422
+        }
+      },
+      "eligible_cells_fixed": true,
+      "groups": [
+        "relationship-routing:000",
+        "relationship-routing:012",
+        "relationship-routing:021",
+        "relationship-routing:102",
+        "relationship-routing:111",
+        "relationship-routing:120",
+        "relationship-routing:201",
+        "relationship-routing:210",
+        "relationship-routing:222"
+      ],
+      "invalid_draws": 0,
+      "methods": {
+        "direct": {
+          "cells": [
+            0.7826797385620915,
+            0.8468788156288156,
+            0.8960004650622021,
+            0.7826797385620915,
+            1.0,
+            0.8912037037037037,
+            0.8862201963534362,
+            0.8468788156288156,
+            1.0,
+            0.7862654320987654,
+            0.9596340766152087,
+            0.8960004650622021,
+            0.8862201963534362,
+            0.9596340766152087,
+            0.7662037037037037,
+            0.7662037037037037,
+            0.7662037037037037,
+            0.7662037037037037
+          ],
+          "families": {
+            "difference_equals_third": 0.7662037037037037,
+            "equal": 1.0,
+            "less_than": 0.8683579766871649,
+            "sum_equals_third": 0.7662037037037037
+          },
+          "score": 0.8501913460236431
+        },
+        "source_categorical_value_derived": {
+          "cells": [
+            1.0,
+            1.0,
+            0.8486513196139984,
+            1.0,
+            1.0,
+            1.0,
+            0.844378214118747,
+            1.0,
+            1.0,
+            1.0,
+            0.8654659805603202,
+            0.8334786652714801,
+            0.8410472183263207,
+            0.8587192681532304,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "families": {
+            "difference_equals_third": 1.0,
+            "equal": 1.0,
+            "less_than": 0.9243117221703413,
+            "sum_equals_third": 1.0
+          },
+          "score": 0.9810779305425853
+        }
+      },
+      "multiplicity_adjusted": false,
+      "refits_per_draw": 0,
+      "same_invalid_draws_for_all_methods": true,
+      "seed_aggregation": "Mean row correctness over three fixed fits before whole-group resampling; class denominators recomputed in every draw.",
+      "status": "qualified_conditional_interval",
+      "valid_draws": 2000
+    },
+    "paired_complete_graphs_both_correct_final_prompt": 0.16666666666666666,
+    "paired_complete_graphs_both_correct_last_assignment": 0.7870370370370371,
+    "paired_first_parent_both_correct_final_prompt": 1.0,
+    "paired_first_parent_both_correct_last_assignment": 0.9675925925925926
+  },
+  "independent_metadata_review": "passed",
+  "independent_scientific_review": "no factual blocker",
+  "interpretation": "Accessible provenance remains distinguishable when numeric states coincide, under a known fixed scaffold and explicit source-copy difference. Source-value relations outperform hidden direct relations; no dedicated-code, general-version-resolution, independent-confirmation or natural-causal-use claim.",
+  "job_accounting": [
+    "480382|COMPLETED|00:08:30|0:0",
+    "480383|COMPLETED|00:00:06|0:0"
+  ],
+  "mutable_paths_not_pinned": [
+    "reports/binding/implementation_checklist.md",
+    "reports/binding/experiment_log.md",
+    "reports/binding/preparation_readiness.md",
+    "artifacts/binding/relationship_followup/readiness_live_v1.json"
+  ],
+  "original_capture_source_prefills": 1944,
+  "original_parameter_replays": 87480,
+  "original_primaries_preserved": true,
+  "original_readout_factorizations": 45,
+  "pins": [
+    {
+      "bytes": 962,
+      "path": "configs/binding/relationships/score_followup_v1.json",
+      "sha256": "91f77941d1650264d005e975029a4bf97d241e8158e9c2f5f25d78885b4c1125"
+    },
+    {
+      "bytes": 40664,
+      "path": "configs/binding/preparation/readiness_v12.json",
+      "sha256": "d144ace1e94591ff1d29727148abd8141296fd56f6fb12a69510d0a8112e8c4b"
+    },
+    {
+      "bytes": 3471,
+      "path": "reports/binding/relationship_score_followup_plan_v1.md",
+      "sha256": "c6079e28fc51f6616a26123ec3969d56da078a93fcad907b7ae6ffab84d57ac4"
+    },
+    {
+      "bytes": 2631,
+      "path": "reports/binding/relationship_score_controls_v1.md",
+      "sha256": "ca94e048dd4875b174dbe0fd61da9cd9752b1e21bff66146ea9a6c81ac4e1f37"
+    },
+    {
+      "bytes": 6919,
+      "path": "reports/binding/relationship_results_findings_v1.md",
+      "sha256": "3daf1ceefc236ee2cf826505b684b6ef5652bc9f75d8891472cad28713612917"
+    },
+    {
+      "bytes": 2315,
+      "path": "reports/binding/relationship_readout_status_v4.md",
+      "sha256": "0f8eeef26bae216e67bd2dcdecd18b4e8045553fddccd2467f8b40dfbb274677"
+    },
+    {
+      "bytes": 180128,
+      "path": "reports/binding/figures/relationship_controls_v1.png",
+      "sha256": "4a0756ef4c40054ad1e79a25b6de514bd4b9aac52d228fde89ee6735a7f287e4"
+    },
+    {
+      "bytes": 111150,
+      "path": "reports/binding/figures/relationship_controls_v1.svg",
+      "sha256": "b829cf7598fbcd967d54db171f0f04460733809561d14ed48a2d7c6b499fe84f"
+    },
+    {
+      "bytes": 4393,
+      "path": "artifacts/binding/relationship_followup/plot_relationship_controls_v1.py",
+      "sha256": "8e46712786423ff27c0eb68e744911b286be10e7e7db72bf904c0eeea4dd0156"
+    },
+    {
+      "bytes": 1136,
+      "path": "artifacts/binding/relationship_followup/figure_review_v1.json",
+      "sha256": "96ad1dd623f9d9ff28d7427d9c0fc97af36e13aa2b9e7ce7b9fbe1889bb45303"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/relationship_followup/source_v1.json",
+      "sha256": "f33af8b6c733bc1d0c081a7319fafef7b1384e14a6e90da844e7011b56680d72"
+    },
+    {
+      "bytes": 46614,
+      "path": "artifacts/binding/sources/0e10774ed60ebedd04379f4d/frozen_manifest.json",
+      "sha256": "2392ca55ebcfd8ce933336d2155148422f036d0c3c6f466045ff919dfca1963c"
+    },
+    {
+      "bytes": 2969,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/registration.json",
+      "sha256": "1eb86e5f079b69028951c5a0e3f22944d5cdbc00e86cab578b0c290d487115e5"
+    },
+    {
+      "bytes": 226461,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/pairs_review_v1.json",
+      "sha256": "e118a9722e9ee1a794a5eb3833f8eb9c931bc706b82c233ac22715a6fbc02d81"
+    },
+    {
+      "bytes": 836729,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/results_v1.json",
+      "sha256": "8d582f3f18bac43f57b0d8d821ac4df493ca0a59a6945cf2770710fcdafdfa86"
+    },
+    {
+      "bytes": 2028,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/completion_manifest_v1.json",
+      "sha256": "8a76ffb479f15f83eb3ab8bcf9d441bb563eee5dec848322773a9c2a0f1c814a"
+    },
+    {
+      "bytes": 672,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/followup_review_v1.json",
+      "sha256": "dfb98d2a86d65380570c9c9a442a2725622288f07def90a50ceb0ff1da555d87"
+    },
+    {
+      "bytes": 3789,
+      "path": "artifacts/binding/relationship_followup/final_completion_review_v1.json",
+      "sha256": "27aae26d879e88ce7fb95936146bdc949ab374de9d7fd719664146ace7342a93"
+    },
+    {
+      "bytes": 5694,
+      "path": "artifacts/binding/relationship_followup/posthoc_interpretation_review_v1.json",
+      "sha256": "1154530053c150644e866e76124fa27effcdb5174ebe3b59d432c602452db459"
+    },
+    {
+      "bytes": 246165,
+      "path": "artifacts/binding/relationship_followup/regression_v1.xml",
+      "sha256": "9d9fd7adf7b0a826df32d76b9a7c2ce594b68445875ba00caf7b90e42cb58720"
+    },
+    {
+      "bytes": 50166,
+      "path": "artifacts/binding/relationship_followup/readiness_at_completion_v1.json",
+      "sha256": "ac85e4bb44e6239cc2d0122c98c32ceda8c25f1a1b56d06eda0a960e5ffc86fe"
+    },
+    {
+      "bytes": 206,
+      "path": "artifacts/binding/relationship_followup/jobs_v1.json",
+      "sha256": "159e9d07c4bdafc8726528cd7f20df714c249c9e251692177b67f2487bb37004"
+    },
+    {
+      "bytes": 6796,
+      "path": "artifacts/binding/relationship_readouts/completion_handoff_review_v1.json",
+      "sha256": "3d8cbb9d8611cc81e9ab163d25f3f8e470d7474b08d13d4a1cf650dbfd9da49c"
+    },
+    {
+      "bytes": 21505,
+      "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/completion_manifest_v1.json",
+      "sha256": "f24c233a150538d884bc09554f00ff918d85252d32cb77a7e79f3506c81175e4"
+    },
+    {
+      "bytes": 12791,
+      "path": "artifacts/binding/relationship_readouts/pipeline_v3/pipeline_review_v1.json",
+      "sha256": "5f9e4d95543d2e0c3808a1602f3485c236f35781c10fc79dce1c6e4f35b4e308"
+    },
+    {
+      "bytes": 1225,
+      "path": "log/slurm/480382_relationship-score-controls.json",
+      "sha256": "642dcda5314ae5376493ffe71f23d43b5a2280073a332b844ba9b5db43e1623b"
+    },
+    {
+      "bytes": 1218,
+      "path": "log/slurm/480383_relationship-controls-refresh.json",
+      "sha256": "07c392d9371e71bcf3cca854fa03d617e49b3915160dfe3652ed9a1ab5d64af1"
+    }
+  ],
+  "readiness_at_completion": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 39
+  },
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1602
+  },
+  "source": {
+    "code": "85f731458f46bfec0533518358a1bf0432860bac6f4c5f7670bbf3fea5c17fe3",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/0e10774ed60ebedd04379f4d",
+    "snapshot_id": "0e10774ed60ebedd04379f4d"
+  },
+  "status": "complete_exploratory",
+  "tracked_tasks": 51,
+  "unrelated_jobs_modified": false
+}

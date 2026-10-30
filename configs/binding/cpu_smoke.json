@@ -1,0 +1,59 @@
+{
+  "generation": {
+    "seed": 20261024,
+    "instances_per_cell": 10,
+    "templates_per_cell": 10,
+    "counterfactual_pairs": true,
+    "arithmetic_controls": true,
+    "algorithm_version": 5,
+    "answer_magnitude_bins": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "identifier_pool": "codellama-context-matched-v1"
+  },
+  "dataset": "artifacts/binding/smoke_matched.jsonl",
+  "run_dir": "artifacts/binding/cpu_smoke_bf16",
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "dtype": "bfloat16",
+  "device": "cpu",
+  "batch_size": 4,
+  "max_new_tokens": 12,
+  "splits": [
+    "train",
+    "development"
+  ],
+  "per_cell_limit": 1,
+  "control_kinds": [
+    "primary",
+    "arithmetic_control"
+  ],
+  "seed": 17,
+  "max_gpu_seconds": 1800,
+  "activation_limit_bytes": 68719476736,
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "extraction_splits": [
+    "train",
+    "development"
+  ],
+  "protocol": "short_answer_chat_v1",
+  "cpu_threads": 4,
+  "cpu_smoke_cap_seconds": 1800,
+  "run_smoke_if_feasible": true
+}

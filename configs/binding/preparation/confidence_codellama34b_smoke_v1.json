@@ -1,0 +1,23 @@
+{
+  "attention_backend": "sdpa",
+  "batch_size": 32,
+  "case_limit": 128,
+  "dataset": "artifacts/binding/competition/discovery_v2.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eos_token_ids": [
+    2
+  ],
+  "execution_backend": "Transformers BF16 exact saved prompt prefill distributions; no generation",
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "preflight_result": "artifacts/binding/preparation/confidence/codellama34b_smoke_v1/preparation_review.json",
+  "prepared_cases": "artifacts/binding/preparation/confidence/codellama34b_smoke_v1/prepared_cases.jsonl",
+  "protocol": "short_answer_chat_v1",
+  "run_dir": "artifacts/binding/preparation/confidence/codellama34b_smoke_v1",
+  "selection_seed": 117,
+  "source_config": "configs/binding/competition/codellama34b_v1.json",
+  "source_config_sha256": "4b658f85b0fd46c4579f6405a02fdd57adbd5f3699e5688fb71b95f7a320adb0",
+  "tokenization_mode": "codellama_official_boundary_v1",
+  "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+}

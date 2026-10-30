@@ -1,0 +1,17 @@
+{
+  "dataset": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+  "evaluation_role": "discovery_relationship_schedule_targets_v1",
+  "numeric_seeds": [
+    419,
+    521,
+    631
+  ],
+  "overlap_sources": [
+    {
+      "path": "artifacts/binding/relationships/routing_sources_v1.jsonl",
+      "sha256": "7a76b3e7ce1b82c8f1b869c492246cb22e2b7f64f672b1dd89f724f64a56e9dd"
+    }
+  ],
+  "report": "reports/binding/relationship_schedule_preparation_v1.md",
+  "review": "artifacts/binding/relationships/schedule_source_review_v1.json"
+}

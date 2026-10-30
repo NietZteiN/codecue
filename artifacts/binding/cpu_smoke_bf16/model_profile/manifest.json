@@ -1,0 +1,274 @@
+{
+  "artifact_dir": "/work/jvl210002/migration/codecue/artifacts/binding/cpu_smoke_bf16/model_profile",
+  "attempts": [
+    {
+      "host": "c-01-04",
+      "slurm_job_id": "475196",
+      "started_utc": "2026-10-25T04:38:41.059620+00:00",
+      "status": "complete",
+      "wall_seconds": 66.984739812091
+    }
+  ],
+  "budget_lease": null,
+  "budget_seconds_available": 1800,
+  "device_name": "x86_64",
+  "finished_utc": "2026-10-25T04:39:48.079097+00:00",
+  "host": "c-01-04",
+  "identity": {
+    "code": {
+      "git_revision": "39c9e6600feb14a45d473395a5efc848ac37c47f",
+      "source_files": {
+        "scripts/87_binding_preflight.py": "1290c249679d1be69dd45333001a67ed814012a7f8c49e51b8a5347fc6f40172",
+        "scripts/88_binding_pipeline.py": "1df592eeddb0cb0023c6bdffd232b0531025ff564650e3aeaec69861f47b5901",
+        "scripts/89_binding_design_audit.py": "8895f15d3d5ba9be3ed5c79980ef168062ebb0fd8cd0d737e1393d96e4e8629f",
+        "scripts/90_binding_vocab_check.py": "efd3df6ae6a6f898f94005e76538b5e1543be56dcc42a9b4d42db55bc666e20a",
+        "scripts/91_binding_frozen_run.py": "bd133b0f37338d6c6ff84562dab60825752b17b8d6a62f4e7845fa36217402f9",
+        "scripts/env.sh": "86e2295b918282f91c3966e39348442dc8c5bf8931792ee2348bd64c5655ac3f",
+        "scripts/slurm/stamp.py": "73c0da322c7e95e113c9c677e846edfef3ec398a8695ad1d61e6d1a12463e054",
+        "scripts/slurm/submit.py": "a4818a7cd08515912199fa443701e3a61e2442db3c0ba253321eeac3cf680c40",
+        "src/codecue/__init__.py": "74db69d1fc22dd62cedbdca06ab7591136d94214770978df425cc6332099a105",
+        "src/codecue/binding/__init__.py": "e8f5e6a1b024e4d538dceeb0c817e5c79f092cf531c177e38e1b951201edddbe",
+        "src/codecue/binding/__main__.py": "32be8c72af2bdaad9872938394b9b32e9d47b07b1198959de2c455772c2b4bab",
+        "src/codecue/binding/activations.py": "024bd97f27a56c6278b7b41432d28868083e0ed26f2b2bef3a8465114dc6d8f9",
+        "src/codecue/binding/analysis.py": "05147803effa2e6906a5499dc7bff0aa246d0e6b72dd165e8166b3d74882f9ea",
+        "src/codecue/binding/behavior.py": "a036d9e01dc69c03d657ba65cd5f6ebbbbfc60d239e4b4a3a95f249288c71ee4",
+        "src/codecue/binding/budget.py": "e7e2df11083102d8a346fee6ff5952d850283131bd5688439db09f69894cd62a",
+        "src/codecue/binding/datasets.py": "aca5f353589584fb90e264d909ab794e9a2968de8194651fb8d8af2e8e423d1e",
+        "src/codecue/binding/heldout.py": "33b2cebf6fa9e039be6aa11b832de799d57d57f347dceea2b9a3ccd1a30bb303",
+        "src/codecue/binding/interpreter.py": "64bf9821eda3a9069089550ddf9d4e0b973de3270f39d9ef3555df76fa407166",
+        "src/codecue/binding/interventions.py": "2af7f7338ae83043a64caab14b569c6639f2701d21b6f8cceba86b7b6a8fb281",
+        "src/codecue/binding/model_adapter.py": "6cdb7729e15993ddf106e697fd39b34b666acb40b97961f0d127986df06b68c0",
+        "src/codecue/binding/probes.py": "851dddf691e6aa104622b5d47e5cf0dcbbc33c8a5c8466b6c3f854054696596d",
+        "src/codecue/binding/profiling.py": "6f372ce6862f3869f8aa2eeb53615c59e7bfa475b35d27463761ca782369e9e0",
+        "src/codecue/binding/programs.py": "284192077a120aae172f14e964c48e231bbe9d33a6fab6466315675bc9b2aeeb",
+        "src/codecue/binding/registry.py": "66fc54cda09fad1bf9b6ade317f0a405a86746eafc59a89eb00873e79a54d29f",
+        "src/codecue/binding/snapshots.py": "a361397d2d0ebc1dd2c8f815f21f6df0625aeaf6a31ca45aea7a279c6ad60eb8",
+        "src/codecue/cache.py": "0f4464439774ac53474ddc0e9322a9902c60b36ec666c05fabfb0695d215e946",
+        "src/codecue/config.py": "4ba803420f421f8af330488fffd4a1c66623a739b0043b4bef17c87dce2f40ca",
+        "src/codecue/followups.py": "b20b371ff79eabe6a22510ecefdd66f38a9c9b6fccbef8887f87ce4b72daf1d2",
+        "src/codecue/generator.py": "eeb41aedc72cad9ef160a1defe0db9b895000a065f6669922837b19dba73730b",
+        "src/codecue/gentask.py": "8163f104b02356b006692e7496e50d7a801dee55b4b0031d5e0e405f410ebb2d",
+        "src/codecue/layout.py": "b7a4457402e13ffa4c0df8aa010fbec6fffa4c97cd02d1ceb9ed365302820d4e",
+        "src/codecue/lures.py": "9e63aac1eee60817daf504bb0cab2d692b4851526b78041cf41c00e91cbaeff3",
+        "src/codecue/models.py": "b58f6e511cb48933cd5076c29624a44adf21c9d3167b54b7fa5cf679d4342ad5",
+        "src/codecue/patching.py": "a69b35d8d870250b4f445065bf6794a604f0e53aff4def0a91770a67c76f7b45",
+        "src/codecue/probe_data.py": "d36a5b6c480351675ca494b6c5ed735174c207231caa4f8dacd9686175148ea4",
+        "src/codecue/probe_validation.py": "554fed59d434a2a04d69abe43f5e85a1db2d01176bf1df0077108088ef652e28",
+        "src/codecue/probes.py": "28d257bc30cc4891530de9ae9c917340535362d4e7e4a26e1820f90bdd03cc83",
+        "src/codecue/prompt_comparison.py": "32c61120fa4cb51b1ed310af8b45ab381726129fb085f6956e4d837b295fbc93",
+        "src/codecue/prompts.py": "019eeeb3379c1eeac8f8f29c7af636281d7d79abd1e37ec2da1b3ca130906b1d",
+        "src/codecue/reporting.py": "4633a5f13d6b4a365e892ec2a6402aad1b2f0f781da5fa17ccc6fdd88dd20678",
+        "src/codecue/round6.py": "58eda7d56904c5b6ee3684d09cda0be88824acfc8826f5f54f809f68c1360efa",
+        "src/codecue/runner.py": "72c78f8d1a12c38fb3fa9b22b766727a9570098a8e3c86b112558b68b9a82b84",
+        "src/codecue/sandbox.py": "bad3c187164d33d58c1b15521227999eb325400396d0fe4af932894045ccfbab",
+        "src/codecue/stats.py": "0acbe61acaea72a8505accc3f8bdb106aa9102247a213201cfaa3e32b0f48aea"
+      },
+      "source_sha256": "df69dbe2da96abc210bdf1acbf00d3c3ed8845995672e83464945fb9c5fa4f7d"
+    },
+    "config": {
+      "activation_limit_bytes": 68719476736,
+      "batch_size": 4,
+      "control_kinds": [
+        "primary",
+        "arithmetic_control"
+      ],
+      "cpu_smoke_cap_seconds": 1800,
+      "cpu_threads": 4,
+      "dataset": "artifacts/binding/smoke_matched.jsonl",
+      "device": "cpu",
+      "dtype": "bfloat16",
+      "extraction_splits": [
+        "train",
+        "development"
+      ],
+      "generation": {
+        "algorithm_version": 5,
+        "answer_magnitude_bins": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            11,
+            15
+          ]
+        ],
+        "arithmetic_controls": true,
+        "counterfactual_pairs": true,
+        "identifier_pool": "codellama-context-matched-v1",
+        "instances_per_cell": 10,
+        "seed": 20261024,
+        "templates_per_cell": 10
+      },
+      "layers": [
+        8,
+        16,
+        24
+      ],
+      "max_gpu_seconds": 1800,
+      "max_new_tokens": 12,
+      "model": "codellama/CodeLlama-7b-Instruct-hf",
+      "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+      "per_cell_limit": 1,
+      "protocol": "short_answer_chat_v1",
+      "run_dir": "artifacts/binding/cpu_smoke_bf16",
+      "run_smoke_if_feasible": true,
+      "seed": 17,
+      "splits": [
+        "train",
+        "development"
+      ],
+      "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+    },
+    "config_hash": "9604a3c579cd34c9671ca5b7f7c12ff16d0aeb52807c324123f5c6f3a704da9f",
+    "dataset_manifest": {
+      "attempts": 550,
+      "base_instances": 120,
+      "cell_attempts": {
+        "accumulator:load2:updates1": 34,
+        "accumulator:load2:updates3": 79,
+        "accumulator:load4:updates1": 45,
+        "accumulator:load4:updates3": 59,
+        "parallel:load2:updates1": 32,
+        "parallel:load2:updates3": 61,
+        "parallel:load4:updates1": 80,
+        "parallel:load4:updates3": 40,
+        "snapshot:load2:updates1": 18,
+        "snapshot:load2:updates3": 32,
+        "snapshot:load4:updates1": 35,
+        "snapshot:load4:updates3": 35
+      },
+      "cell_rejections": {
+        "accumulator:load2:updates1": 24,
+        "accumulator:load2:updates3": 69,
+        "accumulator:load4:updates1": 35,
+        "accumulator:load4:updates3": 49,
+        "parallel:load2:updates1": 22,
+        "parallel:load2:updates3": 51,
+        "parallel:load4:updates1": 70,
+        "parallel:load4:updates3": 30,
+        "snapshot:load2:updates1": 8,
+        "snapshot:load2:updates3": 22,
+        "snapshot:load4:updates1": 25,
+        "snapshot:load4:updates3": 25
+      },
+      "generation_config": {
+        "algorithm_version": 5,
+        "answer_magnitude_bins": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            11,
+            15
+          ]
+        ],
+        "arithmetic_controls": true,
+        "counterfactual_pairs": true,
+        "identifier_pool": "codellama-context-matched-v1",
+        "instances_per_cell": 10,
+        "seed": 20261024,
+        "templates_per_cell": 10
+      },
+      "generation_config_hash": "5c776186ad132fb625dee6b51a037f152ee902fff9de43395116f74eccf2676b",
+      "independent_template_clusters": 60,
+      "primary_answer_magnitude_bins": {
+        "0": 120
+      },
+      "rejected": 430,
+      "rejection_rate": 0.7818181818181819,
+      "rows": 2160,
+      "schema_version": 1,
+      "sha256": "3aca4a3039a786a0b27db61f16f48fa295307233f241b0452052d916de16668f",
+      "split_rows": {
+        "development": 432,
+        "test": 432,
+        "train": 1296
+      },
+      "split_templates": {
+        "development": 24,
+        "test": 24,
+        "train": 72
+      },
+      "structural_templates": 120,
+      "token_counts": "filled by the selected tokenizer at model-run time",
+      "value_distribution": {
+        "-1": 54,
+        "-10": 29,
+        "-11": 22,
+        "-12": 21,
+        "-13": 20,
+        "-14": 14,
+        "-15": 16,
+        "-16": 8,
+        "-17": 7,
+        "-18": 12,
+        "-19": 5,
+        "-2": 47,
+        "-20": 5,
+        "-21": 3,
+        "-22": 2,
+        "-24": 2,
+        "-25": 1,
+        "-3": 50,
+        "-4": 51,
+        "-5": 47,
+        "-6": 44,
+        "-7": 30,
+        "-8": 33,
+        "-9": 28,
+        "0": 49,
+        "1": 46,
+        "10": 16,
+        "11": 23,
+        "12": 18,
+        "13": 11,
+        "14": 18,
+        "15": 11,
+        "16": 8,
+        "17": 12,
+        "18": 9,
+        "19": 7,
+        "2": 58,
+        "20": 4,
+        "21": 3,
+        "22": 2,
+        "23": 1,
+        "24": 2,
+        "3": 51,
+        "4": 43,
+        "5": 41,
+        "6": 42,
+        "7": 35,
+        "8": 30,
+        "9": 29
+      }
+    },
+    "environment": {
+      "backend": "transformers, eager attention",
+      "platform": "Linux-5.14.0-687.41.1.el9_8.x86_64-x86_64-with-glibc2.34",
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "sampling": "greedy, do_sample=False",
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1"
+    },
+    "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+    "stage": "model_profile",
+    "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+  },
+  "identity_hash": "6290eb3ba44e595d731e69f1635c50c55b09708d82fb1408e552d137bc676407",
+  "samples_completed": 6,
+  "slurm_job_id": "475196",
+  "started_utc": "2026-10-25T04:38:41.058549+00:00",
+  "status": "complete",
+  "wall_seconds_total": 66.984739812091
+}

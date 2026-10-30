@@ -1,0 +1,280 @@
+{
+  "completed": {
+    "generated_responses": 0,
+    "learned_results_available": false,
+    "model_prefill_cases": 0,
+    "native_tokenizer_preflight_cases": 1944,
+    "readout_factorizations": 0,
+    "regression": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 1486
+    },
+    "saved_parameter_case_replays": 0
+  },
+  "control_amendment": {
+    "activation_arrays_opened": false,
+    "before_any_fit": true,
+    "model_results_inspected": false,
+    "prefix_conflicts_after_all_seeds": 0,
+    "real_label_primary_comparisons_changed": false,
+    "software_control_only": true,
+    "superseded_fit_jobs_cancelled_before_execution": [
+      "480238",
+      "480239"
+    ]
+  },
+  "created_utc": "2026-10-27T23:26:59.755463+00:00",
+  "evaluation_role": "discovery_relationship_readout_submission_v2",
+  "execution": {
+    "application_gpu_hour_budget": null,
+    "automatic_chain": [
+      "capture480208",
+      "afterok_capture_audit480209",
+      "afterok_corrected_fits480258",
+      "afterany_readiness_refresh480259"
+    ],
+    "capture_reason": "QOSMaxJobsPerUserLimit",
+    "capture_state": "PENDING",
+    "host_allocation_modified": false,
+    "scheduler_limit_is_external": true,
+    "unrelated_jobs_modified": false
+  },
+  "expected_future_outputs": [
+    "artifacts/binding/relationship_capture/llama31_8b_v1/completion_manifest_v1.json",
+    "artifacts/binding/relationship_readouts/pipeline_v2/pipeline_review_v1.json",
+    "reports/binding/relationship_readouts_v2.md"
+  ],
+  "generated_holdouts_opened": false,
+  "job_ids": {
+    "capture": "480208",
+    "capture-audit": "480209",
+    "capture-prepare": "480205",
+    "completion-refresh": "480259",
+    "readouts": "480258"
+  },
+  "limitations": [
+    "No new learned relationship evidence until capture and fitting complete.",
+    "Same discovery graph components as preparation; not independent replication.",
+    "Parent recovery assumes the fixed eight-definition program scaffold.",
+    "Primary uncertainty resamples nine development components; three weighting seeds are not replications."
+  ],
+  "mutable_completion_paths_unpinned": [
+    "artifacts/binding/relationship_readouts/readiness_live_v2.json",
+    "reports/binding/preparation_readiness.md",
+    "reports/binding/experiment_log.md"
+  ],
+  "new_model_queries": 0,
+  "pins": [
+    {
+      "bytes": 710,
+      "path": "configs/binding/relationships/capture_v1.json",
+      "sha256": "06c4623cc9c9bde62d1dd96b91a0a49c20781c2162a303dee9c66c4253936236"
+    },
+    {
+      "bytes": 718,
+      "path": "configs/binding/relationships/readouts_pipeline_v2.json",
+      "sha256": "e4c1987a01665173684d5dae8ec86f0e0f7f5a18384716021154be7d0f70c378"
+    },
+    {
+      "bytes": 39229,
+      "path": "configs/binding/preparation/readiness_v10.json",
+      "sha256": "e09ced094e357c08bcadf3d9410cb4feb9b1a5e05fd2eb21de38409380e79d53"
+    },
+    {
+      "bytes": 7162,
+      "path": "reports/binding/relationship_readout_plan_v1.md",
+      "sha256": "49424e684c65e35d8290e961f2bd2d33b81969a837d7c8a8be39e881c84a32ee"
+    },
+    {
+      "bytes": 8756,
+      "path": "reports/binding/relationship_readout_plan_v2.md",
+      "sha256": "ea8a4c4c1b1732c9f099ff5dd523b3fdab4ecb5f1be10440b5fda94ce64ed4b1"
+    },
+    {
+      "bytes": 3954,
+      "path": "reports/binding/relationship_readout_status_v2.md",
+      "sha256": "5d5ea0c78a1929a4af129828deacc8374f371acfa3139233122efebbb28571f5"
+    },
+    {
+      "bytes": 8266950,
+      "path": "artifacts/binding/relationships/algebraic_sources_v1.jsonl",
+      "sha256": "8a96759d14968605d7d2a21e9a91c552b62072e926f3a49d5cf11f5f870ac2c5"
+    },
+    {
+      "bytes": 3321,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v1/registration.json",
+      "sha256": "5ab6faa2c1581d407c27f4fb063bdc81e5d68606d7f93b9b553bb23fd0110822"
+    },
+    {
+      "bytes": 3142,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v1/preflight.json",
+      "sha256": "fb622133a944974ce5b4623d2cf927568e231716840b13fa4bfabe1248ff777a"
+    },
+    {
+      "bytes": 22471466,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v1/prepared_cases.jsonl",
+      "sha256": "8df7c0ab7b171eb7aae3a7bb83188e2aaef60789552957d71997a8e9f34af779"
+    },
+    {
+      "bytes": 3400,
+      "path": "artifacts/binding/relationship_readouts/protocol_registration_v1.json",
+      "sha256": "227b28e979a46fc775c9f0d8727b24b988e13036d2101e2a01cb0efb86cebb37"
+    },
+    {
+      "bytes": 873,
+      "path": "artifacts/binding/relationship_readouts/protocol_registration_v2.json",
+      "sha256": "9bf022faba30d0a3543cfe630d893c36e52a20040ad30540dce20c74d85b8b1f"
+    },
+    {
+      "bytes": 755,
+      "path": "artifacts/binding/relationship_readouts/target_contract_review_v1.json",
+      "sha256": "39296ddad0eafd8c076ade3d51952aad05a5714ad7062176adb98a454b824b15"
+    },
+    {
+      "bytes": 2052,
+      "path": "artifacts/binding/relationship_readouts/control_prefix_review_v2.json",
+      "sha256": "b5a46f2b7fc4c5aa8408db5f1b7f8c38825d5d31df49586f9ddf3d163225b190"
+    },
+    {
+      "bytes": 471,
+      "path": "artifacts/binding/relationship_readouts/control_amendment_jobs_v2.json",
+      "sha256": "d9dbde6c0661ec2f9ff111f3ffddc6236bd20743b898c0187b799da8c3a18159"
+    },
+    {
+      "bytes": 86,
+      "path": "artifacts/binding/relationship_readouts/jobs_capture_v1.json",
+      "sha256": "c73767e55faaaccd9017e73bf25573bd548c1b2de34f75492cc436f16ae570d0"
+    },
+    {
+      "bytes": 144,
+      "path": "artifacts/binding/relationship_readouts/jobs_v1.json",
+      "sha256": "9c594ac3669940612b1429f1a256a86d8d24aeae3b9d921dbcf003a4d7fc189c"
+    },
+    {
+      "bytes": 144,
+      "path": "artifacts/binding/relationship_readouts/jobs_v2.json",
+      "sha256": "f5c0427fb2860f8ac2a60158ebf60de77aface4a893ecb3471b448f60bd303d0"
+    },
+    {
+      "bytes": 532,
+      "path": "artifacts/binding/relationship_readouts/scheduling_review_v1.json",
+      "sha256": "d2e885dcc8cfd3d0070383c07641ab3b5431a749c33d8d1ba9d612cdb0b0962c"
+    },
+    {
+      "bytes": 5000,
+      "path": "artifacts/binding/relationship_readouts/scheduler_review_v2.json",
+      "sha256": "47ad886673765d005517ea47ff6245d648eee25109511f16cbf29eea07e77678"
+    },
+    {
+      "bytes": 48473,
+      "path": "artifacts/binding/relationship_readouts/readiness_at_submission_v2.json",
+      "sha256": "0e3446b58f40b97ca69728525f60ac27edc858fde1f2a4c703349b747bf194f6"
+    },
+    {
+      "bytes": 226738,
+      "path": "artifacts/binding/relationship_readouts/regression_v1.xml",
+      "sha256": "b210c31d5e8a394d0f14a9494635282024ec37d96b4af49e12dd2dc0099cde3a"
+    },
+    {
+      "bytes": 227692,
+      "path": "artifacts/binding/relationship_readouts/regression_v2.xml",
+      "sha256": "5d9221ea89895e93a5839531d661c323adbf07e161532e9c141ad9a10513d645"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/relationship_readouts/source_capture_v1.json",
+      "sha256": "7d605c12ec809a7fe838942c5c7779c17af68701dc0128a0f9813531121c8b47"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/relationship_readouts/source_pipeline_v1.json",
+      "sha256": "e514c2505981c97f297e2321074c650adf72e4bc2e9af3fe9c34f78442438980"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/relationship_readouts/source_pipeline_v2.json",
+      "sha256": "ad28a4b28f2ef4e78e9cc11ca5cf8aaa509d75e7aafe673e3fc3059a243975ed"
+    },
+    {
+      "bytes": 44752,
+      "path": "artifacts/binding/sources/334d7261c7adb7a6a7467f89/frozen_manifest.json",
+      "sha256": "2da8cfbce67ee2be1e1c2823664eacfb8cdf38fdc00b351578f79ce91d0eac9d"
+    },
+    {
+      "bytes": 45623,
+      "path": "artifacts/binding/sources/b8af84de97657b011d24cbc8/frozen_manifest.json",
+      "sha256": "ec8a9deb918f73083261e826638e68d5c8ee698328dce71a12cf82924fb38e59"
+    },
+    {
+      "bytes": 45370,
+      "path": "artifacts/binding/sources/0aa95471cf5f59575c4338a1/frozen_manifest.json",
+      "sha256": "0955e16414583cb98099785325d561f7ab6d9ab56d0033c0d480891e51dbbb15"
+    },
+    {
+      "bytes": 2037,
+      "path": "log/slurm/submit_20261027T224122495128Z_relationship-capture.sbatch",
+      "sha256": "7703c360044443d1e70dae1e42e2c79712dcda344e5cd486d610cf220d4df742"
+    },
+    {
+      "bytes": 1985,
+      "path": "log/slurm/submit_20261027T224122922315Z_relationship-capture-audit.sbatch",
+      "sha256": "942c3a8a81a6dd7f292db02c1b957cc0df0d27f8b805a929b593086300079941"
+    },
+    {
+      "bytes": 2008,
+      "path": "log/slurm/submit_20261027T232019645024Z_relationship-readout-fit-v2.sbatch",
+      "sha256": "ec40b9f09359e505a32deacd0e2a3412dc1999a1ad7a18fea13339b2489d429a"
+    },
+    {
+      "bytes": 1978,
+      "path": "log/slurm/submit_20261027T232020440090Z_relationship-readout-refresh-v2.sbatch",
+      "sha256": "a4457f4490000a4bbbce67282ca92ab30f81809c45781171cb06e345e1e07c80"
+    }
+  ],
+  "planned": {
+    "capture_layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "capture_sites": 9,
+    "fitted_sites": [
+      3,
+      7,
+      8
+    ],
+    "generated_responses": 0,
+    "model_prefill_cases": 1944,
+    "readout_factorizations": 45,
+    "saved_parameter_case_replays": 87480
+  },
+  "protocol_sha256": "12989784dfebc4f96264697f546a39b0c3bd45c970f4e1c87823b4244361510a",
+  "readiness_at_submission": {
+    "deferred_optional": 3,
+    "needs_execution": 1,
+    "needs_scientific_decision": 9,
+    "ready": 37
+  },
+  "scope": "adaptive copy-routing discovery: structural dependency/version and algebraic relationship readouts",
+  "sources": {
+    "capture": {
+      "code": "d2be0722be3e3cf59ccac90cc2a10f37554e634fb7f473c485975ef0aa94c997",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/334d7261c7adb7a6a7467f89",
+      "snapshot_id": "334d7261c7adb7a6a7467f89"
+    },
+    "corrected_pipeline": {
+      "code": "172debf945fcccc46439a983dd6fa1bb3aee8fcf74736b04ed95fdc09e248353",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/b8af84de97657b011d24cbc8",
+      "snapshot_id": "b8af84de97657b011d24cbc8"
+    },
+    "superseded_unexecuted_pipeline": {
+      "code": "2a7a13bf72ffa0ed4d54d6b712e68a827825c8ce39e4184f854781050628838e",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/0aa95471cf5f59575c4338a1",
+      "snapshot_id": "0aa95471cf5f59575c4338a1"
+    }
+  },
+  "status": "execution_queued"
+}

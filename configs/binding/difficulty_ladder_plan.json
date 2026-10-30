@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "plan_id": "training_difficulty_ladder_v1",
+  "evaluation_role": "difficulty_ladder_only",
+  "seed": 2026102502,
+  "assignment_counts": [1, 2, 4, 8],
+  "styles": ["reassigned_chain", "fresh_chain", "independent_arithmetic"],
+  "positive_targets": [2, 5, 8, 11],
+  "variants": ["print_direct_v3", "print_trace_long_v1"],
+  "programs": 120,
+  "query_cap": 240,
+  "max_gpu_seconds": 1800,
+  "gate": {
+    "minimum_baseline_correct": 10,
+    "minimum_independent_correct": 10,
+    "minimum_chain_correct": 6,
+    "maximum_chain_correct": 11,
+    "maximum_invalid_per_cell": 0
+  },
+  "selection": "Prefer the existing direct protocol, then the smallest assignment count above one satisfying every criterion. Each cell has twelve programs. Require the computed baseline and the independent arithmetic cell to pass, and each chain style to have successes and semantic errors.",
+  "stopping_rule": "If no regime passes, stop this checkpoint/protocol feasibility pilot. No automatic prompt search, conditional-bank override, new checkpoint, intervention expansion or final-test inference.",
+  "scope": "Fresh numeric training calibration after the original task gate failed. Repeated structures and shared answer targets are not independent confirmatory examples. A selected regime only motivates a separately frozen discovery cohort."
+}

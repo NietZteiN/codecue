@@ -1,0 +1,100 @@
+{
+  "aggregation": "Mean of three weighting-seed point estimates; 15 dependent DEV graph families; no interval or reliability qualification.",
+  "cases": 5760,
+  "config_hash": "71d1bfed04da53c308ce7a3435665541966e478c9a55571cd98d4a70c1bc8b4b",
+  "development_groups": 15,
+  "development_rows": 1440,
+  "evaluation_role": "discovery_diversity_readouts_v1",
+  "factorizations": 45,
+  "fit_banks": 45,
+  "generated_holdouts_opened": false,
+  "limitations": [
+    "Adaptive discovery on 60 canonical SSA graph families: 45 TRAIN and 15 DEV, each containing 96 dependent source rows; numeric, lexical and query relatives are dependent.",
+    "All actual definition, parent and current-version identities are targets only. Hidden features contain no oracle source or target fields.",
+    "The exact-prefix character baseline and training prior are retained; neither positive decoding nor a hidden-minus-surface difference proves natural causal use.",
+    "Eligibility is descriptive TRAIN class support of at least three graph groups per observed class, distinct from historical behavioral qualification gates.",
+    "Every categorical head and held-out class is scored, including rare, unsupported and constant classes; absent classes do not count as successful discrimination.",
+    "Binary ridge scores use threshold 0.5 and categorical heads use argmax; scores are uncalibrated. No DEV threshold or hyperparameter selection occurs.",
+    "Weight seeds change graph weights and random-prefix control labels, not independent experimental replications.",
+    "Random-prefix controls preserve prefix consistency and visibility, not structural coherence, class marginals or task difficulty.",
+    "Point estimates and all 15 DEV graph outcomes are descriptive; no confirmatory or multiplicity-adjusted interval is claimed.",
+    "Changing assignment schedules also changes variable age, positions and dependency depth. Decoding does not establish a causal version-tracking algorithm."
+  ],
+  "new_model_queries": 0,
+  "parameter_replay_rows": 259200,
+  "primary": {
+    "hidden": {
+      "direct": {
+        "copy_parent": 0.30370370370370375,
+        "current_definition": 0.5638888888888889,
+        "current_version": 0.22870370370370371
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.002777777777777778,
+        "current_definition": 0.000925925925925926,
+        "current_version": 0.003703703703703704
+      },
+      "training_prior": {
+        "copy_parent": 0.011111111111111112,
+        "current_definition": 0.0,
+        "current_version": 0.0
+      }
+    },
+    "surface": {
+      "direct": {
+        "copy_parent": 0.07962962962962962,
+        "current_definition": 0.06296296296296296,
+        "current_version": 0.09629629629629628
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0,
+        "current_version": 0.007407407407407408
+      },
+      "training_prior": {
+        "copy_parent": 0.011111111111111112,
+        "current_definition": 0.0,
+        "current_version": 0.0
+      }
+    }
+  },
+  "primary_group_macro": {
+    "hidden": {
+      "direct": {
+        "copy_parent": 0.30370370370370364,
+        "current_definition": 0.563888888888889,
+        "current_version": 0.22870370370370371
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.002777777777777778,
+        "current_definition": 0.0009259259259259259,
+        "current_version": 0.0037037037037037034
+      },
+      "training_prior": {
+        "copy_parent": 0.011111111111111112,
+        "current_definition": 0.0,
+        "current_version": 0.0
+      }
+    },
+    "surface": {
+      "direct": {
+        "copy_parent": 0.07962962962962962,
+        "current_definition": 0.06296296296296296,
+        "current_version": 0.09629629629629631
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0,
+        "current_version": 0.007407407407407407
+      },
+      "training_prior": {
+        "copy_parent": 0.011111111111111112,
+        "current_definition": 0.0,
+        "current_version": 0.0
+      }
+    }
+  },
+  "status": "complete_exploratory",
+  "training_groups": 45,
+  "training_rows": 4320
+}

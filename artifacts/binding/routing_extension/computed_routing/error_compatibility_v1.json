@@ -1,0 +1,863 @@
+{
+  "audit_sha256": "367ae44679d495e765d0985a60e2d2949328033c9a898b0f81bbf8a45173fb81",
+  "counts": [
+    {
+      "category": "other_computed_binding",
+      "family": "ownership",
+      "n": 2,
+      "query_role": "v0"
+    },
+    {
+      "category": "source_literal",
+      "family": "ownership",
+      "n": 6,
+      "query_role": "v0"
+    },
+    {
+      "category": "other_computed_binding",
+      "family": "ownership",
+      "n": 65,
+      "query_role": "v1"
+    },
+    {
+      "category": "other_value",
+      "family": "ownership",
+      "n": 1,
+      "query_role": "v1"
+    },
+    {
+      "category": "source_literal",
+      "family": "ownership",
+      "n": 5,
+      "query_role": "v1"
+    },
+    {
+      "category": "source_literal",
+      "family": "versions",
+      "n": 1,
+      "query_role": "current"
+    },
+    {
+      "category": "other_computed_binding",
+      "family": "versions",
+      "n": 28,
+      "query_role": "saved"
+    },
+    {
+      "category": "other_value",
+      "family": "versions",
+      "n": 7,
+      "query_role": "saved"
+    }
+  ],
+  "errors": 115,
+  "interpretation": "Compatibility with a wrong binding or visible literal is descriptive, not an identified internal cause. No gate or cohort was changed.",
+  "role": "posthoc_descriptive_error_compatibility",
+  "rows": [
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:009964e4f91067ab6fd86af9",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 4,
+      "id": "computed-routing:020ca058929f295a1c11e2ba",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:02fb02897f581518a681a1c2",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 6,
+      "id": "computed-routing:04ed642203f0c761c505ea6c",
+      "other_binding": 4,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:059b0a2ee56c5e1c1e998633",
+      "other_binding": 3,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:064b90e7513191a9120eb172",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 9,
+      "id": "computed-routing:06a7cfa569fe9d454dd11bf5",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:0838be220e11f051a2ce6ce8",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:09293c69d9c210f378cbd3d2",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:0e21ccb650c9b932b6705973",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:0e6a39c4d0ad8175cbad3925",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:0f6d4e1a53931751c804817d",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:10f75fb6cd6fd44fe90d740a",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:12106c5ce146d2461202b486",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:1519698a609ebfa925e15395",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:15204b3c151597afedefdc66",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:15f11946b818298ebb860d86",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:16412a8c2dccd5e20bd32952",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 4,
+      "id": "computed-routing:1c6ce833baaeafbfe0b33bce",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 5,
+      "id": "computed-routing:1dd27977f82fa4cfd448bff8",
+      "other_binding": 6,
+      "prediction": 4
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 2,
+      "id": "computed-routing:1dfecce35a5d0544acda1b65",
+      "other_binding": 6,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:20f7b8939a7f263d2851b1ac",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 4,
+      "id": "computed-routing:227783c3129bf49a945380e8",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:24c1d9c5a476f8f22cdab8cb",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:265ccc5a8041a6f7fa0db8c6",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:28f6d9b6303131c17bf4b2fc",
+      "other_binding": 3,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 9,
+      "id": "computed-routing:2b48138369ab146d3b1b11f8",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:2f88ff02dd3763ffdc4a4460",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 6,
+      "id": "computed-routing:30adefbbdb9a81be725546e6",
+      "other_binding": 5,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 5,
+      "id": "computed-routing:3408d1cfbf5f386ede058294",
+      "other_binding": 6,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:3680b98f72bdd3a7388b79ff",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 4,
+      "id": "computed-routing:383bca2462e43af08dc28b61",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 5,
+      "id": "computed-routing:3d4069558287a4ffe76384ee",
+      "other_binding": 8,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:474f597944c1ade64e18deeb",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:4799b00476a1619c2e66e167",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:47dcda3fb163c225f2e6624a",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 6,
+      "id": "computed-routing:493d3608acf6253f37571388",
+      "other_binding": 8,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 3,
+      "id": "computed-routing:49b5d33b206d0e634d3babb2",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:4ded0bb38bb52793ab7b8f07",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:4fb1b24207c1ea25a0920c0d",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 9,
+      "id": "computed-routing:534d765b3aace83ef1074373",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:5705682d95d2f589f0821a1c",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:63222767f9bd7396dd218253",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:635fde3ba1345b4017cc948f",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:654e7601836fe29ac63f9f2b",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:671856f4fbbf78ee76fd504c",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:6776de1910553da312e9d665",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:6781b511a45b481347ea1671",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:6a27e6bf3a3a014c6342113d",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:6ba7f36d076ab60ccb2e318b",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:6f480c2b77daa3cfbf3d18b1",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 4,
+      "id": "computed-routing:71115f7e3281b8593a55b40a",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 8,
+      "id": "computed-routing:725a30998d5bd8306e091111",
+      "other_binding": 5,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:73df91cdcfde8d414466e1ea",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:744c80659c8bafe9d0cf31b9",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:770a36df9ffc8eb3bd3f89f0",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 6,
+      "id": "computed-routing:7d72a62f2b4a1d9d053e3fa4",
+      "other_binding": 2,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:7e59a204c68c283aa6bbdfe4",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:800ef39dcea3d3c04e351833",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:805a9b6dcdb9c6f092302c52",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:83858da48739fb609f691d19",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:86f83e98e896433958b05313",
+      "other_binding": 9,
+      "prediction": 9
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:895bb2abf087341139540303",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:8ba238d1a432c65475550cb4",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 6,
+      "id": "computed-routing:8bd5e1fa4bd90ca92d491aa1",
+      "other_binding": 8,
+      "prediction": 4
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:8cc24b9d8b076e5a94859f70",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 5,
+      "id": "computed-routing:8d1e553903e1052248319eb9",
+      "other_binding": 8,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 8,
+      "id": "computed-routing:8f3a070e1f4a0a60698476d0",
+      "other_binding": 4,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:9816fdb401a550d0eadcecbe",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:98f01e0cafaf8b88cef14325",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:9a8761d409abd9cc400ce278",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 5,
+      "id": "computed-routing:9ab65ad829a0cd77fda3c2fb",
+      "other_binding": 6,
+      "prediction": 2
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:9b1554640e9d8c072575cb54",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:9c29f73cd6990c76d9ff98c2",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:9d641978fcbc816ee183ec37",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:9f51ac40a9a3dc82d3a1d205",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 4,
+      "id": "computed-routing:a08d362d35e0e775c46451ef",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:a2a57ce9879227be332a1ef6",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 5,
+      "id": "computed-routing:a92bcfcc25eead360143b5cc",
+      "other_binding": 7,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:a9df2cb230ce19463d941577",
+      "other_binding": 9,
+      "prediction": 9
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:ab9f555bb91f5c0e763970da",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:acd9766d63f7759b8d57b79b",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:afb6128d48cea49c8230b142",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 2,
+      "id": "computed-routing:b44e4cb7464fdfebf1930569",
+      "other_binding": 4,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:b7240bb9b57542cf44d77967",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:b84dc5fe46389fa9e85879b7",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:c717598ac20cb80c03dbbd34",
+      "other_binding": 4,
+      "prediction": 4
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:c84711bdb8fd7c1a8beb1a68",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:c9e6808501748dec4d4152d2",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:c9ee5f1c465fe8ceb77a76f0",
+      "other_binding": 3,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:ca70059608026f420520147f",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:cc61605124bc3a27c88f19ad",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:cd676a1b5e79b5434fdb5bc3",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:ce1786cfd8f7f1f94552550c",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:d0ecb7a1b781868a497bf738",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:d1e085d3e4dc9e51e66f6839",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 2,
+      "id": "computed-routing:d4ab2e8674757edfdf3a2748",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 4,
+      "id": "computed-routing:d7c34b907677e417288432a2",
+      "other_binding": 8,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:e31e128cf932edf93a6afde7",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:e536958cd12d15634d8676c4",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:e588b6c614faaf541d0de1c1",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:e61b49f5bb0ecb15fa0ba649",
+      "other_binding": 3,
+      "prediction": 3
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:e6625e45c68a3becb67ee4b4",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 8,
+      "id": "computed-routing:eab372e1f1a0a6cedc5e661f",
+      "other_binding": 5,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:ed68d97cb62b2bf0d2af825b",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 8,
+      "id": "computed-routing:ee89e328b299c5e104bd5619",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 9,
+      "id": "computed-routing:ef951699ca41eacdaa54e90c",
+      "other_binding": 8,
+      "prediction": 8
+    },
+    {
+      "compatible_category": "other_value",
+      "expected": 8,
+      "id": "computed-routing:f420aef72b8f495b780177d8",
+      "other_binding": 5,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:f629cd904eaefbd97592a243",
+      "other_binding": 4,
+      "prediction": 4
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 8,
+      "id": "computed-routing:f7306e6a44327b537098157d",
+      "other_binding": 4,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:f85e70ee3875fb2563459d61",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 7,
+      "id": "computed-routing:fa9be782655e1a92f39170c3",
+      "other_binding": 6,
+      "prediction": 6
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 6,
+      "id": "computed-routing:fc3661b4e1fc1bb30fe23a62",
+      "other_binding": 5,
+      "prediction": 5
+    },
+    {
+      "compatible_category": "other_computed_binding",
+      "expected": 5,
+      "id": "computed-routing:ff95959d56ecf85136890164",
+      "other_binding": 7,
+      "prediction": 7
+    },
+    {
+      "compatible_category": "source_literal",
+      "expected": 4,
+      "id": "computed-routing:ffbf66afd32f1fdef07f5f6f",
+      "other_binding": 2,
+      "prediction": 3
+    }
+  ]
+}

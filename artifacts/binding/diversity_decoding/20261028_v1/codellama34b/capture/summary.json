@@ -1,0 +1,195 @@
+{
+  "cases": 5760,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/000000.npz",
+      "rows": 512,
+      "sha256": "8a6bfc4fe7ac6381833358ebeb625f7bf935d86547f189c6093bc3358d7070f9"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/000512.npz",
+      "rows": 512,
+      "sha256": "26e129aafb270311c9ba2df146cfb3a956f671cad54ebb77dfbb728bfb462db6"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/001024.npz",
+      "rows": 512,
+      "sha256": "eefa6c836d07d25b6ff997d6fabf1c4d20187153e28b1e430593949fa0a39156"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/001536.npz",
+      "rows": 512,
+      "sha256": "83f410030c05ff71fc57268510ffd9746b68128ce2482ec4ead6d8ae224a7463"
+    },
+    {
+      "first": 2048,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/002048.npz",
+      "rows": 512,
+      "sha256": "0c27c72db9cb8aede849b8fd1ea0f391805208526a6c8da5cceddb9831ceaaa1"
+    },
+    {
+      "first": 2560,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/002560.npz",
+      "rows": 512,
+      "sha256": "8187c78021415a633985f754f75d8133eec03961267413a4a1a12f7088fcc0e2"
+    },
+    {
+      "first": 3072,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/003072.npz",
+      "rows": 512,
+      "sha256": "f1b5e826a7c25aff3f9772c14b64d3528db606286ad21c4ac4547c8946320737"
+    },
+    {
+      "first": 3584,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/003584.npz",
+      "rows": 512,
+      "sha256": "f3cb19c209be7c1105a1979ca32c14c1e81580f59e6f8f0e66cea98c7d7ae1ba"
+    },
+    {
+      "first": 4096,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/004096.npz",
+      "rows": 512,
+      "sha256": "2bca78b32681a482690e21e2f00063468f568d5886e70652991ea0c02a1b9fa2"
+    },
+    {
+      "first": 4608,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/004608.npz",
+      "rows": 512,
+      "sha256": "4d5c22b55ae55f6a37f42c441170cfe5d1d98e340845b3bdd9e63ef29141d678"
+    },
+    {
+      "first": 5120,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/005120.npz",
+      "rows": 512,
+      "sha256": "bd30b9c55141a8bf648de9cd267b4f358af60db7315500ed48c2e0d404182eda"
+    },
+    {
+      "first": 5632,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/chunks/005632.npz",
+      "rows": 128,
+      "sha256": "4a6074ec0673462e647f13bd549c3965e6fb015345d32c2d30bef8b4299f942f"
+    }
+  ],
+  "collection_attempts": [
+    {
+      "model_load_attempted": true,
+      "model_loaded": true,
+      "prefill_batch_calls": 45,
+      "prefill_cases_attempted": 5760,
+      "prefill_cases_returned": 5760,
+      "runtime": {
+        "attention_backend": "sdpa",
+        "device_name": "NVIDIA H200 NVL",
+        "dtype": "torch.bfloat16",
+        "forward": "causal-LM model.model backbone; no vocabulary logits or generation",
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-4321e664-0fc3-8fca-0999-21ddd192a2ae",
+          "mean_gpu_utilization_percent": 90.16315789473684,
+          "mean_power_watts": 413.34742105263155,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 72407.0,
+          "samples": 190,
+          "selector_verified": true
+        },
+        "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+        "gpu_uuid": "4321e664-0fc3-8fca-0999-21ddd192a2ae",
+        "position_ids": "(attention_mask.cumsum(-1)-1).clamp_min(0)",
+        "preload_memory": {
+          "actual_max_prompt_tokens": 92,
+          "headroom_scope": "Prospective short-prefill working allowance; scales with actual tokens and declared batch, not context_limit.",
+          "observed_free_bytes": 149557411840,
+          "observed_total_bytes": 150109880320,
+          "required_free_bytes": 71782958696,
+          "weight_bytes": 67487991400,
+          "working_headroom_bytes": 4294967296
+        },
+        "torch_peak_allocated_bytes": 69876098048,
+        "use_cache": false,
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1"
+        }
+      },
+      "slurm_job_id": "481414",
+      "status": "complete",
+      "wall_seconds": 171.97061679279432
+    }
+  ],
+  "committed_batch_groups": 45,
+  "complete": true,
+  "config": {
+    "batch_size": 128,
+    "chunk_size": 512,
+    "context_limit": 4096,
+    "dataset": "artifacts/binding/schedule_diversity/20261028_v1/sources.jsonl",
+    "dataset_manifest_sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f",
+    "dataset_sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1",
+    "evaluation_role": "discovery_diversity_capture_v1",
+    "hidden_size": 8192,
+    "layers": [
+      12,
+      24,
+      36,
+      47
+    ],
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "prefix_atol": 1e-05,
+    "run_dir": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture",
+    "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+  },
+  "config_hash": "7659b4aeb1176d3669e18ea870ede5d53093aaa061d010ee9ad2e9a88fd6e7b8",
+  "dataset_sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1",
+  "different_padding_prefix_comparisons": 0,
+  "different_padding_prefix_max_abs_diff": 0.0,
+  "distinct_committed_prefill_rows": 5760,
+  "evaluation_role": "discovery_diversity_capture_v1",
+  "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+  "feature_shape": [
+    5760,
+    3,
+    4,
+    8192
+  ],
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "hidden_size": 8192,
+  "layers": [
+    12,
+    24,
+    36,
+    47
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_loaded": true,
+  "model_prefill_cases": 5760,
+  "model_prefill_cases_attempted": 5760,
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "new_model_queries": 5760,
+  "new_model_queries_semantics": "Durable source-case prefill attempts, including retry work; zero generation.",
+  "prefill_batch_calls": 45,
+  "prefix_atol": 1e-05,
+  "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+  "prefix_comparisons": 8640,
+  "prefix_max_abs_diff": 0.0,
+  "preflight_sha256": "edb31b171fb000db5622c2764ce63afbee4ff98d69d48b79c70aa58c0c478f9b",
+  "sites": [
+    "statement:3",
+    "statement:7",
+    "pre_answer"
+  ],
+  "source": {
+    "frozen_manifest_sha256": "aebd4aac3e13f1361d3eb1109b7184982f0c2ee90b9e22145932435a0b996269",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8",
+    "source_sha256": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918"
+  },
+  "storage_bytes": 2300810856,
+  "stored_dtype": "float32"
+}

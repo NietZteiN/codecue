@@ -1,0 +1,28 @@
+{
+  "cancelled_jobs": [],
+  "evaluation_role": "discovery_schedule_submission_v1",
+  "finite_stages": "prepare -> capture -> capture audit + readout preflight/run/audit; readouts also require passing full regression",
+  "generated_holdouts_opened": false,
+  "gpu_eligibility": "8B BF16 short prefills fit 24GiB A30 and larger GPUs; 34B BF16 requires >=72GiB, so H100/H200 only. H200 is eligible to avoid withholding useful available capacity.",
+  "jobs": {
+    "codellama34b_capture": "481264",
+    "codellama34b_prepare": "481263",
+    "codellama34b_readouts": "481265",
+    "llama8b_capture": "481261",
+    "llama8b_prepare": "481260",
+    "llama8b_readouts": "481262",
+    "regression": "481259"
+  },
+  "new_model_queries_at_submission": 0,
+  "no_project_compute_cap": true,
+  "preserved_unrelated_jobs": [
+    "480098"
+  ],
+  "source": {
+    "code": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26"
+  },
+  "stage_harness_sha256": "898012b90bb71582f8000c572782c8de24f0447064c793ec6b0e1945f158b2f8",
+  "status": "submitted"
+}

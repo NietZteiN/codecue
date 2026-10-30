@@ -1,0 +1,41 @@
+{
+  "cases": 396,
+  "family_cells": [
+    {
+      "family": "decomposed_arithmetic",
+      "hf_correct": 0,
+      "n": 8,
+      "prediction_matches": 8,
+      "vllm_correct": 0
+    },
+    {
+      "family": "literal_arithmetic",
+      "hf_correct": 1,
+      "n": 4,
+      "prediction_matches": 4,
+      "vllm_correct": 1
+    },
+    {
+      "family": "retention_frontier",
+      "hf_correct": 8,
+      "n": 384,
+      "prediction_matches": 346,
+      "vllm_correct": 9
+    }
+  ],
+  "first_token_matches": 391,
+  "generated_holdouts_opened": false,
+  "hf_correct": 9,
+  "hf_invalid": 0,
+  "identity_hash": "1bb48465295d51ea559247a77bf719f60d8c791b9c3876e9dad6ffe57b720f16",
+  "interpretation": "Post-hoc backend/cache diagnostic on two complete structural groups. Agreement does not establish correct execution or a mechanism; differences are retained.",
+  "parsed_prediction_matches": 358,
+  "status": "passed",
+  "summary_sha256": "17d1512e4a99a4c502b23accca9de6634418e2412cca307364540ba7764db78c",
+  "uncached_cases": 12,
+  "uncached_invalid": 0,
+  "uncached_prediction_matches": 12,
+  "uncached_raw_matches": 12,
+  "vllm_correct": 10,
+  "vllm_invalid": 0
+}

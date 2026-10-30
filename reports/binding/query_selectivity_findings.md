@@ -1,0 +1,28 @@
+# Queried versus unqueried value recovery
+
+At the saved block-24 answer-preparation position, matched linear heads recover the **queried value at 88.89% and the unqueried value at 9.42%** on neutral development cases. The paired difference is **79.47 percentage points**, with a conditional whole-group bootstrap 95% interval of **[75.87, 83.51] points**. The primary comparison covers 768 rows from six structural groups, with 128 rows per group. It describes query-dependent accessibility under this readout; it does not establish a complete binding state or a causal mechanism.
+
+All accuracies below average the three fixed weighting fits. Hidden rows use block 24; the surface comparator uses the same answer-preparation visible prefix and input dimension.
+
+| Features and saved position | Development naming | Queried | Unqueried |
+|---|---|---:|---:|
+| Hidden, before query | Neutral | 24.74% | 24.74% |
+| Hidden, query-line boundary | Neutral | 5.60% | 5.90% |
+| Hidden, answer preparation — primary | Neutral | 88.89% | 9.42% |
+| Hidden, answer preparation | Informative | 82.12% | 7.81% |
+| Hidden, answer preparation | Misleading | 86.46% | 8.25% |
+| Character-ngram surface, answer preparation | Neutral | 9.07% | 8.77% |
+
+The primary gap appears for both query roles: current-value queries give 85.68% queried versus 10.94% unqueried recovery; saved-value queries give 92.10% versus 7.90%, with 384 development rows per role. The matched shuffled queried/unqueried controls score 2.34% and 3.56% in the aggregate primary cell; both training-majority baselines score 7.29%. In that aggregate cell, each head sees all 32 training classes and 30 development classes, with no development target outside training support. Matching these marginals and capacity does not equate conditional task complexity.
+
+Each of the four independent heads—queried, unqueried, shuffled queried and shuffled unqueried—has 32 classes, 4,096 inputs and 131,104 coefficient/intercept parameters. Neutral training retains 2,304 rows. Complete current/saved target pairs are shuffled within split and structural group, keeping relatives together. Ordinary and seed-weighted class frequencies match; query role defines the labels and is never appended as a feature. Training-only normalization and summed weighted ridge use float64 and fixed alpha 100. Shared factorization saves computation without coupling the heads or reducing their rank.
+
+Before the query, reciprocal twins have identical visible text and hidden vectors, so swapping the future query produces analytically identical queried/unqueried fitting objectives. All raw symmetry checks passed the fixed absolute tolerance of 1e−8: the largest score difference across value and shuffled heads was approximately 1.01e−13, and every queried/unqueried argmax agreed. This is a causal-prefix and numerical sanity check, **not future-query decoding**. Separate canonical-slot decoders could behave differently. The reported canonical current/saved reconstruction merely remaps these two heads using the known input query role; its primary whole-pair accuracy is 8.25%, and it is not an independently trained state probe.
+
+The [fixed plan](query_selectivity_plan.md) retained every captured block (8, 16, 24, 31), all three positions, both query twins and all naming conditions. The [immutable full report](query_selectivity_v1.md), [PNG curves](query_selectivity_curves_v1.png) and [SVG curves](query_selectivity_curves_v1.svg) preserve the full comparison; the [figure audit](../../artifacts/binding/query_selectivity/figure_review_v1.json) checks its source and coverage. The workload completed 45 factorizations, 180 independent heads, 414,720 exact saved-model row replays and 53,084,160 class-score comparisons. Its 50 scientific artifacts occupy approximately 618 MiB. [Job accounting](../../artifacts/binding/query_selectivity/jobs_v1.json) and the [compact completion receipt](../../artifacts/binding/query_selectivity/llama31_8b_v1/completion_manifest_v2.json) retain the execution and artifact identities.
+
+The original fitted-source snapshot remains separate from the newer verification reader. The [seal review](../../artifacts/binding/query_selectivity/seal_review_v2.json) records preservation of the original artifact hashes; sealing adds a compact receipt without refitting or changing the rich results. No language model or tokenizer was loaded and no new response was generated for these readouts or their verification.
+
+This is adaptive discovery on the same consumed 24 structural groups: 18 training and six development. The primary site was chosen because its earlier queried readout was already known. Three weighting/control seeds are sensitivity fits, not replications; the interval averages their paired row differences before resampling whole groups and includes neither refit uncertainty nor multiplicity correction. These are **saved token positions, not elapsed-time measurements**. The older answer-preparation boundary also predates the later formatting-space correction and differs from the subsequent digit-intervention boundary. Low unqueried recovery does not prove absence of that value, distinguish tracking from reconstruction, identify owner coding or natural causal use, qualify mechanism C, or complete untouched final validation. Final/extrapolation outcomes remain sealed.
+
+Software validation passed **1,191 tests** ([JUnit record](../../artifacts/binding/query_selectivity/regression_v2.xml)). Both study jobs completed with exit code 0, and the refreshed [readiness inventory](preparation_readiness.md) records 34 ready tasks, nine scientific decisions and three optional deferred tasks.

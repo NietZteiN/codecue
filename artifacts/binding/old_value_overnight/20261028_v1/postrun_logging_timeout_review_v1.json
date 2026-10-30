@@ -1,0 +1,50 @@
+{
+  "cause_observed": "Logger workers request a two-minute allocation. The last two jobs are killed before printing a completed refresh; persisted last_success remains unchanged. Queued guards alone do not prove a fresh index.",
+  "evaluation_role": "discovery_old_value_logging_timeout_followup_v1",
+  "fresh_within_two_intervals": false,
+  "jobs": [
+    {
+      "job_id": "481719",
+      "last_lines": [
+        "  },",
+        "  \"status\": \"complete\"",
+        "}"
+      ],
+      "log": "artifacts/binding/experiment_log/scheduler_jobs/481719.out",
+      "log_sha256": "e78190f8e056ccaea5a315a5ff2c2da53d4b6b627ac039ef6395ed3c9ee54fd5",
+      "printed_complete_status": true,
+      "scheduler_timeout_error": false
+    },
+    {
+      "job_id": "481726",
+      "last_lines": [
+        "[2026-10-28T20:32:41.002] error: *** JOB 481726 ON c-01-01 CANCELLED AT 2026-10-28T20:32:41 DUE TO TIME LIMIT ***"
+      ],
+      "log": "artifacts/binding/experiment_log/scheduler_jobs/481726.out",
+      "log_sha256": "d47891f0acbfe9056692852321a25ab8a7ddc9c426f54f6dc0919c33c564a8b2",
+      "printed_complete_status": false,
+      "scheduler_timeout_error": true
+    },
+    {
+      "job_id": "481730",
+      "last_lines": [
+        "[2026-10-28T20:42:40.003] error: *** JOB 481730 ON c-01-01 CANCELLED AT 2026-10-28T20:42:40 DUE TO TIME LIMIT ***"
+      ],
+      "log": "artifacts/binding/experiment_log/scheduler_jobs/481730.out",
+      "log_sha256": "2371cad9e939d1a02638888f8f02ab193233278a5a82c6c4ee0243a0723e712c",
+      "printed_complete_status": false,
+      "scheduler_timeout_error": true
+    }
+  ],
+  "last_success_age_seconds": 1258.100387,
+  "last_success_utc": "2026-10-29T01:22:37.738579+00:00",
+  "last_tick_error": null,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_integrity_review_scope": "Completed scientific publication pins and execution evidence passed. Its recorded logger age1189seconds was inside20minutes atthat timestamp; this subsequent followup observes repeated worker timeouts and a newly stale timestamp.",
+  "qualification": "Job481719 is TIMEOUT in scheduler accounting but printed a complete result and advanced last_success at01:22:37UTC. Jobs481726/481730 have explicit time-limit cancellation messages and no printed complete result.",
+  "recorded_at": "2026-10-29T01:43:35.838966+00:00",
+  "scheduler_accounting": "481719|TIMEOUT|0:0|00:02:03|2026-10-28T20:20:34|2026-10-28T20:22:37|00:02:00\n481726|TIMEOUT|0:0|00:02:05|2026-10-28T20:30:35|2026-10-28T20:32:40|00:02:00\n481730|TIMEOUT|0:0|00:02:05|2026-10-28T20:40:35|2026-10-28T20:42:40|00:02:00\n",
+  "scientific_results_modified": false,
+  "status": "needs_attention"
+}

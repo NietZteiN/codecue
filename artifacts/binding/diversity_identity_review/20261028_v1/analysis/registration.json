@@ -1,0 +1,168 @@
+{
+  "config": {
+    "declared_plan": "reports/binding/diversity_identity_review_plan_v1.md",
+    "declared_plan_sha256": "1c22d52626c55b1d508f92d7e91801e22eb8aa8240b3b4472c4c31874ff6d2c0",
+    "evaluation_role": "discovery_diversity_identity_review_v1",
+    "readout_configs": [
+      {
+        "path": "configs/binding/diversity_decoding_20261028_v1/llama8b_readouts.json",
+        "sha256": "d3acc9c2521876eafdddc2e55ef11e4d1750b77c74d015d4294e7430f6f0d36e"
+      },
+      {
+        "path": "configs/binding/diversity_decoding_20261028_v1/codellama34b_readouts.json",
+        "sha256": "19e9cc18ea658ab0b1c4564034f4e4db4703c8f4bc2123ff5ada2c29fbd0424c"
+      }
+    ],
+    "report": "reports/binding/diversity_identity_review_findings_v1.md",
+    "run_dir": "artifacts/binding/diversity_identity_review/20261028_v1/analysis"
+  },
+  "config_hash": "391ec49f3fbdd43a074e3b327b3727ec7f7abb34140e5ee32b62f21533bb687e",
+  "evaluation_role": "discovery_diversity_identity_review_v1",
+  "generated_holdouts_opened": false,
+  "input_pins": [
+    {
+      "bytes": 5930,
+      "path": "reports/binding/diversity_identity_review_plan_v1.md",
+      "sha256": "1c22d52626c55b1d508f92d7e91801e22eb8aa8240b3b4472c4c31874ff6d2c0"
+    },
+    {
+      "bytes": 576,
+      "path": "configs/binding/diversity_decoding_20261028_v1/llama8b_readouts.json",
+      "sha256": "d3acc9c2521876eafdddc2e55ef11e4d1750b77c74d015d4294e7430f6f0d36e"
+    },
+    {
+      "bytes": 14206,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/completion_manifest_v1.json",
+      "sha256": "ae3b1263ea8ad21f7fdcb787ba60fa6e88963c7a16f4cca0202f2716bda24bb6"
+    },
+    {
+      "bytes": 14391,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json",
+      "sha256": "ceca45c24dc939048fd1c83e26bfba55fb11116b906525518264ac917238766c"
+    },
+    {
+      "bytes": 3797,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/registration.json",
+      "sha256": "dd6eceabe1382247da66410dfe984fb15f8d8ed45b6f87bd002a5b48f825a80e"
+    },
+    {
+      "bytes": 64127342,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/results_v1.json",
+      "sha256": "f33e33d40a06129ff372b1238825f0576d3f91855e9921e6d444e9998fe0b0bd"
+    },
+    {
+      "bytes": 4211,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/summary.json",
+      "sha256": "d9af192d2a77d362a3f61f03cdcc3f9897a22ff4f9509449f72dbeee089b9728"
+    },
+    {
+      "bytes": 349,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/audit.json",
+      "sha256": "a3a845e956a5a9645fe595d2c5f78f661373c288e6dc70dfbf62309a2084c370"
+    },
+    {
+      "bytes": 4709,
+      "path": "reports/binding/diversity_decoding_llama8b_v1.md",
+      "sha256": "59aa5a757c77c749210c5a7960bf405cec88b065119921ecefe588851e854b47"
+    },
+    {
+      "bytes": 745,
+      "path": "configs/binding/diversity_decoding_20261028_v1/llama8b_capture.json",
+      "sha256": "24a73cdc6c6ad5f9adae5ff5fb3bf8bb51b32a29d0c9e0795c813aebb2715907"
+    },
+    {
+      "bytes": 5250,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+      "sha256": "ce1d4b0562df29a3b9d7e1385127a3e7cc2644d5f3002b44ead297fcdd725013"
+    },
+    {
+      "bytes": 43963328,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/prepared_cases.jsonl",
+      "sha256": "79eab7436e7d2b724dd1517f74292f709ba627ff10d8891deadb76129ebeeb38"
+    },
+    {
+      "bytes": 74284568,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.jsonl",
+      "sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1"
+    },
+    {
+      "bytes": 26555,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.manifest.json",
+      "sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f"
+    },
+    {
+      "bytes": 591,
+      "path": "configs/binding/diversity_decoding_20261028_v1/codellama34b_readouts.json",
+      "sha256": "19e9cc18ea658ab0b1c4564034f4e4db4703c8f4bc2123ff5ada2c29fbd0424c"
+    },
+    {
+      "bytes": 14474,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/completion_manifest_v1.json",
+      "sha256": "4ef5544683206f0141d873310dba5874c589ab4dfe8caa6bbd79ca5920eae03e"
+    },
+    {
+      "bytes": 14659,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json",
+      "sha256": "f9822ed00a78d29dacf548c65db17a3a0d3f5ac63af74f92d4073f78a8d1d5d5"
+    },
+    {
+      "bytes": 3812,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/registration.json",
+      "sha256": "a9d5e96697426b9757d05b83c781cadd3a0fca82f5304517ecfa24fcb70d87ee"
+    },
+    {
+      "bytes": 64121775,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/results_v1.json",
+      "sha256": "364ced41c1ed983615198570c3e47c6df8f2108f515a0ce28bee42b6e55e68a2"
+    },
+    {
+      "bytes": 4141,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/summary.json",
+      "sha256": "24410462b85ce64f64b2b8269fd06256507344bcfedc8ad514c1ea3d134baa39"
+    },
+    {
+      "bytes": 349,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/audit.json",
+      "sha256": "82315e220b995cbfad5caa9bf53bcfc434fba6bfbbb75e03fb3d29176e442ccf"
+    },
+    {
+      "bytes": 4721,
+      "path": "reports/binding/diversity_decoding_codellama34b_v1.md",
+      "sha256": "fcd0c2c2fddf5aac884e48ada10d6a8f0634d772329b0f54038cb76adbf97dba"
+    },
+    {
+      "bytes": 754,
+      "path": "configs/binding/diversity_decoding_20261028_v1/codellama34b_capture.json",
+      "sha256": "2ac7b82698b59e023466eca47b07b0ddf7be63bfb84f9137979fe9e31a7cfdda"
+    },
+    {
+      "bytes": 5343,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/completion_manifest_v1.json",
+      "sha256": "87d400e5b1cdf7d570b39204365d1b5949f14249e105dd432baf72b626202d97"
+    },
+    {
+      "bytes": 35874720,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/prepared_cases.jsonl",
+      "sha256": "690403eda85656e80d316fcb733187307ad85eb85800cbfca58e1e0af3572e8e"
+    },
+    {
+      "bytes": 74284568,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.jsonl",
+      "sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1"
+    },
+    {
+      "bytes": 26555,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.manifest.json",
+      "sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "source": {
+    "frozen_manifest_sha256": "2116b6790c9ff9af9bf6b8d60456215d17971ae08744a32c3b0f4729f03ca3ea",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/56923f24389a46294d3c9c7b",
+    "snapshot_id": "56923f24389a46294d3c9c7b",
+    "source_sha256": "38a8ad184e39ce39e6d9c4382834f8a95c2022e268f4b1adb0cca85829d6f38f"
+  }
+}

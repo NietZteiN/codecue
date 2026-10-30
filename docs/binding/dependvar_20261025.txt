@@ -1,0 +1,444 @@
+# CodeCue research implementation plan for Codex
+Version: 2026-10-25
+Status: proposed study; no experiments or results are claimed in this document.
+
+## 0. Instructions to the implementing agent
+
+Act as a research engineer implementing the study below. The user wants a paper suitable for consideration at ICLR, ICML, or NeurIPS. The aim is a precise, reproducible scientific contribution; acceptance and novelty are not assumed.
+
+Start by inspecting the current repository, its AGENTS.md instructions, existing CodeCue experiments, model adapters, available hardware, and dependency setup. Reuse sound infrastructure. Preserve unrelated changes. If the existing paper or code is present, read it and write down exactly what the proposed study adds. Do not reconstruct its methods or results from this plan.
+
+Implement the core project in milestones. Begin with the generator, semantic oracle, splits, behavioral runner, and meaningful validation. Continue through the smallest feasible pilot on available hardware. Make operational choices autonomously when they do not alter the research question. Record consequential scientific choices and deviations. If model access or compute is unavailable, finish the CPU components and runnable configurations, document the specific blocker, and report what remains unexecuted.
+
+Do not fabricate outputs, treat mock runs as experiments, claim that a probe identifies a mechanism, or optimize the study toward a preferred conclusion. Do not write an empirical abstract before results exist. Do not automatically begin the optional training, second-paper, or unlearning extensions.
+
+The proposed command names and directory layout below are interfaces to implement or adapt, not existing tools.
+
+Execution policy (explicit user override, 2026-10-25):
+- This is the only active project. Maximize useful local GPU throughput and utilization; do not reserve capacity for other projects or provision paid infrastructure.
+- There is no project GPU-hour budget, per-stage compute cutoff, single-checkpoint restriction, or application-imposed GPU/concurrency ceiling. Keep usage accounting without using it to block work.
+- Use eligible GPU partitions, hardware-appropriate batches, independent jobs and configurable model parallelism. Only actual scheduler and hardware allocation limits apply. Jobs stop when their finite workloads complete; preserve resumable outputs across scheduler interruptions.
+- Profile throughput to improve execution and estimate runtime, without shrinking a scientific cohort to fit an artificial compute budget.
+- The activation-artifact storage default is 64 GiB; this is separate from compute usage. Scientific validity gates and sealed final outcomes remain in force.
+- Do not automatically begin optional training or download additional large checkpoints merely to broaden the model list.
+
+First deliverable: an inspected-repository note, a short implementation checklist, working data generation and validation, and exact commands for a smoke run. The full project ends with a reproducible pilot report and a recommendation grounded in its results.
+
+## 1. Main question and intended contribution
+
+Research question:
+What determines whether transformers correctly update and use variable bindings, and can the identified mechanism predict failures on unfamiliar programs?
+
+A binding associates a particular variable and assignment version with a value. Updating means keeping the current binding distinct from obsolete assignments. Use means that changing the hypothesized representation produces the predicted downstream computational effect.
+
+Code supplies exact semantic ground truth, controlled changes in surface form, and lawful counterfactual outcomes. The intended contribution is a causal explanation of a reproducible class of errors and evidence that the explanation predicts behavior outside the examples used to discover it.
+
+Possible contribution, if supported:
+Competition between variable bindings or assignment versions explains a specific family of reasoning errors, including when misleading identifiers affect the state used by the model.
+
+This is a hypothesis, not a predetermined finding. Alternative outcomes include errors in arithmetic, reconstruction during answering, output selection, or representational changes that do not impair computation.
+
+Scope:
+- Core paper: variable binding, updating, naming cues, targeted interventions, and held-out prediction.
+- A small dependency analysis supports the core explanation when needed.
+- A separate paper on explanation transfer requires an independent methodological or scientific contribution.
+- Training interventions and unlearning are optional later studies.
+- Human experiments, broad multilingual evaluation, and large model sweeps are outside the initial pilot.
+
+## 2. Competing explanations
+
+H1: Binding interference.
+Relevant values remain recoverable, but the model confuses variable identities or assignment versions. Predicted errors correspond to specific wrong bindings, and appropriately targeted interventions affect the predicted descendants.
+
+H2: Value computation or accessibility.
+The necessary computed value is unavailable to the tested decoders, or arithmetic itself fails. Failed decoding alone does not establish absence of information.
+
+H3: Failure to use an available binding.
+A correctly identified current binding remains recoverable, while a downstream pathway selects or uses another value. Strong evidence requires intervention specificity and appropriate controls.
+
+H4: Reconstruction during answering.
+The target value is computed or retrieved after the query arrives. An apparent tracking failure may instead involve query-dependent reconstruction.
+
+H5: Harmless representational change.
+A decoder trained on clean code fails on transformed code, but within-condition decoding and appropriately aligned causal tests remain successful.
+
+Choose one primary explanatory claim after the discovery phase. Do not package all five as established mechanisms.
+
+## 3. Restricted program environment
+
+Begin with generated, deterministic, straight-line Python using scalar integers:
+- Assignment, variable copy, addition, subtraction, and optionally multiplication by a small constant.
+- No functions, loops, branches, aliasing, mutable containers, imports, floating point, or external effects in the first pilot.
+- Bound live variable values to [-64, 64] by generation and rejection; record the accepted distribution and rejection rates.
+- Keep arithmetic difficulty and operation counts controlled across the primary contrasts.
+- Favor computed intermediate values absent from literal tokens; report direct-assignment cases separately.
+- Include noncommutative output expressions so swapped bindings are observable.
+- Add explicit control cases with arithmetic difficulty but minimal binding competition.
+
+Use three generator families:
+1. Parallel chains whose values are combined at the end.
+2. Snapshots and overwrites, where one variable preserves an earlier value while another is reassigned.
+3. Interleaved accumulator updates with several simultaneously relevant values.
+
+Define families, templates, and semantic roles in code. Informative names must match actual generator-defined roles; do not label arbitrary names as informative.
+
+Build an interpreter for the restricted AST. Independently compare its results with ordinary Python execution of the same generated restricted programs in a controlled subprocess. Do not execute arbitrary downloaded or user-supplied code through this evaluation path.
+
+For every statement, record:
+- Current variable values and assignment versions.
+- The defining assignment for every variable use.
+- Directed direct and transitive def-use dependencies.
+- Variable liveness under the chosen program output.
+- Values and versions that could serve as diagnostic distractors.
+- Expected output under predefined counterfactual substitutions.
+
+Syntactic dependence is not identical to functional influence. For example, x - x uses x but is insensitive to its value. Compute counterfactual effects for intervention claims. Program liveness is a controlled property of the input, not proof that a transformer implements registers or has a corresponding memory lower bound.
+
+## 4. Matched experimental conditions
+
+Primary factors:
+- Naming: informative, neutral, misleading.
+- Simultaneously relevant variables: low versus high, initially targets of 2 and 4 where feasible.
+- Reassignment: low versus high, initially 1 and 3 updates to a designated variable.
+
+All three naming variants of a base program must preserve its semantics. The load and update manipulations change the program and therefore require matched distributions, rather than being called semantics-preserving transformations.
+
+For each naming condition, generate two lexical realizations. Use AST- and scope-aware renaming, a bijective identifier map, and no reserved-word collisions.
+
+Controls:
+- Track tokenizer-specific identifier length, total token count, lexical overlap, assignment distance, position, arithmetic operations, dependency depth, and answer magnitude.
+- Match where feasible; report remaining differences and perform targeted sensitivity analyses.
+- Do not use regression adjustment as a substitute for an avoidable design confound.
+- Keep manipulation strength independent of output labels where possible.
+- Audit whether a misleading name implies a predictable wrong answer independently of any state-tracking failure.
+
+Create diagnostic pairs with the same multiset of relevant values but different bindings. For example, states x=2,y=7 and x=7,y=2 have the same values but yield -5 and 5 for x-y. Include computed-value analogues, not only literal assignments.
+
+Create both:
+- Semantics-preserving contrasts, such as consistent renaming.
+- Semantics-changing controls, such as swapping bindings or changing an assignment.
+
+A useful semantic representation should preserve the appropriate relationships in the first case and change them in the second.
+
+Initial pilot target:
+3 families × 2 load levels × 2 update levels × 50 base instances = 600 base instances.
+Each has 3 naming conditions × 2 lexical realizations = 3,600 rendered programs.
+
+This is a feasibility pilot, not a power calculation. Counts refer to generated instances; report the number of independent structural templates separately. Make sample counts configurable and profile before execution.
+
+## 5. Data records and split discipline
+
+Use JSONL or Parquet records with stable identifiers. Minimum fields:
+base_id, template_id, family, paired_group_id, counterfactual_group_id, split,
+seed, source, canonical_source, rename_map, condition, lexical_realization,
+token_counts, statement_spans, variable_slots, execution_trace,
+versioned_bindings, dependency_edges, liveness, expected_answer,
+diagnostic_counterfactuals, generation_config_hash.
+
+Assign canonical variable slots independently of their surface names. Explain that a slot-indexed decoder is a measurement convention, not a claim that the model stores variables in those slots.
+
+Split by structural template or canonical skeleton, grouping together every naming variant, numeric instantiation sharing that template, and counterfactual relative. Never randomly split individual rows.
+
+Use approximately 60/20/20 percent train/development/test when the grouping permits it. Report actual counts. Training fits probes and alignments; development selects layers, sites, hyperparameters, and hypotheses. Keep final test data out of those choices.
+
+Reserve separately specified structural extrapolation sets for later prediction:
+- Greater reassignment distance or depth.
+- Higher binding competition.
+- Unseen combinations of familiar transformations.
+- At least one new program family when the core result is stable.
+
+Hold out identifier vocabulary where feasible. Deduplicate canonical ASTs and document structural overlap. Fit preprocessing, normalization, and representation alignment on training data only.
+
+If a pilot test set informs redesign, relabel it discovery data and generate a fresh confirmatory holdout. Maintain a manifest of every evaluation.
+
+## 6. Behavioral measurements and diagnostic errors
+
+Use one accessible open-weight model with reliable hidden-state and intervention support. Prefer the repository's established model. If no default exists, choose an available code-capable decoder-only checkpoint after verifying its interface; do not choose it because it produces a desired effect. Record exact model and tokenizer revisions, precision, backend, and prompt template.
+
+Primary task: determine the output of the generated program. Begin with short answers and deterministic decoding. Keep reasoning-trace elicitation as a separately labeled protocol because it changes the computation.
+
+Record exact-match accuracy, invalid or unparseable output, and complete raw responses. Report parsing failures separately; do not silently turn them into semantic errors.
+
+Compute predicted wrong answers from:
+- Use of a specified obsolete assignment.
+- Substitution of a competing variable's value.
+- Incorrect propagation through a dependency.
+- Predefined simple arithmetic alternatives, when distinguishable.
+
+Some causes produce identical answers. Keep the full set of compatible labels and mark ambiguous cases. Call these counterfactual-consistent errors, not proven internal causes. Report both overall error frequencies and frequencies within the subset where alternatives are distinguishable.
+
+Where likelihoods are needed, score complete candidate answer strings, including multi-token numbers, with a consistent completion boundary. Report the candidate set and avoid mixing normalized and unnormalized likelihoods. Greedy generated accuracy remains a separate measurement.
+
+Primary behavioral contrasts:
+- Within-base naming effects.
+- Naming-by-competition and naming-by-reassignment interactions.
+- Frequency of diagnostically distinct wrong-variable and wrong-version outputs.
+
+## 7. Representation measurements
+
+Treat source position, network layer, generated reasoning step, and program execution step as different axes.
+
+Primary instrumentation:
+- Collect residual-stream activations at statement-ending positions and at the final source position.
+- Associate each source checkpoint only with the execution prefix visible at that position.
+- Earlier token activations cannot contain later assignments under causal attention.
+- Record exact token spans and hook locations; validate offsets under each naming variant.
+
+Start with a capacity-controlled multi-output linear probe on a shared checkpoint representation to predict current values for canonical variable slots. Mask slots not defined at that checkpoint. Compare to shared low-rank or conditioned decoders only as a documented sensitivity analysis. Report total parameter count.
+
+Measure:
+1. Current binding recovery per variable slot and exact whole-state accuracy.
+2. Recovery of designated previous versions at the same checkpoint.
+3. Recovery of the value multiset, accounting for multiplicity when repeated values are allowed.
+4. Directed dependency recovery only if it is needed to test the chosen mechanism.
+
+The first three are distinct tasks; different probe accuracies do not automatically identify the cause of a model error. Compare capacity and label difficulty and use controlled paired examples.
+
+Required probe controls:
+- Label-prior and majority baselines.
+- Surface-feature or token-based baselines with no hidden activations.
+- Randomized-label control tasks appropriate to the grouped split.
+- Within-condition fit and clean-to-transformed transfer.
+- Train-only alignment where used.
+- Held-out names, templates, and numeric configurations.
+
+Do not select the best layer on test data. Report full development curves and a frozen primary site or small set of sites. Failed linear decoding does not prove information is absent. Successful decoding can reflect accessible input information, not execution or natural causal use.
+
+Cosine similarity may be an exploratory visualization. It is symmetric and cannot establish directed dependencies or computational equivalence.
+
+Optional reconstruction study, after the core measurement works:
+- Use assignment-only prefixes with no return expression or target variable revealed.
+- Compare target queries revealed before versus after those prefixes.
+- Measure representations before the late query and during answering.
+- Intervene on specific routes from earlier assignments to answering, with matched control routes.
+- Query timing and attention interventions can change the task or induce distribution shift; interpret them jointly, not as a definitive memory test.
+
+## 8. Causal intervention study
+
+Start with one reproducible diagnostic error type. Build paired donor and recipient programs that differ in a controlled variable value, binding, or assignment version.
+
+First establish a value-intervention assay. Example at a checkpoint:
+recipient x=9,y=5, later output y-x gives -4;
+a donor with corresponding y=7 predicts output -2 if that value is selectively substituted.
+Use the interpreter to compute the full expected downstream state, not only the final answer.
+
+This assay tests value transfer. It is not by itself evidence of binding repair. To claim a binding mechanism, also use donors and recipients with matched value multisets but different ownership or versions, and distinguish binding changes from direct answer steering.
+
+Procedure:
+1. Discover candidate positions, layers, components, and any subspace using train/development data.
+2. Start with the simplest intervention that is supported by the instrumentation.
+3. Measure both induced errors on correct cases and predicted repairs on error cases.
+4. Test effects on dependent and independent quantities.
+5. Freeze sites, alignment procedure, donor rules, and metrics before confirmatory evaluation.
+
+Necessary controls:
+- No-op and self-patching.
+- Matched random or shuffled donor.
+- Wrong variable.
+- Wrong assignment version.
+- Donor with the same final answer but a different relevant intermediate state.
+- Matched intervention size or norm where applicable.
+- Relevant versus irrelevant paths or components.
+- Reciprocal direction when the correspondence is meaningful.
+
+Natural donor activations reduce some concerns but do not guarantee an on-distribution intervention. Successful patching may introduce an unused pathway or steer the answer directly. Combine selective effects, path dependence, counterfactual consistency, and appropriate negative controls before describing natural computation.
+
+Report exact counterfactual-output accuracy and likelihood change, with confidence intervals and control comparisons. A failed patch is inconclusive about whether mechanisms differ.
+
+## 9. Predictive validation and statistics
+
+Before opening the final holdout, write a short registered analysis file containing:
+- Selected explanatory hypothesis.
+- Competing explanations.
+- Primary behavioral endpoint.
+- Primary intervention endpoint and controls.
+- Chosen model, layers, and extraction sites.
+- Frozen fitting and selection procedures.
+- Predictions for new structures or transformations.
+- Rules for ambiguous errors and exclusions.
+- Multiplicity handling and uncertainty estimates.
+
+Primary validation target:
+Does the mechanistic account improve prediction of failures or specific error types on unfamiliar programs beyond simple alternatives?
+
+Compare nested predictors:
+A. Input features: length, assignment distance, arithmetic difficulty, dependency depth, and competition.
+B. Those features plus model confidence and available clean-program behavior.
+C. The same features plus frozen representation or intervention-derived measurements.
+
+Specify what information each predictor is allowed to observe. A forecast cannot use the target example's eventual correctness label or a feature selected after seeing that label. Probe-based monitoring and intervention-based prediction have different costs; report them separately.
+
+Compare against an inexpensive behavioral stress-test baseline with an explicitly stated additional-query budget. Report incremental predictive value and cost, not only a favorable correlation.
+
+Use held-out log loss or Brier score and calibration for probabilistic predictions; add discrimination metrics where useful. For interventions, report the predefined counterfactual effect and specificity.
+
+Resample at the highest relevant independent unit, normally structural template or base program as justified by the generation design. Keep all variants within clusters. Do not treat thousands of transformed rows as independent evidence.
+
+Use independent generation seeds and probe-fitting seeds. Sampling seeds matter when sampling is used; do not describe repeated deterministic decoding as independent replication. Select final study size after the pilot using a scientifically meaningful effect and desired precision or power.
+
+Do not require a particular p-value or positive effect to declare the software successful. Preserve and explain null and mixed results.
+
+## 10. Implementation structure and command interface
+
+Adapt this layout to the repository; do not create a second competing framework.
+
+configs/                 smoke, pilot, confirmatory, resource settings
+src/codecue_binding/
+  programs.py            restricted AST generation and transformations
+  interpreter.py         execution state, versions, dependencies
+  datasets.py            records, grouping, splits, deduplication
+  model_adapter.py       tokenization, inference, hooks, provenance
+  behavior.py            output scoring and diagnostic alternatives
+  activations.py         checkpoint extraction and bounded caching
+  probes.py              controlled decoder fitting and transfer
+  interventions.py       donor selection, patches, counterfactual scoring
+  analysis.py            uncertainty, comparisons, predictive validation
+tests/                   semantic, leakage, alignment, intervention tests
+reports/                 methods decisions, validation, pilot findings
+artifacts/               immutable manifests and run outputs
+
+Expose equivalent commands for:
+- generate --config ...
+- validate --dataset ...
+- run-behavior --config ...
+- extract --config ...
+- fit-probes --config ...
+- intervene --config ...
+- evaluate-heldout --config ...
+- report --run ...
+
+Use configuration files and a run registry. Each run records code revision, config hash, dataset manifest, model/tokenizer revision, seeds, precision, environment, wall time, device time, and artifact locations. Resume only when these identities match.
+
+Cache only needed positions and layers initially. Estimate storage from actual dtype, hidden width, number of sites, layers, and examples. Use chunked writes and stable sample identifiers. Keep test data and metrics out of automated hyperparameter selection.
+
+## 11. Milestones and acceptance criteria
+
+M0. Repository and resource audit
+Deliver repository_audit.md and research_decisions.md.
+Pass: existing assets are identified; the primary question, available checkpoint, instrumentation route, and pilot budget are concrete. Unavailable resources are clearly marked.
+
+M1. Generator and semantic oracle
+Deliver generator, interpreter, transformations, manifests, and validation report.
+Pass: independent execution agrees; all renamings preserve semantics; binding/version labels are correct; counterfactual answers are verified; splits have no grouped leakage; diagnostic collisions are identified.
+
+M2. Behavioral smoke test and pilot
+Run a small balanced smoke batch, profile it, then run the bounded pilot.
+Pass: inference and parsing work end to end; all attempts are logged; cell counts and actual resource use are reported. If performance is near floor or ceiling, adjust difficulty using development data and document the change.
+
+M3. Representation diagnostics
+Fit the simplest useful probes and all required baselines.
+Pass: held-out results are reproducible; indexing and leakage checks pass; conclusions distinguish accessibility, transfer, and evidence of use. Negative results are valid outcomes.
+
+M4. One focused intervention study
+Deliver counterfactual pairs, frozen intervention configuration, and specificity results.
+Pass: the assay passes sanity controls and produces interpretable evidence. If effects are broad or unstable, report inconclusive localization instead of a mechanism.
+
+M5. Frozen prediction on unfamiliar programs
+Deliver the registered analysis and final held-out comparisons.
+Pass: predictions and all choices were fixed in advance; comparisons include simple behavioral alternatives; uncertainty and costs are reported. If the mechanism adds no predictive value, state that directly.
+
+M6. Paper decision
+Deliver a concise evidence-based memo:
+- What is established?
+- What remains correlational or unresolved?
+- How does the finding differ from the closest work and existing CodeCue?
+- Does replication on a second model family address a concrete uncertainty?
+- Is a targeted training study justified?
+- Should explanation-transfer work remain a section or become a separate project?
+
+Passing engineering milestones does not guarantee a publishable scientific result. A useful negative result requires its own well-supported claim.
+
+## 12. Optional extensions and decision rules
+
+A. Targeted training, within the core project
+Proceed only if a reproducible mechanism motivates a specific intervention.
+Compare equal-budget ordinary training, ordinary obfuscation augmentation, and training that specifically separates competing bindings. Match tokens, updates, and evaluation access. Include shuffled or mismatched state-supervision controls if adding intermediate labels. Test unfamiliar combinations and check whether the predicted mechanism changes alongside behavior. More supervision or compute is an alternative explanation.
+
+B. Separate paper on explanation transfer
+Question: When do mechanistic explanations generalize across inputs with the same semantics?
+Start with consistent renaming and independent-statement reordering. Add larger rewrites only with explicit state/event correspondences.
+Require:
+- Calibrated controls with known shared and different computations, or a clearly justified substitute.
+- A method that distinguishes shared computation, evidence for a difference, and inconclusive alignment.
+- Specific counterfactual effects, semantic-change controls, and held-out transformations.
+- An independent methodological or explanatory contribution beyond transferring one binding patch.
+Do not identify the program's execution algorithm with the model's strategy for predicting its output.
+
+C. Unlearning
+Defer until the core diagnostic is reliable.
+Use a controlled adaptation setting with arbitrary fictional API-name mappings. Forget selected mappings; retain tasks must be solvable without those mappings. Compare at similar forgetting strength and retained clean accuracy, include a retain-only adaptation reference, and test whether internal measurements predict unseen retained-task failures beyond cheap behavior. A retain-only adaptation reference is not a full pretraining-deletion oracle.
+Mechanistic change, residual decodability, and ordinary collateral damage alone are insufficient novelty.
+
+## 13. Literature and novelty checks
+
+Read these primary sources before finalizing claims. The descriptions below identify relevance; they do not replace reading the papers. Verify current versions before submission. Do not claim to be first based on this selected list.
+
+[R1] Wu, Geiger, and Millière. How Do Transformers Learn Variable Binding in Symbolic Programs? ICML 2025.
+https://proceedings.mlr.press/v267/wu25j.html
+Prior binding and dereferencing mechanisms. Distinguish the proposed updating/interference contribution.
+
+[R2] Gur-Arieh, Geva, and Geiger. Mixing Mechanisms: How Language Models Retrieve Bound Entities In-Context. ICLR 2026.
+https://proceedings.iclr.cc/paper_files/paper/2026/hash/2eeff35664016c7f0f8aa704f0d9a83e-Abstract-Conference.html
+Competing and combined retrieval mechanisms under greater binding load.
+
+[R3] Li, Guo, and Andreas. (How) Do Language Models Track State?
+https://arxiv.org/abs/2503.02854
+Different state-tracking mechanisms and their relation to generalization and training.
+
+[R4] Chen et al. From Brewing to Resolution: Tracing the Internal Lifecycle of Code Reasoning in LLMs.
+https://arxiv.org/abs/2606.17648
+Close overlap concerning recoverable information and successful code reasoning. Check the latest version and compare with CodeCue explicitly.
+
+[R5] Sun and Toneva. Tracking Equivalent Mechanistic Interpretations Across Neural Networks. ICLR 2026.
+https://arxiv.org/abs/2603.30002
+Foundation for the optional explanation-transfer project; cross-network results do not automatically establish within-model input equivalence.
+
+[R6] Friedman et al. Interpretability Illusions in the Generalization of Simplified Models. ICML 2024.
+https://proceedings.mlr.press/v235/friedman24a.html
+Motivation for validating explanations against novel situations.
+
+[R7] Hewitt and Liang. Designing and Interpreting Probes with Control Tasks. EMNLP 2019.
+https://aclanthology.org/D19-1275/
+Probe capacity and control tasks.
+
+[R8] Makelov, Lange, and Nanda. Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching.
+https://arxiv.org/abs/2311.17030
+Why an intervention effect alone does not establish natural feature use.
+
+[R9] Geiger et al. Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability. JMLR 2025.
+https://www.jmlr.org/papers/v26/23-0058.html
+Precise interpretation of high-level counterfactual tests.
+
+[R10] Kolling, Vo, and Toneva. Large Language Models as Model Organisms for Human Associative Learning.
+https://arxiv.org/abs/2510.21408
+Motivates hypotheses about interference; cosine changes do not directly measure directed code dependencies.
+
+[R11] Wang et al. Reasoning Model Unlearning: Forgetting Traces, Not Just Answers, While Preserving Reasoning Skills. EMNLP 2025.
+https://aclanthology.org/2025.emnlp-main.220/
+Overlap with the optional unlearning direction.
+
+[R12] ICML 2026 reviewer instructions.
+https://icml.cc/Conferences/2026/ReviewerInstructions
+Venue-level guidance: original empirical insight is a valid contribution; soundness and significance are assessed separately.
+
+## 14. Expected final handoff
+
+Return:
+1. Implemented components and exact reproduction commands.
+2. Dataset, model, and run manifests.
+3. Semantic validation and meaningful test results.
+4. Behavioral results with uncertainty and diagnostic ambiguities.
+5. Probe results and controls.
+6. Causal results, if executed, with specificity and limitations.
+7. Frozen held-out predictions and baseline comparisons, if reached.
+8. Resource consumption and unexecuted work.
+9. A scientific decision memo recommending the next experiment.
+
+Suggested figures, only when corresponding results exist:
+- Naming effects across binding competition and reassignment.
+- Current versus obsolete binding recovery with probe controls.
+- Predicted counterfactual effects versus intervention controls.
+- Held-out error prediction with and without mechanistic measurements.
+
+The paper should earn its claim through an explanation that survives controlled counterfactual tests and predicts behavior outside its discovery examples. If the evidence supports a narrower conclusion, state the narrower conclusion clearly.
+

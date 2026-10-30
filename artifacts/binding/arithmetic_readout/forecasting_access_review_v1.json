@@ -1,0 +1,21 @@
+{
+  "arithmetic_inference_source_unchanged": "artifacts/binding/arithmetic_readout/source_v1.json",
+  "changes": [
+    "Reject declared sealed roles/response paths before opening outcomes",
+    "Validate completed discovery dataset/checkpoint provenance before opening outcomes",
+    "Retain mixed-source legacy support and strict response ID/split checks before reading features"
+  ],
+  "empirical_forecaster_fitted": false,
+  "final_targeted_forecasting_and_measurement_tests": 44,
+  "full_arithmetic_regression_tests": 322,
+  "scientific_outcomes_opened": false,
+  "scope": "software access guard only; no empirical forecasters fitted",
+  "source": {
+    "code": "6d5d320d431b833a35762447408435cb860f5014613d0ecff8a1615085de9ef5",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/943a81064df91321f03adbeb",
+    "snapshot_id": "943a81064df91321f03adbeb"
+  },
+  "status": "passed",
+  "targeted_results": "artifacts/binding/arithmetic_readout/forecasting_access_tests_v1.xml",
+  "targeted_results_sha256": "0d6853e77f646a811277b65ab21d509274df4ac36962e255033e775f47fc4785"
+}

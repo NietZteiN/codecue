@@ -7,6 +7,40 @@ does not work; h200/normal are one 4-job budget shared by four projects; env
 `envs/probe-cu129`; never source obtune's setup_env.sh). Work does not start before the
 arithmetic paper is submitted (2026-10-12).
 
+## Active resource instruction (2026-10-25)
+
+The user explicitly states that this is the only active project and asks to maximize
+useful compute for it. This supersedes the initial four-GPU-hour/single-checkpoint
+operating defaults and the assumption that capacity must be saved for other projects.
+New model work uses `artifacts/binding/gpu_usage_uncapped.json` (no cumulative cap,
+multiple cached checkpoints), with authorization in
+`artifacts/binding/resource_policy_20261025.json`. Preserve historical ledgers and frozen
+run identities; do not reset usage or rerun completed scientific experiments.
+
+Use independent available GPUs and eligible CPU partitions for useful queued work.
+Actual scheduler limits still apply: observed partition QoS `juno` permits four active
+jobs per user, including normal CPU, A30 and H200 jobs; `juno-dev` permits one. These
+observed limits supersede the older inherited comments about A30. CPU preparation may
+use `dev,normal` so the dev limit does not serialize independent tokenizer checks.
+The current runner ignores legacy `max_gpu_seconds`, cumulative budgets and profiler
+timeouts. Its ledger is accounting-only, with no checkpoint restriction or time
+reservation. Submission defaults use the cluster's actual 48-hour GPU maximum;
+`--gpus` and model tensor parallelism are configurable. Finite jobs exit on completion.
+Use `--time-min` for profiled resumable workloads when shorter scheduler backfill
+windows can start them sooner; this changes the allocation SLURM may grant, not a
+project compute allowance. The submission manifest records both requested bounds.
+Historical frozen code/configurations retain their original identity for reproducibility.
+Inference jobs retain scheduler-enforced walltimes and resumable outputs. Scientific gates,
+sealed final outcomes and the prohibition on automatic optional training still apply.
+
+The `dev-a30` partition is also eligible for short workloads that fit a 24-GiB A30.
+Its observed scheduler maximum is two hours and its partition QoS is `juno-dev-a30`;
+it allows this account. The combined `dev-a30,a30,h100,h200` submission profile uses
+that actual two-hour maximum and a five-minute backfill minimum, without an application
+compute cap. For the batch-144 reset-reference assay, the scheduler request was expanded
+in place after a measured batch-96 peak fit comfortably; details are preserved in
+`artifacts/binding/routing_extension/swap_backfill_eligibility_v2.json`.
+
 ## Rules that make a result mean something
 
 1. Exactly one table identifier per instance; twins differ in one identifier (R1). Tested.

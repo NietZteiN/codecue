@@ -1,0 +1,87 @@
+{
+  "all_four_jobs_completed_zero": true,
+  "evaluation_role": "discovery_direct_identity_completion_followup_v1",
+  "factorizations": 60,
+  "figure_visual_findings": "All four layer curves, both model rows and write/parent panels visible. Nominated layer24, five-method legend, shared whole-four-event axis and marginal-score qualification are readable; no clipping/overlap observed.",
+  "figure_visually_reviewed": true,
+  "fit_banks": 60,
+  "handoff_pins_verified": 105,
+  "new_fits_by_review": 0,
+  "new_model_queries": 0,
+  "parameter_replay_rows": 345600,
+  "parameters_reapplied_by_review": 0,
+  "pins": [
+    {
+      "bytes": 68336,
+      "path": "artifacts/binding/direct_identity/20261028_v1/handoff_review_v1.json",
+      "sha256": "e1b818f48b47ee57a40a4294a8f3d11a0c2ce79f483c53ffa025958f4c80d758"
+    },
+    {
+      "bytes": 7494,
+      "path": "artifacts/binding/direct_identity/20261028_v1/queue_handoff_review_v1.json",
+      "sha256": "7e2e75999dd3ac721b5caa07ec4fd55cd9d728be3a96e41d9a4fb2f0d65b0226"
+    },
+    {
+      "bytes": 8868,
+      "path": "artifacts/binding/direct_identity/20261028_v1/publication_review_v1.json",
+      "sha256": "2c2d0a5f8719aaad86ba44ddafad24a89ca0c8fa2a83c33deae894947b717c64"
+    },
+    {
+      "bytes": 155,
+      "path": "artifacts/binding/direct_identity/20261028_v1/completion_logging_review_v1.json",
+      "sha256": "c884be0ef53e181a9664fba669d8ef12da209b676616517bc98def847d856b39"
+    },
+    {
+      "bytes": 178517,
+      "path": "reports/binding/figures/direct_identity_v1.png",
+      "sha256": "84a9a803641feedc9351176f262af3af49dbaa2c17343b8e8388af48989aa156"
+    },
+    {
+      "bytes": 101361,
+      "path": "reports/binding/figures/direct_identity_v1.svg",
+      "sha256": "2b44f1ffc7de4a990477e2762d3761c46b906f83f02336877d6bb40b2210c6f5"
+    }
+  ],
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 58
+  },
+  "recorded_utc": "2026-10-28T21:52:28.386062+00:00",
+  "scientific_arrays_loaded": false,
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2129
+  },
+  "source": {
+    "code": "6a34415f2a9dfdab2acb5ceecc8fb88e19b8982d21881890c137f96082ddf1ee",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3e5471ac9dc9b948761fc429",
+    "snapshot_id": "3e5471ac9dc9b948761fc429"
+  },
+  "status": "passed",
+  "task_cells": 1440,
+  "terminal_jobs": {
+    "481539": {
+      "elapsed_seconds": 598,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481540": {
+      "elapsed_seconds": 895,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481541": {
+      "elapsed_seconds": 616,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481552": {
+      "elapsed_seconds": 74,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  }
+}

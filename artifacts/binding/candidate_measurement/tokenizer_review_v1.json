@@ -1,0 +1,24 @@
+{
+  "cases": 12288,
+  "generated_holdouts_opened": false,
+  "model_probabilities_computed": false,
+  "models": {
+    "codellama34b": {
+      "cases": 6144,
+      "measurement_dtype": "float32",
+      "preparation_review": "artifacts/binding/candidate_measurement/codellama34b_full_v2/preparation_review.json",
+      "sha256": "d94cd3cb7bede967f64bbb1ba04e0ac506ca0cf69c6d040639a80061561aa32c",
+      "status": "passed",
+      "tokenization_rule": "joint_prompt_candidate_v1"
+    },
+    "llama31_8b": {
+      "cases": 6144,
+      "measurement_dtype": "float32",
+      "preparation_review": "artifacts/binding/candidate_measurement/llama31_8b_full_v3/preparation_review.json",
+      "sha256": "0ffb042f405feae868e6f2fe079db9d67382e9b36c1acbc022fde67b1bec5f9f",
+      "status": "passed",
+      "tokenization_rule": "standalone_decode_verified_v2"
+    }
+  },
+  "status": "passed"
+}

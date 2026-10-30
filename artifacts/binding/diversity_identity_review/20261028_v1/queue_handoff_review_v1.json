@@ -1,0 +1,203 @@
+{
+  "actual_source_only_preflight_passed": true,
+  "all_helper_and_readiness_pins_match": true,
+  "archived_source_files": 102,
+  "automatic_logging_enabled": true,
+  "automatic_publication_worker": "481474",
+  "development_rows": 1440,
+  "evaluation_role": "discovery_diversity_identity_queue_handoff_v1",
+  "focused_new_tests": 44,
+  "generated_holdouts_opened": false,
+  "graph_groups": 15,
+  "independent_synthetic_cornercase_checks": 14,
+  "jobs": {
+    "analysis": {
+      "elapsed_seconds": 268,
+      "exit_code": "0:0",
+      "job_id": "481458",
+      "state": "RUNNING"
+    },
+    "completion": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "481474",
+      "state": "PENDING"
+    },
+    "regression": {
+      "elapsed_seconds": 555,
+      "exit_code": "0:0",
+      "job_id": "481457",
+      "state": "COMPLETED"
+    }
+  },
+  "learned_identity_outcomes_reviewed": false,
+  "limitation": "Adaptive source-oracle-assisted interpretation of existing statement predictions. Model ownership/version causes, natural causal use and unfamiliar-program prediction remain unresolved.",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_all_eight_stage_jobs_completed_zero": true,
+  "original_scientific_source": "345f75b01f5c3b33bd0ca6d8",
+  "parameters_reapplied": 0,
+  "peer_orchestration_review": "passed",
+  "pins": [
+    {
+      "bytes": 3280,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/completion_followup_review_v1.json",
+      "sha256": "c2e65731e5236e784416594e444277864ad55d7db07568bec97a8cf1569ff567"
+    },
+    {
+      "bytes": 21082,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/handoff_review_v1.json",
+      "sha256": "d58b99348fe4dc796ea16ccf6ae4eea054581b201cd48f9ce948264280c06f1c"
+    },
+    {
+      "bytes": 14355,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/independent_findings_review_v1.json",
+      "sha256": "2f15ee091faccf2d5ad4d90dfd0c18b88b327bfaa6da4c9b67c59f0fb44da060"
+    },
+    {
+      "bytes": 1264,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/build_review_v1.json",
+      "sha256": "c3f882380e1d6786513ed9ea12857cf5390172275f009cec7202895577afb623"
+    },
+    {
+      "bytes": 564,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/closure_job_v1.json",
+      "sha256": "2bb0b22771dde603cbd9f5523ff3521cffc20e4c56c4b61f175f8a608075e32e"
+    },
+    {
+      "bytes": 1921,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "680077db52a58bfaf4a61348e57cac7fef1b276ed1fd2955823de434769f44ea"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/execution_source_v1.json",
+      "sha256": "ae8318df3bf331bfefb273268d0c9e7b939c13caf5b3a3864b51e4c12cf9ebf4"
+    },
+    {
+      "bytes": 8368,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/finish_review_v1.py",
+      "sha256": "dbbec7d626e012d9dbe1a888118f098bfa6ad119778ad5cb95ba35a5770012ed"
+    },
+    {
+      "bytes": 1645,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/identity_source_preflight_review_v1.json",
+      "sha256": "ee5be90f5d74e5a154a2698fc6b5a34a2bee06e452d5ed6197c593fd4f053435"
+    },
+    {
+      "bytes": 53,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/jobs_v1.json",
+      "sha256": "e9c82911bb909e24701be1bbedad8152750afd853276e921d25993345a4f7912"
+    },
+    {
+      "bytes": 75025,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/readiness_at_submission_v1.json",
+      "sha256": "22107d8ee4ae182010936b06d6244e2d01916045041ca7d62d8d1ef6cbff4210"
+    },
+    {
+      "bytes": 443,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/readiness_selector_review_v1.json",
+      "sha256": "ff8e7b273fdec2cb41c58a8710d5eb4c513bb67c6b8153928b3483673796fa12"
+    },
+    {
+      "bytes": 264,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "c8756910f068d31a8c84011e4703fcd3819089465e98d8c6a4c94abc1a508f12"
+    },
+    {
+      "bytes": 299597,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/regression_sources_v1.zip",
+      "sha256": "5448fbf8fc1d3ddc063a4737ee94faf6da75ce8cea67408b78fc8982dd7e58a9"
+    },
+    {
+      "bytes": 319164,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/regression_v1.xml",
+      "sha256": "dbbee0b921e2fbb9ebf7068bb3a6fedfa672e28b115903186b4f05c55b13dbca"
+    },
+    {
+      "bytes": 1748,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/run_analysis_v1.py",
+      "sha256": "d4d93fd7af645bee08b78fda5f5c10a652abd4a4bad8aba37ca6af5fc902d0a8"
+    },
+    {
+      "bytes": 3478,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/run_source_preflight_v1.py",
+      "sha256": "213dcebc7cd4fff25461c62edad6c5041b41a7bfa7f6f24be00794116c932915"
+    },
+    {
+      "bytes": 3895,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/run_validation_v1.py",
+      "sha256": "5143dce9a6a9323b3206aad9e007ad65301b27a9c7e221120f87d61eac0559c9"
+    },
+    {
+      "bytes": 12809,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/software_validation_review_v1.json",
+      "sha256": "99e8d91a422746af773a6ef502ef7699e5b897e2ab3d7221788d3ab8d98c6ad0"
+    },
+    {
+      "bytes": 320,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/submission_logging_review_v1.json",
+      "sha256": "01bcebfa7c9f5484f8793ee34967f2ee4cba95448e3a82aa7d020d22682eb742"
+    },
+    {
+      "bytes": 2101,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/validation_eligibility_review_v1.json",
+      "sha256": "6ca67970f64be64a505e9ccc2d0f6c1097480173b5c38b034c4abc81d37dba2d"
+    },
+    {
+      "bytes": 232,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/validation_job_v1.json",
+      "sha256": "f2162c70cfcd1c236ed670f5786d03bf95a9c30e90c2f35956523908e41284a8"
+    },
+    {
+      "bytes": 55923,
+      "path": "artifacts/binding/sources/56923f24389a46294d3c9c7b/frozen_manifest.json",
+      "sha256": "2116b6790c9ff9af9bf6b8d60456215d17971ae08744a32c3b0f4729f03ca3ea"
+    },
+    {
+      "bytes": 784,
+      "path": "configs/binding/diversity_identity_review_v1.json",
+      "sha256": "aad8b6016411ee50d910e912fbd8f2c58008d2e57fe8d4ea02294d7f84457699"
+    },
+    {
+      "bytes": 64687,
+      "path": "configs/binding/preparation/readiness_v21.json",
+      "sha256": "b9e77b987dc87a0e5d88c7d486b711eeefd3f37756f0df39fe953113493576fe"
+    },
+    {
+      "bytes": 5930,
+      "path": "reports/binding/diversity_identity_review_plan_v1.md",
+      "sha256": "1c22d52626c55b1d508f92d7e91801e22eb8aa8240b3b4472c4c31874ff6d2c0"
+    },
+    {
+      "bytes": 3812,
+      "path": "reports/binding/diversity_identity_review_submission_v1.md",
+      "sha256": "5e82f2faf647237f5ae6d52344727450980d79af24445277e159c7fc21c5993d"
+    }
+  ],
+  "planned_dev_prediction_rows": 129600,
+  "planned_original_score_banks": 90,
+  "planned_saved_score_case_rows_checked": 518400,
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "needs_validation": 1,
+    "ready": 56
+  },
+  "recorded_utc": "2026-10-28T20:24:29.189817+00:00",
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2088
+  },
+  "source": {
+    "code": "38a8ad184e39ce39e6d9c4382834f8a95c2022e268f4b1adb0cca85829d6f38f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/56923f24389a46294d3c9c7b",
+    "snapshot_id": "56923f24389a46294d3c9c7b"
+  },
+  "source_oracle_assisted": true,
+  "status": "ready_and_running",
+  "tracked_tasks": 69,
+  "unrelated_jobs_cancelled": 0
+}

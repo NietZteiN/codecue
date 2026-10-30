@@ -1,0 +1,32 @@
+{
+  "evaluation_role": "posthoc_discovery_relationship_figure_v1",
+  "figures": [
+    {
+      "path": "reports/binding/figures/relationship_controls_v1.png",
+      "sha256": "4a0756ef4c40054ad1e79a25b6de514bd4b9aac52d228fde89ee6735a7f287e4"
+    },
+    {
+      "path": "reports/binding/figures/relationship_controls_v1.svg",
+      "sha256": "b829cf7598fbcd967d54db171f0f04460733809561d14ed48a2d7c6b499fe84f"
+    }
+  ],
+  "generated_holdouts_opened": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "points_only": true,
+  "posthoc_controls_explicit": true,
+  "source_files": [
+    {
+      "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/results_v1.json",
+      "sha256": "250fbdc89cc000aee117d34c912b2dd9ee2b006e667cb1d8baec40ff5944cc2f"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/results_v1.json",
+      "sha256": "8d582f3f18bac43f57b0d8d821ac4df493ca0a59a6945cf2770710fcdafdfa86"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/plot_relationship_controls_v1.py",
+      "sha256": "8e46712786423ff27c0eb68e744911b286be10e7e7db72bf904c0eeea4dd0156"
+    }
+  ]
+}

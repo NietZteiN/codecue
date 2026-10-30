@@ -1,0 +1,59 @@
+{
+  "audit_scope": "schema, numerical ranges, exact input identities, complete chunk/record coverage; no outcome scoring",
+  "complete": true,
+  "confidence_sha256": "af180f1edaefe6b15048de4a299509e9021bb9a93dfa5c4f177b0707e585ef7b",
+  "evaluated": 6144,
+  "generated_holdouts_opened": false,
+  "generated_tokens": 0,
+  "identity_hash": "8937d10e13dd7a007f01918298f36a6fa62e81c0fd05345f8f580876596fea32",
+  "measurement": "exact_saved_prompt_next_token_distribution_v1",
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "preparation": {
+    "case_ids_sha256": "bb3bc8022b5aab97dc89850d5030818e031a6aa3baa5f16dca51d70ada1cb132",
+    "cases": 6144,
+    "conditions": {
+      "informative": 3072,
+      "misleading": 3072
+    },
+    "config_hash": "fa06f09b4f71d7ecbd2097fbc53a237bdcc7f08a8e1de5014cd1f75fef5f0967",
+    "eos_token_ids": [
+      2
+    ],
+    "evaluation_role": "discovery_prefill_confidence_v1",
+    "generated_holdouts_opened": false,
+    "generated_tokens": 0,
+    "limitation": "Next-token sign/format confidence at the exact saved prompt; not full integer-answer confidence. A new Transformers measurement backend is distinct from the original vLLM outcome backend.",
+    "measurement": "exact_saved_prompt_next_token_distribution_v1",
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "oracle_fields_exported": false,
+    "original_splits": {
+      "development": 1536,
+      "train": 4608
+    },
+    "padded_width": 188,
+    "prepared_cases_sha256": "b102baaef65f9ccaf4ee20aa6eb78c4a06adf02fb432fb25feb56f1279acb704",
+    "selection": "fixed hash of selection_seed and case ID, no outcomes",
+    "smoke_subset": false,
+    "source_config_sha256": "4b658f85b0fd46c4579f6405a02fdd57adbd5f3699e5688fb71b95f7a320adb0",
+    "source_provenance": {
+      "original_source_sha256": "879fe543236610c346d227a1d704848b35e308a1001e00412e9694bfc8ffba74",
+      "source_audit_sha256": "e88af60367c072c1040e2e7a1e302534e5d75523cee0b889a7ff915bbadc340c",
+      "source_config_sha256": "4b658f85b0fd46c4579f6405a02fdd57adbd5f3699e5688fb71b95f7a320adb0",
+      "source_dataset_sha256": "baf0a1c52fff0160e7b195525be4e9083869d81d26c6e1a66e45d802c6beb0d5",
+      "source_identity_hash": "9532902e182be67cb024af73356801d53875dee64bdd1d15bc7a6cfcffefb493",
+      "source_model": "codellama/CodeLlama-34b-Instruct-hf",
+      "source_model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "source_prepared_sha256": "feb2d32fab536aa74ded9d54d619cb2a6d78cb207536c87ff59ead4b97ddda37",
+      "source_responses_sha256": "7d3cb35a19449ed1b1fef6c8aa2e7633070ec2c928c3528c3bac4648d6625545"
+    },
+    "source_sha256": "073f11ecdd6806a85e7372077215912c6b8962e337ea4292369e4e4ec893ad5a",
+    "status": "passed",
+    "target_outcomes_read": false,
+    "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "upstream_identity": "9532902e182be67cb024af73356801d53875dee64bdd1d15bc7a6cfcffefb493"
+  },
+  "status": "passed",
+  "target_outcomes_read": false
+}

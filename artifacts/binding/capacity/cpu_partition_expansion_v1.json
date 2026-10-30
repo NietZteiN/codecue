@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    "476868",
+    "476871",
+    "476874"
+  ],
+  "note": "Observed a30 and h200 both use the juno partition QoS; do not rely on historical comments claiming a30 is exempt.",
+  "partitions": [
+    "dev",
+    "normal"
+  ],
+  "reason": "The dev partition has a real one-job-per-user QoS limit; allow ordinary CPU nodes for independent tokenizer/semantic preparation while the dev regression job runs. The only active project can use the normal pool within its actual four-job limit.",
+  "recorded_utc": "2026-10-26T03:13:13.786051+00:00",
+  "scheduler_qos": {
+    "juno": 4,
+    "juno-dev": 1
+  }
+}

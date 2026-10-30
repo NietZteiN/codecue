@@ -1,0 +1,31 @@
+{
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "comparison_artifact": "artifacts/binding/arithmetic_readout/comparison_v1.json",
+  "completed_report": "reports/binding/arithmetic_readout_results_v1.md",
+  "job_keys": [
+    "compare",
+    "figure",
+    "preflight_codellama34b",
+    "preflight_llama31_8b",
+    "review_codellama34b",
+    "review_llama31_8b",
+    "run_codellama34b",
+    "run_llama31_8b"
+  ],
+  "jobs": "artifacts/binding/arithmetic_readout/jobs_v1.json",
+  "output": "artifacts/binding/arithmetic_readout/status_v1.json",
+  "plan_report": "arithmetic_readout_plan.md",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/arithmetic_readout/status_v1.json",
+  "report": "reports/binding/arithmetic_readout_status_v1.md",
+  "stages": [
+    {
+      "name": "llama31_8b",
+      "path": "artifacts/binding/arithmetic_readout/llama31_8b_v1/checkpoint_suite"
+    },
+    {
+      "name": "codellama34b",
+      "path": "artifacts/binding/arithmetic_readout/codellama34b_v1/checkpoint_suite"
+    }
+  ],
+  "title": "Arithmetic composition and readout feasibility status"
+}

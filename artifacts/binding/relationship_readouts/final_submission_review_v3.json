@@ -1,0 +1,113 @@
+{
+  "activation_arrays_opened": false,
+  "capture_reason_at_scheduler_review": "QOSMaxJobsPerUserLimit",
+  "capture_state_at_scheduler_review": "PENDING",
+  "checks": {
+    "fresh_tokenizer_preflight_layout_matches_original": true,
+    "frozen_source_and_config_identity_verified": true,
+    "handoff_static_pins_verified": 37,
+    "plan_and_scientific_protocol_unchanged": true,
+    "queued_execution_not_claimed_as_learned_results": true,
+    "readiness_v11_v3_output_wiring_verified": true,
+    "recovery_software_tests_not_decoding_evidence": true,
+    "scheduled_commands_and_dependency_chain_verified": true
+  },
+  "completed": {
+    "generated_responses": 0,
+    "learned_results_available": false,
+    "model_prefill_cases": 0,
+    "native_tokenizer_preflight_cases": 1944,
+    "readout_factorizations": 0,
+    "regression": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 1537
+    },
+    "saved_parameter_case_replays": 0,
+    "tokenizer_preflight_allocated_seconds": 225
+  },
+  "evaluation_role": "discovery_relationship_final_submission_review_v3",
+  "frozen_source": {
+    "code": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0"
+  },
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "job_ids": {
+    "capture": "480292",
+    "capture-audit": "480293",
+    "capture-prepare": "480286",
+    "completion-refresh": "480295",
+    "readouts": "480294"
+  },
+  "models_or_tokenizers_loaded": false,
+  "native_tokenizer_preflight_cases": 1944,
+  "new_model_queries": 0,
+  "pins": {
+    "capture_config": {
+      "path": "configs/binding/relationships/capture_v2.json",
+      "sha256": "1e944fa658613954a116f07a016e1ed8c9da83d2f805bf1e4605a5ff54440a4e"
+    },
+    "handoff": {
+      "path": "artifacts/binding/relationship_readouts/handoff_review_v3.json",
+      "sha256": "5e6d2ec72d77a35904837ac5bb40491e1818a0d2524d656cf38e769d4afe7e0b"
+    },
+    "pipeline_config": {
+      "path": "configs/binding/relationships/readouts_pipeline_v3.json",
+      "sha256": "61bdf8018a1dcefc774d5cc776b13a922a193460dc5f61a41cf2a007229f9704"
+    },
+    "readiness_config": {
+      "path": "configs/binding/preparation/readiness_v11.json",
+      "sha256": "c2bb61404c36bae42004f196442f82df8c27da75912585a5a676e1fc1fdbe2fd"
+    },
+    "regression": {
+      "path": "artifacts/binding/relationship_readouts/regression_v3.xml",
+      "sha256": "59d98aa04c8bbba735531449f344bc075e761968548bea1fdd5a3a4746628663"
+    },
+    "scheduler": {
+      "path": "artifacts/binding/relationship_readouts/scheduler_review_v3.json",
+      "sha256": "14669496531f8c9010d74a1bbae46cfdf1ccb6d55bc02e2637d3a1f0cd563327"
+    },
+    "status_report": {
+      "path": "reports/binding/relationship_readout_status_v3.md",
+      "sha256": "c2e88485bf2130e59be178fc0c77d1d6963c6fb194ba912a2ccf4b7bbada71b7"
+    }
+  },
+  "planned": {
+    "capture_layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "capture_sites": 9,
+    "fitted_sites": [
+      3,
+      7,
+      8
+    ],
+    "generated_responses": 0,
+    "model_prefill_cases": 1944,
+    "readout_factorizations": 45,
+    "saved_parameter_case_replays": 87480
+  },
+  "prepared_layout_sha256": "8df7c0ab7b171eb7aae3a7bb83188e2aaef60789552957d71997a8e9f34af779",
+  "readiness_at_submission": {
+    "deferred_optional": 3,
+    "needs_execution": 1,
+    "needs_scientific_decision": 9,
+    "ready": 37
+  },
+  "readout_fits_performed": 0,
+  "recorded_utc": "2026-10-28T00:23:02.715167+00:00",
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1537
+  },
+  "scheduler_mutations": 0,
+  "status": "passed_queued_submission"
+}

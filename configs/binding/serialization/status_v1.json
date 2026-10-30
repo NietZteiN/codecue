@@ -1,0 +1,30 @@
+{
+  "jobs": "artifacts/binding/serialization/jobs_v1.json",
+  "job_keys": [
+    "preflight",
+    "tests",
+    "smoke",
+    "full",
+    "finalize",
+    "maintenance_tests"
+  ],
+  "stages": [
+    {
+      "name": "native_replay_v1",
+      "path": "artifacts/binding/serialization/native_replay_v1/published_behavior"
+    },
+    {
+      "name": "completion_smoke_v1",
+      "path": "artifacts/binding/serialization/completion_smoke_v1/published_behavior"
+    },
+    {
+      "name": "completion_full_v1",
+      "path": "artifacts/binding/serialization/completion_full_v1/published_behavior"
+    }
+  ],
+  "comparison_artifact": "artifacts/binding/serialization/comparison_v1.json",
+  "completed_report": "reports/binding/serialization_comparison.md",
+  "budget_ledger": "artifacts/binding/gpu_budget.json",
+  "output": "artifacts/binding/serialization/live_status_v1.json",
+  "report": "reports/binding/serialization_status.md"
+}

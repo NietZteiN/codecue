@@ -1,0 +1,46 @@
+{
+  "dataset": "artifacts/binding/difficulty_ladder.jsonl",
+  "run_dir": "artifacts/binding/difficulty_ladder_bf16",
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "batch_size": 4,
+  "max_new_tokens": 12,
+  "splits": [
+    "train"
+  ],
+  "per_cell_limit": null,
+  "control_kinds": [
+    "primary",
+    "binding_swap",
+    "arithmetic_control"
+  ],
+  "seed": 17,
+  "max_gpu_seconds": 1800,
+  "activation_limit_bytes": 68719476736,
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "extraction_splits": [
+    "train",
+    "development"
+  ],
+  "protocol": "short_answer_prefill_v2",
+  "cpu_threads": 4,
+  "calibration": {
+    "case_source": "difficulty_ladder",
+    "variants": [
+      "print_direct_v3",
+      "print_trace_long_v1"
+    ],
+    "ladder_plan": "configs/binding/difficulty_ladder_plan.json",
+    "ladder_plan_sha256": "ee54dc0d515f113ce7edb749a285195f56d3a73f26657b25c67ad6711c6294e8",
+    "exclude_datasets": [
+      "artifacts/binding/prompt_calibration_bank.jsonl"
+    ]
+  }
+}

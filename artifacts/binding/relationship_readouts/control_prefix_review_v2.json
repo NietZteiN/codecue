@@ -1,0 +1,74 @@
+{
+  "activation_arrays_opened": false,
+  "cases": 1944,
+  "corrected_control": {
+    "all_364_target_marginals_preserved_separately_train_development": true,
+    "all_valid_target_vector_conflicts_all_sites_and_seeds": 0,
+    "component_derangement_and_lexical_ties_verified": true,
+    "earlier_partial_prefixes_not_qualified": true,
+    "eligible_relation_conflict_rows_each_seed": 0,
+    "exact_prefix_groups_by_fitted_site": {
+      "3": 648,
+      "7": 1944,
+      "8": 1944
+    },
+    "numeric_state_conflict_rows_each_seed": 0,
+    "prefix_only_oracle_ceiling": 1.0,
+    "qualified_fitted_sites": [
+      3,
+      7,
+      8
+    ],
+    "recipe": "component derangement; 12 initialization-prefix base blocks; within-base three-parent permutation; lexical ties",
+    "unweighted_split_marginals_preserved": true
+  },
+  "cross_component_initialization_prefix_collisions": 0,
+  "development_prefix_groups": 216,
+  "evaluation_role": "discovery_relationship_control_prefix_review_v2",
+  "exact_initialization_prefix_groups": 648,
+  "excluded_from_model_results": true,
+  "generated_holdouts_opened": false,
+  "model_results_inspected": false,
+  "new_model_queries": 0,
+  "prefix_group_rows": 3,
+  "prior_control": {
+    "numeric_state_conflict_rows_each_seed": 1944,
+    "prefix_only_oracle_macro_balanced_accuracy_ceiling": {
+      "11": {
+        "development": 0.74905,
+        "train": 0.71348
+      },
+      "29": {
+        "development": 0.72226,
+        "train": 0.7227
+      },
+      "47": {
+        "development": 0.71692,
+        "train": 0.7316
+      }
+    },
+    "relation_conflict_prefix_groups": {
+      "11": {
+        "development": 214,
+        "train": 430
+      },
+      "29": {
+        "development": 216,
+        "train": 428
+      },
+      "47": {
+        "development": 214,
+        "train": 428
+      }
+    }
+  },
+  "real_label_primary_comparisons_changed": false,
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "software_oracle_control_only": true,
+  "status": "passed_after_control_amendment",
+  "training_prefix_groups": 432
+}

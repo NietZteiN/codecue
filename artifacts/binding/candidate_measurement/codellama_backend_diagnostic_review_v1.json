@@ -1,0 +1,1370 @@
+{
+  "cases": 8,
+  "generated_tokens": 0,
+  "input_lengths": [
+    165,
+    163,
+    166,
+    185,
+    166,
+    184,
+    183,
+    166
+  ],
+  "measurements": [
+    {
+      "attention": "sdpa",
+      "backend": "full32",
+      "reference": "full1",
+      "reference_seconds": 10.608109294902533,
+      "rows": [
+        {
+          "id": "competition:290e3a320ceb8ccc4a2b48ba",
+          "max_event_log_probability_error": 0.17575614154338837,
+          "max_event_mass_error": 0.0036356935291138037,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0010237169930571444,
+              "candidate": 1.3576850853317584,
+              "reference": 1.3587088023248155
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0441639072329274,
+              "candidate": 0.07225312420955515,
+              "reference": 0.11641703144248255
+            },
+            "support_log_mass": {
+              "absolute_error": 0.006297728606772024,
+              "candidate": -1.933531905486969,
+              "reference": -1.927234176880197
+            },
+            "support_mass": {
+              "absolute_error": 0.0009137553994304493,
+              "candidate": 0.14463645301526407,
+              "reference": 0.14555020841469452
+            }
+          }
+        },
+        {
+          "id": "competition:2d55a0af8940d714bd567d78",
+          "max_event_log_probability_error": 0.06616497039794922,
+          "max_event_mass_error": 0.0006783332199964132,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.007885063454873775,
+              "candidate": 0.334174199498369,
+              "reference": 0.3420592629532428
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0034181737536042034,
+              "candidate": 0.9220225920845866,
+              "reference": 0.9186044183309824
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0018288377329627181,
+              "candidate": -1.6804254413230797,
+              "reference": -1.6822542790560424
+            },
+            "support_mass": {
+              "absolute_error": 0.00034039142472877537,
+              "candidate": 0.18629470171293902,
+              "reference": 0.18595431028821024
+            }
+          }
+        },
+        {
+          "id": "competition:49498aad151436a46e0fd6c7",
+          "max_event_log_probability_error": 0.17718000710010529,
+          "max_event_mass_error": 0.0027364691326214607,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.015857017787173078,
+              "candidate": 1.368373118656929,
+              "reference": 1.352516100869756
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.036270076882482516,
+              "candidate": 0.02923824361972316,
+              "reference": 0.06550832050220567
+            },
+            "support_log_mass": {
+              "absolute_error": 0.019373300279037498,
+              "candidate": -1.8741025882135494,
+              "reference": -1.8934758884925869
+            },
+            "support_mass": {
+              "absolute_error": 0.002945039542438438,
+              "candidate": 0.15349265117021368,
+              "reference": 0.15054761162777525
+            }
+          }
+        },
+        {
+          "id": "competition:5d83da55c50ef045bda1f955",
+          "max_event_log_probability_error": 0.18850355595350266,
+          "max_event_mass_error": 0.00028567985659514773,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.007474646242546346,
+              "candidate": 1.1347800763078308,
+              "reference": 1.1422547225503772
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.00019676569859067294,
+              "candidate": 0.1340948881185921,
+              "reference": 0.13389812242000143
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0022928472190661964,
+              "candidate": -1.7405220654182685,
+              "reference": -1.7382292181992023
+            },
+            "support_mass": {
+              "absolute_error": 0.0004026928967334753,
+              "candidate": 0.1754287914007167,
+              "reference": 0.17583148429745019
+            }
+          }
+        },
+        {
+          "id": "competition:a082dab753ea37f8d0b79e9e",
+          "max_event_log_probability_error": 0.12438401859253645,
+          "max_event_mass_error": 0.0005616022902346363,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.00688012645036451,
+              "candidate": 0.8966561187132102,
+              "reference": 0.8897759922628456
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.001570391948001404,
+              "candidate": 0.2918385875741827,
+              "reference": 0.2902681956261813
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0026045773078557932,
+              "candidate": -1.481362809080437,
+              "reference": -1.4787582317725811
+            },
+            "support_mass": {
+              "absolute_error": 0.0005928642436832665,
+              "candidate": 0.22732767296892614,
+              "reference": 0.2279205372126094
+            }
+          }
+        },
+        {
+          "id": "competition:df24317423e7fb2a05bbe403",
+          "max_event_log_probability_error": 0.14677483588457108,
+          "max_event_mass_error": 0.0019449420365500597,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.001455333674711401,
+              "candidate": 1.369409327018079,
+              "reference": 1.3679539933433675
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0027541991479785866,
+              "candidate": 0.1449853088875005,
+              "reference": 0.14773950803547908
+            },
+            "support_log_mass": {
+              "absolute_error": 0.016005812379649154,
+              "candidate": -1.5289731395959727,
+              "reference": -1.5129673272163235
+            },
+            "support_mass": {
+              "absolute_error": 0.003497303947646385,
+              "candidate": 0.21675813342010214,
+              "reference": 0.22025543736774852
+            }
+          }
+        },
+        {
+          "id": "competition:f8995621b15dc7ccff54038f",
+          "max_event_log_probability_error": 0.20309577882289886,
+          "max_event_mass_error": 0.002282604241857916,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.03567910132480179,
+              "candidate": 0.6936405987148349,
+              "reference": 0.6579614973900331
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.01227647676831134,
+              "candidate": 0.8399021745005821,
+              "reference": 0.8521786512688935
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0017298711849582649,
+              "candidate": -1.5007982007669765,
+              "reference": -1.4990683295820182
+            },
+            "support_mass": {
+              "absolute_error": 0.0003860122422629231,
+              "candidate": 0.22295212854539717,
+              "reference": 0.2233381407876601
+            }
+          }
+        },
+        {
+          "id": "competition:fa7ece2d10fb4b98fee95a31",
+          "max_event_log_probability_error": 0.1217760443687439,
+          "max_event_mass_error": 0.004332667343830865,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.008713472484878304,
+              "candidate": 1.1336460204766163,
+              "reference": 1.1423594929614946
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.048722365223903996,
+              "candidate": 0.3140095126199952,
+              "reference": 0.2652871473960912
+            },
+            "support_log_mass": {
+              "absolute_error": 0.002178511185422005,
+              "candidate": -1.7493356811025456,
+              "reference": -1.7515141922879676
+            },
+            "support_mass": {
+              "absolute_error": 0.0003784077209062209,
+              "candidate": 0.17388942311838032,
+              "reference": 0.1735110153974741
+            }
+          }
+        }
+      ],
+      "seconds": 6.881465898826718
+    },
+    {
+      "attention": "sdpa",
+      "backend": "cache1",
+      "reference": "full1",
+      "reference_seconds": 10.608109294902533,
+      "rows": [
+        {
+          "id": "competition:290e3a320ceb8ccc4a2b48ba",
+          "max_event_log_probability_error": 0.1729343682527542,
+          "max_event_mass_error": 0.0034751178502307883,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.004035991788884807,
+              "candidate": 1.3627447941137003,
+              "reference": 1.3587088023248155
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.04726979441356011,
+              "candidate": 0.06914723702892245,
+              "reference": 0.11641703144248255
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0005612655897124785,
+              "candidate": -1.9277954424699095,
+              "reference": -1.927234176880197
+            },
+            "support_mass": {
+              "absolute_error": 8.166940230208697e-05,
+              "candidate": 0.14546853901239243,
+              "reference": 0.14555020841469452
+            }
+          }
+        },
+        {
+          "id": "competition:2d55a0af8940d714bd567d78",
+          "max_event_log_probability_error": 0.12315809726715088,
+          "max_event_mass_error": 0.0001472448430450135,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0021285531550910286,
+              "candidate": 0.3441878161083338,
+              "reference": 0.3420592629532428
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0002995949062932768,
+              "candidate": 0.9183048234246891,
+              "reference": 0.9186044183309824
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0011792376894210754,
+              "candidate": -1.6810750413666213,
+              "reference": -1.6822542790560424
+            },
+            "support_mass": {
+              "absolute_error": 0.00021941367621403085,
+              "candidate": 0.18617372396442428,
+              "reference": 0.18595431028821024
+            }
+          }
+        },
+        {
+          "id": "competition:49498aad151436a46e0fd6c7",
+          "max_event_log_probability_error": 0.06381231546401978,
+          "max_event_mass_error": 0.00033138415788948675,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0018654359395402498,
+              "candidate": 1.3506506649302157,
+              "reference": 1.352516100869756
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0018471249498970832,
+              "candidate": 0.06735544545210276,
+              "reference": 0.06550832050220567
+            },
+            "support_log_mass": {
+              "absolute_error": 0.003173756066673361,
+              "candidate": -1.8903021324259135,
+              "reference": -1.8934758884925869
+            },
+            "support_mass": {
+              "absolute_error": 0.0004785604110300601,
+              "candidate": 0.1510261720388053,
+              "reference": 0.15054761162777525
+            }
+          }
+        },
+        {
+          "id": "competition:5d83da55c50ef045bda1f955",
+          "max_event_log_probability_error": 0.13109833002090454,
+          "max_event_mass_error": 0.0009761697250021406,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.005816979882269369,
+              "candidate": 1.1480717024326466,
+              "reference": 1.1422547225503772
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0051785344954137225,
+              "candidate": 0.1287195879245877,
+              "reference": 0.13389812242000143
+            },
+            "support_log_mass": {
+              "absolute_error": 0.00472619949265618,
+              "candidate": -1.7429554176918585,
+              "reference": -1.7382292181992023
+            },
+            "support_mass": {
+              "absolute_error": 0.0008290539913911599,
+              "candidate": 0.17500243030605903,
+              "reference": 0.17583148429745019
+            }
+          }
+        },
+        {
+          "id": "competition:a082dab753ea37f8d0b79e9e",
+          "max_event_log_probability_error": 0.09941427409648895,
+          "max_event_mass_error": 0.006321665961035783,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.01575495721181175,
+              "candidate": 0.9055309494746574,
+              "reference": 0.8897759922628456
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.05545110903034067,
+              "candidate": 0.2348170865958406,
+              "reference": 0.2902681956261813
+            },
+            "support_log_mass": {
+              "absolute_error": 4.680939364565262e-06,
+              "candidate": -1.4787535508332166,
+              "reference": -1.4787582317725811
+            },
+            "support_mass": {
+              "absolute_error": 1.0668847116590552e-06,
+              "candidate": 0.22792160409732107,
+              "reference": 0.2279205372126094
+            }
+          }
+        },
+        {
+          "id": "competition:df24317423e7fb2a05bbe403",
+          "max_event_log_probability_error": 0.06293824315071106,
+          "max_event_mass_error": 2.2465849599060967e-05,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 5.4706233442836094e-05,
+              "candidate": 1.3680086995768104,
+              "reference": 1.3679539933433675
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.00012399984887401239,
+              "candidate": 0.14761550818660507,
+              "reference": 0.14773950803547908
+            },
+            "support_log_mass": {
+              "absolute_error": 5.374476517294724e-05,
+              "candidate": -1.5130210719814965,
+              "reference": -1.5129673272163235
+            },
+            "support_mass": {
+              "absolute_error": 1.1837258661190342e-05,
+              "candidate": 0.22024360010908733,
+              "reference": 0.22025543736774852
+            }
+          }
+        },
+        {
+          "id": "competition:f8995621b15dc7ccff54038f",
+          "max_event_log_probability_error": 0.13161182403564453,
+          "max_event_mass_error": 0.0005899081893119412,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.010549226316812765,
+              "candidate": 0.6474122710732203,
+              "reference": 0.6579614973900331
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.002703455258493803,
+              "candidate": 0.8548821065273873,
+              "reference": 0.8521786512688935
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0015600520676108953,
+              "candidate": -1.500628381649629,
+              "reference": -1.4990683295820182
+            },
+            "support_mass": {
+              "absolute_error": 0.00034814749359451946,
+              "candidate": 0.22298999329406557,
+              "reference": 0.2233381407876601
+            }
+          }
+        },
+        {
+          "id": "competition:fa7ece2d10fb4b98fee95a31",
+          "max_event_log_probability_error": 0.13585661351680756,
+          "max_event_mass_error": 0.004282648713239398,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.015484599416012657,
+              "candidate": 1.126874893545482,
+              "reference": 1.1423594929614946
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.049211902739842384,
+              "candidate": 0.3144990501359336,
+              "reference": 0.2652871473960912
+            },
+            "support_log_mass": {
+              "absolute_error": 1.471204431591211e-05,
+              "candidate": -1.7514994802436517,
+              "reference": -1.7515141922879676
+            },
+            "support_mass": {
+              "absolute_error": 2.552720525655916e-06,
+              "candidate": 0.17351356811799976,
+              "reference": 0.1735110153974741
+            }
+          }
+        }
+      ],
+      "seconds": 1.7801884589716792
+    },
+    {
+      "attention": "sdpa",
+      "backend": "cache4",
+      "reference": "full1",
+      "reference_seconds": 10.608109294902533,
+      "rows": [
+        {
+          "id": "competition:290e3a320ceb8ccc4a2b48ba",
+          "max_event_log_probability_error": 0.1612439528107643,
+          "max_event_mass_error": 0.006520919388993136,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.005129500914716756,
+              "candidate": 1.3638383032395323,
+              "reference": 1.3587088023248155
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0003263041275517464,
+              "candidate": 0.11609072731493081,
+              "reference": 0.11641703144248255
+            },
+            "support_log_mass": {
+              "absolute_error": 0.11606546148641028,
+              "candidate": -2.0432996383666073,
+              "reference": -1.927234176880197
+            },
+            "support_mass": {
+              "absolute_error": 0.015949838186188448,
+              "candidate": 0.12960037022850607,
+              "reference": 0.14555020841469452
+            }
+          }
+        },
+        {
+          "id": "competition:2d55a0af8940d714bd567d78",
+          "max_event_log_probability_error": 0.08996427059173584,
+          "max_event_mass_error": 0.00014129611655469554,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.003621796999500715,
+              "candidate": 0.3456810599527435,
+              "reference": 0.3420592629532428
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0005331182280393643,
+              "candidate": 0.918071300102943,
+              "reference": 0.9186044183309824
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0013888620514526107,
+              "candidate": -1.6808654170045898,
+              "reference": -1.6822542790560424
+            },
+            "support_mass": {
+              "absolute_error": 0.00025844431507054955,
+              "candidate": 0.1862127546032808,
+              "reference": 0.18595431028821024
+            }
+          }
+        },
+        {
+          "id": "competition:49498aad151436a46e0fd6c7",
+          "max_event_log_probability_error": 0.11211094260215759,
+          "max_event_mass_error": 0.0033018754182787893,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0007310053093709801,
+              "candidate": 1.353247106179127,
+              "reference": 1.352516100869756
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.027305454647513827,
+              "candidate": 0.0928137751497195,
+              "reference": 0.06550832050220567
+            },
+            "support_log_mass": {
+              "absolute_error": 0.01590312910548719,
+              "candidate": -1.909379017598074,
+              "reference": -1.8934758884925869
+            },
+            "support_mass": {
+              "absolute_error": 0.002375241160939817,
+              "candidate": 0.14817237046683543,
+              "reference": 0.15054761162777525
+            }
+          }
+        },
+        {
+          "id": "competition:5d83da55c50ef045bda1f955",
+          "max_event_log_probability_error": 0.250090554356575,
+          "max_event_mass_error": 0.00030442890644092127,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 6.37026245593475e-05,
+              "candidate": 1.1423184251749365,
+              "reference": 1.1422547225503772
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0005134421727839289,
+              "candidate": 0.1333846802472175,
+              "reference": 0.13389812242000143
+            },
+            "support_log_mass": {
+              "absolute_error": 0.002385707245705415,
+              "candidate": -1.7406149254449077,
+              "reference": -1.7382292181992023
+            },
+            "support_mass": {
+              "absolute_error": 0.000418982462639772,
+              "candidate": 0.1754125018348104,
+              "reference": 0.17583148429745019
+            }
+          }
+        },
+        {
+          "id": "competition:a082dab753ea37f8d0b79e9e",
+          "max_event_log_probability_error": 0.19720464944839478,
+          "max_event_mass_error": 0.006911657423599171,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.037804523384484146,
+              "candidate": 0.9275805156473298,
+              "reference": 0.8897759922628456
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.053949215981273446,
+              "candidate": 0.23631897964490783,
+              "reference": 0.2902681956261813
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0012600638138746678,
+              "candidate": -1.4800182955864558,
+              "reference": -1.4787582317725811
+            },
+            "support_mass": {
+              "absolute_error": 0.00028701355570692755,
+              "candidate": 0.22763352365690248,
+              "reference": 0.2279205372126094
+            }
+          }
+        },
+        {
+          "id": "competition:df24317423e7fb2a05bbe403",
+          "max_event_log_probability_error": 0.13193007558584213,
+          "max_event_mass_error": 0.0009866123642719837,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.008025300543462288,
+              "candidate": 1.3599286927999052,
+              "reference": 1.3679539933433675
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.002029117399332092,
+              "candidate": 0.145710390636147,
+              "reference": 0.14773950803547908
+            },
+            "support_log_mass": {
+              "absolute_error": 0.006188147455592485,
+              "candidate": -1.519155474671916,
+              "reference": -1.5129673272163235
+            },
+            "support_mass": {
+              "absolute_error": 0.0013587646703113188,
+              "candidate": 0.2188966726974372,
+              "reference": 0.22025543736774852
+            }
+          }
+        },
+        {
+          "id": "competition:f8995621b15dc7ccff54038f",
+          "max_event_log_probability_error": 0.13063760846853256,
+          "max_event_mass_error": 0.00020025350081203427,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.009733934065112804,
+              "candidate": 0.6676954314551459,
+              "reference": 0.6579614973900331
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.001672742401299776,
+              "candidate": 0.8505059088675937,
+              "reference": 0.8521786512688935
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0025652876152209014,
+              "candidate": -1.4965030419667973,
+              "reference": -1.4990683295820182
+            },
+            "support_mass": {
+              "absolute_error": 0.0005736620560614358,
+              "candidate": 0.22391180284372153,
+              "reference": 0.2233381407876601
+            }
+          }
+        },
+        {
+          "id": "competition:fa7ece2d10fb4b98fee95a31",
+          "max_event_log_probability_error": 0.14455819129943848,
+          "max_event_mass_error": 0.0017944441259415828,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.008242779599434646,
+              "candidate": 1.1506022725609293,
+              "reference": 1.1423594929614946
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.001075333253087063,
+              "candidate": 0.26421181414300415,
+              "reference": 0.2652871473960912
+            },
+            "support_log_mass": {
+              "absolute_error": 0.014922637142368078,
+              "candidate": -1.7664368294303356,
+              "reference": -1.7515141922879676
+            },
+            "support_mass": {
+              "absolute_error": 0.0025700185042941415,
+              "candidate": 0.17094099689317996,
+              "reference": 0.1735110153974741
+            }
+          }
+        }
+      ],
+      "seconds": 0.8473547138273716
+    },
+    {
+      "attention": "eager",
+      "backend": "full32",
+      "reference": "full1",
+      "reference_seconds": 10.494010805152357,
+      "rows": [
+        {
+          "id": "competition:290e3a320ceb8ccc4a2b48ba",
+          "max_event_log_probability_error": 0.11995774507522583,
+          "max_event_mass_error": 0.0032133199901855196,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.018711143645242068,
+              "candidate": 1.350758157098981,
+              "reference": 1.3694693007442231
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0032143393467071735,
+              "candidate": 0.11874917758588172,
+              "reference": 0.11553483823917454
+            },
+            "support_log_mass": {
+              "absolute_error": 0.020048977658965406,
+              "candidate": -1.9447017895362357,
+              "reference": -1.9246528118772703
+            },
+            "support_mass": {
+              "absolute_error": 0.002896541996523061,
+              "candidate": 0.1430298699827987,
+              "reference": 0.14592641197932177
+            }
+          }
+        },
+        {
+          "id": "competition:2d55a0af8940d714bd567d78",
+          "max_event_log_probability_error": 0.22617219388484955,
+          "max_event_mass_error": 0.0002934304669071769,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.016121681712114422,
+              "candidate": 0.3649951061886958,
+              "reference": 0.3488734244765814
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.00480094070236925,
+              "candidate": 0.912721163543867,
+              "reference": 0.9175221042462363
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0019514465375640722,
+              "candidate": -1.679564915449215,
+              "reference": -1.681516361986779
+            },
+            "support_mass": {
+              "absolute_error": 0.0003635023313751373,
+              "candidate": 0.18645508211977493,
+              "reference": 0.1860915797883998
+            }
+          }
+        },
+        {
+          "id": "competition:49498aad151436a46e0fd6c7",
+          "max_event_log_probability_error": 0.2638567388057709,
+          "max_event_mass_error": 0.005039610392105119,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.027829860921535943,
+              "candidate": 1.3811955347288245,
+              "reference": 1.3533656738072886
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.014497799615769968,
+              "candidate": 0.05566108105572415,
+              "reference": 0.07015888067149412
+            },
+            "support_log_mass": {
+              "absolute_error": 0.09660676695080994,
+              "candidate": -1.7939118325377152,
+              "reference": -1.8905185994885252
+            },
+            "support_mass": {
+              "absolute_error": 0.01531484184211035,
+              "candidate": 0.166308325227213,
+              "reference": 0.15099348338510266
+            }
+          }
+        },
+        {
+          "id": "competition:5d83da55c50ef045bda1f955",
+          "max_event_log_probability_error": 0.12738262116909027,
+          "max_event_mass_error": 0.00026007857863537286,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.01362086384976191,
+              "candidate": 1.1239283888521518,
+              "reference": 1.1375492527019138
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0009916576102693142,
+              "candidate": 0.1353478198362068,
+              "reference": 0.1343561622259375
+            },
+            "support_log_mass": {
+              "absolute_error": 0.002485777128249822,
+              "candidate": -1.6440756868150541,
+              "reference": -1.6415899096868043
+            },
+            "support_mass": {
+              "absolute_error": 0.00048082725891018807,
+              "candidate": 0.19319104932643236,
+              "reference": 0.19367187658534255
+            }
+          }
+        },
+        {
+          "id": "competition:a082dab753ea37f8d0b79e9e",
+          "max_event_log_probability_error": 0.12041136622428894,
+          "max_event_mass_error": 0.0018777082341563667,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0004981245357119635,
+              "candidate": 0.902529650551469,
+              "reference": 0.9020315260157571
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0005455928956106249,
+              "candidate": 0.2891679076827631,
+              "reference": 0.28971350057837375
+            },
+            "support_log_mass": {
+              "absolute_error": 0.013870205155427584,
+              "candidate": -1.4790537488968778,
+              "reference": -1.4929239540523054
+            },
+            "support_mass": {
+              "absolute_error": 0.003138554017824563,
+              "candidate": 0.22785319274209642,
+              "reference": 0.22471463872427186
+            }
+          }
+        },
+        {
+          "id": "competition:df24317423e7fb2a05bbe403",
+          "max_event_log_probability_error": 0.07728933542966843,
+          "max_event_mass_error": 0.005712194860501271,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.01826399557113567,
+              "candidate": 1.3644524986795983,
+              "reference": 1.3461885031084626
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.045803206400610696,
+              "candidate": 0.14633497749581376,
+              "reference": 0.19213818389642445
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0026671479158477673,
+              "candidate": -1.5295512089866334,
+              "reference": -1.5268840610707857
+            },
+            "support_mass": {
+              "absolute_error": 0.0005785631171537631,
+              "candidate": 0.21663286838742402,
+              "reference": 0.21721143150457778
+            }
+          }
+        },
+        {
+          "id": "competition:f8995621b15dc7ccff54038f",
+          "max_event_log_probability_error": 0.19294793903827667,
+          "max_event_mass_error": 0.0009357268709338272,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.014338667878017408,
+              "candidate": 0.7158316550179168,
+              "reference": 0.7014929871398994
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.008629014042861205,
+              "candidate": 0.8300795000713984,
+              "reference": 0.8387085141142596
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0013104236600662844,
+              "candidate": -1.4972872024709378,
+              "reference": -1.4985976261310041
+            },
+            "support_mass": {
+              "absolute_error": 0.0002929973093272198,
+              "candidate": 0.223736288876075,
+              "reference": 0.22344329156674778
+            }
+          }
+        },
+        {
+          "id": "competition:fa7ece2d10fb4b98fee95a31",
+          "max_event_log_probability_error": 0.18855153024196625,
+          "max_event_mass_error": 0.0006648714964019725,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.014304246839850654,
+              "candidate": 1.1485616080596859,
+              "reference": 1.1342573612198352
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0031030900115953663,
+              "candidate": 0.31022967196062373,
+              "reference": 0.3133327619722191
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0007010309715511642,
+              "candidate": -1.7445888991155556,
+              "reference": -1.7438878681440044
+            },
+            "support_mass": {
+              "absolute_error": 0.00012252483018856952,
+              "candidate": 0.1747168004361068,
+              "reference": 0.17483932526629536
+            }
+          }
+        }
+      ],
+      "seconds": 7.06346151093021
+    },
+    {
+      "attention": "eager",
+      "backend": "cache1",
+      "reference": "full1",
+      "reference_seconds": 10.494010805152357,
+      "rows": [
+        {
+          "id": "competition:290e3a320ceb8ccc4a2b48ba",
+          "max_event_log_probability_error": 0.1288490742444992,
+          "max_event_mass_error": 0.00027541375508549626,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.002739248577200426,
+              "candidate": 1.3667300521670227,
+              "reference": 1.3694693007442231
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0015042982664353888,
+              "candidate": 0.11703913650560993,
+              "reference": 0.11553483823917454
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0034896686731018534,
+              "candidate": -1.9281424805503722,
+              "reference": -1.9246528118772703
+            },
+            "support_mass": {
+              "absolute_error": 0.000508347330706177,
+              "candidate": 0.1454180646486156,
+              "reference": 0.14592641197932177
+            }
+          }
+        },
+        {
+          "id": "competition:2d55a0af8940d714bd567d78",
+          "max_event_log_probability_error": 0.13596788048744202,
+          "max_event_mass_error": 4.367462796648204e-05,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.004810517287460403,
+              "candidate": 0.3536839417640418,
+              "reference": 0.3488734244765814
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.0006615079172567206,
+              "candidate": 0.9168605963289795,
+              "reference": 0.9175221042462363
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0009599785579246234,
+              "candidate": -1.6805563834288544,
+              "reference": -1.681516361986779
+            },
+            "support_mass": {
+              "absolute_error": 0.00017872970102167374,
+              "candidate": 0.18627030948942147,
+              "reference": 0.1860915797883998
+            }
+          }
+        },
+        {
+          "id": "competition:49498aad151436a46e0fd6c7",
+          "max_event_log_probability_error": 0.18387176096439362,
+          "max_event_mass_error": 0.0027939433049935514,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.01938024706066832,
+              "candidate": 1.3727459208679569,
+              "reference": 1.3533656738072886
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.01844146946294678,
+              "candidate": 0.05171741120854734,
+              "reference": 0.07015888067149412
+            },
+            "support_log_mass": {
+              "absolute_error": 0.004718058855339713,
+              "candidate": -1.895236658343865,
+              "reference": -1.8905185994885252
+            },
+            "support_mass": {
+              "absolute_error": 0.0007107182178065774,
+              "candidate": 0.15028276516729608,
+              "reference": 0.15099348338510266
+            }
+          }
+        },
+        {
+          "id": "competition:5d83da55c50ef045bda1f955",
+          "max_event_log_probability_error": 0.12555114924907684,
+          "max_event_mass_error": 0.0010853911143968165,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.002062622945171233,
+              "candidate": 1.139611875647085,
+              "reference": 1.1375492527019138
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.004716155978440828,
+              "candidate": 0.12964000624749666,
+              "reference": 0.1343561622259375
+            },
+            "support_log_mass": {
+              "absolute_error": 0.005941644142030134,
+              "candidate": -1.6475315538288344,
+              "reference": -1.6415899096868043
+            },
+            "support_mass": {
+              "absolute_error": 0.00114731751945657,
+              "candidate": 0.19252455906588598,
+              "reference": 0.19367187658534255
+            }
+          }
+        },
+        {
+          "id": "competition:a082dab753ea37f8d0b79e9e",
+          "max_event_log_probability_error": 0.19003033638000488,
+          "max_event_mass_error": 0.00024163414150341067,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0018443010282257477,
+              "candidate": 0.9038758270439828,
+              "reference": 0.9020315260157571
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.00014807816432488297,
+              "candidate": 0.28986157874269863,
+              "reference": 0.28971350057837375
+            },
+            "support_log_mass": {
+              "absolute_error": 0.001544840613921128,
+              "candidate": -1.4944687946662265,
+              "reference": -1.4929239540523054
+            },
+            "support_mass": {
+              "absolute_error": 0.000346880294073898,
+              "candidate": 0.22436775843019796,
+              "reference": 0.22471463872427186
+            }
+          }
+        },
+        {
+          "id": "competition:df24317423e7fb2a05bbe403",
+          "max_event_log_probability_error": 0.14351068437099457,
+          "max_event_mass_error": 0.006166061535979206,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.026528681367301132,
+              "candidate": 1.3727171844757637,
+              "reference": 1.3461885031084626
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.04860521804934109,
+              "candidate": 0.14353296584708336,
+              "reference": 0.19213818389642445
+            },
+            "support_log_mass": {
+              "absolute_error": 2.373019971635415e-06,
+              "candidate": -1.5268864340907573,
+              "reference": -1.5268840610707857
+            },
+            "support_mass": {
+              "absolute_error": 5.154464534362635e-07,
+              "candidate": 0.21721091605812434,
+              "reference": 0.21721143150457778
+            }
+          }
+        },
+        {
+          "id": "competition:f8995621b15dc7ccff54038f",
+          "max_event_log_probability_error": 0.13010361790657043,
+          "max_event_mass_error": 0.0009267698389516235,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.011784466005473004,
+              "candidate": 0.7132774531453724,
+              "reference": 0.7014929871398994
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.008055225938525479,
+              "candidate": 0.8306532881757341,
+              "reference": 0.8387085141142596
+            },
+            "support_log_mass": {
+              "absolute_error": 0.00023999856003520392,
+              "candidate": -1.498357627570969,
+              "reference": -1.4985976261310041
+            },
+            "support_mass": {
+              "absolute_error": 5.3632503829947886e-05,
+              "candidate": 0.22349692407057772,
+              "reference": 0.22344329156674778
+            }
+          }
+        },
+        {
+          "id": "competition:fa7ece2d10fb4b98fee95a31",
+          "max_event_log_probability_error": 0.19815731048583984,
+          "max_event_mass_error": 0.004942591548157266,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.022751985050229573,
+              "candidate": 1.1570093462700648,
+              "reference": 1.1342573612198352
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.04925331205439176,
+              "candidate": 0.26407944991782734,
+              "reference": 0.3133327619722191
+            },
+            "support_log_mass": {
+              "absolute_error": 0.005157965353072669,
+              "candidate": -1.749045833497077,
+              "reference": -1.7438878681440044
+            },
+            "support_mass": {
+              "absolute_error": 0.0008994934099348095,
+              "candidate": 0.17393983185636055,
+              "reference": 0.17483932526629536
+            }
+          }
+        }
+      ],
+      "seconds": 1.1066735070198774
+    },
+    {
+      "attention": "eager",
+      "backend": "cache4",
+      "reference": "full1",
+      "reference_seconds": 10.494010805152357,
+      "rows": [
+        {
+          "id": "competition:290e3a320ceb8ccc4a2b48ba",
+          "max_event_log_probability_error": 0.1773688793182373,
+          "max_event_mass_error": 0.003401286446684297,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0026249748659681327,
+              "candidate": 1.366844325878255,
+              "reference": 1.3694693007442231
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.045616680736771276,
+              "candidate": 0.06991815750240327,
+              "reference": 0.11553483823917454
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0011727299333288421,
+              "candidate": -1.9258255418105992,
+              "reference": -1.9246528118772703
+            },
+            "support_mass": {
+              "absolute_error": 0.00017103196463755244,
+              "candidate": 0.14575538001468422,
+              "reference": 0.14592641197932177
+            }
+          }
+        },
+        {
+          "id": "competition:2d55a0af8940d714bd567d78",
+          "max_event_log_probability_error": 0.12835054844617844,
+          "max_event_mass_error": 0.0005406292118960414,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.012881878772891209,
+              "candidate": 0.33599154570369016,
+              "reference": 0.3488734244765814
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.006077810603986489,
+              "candidate": 0.9235999148502227,
+              "reference": 0.9175221042462363
+            },
+            "support_log_mass": {
+              "absolute_error": 0.004531438473422744,
+              "candidate": -1.6860478004602018,
+              "reference": -1.681516361986779
+            },
+            "support_mass": {
+              "absolute_error": 0.0008413548307150409,
+              "candidate": 0.18525022495768476,
+              "reference": 0.1860915797883998
+            }
+          }
+        },
+        {
+          "id": "competition:49498aad151436a46e0fd6c7",
+          "max_event_log_probability_error": 0.1501789093017578,
+          "max_event_mass_error": 0.003397883583397078,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.01918880437744308,
+              "candidate": 1.3725544781847316,
+              "reference": 1.3533656738072886
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.009522311914354264,
+              "candidate": 0.07968119258584838,
+              "reference": 0.07015888067149412
+            },
+            "support_log_mass": {
+              "absolute_error": 0.024481393567771015,
+              "candidate": -1.9149999930562962,
+              "reference": -1.8905185994885252
+            },
+            "support_mass": {
+              "absolute_error": 0.0036516497758426747,
+              "candidate": 0.14734183360925998,
+              "reference": 0.15099348338510266
+            }
+          }
+        },
+        {
+          "id": "competition:5d83da55c50ef045bda1f955",
+          "max_event_log_probability_error": 0.13026083260774612,
+          "max_event_mass_error": 0.005722801188689855,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.00755676339675504,
+              "candidate": 1.1299924893051587,
+              "reference": 1.1375492527019138
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.05604645220439147,
+              "candidate": 0.07830971002154602,
+              "reference": 0.1343561622259375
+            },
+            "support_log_mass": {
+              "absolute_error": 0.00035364840690288446,
+              "candidate": -1.6419435580937072,
+              "reference": -1.6415899096868043
+            },
+            "support_mass": {
+              "absolute_error": 6.847964104461646e-05,
+              "candidate": 0.19360339694429793,
+              "reference": 0.19367187658534255
+            }
+          }
+        },
+        {
+          "id": "competition:a082dab753ea37f8d0b79e9e",
+          "max_event_log_probability_error": 0.11281817918643355,
+          "max_event_mass_error": 0.00185347666669336,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.004087383372528008,
+              "candidate": 0.8979441426432291,
+              "reference": 0.9020315260157571
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.000262242576840821,
+              "candidate": 0.28945125800153293,
+              "reference": 0.28971350057837375
+            },
+            "support_log_mass": {
+              "absolute_error": 0.01264531248467926,
+              "candidate": -1.4802786415676261,
+              "reference": -1.4929239540523054
+            },
+            "support_mass": {
+              "absolute_error": 0.0028596291734009904,
+              "candidate": 0.22757426789767285,
+              "reference": 0.22471463872427186
+            }
+          }
+        },
+        {
+          "id": "competition:df24317423e7fb2a05bbe403",
+          "max_event_log_probability_error": 0.12333409488201141,
+          "max_event_mass_error": 0.0059575197822474,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.023198658059091493,
+              "candidate": 1.369387161167554,
+              "reference": 1.3461885031084626
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.04720390313262868,
+              "candidate": 0.14493428076379578,
+              "reference": 0.19213818389642445
+            },
+            "support_log_mass": {
+              "absolute_error": 0.0002409017886781939,
+              "candidate": -1.5271249628594639,
+              "reference": -1.5268840610707857
+            },
+            "support_mass": {
+              "absolute_error": 5.232032008842258e-05,
+              "candidate": 0.21715911118448936,
+              "reference": 0.21721143150457778
+            }
+          }
+        },
+        {
+          "id": "competition:f8995621b15dc7ccff54038f",
+          "max_event_log_probability_error": 0.1700211614370346,
+          "max_event_mass_error": 0.00261704694712131,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.0013554469682083292,
+              "candidate": 0.7028484341081077,
+              "reference": 0.7014929871398994
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.006081943115847199,
+              "candidate": 0.8326265709984124,
+              "reference": 0.8387085141142596
+            },
+            "support_log_mass": {
+              "absolute_error": 0.015474066355606109,
+              "candidate": -1.483123559775398,
+              "reference": -1.4985976261310041
+            },
+            "support_mass": {
+              "absolute_error": 0.003484466222798993,
+              "candidate": 0.22692775778954677,
+              "reference": 0.22344329156674778
+            }
+          }
+        },
+        {
+          "id": "competition:fa7ece2d10fb4b98fee95a31",
+          "max_event_log_probability_error": 0.21864700317382812,
+          "max_event_mass_error": 0.004370917006676814,
+          "scalar_errors": {
+            "support_conditional_entropy_nats": {
+              "absolute_error": 0.024094091876683432,
+              "candidate": 1.1583514530965187,
+              "reference": 1.1342573612198352
+            },
+            "support_conditional_top_two_probability_margin": {
+              "absolute_error": 0.05009973425684988,
+              "candidate": 0.2632330277153692,
+              "reference": 0.3133327619722191
+            },
+            "support_log_mass": {
+              "absolute_error": 0.002359943314111268,
+              "candidate": -1.7415279248298932,
+              "reference": -1.7438878681440044
+            },
+            "support_mass": {
+              "absolute_error": 0.0004130981490900465,
+              "candidate": 0.1752524234153854,
+              "reference": 0.17483932526629536
+            }
+          }
+        }
+      ],
+      "seconds": 0.5349385151639581
+    }
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "source": "/work/jvl210002/migration/codecue/artifacts/binding/sources/41c45f6c82e603a948f409b0",
+  "status": "complete_diagnostic",
+  "target_outcomes_read": false
+}

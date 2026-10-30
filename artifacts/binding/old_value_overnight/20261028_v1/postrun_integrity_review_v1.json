@@ -1,0 +1,378 @@
+{
+  "arrays_opened": false,
+  "causal_qualification": false,
+  "checked_at": "2026-10-29T01:42:26.948856+00:00",
+  "checks": {
+    "frozen_snapshot": {
+      "config_files": 258,
+      "snapshot_id": "4206d21342e20115539c3b55",
+      "source_files": 215,
+      "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334"
+    },
+    "logging": {
+      "enabled": true,
+      "fresh_within_two_intervals": true,
+      "interval_minutes": 10,
+      "last_success_age_seconds": 1189.210277,
+      "last_success_utc": "2026-10-29T01:22:37.738579+00:00",
+      "last_tick_error": null,
+      "live_guards": [
+        "481744|binding-log-5f498587f4bd|PENDING|(Dependency)",
+        "481732|binding-log-5f498587f4bd|PENDING|(Dependency)",
+        "481730|binding-log-5f498587f4bd|RUNNING|c-01-01"
+      ]
+    },
+    "monitor": {
+      "checks": 3,
+      "intervals_seconds": [
+        607.2362868785858,
+        621.5344746112823
+      ],
+      "last_job": "481724",
+      "last_job_log_sha256": "106109618b537555fb974702b4d91604c021df69d5209c70783e13e12a334f41",
+      "last_job_status": "terminal_no_successor",
+      "terminal": true,
+      "tick_jobs": [
+        "481708",
+        "481709",
+        "481718"
+      ]
+    },
+    "publication": {
+      "input_pins": 30,
+      "job_id": "481706",
+      "log_sha256": "0f61acb1fd131253ffe93f770f293992c62230e552ec1843339f8fd92eacfd47",
+      "output_pins": 4,
+      "pipeline_helpers": 8,
+      "readiness_pins": 3,
+      "statuses": [
+        "published",
+        "byte_identical_reproduction"
+      ]
+    },
+    "scheduler": {
+      "completed_job_accounting": "481692|COMPLETED|0:0|00:11:21|2026-10-28T19:28:05|2026-10-28T19:39:26\n481693|COMPLETED|0:0|00:02:01|2026-10-28T19:28:32|2026-10-28T19:30:33\n481694|COMPLETED|0:0|00:01:47|2026-10-28T19:31:02|2026-10-28T19:32:49\n481704|COMPLETED|0:0|00:08:02|2026-10-28T19:43:59|2026-10-28T19:52:01\n481705|COMPLETED|0:0|00:10:24|2026-10-28T19:52:32|2026-10-28T20:02:56\n481706|COMPLETED|0:0|00:02:07|2026-10-28T20:02:56|2026-10-28T20:05:03\n481708|COMPLETED|0:0|00:02:12|2026-10-28T19:44:02|2026-10-28T19:46:14\n481709|COMPLETED|0:0|00:00:09|2026-10-28T19:56:11|2026-10-28T19:56:20\n481718|COMPLETED|0:0|00:00:08|2026-10-28T20:06:33|2026-10-28T20:06:41\n481724|COMPLETED|0:0|00:00:06|2026-10-28T20:16:41|2026-10-28T20:16:47\n",
+      "morning_independent": true,
+      "morning_job_id": "481707",
+      "morning_raw_job": "JobId=481707 JobName=oldvalue-morning\n   UserId=jvl210002(736106) GroupId=sn(215) MCS_label=N/A\n   Priority=28497 Nice=0 Account=tnguyen QOS=normal\n   JobState=PENDING Reason=BeginTime Dependency=(null)\n   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0\n   RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A\n   SubmitTime=2026-10-28T19:44:00 EligibleTime=2026-10-29T08:00:00\n   AccrueTime=Unknown\n   StartTime=2026-10-29T08:00:00 EndTime=2026-10-29T10:00:00 Deadline=N/A\n   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-28T19:44:00 Scheduler=Main\n   Partition=dev,normal AllocNode:Sid=c-06-04:3916612\n   ReqNodeList=(null) ExcNodeList=(null)\n   NodeList=\n   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:*\n   ReqTRES=cpu=2,mem=8G,node=1,billing=2\n   AllocTRES=(null)\n   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*\n   MinCPUsNode=2 MinMemoryNode=8G MinTmpDiskNode=0\n   Features=(null) DelayBoot=00:00:00\n   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)\n   Command=/work/jvl210002/migration/codecue/log/slurm/submit_20261029T004400221737Z_oldvalue-morning.sbatch\n   SubmitLine=sbatch --parsable /work/jvl210002/migration/codecue/log/slurm/submit_20261029T004400221737Z_oldvalue-morning.sbatch\n   WorkDir=/work/jvl210002/migration/codecue\n   StdErr=/work/jvl210002/migration/codecue/log/slurm/481707_oldvalue-morning.out\n   StdIn=/dev/null\n   StdOut=/work/jvl210002/migration/codecue/log/slurm/481707_oldvalue-morning.out\n   KillOnInvalidDependent=Yes\n   TresPerTask=cpu=2\n\n",
+      "morning_start_local": "2026-10-29T08:00:00-05:00"
+    },
+    "software_validation": {
+      "archive_source_files": 109,
+      "counts": {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "tests": 2280
+      },
+      "source_files": 109,
+      "status": "passed"
+    }
+  },
+  "evaluation_role": "discovery_old_value_postrun_integrity_v1",
+  "issues": [],
+  "models": {
+    "codellama34b": {
+      "attempts": 1,
+      "correct": 4739,
+      "native_model_inference": false,
+      "native_preflight_status": "passed",
+      "scientific_gate_status": "failed",
+      "scored_responses": 20160,
+      "status": "complete_audited",
+      "total_model_queries": 20168,
+      "valid": 10296,
+      "warmups": 8
+    },
+    "llama8b": {
+      "attempts": 1,
+      "correct": 12272,
+      "native_model_inference": false,
+      "native_preflight_status": "passed",
+      "scientific_gate_status": "failed",
+      "scored_responses": 20160,
+      "status": "complete_audited",
+      "total_model_queries": 20168,
+      "valid": 20160,
+      "warmups": 8
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "operational_status": "complete_audited",
+  "prepared_records_parsed": false,
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 62
+  },
+  "response_records_parsed": false,
+  "scientific_status": "gate_failed",
+  "source": {
+    "code": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55"
+  },
+  "source_records_parsed": false,
+  "status": "passed",
+  "total_original_model_queries": 40336,
+  "total_original_warmups": 16,
+  "total_scored_responses": 40320,
+  "verified_pins": [
+    {
+      "bytes": 5702,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/audit.json",
+      "sha256": "fa81fad77e849ddb0bd1e1ecd1a55960539084d06269ee7ad50cf6db39796fee"
+    },
+    {
+      "bytes": 58707,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/manifest.json",
+      "sha256": "803ec22ac7ddc53577d60eae4c5c642abddec12139cdcb7d892fd49b5b676fbb"
+    },
+    {
+      "bytes": 745,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/runtime.json",
+      "sha256": "769e6676ffbf29da80efc8d31524ec04b938c8b0519ae4562369e5b4194a2cf2"
+    },
+    {
+      "bytes": 4362,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/summary.json",
+      "sha256": "a29901a8d28dee75d75e6e37c1c1735547c20a94a81cd69eedd59433c22fd761"
+    },
+    {
+      "bytes": 1848693,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/review_v1.json",
+      "sha256": "2a39b863ae769e36462099bcbfb2ab80eb1df666cd6fb8e2c2ded78e79a2dae4"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/routing_attempts_v1.json",
+      "sha256": "5b7e3ae6e05f0144eb00cf295e010549d569895cb81be0a6665e227da2ef2c55"
+    },
+    {
+      "bytes": 1164,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/routing_completion_v1.json",
+      "sha256": "c4e16edba7f339c3c5d618eb71f1cac233d47f6f512fa4d3d836e166d7c03d40"
+    },
+    {
+      "bytes": 1372,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/routing_preflight_v1.json",
+      "sha256": "f215f8decee157ecdada9fbc002114167158b0b60ab6cf20a13b9b408d9e7aa8"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/tokenizer_preflight.json",
+      "sha256": "03d3cdd130ec6637beebf8c97439493844b78d740849022432a8128ec7cc5335"
+    },
+    {
+      "bytes": 2368,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "4dff2316cf25b2a68ef67896d123ae16b416111e42afd19263eee860be93a96e"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/execution_source_v1.json",
+      "sha256": "9c94f44d87c7990ff40df1fbec697adf9d7e7df42064cc649ceed34044eebee1"
+    },
+    {
+      "bytes": 219,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/jobs_v1.json",
+      "sha256": "b845345b19c2e28bac1f9ad8c49cbe6886f104db2b9490f48327d7022cec3705"
+    },
+    {
+      "bytes": 5696,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/audit.json",
+      "sha256": "b1f1826f27e1544bf4d66668272cd87874549b44d348f190c1ce97f12a810fbf"
+    },
+    {
+      "bytes": 58686,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/manifest.json",
+      "sha256": "6b4b4cd8f3d080858d26704f4d9d376f8fa9b1747c9ef0d2cba58948cd80d156"
+    },
+    {
+      "bytes": 740,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/runtime.json",
+      "sha256": "d2c6e7c70f6d3def1fe2339949bb654c3787dbe5e1c494952fd65bf0806c9b19"
+    },
+    {
+      "bytes": 4364,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/summary.json",
+      "sha256": "4cd23febe6ae0d2bb653862b481b3baa96d437658a5d9dbe2330c1086255974a"
+    },
+    {
+      "bytes": 1837849,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/review_v1.json",
+      "sha256": "62f1d9334c2695e92461bde2397173ef64f94efeeed626117f7b73ecaca67564"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/routing_attempts_v1.json",
+      "sha256": "406d74854c50a6f43e2a202f360fffcf394f2f3553e86c163360227b458e3967"
+    },
+    {
+      "bytes": 1154,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/routing_completion_v1.json",
+      "sha256": "0c70c8f231a6bf172e1a2113aa74fb0382afe0506c5c23f2c1e3e5e5438bb7db"
+    },
+    {
+      "bytes": 1362,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/routing_preflight_v1.json",
+      "sha256": "466844189bc769a6c72c052f071f9486cc873499f5412863bcf1258678bcfbdd"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/tokenizer_preflight.json",
+      "sha256": "9a727301c54cde32decfde6e49ecac4693488da353f6e73e0df7ec3d5ca8d762"
+    },
+    {
+      "bytes": 13622,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/software_validation_review_v1.json",
+      "sha256": "920fec808c78564435edfe37b5e553eb47b9a1e149a4a3ee3ce43d11e874adeb"
+    },
+    {
+      "bytes": 27039,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/sources.manifest.json",
+      "sha256": "df463929abb03688e9ba2ea82b29203f4c5c19419519575b0285c472905fd958"
+    },
+    {
+      "bytes": 988,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/configs/binding/old_value_overnight_20261028_v1/check.json",
+      "sha256": "56803a83f0ed0858564ccfd3dc9c2f07403ddc94e15b73a2afe1c2be76e61fec"
+    },
+    {
+      "bytes": 2889,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/configs/binding/old_value_overnight_20261028_v1/codellama34b.json",
+      "sha256": "c97b0a88b70ace575a8ffd2c6895e8741e0321a8630605313fa5fc35db34102f"
+    },
+    {
+      "bytes": 2865,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/configs/binding/old_value_overnight_20261028_v1/llama8b.json",
+      "sha256": "118573d02cef7041f51fd9d98490d176e7afe3547680a8cb750d5efaff0819cc"
+    },
+    {
+      "bytes": 58693,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/frozen_manifest.json",
+      "sha256": "dbba254b12a016928db3b7b2f778538a58fc706c26d2d1201beacec3658b9072"
+    },
+    {
+      "bytes": 2889,
+      "path": "configs/binding/old_value_overnight_20261028_v1/codellama34b.json",
+      "sha256": "c97b0a88b70ace575a8ffd2c6895e8741e0321a8630605313fa5fc35db34102f"
+    },
+    {
+      "bytes": 2865,
+      "path": "configs/binding/old_value_overnight_20261028_v1/llama8b.json",
+      "sha256": "118573d02cef7041f51fd9d98490d176e7afe3547680a8cb750d5efaff0819cc"
+    },
+    {
+      "bytes": 71965,
+      "path": "configs/binding/preparation/readiness_v24.json",
+      "sha256": "9d44a94aaf6c2ca9574dbbfb58fef3b5e44968368346fa3c889065f092cd630f"
+    },
+    {
+      "bytes": 4435347,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/comparison_v1.json",
+      "sha256": "358b40056ef2da9822b25aea80fe275acb86bf01d87f27eb1e558b92b151266d"
+    },
+    {
+      "bytes": 14961,
+      "path": "reports/binding/old_value_overnight_findings_v1.md",
+      "sha256": "e240923df85c6e1765202f52add48ad4647ca3d00756e2b2574cee8adc1fbb64"
+    },
+    {
+      "bytes": 358,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/completion_logging_review_v1.json",
+      "sha256": "a97c2f7d285bd5b2e13be371f210e9f958e47d34d14b59a187a608e8cd5c209b"
+    },
+    {
+      "bytes": 820,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/readiness_completion_review_v1.json",
+      "sha256": "84555cf2542c20a6bbbe3a38285ec3ea1fce9d3d7db76b67264bcce11b97661f"
+    },
+    {
+      "bytes": 82949,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/readiness_at_completion_v1.json",
+      "sha256": "1a2a898fc9de319469c96040283ee2434ae1b1888146fb2436de4d309a0cba2d"
+    },
+    {
+      "bytes": 8171,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/readiness_at_completion_v1.csv",
+      "sha256": "f9b0991d4fa605b31cd68fd9107d127abbcfe52946b398cf16a150c581697edd"
+    },
+    {
+      "bytes": 27448,
+      "path": "reports/binding/old_value_overnight_readiness_v1.md",
+      "sha256": "963e0a89879db7d81eda32097b31dcb2ba4695d22d040207a5edb0804f6f09cf"
+    },
+    {
+      "bytes": 3767,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/prepare_submission_v1.py",
+      "sha256": "c31cf5b20c8dbc41fc4b4f2b6dc7f7027c336031fa05f34130fca6c34d921bbf"
+    },
+    {
+      "bytes": 7544,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/queue_remaining_v1.py",
+      "sha256": "ff45447a2302be33d41cf3bcb876f9e91866e5b6d40208905915ffc535c8df23"
+    },
+    {
+      "bytes": 4049,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/run_validation_v1.py",
+      "sha256": "ed853a82cfb0e1e5ba9680b5892d46505bb93308bab1d45b0a602382af409754"
+    },
+    {
+      "bytes": 3123,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/stage_worker_v1.py",
+      "sha256": "2223896e9d5eda7d964720135423a86765c67a8cb6393c46df31a8103d2a8703"
+    },
+    {
+      "bytes": 49805,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/publish_overnight_v1.py",
+      "sha256": "5853d50cffcb8c26df61667ce15f65341d14ac54fba30e88707d4b8eab3a5add"
+    },
+    {
+      "bytes": 20826,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/watch_running_v1.py",
+      "sha256": "a26b6d257480f7e18ce4ac248ab449a7bc1aedb0ad517917dd18763392e72a58"
+    },
+    {
+      "bytes": 966,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/monitor_build_review_v1.json",
+      "sha256": "6ba4682ccfcc98636f440b386d64600768d1825f2efdd5ae297ae3df23b66a2d"
+    },
+    {
+      "bytes": 819,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/publisher_build_review_v1.json",
+      "sha256": "be0fd6c9bce51e32966f66ec461fb78a4078f2c9873195fbbd7c6865b3a3a6a4"
+    },
+    {
+      "bytes": 7172,
+      "path": "reports/binding/old_value_llama8b_v1.md",
+      "sha256": "88457fbe3516e297a3ef3c7befaa6ead31ea58a07a96f5e654e84f573c827707"
+    },
+    {
+      "bytes": 73412856,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/prepared_cases.jsonl",
+      "sha256": "9a767850538a133da4e24bb6560e0dcb75cc010c2683def717a524ecf916f5e7"
+    },
+    {
+      "bytes": 23310105,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/llama8b/checkpoint_suite/responses.jsonl",
+      "sha256": "ee48ef23d4e0108d3ce30f7ba38564b0383a1ffc81cdba3b98e68292b62b3181"
+    },
+    {
+      "bytes": 7184,
+      "path": "reports/binding/old_value_codellama34b_v1.md",
+      "sha256": "4bbcdf7f581cd1b63eb775e94556c1da499f63cf29445ec8cd6fd37c3fca59c5"
+    },
+    {
+      "bytes": 68012280,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/prepared_cases.jsonl",
+      "sha256": "24efef2bd58e1c34e404b3d7af32cdf4e9f9e67e5c03dfaec9860915cea8ec0b"
+    },
+    {
+      "bytes": 22848531,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/checkpoint_suite/responses.jsonl",
+      "sha256": "0888b3b61b08d22ea40aff9d5c7efb3307ed67f1eaa8a9f70f2203a521942376"
+    }
+  ]
+}

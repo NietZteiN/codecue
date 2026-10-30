@@ -1,0 +1,24 @@
+{
+  "device_name": "NVIDIA H100 80GB HBM3",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": 16384,
+    "max_num_seqs": 512,
+    "tensor_parallel_size": 1
+  },
+  "load_warmup_seconds": 286.9598884480074,
+  "preflight": {
+    "cases": 5038,
+    "config_hash": "fa81927556e9c75a64807099ca275494f503463747c250ab8c06a1ab7f694ce0",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "1891d18030edceda59dd50a43eb3e87c6d8607e33b687d38860a370c03948154",
+    "source_sha256": "a273e04719d6f76e33b0743ea83f53e14ca0ad2957885a14a220cbf0958e3826",
+    "status": "passed"
+  },
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1",
+    "vllm": "0.26.0+cu129"
+  }
+}

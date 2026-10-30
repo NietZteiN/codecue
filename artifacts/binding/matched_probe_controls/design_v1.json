@@ -1,0 +1,31 @@
+{
+  "alpha": 100.0,
+  "base_programs": 192,
+  "canonical_fits": 45,
+  "development_base_programs": 48,
+  "development_templates": 6,
+  "fixed_before_new_control_fit_results": true,
+  "generated_holdouts_opened": false,
+  "known_old_value_results": true,
+  "label_histograms_verified_on_real_capture_metadata": true,
+  "labels": "Joint current/saved pair shuffled within split/template; one mapping shared by every relative.",
+  "layers": [
+    8,
+    16,
+    24,
+    31
+  ],
+  "model_or_tokenizer_loads": 0,
+  "numeric_bases_per_template": 8,
+  "pre_query_future_query_labels_prohibited": true,
+  "queried_value_fits": 30,
+  "reference_model_sha256_pinned": true,
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "study": "posthoc_frequency_matched_grouped_control",
+  "train_base_programs": 144,
+  "train_templates": 18
+}

@@ -1,0 +1,28 @@
+{
+  "actual_capture_metadata_both_models_passed": true,
+  "actual_source_preflight_passed": true,
+  "evaluation_role": "discovery_diversity_build_v1",
+  "focused_tests": {
+    "capture": 27,
+    "new_readouts": 12,
+    "retained_original_readouts": 17,
+    "targets": 31
+  },
+  "generated_holdouts_opened": false,
+  "module_sha256": {
+    "src/codecue/binding/diversity_capture.py": "73b49bb31a3ef4ffd99499e4ad2055875d5d3616c019fbae26a5d582cc1f46d1",
+    "src/codecue/binding/diversity_readouts.py": "25794303d0e6fd8a0fbf66d475414d661fa2f27cf89a70883fc12723854bfa4a",
+    "src/codecue/binding/diversity_targets.py": "b6702730c8278982331a345d11c2aae9544bfa9a77c184c766d2653606b03035",
+    "src/codecue/binding/schedule_readouts.py": "cd97671300ec490b7f293948dd58efe8b727e251f1baac08641bc4028bd9cef0"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "old_default_protocol_summary_report_bytes_unchanged": true,
+  "peer_reviews": "Capture record/target compatibility, exact published recipe, private namespaces, headroom scaling and all source/readout counts reviewed; no blockers.",
+  "source": {
+    "code": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8"
+  },
+  "status": "passed"
+}

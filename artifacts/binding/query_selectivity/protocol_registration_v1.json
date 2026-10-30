@@ -1,0 +1,101 @@
+{
+  "config": {
+    "path": "configs/binding/query_selectivity/llama31_8b_v1.json",
+    "sha256": "7c3b506bb75e7eed05209ef9d79d6dd21c6885949a4dd0ddfbde4cc2636531fc"
+  },
+  "config_hash": "10df02fac48ef31eda8fa56352a90b2fe3fce9512f5a1287b6f1e07dfb6aa52e",
+  "development_structural_groups": 6,
+  "expected_factorizations": 45,
+  "expected_independent_equal_capacity_heads": 180,
+  "generated_holdouts_opened": false,
+  "local_date": "2026-10-27",
+  "mechanism_C_fitted": false,
+  "neutral_training_only": true,
+  "new_model_queries": 0,
+  "paired_queries": 4608,
+  "parameters_per_32_class_head": 131104,
+  "plan": {
+    "path": "reports/binding/query_selectivity_plan.md",
+    "sha256": "7ee441c073d1d269f7e69f47a44c3a07ee8968c594621298bc1c0449faa9d0d6"
+  },
+  "primary_reason": "The earlier queried-value readout was strong at block24pre_answer; choose thatneutraldevelopmentcontrastbeforeanynewnumericresults. Allotherlayers/sites/namingconditionsretainedassecondary.",
+  "recipe": {
+    "alpha": 100.0,
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 117
+    },
+    "capture_audit_sha256": "717f18e59741adac828fa075916114d51c18dbe3cee35fd1dcceed19acf9e6d1",
+    "capture_config": "configs/binding/competition/state_capture_v2.json",
+    "capture_config_sha256": "058f3de8993b8824bf686c4b7c8bb3afcbce6fda8a36c355d009ebf7cc542e0c",
+    "capture_manifest_sha256": "53795b277349616dcd98512894ef50d057920b0bb6db7aa6adfd8cbf991bd0e7",
+    "class_values": [
+      -16,
+      -15,
+      -14,
+      -13,
+      -12,
+      -11,
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "evaluation_role": "discovery_query_selectivity_v1",
+    "feature_dimensions": 4096,
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "primary": {
+      "backend": "hidden",
+      "condition": "neutral",
+      "layer": 24,
+      "site": "pre_answer",
+      "split": "development"
+    },
+    "report": "reports/binding/query_selectivity_v1.md",
+    "run_dir": "artifacts/binding/query_selectivity/llama31_8b_v1",
+    "score_tolerance": 1e-08,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "sites": [
+      "pre_query_state",
+      "after_query",
+      "pre_answer"
+    ]
+  },
+  "recorded_utc": "2026-10-27T20:56:46.288369+00:00",
+  "scope": "Adaptive descriptive discovery readouts on one checkpoint and previously consumed structures. The primary site was selected because earlier queried-value recovery was known, not from new results. Queried/unqueried labels have matched aggregate class marginals and identical per-head capacity, but their conditional task difficulty can differ. A gap describes query-dependent accessibility under this decoder; it does not identify tracking, reconstruction, owner coding, a binding register or natural causal use. Canonical current/saved reconstruction and query-role cells are descriptive. Both identical pre-query twins are retained: their analytic head objectives coincide and contain no information about the future query. Raw heads are not averaged or canonicalized to enforce agreement; floating-point argmax disagreements within the fixed 1e-8 score tolerance are reported as ties. Three seeds vary template weights and grouped shuffle controls, not independent experiments. Primary intervals resample six whole development components after averaging the fixed-seed paired correctness differences; they condition on saved fits without refitting or multiplicity correction. Float64 standardization/fitting differs from possible float32 rounding in older probe fits; new results are not claimed to replay those older fit scores exactly. The captured pre_answer site precedes the later formatting-space correction and is not the later digit boundary. Capture validation reads stored response/score metadata, but no response, correctness, row ID or query-role field becomes a readout feature. No model/tokenizer is loaded or new response generated.",
+  "source_rows": 9216,
+  "status": "declared_adaptive_discovery_query_selectivity",
+  "timezone": "America/Chicago",
+  "training_structural_groups": 18
+}

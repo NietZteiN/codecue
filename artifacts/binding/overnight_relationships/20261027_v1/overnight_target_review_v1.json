@@ -1,0 +1,1398 @@
+{
+  "created_utc": "2026-10-28T03:10:10.146392+00:00",
+  "dataset": "artifacts/binding/overnight_relationships/20261027_v1/union.jsonl",
+  "dataset_rows": 16038,
+  "dataset_sha256": "75eeef184fd0513acb2d28f269574d38db4b09dee35b555abe5f4e93582345c3",
+  "evaluation_role": "overnight_relationship_target_compatibility_review_v1",
+  "generated_holdouts_opened": false,
+  "model_or_tokenizer_loaded": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "npz_arrays_opened": false,
+  "panels": {
+    "computed_roots": {
+      "actual_query_output_ancestry_recomputed": true,
+      "controls": [
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "3d418820853f26c93e54f4dd1b178fbee814378afdd4399a7783ca887e23b748",
+          "lexical_query_ties": true,
+          "seed": 11,
+          "split_component_derangement": true
+        },
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "de5b978c3e250cf2278f903720eefcd2c8cdbaa58bc03f3a1f9ad96fc0c8eb26",
+          "lexical_query_ties": true,
+          "seed": 29,
+          "split_component_derangement": true
+        },
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "2122a615f19e724b8f03fba5258223e27fd263ce75d1137dfe4cbe464839a987",
+          "lexical_query_ties": true,
+          "seed": 47,
+          "split_component_derangement": true
+        }
+      ],
+      "fixed_primary_columns": [
+        5,
+        8,
+        11,
+        14,
+        16,
+        17,
+        20,
+        23,
+        25,
+        26,
+        29,
+        32,
+        35,
+        38,
+        40,
+        52,
+        65,
+        69
+      ],
+      "fixed_primary_train_support_qualified": true,
+      "primary_support": [
+        {
+          "class_counts": {
+            "0": 1962,
+            "1": 1926
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 5,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1992,
+            "1": 1896
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 8,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1944,
+            "1": 1944
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 11,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1926,
+            "1": 1962
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 14,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2592,
+            "1": 1296
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "equal",
+          "index": 16,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "equal/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 17,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1950,
+            "1": 1938
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 20,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1896,
+            "1": 1992
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 23,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2592,
+            "1": 1296
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "equal",
+          "index": 25,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "equal/v2/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2646,
+            "1": 1242
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 26,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1938,
+            "1": 1950
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 29,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1944,
+            "1": 1944
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 32,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1938,
+            "1": 1950
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 35,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1950,
+            "1": 1938
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 38,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "sum_equals_third",
+          "index": 40,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "sum_equals_third/v0/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "sum_equals_third",
+          "index": 52,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "sum_equals_third/v1/v0/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "difference_equals_third",
+          "index": 65,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "difference_equals_third/v2/v0/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "difference_equals_third",
+          "index": 69,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "difference_equals_third/v2/v1/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        }
+      ],
+      "query_slots": [
+        0
+      ],
+      "rows": 5832,
+      "source_forms": [
+        "computed"
+      ],
+      "split_components": {
+        "development": 9,
+        "train": 18
+      },
+      "split_rows": {
+        "development": 1944,
+        "train": 3888
+      },
+      "target_shapes": {
+        "3": [
+          5832,
+          364
+        ],
+        "7": [
+          5832,
+          364
+        ],
+        "8": [
+          5832,
+          364
+        ]
+      }
+    },
+    "numeric_replication": {
+      "actual_query_output_ancestry_recomputed": true,
+      "controls": [
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "244250d2741aa8cdc6c70e1c45732df626696e8242bca0df075feaef831c381d",
+          "lexical_query_ties": true,
+          "seed": 11,
+          "split_component_derangement": true
+        },
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "7984c091ee306e676edeb19f97f4cefeba0160d4ccc21b9463a7c17ee9637435",
+          "lexical_query_ties": true,
+          "seed": 29,
+          "split_component_derangement": true
+        },
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "e557aa460ac5d7caf686ec94c11127a913e58f7cae176d44fe769b41f073183b",
+          "lexical_query_ties": true,
+          "seed": 47,
+          "split_component_derangement": true
+        }
+      ],
+      "fixed_primary_columns": [
+        5,
+        8,
+        11,
+        14,
+        16,
+        17,
+        20,
+        23,
+        25,
+        26,
+        29,
+        32,
+        35,
+        38,
+        40,
+        52,
+        65,
+        69
+      ],
+      "fixed_primary_train_support_qualified": true,
+      "primary_support": [
+        {
+          "class_counts": {
+            "0": 1962,
+            "1": 1926
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 5,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1992,
+            "1": 1896
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 8,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1944,
+            "1": 1944
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 11,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1926,
+            "1": 1962
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 14,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2592,
+            "1": 1296
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "equal",
+          "index": 16,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "equal/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 17,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1950,
+            "1": 1938
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 20,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1896,
+            "1": 1992
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 23,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2592,
+            "1": 1296
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "equal",
+          "index": 25,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "equal/v2/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2646,
+            "1": 1242
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 26,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1938,
+            "1": 1950
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 29,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1944,
+            "1": 1944
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 32,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1938,
+            "1": 1950
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 35,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1950,
+            "1": 1938
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 38,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "sum_equals_third",
+          "index": 40,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "sum_equals_third/v0/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "sum_equals_third",
+          "index": 52,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "sum_equals_third/v1/v0/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "difference_equals_third",
+          "index": 65,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "difference_equals_third/v2/v0/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2538,
+            "1": 1350
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "difference_equals_third",
+          "index": 69,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "difference_equals_third/v2/v1/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        }
+      ],
+      "query_slots": [
+        0
+      ],
+      "rows": 5832,
+      "source_forms": [
+        "literal"
+      ],
+      "split_components": {
+        "development": 9,
+        "train": 18
+      },
+      "split_rows": {
+        "development": 1944,
+        "train": 3888
+      },
+      "target_shapes": {
+        "3": [
+          5832,
+          364
+        ],
+        "7": [
+          5832,
+          364
+        ],
+        "8": [
+          5832,
+          364
+        ]
+      }
+    },
+    "query_twins": {
+      "actual_query_output_ancestry_recomputed": true,
+      "controls": [
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "9cd2a2a601f6b5cdf9cb0a314e3daca62bcc7dd1ca14b1818be8e131bdb0fb35",
+          "lexical_query_ties": true,
+          "seed": 11,
+          "split_component_derangement": true
+        },
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "688352b4928e7ef996ad1c7f9791f8235d608d440bda5e96b5b80ad439276737",
+          "lexical_query_ties": true,
+          "seed": 29,
+          "split_component_derangement": true
+        },
+        {
+          "all364_target_and_mask_marginals_preserved_per_split": true,
+          "all_three_source_prefixes_consistent": true,
+          "donor_case_ids_sha256": "b73c79a0f5a24c913209dd45baede6ef32664095959fde2a513b59d7ceb8d58a",
+          "lexical_query_ties": true,
+          "seed": 47,
+          "split_component_derangement": true
+        }
+      ],
+      "fixed_primary_columns": [
+        5,
+        8,
+        11,
+        14,
+        16,
+        17,
+        20,
+        23,
+        25,
+        26,
+        29,
+        32,
+        35,
+        38,
+        40,
+        52,
+        65,
+        69
+      ],
+      "fixed_primary_train_support_qualified": true,
+      "primary_support": [
+        {
+          "class_counts": {
+            "0": 1704,
+            "1": 2184
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 5,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1848,
+            "1": 2040
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 8,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1848,
+            "1": 2040
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 11,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v0/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2184,
+            "1": 1704
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 14,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2592,
+            "1": 1296
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "equal",
+          "index": 16,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "equal/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2616,
+            "1": 1272
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 17,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 17,
+          "name": "less_than/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 17
+        },
+        {
+          "class_counts": {
+            "0": 2040,
+            "1": 1848
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 20,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v1/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2040,
+            "1": 1848
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 23,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2592,
+            "1": 1296
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "equal",
+          "index": 25,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "equal/v2/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2568,
+            "1": 1320
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 26,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2016,
+            "1": 1872
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 29,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v2/v3",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2040,
+            "1": 1848
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 32,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1848,
+            "1": 2040
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 35,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 1872,
+            "1": 2016
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "less_than",
+          "index": 38,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "less_than/v3/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2520,
+            "1": 1368
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "sum_equals_third",
+          "index": 40,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "sum_equals_third/v0/v1/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2520,
+            "1": 1368
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "sum_equals_third",
+          "index": 52,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "sum_equals_third/v1/v0/v2",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2520,
+            "1": 1368
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "difference_equals_third",
+          "index": 65,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "difference_equals_third/v2/v0/v1",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        },
+        {
+          "class_counts": {
+            "0": 2520,
+            "1": 1368
+          },
+          "constant": false,
+          "defined_rows": 3888,
+          "eligible_boolean": true,
+          "family": "difference_equals_third",
+          "index": 69,
+          "kind": "boolean",
+          "missing": false,
+          "mixed_groups": 18,
+          "name": "difference_equals_third/v2/v1/v0",
+          "negative_groups": 18,
+          "observed_classes": [
+            0,
+            1
+          ],
+          "positive_groups": 18
+        }
+      ],
+      "query_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rows": 5832,
+      "source_forms": [
+        "literal"
+      ],
+      "split_components": {
+        "development": 9,
+        "train": 18
+      },
+      "split_rows": {
+        "development": 1944,
+        "train": 3888
+      },
+      "target_shapes": {
+        "3": [
+          5832,
+          364
+        ],
+        "7": [
+          5832,
+          364
+        ],
+        "8": [
+          5832,
+          364
+        ]
+      }
+    }
+  },
+  "prefix_validation_scope": "Exact actual surface source-line prefixes after statements3/7 and complete query-visible source; native token/geometry preflight remains a separate sbatch stage.",
+  "source_manifest_sha256": "600f942cdfdaff36f3ab8bbc4c4901f5f1029abbd35b6f5cc4550711fdd482d2",
+  "status": "passed",
+  "wall_seconds": 126.43148989416659
+}

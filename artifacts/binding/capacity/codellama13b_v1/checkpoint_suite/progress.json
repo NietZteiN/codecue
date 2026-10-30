@@ -1,0 +1,118 @@
+{
+  "cells": [
+    {
+      "correct": 340,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_direct",
+      "valid": 786
+    },
+    {
+      "correct": 335,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_cot",
+      "valid": 748
+    },
+    {
+      "correct": 86,
+      "n": 250,
+      "section": "bbh",
+      "task": "bbh_tracking_3",
+      "valid": 248
+    },
+    {
+      "correct": 71,
+      "n": 250,
+      "section": "bbh",
+      "task": "bbh_tracking_5",
+      "valid": 250
+    },
+    {
+      "correct": 52,
+      "n": 250,
+      "section": "bbh",
+      "task": "bbh_tracking_7",
+      "valid": 241
+    },
+    {
+      "correct": 34,
+      "n": 192,
+      "section": "arithmetic_forms",
+      "task": "print_direct_v3",
+      "valid": 191
+    },
+    {
+      "correct": 115,
+      "n": 192,
+      "section": "arithmetic_forms",
+      "task": "print_trace_long_v1",
+      "valid": 179
+    },
+    {
+      "correct": 171,
+      "n": 384,
+      "section": "arithmetic_free",
+      "task": "print_direct_v3",
+      "valid": 384
+    },
+    {
+      "correct": 313,
+      "n": 384,
+      "section": "arithmetic_free",
+      "task": "print_trace_long_v1",
+      "valid": 324
+    },
+    {
+      "correct": 339,
+      "n": 768,
+      "section": "counterbalanced",
+      "task": "print_direct_v3",
+      "valid": 768
+    },
+    {
+      "correct": 622,
+      "n": 768,
+      "section": "counterbalanced",
+      "task": "print_trace_long_v1",
+      "valid": 637
+    }
+  ],
+  "complete": true,
+  "evaluated": 5038,
+  "generated_holdouts_opened": false,
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "planned": 5038,
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 30.12810361199081,
+      "output_tokens": 95234,
+      "requests_per_second": 33.98819962874975
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 69.953156335745,
+      "output_tokens": 249953,
+      "requests_per_second": 14.638367353793749
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 53.397789772134274,
+      "output_tokens": 150809,
+      "requests_per_second": 19.17682369194944
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 16.290059718303382,
+      "output_tokens": 84983,
+      "requests_per_second": 62.86042026288226
+    },
+    {
+      "cases": 942,
+      "generation_seconds": 27.434633343014866,
+      "output_tokens": 163041,
+      "requests_per_second": 34.336161457752546
+    }
+  ]
+}

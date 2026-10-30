@@ -1,0 +1,129 @@
+{
+  "cases": 1944,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000000.npz",
+      "rows": 128,
+      "sha256": "84e1b7e27b60389ff5852268544ab841380bb3cbf8f76aec6caee7b1ec8a996a"
+    },
+    {
+      "first": 128,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000128.npz",
+      "rows": 128,
+      "sha256": "3b6dea9af6d9a5b30ee8a6611f9547a0573ca864d6e5490d3661483e9c7d5a08"
+    },
+    {
+      "first": 256,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000256.npz",
+      "rows": 128,
+      "sha256": "f18b1c5e97ab92d9a1c8b3c39a22f542b4c0794fffbe9e7e163c63acb4bdb982"
+    },
+    {
+      "first": 384,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000384.npz",
+      "rows": 128,
+      "sha256": "6d2a4d0ed4a9297af70956b95ec0ef56a1303c04b15c3d44907b43470e81a07b"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000512.npz",
+      "rows": 128,
+      "sha256": "094407a4b9b1be30989087409123e9e3dff56c16a5145a2a0b47e0497aad1300"
+    },
+    {
+      "first": 640,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000640.npz",
+      "rows": 128,
+      "sha256": "c7a60daf3225974219cd701cafa43a8b6766c6e4439cb0aea633b1b27b83caf8"
+    },
+    {
+      "first": 768,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000768.npz",
+      "rows": 128,
+      "sha256": "3f57be0934083f0550b91283bb3cdd7b78de41f69579f8f9abd6c9782b644760"
+    },
+    {
+      "first": 896,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000896.npz",
+      "rows": 128,
+      "sha256": "a68f6c8d821c3b288f4bdae90df38db44c092e64b1ee96854e022c0a244f2d20"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001024.npz",
+      "rows": 128,
+      "sha256": "d2044f5af0a1f161a851c601775771d80a3a48f90c092e158faf069dfd983b37"
+    },
+    {
+      "first": 1152,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001152.npz",
+      "rows": 128,
+      "sha256": "684d4bb6302630a8a5e7dcde8fa2a8ff64a33ea4c8d30b2a323053a641ce0ec9"
+    },
+    {
+      "first": 1280,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001280.npz",
+      "rows": 128,
+      "sha256": "9d8192070e1d4d493e1db30b566fa5afdddec18cc19bf5de24d1bdf7aecd8192"
+    },
+    {
+      "first": 1408,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001408.npz",
+      "rows": 128,
+      "sha256": "6ee932e692344415ac919a024b0d8e238cfd7e372891908ffa20807e820fca03"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001536.npz",
+      "rows": 128,
+      "sha256": "2624a7d8ba16f126184176f225b1c84397829616d5d1385b84b55e6a2d9c6632"
+    },
+    {
+      "first": 1664,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001664.npz",
+      "rows": 128,
+      "sha256": "19f13b00272a002536311681eaaf17f43ee0c6dc1acd75f0ab25624ce837daf3"
+    },
+    {
+      "first": 1792,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001792.npz",
+      "rows": 128,
+      "sha256": "6e099ab9c1fb2bd9ab261def9f6488609a61146c7f0d28c9e25dfd579c4b3967"
+    },
+    {
+      "first": 1920,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001920.npz",
+      "rows": 24,
+      "sha256": "eb96efd62eeb6b96219db8186e78890ee3957cb5d166b038b8ff4bdae0d99c7b"
+    }
+  ],
+  "config_hash": "06f7b2853cdfab1119f7d72bf09f43b7042b1d8bd0aaee788b956b86f644883c",
+  "different_padding_prefix_comparisons": 0,
+  "different_padding_prefix_max_abs_diff": 0.0,
+  "evaluation_role": "discovery_relationship_capture_v1",
+  "feature_shape": [
+    1944,
+    9,
+    4,
+    4096
+  ],
+  "finite_float32_features": true,
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "new_model_queries": 0,
+  "prefix_atol": 1e-05,
+  "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+  "prefix_comparisons": 4980,
+  "prefix_max_abs_diff": 0.0,
+  "source": {
+    "frozen_manifest_sha256": "aa41ec6b4ae6b55655fc6d3b4ae5b22ce11a1ec4fce1d777882d85dc71a249fa",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0",
+    "source_sha256": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5"
+  },
+  "source_model_prefill_cases": 1944,
+  "source_prefill_batch_calls": 61,
+  "status": "passed"
+}

@@ -1,0 +1,36 @@
+{
+  "batches": {
+    "codellama34b": 128,
+    "llama8b": 256
+  },
+  "dependency_order": "Both CPU preparations first, then full regression; captures require their preparation; readouts require capture plus regression. CPU workers audit captures before fitting and audit parameters/metrics afterward.",
+  "eligibility": "8B short BF16 prefills fit 24GiB A30 or larger under scaled actual-token headroom; 34B needs >=72GiB and is eligible on H100/H200. H200 is included to use available capacity. Readout CPU jobs can use dev or normal,16threads/32G; dev has actual2h maximum and partial banks are resumable.",
+  "evaluation_role": "discovery_diversity_submission_v1",
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "codellama34b_capture": "481414",
+    "codellama34b_prepare": "481410",
+    "codellama34b_readouts": "481415",
+    "llama8b_capture": "481412",
+    "llama8b_prepare": "481409",
+    "llama8b_readouts": "481413",
+    "regression": "481411"
+  },
+  "new_fits_at_submission": 0,
+  "new_model_queries_at_submission": 0,
+  "no_application_compute_cap": true,
+  "planned_joint_fit_banks": 90,
+  "preserve_all_other_jobs": true,
+  "reference_batches": {
+    "codellama34b": 64,
+    "llama8b": 128
+  },
+  "scientific_prefills_planned": 11520,
+  "source": {
+    "code": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8"
+  },
+  "status": "submitted",
+  "unrelated_jobs_cancelled": []
+}

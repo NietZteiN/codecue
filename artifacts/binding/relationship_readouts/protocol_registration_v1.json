@@ -1,0 +1,187 @@
+{
+  "alpha": 100,
+  "capture_config": {
+    "path": "configs/binding/relationships/capture_v1.json",
+    "sha256": "06c4623cc9c9bde62d1dd96b91a0a49c20781c2162a303dee9c66c4253936236"
+  },
+  "eligibility_minimum_training_groups_each_class": 12,
+  "eligible_primary_boolean_cells": [
+    {
+      "ordered_slots": [
+        "v2",
+        "v0",
+        "v1"
+      ],
+      "target": "difference_equals_third"
+    },
+    {
+      "ordered_slots": [
+        "v2",
+        "v1",
+        "v0"
+      ],
+      "target": "difference_equals_third"
+    },
+    {
+      "ordered_slots": [
+        "v1",
+        "v2"
+      ],
+      "target": "equal"
+    },
+    {
+      "ordered_slots": [
+        "v2",
+        "v1"
+      ],
+      "target": "equal"
+    },
+    {
+      "ordered_slots": [
+        "v0",
+        "v1"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v0",
+        "v2"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v0",
+        "v3"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v1",
+        "v0"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v1",
+        "v2"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v1",
+        "v3"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v2",
+        "v0"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v2",
+        "v1"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v2",
+        "v3"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v3",
+        "v0"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v3",
+        "v1"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v3",
+        "v2"
+      ],
+      "target": "less_than"
+    },
+    {
+      "ordered_slots": [
+        "v0",
+        "v1",
+        "v2"
+      ],
+      "target": "sum_equals_third"
+    },
+    {
+      "ordered_slots": [
+        "v1",
+        "v0",
+        "v2"
+      ],
+      "target": "sum_equals_third"
+    }
+  ],
+  "eligible_primary_cell_counts": {
+    "difference_equals_third": 2,
+    "equal": 2,
+    "less_than": 12,
+    "sum_equals_third": 2
+  },
+  "generated_holdouts_opened": false,
+  "layers": [
+    8,
+    16,
+    24,
+    31
+  ],
+  "mechanism_C_fitted": false,
+  "model_prefill_cases_planned": 1944,
+  "new_response_generations": 0,
+  "plan": {
+    "path": "reports/binding/relationship_readout_plan_v1.md",
+    "sha256": "49424e684c65e35d8290e961f2bd2d33b81969a837d7c8a8be39e881c84a32ee"
+  },
+  "primary_algebraic": {
+    "comparator": "relations_derived_from_categorical_value_argmax",
+    "layer": 24,
+    "metric": "four_family_macro_balanced_accuracy",
+    "site": 3
+  },
+  "primary_structural": {
+    "layer": 24,
+    "metric": "whole_copy_parent_graph_accuracy",
+    "site": 7
+  },
+  "recorded_utc": "2026-10-27T22:40:34.586950+00:00",
+  "sites": [
+    3,
+    7,
+    8
+  ],
+  "status": "declared_adaptive_relationship_readouts",
+  "training_eligibility_source": {
+    "path": "artifacts/binding/relationships/algebraic_target_audit_review_v1.json",
+    "sha256": "577a1cb52ca32d50f7eeedc890fff1aa77d1b5c4cba3661e380688a4ad9b1668"
+  },
+  "weighting_seeds": [
+    11,
+    29,
+    47
+  ]
+}

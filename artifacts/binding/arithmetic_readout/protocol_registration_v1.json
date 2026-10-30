@@ -1,0 +1,22 @@
+{
+  "configs": {
+    "configs/binding/arithmetic_readout/codellama34b_v1.json": "8b97da878f75c8957e8d81258633a0e108f99e48a023cf9243fda870f52e179c",
+    "configs/binding/arithmetic_readout/comparison_v1.json": "edadfecd5afcde9323ec2e412453a5f3fe0fbf3e087bfe0987c2dcc57448f672",
+    "configs/binding/arithmetic_readout/generation_v1.json": "b0f44ab8123074dadd94bcb324061fa3c5c861cdb533d92f0cb17736298fb609",
+    "configs/binding/arithmetic_readout/llama31_8b_v1.json": "08523c1cb9c30f2129466dea1f83ebe6411e80dce565a1bd0f780b26ae95d7f8"
+  },
+  "dataset_manifest_sha256": "82d8bb1e0d9a9481cc1b9ec8e5712f65da01594f07050baa74f8f890eb48e860",
+  "dataset_sha256": "67e28feb30f8dea8f57cc0c05cb25d865cf9ef4fc31f64dadc837914388ac1fb",
+  "expected_predictions_per_model": 6144,
+  "expected_total_predictions": 12288,
+  "generated_holdouts_opened": false,
+  "plan": "reports/binding/arithmetic_readout_plan.md",
+  "plan_sha256": "2716672efedc352d0858afb8d7e80e44f35b2919b356f56c05480361601d1a37",
+  "registered_utc": "2026-10-27T00:31:29.915463+00:00",
+  "source": {
+    "code": "2a90a06179eae8f5dfffb4de4c07b047787c5ebe242a8c109f0efcb60000d878",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3ab827997cdd2d6f41a25cf9",
+    "snapshot_id": "3ab827997cdd2d6f41a25cf9"
+  },
+  "status": "frozen_before_model_responses"
+}

@@ -1,0 +1,24 @@
+{
+  "attention_backend": "sdpa",
+  "batch_size": 32,
+  "dataset": "artifacts/binding/competition/discovery_v2.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "execution_backend": "Transformers BF16 exact saved prompt prefill distributions; no generation",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "preflight_result": "artifacts/binding/preparation/confidence/llama31_8b_full_v1/preparation_review.json",
+  "prepared_cases": "artifacts/binding/preparation/confidence/llama31_8b_full_v1/prepared_cases.jsonl",
+  "protocol": "short_answer_chat_v1",
+  "run_dir": "artifacts/binding/preparation/confidence/llama31_8b_full_v1",
+  "selection_seed": 117,
+  "source_config": "configs/binding/competition/llama31_8b_v1.json",
+  "source_config_sha256": "3b542835908d782ca23f99a409312e2ab5c64c621c744a3804eb13039e1e5b36",
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

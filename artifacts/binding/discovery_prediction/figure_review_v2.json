@@ -1,0 +1,56 @@
+{
+  "analysis_role": "descriptive_discovery_oof_probability_score_figure",
+  "comparison": "/work/jvl210002/migration/codecue/artifacts/binding/discovery_prediction/comparison_v1.json",
+  "comparison_data_unchanged": true,
+  "comparison_sha256": "bc857df6fb1350bff6bbbb749fbc91670046783e8f8f7df4999e282fdf8dace1",
+  "complete": true,
+  "evaluation": "fixed mean-probability OOF ensemble",
+  "generated_holdouts_opened": false,
+  "layout_revision": 2,
+  "limitation": "Previously consumed discovery data; no final-test claim. Partition seeds are not independent replications.",
+  "matplotlib_version": "3.11.2",
+  "mechanism_C_fitted": false,
+  "metrics": [
+    "brier_score",
+    "log_loss"
+  ],
+  "models": [
+    "llama31_8b",
+    "codellama34b"
+  ],
+  "oracle_scored_tier": "A_neutral_scored additionally requires reference gold; raw tiers do not",
+  "outputs": {
+    "png": {
+      "bytes": 217864,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/discovery_prediction_results_v2.png",
+      "sha256": "faac2262406f34e899c1b4fd8d5ac87b5d7ab70111f3ea1eab1605477f0c603e"
+    },
+    "svg": {
+      "bytes": 30252,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/discovery_prediction_results_v2.svg",
+      "sha256": "8909109f0b9b570f0b0f2af5244400440082a5b6dd5bc6671492379dd575a449"
+    }
+  },
+  "plot_source": "/work/jvl210002/migration/codecue/artifacts/binding/discovery_prediction/plot_results_v2.py",
+  "plot_source_sha256": "f16201b899a005948de1a518d305add792dc4d123d8ee0b1431c24212e65fcbe",
+  "predictors": [
+    "prior",
+    "A_input",
+    "A_neutral_raw",
+    "A_neutral_scored"
+  ],
+  "previous_figure_review_sha256": "eeb97bbb5a7cf48ef5fb4710e497125c461fa6650967e1b34da8e64b3282e272",
+  "reference_query_budget_per_target": 1,
+  "review_checksums": {
+    "artifacts/binding/discovery_prediction/codellama34b_v1/review_v1.json": "bed63d22d89c12e22ce5461926027bc3be4e5d32b237f36b62aeab332668bde7",
+    "artifacts/binding/discovery_prediction/llama31_8b_v1/review_v1.json": "3d0ea0f04f86b57e113ec97d12616b0cf2536fd79cf84a88a27dda6fd213d729"
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "status": "passed",
+  "templates": 24,
+  "uncertainty_whiskers": false
+}

@@ -1,0 +1,307 @@
+{
+  "cells": [
+    {
+      "correct": 2229,
+      "n": 38016,
+      "section": "computed_retention_frontiers",
+      "task": "print_direct_v3",
+      "valid": 38000
+    }
+  ],
+  "complete": true,
+  "evaluated": 38016,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-2c1e8973-af86-0260-5b9c-6b01a9dbfa85",
+    "mean_gpu_utilization_percent": 98.00648648648648,
+    "mean_power_watts": 582.9310918918919,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 139613.0,
+    "samples": 925,
+    "selector_verified": true
+  },
+  "identity_hash": "9958d7ff60bf01b7df5aaaa4ff210c5c3a28f2d224e756cd981703b34cfa70a8",
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "planned": 38016,
+  "preflight": {
+    "cases": 38016,
+    "config_hash": "b6d0278bd4dee4e3feec6a3021faa60c87cec662492f19017061c6953bed7996",
+    "generated_holdouts_opened": false,
+    "live_load_layout": {
+      "naming_groups": 12288,
+      "note": "Neutral naming may have a different token length. Noise versus clean length intentionally differs; comparisons share clean anchors.",
+      "schedule_groups": 9216,
+      "status": "passed",
+      "update_groups": 18432
+    },
+    "model_inference": false,
+    "prepared_cases_sha256": "e5616c69050667b9889b53916651f56aad4aa1ab11e9d0387c73764d28dd4e4d",
+    "source_sha256": "651962af82b8cfb29c18205271045055585d0caf4119cd7f27da37e2c7a40d6b",
+    "status": "passed"
+  },
+  "revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "runtime": {
+    "device_name": "NVIDIA H200 NVL",
+    "engine": {
+      "gpu_memory_utilization": 0.95,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 512,
+      "tensor_parallel_size": 1
+    },
+    "load_warmup_seconds": 192.51259028585628,
+    "preflight": {
+      "cases": 38016,
+      "config_hash": "b6d0278bd4dee4e3feec6a3021faa60c87cec662492f19017061c6953bed7996",
+      "generated_holdouts_opened": false,
+      "live_load_layout": {
+        "naming_groups": 12288,
+        "note": "Neutral naming may have a different token length. Noise versus clean length intentionally differs; comparisons share clean anchors.",
+        "schedule_groups": 9216,
+        "status": "passed",
+        "update_groups": 18432
+      },
+      "model_inference": false,
+      "prepared_cases_sha256": "e5616c69050667b9889b53916651f56aad4aa1ab11e9d0387c73764d28dd4e4d",
+      "source_sha256": "651962af82b8cfb29c18205271045055585d0caf4119cd7f27da37e2c7a40d6b",
+      "status": "passed"
+    },
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    }
+  },
+  "status": "passed",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 13.477043082006276,
+      "output_tokens": 4160,
+      "requests_per_second": 75.98105858748661
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.426956698764116,
+      "output_tokens": 4238,
+      "requests_per_second": 76.26448963630412
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.650509502273053,
+      "output_tokens": 4207,
+      "requests_per_second": 75.01551497616157
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.715088177006692,
+      "output_tokens": 4198,
+      "requests_per_second": 74.66229795858938
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.570333014242351,
+      "output_tokens": 4138,
+      "requests_per_second": 75.45872300446057
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.608332516159862,
+      "output_tokens": 4152,
+      "requests_per_second": 75.2480143165228
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.74063571728766,
+      "output_tokens": 4141,
+      "requests_per_second": 74.52348065029214
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.650982823222876,
+      "output_tokens": 4305,
+      "requests_per_second": 75.01291396088965
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.639232006389648,
+      "output_tokens": 4160,
+      "requests_per_second": 75.07754098766566
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.665292531717569,
+      "output_tokens": 4172,
+      "requests_per_second": 74.93436365326716
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.571731567848474,
+      "output_tokens": 4149,
+      "requests_per_second": 75.45094705718046
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.7340845502913,
+      "output_tokens": 4110,
+      "requests_per_second": 74.55902839758483
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.753379990812391,
+      "output_tokens": 4167,
+      "requests_per_second": 74.45442507107767
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.549583747051656,
+      "output_tokens": 4171,
+      "requests_per_second": 75.57427734433679
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.725647520273924,
+      "output_tokens": 4108,
+      "requests_per_second": 74.60485915054039
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.72571903001517,
+      "output_tokens": 4116,
+      "requests_per_second": 74.6044704660451
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.599651720374823,
+      "output_tokens": 4174,
+      "requests_per_second": 75.29604588813524
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.658874331973493,
+      "output_tokens": 4133,
+      "requests_per_second": 74.96957473303351
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.702268571127206,
+      "output_tokens": 4219,
+      "requests_per_second": 74.73215071537322
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.705606722272933,
+      "output_tokens": 4140,
+      "requests_per_second": 74.71394887873889
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.67064129607752,
+      "output_tokens": 4119,
+      "requests_per_second": 74.90504489308879
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.755255499854684,
+      "output_tokens": 4153,
+      "requests_per_second": 74.44427331871938
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.639362014830112,
+      "output_tokens": 4108,
+      "requests_per_second": 75.07682535932416
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.63501836033538,
+      "output_tokens": 4120,
+      "requests_per_second": 75.10074229007586
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.697591192089021,
+      "output_tokens": 4211,
+      "requests_per_second": 74.75766984427206
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.742753595113754,
+      "output_tokens": 4123,
+      "requests_per_second": 74.51199593392141
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.70044334512204,
+      "output_tokens": 4149,
+      "requests_per_second": 74.74210682127955
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.736439494416118,
+      "output_tokens": 4201,
+      "requests_per_second": 74.5462461663561
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.761626231018454,
+      "output_tokens": 4159,
+      "requests_per_second": 74.40981049840772
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.588340492453426,
+      "output_tokens": 4218,
+      "requests_per_second": 75.35872394194863
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.771162195131183,
+      "output_tokens": 4168,
+      "requests_per_second": 74.35828476132805
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.683615795336664,
+      "output_tokens": 4129,
+      "requests_per_second": 74.83402160041473
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.623937203083187,
+      "output_tokens": 4143,
+      "requests_per_second": 75.16182618400957
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.734174930956215,
+      "output_tokens": 4134,
+      "requests_per_second": 74.55853774600976
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.645494061056525,
+      "output_tokens": 4141,
+      "requests_per_second": 75.04308714789877
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 13.600996709894389,
+      "output_tokens": 4127,
+      "requests_per_second": 75.28859993437578
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 3.9170050220564008,
+      "output_tokens": 4498,
+      "requests_per_second": 261.4242244352311
+    },
+    {
+      "cases": 128,
+      "generation_seconds": 0.5427284268662333,
+      "output_tokens": 570,
+      "requests_per_second": 235.8453946093895
+    }
+  ]
+}

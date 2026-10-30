@@ -1,0 +1,87 @@
+{
+  "full_prepared_prompts": 12288,
+  "generated_holdouts_opened": false,
+  "generated_tokens": 0,
+  "models": {
+    "codellama34b": {
+      "full": {
+        "boundary_suffixes": {
+          " [/INST] Output:\n": 6144
+        },
+        "case_ids_sha256": "bb3bc8022b5aab97dc89850d5030818e031a6aa3baa5f16dca51d70ada1cb132",
+        "cases": 6144,
+        "conditions": {
+          "informative": 3072,
+          "misleading": 3072
+        },
+        "original_splits": {
+          "development": 1536,
+          "train": 4608
+        },
+        "prepared_cases_sha256": "6345cc134028b21325a6857c4abdb723b050c020c72e141c8c8ef1162176201b",
+        "review": "artifacts/binding/stress_measurement/codellama34b_full_v1/tokenizer_preflight.json",
+        "review_sha256": "47959e344d5ce2fbb0b72f3d0e01443810b2de9557ec31af2dd63ef15e79047a"
+      },
+      "smoke": {
+        "boundary_suffixes": {
+          " [/INST] Output:\n": 128
+        },
+        "case_ids_sha256": "587df3d97de960f718b6ffeae2ad56bb1b4ff1fc14e2f49fbf666229ff4fa68f",
+        "cases": 128,
+        "conditions": {
+          "informative": 64,
+          "misleading": 64
+        },
+        "original_splits": {
+          "development": 64,
+          "train": 64
+        },
+        "prepared_cases_sha256": "19b93fc178babdc8a184aecdec70774e79f574899684a59660976493bd0c7ac3",
+        "review": "artifacts/binding/stress_measurement/codellama34b_smoke_v1/tokenizer_preflight.json",
+        "review_sha256": "f67a3e8edfa3946cda92b48466074295522a19e68e69ce7cce2a6d559f1020f0"
+      }
+    },
+    "llama31_8b": {
+      "full": {
+        "boundary_suffixes": {
+          "<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nOutput:": 6144
+        },
+        "case_ids_sha256": "bb3bc8022b5aab97dc89850d5030818e031a6aa3baa5f16dca51d70ada1cb132",
+        "cases": 6144,
+        "conditions": {
+          "informative": 3072,
+          "misleading": 3072
+        },
+        "original_splits": {
+          "development": 1536,
+          "train": 4608
+        },
+        "prepared_cases_sha256": "2c15f84dac1d35d8202c537bcf961f679b82dd27508bf32d387f2a986742a7bd",
+        "review": "artifacts/binding/stress_measurement/llama31_8b_full_v1/tokenizer_preflight.json",
+        "review_sha256": "d44f6ac5ed5f77aa9001f4a67e1e88ab39c5ca184687e8d17e23e1e8df0dbe59"
+      },
+      "smoke": {
+        "boundary_suffixes": {
+          "<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nOutput:": 128
+        },
+        "case_ids_sha256": "587df3d97de960f718b6ffeae2ad56bb1b4ff1fc14e2f49fbf666229ff4fa68f",
+        "cases": 128,
+        "conditions": {
+          "informative": 64,
+          "misleading": 64
+        },
+        "original_splits": {
+          "development": 64,
+          "train": 64
+        },
+        "prepared_cases_sha256": "96a0523d2a7f2e2ba69c71ab293855325b94e666509824eb9346899a4878ea03",
+        "review": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1/tokenizer_preflight.json",
+        "review_sha256": "018bbcbd146039cb9016599502df8997a2649362ea95aacf2f298537c58787e5"
+      }
+    }
+  },
+  "scope": "Pinned real tokenizers verify unchanged original prompts/IDs, code/query and assistant suffix before inserting one fixed cue; smoke subsets are overlapping qualification prompts, not new structural samples.",
+  "smoke_prepared_prompts": 256,
+  "status": "passed",
+  "target_outcomes_read": false
+}

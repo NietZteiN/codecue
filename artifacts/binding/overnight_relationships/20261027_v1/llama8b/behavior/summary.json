@@ -1,0 +1,150 @@
+{
+  "cases": 7290,
+  "config_hash": "fb4f94a4f279e6bc6817030fce19b055032e689f50bfb6682869b8c5f2b04f07",
+  "evaluation_role": "discovery_overnight_relationship_behavior_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 7290,
+  "limitation": "Adaptive discovery on reused structural components. No causal mechanism or confirmatory claim. Literal/computed formats also differ in tokens and operations.",
+  "metrics": {
+    "cells": {
+      "numeric_seed/101/computed": {
+        "accuracy": 0.07407407407407407,
+        "invalid_fraction": 0.08024691358024691,
+        "rows": 486
+      },
+      "numeric_seed/101/literal": {
+        "accuracy": 0.5123456790123457,
+        "invalid_fraction": 0.00874485596707819,
+        "rows": 1944
+      },
+      "numeric_seed/211/computed": {
+        "accuracy": 0.06995884773662552,
+        "invalid_fraction": 0.0823045267489712,
+        "rows": 486
+      },
+      "numeric_seed/211/literal": {
+        "accuracy": 0.5066872427983539,
+        "invalid_fraction": 0.006687242798353909,
+        "rows": 1944
+      },
+      "numeric_seed/307/computed": {
+        "accuracy": 0.12551440329218108,
+        "invalid_fraction": 0.05555555555555555,
+        "rows": 486
+      },
+      "numeric_seed/307/literal": {
+        "accuracy": 0.5622427983539094,
+        "invalid_fraction": 0.0030864197530864196,
+        "rows": 1944
+      },
+      "overall": {
+        "accuracy": 0.4396433470507545,
+        "invalid_fraction": 0.019478737997256516,
+        "rows": 7290
+      },
+      "query/computed/0": {
+        "accuracy": 0.08984910836762688,
+        "invalid_fraction": 0.07270233196159122,
+        "rows": 1458
+      },
+      "query/literal/0": {
+        "accuracy": 0.5452674897119342,
+        "invalid_fraction": 0.006172839506172839,
+        "rows": 1458
+      },
+      "query/literal/1": {
+        "accuracy": 0.5288065843621399,
+        "invalid_fraction": 0.01783264746227709,
+        "rows": 1458
+      },
+      "query/literal/2": {
+        "accuracy": 0.52400548696845,
+        "invalid_fraction": 0.0006858710562414266,
+        "rows": 1458
+      },
+      "query/literal/3": {
+        "accuracy": 0.5102880658436214,
+        "invalid_fraction": 0.0,
+        "rows": 1458
+      },
+      "source_form/computed": {
+        "accuracy": 0.08984910836762688,
+        "invalid_fraction": 0.07270233196159122,
+        "rows": 1458
+      },
+      "source_form/literal": {
+        "accuracy": 0.5270919067215364,
+        "invalid_fraction": 0.006172839506172839,
+        "rows": 5832
+      },
+      "split/development/computed": {
+        "accuracy": 0.11728395061728394,
+        "invalid_fraction": 0.06172839506172839,
+        "rows": 486
+      },
+      "split/development/literal": {
+        "accuracy": 0.5154320987654321,
+        "invalid_fraction": 0.00360082304526749,
+        "rows": 1944
+      },
+      "split/train/computed": {
+        "accuracy": 0.07613168724279835,
+        "invalid_fraction": 0.07818930041152264,
+        "rows": 972
+      },
+      "split/train/literal": {
+        "accuracy": 0.5329218106995884,
+        "invalid_fraction": 0.007458847736625514,
+        "rows": 3888
+      }
+    },
+    "computed_literal": {
+      "bootstrap_seed": 117,
+      "conditional_group_bootstrap_95": [
+        -0.4588477366255144,
+        -0.28189300411522633
+      ],
+      "contrast": "computed_minus_literal",
+      "development_components": [
+        "relationship-routing:000",
+        "relationship-routing:012",
+        "relationship-routing:021",
+        "relationship-routing:102",
+        "relationship-routing:111",
+        "relationship-routing:120",
+        "relationship-routing:201",
+        "relationship-routing:210",
+        "relationship-routing:222"
+      ],
+      "draws": 2000,
+      "matched_pairs": 486,
+      "mean": -0.368312757201646,
+      "multiplicity_adjusted": false,
+      "refits": 0
+    }
+  },
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "new_model_queries": 7290,
+  "protocol": {
+    "bootstrap_draws": 2000,
+    "bootstrap_seed": 117,
+    "do_sample": false,
+    "max_new_tokens": 12,
+    "parser": "full signed decimal integer with whitespace only",
+    "selection": "all source rows with numeric_draw == 0",
+    "uncertainty": "nine whole development components; computed-minus-literal matched format pairs",
+    "use_cache": true
+  },
+  "responses": {
+    "bytes": 2863883,
+    "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/responses.jsonl",
+    "sha256": "94eb7a843dfc89889271ad4f1bb1685881916a51ed7719d0b5ab31cf150083c0"
+  },
+  "source": {
+    "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+    "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+  },
+  "status": "complete_exploratory"
+}

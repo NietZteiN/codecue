@@ -1,0 +1,25 @@
+{
+  "actual_model_dtype": "torch.bfloat16",
+  "balanced_cpu_run_feasible": true,
+  "balanced_smoke_accuracy": {
+    "ci95": [
+      0.0625,
+      0.3333333333333333
+    ],
+    "clusters": 12,
+    "estimate": 0.1875
+  },
+  "balanced_smoke_complete": true,
+  "balanced_smoke_samples": 144,
+  "cpu_threads": 4,
+  "device": "cpu",
+  "estimated_balanced_seconds_with_2x_headroom": 1209.503482866101,
+  "generation_seconds": 24.514686076901853,
+  "host": "c-01-04",
+  "model_experiment": true,
+  "model_loading_seconds": 32.79855117481202,
+  "model_parameter_count": 6738546688,
+  "parsed_profile_fraction": 1.0,
+  "profile_samples": 6,
+  "purpose": "throughput and interface profiling on one training base; not a balanced experiment"
+}

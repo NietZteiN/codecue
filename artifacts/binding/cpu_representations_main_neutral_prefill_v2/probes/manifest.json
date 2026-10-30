@@ -1,0 +1,298 @@
+{
+  "activation_cache_identity_hash": "09bee1fcab5a91733d6f9da9a407091873f7e86e610a4aaf6ecc505b42bf913b",
+  "activation_index_sha256": "eb329a489bbb91c1d392ff50b0c568bab1c78495d41a3597a141754508e9a299",
+  "artifact_dir": "/work/jvl210002/migration/codecue/artifacts/binding/cpu_representations_main_neutral_prefill_v2/probes",
+  "attempts": [
+    {
+      "host": "c-01-04",
+      "slurm_job_id": "475317",
+      "started_utc": "2026-10-25T07:46:48.050043+00:00",
+      "status": "complete",
+      "wall_seconds": 24.972047324758023
+    }
+  ],
+  "budget_lease": null,
+  "budget_seconds_available": 5400,
+  "finished_utc": "2026-10-25T07:47:13.051079+00:00",
+  "host": "c-01-04",
+  "identity": {
+    "code": {
+      "git_revision": "39c9e6600feb14a45d473395a5efc848ac37c47f",
+      "source_files": {
+        "scripts/87_binding_preflight.py": "1290c249679d1be69dd45333001a67ed814012a7f8c49e51b8a5347fc6f40172",
+        "scripts/88_binding_pipeline.py": "1df592eeddb0cb0023c6bdffd232b0531025ff564650e3aeaec69861f47b5901",
+        "scripts/89_binding_design_audit.py": "3f85ce9ce6e848117b00dbcf5a683699b286ccf98a96481d1b5be9bc88a38787",
+        "scripts/90_binding_vocab_check.py": "efd3df6ae6a6f898f94005e76538b5e1543be56dcc42a9b4d42db55bc666e20a",
+        "scripts/91_binding_frozen_run.py": "bd133b0f37338d6c6ff84562dab60825752b17b8d6a62f4e7845fa36217402f9",
+        "scripts/92_binding_progress_report.py": "8ddfc4d6736904a12c9450cf0f2e30749fe0d261a134a26fa8c1781b05ec9a24",
+        "scripts/env.sh": "86e2295b918282f91c3966e39348442dc8c5bf8931792ee2348bd64c5655ac3f",
+        "scripts/slurm/stamp.py": "73c0da322c7e95e113c9c677e846edfef3ec398a8695ad1d61e6d1a12463e054",
+        "scripts/slurm/submit.py": "a4818a7cd08515912199fa443701e3a61e2442db3c0ba253321eeac3cf680c40",
+        "src/codecue/__init__.py": "74db69d1fc22dd62cedbdca06ab7591136d94214770978df425cc6332099a105",
+        "src/codecue/binding/__init__.py": "e8f5e6a1b024e4d538dceeb0c817e5c79f092cf531c177e38e1b951201edddbe",
+        "src/codecue/binding/__main__.py": "6063258252e64d6f0038653f9ea78c50480a9241bcf9fec302a108f1f3dca82e",
+        "src/codecue/binding/activations.py": "fc4332a713e62e520e29c4b1d14c7ae8cacad7301d8e365101a8cd7cee5c16f8",
+        "src/codecue/binding/analysis.py": "11db4b7dd47978b5ef56dcb7b1412ca123b8fc8d1ee0053cdd5949ba63eb2c44",
+        "src/codecue/binding/behavior.py": "a9fd155f459724eb7383207a93f97b482eeeee38058e17b491e45999f6a29bde",
+        "src/codecue/binding/budget.py": "e7e2df11083102d8a346fee6ff5952d850283131bd5688439db09f69894cd62a",
+        "src/codecue/binding/datasets.py": "e0558070376d04418c57504e69a9ddc3e7af30f172290c4cc0c4f1530ca8f506",
+        "src/codecue/binding/forecasting.py": "0a5a7386ef40c8a2b96174b943236b3612f30968c0dff74acad088b62607376a",
+        "src/codecue/binding/heldout.py": "33b2cebf6fa9e039be6aa11b832de799d57d57f347dceea2b9a3ccd1a30bb303",
+        "src/codecue/binding/interpreter.py": "64bf9821eda3a9069089550ddf9d4e0b973de3270f39d9ef3555df76fa407166",
+        "src/codecue/binding/interventions.py": "5b67eeb7827541f6270eaaf4bc16c355dadf2f47a74fdee25ae61ff22ef7e9d6",
+        "src/codecue/binding/model_adapter.py": "3d45dbb3576a65612b0ad77dda33dfddf0e5a2b3b105976dc6099594c5df47cb",
+        "src/codecue/binding/probes.py": "58f192d76fa6c354231263039a93c6519c57b6f7e854a7deba18ca7125f81e95",
+        "src/codecue/binding/profiling.py": "664ba309445b7ac6ecb18105607c9b1e9c671542d8f8316e902695e383603556",
+        "src/codecue/binding/programs.py": "16e74f772c7cd89bc6c9e69d62f095f230cd2533007ff07dfb2a42bcf6596329",
+        "src/codecue/binding/registry.py": "66fc54cda09fad1bf9b6ade317f0a405a86746eafc59a89eb00873e79a54d29f",
+        "src/codecue/binding/snapshots.py": "1c834c1ace5072c7fa590204622920db139dff5da160d1b940f2c85293084ec4",
+        "src/codecue/cache.py": "0f4464439774ac53474ddc0e9322a9902c60b36ec666c05fabfb0695d215e946",
+        "src/codecue/config.py": "4ba803420f421f8af330488fffd4a1c66623a739b0043b4bef17c87dce2f40ca",
+        "src/codecue/followups.py": "b20b371ff79eabe6a22510ecefdd66f38a9c9b6fccbef8887f87ce4b72daf1d2",
+        "src/codecue/generator.py": "eeb41aedc72cad9ef160a1defe0db9b895000a065f6669922837b19dba73730b",
+        "src/codecue/gentask.py": "8163f104b02356b006692e7496e50d7a801dee55b4b0031d5e0e405f410ebb2d",
+        "src/codecue/layout.py": "b7a4457402e13ffa4c0df8aa010fbec6fffa4c97cd02d1ceb9ed365302820d4e",
+        "src/codecue/lures.py": "9e63aac1eee60817daf504bb0cab2d692b4851526b78041cf41c00e91cbaeff3",
+        "src/codecue/models.py": "b58f6e511cb48933cd5076c29624a44adf21c9d3167b54b7fa5cf679d4342ad5",
+        "src/codecue/patching.py": "a69b35d8d870250b4f445065bf6794a604f0e53aff4def0a91770a67c76f7b45",
+        "src/codecue/probe_data.py": "d36a5b6c480351675ca494b6c5ed735174c207231caa4f8dacd9686175148ea4",
+        "src/codecue/probe_validation.py": "554fed59d434a2a04d69abe43f5e85a1db2d01176bf1df0077108088ef652e28",
+        "src/codecue/probes.py": "28d257bc30cc4891530de9ae9c917340535362d4e7e4a26e1820f90bdd03cc83",
+        "src/codecue/prompt_comparison.py": "32c61120fa4cb51b1ed310af8b45ab381726129fb085f6956e4d837b295fbc93",
+        "src/codecue/prompts.py": "019eeeb3379c1eeac8f8f29c7af636281d7d79abd1e37ec2da1b3ca130906b1d",
+        "src/codecue/reporting.py": "4633a5f13d6b4a365e892ec2a6402aad1b2f0f781da5fa17ccc6fdd88dd20678",
+        "src/codecue/round6.py": "58eda7d56904c5b6ee3684d09cda0be88824acfc8826f5f54f809f68c1360efa",
+        "src/codecue/runner.py": "72c78f8d1a12c38fb3fa9b22b766727a9570098a8e3c86b112558b68b9a82b84",
+        "src/codecue/sandbox.py": "bad3c187164d33d58c1b15521227999eb325400396d0fe4af932894045ccfbab",
+        "src/codecue/stats.py": "0acbe61acaea72a8505accc3f8bdb106aa9102247a213201cfaa3e32b0f48aea"
+      },
+      "source_sha256": "e352e84a09a386fdba3485b986961ce409b1d3aab62045e9aed16263237a3fec"
+    },
+    "config": {
+      "activation_limit_bytes": 2147483648,
+      "batch_size": 16,
+      "control_kinds": [
+        "primary"
+      ],
+      "cpu_threads": 4,
+      "dataset": "artifacts/binding/pilot_matched.jsonl",
+      "device": "cpu",
+      "dtype": "bfloat16",
+      "extraction_conditions_by_split": {
+        "development": [
+          "neutral",
+          "informative",
+          "misleading"
+        ],
+        "train": [
+          "neutral"
+        ]
+      },
+      "extraction_splits": [
+        "train",
+        "development"
+      ],
+      "generation": {
+        "algorithm_version": 5,
+        "answer_magnitude_bins": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            11,
+            15
+          ]
+        ],
+        "arithmetic_controls": true,
+        "counterfactual_pairs": true,
+        "identifier_pool": "codellama-context-matched-v1",
+        "instances_per_cell": 50,
+        "seed": 20261024,
+        "templates_per_cell": 10
+      },
+      "layers": [
+        8,
+        16,
+        24
+      ],
+      "max_gpu_seconds": 5400,
+      "max_new_tokens": 12,
+      "model": "codellama/CodeLlama-7b-Instruct-hf",
+      "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+      "per_cell_limit": null,
+      "probe_analysis": {
+        "train_conditions": [
+          "neutral"
+        ]
+      },
+      "protocol": "short_answer_prefill_v2",
+      "run_dir": "artifacts/binding/cpu_representations_main_neutral_prefill_v2",
+      "seed": 17,
+      "splits": [
+        "train",
+        "development"
+      ],
+      "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+    },
+    "config_hash": "aef05a0c1d8c8ac7fcce17da16fe469e2fea7307955d56ab39bf230d72d76eae",
+    "dataset_manifest": {
+      "attempts": 3067,
+      "base_instances": 600,
+      "cell_attempts": {
+        "accumulator:load2:updates1": 236,
+        "accumulator:load2:updates3": 363,
+        "accumulator:load4:updates1": 297,
+        "accumulator:load4:updates3": 471,
+        "parallel:load2:updates1": 214,
+        "parallel:load2:updates3": 234,
+        "parallel:load4:updates1": 284,
+        "parallel:load4:updates3": 272,
+        "snapshot:load2:updates1": 127,
+        "snapshot:load2:updates3": 154,
+        "snapshot:load4:updates1": 205,
+        "snapshot:load4:updates3": 210
+      },
+      "cell_rejections": {
+        "accumulator:load2:updates1": 186,
+        "accumulator:load2:updates3": 313,
+        "accumulator:load4:updates1": 247,
+        "accumulator:load4:updates3": 421,
+        "parallel:load2:updates1": 164,
+        "parallel:load2:updates3": 184,
+        "parallel:load4:updates1": 234,
+        "parallel:load4:updates3": 222,
+        "snapshot:load2:updates1": 77,
+        "snapshot:load2:updates3": 104,
+        "snapshot:load4:updates1": 155,
+        "snapshot:load4:updates3": 160
+      },
+      "generation_config": {
+        "algorithm_version": 5,
+        "answer_magnitude_bins": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            11,
+            15
+          ]
+        ],
+        "arithmetic_controls": true,
+        "counterfactual_pairs": true,
+        "identifier_pool": "codellama-context-matched-v1",
+        "instances_per_cell": 50,
+        "seed": 20261024,
+        "templates_per_cell": 10
+      },
+      "generation_config_hash": "5207a09bcc659bff5072c23c6c54941cfdcaa038553d30bac7c31f1393727160",
+      "independent_template_clusters": 60,
+      "primary_answer_magnitude_bins": {
+        "0": 240,
+        "1": 240,
+        "2": 120
+      },
+      "rejected": 2467,
+      "rejection_rate": 0.80436909031627,
+      "rows": 10800,
+      "schema_version": 1,
+      "sha256": "fce0a27061efdee3a15ebe597b34da0e9add672e56c6f3ac2350bd7f667921a4",
+      "split_rows": {
+        "development": 2160,
+        "test": 2160,
+        "train": 6480
+      },
+      "split_templates": {
+        "development": 24,
+        "test": 24,
+        "train": 72
+      },
+      "structural_templates": 120,
+      "token_counts": "filled by the selected tokenizer at model-run time",
+      "value_distribution": {
+        "-1": 247,
+        "-10": 115,
+        "-11": 115,
+        "-12": 117,
+        "-13": 98,
+        "-14": 94,
+        "-15": 72,
+        "-16": 82,
+        "-17": 59,
+        "-18": 41,
+        "-19": 31,
+        "-2": 235,
+        "-20": 24,
+        "-21": 18,
+        "-22": 14,
+        "-23": 8,
+        "-24": 8,
+        "-25": 6,
+        "-26": 3,
+        "-27": 1,
+        "-28": 1,
+        "-3": 237,
+        "-4": 233,
+        "-5": 211,
+        "-6": 175,
+        "-7": 174,
+        "-8": 150,
+        "-9": 145,
+        "0": 239,
+        "1": 236,
+        "10": 127,
+        "11": 118,
+        "12": 105,
+        "13": 108,
+        "14": 84,
+        "15": 88,
+        "16": 61,
+        "17": 58,
+        "18": 55,
+        "19": 29,
+        "2": 261,
+        "20": 19,
+        "21": 23,
+        "22": 11,
+        "23": 7,
+        "24": 4,
+        "25": 6,
+        "26": 5,
+        "3": 213,
+        "30": 1,
+        "4": 187,
+        "5": 205,
+        "6": 182,
+        "7": 161,
+        "8": 156,
+        "9": 137
+      }
+    },
+    "environment": {
+      "backend": "transformers, eager attention",
+      "platform": "Linux-5.14.0-687.41.1.el9_8.x86_64-x86_64-with-glibc2.34",
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "sampling": "greedy, do_sample=False",
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1"
+    },
+    "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+    "stage": "probes",
+    "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+  },
+  "identity_hash": "8518eb27002d35340de0eb799a3e141d2af162417e056472fe9d75407ba2134f",
+  "result_count": 54,
+  "slurm_job_id": "475317",
+  "started_utc": "2026-10-25T07:46:48.049954+00:00",
+  "status": "complete",
+  "wall_seconds_total": 24.972047324758023
+}

@@ -1,0 +1,534 @@
+{
+  "active": {},
+  "cap_seconds": null,
+  "checkpoint_policy": "multiple_cached_checkpoints",
+  "completed": [
+    {
+      "id": "8d13c6569e30400b9dba17d5ad1d9072",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 6600,
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/capacity/codellama13b_v1",
+      "checkpoint": [
+        "codellama/CodeLlama-13b-Instruct-hf",
+        "745795438019e47e4dad1347a0093e11deee4c68"
+      ],
+      "actual_seconds": 456.70154444593936,
+      "status": "complete"
+    },
+    {
+      "id": "27ce967a07ae41138a541eb3b7779549",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 6600,
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/capacity/codellama34b_v1",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "actual_seconds": 487.18017352884635,
+      "status": "complete"
+    },
+    {
+      "id": "4ddffedf55824046ac4dd0045893943c",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/capacity/llama32_3b_v2",
+      "checkpoint": [
+        "meta-llama/Llama-3.2-3B-Instruct",
+        "0cb88a4f764b7a12671c53f0838cd831a0843b95"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 321.6154489570181,
+      "wall_seconds": 321.6154489570181,
+      "status": "complete"
+    },
+    {
+      "id": "e433d1ea42cf4de390a2cd1cec218992",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/capacity/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 362.3454374219291,
+      "wall_seconds": 362.3454374219291,
+      "status": "complete"
+    },
+    {
+      "id": "b215bd970c32448b9bca92281aead3f9",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/llama_serialization/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 195.99172258004546,
+      "wall_seconds": 195.99172258004546,
+      "status": "complete"
+    },
+    {
+      "id": "008228868fdc4f749494ba393a46ccb9",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/llama_serialization/llama32_3b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.2-3B-Instruct",
+        "0cb88a4f764b7a12671c53f0838cd831a0843b95"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 166.89304954838008,
+      "wall_seconds": 166.89304954838008,
+      "status": "complete"
+    },
+    {
+      "id": "83a1116d19dd449ab8a2edab12a1e636",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/competition/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 178.33567784400657,
+      "wall_seconds": 178.33567784400657,
+      "status": "complete"
+    },
+    {
+      "id": "e4302e86b50f43f3bff70cd32730eb6f",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/competition/llama31_8b_hook_preflight_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 24.479679580312222,
+      "wall_seconds": 24.479679580312222,
+      "status": "complete"
+    },
+    {
+      "id": "73dc7cda0851403cb3d6ff6f2f830331",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/competition/codellama34b_v1",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 244.68918850179762,
+      "wall_seconds": 244.68918850179762,
+      "status": "complete"
+    },
+    {
+      "id": "8534b5578fd346199d93c23865792e75",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "activations",
+      "run_dir": "artifacts/binding/state_capture/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 91.11011368734762,
+      "wall_seconds": 91.11011368734762,
+      "status": "complete"
+    },
+    {
+      "id": "ec5dc3017abe4d73a8875c95d17928c5",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "activations",
+      "run_dir": "artifacts/binding/state_capture/llama31_8b_v2",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 305.3342863500584,
+      "wall_seconds": 305.3342863500584,
+      "status": "complete"
+    },
+    {
+      "id": "c21473f88ce04c88a7619334d68f2a3a",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/value_transfer/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 104.12125604180619,
+      "wall_seconds": 104.12125604180619,
+      "status": "complete"
+    },
+    {
+      "id": "ae1327b8fd384869be68086401eda9e1",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/value_transfer/llama31_8b_v2",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 103.26131568523124,
+      "wall_seconds": 103.26131568523124,
+      "status": "complete"
+    },
+    {
+      "id": "67132461e0cc4ffb90d8736ecaa3adab",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/routing_extension/computed_routing/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 39.71063933195546,
+      "wall_seconds": 39.71063933195546,
+      "status": "complete"
+    },
+    {
+      "id": "06c532db312042e0ab7f98159b12d13d",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/routing_extension/swap_reset/llama31_8b_v2",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 292.201531379018,
+      "wall_seconds": 292.201531379018,
+      "status": "complete"
+    },
+    {
+      "id": "8ea0b361ae5f42f0a56698bcdd642125",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/timing_and_copy/query_timing/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 36.9687032867223,
+      "wall_seconds": 36.9687032867223,
+      "status": "complete"
+    },
+    {
+      "id": "96f86cb915774d298c3e01824359db16",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/timing_and_copy/copy_path/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 360.61775854602456,
+      "wall_seconds": 360.61775854602456,
+      "status": "complete"
+    },
+    {
+      "id": "8087af2c093c41e09f87051ad63a4d27",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/mechanism_followup/value_owner/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 35.58084140904248,
+      "wall_seconds": 35.58084140904248,
+      "status": "complete"
+    },
+    {
+      "id": "ef18d28001dc4ec3b77f59eb8be76217",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "ownership_controls",
+      "run_dir": "artifacts/binding/mechanism_followup/value_owner/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 353.1718718088232,
+      "wall_seconds": 353.1718718088232,
+      "status": "complete"
+    },
+    {
+      "id": "16b889b3603f4993a74df10b88831b66",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interventions",
+      "run_dir": "artifacts/binding/mechanism_followup/cue_control/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 50.98792423913255,
+      "wall_seconds": 50.98792423913255,
+      "status": "complete"
+    },
+    {
+      "id": "30e4dce0579d491ba51a84dadc4f8244",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/live_load/llama31_8b_v2",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 268.2738767550327,
+      "wall_seconds": 268.2738767550327,
+      "status": "complete"
+    },
+    {
+      "id": "c7f6b2f5320249d6ba920f0818ceb36f",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/live_load/codellama34b_v2",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 697.085990943946,
+      "wall_seconds": 697.085990943946,
+      "status": "complete"
+    },
+    {
+      "id": "dbc38c82deef4c33b7110ebead287bce",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/live_load/backend/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 29.853763225022703,
+      "wall_seconds": 29.853763225022703,
+      "status": "complete"
+    },
+    {
+      "id": "6da0b1196d3a46189bcb58c7652e45ce",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/live_load/backend/codellama34b_v1",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 47.49405792821199,
+      "wall_seconds": 47.49405792821199,
+      "status": "complete"
+    },
+    {
+      "id": "ad0e0c1f3f3547ea99568dd19c3bf3ac",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/live_load/backend/llama31_8b_v2",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 29.201497712172568,
+      "wall_seconds": 29.201497712172568,
+      "status": "complete"
+    },
+    {
+      "id": "32bc6ec1093c47019d6e24929aa12b70",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/live_load/backend/codellama34b_v2",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 45.07061413722113,
+      "wall_seconds": 45.07061413722113,
+      "status": "complete"
+    },
+    {
+      "id": "b8fd7d08eeb840b7984b27edf79bc85f",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/arithmetic_readout/llama31_8b_v1",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 274.02184372907504,
+      "wall_seconds": 274.02184372907504,
+      "status": "complete"
+    },
+    {
+      "id": "72130b5b4423417db5af430715d59e96",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/arithmetic_readout/codellama34b_v1",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 318.39063233695924,
+      "wall_seconds": 318.39063233695924,
+      "status": "complete"
+    },
+    {
+      "id": "1952ef3f70b44bb49940633a2f2c9404",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/computation_routing/20261028_v1/llama8b",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 260.6839199310052,
+      "wall_seconds": 260.6839199310052,
+      "status": "complete"
+    },
+    {
+      "id": "76fbdfe71cd342819d8404a68a5ab7c6",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/computation_routing/20261028_v1/codellama34b",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 341.82001896499423,
+      "wall_seconds": 341.82001896499423,
+      "status": "complete"
+    },
+    {
+      "id": "7b386fccda17401aaf0fb135b6ced7a4",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/old_value_overnight/20261028_v1/llama8b",
+      "checkpoint": [
+        "meta-llama/Llama-3.1-8B-Instruct",
+        "0e9e39f249a16976918f6564b8830bc894c89659"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 318.8572875910904,
+      "wall_seconds": 318.8572875910904,
+      "status": "complete"
+    },
+    {
+      "id": "3a939175dccb455881d6c8a2217a5485",
+      "ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "reserved_seconds": 0,
+      "mode": "accounting_only",
+      "stage": "checkpoint_suite",
+      "run_dir": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b",
+      "checkpoint": [
+        "codellama/CodeLlama-34b-Instruct-hf",
+        "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+      ],
+      "gpu_count": 1,
+      "actual_seconds": 473.4152471870184,
+      "wall_seconds": 473.4152471870184,
+      "status": "complete"
+    }
+  ],
+  "historical_ledger": "artifacts/binding/gpu_budget.json",
+  "policy": "artifacts/binding/resource_policy_20261025.json",
+  "used_seconds": 7315.466914615186,
+  "checkpoints": [
+    [
+      "codellama/CodeLlama-13b-Instruct-hf",
+      "745795438019e47e4dad1347a0093e11deee4c68"
+    ],
+    [
+      "codellama/CodeLlama-34b-Instruct-hf",
+      "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+    ],
+    [
+      "meta-llama/Llama-3.2-3B-Instruct",
+      "0cb88a4f764b7a12671c53f0838cd831a0843b95"
+    ],
+    [
+      "meta-llama/Llama-3.1-8B-Instruct",
+      "0e9e39f249a16976918f6564b8830bc894c89659"
+    ]
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "actual_prefill_attempts": 11520,
+  "all_eight_jobs_completed_zero": true,
+  "arrays_loaded": false,
+  "distinct_prefills": 11520,
+  "evaluation_role": "discovery_diversity_completion_followup_v1",
+  "figure_visual_findings": "Six panels, all captured layers, primary24 marker, shared ylabel, separate direct/sham/surface/prior legend and readable scope footnote; no clipping or label overlap observed.",
+  "figure_visually_reviewed": true,
+  "fit_banks": 90,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_handoff_pins_verified": 47,
+  "parameter_replay_rows": 518400,
+  "parameters_reapplied": 0,
+  "pins": [
+    {
+      "bytes": 21082,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/handoff_review_v1.json",
+      "sha256": "d58b99348fe4dc796ea16ccf6ae4eea054581b201cd48f9ce948264280c06f1c"
+    },
+    {
+      "bytes": 3325,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/execution_health_review_v1.json",
+      "sha256": "98af0c456dcc39b29725e9947b705baa1950caffaf825eb6496cc7a7d55b5a8b"
+    },
+    {
+      "bytes": 125641,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/interim_llama8b_review_v1.json",
+      "sha256": "c4d3e43a4c46ba5325c3613c544628e2d3bc01e5a3263664bcda524dbd4598b0"
+    },
+    {
+      "bytes": 159494,
+      "path": "reports/binding/figures/diversity_decoding_v1.png",
+      "sha256": "4a9b0797ac8c0b6278e28f402b224624c250354fd825caaee0f4758920acc656"
+    },
+    {
+      "bytes": 120383,
+      "path": "reports/binding/figures/diversity_decoding_v1.svg",
+      "sha256": "f08fae6e00ddfbce2243f036a18558a4ef912d81fec9b2dce8709adae86afb92"
+    },
+    {
+      "bytes": 8420,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/publication_review_v1.json",
+      "sha256": "fad6cd649b50e5362fbcc95386cff33ecaddef913b5cc39a76a30c0cc7d02045"
+    }
+  ],
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 56
+  },
+  "recorded_utc": "2026-10-28T20:17:31.877540+00:00",
+  "software_validation_for_this_frozen_study": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2044
+  },
+  "source": {
+    "code": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8"
+  },
+  "status": "passed",
+  "terminal_jobs": {
+    "481409": {
+      "elapsed_seconds": 101,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481410": {
+      "elapsed_seconds": 166,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481411": {
+      "elapsed_seconds": 563,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481412": {
+      "elapsed_seconds": 269,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481413": {
+      "elapsed_seconds": 915,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481414": {
+      "elapsed_seconds": 294,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481415": {
+      "elapsed_seconds": 880,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481436": {
+      "elapsed_seconds": 29,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "recorded_utc": "2026-10-27T00:46:25.782929+00:00",
+  "status": "running",
+  "jobs": {
+    "compare": {
+      "job_id": "478445",
+      "state": "PENDING",
+      "exit_code": "0:0",
+      "elapsed_seconds": 0,
+      "reason": "Dependency"
+    },
+    "figure": {
+      "job_id": "478449",
+      "state": "PENDING",
+      "exit_code": "0:0",
+      "elapsed_seconds": 0,
+      "reason": "Dependency"
+    },
+    "preflight_codellama34b": {
+      "job_id": "478433",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_seconds": 94
+    },
+    "preflight_llama31_8b": {
+      "job_id": "478432",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_seconds": 99
+    },
+    "review_codellama34b": {
+      "job_id": "478444",
+      "state": "PENDING",
+      "exit_code": "0:0",
+      "elapsed_seconds": 0,
+      "reason": "Dependency"
+    },
+    "review_llama31_8b": {
+      "job_id": "478442",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_seconds": 7
+    },
+    "run_codellama34b": {
+      "job_id": "478443",
+      "state": "RUNNING",
+      "exit_code": "0:0",
+      "elapsed_seconds": 213,
+      "reason": "None"
+    },
+    "run_llama31_8b": {
+      "job_id": "478441",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_seconds": 394
+    }
+  },
+  "stages": [
+    {
+      "name": "llama31_8b",
+      "path": "artifacts/binding/arithmetic_readout/llama31_8b_v1/checkpoint_suite",
+      "manifest_status": "complete",
+      "evaluated": 6144,
+      "planned": 6144,
+      "responses": {
+        "records": 6144,
+        "incomplete_tail": false,
+        "malformed_lines": []
+      },
+      "issues": []
+    },
+    {
+      "name": "codellama34b",
+      "path": "artifacts/binding/arithmetic_readout/codellama34b_v1/checkpoint_suite",
+      "manifest_status": "started",
+      "evaluated": 0,
+      "planned": null,
+      "responses": {
+        "records": 0,
+        "incomplete_tail": false,
+        "malformed_lines": []
+      },
+      "issues": []
+    }
+  ],
+  "issues": [],
+  "scheduler_errors": [],
+  "budget": {
+    "cap_seconds": null,
+    "used_seconds": 5602.299808604119,
+    "reserved_seconds": 0,
+    "active_jobs": 1,
+    "unreserved_seconds": null
+  },
+  "comparison_audited": false,
+  "completed_report": "reports/binding/arithmetic_readout_results_v1.md",
+  "title": "Arithmetic composition and readout feasibility status",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/arithmetic_readout/status_v1.json",
+  "plan_report": "arithmetic_readout_plan.md",
+  "model_inference": false,
+  "scientific_artifacts_modified": false,
+  "generated_holdouts_opened": false
+}

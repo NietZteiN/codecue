@@ -1,0 +1,75 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 913,
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "context_limit": 2048,
+  "cpu_threads": 8,
+  "cuda_home": "/usr/local/cuda-12.9",
+  "dataset": "artifacts/binding/computation_routing/20261028_v1/sources.jsonl",
+  "dataset_manifest_sha256": "f7753f6e9f70f94746ad409044f55d27278552ee409cf84197489615cd5f94d8",
+  "dataset_sha256": "a05908070277c191bc0a3b173cd7925be41e09ec48c59ad8cf19a1fbd049acce",
+  "declared_plan": "reports/binding/computation_routing_plan_v1.md",
+  "declared_plan_sha256": "d8116ea507adbb900cc8a886b43c256465b0642ff4f0a0d23a9dbdd3c9a3bdfe",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": "auto",
+    "max_num_seqs": "auto"
+  },
+  "engine_memory_overrides": [
+    {
+      "max_memory_gib": 48,
+      "settings": {
+        "max_num_batched_tokens": 4096,
+        "max_num_seqs": 128
+      }
+    }
+  ],
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "evaluation_role": "discovery_computation_routing_calibration_v1",
+  "execution_backend": "vLLM BF16 CUDA12.9; continuously batched root computation/context/copy calibration; uncapped accounting",
+  "max_gpu_seconds": null,
+  "max_new_tokens": {
+    "routing_execute_v1": 16,
+    "routing_output_v1": 16,
+    "routing_value_v1": 16
+  },
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "preflight_result": "artifacts/binding/computation_routing/20261028_v1/llama8b/tokenizer_preflight.json",
+  "prepared_cases": "artifacts/binding/computation_routing/20261028_v1/llama8b/prepared_cases.jsonl",
+  "protocol": "computation_routing_direct_v1",
+  "reliability_gate": {
+    "maximum_invalid_rate": 0.05,
+    "minimum_accuracy": 0.9,
+    "minimum_cell_n": 24
+  },
+  "report": "reports/binding/computation_routing_llama8b_v1.md",
+  "request_chunk_size": 1024,
+  "review_artifact": "artifacts/binding/computation_routing/20261028_v1/llama8b/review_v1.json",
+  "run_dir": "artifacts/binding/computation_routing/20261028_v1/llama8b",
+  "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+  "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+  "scorer": "full_ascii_signed_integer_v1",
+  "sections": [
+    {
+      "dataset": "artifacts/binding/computation_routing/20261028_v1/sources.jsonl",
+      "kind": "computation_routing",
+      "name": "computation_routing",
+      "sha256": "a05908070277c191bc0a3b173cd7925be41e09ec48c59ad8cf19a1fbd049acce",
+      "variants": [
+        "routing_output_v1",
+        "routing_execute_v1",
+        "routing_value_v1"
+      ]
+    }
+  ],
+  "tensor_parallel_size": 1,
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

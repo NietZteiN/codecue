@@ -1,0 +1,73 @@
+{
+  "completion_smoke_predictions_planned": 16,
+  "full_predictions_planned": 1600,
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "analysis_source": "artifacts/binding/serialization/analysis_source_v1.json",
+    "cancelled_h100_smoke": "476710",
+    "finalize": "476727",
+    "full": "476726",
+    "partition_candidates": [
+      "h100",
+      "h200"
+    ],
+    "preflight": "476708",
+    "resource_decision": "artifacts/binding/serialization/resource_decision_v1.json",
+    "smoke": "476718",
+    "tests": "476709"
+  },
+  "live_dispatch_status": "artifacts/binding/serialization/dispatch_v1.json",
+  "native_replay_predictions_planned": 16,
+  "new_model_predictions_observed": 0,
+  "official_execution_scoring_run": false,
+  "plan": "reports/binding/serialization_plan.md",
+  "preflight": {
+    "completion_full_v1": {
+      "input_token_ids_sha256": "fb3e6eeaabb9a49657b1f89cb1647210c4e262467a845d64737149ac90f93299",
+      "questions": 1600,
+      "status": "passed"
+    },
+    "completion_smoke_v1": {
+      "input_token_ids_sha256": "8f72edab79d6e7e52078e081c7ef4b889eccaa4f8bb7fcd1539f07c7f7bf6891",
+      "questions": 16,
+      "status": "passed"
+    },
+    "native_replay_v1": {
+      "input_token_ids_sha256": "7a0a5cbaffb888ed538f3ad7572af8582827dcca5e44eb55fb7254e11aeb8a7f",
+      "questions": 16,
+      "status": "passed"
+    }
+  },
+  "recorded_utc": "2026-10-26T00:47:29.384757+00:00",
+  "report_when_complete": "reports/binding/serialization_comparison.md",
+  "resource_blocker": "Inspected A30, H100 and H200 GPUs were allocated. One pending request is eligible for H100/H200; full and audit depend on it.",
+  "scheduler_states": [
+    "476727|dev|PENDING|(Dependency)",
+    "476718|h100,h200|PENDING|(Priority)",
+    "476726|h100,h200|PENDING|(Dependency)"
+  ],
+  "shared_gpu_ledger": {
+    "active": {},
+    "cap_seconds": 14400,
+    "used_seconds": 2565.1403962309705
+  },
+  "sources": {
+    "analysis_source_v1.json": "35cd258d759f59bab0d985baa752b3c8ca8ecf04f7c50fe504075344d92a4165",
+    "source_v1.json": "c09bcb69842711e63708a307d98d874a217bf9551125e563582adfb88e9d67aa"
+  },
+  "status": "queued_for_gpu",
+  "tests": {
+    "dispatch_tests_v1.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 55
+    },
+    "tests_v1.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 143
+    }
+  }
+}

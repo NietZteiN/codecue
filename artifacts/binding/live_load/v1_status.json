@@ -1,0 +1,18 @@
+{
+  "cpu_tokenizer_audits_preserved": [
+    "478111",
+    "478112"
+  ],
+  "model_outcomes_collected": 0,
+  "pending_gpu_and_dependent_jobs_canceled": [
+    "478113",
+    "478114",
+    "478115",
+    "478116",
+    "478117",
+    "478118"
+  ],
+  "reason": "Deferred schedules had fewer defined variables at the checkpoint. V2 initializes both result slots, holding all eight variables defined across frontiers.",
+  "status": "retired_before_model_inference",
+  "updated_utc": "2026-10-26T22:19:31.139010+00:00"
+}

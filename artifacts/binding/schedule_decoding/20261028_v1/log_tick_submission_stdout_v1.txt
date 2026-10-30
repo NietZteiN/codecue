@@ -1,0 +1,62 @@
+{
+  "scheduler": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 245,
+        "dataset": 67,
+        "job": 412,
+        "run": 79
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 3074,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_tick_utc": "2026-10-28T17:38:01.737761+00:00",
+    "next_reconcile_utc": "2026-10-28T17:48:01.737761+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 1,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "481285",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-28T12:59:01",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "481273",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-28T12:48:30",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "481240",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-28T12:38:01",
+        "state": "RUNNING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "status": "busy"
+}

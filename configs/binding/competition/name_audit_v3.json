@@ -1,0 +1,41 @@
+{
+  "models": [
+    {
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "tokenization_mode": "codellama_official_boundary_v1",
+      "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "tokenization_mode": "native",
+      "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+    }
+  ],
+  "output": "artifacts/binding/competition/name_audit_v3.json",
+  "pairs": [
+    [
+      "current_value",
+      "temp_value"
+    ],
+    [
+      "current_value",
+      "scratch_value"
+    ],
+    [
+      "current_value",
+      "buffer_value"
+    ],
+    [
+      "current_value",
+      "extra_value"
+    ],
+    [
+      "current_value",
+      "work_value"
+    ],
+    [
+      "current_value",
+      "zero_value"
+    ]
+  ]
+}

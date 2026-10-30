@@ -1,0 +1,179 @@
+{
+  "audit_added_fits": 0,
+  "audit_added_model_queries": 0,
+  "audit_added_parameter_replays": 0,
+  "completed": {
+    "capture_chunks": 16,
+    "generated_responses": 0,
+    "identical_prefix_comparisons": 4980,
+    "parameter_replay_rows": 87480,
+    "prefix_max_abs_diff": 0.0,
+    "readout_artifacts": 49,
+    "readout_factorizations": 45,
+    "source_cases": 1944,
+    "source_prefill_attempts": 1944,
+    "source_prefill_batches": 61
+  },
+  "completion_accounting": [
+    "480286|COMPLETED|00:03:45|0:0",
+    "480292|COMPLETED|00:04:53|0:0",
+    "480293|COMPLETED|00:02:09|0:0",
+    "480294|COMPLETED|00:10:48|0:0",
+    "480295|COMPLETED|00:00:06|0:0"
+  ],
+  "created_utc": "2026-10-28T02:00:41.353099+00:00",
+  "evaluation_role": "discovery_relationship_readout_completion_v1",
+  "generated_holdouts_opened": false,
+  "independent_metadata_audit": "passed",
+  "interpretation": "Relationships are accessible under the fixed discovery scaffold. Stronger source-value algebraic decoding exceeds hidden direct decoding. No dedicated-code, general-version-resolution or natural-causal-use claim.",
+  "original_code": {
+    "code": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0"
+  },
+  "pins": [
+    {
+      "bytes": 710,
+      "path": "configs/binding/relationships/capture_v2.json",
+      "sha256": "1e944fa658613954a116f07a016e1ed8c9da83d2f805bf1e4605a5ff54440a4e"
+    },
+    {
+      "bytes": 718,
+      "path": "configs/binding/relationships/readouts_pipeline_v3.json",
+      "sha256": "61bdf8018a1dcefc774d5cc776b13a922a193460dc5f61a41cf2a007229f9704"
+    },
+    {
+      "bytes": 8756,
+      "path": "reports/binding/relationship_readout_plan_v2.md",
+      "sha256": "ea8a4c4c1b1732c9f099ff5dd523b3fdab4ecb5f1be10440b5fda94ce64ed4b1"
+    },
+    {
+      "bytes": 4680,
+      "path": "reports/binding/relationship_readouts_v3.md",
+      "sha256": "5d5188ada1ca12d460f9cfa799c837f16743651ed75c43cf40b31bbee02bc3e9"
+    },
+    {
+      "bytes": 6284,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/completion_manifest_v1.json",
+      "sha256": "258ae28c06219ba2568497e3307844782d7d9961144589a7debbccc74c73b5a1"
+    },
+    {
+      "bytes": 4811,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/audit.json",
+      "sha256": "b33d716910cddf1e66426ce46480fbf755932664c8140c2e1814c0f8a052eaad"
+    },
+    {
+      "bytes": 8149,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/summary.json",
+      "sha256": "73c1657d4f4adb37055376bb671e13718a52ac12af7cd94bf354fccadf70d0ee"
+    },
+    {
+      "bytes": 21505,
+      "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/completion_manifest_v1.json",
+      "sha256": "f24c233a150538d884bc09554f00ff918d85252d32cb77a7e79f3506c81175e4"
+    },
+    {
+      "bytes": 838,
+      "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/audit.json",
+      "sha256": "981011c2abeae102796aa303465047781729a90f437fe52b5e92e5acfc7fd9fc"
+    },
+    {
+      "bytes": 12791,
+      "path": "artifacts/binding/relationship_readouts/pipeline_v3/pipeline_review_v1.json",
+      "sha256": "5f9e4d95543d2e0c3808a1602f3485c236f35781c10fc79dce1c6e4f35b4e308"
+    },
+    {
+      "bytes": 2141,
+      "path": "artifacts/binding/relationship_readouts/pipeline_v3/resolved_config.json",
+      "sha256": "81e006755f71a966a82f7e945104d6d2fea75564e4721b1a2601d9d18ff065fe"
+    },
+    {
+      "bytes": 4400,
+      "path": "artifacts/binding/relationship_readouts/completion_audit_review_v1.json",
+      "sha256": "43fe0a901c917e5e28c9dda8e875fa25f3dbdb5dc29c4cc1faa51b37023ab74c"
+    },
+    {
+      "bytes": 26609,
+      "path": "artifacts/binding/relationship_readouts/results_interpretation_review_v1.json",
+      "sha256": "f85140a8490b718151123079748abe45db5c7cde5309074dda26f37e7a62e1ab"
+    },
+    {
+      "bytes": 10142,
+      "path": "artifacts/binding/relationship_readouts/throughput_review_v1.json",
+      "sha256": "40730f5e16e968f166f0133c25140ddec4b2161deec5907f7ca43cb08eb7ff1a"
+    },
+    {
+      "bytes": 48463,
+      "path": "artifacts/binding/relationship_readouts/readiness_at_completion_v1.json",
+      "sha256": "b68f450c99e8de552abd0b45e2c34bdb390e417ea4107569cf282e3664cea99f"
+    },
+    {
+      "bytes": 144,
+      "path": "artifacts/binding/relationship_readouts/jobs_v3.json",
+      "sha256": "63e17f0f5a2196ab354373f88f420d40acf67c43e8f30a1879aeb629c30b9fab"
+    },
+    {
+      "bytes": 235799,
+      "path": "artifacts/binding/relationship_readouts/regression_v3.xml",
+      "sha256": "59d98aa04c8bbba735531449f344bc075e761968548bea1fdd5a3a4746628663"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/relationship_readouts/source_capture_v2.json",
+      "sha256": "7fc5d4ffe69dee301cb12b88d757aa36d657fc514eb65d5fd62237e22bda58f0"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/relationship_readouts/source_pipeline_v3.json",
+      "sha256": "7fc5d4ffe69dee301cb12b88d757aa36d657fc514eb65d5fd62237e22bda58f0"
+    },
+    {
+      "bytes": 11548,
+      "path": "artifacts/binding/relationship_readouts/handoff_review_v3.json",
+      "sha256": "5e6d2ec72d77a35904837ac5bb40491e1818a0d2524d656cf38e769d4afe7e0b"
+    },
+    {
+      "bytes": 745,
+      "path": "artifacts/binding/relationship_readouts/queue_preference_review_v1.json",
+      "sha256": "49d900fd46b3bf4a41af0968eeb66c6685c58fbd30a645122a0f37e8efb1aa72"
+    },
+    {
+      "bytes": 1237,
+      "path": "log/slurm/480286_relationship-capture-prepare-v2.json",
+      "sha256": "4ef57a8f3126f55abb5a238c9cd91e87c030f55f85770e06b5b9b0d39e16643a"
+    },
+    {
+      "bytes": 1239,
+      "path": "log/slurm/480292_relationship-capture-v2.json",
+      "sha256": "a1e334d22a2664c60ba99f091f4f20b2511cd1202ca553fc15e473d66943b60d"
+    },
+    {
+      "bytes": 1239,
+      "path": "log/slurm/480293_relationship-capture-audit-v2.json",
+      "sha256": "452d08f0384651100bc971077e9fa3cd94b3759f516f19f69b843fd8d17834e8"
+    },
+    {
+      "bytes": 1240,
+      "path": "log/slurm/480294_relationship-readout-fit-v3.json",
+      "sha256": "d6b5a912526f707bbb3240f63d279ef8f471e6217624265881b250dcc6f99e57"
+    },
+    {
+      "bytes": 1226,
+      "path": "log/slurm/480295_relationship-readout-refresh-v3.json",
+      "sha256": "b0582e1b1cd1020a82f0d3b1e16ed71befeef762c689ea37a055a93cbe6d90d2"
+    }
+  ],
+  "posthoc_controls": {
+    "job_id": "480382",
+    "new_fits": 0,
+    "new_model_queries": 0,
+    "selected_after_original_results": true
+  },
+  "readiness": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 38
+  },
+  "status": "complete_exploratory",
+  "unrelated_jobs_modified": false
+}

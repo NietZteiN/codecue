@@ -1,0 +1,100 @@
+{
+  "baseline_identity_hash": "c66705be15fc7dd0c51843000a2ffd453ec6015f769ab7bee1307b5fdb548ba5",
+  "baseline_responses_sha256": "69cf64a659f089c54055b21edc0c98c6694a5d66c7ac486b93698cf36f6a0e24",
+  "complete": true,
+  "completion_identity_hash": "129b71377ea3c139a4235b3e4bee9f794c25d2bb99d5bdb7235ac530a8228ca6",
+  "completion_responses_sha256": "4f482f28e7ef305ae8c882ea5ac441df0916228e23773e9b4a6642b1ab936fad",
+  "generated_holdouts_opened": false,
+  "generation_source": {
+    "content_for": "a53685e8179ce68156e0fa556f4f69a4a62310e441dcdc5d893d71d9a06edca6",
+    "crux_answer": "fa684973173605b85e29457884608a7a4a9f2ec041ef34096571bc5753395774",
+    "generate": "67076f594cf8f07ff2337eb3cac449977f816f1450bd7cad63fe57990c17f903",
+    "literal": "e7137eba023a02e9728f306e17cb25099561cea2ccaf66665311aa01a50995dd",
+    "upstream_literal_score": "0c395ad3d5374a7a42f382bcea092ef5c1d011c2a95670e9dc1071bcc09a9b96"
+  },
+  "hardware": {
+    "chat": "NVIDIA H100 80GB HBM3",
+    "completion": "NVIDIA H100 80GB HBM3",
+    "native_replay": "NVIDIA H100 80GB HBM3"
+  },
+  "model_inference": false,
+  "replay": {
+    "baseline_identity": "c66705be15fc7dd0c51843000a2ffd453ec6015f769ab7bee1307b5fdb548ba5",
+    "correctness_matches": 16,
+    "generated_holdouts_opened": false,
+    "generation_source": {
+      "content_for": "a53685e8179ce68156e0fa556f4f69a4a62310e441dcdc5d893d71d9a06edca6",
+      "crux_answer": "fa684973173605b85e29457884608a7a4a9f2ec041ef34096571bc5753395774",
+      "generate": "67076f594cf8f07ff2337eb3cac449977f816f1450bd7cad63fe57990c17f903",
+      "literal": "e7137eba023a02e9728f306e17cb25099561cea2ccaf66665311aa01a50995dd",
+      "upstream_literal_score": "0c395ad3d5374a7a42f382bcea092ef5c1d011c2a95670e9dc1071bcc09a9b96"
+    },
+    "input_tokens_all_match": true,
+    "model_inference": false,
+    "n": 16,
+    "output_tokens_match": 16,
+    "raw_responses_match": 16,
+    "replay_identity": "2859e69a5c2bafdac7a8a58cfbec9f05e09222a4ec3089a777e73132393d6737"
+  },
+  "review_source_sha256": "35cd258d759f59bab0d985baa752b3c8ca8ecf04f7c50fe504075344d92a4165",
+  "tasks": [
+    {
+      "answer_block_literal": {
+        "both_correct": 254,
+        "both_incorrect": 469,
+        "chat_correct": 290,
+        "chat_only_correct": 36,
+        "completion_correct": 295,
+        "completion_only_correct": 41,
+        "delta_percentage_points": 0.625,
+        "n": 800
+      },
+      "chat_invalid": 25,
+      "chat_python_echoes": 786,
+      "chat_token_limited": 8,
+      "completion_invalid": 13,
+      "completion_python_echoes": 0,
+      "completion_token_limited": 8,
+      "released_postprocessing_literal": {
+        "both_correct": 3,
+        "both_incorrect": 505,
+        "chat_correct": 3,
+        "chat_only_correct": 0,
+        "completion_correct": 295,
+        "completion_only_correct": 292,
+        "delta_percentage_points": 36.5,
+        "n": 800
+      },
+      "task": "cruxeval_o_direct"
+    },
+    {
+      "answer_block_literal": {
+        "both_correct": 214,
+        "both_incorrect": 426,
+        "chat_correct": 298,
+        "chat_only_correct": 84,
+        "completion_correct": 290,
+        "completion_only_correct": 76,
+        "delta_percentage_points": -1.0,
+        "n": 800
+      },
+      "chat_invalid": 48,
+      "chat_python_echoes": 793,
+      "chat_token_limited": 27,
+      "completion_invalid": 45,
+      "completion_python_echoes": 0,
+      "completion_token_limited": 38,
+      "released_postprocessing_literal": {
+        "both_correct": 214,
+        "both_incorrect": 426,
+        "chat_correct": 298,
+        "chat_only_correct": 84,
+        "completion_correct": 290,
+        "completion_only_correct": 76,
+        "delta_percentage_points": -1.0,
+        "n": 800
+      },
+      "task": "cruxeval_o_cot"
+    }
+  ]
+}

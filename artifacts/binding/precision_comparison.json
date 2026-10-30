@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-10-25T15:54:34.070380+00:00",
+  "source_artifacts": {
+    "BF16": "interface_cpu_prefill_v2/interface_diagnostics/responses.json",
+    "FP32": "interface_cpu_fp32_prefill_v2/interface_diagnostics/responses.json"
+  },
+  "same_cases_and_input_tokens": true,
+  "heldout_outcomes_opened": false,
+  "primitive_correct_by_precision": {
+    "BF16": {
+      "1": 5,
+      "4": 5
+    },
+    "FP32": {
+      "1": 5,
+      "4": 5
+    }
+  },
+  "batch_response_matches_by_precision": {
+    "BF16": 10,
+    "FP32": 12
+  },
+  "cross_precision_matches_by_batch": {
+    "1": 10,
+    "4": 12
+  },
+  "interpretation": "FP32 stabilizes these batch comparisons but reproduces all primitive responses and failures. This small diagnostic does not support precision change as a fix for near-floor short-answer behavior. No general claim of model incapacity or mechanism follows."
+}

@@ -1,0 +1,42 @@
+{
+  "compute_policy": "No artificial project admission or GPU time cap. Existing pinned cached checkpoint; real scheduler constraints only.",
+  "status": "registered_before_new_model_outcomes",
+  "studies": {
+    "cue_control": {
+      "baseline_cases": 5184,
+      "comparison": "Late-minus-early with common final cue minus late-minus-early without it; all instructions and mapping/query cells retained.",
+      "hypothesis": "Compare early/late query accuracy with and without an identical final query. A reduced timing gap suggests the old contrast included recent query availability.",
+      "intervention_forwards": 0,
+      "layers": [
+        8,
+        31
+      ],
+      "limitations": [
+        "Early and late cues still differ in strategy availability.",
+        "Descriptive difference in differences does not identify a memory algorithm."
+      ]
+    },
+    "value_owner": {
+      "baseline_cases": 2592,
+      "conditions": 14,
+      "fresh_ordered_numeric_pairs": 36,
+      "hypothesis": "A copy-site representation that preserves value ownership should support single-variable changes separately and the full two-variable donor map jointly; compare unrelated queries and norm-matched controls.",
+      "layers": [
+        4,
+        8,
+        12,
+        31
+      ],
+      "limitations": [
+        "Numeric novelty only; familiar program templates.",
+        "Baseline errors retained in all primary results.",
+        "Wrong-version patch is a norm-matched direction, not a natural donor-vector substitution.",
+        "No final/extrapolation holdouts opened; no training or new model downloads."
+      ],
+      "main_cases": 1728,
+      "planned_intervention_forwards": 96768,
+      "primary_layer": 8,
+      "wrong_version_controls": 864
+    }
+  }
+}

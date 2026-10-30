@@ -1,0 +1,31 @@
+{
+  "evaluation_role": "discovery_diversity_prepared_memory_v1",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "profiles": {
+    "codellama34b": {
+      "actual_max_prompt_tokens": 92,
+      "batch_size": 128,
+      "cases": 5760,
+      "headroom_scope": "Prospective short-prefill working allowance; scales with actual tokens and declared batch, not context_limit.",
+      "max_prompt_tokens": 92,
+      "min_prompt_tokens": 88,
+      "required_free_bytes": 71782958696,
+      "weight_bytes": 67487991400,
+      "working_headroom_bytes": 4294967296
+    },
+    "llama8b": {
+      "actual_max_prompt_tokens": 112,
+      "batch_size": 256,
+      "cases": 5760,
+      "headroom_scope": "Prospective short-prefill working allowance; scales with actual tokens and declared batch, not context_limit.",
+      "max_prompt_tokens": 112,
+      "min_prompt_tokens": 112,
+      "required_free_bytes": 18208040024,
+      "weight_bytes": 16060556376,
+      "working_headroom_bytes": 2147483648
+    }
+  },
+  "scope": "Prospective free-memory requirement from actual tokenizer-prepared lengths and fixed batches; not a measured peak.",
+  "status": "passed"
+}

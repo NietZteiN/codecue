@@ -1,0 +1,10 @@
+{
+  "same_input_token_ids": true,
+  "cases": 12,
+  "exact_response_prefix_matches": 12,
+  "invalid_256": 4,
+  "invalid_512": 1,
+  "training_correct_256": 0,
+  "training_correct_512": 0,
+  "interpretation": "Same prompts and checkpoint; the higher cap improves completion format on these cases but does not correct the longer training answers."
+}

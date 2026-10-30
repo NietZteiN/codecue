@@ -1,0 +1,19 @@
+{
+  "changed_predictions": [
+    {
+      "id": "value-transfer:8110b4e4adfc6acd1d1f6721",
+      "new_correct": false,
+      "new_prediction": 2,
+      "old_correct": true,
+      "old_prediction": 9
+    }
+  ],
+  "corrected_correct": 392,
+  "exact_old_prompt_plus_space_token": 432,
+  "generated_holdouts_opened": false,
+  "interpretation": "The fixed formatting prefix moves the measurement to the digit. Both runs used H200 BF16; cached generation and complete-prefill numerical paths differ. Preserve all paired prediction differences.",
+  "matching_parsed_predictions": 431,
+  "previous_correct": 393,
+  "programs": 432,
+  "role": "fixed_format_prefix_boundary_comparison"
+}

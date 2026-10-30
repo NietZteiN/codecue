@@ -1,0 +1,38 @@
+{
+  "all_scientific_work_complete": true,
+  "issues": [],
+  "logging": {
+    "enabled": true,
+    "fresh_within_two_intervals": true,
+    "guard_health": true,
+    "interval_minutes": 10,
+    "last_success_age_seconds": 9.786782,
+    "last_success_utc": "2026-10-29T16:48:08.964194+00:00",
+    "pending_guards": 2,
+    "queue": [
+      {
+        "exit_code": "0:0",
+        "job_id": "482595",
+        "reason": "BeginTime",
+        "state": "PENDING"
+      },
+      {
+        "exit_code": "0:0",
+        "job_id": "482585",
+        "reason": "BeginTime",
+        "state": "COMPLETED"
+      },
+      {
+        "exit_code": "0:0",
+        "job_id": "482623",
+        "reason": "Dependency",
+        "state": "PENDING"
+      }
+    ]
+  },
+  "morning_due": true,
+  "needs_attention": false,
+  "scheduler_errors": [],
+  "scientific_status": "gate_failed",
+  "status": "complete"
+}

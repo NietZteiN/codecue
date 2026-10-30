@@ -1,0 +1,263 @@
+{
+  "checks": {
+    "all_540_query_cells_preserved": true,
+    "all_four_target_slots_and_graph_counts_retained": true,
+    "completed_prediction_replay_proof_required": true,
+    "no_prediction_or_original_npz_opened": true,
+    "primary_layer24_seed_means_recomputed": true,
+    "repeated_png_svg_byte_identical": true
+  },
+  "coefficient_arrays_opened": false,
+  "development_group_units": {
+    "schedule-graph:3c64a41b37bfa609de5f80b1": {
+      "bodies": 48,
+      "units": 192
+    },
+    "schedule-graph:5acaac52ff5ce8fac052fd1d": {
+      "bodies": 96,
+      "units": 384
+    },
+    "schedule-graph:87580ae2e9cb6ebe3fbc7b10": {
+      "bodies": 6,
+      "units": 24
+    },
+    "schedule-graph:9892c99ba7c0702a2954311f": {
+      "bodies": 18,
+      "units": 72
+    },
+    "schedule-graph:c7d403fca4ecbfee0f8c4fc8": {
+      "bodies": 6,
+      "units": 24
+    }
+  },
+  "evaluation_role": "discovery_schedule_score_publication_v1",
+  "figure_data": {
+    "codellama34b_current_definition": {
+      "hidden_postquery_direct": [
+        -0.24884259259259225,
+        2.604166666666665,
+        4.369212962962963,
+        2.056327160493827
+      ],
+      "hidden_postquery_sham": [
+        0.7079475308641973,
+        -1.6550925925925928,
+        -0.48804012345679004,
+        -0.16010802469135835
+      ],
+      "hidden_prequery_direct": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "layers": [
+        12,
+        24,
+        36,
+        47
+      ],
+      "model": "codellama34b",
+      "surface_postquery_direct": -0.03858024691357954,
+      "task": "current_definition",
+      "training_prior": 0.0
+    },
+    "codellama34b_current_version": {
+      "hidden_postquery_direct": [
+        0.18518518518518529,
+        4.166666666666668,
+        3.333333333333334,
+        1.5123456790123473
+      ],
+      "hidden_postquery_sham": [
+        -0.7060185185185183,
+        1.0956790123456794,
+        -2.183641975308642,
+        -0.925925925925926
+      ],
+      "hidden_prequery_direct": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "layers": [
+        12,
+        24,
+        36,
+        47
+      ],
+      "model": "codellama34b",
+      "surface_postquery_direct": 0.0,
+      "task": "current_version",
+      "training_prior": 0.0
+    },
+    "llama8b_current_definition": {
+      "hidden_postquery_direct": [
+        1.5046296296296324,
+        1.0744598765432094,
+        -1.334876543209879,
+        2.528935185185186
+      ],
+      "hidden_postquery_sham": [
+        -0.7233796296296301,
+        -1.0937500000000004,
+        -0.8468364197530865,
+        0.7658179012345677
+      ],
+      "hidden_prequery_direct": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "layers": [
+        8,
+        16,
+        24,
+        31
+      ],
+      "model": "llama8b",
+      "surface_postquery_direct": -0.8796296296296292,
+      "task": "current_definition",
+      "training_prior": 0.0
+    },
+    "llama8b_current_version": {
+      "hidden_postquery_direct": [
+        1.049382716049383,
+        0.0,
+        2.746913580246914,
+        6.265432098765432
+      ],
+      "hidden_postquery_sham": [
+        0.21412037037037054,
+        -0.5767746913580246,
+        -2.170138888888889,
+        -3.0169753086419755
+      ],
+      "hidden_prequery_direct": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "layers": [
+        8,
+        16,
+        24,
+        31
+      ],
+      "model": "llama8b",
+      "surface_postquery_direct": 0.0,
+      "task": "current_version",
+      "training_prior": 0.0
+    }
+  },
+  "fixed_target_comparison_units_per_cell": 696,
+  "generated_holdouts_opened": false,
+  "graph_families": 5,
+  "input_pins": [
+    {
+      "bytes": 458,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/audit.json",
+      "sha256": "7d22324d6508a09e6377dffd0c18db4688919f7061b3fb5e9d5d3f922103cec7"
+    },
+    {
+      "bytes": 27729,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/completion_manifest_v1.json",
+      "sha256": "2ce8a299e080163ff6dbe85058bd7fbddc5fd0ab736e75f96370dd1a3f36aa9c"
+    },
+    {
+      "bytes": 839,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/prediction_replay_review_v1.json",
+      "sha256": "f857fd248982a246b7b431fa1ed45838b7dbff0c279bc5993384ce17303329ba"
+    },
+    {
+      "bytes": 6878,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/registration.json",
+      "sha256": "402f5cf8466e30fff1a56ad281429d819f3538c724f133feeb9d4a6806967e09"
+    },
+    {
+      "bytes": 24497320,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/results_v1.json",
+      "sha256": "01cf43013471e2651b1a611239542ef399666e81a1a1032646af41b5fa5ff24e"
+    },
+    {
+      "bytes": 19209,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/analysis/summary.json",
+      "sha256": "b4031d0b23459f64613cb92f6d334dc920490f06de9d9251fe8f8197231d44bf"
+    },
+    {
+      "bytes": 30422,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/publish_score_review_v1.py",
+      "sha256": "90565d2c0ff0e7759d32e6079b007b5fd5bb83664675ce7e1b52b969f1e002b4"
+    },
+    {
+      "bytes": 762,
+      "path": "artifacts/binding/sources/76f592842abcad4d62c63857/configs/binding/schedule_followup_20261028_v1/score_review.json",
+      "sha256": "014995360e7877b9012ba84c7a358297e4538f94a7cafe3d1ff9c6b637477d61"
+    },
+    {
+      "bytes": 53875,
+      "path": "artifacts/binding/sources/76f592842abcad4d62c63857/frozen_manifest.json",
+      "sha256": "ce23db34b7cf0708eac9cb3e4c5e571296df1c07a8418ea9e533e3490ff9fe50"
+    },
+    {
+      "bytes": 4048,
+      "path": "reports/binding/schedule_score_review_findings_v1.md",
+      "sha256": "83d9622a5c191ff4f32ff36e6ee6f2681aa83862b15b966328b0b0c7aca77312"
+    }
+  ],
+  "limitations": [
+    "Posthoc discovery after the aggregate results were known; no untouched confirmation or historical reliability-gate rescue.",
+    "Every fixed target slot is held constant across its exact body\u2019s four queried variables; this is not a comparison between different target slots.",
+    "There are 174 DEV assignment bodies and five graph families. Each pooled point contains 696 dependent body/target units, not 696 independent bodies.",
+    "The three weighting seeds, numeric/lexical/query relatives and source bodies are dependent; no new confidence interval, bootstrap or favorable layer selection is used.",
+    "Site7 precedes the query and is a placebo. Padding or numerical prediction differences there cannot be attributed to unseen query text.",
+    "Site8 observes the queried identifier; a saved-readout effect is decoder-specific query sensitivity, not natural causal use or a state-tracking mechanism.",
+    "Source-keyed sham targets have different class marginals and need not form lawful SSA graphs; their effects are a separate task.",
+    "Stored margins are unsigned top-two class-score gaps, not true-target margins; ridge scores are uncalibrated.",
+    "Version3 is absent from original DEV, version4 appears only in slot0 and slot1 has constant version2; this follow-up does not repair that domain coverage.",
+    "Statement-index definition heads do not decode complete natural variable@version identities."
+  ],
+  "matched_dev_bodies": 174,
+  "new_bootstraps": 0,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "output_pins": [
+    {
+      "bytes": 4224733,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/query_effects_v1.csv",
+      "sha256": "a122c300489a5c310e01ec23903634462cfeee830d179e4da7995a2fd0a2e38d"
+    },
+    {
+      "bytes": 5980,
+      "path": "reports/binding/schedule_score_review_summary_v1.md",
+      "sha256": "4454c0eb7f3eeebab289a9f829d56804ad7dc1301684b321cdfdb78b53951ef1"
+    },
+    {
+      "bytes": 247478,
+      "path": "reports/binding/figures/schedule_score_review_v1.png",
+      "sha256": "be845b49b87b9094b8f356653e999cf4e7e41bca91a248db6bec886ba074891f"
+    },
+    {
+      "bytes": 105825,
+      "path": "reports/binding/figures/schedule_score_review_v1.svg",
+      "sha256": "ad7c739aac6916daf5ad85ae1b91f247533e52ecc781fad47dc0814a0a222863"
+    }
+  ],
+  "parameters_reapplied": 0,
+  "plotting_version": "3.11.2",
+  "prediction_bank_inventory_entries_checked": 90,
+  "prediction_banks_opened": false,
+  "publisher_script": {
+    "bytes": 30422,
+    "path": "artifacts/binding/schedule_followup/20261028_v1/publish_score_review_v1.py",
+    "sha256": "90565d2c0ff0e7759d32e6079b007b5fd5bb83664675ce7e1b52b969f1e002b4"
+  },
+  "query_effect_cells": 540,
+  "raw_activation_arrays_opened": false,
+  "reproduction": "Every rerun regenerates outputs and must match existing bytes exactly.",
+  "source_or_response_records_opened": false,
+  "status": "passed"
+}

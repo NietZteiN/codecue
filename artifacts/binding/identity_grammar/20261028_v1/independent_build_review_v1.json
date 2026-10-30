@@ -1,0 +1,134 @@
+{
+  "activation_arrays_opened": false,
+  "actual_study_score_arrays_opened": false,
+  "coefficient_arrays_opened": false,
+  "evaluation_role": "discovery_identity_grammar_independent_build_review_v1",
+  "focused_tests": {
+    "all_passed": true,
+    "commands": [
+      "PYTHONPATH=src /work/jvl210002/migration/envs/probe-cu129/bin/python -m pytest -q tests/binding/test_identity_grammar.py",
+      "PYTHONPATH=src /work/jvl210002/migration/envs/probe-cu129/bin/python -m pytest -q tests/binding/test_grammar_identity_review.py"
+    ],
+    "core": 36,
+    "runner": 26,
+    "total": 62
+  },
+  "independent_checks": [
+    "Exact DP versus independent complete-path enumeration for both grammars and evidence views, including exact ties.",
+    "Subnormal advantages survive later huge-score additions; exact owner marginals differ correctly from rounded float sums.",
+    "Self-copy reads before its write; version cap and no-self restriction follow the predicted owner history.",
+    "Batching, permutation, duplicate score-row reuse, input immutability, dtype/geometry guards and missing rows are covered.",
+    "Lawful free-joint tuple preservation and nested feasible broad-path preservation hold under matching exact objectives.",
+    "Explicit synthetic counterexamples retain parent-subset harm and harm to a correct historical factorized tuple.",
+    "A separate six-row fixture covers four methods and four rules, legal real truth, perfect but unlawful sham free predictions, unequal graph groups and retained exact objective keys.",
+    "Selected/free objectives are independently rescored and exact projection-penalty identities are checked and retained with path codes.",
+    "Historical joint and component references retain both grammar lawfulness and violation counts; assignment/parent change counts use their own scopes.",
+    "Historical whole-eight monotonic assertions require finite score inputs and lawful truth; unlawful sham truth and invalid score rows do not cause false assertions.",
+    "Original S5 fit and distinct S3 capture provenance, two model profiles, 192-column schema and 35-artifact-per-model receipt/proof contract are checked before original score access.",
+    "Output paths are disjoint from original readout folders, reports, plans, captures and pinned source inputs.",
+    "Independent retained-score audit tests forbid reopening original score banks and detect consistently repinned semantic diagnostic tampering."
+  ],
+  "known_limitations": [
+    "Grammar supplies external version counting. Neither decoding improvement nor owner-marginal recovery establishes maintained versions or causal use.",
+    "The version-4 codebook excludes four writes to one owner, which would require version5.",
+    "No-self is a declared global cohort prior, not inferred from each case; no profile or family restriction is applied.",
+    "Owner-marginal evidence is an exact score ablation of the same joint tables, not an independently trained decoder.",
+    "Historical component-column argmax is a different decision reference; cross-objective and individual-subset harm remain reportable.",
+    "Sham truth can be unlawful; its own-task feasibility ceiling and real-truth cross-task scores must remain separate.",
+    "Source owners plus the counter convention give an explicitly stronger algorithmic reference and do not enter the score decoder.",
+    "Adaptive discovery, fifteen dependent DEV graph families, sparse final-parent version4 TRAIN support and all previous scientific limitations remain.",
+    "Actual source preflight, original-score extraction, retained-score audit, full regression and final publication are not executed by this build review."
+  ],
+  "models_or_tokenizers_loaded": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_artifacts_modified": false,
+  "parameters_reapplied": 0,
+  "preserved_s5_files": [
+    {
+      "bytes": 17913,
+      "path": "src/codecue/binding/direct_identity_readouts.py",
+      "sha256": "0e51f5cf536c18e885f797aefe2c2ddf6276721d51475f86919c32378e6dda69"
+    },
+    {
+      "bytes": 15894,
+      "path": "src/codecue/binding/direct_identity_targets.py",
+      "sha256": "20734568d40b341daf7b7b5d73d1ad56f7dd9842db98d3162b73392de054bab9"
+    },
+    {
+      "bytes": 48010,
+      "path": "src/codecue/binding/schedule_readouts.py",
+      "sha256": "a029fe517776b68ef935ef82b32b5f182cdeec29c58a4b9607cb05ed16aae393"
+    }
+  ],
+  "reviewed_files": [
+    {
+      "bytes": 14338,
+      "path": "src/codecue/binding/identity_grammar.py",
+      "sha256": "6d59fbceeb4e38d03869392fa61321f5070bf849127101868db25aa5facd74c4"
+    },
+    {
+      "bytes": 50984,
+      "path": "src/codecue/binding/grammar_identity_review.py",
+      "sha256": "99a037f955cac706206976edf01f0e9dd8b04ea09b4de0beb3f1f7f8156c981a"
+    },
+    {
+      "bytes": 948,
+      "path": "scripts/164_binding_grammar_identity_review.py",
+      "sha256": "d4adaa2e8db71c2597b8115a06e8d089c376b6c0354876fe11f5b1933931c28f"
+    },
+    {
+      "bytes": 15000,
+      "path": "tests/binding/test_identity_grammar.py",
+      "sha256": "8d482fd5906e35d6e62fb0aec5025ed09f247a0e16a31ec6b04889675362a67a"
+    },
+    {
+      "bytes": 16975,
+      "path": "tests/binding/test_grammar_identity_review.py",
+      "sha256": "23f0c4d4d1c9186e48da616a608d281c17c069655c68d49e03cd09a4dd9e2278"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Read-only source review and synthetic CPU checks; actual study execution and full regression are pending the frozen worker.",
+  "status": "passed_source_and_synthetic_review",
+  "synthetic_benchmark": {
+    "diagnostic_json_bytes": 20250568,
+    "estimate_scope": "Synthetic fixtures only; excludes full metadata, hashing, persistence, publication and scheduler time.",
+    "estimated_60_bank_seconds_per_pass": 329.7787578497082,
+    "evaluate_bank_seconds": 5.49631263082847,
+    "grammar_case_rows": 23040,
+    "graph_groups": 15,
+    "methods": 4,
+    "peak_process_rss_MiB": 89.1015625,
+    "rows": 1440,
+    "rules": 4
+  },
+  "verified_contract": {
+    "complete_paths": {
+      "allow_self": 64512,
+      "no_self": 20412
+    },
+    "dev_bank_case_rows": 86400,
+    "dev_case_method_rule_rows": 1382400,
+    "dev_rows_per_bank": 1440,
+    "evidence": [
+      "joint",
+      "owner_marginal"
+    ],
+    "exact_dyadic_objectives": true,
+    "grammars": [
+      "allow_self",
+      "no_self"
+    ],
+    "lexicographic_tie": "event-interleaved owners; four base16 digits 4*d+p",
+    "methods": 4,
+    "no_profile_constraints": true,
+    "no_source_or_truth_arguments_to_core": true,
+    "original_banks": 60,
+    "original_capture_source": "345f75b01f5c3b33bd0ca6d8",
+    "original_fit_source": "3e5471ac9dc9b948761fc429",
+    "original_score_case_rows": 345600,
+    "rules": 4,
+    "whole_case_invalid_on_any_nonfinite_joint_cell": true
+  }
+}

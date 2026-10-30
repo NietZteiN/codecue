@@ -1,0 +1,29 @@
+# Source-oracle-assisted owner and version diagnostics
+
+This is an adaptive posthoc extension of the completed/finishing diversity readout study. The Llama 8B primary summary was already inspected when this plan was written; CodeLlama 34B capture was running and its readouts were incomplete. It is not a prospective replication, a new learned binding decoder, or causal evidence. It maps to `dependvar.txt` sections 1–2, 6 and 7: distinguish owner identity, assignment version, dependency referents and decoder errors. Existing failed behavioral gates and final/extrapolation seals remain unchanged.
+
+## Inputs and fixed scope
+
+Require both completed 5,760-case diversity captures and both complete 45-bank readout receipts, with their actual saved-parameter/metric replay proofs. Fix source bank SHA256 `d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1`, original execution snapshot `345f75b01f5c3b33bd0ca6d8` and code SHA256 `9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918`. Pin the original readout configurations and this plan; audit original source/configuration identities, ordered case IDs, 232-column schema and all original metric inventories before reading score members. Rich original metadata has an explicit 192 MiB bound; compact receipts retain their existing bounds.
+
+Use only saved score arrays and their identity metadata, plus source-only target maps. Never load activation, feature, coefficient or normalization arrays, reapply parameters, fit probes, query/tokenize models, or open final/extrapolation outcomes. Score loading must whitelist bounded NPZ members and verify the enclosing artifact SHA. Keep all 90 original feature/site/weight-seed banks: both checkpoints, four fixed hidden layers plus the character surface baseline, sites 3/7/8, seeds 17/29/43. The original nominated endpoint remains layer24/site7. Retain all declared classes and missing/undefined cases; do not choose new thresholds or layers from outcomes.
+
+## Explicit oracle assistance and reference frames
+
+Original current-definition and copy-parent heads predict defining-statement indices. Convert a predicted index to `(canonical variable slot, assignment version)` only through each program's source-derived visible SSA map. The source map supplies semantic identity; this conversion is a diagnostic postmetric, not evidence that the model independently decoded the complete variable@version identity. Do not supply the map to a learned model or alter any saved prediction.
+
+For current-definition heads, classify exact identity; same owner with wrong/obsolete version; different owner whose definition is current at the capture checkpoint; different owner whose definition is obsolete at that checkpoint; and invalid/missing/future candidate. Separate undefined targets from prediction errors. Version status must be evaluated at the capture checkpoint.
+
+For copy-parent heads, evaluate the referent immediately before its consumer assignment executes. A correct source definition can become obsolete later; never classify parent correctness or version status by the final program state. Explicitly distinguish owner correctness, version-number equality and full owner/version identity. Different owners can share the same ordinal version. Preserve exact statement-class correctness as an anchor and assert consistency with the mapped exact-identity result.
+
+Current-version heads remain independent scalar predictions. Report their original correctness and joint tables with current-definition correctness, mapped owner correctness, mapped version equality and agreement between scalar prediction and source-mapped definition version. Agreement may be jointly wrong and is not a consistency guarantee. A correct scalar version does not establish correct ownership. Preserve clear target-specific denominators.
+
+## Comparators, aggregation and audit
+
+Apply identical source maps and diagnostics to real-task hidden, character-surface and TRAIN-prior predictions. Reproduce their original argmax/tie and prior rules. Keep the original prefix-sham task's scores and metrics explicitly separate: its labels can be structurally unlawful and have different marginals. Do not relabel sham predictions against real source truth as the original sham-task accuracy. The binding-error partition operates on real-task truth only.
+
+Report all per-head/slot, graph-family, destination-profile and row-weighted/equal-graph counts and rates. Every DEV family has 96 dependent rows; 15 families are the structural reporting units. Initial site3 heads can be constant and parent heads undefined; show them rather than treating absence as successful recovery. Weighting seeds are dependent estimator variants. No new confidence intervals, significance claim, behavioral gate, or causal qualification is introduced.
+
+Retain compact prediction-only DEV banks sufficient to reproduce every new diagnostic. An independent audit reconstructs all owner/version diagnostics, denominators, summaries and reports from those prediction banks and source-only metadata, without rereading original score arrays or applying parameters. Verify deterministic report/artifact reproduction and immutable source pins. Run focused semantic tests, including wrong-owner/same-version cases, repeated overwrites, pre-consumer parent status, missing/future predictions, undefined masks and unequal-family aggregation; then the complete binding regression. Freeze the new implementation and configurations before the CPU-only score analysis.
+
+These diagnostics describe how existing decoders fail on consumed adaptive discovery data. They do not identify internal model error causes, natural causal use, a maintained register-like state, population generalization, or a mechanism predicting unfamiliar-program failures. No optional training, new checkpoint, intervention or fresh model capture is authorized by this posthoc extension.

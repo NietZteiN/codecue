@@ -1,0 +1,54 @@
+{
+  "additional_gpu_allocation_seconds": 0,
+  "allocated_cpu_seconds": 3440,
+  "development_cases": 4860,
+  "evaluation_role": "posthoc_overnight_relationship_continuation_completion_v1",
+  "generated_holdouts_opened": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_responses_validated": 14580,
+  "parameter_replays": 0,
+  "raw_activations_loaded": false,
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 45
+  },
+  "recorded_utc": "2026-10-28T13:48:06.523073+00:00",
+  "result": {
+    "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/results_v1.json",
+    "sha256": "5e9cdd8a0439b06d0a8437efaef453f11df6d7248774e345e618b37a72bb4b38"
+  },
+  "saved_score_rows_read": 419904,
+  "selected_saved_score_banks": 72,
+  "software_tests": 1766,
+  "source": {
+    "code": "f6b2d07a2760158f46bcde619867cf103437e52c635ce5f8bce3b4a3dfaead01",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/bb04042b777979c68679206d",
+    "snapshot_id": "bb04042b777979c68679206d"
+  },
+  "status": "complete_exploratory",
+  "worker_jobs": {
+    "480986": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=16G,node=1",
+      "allocation_seconds": 325,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "480987": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=24G,node=1",
+      "allocation_seconds": 84,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "480988": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=16G,node=1",
+      "allocation_seconds": 42,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  }
+}

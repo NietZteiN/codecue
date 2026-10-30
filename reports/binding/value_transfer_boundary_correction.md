@@ -1,0 +1,11 @@
+# Correcting the answer-digit measurement boundary
+
+The v1 assay completed 432 greedy baselines and 20,160 intervention forwards with intact token, tensor, norm and replay checks. Inspection of its answer-vector control exposed a measurement error: every baseline first generated token is ID 220, a space. The answer digit occurs next. Digit log odds and digit argmax at the earlier position therefore describe a formatting decision, not answer transfer. The all-zero digit-transfer heatmap is not evidence against value routing. The complete v1 artifacts and generated report remain preserved as a diagnostic; they must not be used as answer-digit intervention results.
+
+Version 2 supplies that same fixed space in the assistant prefill. Actual-tokenizer QA must verify, for **all 432 cases**, that the new input IDs are exactly the old IDs followed by token 220. Program content, pair membership, both directions, all queries, sites, raw blocks, norm controls and analysis cells are unchanged. This is a separately identified interface measurement, not a silent replacement of old responses.
+
+A new gate requires every complete baseline's first generated token to equal the token for its parsed positive digit. It does not require that digit to be correct; no cases are excluded by accuracy. Raw baseline outputs are saved before the gate, and a failure stops intervention interpretation. The existing next-token-logit/generation consistency and same-batch replay checks remain necessary but were insufficient on their own: they verified the wrong position correctly.
+
+The earlier 87.9% queried-value probe result remains a recovery measurement at its recorded prefill site. Its first-token consistency check verified the formatting step and did not prove alignment with the answer digit. The corrected intervention moves to a different, explicitly identified boundary; it does not replace or reinterpret the earlier activation bank as digit-aligned.
+
+The corrected run uses `configs/binding/competition/value_transfer_v2.json`, distinct prepared cases and a distinct `llama31_8b_v2` run directory. Its report and figure carry `_v2` suffixes. The v1 frozen source and source hashes remain valid for reproducing the diagnostic. This correction is discovery work prompted by a failed scientific positive control, not confirmatory evidence or final-test evaluation.

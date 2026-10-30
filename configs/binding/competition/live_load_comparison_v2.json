@@ -1,0 +1,14 @@
+{
+  "comparison_artifact": "artifacts/binding/live_load/comparison_v2.json",
+  "report": "reports/binding/live_load_results_v2.md",
+  "runs": {
+    "codellama34b": {
+      "config": "configs/binding/competition/live_load_codellama34b_v2.json",
+      "sha256": "ea6159ad30dc2b4f184a8301d10b49f35fdfaeb26112031f27892ef5db8d524b"
+    },
+    "llama31_8b": {
+      "config": "configs/binding/competition/live_load_llama31_8b_v2.json",
+      "sha256": "ef78680fa4f973300bebc7ce2b4edc078756f6ee70e287ff3b316f983ac49c01"
+    }
+  }
+}

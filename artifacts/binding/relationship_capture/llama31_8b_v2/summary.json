@@ -1,0 +1,220 @@
+{
+  "cases": 1944,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000000.npz",
+      "rows": 128,
+      "sha256": "84e1b7e27b60389ff5852268544ab841380bb3cbf8f76aec6caee7b1ec8a996a"
+    },
+    {
+      "first": 128,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000128.npz",
+      "rows": 128,
+      "sha256": "3b6dea9af6d9a5b30ee8a6611f9547a0573ca864d6e5490d3661483e9c7d5a08"
+    },
+    {
+      "first": 256,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000256.npz",
+      "rows": 128,
+      "sha256": "f18b1c5e97ab92d9a1c8b3c39a22f542b4c0794fffbe9e7e163c63acb4bdb982"
+    },
+    {
+      "first": 384,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000384.npz",
+      "rows": 128,
+      "sha256": "6d2a4d0ed4a9297af70956b95ec0ef56a1303c04b15c3d44907b43470e81a07b"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000512.npz",
+      "rows": 128,
+      "sha256": "094407a4b9b1be30989087409123e9e3dff56c16a5145a2a0b47e0497aad1300"
+    },
+    {
+      "first": 640,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000640.npz",
+      "rows": 128,
+      "sha256": "c7a60daf3225974219cd701cafa43a8b6766c6e4439cb0aea633b1b27b83caf8"
+    },
+    {
+      "first": 768,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000768.npz",
+      "rows": 128,
+      "sha256": "3f57be0934083f0550b91283bb3cdd7b78de41f69579f8f9abd6c9782b644760"
+    },
+    {
+      "first": 896,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/000896.npz",
+      "rows": 128,
+      "sha256": "a68f6c8d821c3b288f4bdae90df38db44c092e64b1ee96854e022c0a244f2d20"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001024.npz",
+      "rows": 128,
+      "sha256": "d2044f5af0a1f161a851c601775771d80a3a48f90c092e158faf069dfd983b37"
+    },
+    {
+      "first": 1152,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001152.npz",
+      "rows": 128,
+      "sha256": "684d4bb6302630a8a5e7dcde8fa2a8ff64a33ea4c8d30b2a323053a641ce0ec9"
+    },
+    {
+      "first": 1280,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001280.npz",
+      "rows": 128,
+      "sha256": "9d8192070e1d4d493e1db30b566fa5afdddec18cc19bf5de24d1bdf7aecd8192"
+    },
+    {
+      "first": 1408,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001408.npz",
+      "rows": 128,
+      "sha256": "6ee932e692344415ac919a024b0d8e238cfd7e372891908ffa20807e820fca03"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001536.npz",
+      "rows": 128,
+      "sha256": "2624a7d8ba16f126184176f225b1c84397829616d5d1385b84b55e6a2d9c6632"
+    },
+    {
+      "first": 1664,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001664.npz",
+      "rows": 128,
+      "sha256": "19f13b00272a002536311681eaaf17f43ee0c6dc1acd75f0ab25624ce837daf3"
+    },
+    {
+      "first": 1792,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001792.npz",
+      "rows": 128,
+      "sha256": "6e099ab9c1fb2bd9ab261def9f6488609a61146c7f0d28c9e25dfd579c4b3967"
+    },
+    {
+      "first": 1920,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/chunks/001920.npz",
+      "rows": 24,
+      "sha256": "eb96efd62eeb6b96219db8186e78890ee3957cb5d166b038b8ff4bdae0d99c7b"
+    }
+  ],
+  "collection_attempts": [
+    {
+      "model_load_attempted": true,
+      "model_loaded": true,
+      "prefill_batch_calls": 61,
+      "prefill_cases_attempted": 1944,
+      "prefill_cases_returned": 1944,
+      "runtime": {
+        "attention_backend": "sdpa",
+        "device_name": "NVIDIA H200 NVL",
+        "dtype": "torch.bfloat16",
+        "forward": "causal-LM model.model backbone; no vocabulary logits or generation",
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-6b4f35b3-361c-714d-54e3-c4badfc3982b",
+          "mean_gpu_utilization_percent": 5.62962962962963,
+          "mean_power_watts": 173.08703703703702,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 16703.0,
+          "samples": 81,
+          "selector_verified": true
+        },
+        "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+        "gpu_uuid": "6b4f35b3-361c-714d-54e3-c4badfc3982b",
+        "position_ids": "(attention_mask.cumsum(-1)-1).clamp_min(0)",
+        "torch_peak_allocated_bytes": 16575400960,
+        "use_cache": false,
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1"
+        }
+      },
+      "slurm_job_id": "480292",
+      "status": "complete",
+      "wall_seconds": 145.46419789781794
+    }
+  ],
+  "committed_batch_groups": 61,
+  "complete": true,
+  "config": {
+    "batch_size": 32,
+    "chunk_size": 128,
+    "context_limit": 4096,
+    "dataset": "artifacts/binding/relationships/algebraic_sources_v1.jsonl",
+    "dataset_sha256": "8a96759d14968605d7d2a21e9a91c552b62072e926f3a49d5cf11f5f870ac2c5",
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "evaluation_role": "discovery_relationship_capture_v1",
+    "hidden_size": 4096,
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "prefix_atol": 1e-05,
+    "run_dir": "artifacts/binding/relationship_capture/llama31_8b_v2",
+    "tokenization_mode": "native",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+  },
+  "config_hash": "06f7b2853cdfab1119f7d72bf09f43b7042b1d8bd0aaee788b956b86f644883c",
+  "dataset_sha256": "8a96759d14968605d7d2a21e9a91c552b62072e926f3a49d5cf11f5f870ac2c5",
+  "different_padding_prefix_comparisons": 0,
+  "different_padding_prefix_max_abs_diff": 0.0,
+  "distinct_committed_prefill_rows": 1944,
+  "evaluation_role": "discovery_relationship_capture_v1",
+  "execution_backend": "Transformers BF16 SDPA decoder prefill, explicit left-padding position IDs, use_cache=False; no generation",
+  "feature_shape": [
+    1944,
+    9,
+    4,
+    4096
+  ],
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "hidden_size": 4096,
+  "interpretation": "Raw prefill activations only; no decoded relation, model response, accuracy or causal-mechanism claim.",
+  "layers": [
+    8,
+    16,
+    24,
+    31
+  ],
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_loaded": true,
+  "model_prefill_cases": 1944,
+  "model_prefill_cases_attempted": 1944,
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "new_model_queries": 1944,
+  "new_model_queries_semantics": "Source-case prefill attempts, including any uncommitted retry work; no generation.",
+  "prefill_batch_calls": 61,
+  "prefix_atol": 1e-05,
+  "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+  "prefix_comparisons": 4980,
+  "prefix_max_abs_diff": 0.0,
+  "preflight_sha256": "ffb37b840df0405c2b14301d88770b9605ed888787657e657df045f4611063aa",
+  "sites": [
+    "statement:0",
+    "statement:1",
+    "statement:2",
+    "statement:3",
+    "statement:4",
+    "statement:5",
+    "statement:6",
+    "statement:7",
+    "pre_answer"
+  ],
+  "source": {
+    "frozen_manifest_sha256": "aa41ec6b4ae6b55655fc6d3b4ae5b22ce11a1ec4fce1d777882d85dc71a249fa",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0",
+    "source_sha256": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5"
+  },
+  "storage_bytes": 1169099554,
+  "stored_dtype": "float32",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

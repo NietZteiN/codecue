@@ -1,0 +1,18 @@
+{
+  "backend": "vllm",
+  "chunk_sizes": [
+    64,
+    128,
+    256
+  ],
+  "first_n_per_task": 256,
+  "gpu_memory_utilization": 0.9,
+  "inline_validation_chunks": [
+    128,
+    256,
+    1600
+  ],
+  "max_num_batched_tokens": 16384,
+  "max_num_seqs": 256,
+  "timeout_seconds": 1680
+}

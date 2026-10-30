@@ -1,0 +1,17 @@
+{
+  "declared_plan": "reports/binding/identity_grammar_plan_v1.md",
+  "declared_plan_sha256": "01bcd50abb700a6e6f89845beb37ccdbf562b9b00b4f9d4da0aa61a8888dc5c0",
+  "evaluation_role": "discovery_identity_grammar_review_v1",
+  "readout_configs": [
+    {
+      "path": "configs/binding/direct_identity_20261028_v1/llama8b_readouts.json",
+      "sha256": "28720e81c4445e66ff8eb7c4012fa6047998152dd261173f2e1d4e267adbcb08"
+    },
+    {
+      "path": "configs/binding/direct_identity_20261028_v1/codellama34b_readouts.json",
+      "sha256": "07152361af3701df69c1509c74dfc7a76b4e9596a3e2c5670d50e3a0c0c5fc4e"
+    }
+  ],
+  "report": "reports/binding/identity_grammar_findings_v1.md",
+  "run_dir": "artifacts/binding/identity_grammar/20261028_v1/analysis"
+}

@@ -1,0 +1,43 @@
+{
+  "audit": "artifacts/binding/published/full_v2_review.json",
+  "audit_source": "artifacts/binding/published_review_source_v3.json",
+  "decision": "reports/binding/published_decision.md",
+  "full_gpu_allocation_seconds": 1916,
+  "generated_holdouts_opened": false,
+  "inference_source": "artifacts/binding/published_source_v2.json",
+  "jobs": "artifacts/binding/published_jobs_v2.json",
+  "latest_targeted_tests": {
+    "command": "python -m pytest -q tests/binding/test_published_benchmarks.py tests/binding/test_published_review.py tests/binding/test_snapshots.py",
+    "elapsed_seconds": 3.5,
+    "passed": 49
+  },
+  "predictions": 2350,
+  "recommended_next": "Freeze a matched raw-completion versus native-chat serialization experiment on CRUXEval before making comparable published-score claims; preserve both postprocessing counts and full denominators.",
+  "regression_tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 133
+  },
+  "released_questions": 1550,
+  "report": "reports/binding/published_baseline_review.md",
+  "resources": {
+    "gpu_peak_bytes": 21424295936,
+    "stage_seconds": 1876.7109413740109
+  },
+  "run_identity_hash": "c66705be15fc7dd0c51843000a2ffd453ec6015f769ab7bee1307b5fdb548ba5",
+  "shared_gpu_stage_ledger": {
+    "active": {},
+    "cap_seconds": 14400,
+    "used_seconds": 2565.1403962309705
+  },
+  "smoke_gpu_allocation_seconds": 82,
+  "source_note": "Full inference and audit retain their frozen sources. Updated software canonicalizes AST error addresses for future resumes without changing score decisions.",
+  "status": "complete",
+  "unexecuted": [
+    "official execution scoring of nonliteral model outputs",
+    "released raw-completion serialization comparison",
+    "published-benchmark controlled variants and mechanism experiments"
+  ],
+  "updated_software_source": "artifacts/binding/published_final_source.json"
+}

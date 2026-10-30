@@ -1,0 +1,23 @@
+{
+  "compressed_text_artifacts": 280,
+  "credentials_detected": 0,
+  "export_specific_tests": 14,
+  "frozen_source_archives": 120,
+  "largest_tracked_bytes": 28028905,
+  "largest_tracked_file": "reproducibility/compressed/artifacts/binding/live_load/codellama34b_v2/prepared_cases.jsonl.gz",
+  "local_payload_policy": "Raw array/model/runtime payloads inventoried locally; all text evidence and source snapshots published",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "old_full_binding_regression": "2280 passed in the recorded frozen scientific run; not rerun for publication",
+  "real_dataset_and_source_restore": "passed; see restore_validation_review.json",
+  "root_test_suite": {
+    "command": "PYTHONPATH=src python -m pytest -q tests --ignore=tests/binding",
+    "failed": 0,
+    "passed": 69
+  },
+  "small_artifact_metadata_files": 5202,
+  "source_compilation": "passed",
+  "staged_file_count_before_this_review": 6791,
+  "staged_logical_bytes_before_this_review": 1511118337,
+  "status": "passed"
+}

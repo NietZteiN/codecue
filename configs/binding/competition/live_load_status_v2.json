@@ -1,0 +1,32 @@
+{
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "comparison_artifact": "artifacts/binding/live_load/comparison_v2.json",
+  "completed_report": "reports/binding/live_load_results_v2.md",
+  "job_keys": [
+    "codellama34b_audit",
+    "codellama34b_gpu",
+    "codellama34b_qa",
+    "codellama34b_review",
+    "llama31_8b_audit",
+    "llama31_8b_gpu",
+    "llama31_8b_qa",
+    "llama31_8b_review",
+    "comparison"
+  ],
+  "jobs": "artifacts/binding/live_load/jobs_v2.json",
+  "output": "artifacts/binding/live_load/status_v2.json",
+  "plan_report": "live_load_plan.md",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/competition/live_load_status_v2.json",
+  "report": "reports/binding/live_load_status_v2.md",
+  "stages": [
+    {
+      "name": "llama31_8b",
+      "path": "artifacts/binding/live_load/llama31_8b_v2/checkpoint_suite"
+    },
+    {
+      "name": "codellama34b",
+      "path": "artifacts/binding/live_load/codellama34b_v2/checkpoint_suite"
+    }
+  ],
+  "title": "Computed retention-frontier study status"
+}

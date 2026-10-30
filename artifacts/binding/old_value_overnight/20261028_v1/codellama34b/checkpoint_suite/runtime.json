@@ -1,0 +1,24 @@
+{
+  "device_name": "NVIDIA H200 NVL",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": 16384,
+    "max_num_seqs": 512,
+    "tensor_parallel_size": 1
+  },
+  "load_warmup_seconds": 323.4476946229115,
+  "preflight": {
+    "cases": 20160,
+    "config_hash": "52bc27a00cd0fa619ae96400ba4d2b0af6e3498815c50581823da38d1da7175b",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "24efef2bd58e1c34e404b3d7af32cdf4e9f9e67e5c03dfaec9860915cea8ec0b",
+    "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "status": "passed"
+  },
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1",
+    "vllm": "0.26.0+cu129"
+  }
+}

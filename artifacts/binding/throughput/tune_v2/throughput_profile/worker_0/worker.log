@@ -1,0 +1,46 @@
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   2%|▏         | 5/291 [00:00<00:07, 39.48it/s]Loading weights:   8%|▊         | 22/291 [00:00<00:02, 106.15it/s]Loading weights:  12%|█▏        | 36/291 [00:00<00:02, 118.70it/s]Loading weights:  18%|█▊        | 51/291 [00:00<00:01, 125.61it/s]Loading weights:  23%|██▎       | 68/291 [00:00<00:01, 139.93it/s]Loading weights:  30%|██▉       | 86/291 [00:00<00:01, 147.29it/s]Loading weights:  35%|███▌      | 103/291 [00:00<00:01, 154.16it/s]Loading weights:  41%|████      | 119/291 [00:00<00:01, 155.29it/s]Loading weights:  46%|████▋     | 135/291 [00:00<00:01, 154.58it/s]Loading weights:  52%|█████▏    | 151/291 [00:01<00:00, 155.00it/s]Loading weights:  57%|█████▋    | 167/291 [00:01<00:00, 156.29it/s]Loading weights:  63%|██████▎   | 184/291 [00:01<00:00, 159.09it/s]Loading weights:  69%|██████▊   | 200/291 [00:01<00:00, 158.51it/s]Loading weights:  74%|███████▍  | 216/291 [00:01<00:00, 154.53it/s]Loading weights:  80%|███████▉  | 232/291 [00:01<00:00, 153.59it/s]Loading weights:  86%|████████▌ | 249/291 [00:01<00:00, 153.79it/s]Loading weights:  92%|█████████▏| 267/291 [00:01<00:00, 157.98it/s]Loading weights:  98%|█████████▊| 285/291 [00:01<00:00, 162.14it/s]Loading weights: 100%|██████████| 291/291 [00:01<00:00, 151.01it/s]
+{
+  "load_seconds": 69.83059329295065,
+  "trials": [
+    {
+      "status": "complete",
+      "backend": "hf",
+      "setting": {
+        "attention": "eager",
+        "stopping": "legacy",
+        "bucket": false,
+        "batch_size": 8
+      },
+      "cases": 512,
+      "generation_seconds": 329.755663190037,
+      "requests_per_second": 1.552664767139833,
+      "output_tokens": 81154,
+      "output_tokens_per_second": 246.10343068841016,
+      "gpu": {
+        "samples": 619,
+        "mean_gpu_utilization_percent": 95.0,
+        "peak_device_memory_mib": 79023.0,
+        "mean_power_watts": 359.7273990306947
+      },
+      "torch_peak_allocated_bytes": 19804573696,
+      "prompt_token_ids_sha256": "ec0559f54ced8dde9cd9b950d0d3ddf291a12c490bde8e46a1bfe37008d61887",
+      "quality": {
+        "n": 512,
+        "correct": 189,
+        "reference_correct": 189,
+        "valid": 495,
+        "correctness_matches": 512,
+        "validity_matches": 512,
+        "raw_matches": 512,
+        "both_valid": 495,
+        "parsed_values_match": 495
+      }
+    }
+  ],
+  "device_name": "NVIDIA H100 80GB HBM3",
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1",
+    "vllm": "0.26.0"
+  }
+}

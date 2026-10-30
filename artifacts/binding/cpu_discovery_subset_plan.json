@@ -1,0 +1,33 @@
+{
+  "status": "predeclared_discovery_subset",
+  "model_outcomes_observed": true,
+  "responses": 720,
+  "bases": 60,
+  "clusters": 38,
+  "selection_sha256": "084b3c26cdb228100a91f23110df203ae9b898c95f01b1c0ef6c538661a6aab7",
+  "primary_magnitude_bin_bases": {
+    "0": 24,
+    "1": 24,
+    "2": 12
+  },
+  "factorial_cell_base_counts": {
+    "parallel:load2:updates1": 5,
+    "parallel:load2:updates3": 5,
+    "parallel:load4:updates1": 5,
+    "parallel:load4:updates3": 5,
+    "snapshot:load2:updates1": 5,
+    "snapshot:load2:updates3": 5,
+    "snapshot:load4:updates1": 5,
+    "snapshot:load4:updates3": 5,
+    "accumulator:load2:updates1": 5,
+    "accumulator:load2:updates3": 5,
+    "accumulator:load4:updates1": 5,
+    "accumulator:load4:updates3": 5
+  },
+  "config_sha256": "7b5a369436b619644e47a6c059e84952dbec87cc07151be19ba41c0cfd479706",
+  "cpu_wall_cap_seconds": 2700,
+  "estimate": "CPU smoke 411.53 s for 144 responses suggests about 2058 s plus model load for 720; 2700 s stage cap and 55 minute job limit",
+  "rule": "keep every naming realization and both tasks; any budget-limited result is explicitly incomplete, not silently balanced",
+  "previous_smoke_same_ids": 12,
+  "selection_basis": "Stable base IDs stratified by magnitude; no outcome-dependent selection. Previous smoke overlap reported separately."
+}

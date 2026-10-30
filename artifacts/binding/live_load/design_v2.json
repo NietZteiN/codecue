@@ -1,0 +1,55 @@
+{
+  "all_behavior_collected_even_if_gate_fails": true,
+  "all_fixed_contrasts": 56,
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 907,
+  "dataset_manifest": {
+    "checkpoint_functional_relevance_passed": true,
+    "counts": {
+      "decomposed_arithmetic": 768,
+      "literal_arithmetic": 384,
+      "retention_frontier": 36864
+    },
+    "evaluation_role": "computed_retention_frontier_discovery_v1",
+    "generated_holdouts_opened": false,
+    "generation": {
+      "initialize_results": true,
+      "noise_pairs": 4,
+      "numeric_per_template": 16,
+      "seed": 20261027,
+      "templates": 24
+    },
+    "generation_config_hash": "ff7b8bc80fbb9bdd93efe1d0f321be7c8062475830070b9222c6fdb11f4e0465",
+    "independent_python_traces_passed": true,
+    "rows": 38016,
+    "sha256": "73ba280d54c602593501bf40704baec678cb2932b9947bc28e2c3bc021576362",
+    "structural_components": 24
+  },
+  "fixed_before_new_model_outcomes": true,
+  "fixed_defined_variables": 8,
+  "generation_config": "configs/binding/competition/live_load_generation_v2.json",
+  "identifier_audit_sha256": "ac8f05291b835cbea2c1c0d6ce76e9cd6b0708a133c74751a532bfc17067ab73",
+  "limitations": [
+    "Scheduling also changes computation and definition/query distances.",
+    "Program liveness is not a model memory lower bound.",
+    "Calibration numeric states are matched, not structural generalization.",
+    "Original final/extrapolation outcomes remain sealed."
+  ],
+  "model_list": [
+    "meta-llama/Llama-3.1-8B-Instruct",
+    "codellama/CodeLlama-34b-Instruct-hf"
+  ],
+  "primary_contrasts": [
+    "live4_minus_live2:neutral:updates3",
+    "naming_by_load_by_updates"
+  ],
+  "prompts_per_model": 38016,
+  "reliability_gate": {
+    "maximum_invalid_rate": 0.05,
+    "minimum_accuracy": 0.9,
+    "minimum_cell_n": 24
+  },
+  "revision_reason": "Hold all eight variables defined across the retention-frontier manipulation, before any model outcomes.",
+  "total_planned_predictions": 76032,
+  "v1_retired_without_model_inference": true
+}

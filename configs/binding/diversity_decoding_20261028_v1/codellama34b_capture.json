@@ -1,0 +1,21 @@
+{
+  "batch_size": 128,
+  "chunk_size": 512,
+  "context_limit": 4096,
+  "dataset": "artifacts/binding/schedule_diversity/20261028_v1/sources.jsonl",
+  "dataset_manifest_sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f",
+  "dataset_sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1",
+  "evaluation_role": "discovery_diversity_capture_v1",
+  "hidden_size": 8192,
+  "layers": [
+    12,
+    24,
+    36,
+    47
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "prefix_atol": 1e-05,
+  "run_dir": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture",
+  "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+}

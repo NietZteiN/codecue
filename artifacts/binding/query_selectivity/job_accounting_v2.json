@@ -1,0 +1,275 @@
+{
+  "active_stage_jobs": 38,
+  "all_completed_successfully": true,
+  "excludes_superseded_failed_attempts": true,
+  "historical_failure_records_preserved": true,
+  "jobs": {
+    "anchor-figure-v2": {
+      "elapsed_seconds": 9,
+      "exit_code": "0:0",
+      "job_id": "479273",
+      "name": "confidence-anchor-figure-v2",
+      "state": "COMPLETED"
+    },
+    "collect-codellama34b": {
+      "elapsed_seconds": 6,
+      "exit_code": "0:0",
+      "job_id": "479188",
+      "name": "confidence-collect-codellama34b",
+      "state": "COMPLETED"
+    },
+    "collect-llama31_8b": {
+      "elapsed_seconds": 6,
+      "exit_code": "0:0",
+      "job_id": "479184",
+      "name": "confidence-collect-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "compare": {
+      "elapsed_seconds": 5,
+      "exit_code": "0:0",
+      "job_id": "479197",
+      "name": "confidence-compare",
+      "state": "COMPLETED"
+    },
+    "event-compare": {
+      "elapsed_seconds": 11,
+      "exit_code": "0:0",
+      "job_id": "479298",
+      "name": "event-predict-event-compare",
+      "state": "COMPLETED"
+    },
+    "event-completion-refresh": {
+      "elapsed_seconds": 49,
+      "exit_code": "0:0",
+      "job_id": "479299",
+      "name": "event-predict-event-completion-refresh",
+      "state": "COMPLETED"
+    },
+    "event-fit-codellama34b": {
+      "elapsed_seconds": 128,
+      "exit_code": "0:0",
+      "job_id": "479297",
+      "name": "event-predict-event-fit-codellama34b",
+      "state": "COMPLETED"
+    },
+    "event-fit-llama31_8b": {
+      "elapsed_seconds": 103,
+      "exit_code": "0:0",
+      "job_id": "479296",
+      "name": "event-predict-event-fit-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "fit-codellama34b": {
+      "elapsed_seconds": 51,
+      "exit_code": "0:0",
+      "job_id": "479196",
+      "name": "confidence-fit-codellama34b",
+      "state": "COMPLETED"
+    },
+    "fit-llama31_8b": {
+      "elapsed_seconds": 57,
+      "exit_code": "0:0",
+      "job_id": "479195",
+      "name": "confidence-fit-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "joint-compare": {
+      "elapsed_seconds": 16,
+      "exit_code": "0:0",
+      "job_id": "479745",
+      "name": "joint-confidence-compare",
+      "state": "COMPLETED"
+    },
+    "joint-completion-refresh": {
+      "elapsed_seconds": 55,
+      "exit_code": "0:0",
+      "job_id": "479746",
+      "name": "joint-confidence-refresh",
+      "state": "COMPLETED"
+    },
+    "joint-fit-codellama34b": {
+      "elapsed_seconds": 102,
+      "exit_code": "0:0",
+      "job_id": "479744",
+      "name": "joint-confidence-codellama34b",
+      "state": "COMPLETED"
+    },
+    "joint-fit-llama31_8b": {
+      "elapsed_seconds": 111,
+      "exit_code": "0:0",
+      "job_id": "479743",
+      "name": "joint-confidence-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "qualified-completion-refresh": {
+      "elapsed_seconds": 52,
+      "exit_code": "0:0",
+      "job_id": "479275",
+      "name": "confidence-qualified-completion",
+      "state": "COMPLETED"
+    },
+    "qualified-full-codellama34b": {
+      "elapsed_seconds": 2615,
+      "exit_code": "0:0",
+      "job_id": "479272",
+      "name": "confidence-qualified-full-codellama34b",
+      "state": "COMPLETED"
+    },
+    "qualified-full-llama31_8b": {
+      "elapsed_seconds": 608,
+      "exit_code": "0:0",
+      "job_id": "479269",
+      "name": "confidence-qualified-full-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "qualified-prepare-codellama34b": {
+      "elapsed_seconds": 93,
+      "exit_code": "0:0",
+      "job_id": "479270",
+      "name": "confidence-qualified-prepare-codellama34b",
+      "state": "COMPLETED"
+    },
+    "qualified-prepare-llama31_8b": {
+      "elapsed_seconds": 91,
+      "exit_code": "0:0",
+      "job_id": "479267",
+      "name": "confidence-qualified-prepare-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "qualified-smoke-codellama34b": {
+      "elapsed_seconds": 177,
+      "exit_code": "0:0",
+      "job_id": "479271",
+      "name": "confidence-qualified-smoke-codellama34b",
+      "state": "COMPLETED"
+    },
+    "qualified-smoke-llama31_8b": {
+      "elapsed_seconds": 87,
+      "exit_code": "0:0",
+      "job_id": "479268",
+      "name": "confidence-qualified-smoke-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "qualified-tokenizer-review": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "job_id": "479274",
+      "name": "confidence-qualified-tokenizer-review",
+      "state": "COMPLETED"
+    },
+    "query-selectivity-completion-refresh": {
+      "elapsed_seconds": 63,
+      "exit_code": "0:0",
+      "job_id": "480063",
+      "name": "query-selectivity-refresh",
+      "state": "COMPLETED"
+    },
+    "query-selectivity-fit": {
+      "elapsed_seconds": 187,
+      "exit_code": "0:0",
+      "job_id": "480062",
+      "name": "query-selectivity-readouts",
+      "state": "COMPLETED"
+    },
+    "representation-completion-refresh": {
+      "elapsed_seconds": 54,
+      "exit_code": "0:0",
+      "job_id": "479752",
+      "name": "representation-completion-refresh",
+      "state": "COMPLETED"
+    },
+    "representation-fit": {
+      "elapsed_seconds": 81,
+      "exit_code": "0:0",
+      "job_id": "479751",
+      "name": "representation-rank-alignment",
+      "state": "COMPLETED"
+    },
+    "stress-collect-codellama34b": {
+      "elapsed_seconds": 329,
+      "exit_code": "0:0",
+      "job_id": "479818",
+      "name": "stress-full-codellama34b",
+      "state": "COMPLETED"
+    },
+    "stress-collect-llama31_8b": {
+      "elapsed_seconds": 252,
+      "exit_code": "0:0",
+      "job_id": "479815",
+      "name": "stress-full-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "stress-compare": {
+      "elapsed_seconds": 17,
+      "exit_code": "0:0",
+      "job_id": "479856",
+      "name": "stress-v2-compare",
+      "state": "COMPLETED"
+    },
+    "stress-completion-refresh": {
+      "elapsed_seconds": 46,
+      "exit_code": "0:0",
+      "job_id": "479857",
+      "name": "stress-v2-refresh",
+      "state": "COMPLETED"
+    },
+    "stress-fit-codellama34b": {
+      "elapsed_seconds": 129,
+      "exit_code": "0:0",
+      "job_id": "479855",
+      "name": "stress-v2-fit-codellama34b",
+      "state": "COMPLETED"
+    },
+    "stress-fit-llama31_8b": {
+      "elapsed_seconds": 144,
+      "exit_code": "0:0",
+      "job_id": "479854",
+      "name": "stress-v2-fit-llama31_8b",
+      "state": "COMPLETED"
+    },
+    "stress-prepare-codellama34b-full": {
+      "elapsed_seconds": 91,
+      "exit_code": "0:0",
+      "job_id": "479812",
+      "name": "stress-prepare-codellama34b-full",
+      "state": "COMPLETED"
+    },
+    "stress-prepare-codellama34b-smoke": {
+      "elapsed_seconds": 84,
+      "exit_code": "0:0",
+      "job_id": "479813",
+      "name": "stress-prepare-codellama34b-smoke",
+      "state": "COMPLETED"
+    },
+    "stress-prepare-llama31_8b-full": {
+      "elapsed_seconds": 90,
+      "exit_code": "0:0",
+      "job_id": "479809",
+      "name": "stress-prepare-llama31_8b-full",
+      "state": "COMPLETED"
+    },
+    "stress-prepare-llama31_8b-smoke": {
+      "elapsed_seconds": 86,
+      "exit_code": "0:0",
+      "job_id": "479811",
+      "name": "stress-prepare-llama31_8b-smoke",
+      "state": "COMPLETED"
+    },
+    "stress-smoke-codellama34b": {
+      "elapsed_seconds": 275,
+      "exit_code": "0:0",
+      "job_id": "479817",
+      "name": "stress-smoke-codellama34b",
+      "state": "COMPLETED"
+    },
+    "stress-smoke-llama31_8b": {
+      "elapsed_seconds": 261,
+      "exit_code": "0:0",
+      "job_id": "479814",
+      "name": "stress-smoke-llama31_8b",
+      "state": "COMPLETED"
+    }
+  },
+  "status": "passed"
+}

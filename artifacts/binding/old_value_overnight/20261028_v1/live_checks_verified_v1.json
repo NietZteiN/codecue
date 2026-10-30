@@ -1,0 +1,61 @@
+{
+  "check_interval_observed_seconds": 607.2362868785858,
+  "evaluation_role": "discovery_old_value_live_checks_verified_v1",
+  "last_check": "2026-10-29T00:56:14.910000+00:00",
+  "logging": {
+    "enabled": true,
+    "fresh_within_two_intervals": true,
+    "guard_health": true,
+    "interval_minutes": 10,
+    "last_success_age_seconds": 611.572759,
+    "last_success_utc": "2026-10-29T00:46:04.656024+00:00",
+    "pending_guards": 2,
+    "queue": [
+      {
+        "exit_code": "0:0",
+        "job_id": "481710",
+        "reason": "Dependency",
+        "state": "PENDING"
+      },
+      {
+        "exit_code": "0:0",
+        "job_id": "481700",
+        "reason": "BeginTime",
+        "state": "PENDING"
+      }
+    ]
+  },
+  "models": {
+    "codellama34b": {
+      "committed": 0,
+      "committed_delta": 0,
+      "invalid_committed_line": null,
+      "planned": 20160,
+      "running": true,
+      "scientific_status": "pending",
+      "stalled_running_seconds": 0,
+      "trailing_partial": false
+    },
+    "llama8b": {
+      "committed": 20160,
+      "committed_delta": 20160,
+      "invalid_committed_line": null,
+      "planned": 20160,
+      "running": false,
+      "scientific_status": "gate_failed",
+      "stalled_running_seconds": 0,
+      "trailing_partial": false
+    }
+  },
+  "morning_job": "481707",
+  "morning_start_time": "2026-10-29T08:00:00-05:00",
+  "new_fits": 0,
+  "new_model_queries_for_checking": 0,
+  "next_job_id": "481718",
+  "next_start_time": "2026-10-28T20:06:15",
+  "operational_errors": false,
+  "recorded_utc": "2026-10-29T00:59:09.900804+00:00",
+  "status": "passed",
+  "successful_live_checks": 2,
+  "timezone": "America/Chicago"
+}

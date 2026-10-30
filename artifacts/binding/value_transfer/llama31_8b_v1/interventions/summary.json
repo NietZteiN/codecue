@@ -1,0 +1,40 @@
+{
+  "baseline_cases": 432,
+  "baseline_correct": 393,
+  "complete": true,
+  "conditions": [
+    "literal_transfer",
+    "unrelated_position",
+    "answer_vector",
+    "identity_sham",
+    "random_11",
+    "random_29",
+    "random_47"
+  ],
+  "device_name": "NVIDIA H200 NVL",
+  "directed_pairs": 576,
+  "first_token_consistency_cases": 432,
+  "generated_holdouts_opened": false,
+  "generation_replay_first_token_matches": 576,
+  "interpretation": "Discovery literal-routing/next-token assay. Final-answer vector transfer is an answer-copy software control; no binding mechanism established.",
+  "intervention_forwards": 20160,
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    31
+  ],
+  "pre_query_invariance_groups": 162,
+  "preflight": {
+    "cases": 432,
+    "config_hash": "3bf056ad8d70c64801d1704fde71edab64541ed9b9b3c2101b68b33a1e7cc539",
+    "dataset_sha256": "89b6ea0426917d000887470b1554887ce079ab0091f7bc5173de6f80991842e3",
+    "directed_pairs": 576,
+    "generated_holdouts_opened": false,
+    "prepared_sha256": "b3b542fc67eabc8fa30929f943400ef8c1c5bc7bfb4a4deca3463fd994ce64f9",
+    "source_sha256": "25c308a7adc235cfd67237e2317f340c5c4ec6535331c70604b8392b494dd256",
+    "status": "passed"
+  },
+  "torch_peak_memory_bytes": 17358936576
+}

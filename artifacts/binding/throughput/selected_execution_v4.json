@@ -1,0 +1,56 @@
+{
+  "context_limit": 4096,
+  "cuda_home": "/usr/local/cuda-12.9",
+  "device_name": "NVIDIA H200 NVL",
+  "dtype": "bfloat16",
+  "flashinfer_sampler": false,
+  "include_stop_str_in_output": true,
+  "input_contract": "pretokenized single-BOS plus reference-SP prompt IDs; no engine chat wrapping",
+  "max_new_tokens": {
+    "bbh_tracking_3": 1024,
+    "bbh_tracking_5": 1024,
+    "bbh_tracking_7": 1024,
+    "cruxeval_o_cot": 1024,
+    "cruxeval_o_direct": 512
+  },
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "profile_identity_hash": "90998f6cef746f8270183c7cb38a8ce219df595f759103fd6b9831b5382cce10",
+  "prompt_wrapper": "cruxeval_released_completion_v1",
+  "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+  "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+  "sampling": "greedy",
+  "stop": [
+    "[/ANSWER]"
+  ],
+  "tokenization_mode": "codellama_official_boundary_v1",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "uuid_telemetry": true,
+  "validation_quality": {
+    "both_valid": 1524,
+    "correct": 575,
+    "correctness_matches": 1528,
+    "n": 1600,
+    "parsed_values_match": 1325,
+    "raw_matches": 1142,
+    "reference_correct": 585,
+    "valid": 1537,
+    "validity_matches": 1569
+  },
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1",
+    "vllm": "0.26.0+cu129"
+  },
+  "worker": {
+    "backend": "vllm",
+    "chunk_sizes": [
+      1600
+    ],
+    "first_n_per_task": null,
+    "gpu_memory_utilization": 0.9,
+    "max_num_batched_tokens": 16384,
+    "max_num_seqs": 256,
+    "timeout_seconds": 1680
+  }
+}

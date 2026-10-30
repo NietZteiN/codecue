@@ -1,0 +1,13 @@
+{
+  "affected_artifact": "backend/codellama34b_v1",
+  "correction": "Test blank-line stop strings only against generated tokens. A regression test covers prompt/completion boundary matching.",
+  "error": "StopStringCriteria matched the prompt-final newline plus the first generated newline; all cached HF answers were truncated.",
+  "evidence": "V1 cached responses were a single newline; uncached controls and vLLM continued to signed integers.",
+  "original_backend_artifacts_preserved": true,
+  "primary_vllm_results_changed": false,
+  "reregistered_backend_runs": [
+    "llama31_8b_v2",
+    "codellama34b_v2"
+  ],
+  "status": "identified_and_fixed_before_interpretation"
+}

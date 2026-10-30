@@ -1,0 +1,49 @@
+{
+  "algebraic_methods": {
+    "categorical_value_derived": 0.5142772093482212,
+    "direct": 0.5484237316627357,
+    "literal_transfer_categorical": 0.5002301412555283,
+    "literal_transfer_direct": 0.5086668311539635,
+    "source_categorical_value_derived": 0.5096197445199203,
+    "source_direct": 0.5144372543581885,
+    "source_literal_transfer_categorical": 0.5183804810955762,
+    "source_literal_transfer_direct": 0.4906357698165198,
+    "structural_position_prior": 0.5
+  },
+  "cases": 5832,
+  "config_hash": "c229f5e80065b8daeb7ec29838175bd5f2933d6d3c46ac49187911263fcc7edb",
+  "derived_logging_summary": true,
+  "evaluation_role": "discovery_overnight_relationship_readouts_v1",
+  "factorizations": 45,
+  "generated_holdouts_opened": false,
+  "literal_transfer_rows": 262440,
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "new_model_queries": 0,
+  "panel": "computed_roots",
+  "parameter_replay_rows": 262440,
+  "report": "reports/binding/overnight_20261027_llama8b_computed_roots.md",
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "scientific_completion": {
+    "bytes": 29188,
+    "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_computed_roots/completion_manifest_v1.json",
+    "sha256": "f891f34b00430edda19845cab3b21ad53ed312de9dbdd14a0690a6053c3395eb"
+  },
+  "source_form": "computed",
+  "status": "complete_exploratory",
+  "structural_methods": {
+    "7": {
+      "direct": 0.931241426611797,
+      "literal_transfer_direct": 0.7049039780521261,
+      "source_direct": 0.027091906721536347,
+      "source_literal_transfer_direct": 0.030006858710562412,
+      "structural_position_prior": 0.024691358024691357
+    },
+    "8": {
+      "direct": 0.5973936899862825,
+      "literal_transfer_direct": 0.2740054869684499,
+      "source_direct": 0.015089163237311385,
+      "source_literal_transfer_direct": 0.01989026063100137,
+      "structural_position_prior": 0.024691358024691357
+    }
+  }
+}

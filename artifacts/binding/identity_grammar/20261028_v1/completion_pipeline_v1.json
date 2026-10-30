@@ -1,0 +1,74 @@
+{
+  "array_loading": false,
+  "evaluation_role": "discovery_identity_grammar_completion_pipeline_v1",
+  "execution_order": [
+    "verify_QA_and_saved_score_replay",
+    "metadata_publication",
+    "byte_identical_publication",
+    "readiness_refresh",
+    "logging_health",
+    "immutable_handoff"
+  ],
+  "helper_pins": [
+    {
+      "bytes": 4597,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/prepare_submission_v1.py",
+      "sha256": "60f3a4893a39198bc37f47f03da06bc0b51ab43acb07b8eb9ea28d560579f8ef"
+    },
+    {
+      "bytes": 3925,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/queue_completion_v1.py",
+      "sha256": "03811e573245d5eea4bd4a92a07afacddef1ef86aa842c96ef71016bc0e38a5b"
+    },
+    {
+      "bytes": 4055,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/run_validation_v1.py",
+      "sha256": "af88c3890dbeed06f44f49199db91c9378422e445fbcc438174f44752e53b627"
+    },
+    {
+      "bytes": 1891,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/run_analysis_v1.py",
+      "sha256": "67a515bb5b57ee3380e316421ec1e759643728c0f4e8a3e44684441b84d63496"
+    },
+    {
+      "bytes": 53078,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/publish_grammar_v1.py",
+      "sha256": "9398a8c3ec34e3d8cb7dfd8ecb9a6553a7760ded3f3165d537fcb7572f00c24e"
+    },
+    {
+      "bytes": 8101,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/finish_review_v1.py",
+      "sha256": "b0fd9a30880f63254cdbe46434de71037c40e00e04908882447da594b480c9c9"
+    },
+    {
+      "bytes": 6824,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/independent_build_review_v1.json",
+      "sha256": "85a5997e693d92a4c91d3e4336260de854b37c3427e97180b92c3711a02b4a1b"
+    },
+    {
+      "bytes": 958,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/publisher_build_review_v1.json",
+      "sha256": "d2df7df1b2f07a5eeb74de2e779c7fa916ea3144e63878e54bd7e9c968d94b4c"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "publisher_synthetic_checks": 14,
+  "queued_readiness_report_sha256": "92d3dd97bb394d1467295304febeaad3e1a9669c24208df66a2a075a1692065e",
+  "readiness_config": {
+    "bytes": 68877,
+    "path": "configs/binding/preparation/readiness_v23.json",
+    "sha256": "7859c7986f4361fa5fe492a386b09ec000941717d2bfd2bea732b8e3f231a99b"
+  },
+  "requires_completed_jobs": [
+    "481635",
+    "481633"
+  ],
+  "source": {
+    "code": "ebc4b3a9bd5270fa22eeea88d5a777a488441d9c48d5f09c94af60381581729c",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/b75fedb03895e8f9d28e29c3",
+    "snapshot_id": "b75fedb03895e8f9d28e29c3"
+  },
+  "status": "ready"
+}

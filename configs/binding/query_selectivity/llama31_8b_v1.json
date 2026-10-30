@@ -1,0 +1,73 @@
+{
+  "alpha": 100.0,
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 117
+  },
+  "capture_audit_sha256": "717f18e59741adac828fa075916114d51c18dbe3cee35fd1dcceed19acf9e6d1",
+  "capture_config": "configs/binding/competition/state_capture_v2.json",
+  "capture_config_sha256": "058f3de8993b8824bf686c4b7c8bb3afcbce6fda8a36c355d009ebf7cc542e0c",
+  "capture_manifest_sha256": "53795b277349616dcd98512894ef50d057920b0bb6db7aa6adfd8cbf991bd0e7",
+  "class_values": [
+    -16,
+    -15,
+    -14,
+    -13,
+    -12,
+    -11,
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "evaluation_role": "discovery_query_selectivity_v1",
+  "feature_dimensions": 4096,
+  "layers": [
+    8,
+    16,
+    24,
+    31
+  ],
+  "primary": {
+    "backend": "hidden",
+    "condition": "neutral",
+    "layer": 24,
+    "site": "pre_answer",
+    "split": "development"
+  },
+  "report": "reports/binding/query_selectivity_v1.md",
+  "run_dir": "artifacts/binding/query_selectivity/llama31_8b_v1",
+  "score_tolerance": 1e-08,
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "sites": [
+    "pre_query_state",
+    "after_query",
+    "pre_answer"
+  ]
+}

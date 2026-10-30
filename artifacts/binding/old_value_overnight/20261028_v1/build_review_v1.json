@@ -1,0 +1,63 @@
+{
+  "evaluation_role": "discovery_old_value_build_v1",
+  "expected_regression_tests": 2280,
+  "generated_holdouts_opened": false,
+  "historical_source_changes": [
+    "src/codecue/binding/snapshots.py"
+  ],
+  "metadata": {
+    "codellama34b": {
+      "config_hash": "52bc27a00cd0fa619ae96400ba4d2b0af6e3498815c50581823da38d1da7175b",
+      "dataset_sha256": "1f2c8676b06023ce8d5db5d396c230648aa7c9e6948b7d624ab6c4581a6d3544",
+      "evaluation_role": "discovery_old_value_calibration_v1",
+      "generated_holdouts_opened": false,
+      "instructions": [
+        "old_value_output_v1",
+        "old_value_execute_v1",
+        "old_value_history_v1"
+      ],
+      "logical_source_views": 6720,
+      "new_fits": 0,
+      "new_model_queries": 0,
+      "rows": 6720,
+      "scored_cases": 20160,
+      "status": "passed"
+    },
+    "llama8b": {
+      "config_hash": "717fe54c2ebbe71b77d5bb8dbe2131f7623c367000b5f72255ba05542c587862",
+      "dataset_sha256": "1f2c8676b06023ce8d5db5d396c230648aa7c9e6948b7d624ab6c4581a6d3544",
+      "evaluation_role": "discovery_old_value_calibration_v1",
+      "generated_holdouts_opened": false,
+      "instructions": [
+        "old_value_output_v1",
+        "old_value_execute_v1",
+        "old_value_history_v1"
+      ],
+      "logical_source_views": 6720,
+      "new_fits": 0,
+      "new_model_queries": 0,
+      "rows": 6720,
+      "scored_cases": 20160,
+      "status": "passed"
+    }
+  },
+  "model_inference": false,
+  "new_fits": 0,
+  "new_focused_tests": 89,
+  "new_modules": [
+    "old_value_programs",
+    "old_value_run",
+    "old_value_overnight"
+  ],
+  "planned_scored_responses_per_model": 20160,
+  "recorded_utc": "2026-10-29T00:28:03.318713+00:00",
+  "source": {
+    "code": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55"
+  },
+  "source_rows": 6720,
+  "status": "passed",
+  "test_source_files": 109,
+  "test_source_sha256": "f8a02df185b44557d7c87b642b7ac1d798fa797837423fff47abc8f3c7fcd157"
+}

@@ -1,0 +1,661 @@
+{
+  "active_sites": [
+    7,
+    8
+  ],
+  "capacity": {
+    "direct_joint_outputs_per_event": 16,
+    "parameter_matched": false,
+    "separate_outputs_per_event": 8
+  },
+  "capture_site_ids": [
+    3,
+    7,
+    8
+  ],
+  "cases": 5760,
+  "config_hash": "fe1898b45d06c83ed841686572de4619d3655a81512667919df4fcc7dcaa1e9f",
+  "development_groups": 15,
+  "development_rows": 1440,
+  "evaluation_role": "discovery_direct_identity_readouts_v1",
+  "factorizations": 30,
+  "fit_banks": 30,
+  "generated_holdouts_opened": false,
+  "initial_site3": "All192targets undefined; no banks or fits.",
+  "limitation": "Adaptive direct categorical decoding, not natural causal use; component ridge scores are joint-score marginals, so the comparison concerns argmax decisions rather than independent representations; rare parent/event7 version4 has only2TRAIN graph families; all classes remain evaluated.",
+  "new_model_queries": 0,
+  "parameter_replay_rows": 172800,
+  "primary": {
+    "hidden": {
+      "direct": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.5805555555555556,
+              "group_macro_accuracy": 0.5805555555555556,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.35462962962962963,
+              "group_macro_accuracy": 0.3546296296296297,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.2777777777777778,
+              "group_macro_accuracy": 0.27777777777777785,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.13055555555555554,
+              "group_macro_accuracy": 0.13055555555555554,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.45092592592592595,
+              "group_macro_accuracy": 0.45092592592592595,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.300925925925926,
+              "group_macro_accuracy": 0.300925925925926,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.35462962962962963,
+            "group_macro_accuracy": 0.3546296296296297,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 0.7101851851851851,
+            "group_macro_accuracy": 0.7101851851851851,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.7916666666666666,
+            "group_macro_accuracy": 0.7916666666666666,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.300925925925926,
+            "group_macro_accuracy": 0.300925925925926,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 0.6092592592592593,
+            "group_macro_accuracy": 0.6092592592592593,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.6731481481481483,
+            "group_macro_accuracy": 0.6731481481481483,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      },
+      "random_prefix_control": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 0.000925925925925926,
+            "group_macro_accuracy": 0.0009259259259259259,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.005555555555555556,
+            "group_macro_accuracy": 0.005555555555555554,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 0.003703703703703704,
+            "group_macro_accuracy": 0.0037037037037037034,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.003703703703703704,
+            "group_macro_accuracy": 0.0037037037037037034,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      },
+      "source_owner_version_prior": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.11111111111111112,
+              "group_macro_accuracy": 0.11111111111111112,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.11111111111111112,
+              "group_macro_accuracy": 0.11111111111111112,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.022222222222222223,
+              "group_macro_accuracy": 0.022222222222222223,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.022222222222222223,
+              "group_macro_accuracy": 0.022222222222222223,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.4000000000000001,
+              "group_macro_accuracy": 0.4000000000000001,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.4000000000000001,
+              "group_macro_accuracy": 0.4000000000000001,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.11111111111111112,
+            "group_macro_accuracy": 0.11111111111111112,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 1.0,
+            "group_macro_accuracy": 1.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.11111111111111112,
+            "group_macro_accuracy": 0.11111111111111112,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.4000000000000001,
+            "group_macro_accuracy": 0.4000000000000001,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 1.0,
+            "group_macro_accuracy": 1.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.4000000000000001,
+            "group_macro_accuracy": 0.4000000000000001,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      },
+      "training_prior": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.11111111111111112,
+            "group_macro_accuracy": 0.11111111111111112,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.4000000000000001,
+            "group_macro_accuracy": 0.4000000000000001,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      }
+    },
+    "surface": {
+      "direct": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.010185185185185186,
+              "group_macro_accuracy": 0.010185185185185184,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.008333333333333333,
+              "group_macro_accuracy": 0.008333333333333333,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.05555555555555556,
+              "group_macro_accuracy": 0.05555555555555556,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.06944444444444443,
+              "group_macro_accuracy": 0.06944444444444443,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.008333333333333333,
+            "group_macro_accuracy": 0.008333333333333333,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 0.13055555555555556,
+            "group_macro_accuracy": 0.13055555555555556,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.08888888888888889,
+            "group_macro_accuracy": 0.08888888888888886,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.06944444444444443,
+            "group_macro_accuracy": 0.06944444444444443,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 0.20185185185185184,
+            "group_macro_accuracy": 0.20185185185185184,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.22592592592592595,
+            "group_macro_accuracy": 0.22592592592592595,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      },
+      "random_prefix_control": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 0.001851851851851852,
+            "group_macro_accuracy": 0.0018518518518518517,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.000925925925925926,
+            "group_macro_accuracy": 0.0009259259259259259,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 0.000925925925925926,
+            "group_macro_accuracy": 0.0009259259259259259,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.004629629629629629,
+            "group_macro_accuracy": 0.004629629629629629,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      },
+      "source_owner_version_prior": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.11111111111111112,
+              "group_macro_accuracy": 0.11111111111111112,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.11111111111111112,
+              "group_macro_accuracy": 0.11111111111111112,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.022222222222222223,
+              "group_macro_accuracy": 0.022222222222222223,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.022222222222222223,
+              "group_macro_accuracy": 0.022222222222222223,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.4000000000000001,
+              "group_macro_accuracy": 0.4000000000000001,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.4000000000000001,
+              "group_macro_accuracy": 0.4000000000000001,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.11111111111111112,
+            "group_macro_accuracy": 0.11111111111111112,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 1.0,
+            "group_macro_accuracy": 1.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.11111111111111112,
+            "group_macro_accuracy": 0.11111111111111112,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.4000000000000001,
+            "group_macro_accuracy": 0.4000000000000001,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 1.0,
+            "group_macro_accuracy": 1.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.4000000000000001,
+            "group_macro_accuracy": 0.4000000000000001,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      },
+      "training_prior": {
+        "binding_comparisons": {
+          "assignment": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "combined_eight": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          },
+          "parent": {
+            "factorized": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            },
+            "joint": {
+              "accuracy": 0.0,
+              "group_macro_accuracy": 0.0,
+              "n": 1440
+            }
+          }
+        },
+        "whole_families": {
+          "assignment_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_owner": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "assignment_version": {
+            "accuracy": 0.11111111111111112,
+            "group_macro_accuracy": 0.11111111111111112,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_joint": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_owner": {
+            "accuracy": 0.0,
+            "group_macro_accuracy": 0.0,
+            "heads": 4,
+            "n": 1440
+          },
+          "parent_version": {
+            "accuracy": 0.4000000000000001,
+            "group_macro_accuracy": 0.4000000000000001,
+            "heads": 4,
+            "n": 1440
+          }
+        }
+      }
+    }
+  },
+  "status": "complete_exploratory",
+  "training_groups": 45,
+  "training_rows": 4320
+}

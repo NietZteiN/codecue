@@ -1,0 +1,94 @@
+{
+  "config": {
+    "declared_plan": "reports/binding/overnight_score_behavior_plan_v1.md",
+    "declared_plan_sha256": "eb7193f4c9a0bcbc440c191e47bff64833945033d3757c369fed5b5a46ad63f5",
+    "evaluation_role": "posthoc_discovery_overnight_relationship_behavior_link_v1",
+    "models": {
+      "codellama34b": {
+        "behavior_completion": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/completion_manifest_v1.json",
+        "behavior_completion_sha256": "e2c55e33f30c391852aee0846863bf58d558c7655efdecc6b04c1211fbc6092b",
+        "behavior_config": "configs/binding/overnight_20261027_v1/codellama34b_behavior.json",
+        "behavior_config_sha256": "2f18c720448baee72049a54ccf15b9b776ecd27fbdd97e5a0647442b10225e88",
+        "computed_completion": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_computed_roots/completion_manifest_v1.json",
+        "computed_completion_sha256": "58f2f7ca71517c07cf7174d03b317933766db03c89c1435e9812cefa78f3449f",
+        "computed_config": "configs/binding/overnight_20261027_v1/codellama34b_computed_roots.json",
+        "computed_config_sha256": "6cae071948486cb774fd4a0fda936a8290ef73666d682d4758bd9ad8aabb3a01",
+        "literal_completion": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_query_twins/completion_manifest_v1.json",
+        "literal_completion_sha256": "8047ac3da6ebc2c6f6a784bd314404beb0b874b950b9cdaf9949ba2fca5f67cf",
+        "literal_config": "configs/binding/overnight_20261027_v1/codellama34b_query_twins.json",
+        "literal_config_sha256": "81ff1dc153c75de4128a75c137ad69057df114d9faa1c04d00991f9e09c23dc6"
+      },
+      "llama8b": {
+        "behavior_completion": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/completion_manifest_v1.json",
+        "behavior_completion_sha256": "ffa054c7f9005c5e3a54073470fbe5a8c6d83639728fc265e310f9d64b0451eb",
+        "behavior_config": "configs/binding/overnight_20261027_v1/llama8b_behavior.json",
+        "behavior_config_sha256": "0b5d02d01e878767fe250dae79b29141b16d2c97f84dde425abd32468b7fb7c8",
+        "computed_completion": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_computed_roots/completion_manifest_v1.json",
+        "computed_completion_sha256": "f891f34b00430edda19845cab3b21ad53ed312de9dbdd14a0690a6053c3395eb",
+        "computed_config": "configs/binding/overnight_20261027_v1/llama8b_computed_roots.json",
+        "computed_config_sha256": "67decb4ce5b962b511cfbd643ffb5edd1b0997ae3ce720afb1248712a4a3b766",
+        "literal_completion": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_query_twins/completion_manifest_v1.json",
+        "literal_completion_sha256": "9907649e97ca77b00cd9f86f36151f17a9ac84f05c34960e553a57230dfaac77",
+        "literal_config": "configs/binding/overnight_20261027_v1/llama8b_query_twins.json",
+        "literal_config_sha256": "bbaa0a0b39ac42c05d6292a8c079bafa4be1e042d31c8df4b1486b07ecb5c2ac"
+      }
+    },
+    "report": "reports/binding/overnight_score_behavior_v1.md",
+    "run_dir": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1"
+  },
+  "config_hash": "65bd33ffcd6e81e50bb5bb5a67aa01f3ae28fe0fde4de007cde215188c877508",
+  "evaluation_role": "posthoc_discovery_overnight_relationship_behavior_link_v1",
+  "generated_holdouts_opened": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameter_replays": 0,
+  "posthoc": true,
+  "protocol": {
+    "backends": [
+      "hidden",
+      "surface"
+    ],
+    "bootstrap": {
+      "draws": 2000,
+      "minimum_valid_draws": 1900,
+      "seed": 117
+    },
+    "component_aggregation": "Equal component masses; sub-strata retain zero masses in unrepresented components.",
+    "computed_development_cases": 486,
+    "development_cases_per_model": 2430,
+    "generated_responses_validated_per_model": 7290,
+    "graph_site3": "undefined; omitted",
+    "joint_aggregation": "Average binary joint masses over fits before deriving conditional ratios.",
+    "literal_development_cases": 1944,
+    "posthoc": true,
+    "primary_layers": {
+      "codellama34b": 36,
+      "llama8b": 24
+    },
+    "query_diagnostic": "Same literal body and fixed target slot; queried minus other queries, sites7/8 and difference; retain4x4tables.",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "selected_score_banks": 72,
+    "sites": [
+      3,
+      7,
+      8
+    ],
+    "strata": [
+      "overall",
+      "query_slot",
+      "numeric_seed",
+      "response_validity"
+    ]
+  },
+  "raw_activations_loaded": false,
+  "source": {
+    "frozen_manifest_sha256": "0a510bcf421b6a83a068219d8fd39428a67683479b3b707428300b40a5a2ba2b",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/bb04042b777979c68679206d",
+    "snapshot_id": "bb04042b777979c68679206d",
+    "source_sha256": "f6b2d07a2760158f46bcde619867cf103437e52c635ce5f8bce3b4a3dfaead01"
+  }
+}

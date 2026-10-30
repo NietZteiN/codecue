@@ -1,0 +1,48 @@
+{
+  "cells": [
+    {
+      "correct": 305,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_direct",
+      "valid": 786
+    },
+    {
+      "correct": 364,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_cot",
+      "valid": 785
+    }
+  ],
+  "complete": true,
+  "evaluated": 1600,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-466ebcdb-f203-d625-f9b8-6fb25d6ad0e7",
+    "mean_gpu_utilization_percent": 94.86046511627907,
+    "mean_power_watts": 507.5104651162791,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 139035.0,
+    "samples": 43,
+    "selector_verified": true
+  },
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "planned": 1600,
+  "responses_sha256": "dd8462717a3b9847cb3d6a33b88a72b201163fb8d74f62304c0a71e9735e380e",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 9.588450292125344,
+      "output_tokens": 81166,
+      "requests_per_second": 106.79515133336771
+    },
+    {
+      "cases": 576,
+      "generation_seconds": 12.985474918968976,
+      "output_tokens": 154642,
+      "requests_per_second": 44.35725328448237
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "cell_features": [
+    {
+      "family": "accumulator",
+      "features": {
+        "answer_magnitude": {
+          "max": 15,
+          "mean": 6.94,
+          "min": 0
+        },
+        "arithmetic_operations": {
+          "max": 18,
+          "mean": 18.0,
+          "min": 18
+        },
+        "assignment_distance": {
+          "max": 5,
+          "mean": 5.0,
+          "min": 5
+        },
+        "computed_assignments": {
+          "max": 12,
+          "mean": 12.0,
+          "min": 12
+        },
+        "computed_values_absent_from_literals": {
+          "max": 12,
+          "mean": 8.72,
+          "min": 4
+        },
+        "copy_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "dependency_depth": {
+          "max": 2,
+          "mean": 2.0,
+          "min": 2
+        },
+        "literal_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "max_liveness": {
+          "max": 6,
+          "mean": 6.0,
+          "min": 6
+        },
+        "statements": {
+          "max": 12,
+          "mean": 12.0,
+          "min": 12
+        }
+      },
+      "load": 6,
+      "magnitude_bins": {
+        "0": 20,
+        "1": 20,
+        "2": 10
+      },
+      "n": 50,
+      "updates": 1
+    },
+    {
+      "family": "accumulator",
+      "features": {
+        "answer_magnitude": {
+          "max": 15,
+          "mean": 6.8,
+          "min": 0
+        },
+        "arithmetic_operations": {
+          "max": 30,
+          "mean": 30.0,
+          "min": 30
+        },
+        "assignment_distance": {
+          "max": 5,
+          "mean": 5.0,
+          "min": 5
+        },
+        "computed_assignments": {
+          "max": 24,
+          "mean": 24.0,
+          "min": 24
+        },
+        "computed_values_absent_from_literals": {
+          "max": 24,
+          "mean": 17.96,
+          "min": 11
+        },
+        "copy_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "dependency_depth": {
+          "max": 4,
+          "mean": 4.0,
+          "min": 4
+        },
+        "literal_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "max_liveness": {
+          "max": 6,
+          "mean": 6.0,
+          "min": 6
+        },
+        "statements": {
+          "max": 24,
+          "mean": 24.0,
+          "min": 24
+        }
+      },
+      "load": 6,
+      "magnitude_bins": {
+        "0": 20,
+        "1": 20,
+        "2": 10
+      },
+      "n": 50,
+      "updates": 3
+    },
+    {
+      "family": "parallel",
+      "features": {
+        "answer_magnitude": {
+          "max": 14,
+          "mean": 6.4,
+          "min": 0
+        },
+        "arithmetic_operations": {
+          "max": 18,
+          "mean": 18.0,
+          "min": 18
+        },
+        "assignment_distance": {
+          "max": 5,
+          "mean": 5.0,
+          "min": 5
+        },
+        "computed_assignments": {
+          "max": 12,
+          "mean": 12.0,
+          "min": 12
+        },
+        "computed_values_absent_from_literals": {
+          "max": 12,
+          "mean": 8.36,
+          "min": 5
+        },
+        "copy_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "dependency_depth": {
+          "max": 2,
+          "mean": 2.0,
+          "min": 2
+        },
+        "literal_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "max_liveness": {
+          "max": 6,
+          "mean": 6.0,
+          "min": 6
+        },
+        "statements": {
+          "max": 12,
+          "mean": 12.0,
+          "min": 12
+        }
+      },
+      "load": 6,
+      "magnitude_bins": {
+        "0": 20,
+        "1": 20,
+        "2": 10
+      },
+      "n": 50,
+      "updates": 1
+    },
+    {
+      "family": "parallel",
+      "features": {
+        "answer_magnitude": {
+          "max": 15,
+          "mean": 6.68,
+          "min": 0
+        },
+        "arithmetic_operations": {
+          "max": 20,
+          "mean": 20.0,
+          "min": 20
+        },
+        "assignment_distance": {
+          "max": 5,
+          "mean": 5.0,
+          "min": 5
+        },
+        "computed_assignments": {
+          "max": 14,
+          "mean": 14.0,
+          "min": 14
+        },
+        "computed_values_absent_from_literals": {
+          "max": 14,
+          "mean": 9.86,
+          "min": 4
+        },
+        "copy_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "dependency_depth": {
+          "max": 4,
+          "mean": 4.0,
+          "min": 4
+        },
+        "literal_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "max_liveness": {
+          "max": 6,
+          "mean": 6.0,
+          "min": 6
+        },
+        "statements": {
+          "max": 14,
+          "mean": 14.0,
+          "min": 14
+        }
+      },
+      "load": 6,
+      "magnitude_bins": {
+        "0": 20,
+        "1": 20,
+        "2": 10
+      },
+      "n": 50,
+      "updates": 3
+    },
+    {
+      "family": "snapshot",
+      "features": {
+        "answer_magnitude": {
+          "max": 15,
+          "mean": 6.88,
+          "min": 0
+        },
+        "arithmetic_operations": {
+          "max": 13,
+          "mean": 13.0,
+          "min": 13
+        },
+        "assignment_distance": {
+          "max": 5,
+          "mean": 5.0,
+          "min": 5
+        },
+        "computed_assignments": {
+          "max": 7,
+          "mean": 7.0,
+          "min": 7
+        },
+        "computed_values_absent_from_literals": {
+          "max": 7,
+          "mean": 5.36,
+          "min": 4
+        },
+        "copy_assignments": {
+          "max": 1,
+          "mean": 1.0,
+          "min": 1
+        },
+        "dependency_depth": {
+          "max": 2,
+          "mean": 2.0,
+          "min": 2
+        },
+        "literal_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "max_liveness": {
+          "max": 6,
+          "mean": 6.0,
+          "min": 6
+        },
+        "statements": {
+          "max": 8,
+          "mean": 8.0,
+          "min": 8
+        }
+      },
+      "load": 6,
+      "magnitude_bins": {
+        "0": 20,
+        "1": 20,
+        "2": 10
+      },
+      "n": 50,
+      "updates": 1
+    },
+    {
+      "family": "snapshot",
+      "features": {
+        "answer_magnitude": {
+          "max": 15,
+          "mean": 6.68,
+          "min": 0
+        },
+        "arithmetic_operations": {
+          "max": 15,
+          "mean": 15.0,
+          "min": 15
+        },
+        "assignment_distance": {
+          "max": 7,
+          "mean": 7.0,
+          "min": 7
+        },
+        "computed_assignments": {
+          "max": 9,
+          "mean": 9.0,
+          "min": 9
+        },
+        "computed_values_absent_from_literals": {
+          "max": 9,
+          "mean": 6.64,
+          "min": 3
+        },
+        "copy_assignments": {
+          "max": 1,
+          "mean": 1.0,
+          "min": 1
+        },
+        "dependency_depth": {
+          "max": 4,
+          "mean": 4.0,
+          "min": 4
+        },
+        "literal_assignments": {
+          "max": 0,
+          "mean": 0.0,
+          "min": 0
+        },
+        "max_liveness": {
+          "max": 6,
+          "mean": 6.0,
+          "min": 6
+        },
+        "statements": {
+          "max": 10,
+          "mean": 10.0,
+          "min": 10
+        }
+      },
+      "load": 6,
+      "magnitude_bins": {
+        "0": 20,
+        "1": 20,
+        "2": 10
+      },
+      "n": 50,
+      "updates": 3
+    }
+  ],
+  "condition_features": [
+    {
+      "condition": "informative",
+      "identifier_token_lengths": {
+        "5": 3100,
+        "6": 5200
+      },
+      "lexical_realization": 0,
+      "n": 300,
+      "prompt_tokens_mean": 288.5933333333333,
+      "source_tokens_mean": 245.59333333333333,
+      "split": "test"
+    },
+    {
+      "condition": "informative",
+      "identifier_token_lengths": {
+        "5": 3100,
+        "6": 5200
+      },
+      "lexical_realization": 1,
+      "n": 300,
+      "prompt_tokens_mean": 288.5933333333333,
+      "source_tokens_mean": 245.59333333333333,
+      "split": "test"
+    },
+    {
+      "condition": "misleading",
+      "identifier_token_lengths": {
+        "5": 3100,
+        "6": 5200
+      },
+      "lexical_realization": 0,
+      "n": 300,
+      "prompt_tokens_mean": 288.5933333333333,
+      "source_tokens_mean": 245.59333333333333,
+      "split": "test"
+    },
+    {
+      "condition": "misleading",
+      "identifier_token_lengths": {
+        "5": 3100,
+        "6": 5200
+      },
+      "lexical_realization": 1,
+      "n": 300,
+      "prompt_tokens_mean": 288.5933333333333,
+      "source_tokens_mean": 245.59333333333333,
+      "split": "test"
+    },
+    {
+      "condition": "neutral",
+      "identifier_token_lengths": {
+        "5": 3100,
+        "6": 5200
+      },
+      "lexical_realization": 0,
+      "n": 300,
+      "prompt_tokens_mean": 288.5933333333333,
+      "source_tokens_mean": 245.59333333333333,
+      "split": "test"
+    },
+    {
+      "condition": "neutral",
+      "identifier_token_lengths": {
+        "5": 3100,
+        "6": 5200
+      },
+      "lexical_realization": 1,
+      "n": 300,
+      "prompt_tokens_mean": 288.5933333333333,
+      "source_tokens_mean": 245.59333333333333,
+      "split": "test"
+    }
+  ],
+  "dataset_sha256": "69f1bff8fe025624c1a25236b4fedffa2337b12381d5685f373db0c092529c2c",
+  "model_experiment": false,
+  "paired_token_counts": [
+    {
+      "condition": "informative",
+      "exact_length_match_fraction": 1.0,
+      "max_delta": 0,
+      "mean_delta": 0.0,
+      "min_delta": 0,
+      "n": 600
+    },
+    {
+      "condition": "misleading",
+      "exact_length_match_fraction": 1.0,
+      "max_delta": 0,
+      "mean_delta": 0.0,
+      "min_delta": 0,
+      "n": 600
+    }
+  ],
+  "primary_rows": 1800,
+  "protocol": "short_answer_prefill_v2",
+  "remaining_limitations": [
+    "within-bin answer distributions are not exactly matched",
+    "update manipulations change depth and arithmetic work",
+    "heldout identifier roots/subwords overlap",
+    "naming cues may directly steer answers without a binding failure"
+  ],
+  "status": "input_design_audited",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+}

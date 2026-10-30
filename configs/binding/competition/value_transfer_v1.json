@@ -1,0 +1,37 @@
+{
+  "batch_size": 48,
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "dataset": "artifacts/binding/value_transfer/discovery_v1.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "execution_backend": "Transformers BF16 SDPA raw-block literal routing / greedy first-token assay",
+  "generation": {
+    "strides": [
+      1
+    ]
+  },
+  "hidden_size": 4096,
+  "hook_proof": "artifacts/binding/competition/llama31_8b_hook_preflight_v1/interface_diagnostics/summary.json",
+  "hook_proof_sha256": "fe9292d97202734ff9eda4b51df15b1810d14f80311821fff6284be7ee5150b5",
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    31
+  ],
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "norm_tolerance": 0.03,
+  "preflight_result": "artifacts/binding/value_transfer/preflight_v1.json",
+  "prepared_cases": "artifacts/binding/value_transfer/prepared_v1.json",
+  "protocol": "short_answer_chat_v1",
+  "run_dir": "artifacts/binding/value_transfer/llama31_8b_v1",
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

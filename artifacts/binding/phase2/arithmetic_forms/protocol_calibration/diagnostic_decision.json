@@ -1,0 +1,158 @@
+{
+  "cells": [
+    {
+      "correct": 2,
+      "depth": null,
+      "family": "assignment",
+      "invalid": 0,
+      "n": 24,
+      "split": "train",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 3,
+      "depth": null,
+      "family": "dependent",
+      "invalid": 0,
+      "n": 24,
+      "split": "train",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 3,
+      "depth": null,
+      "family": "expression",
+      "invalid": 0,
+      "n": 24,
+      "split": "train",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 10,
+      "depth": null,
+      "family": "independent",
+      "invalid": 0,
+      "n": 24,
+      "split": "train",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 0,
+      "depth": null,
+      "family": "assignment",
+      "invalid": 0,
+      "n": 24,
+      "split": "development",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 1,
+      "depth": null,
+      "family": "dependent",
+      "invalid": 0,
+      "n": 24,
+      "split": "development",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 0,
+      "depth": null,
+      "family": "expression",
+      "invalid": 0,
+      "n": 24,
+      "split": "development",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 12,
+      "depth": null,
+      "family": "independent",
+      "invalid": 0,
+      "n": 24,
+      "split": "development",
+      "variant": "print_direct_v3"
+    },
+    {
+      "correct": 8,
+      "depth": null,
+      "family": "assignment",
+      "invalid": 0,
+      "n": 24,
+      "split": "train",
+      "variant": "print_trace_long_v1"
+    },
+    {
+      "correct": 12,
+      "depth": null,
+      "family": "dependent",
+      "invalid": 0,
+      "n": 24,
+      "split": "train",
+      "variant": "print_trace_long_v1"
+    },
+    {
+      "correct": 13,
+      "depth": null,
+      "family": "expression",
+      "invalid": 0,
+      "n": 24,
+      "split": "train",
+      "variant": "print_trace_long_v1"
+    },
+    {
+      "correct": 16,
+      "depth": null,
+      "family": "independent",
+      "invalid": 1,
+      "n": 24,
+      "split": "train",
+      "variant": "print_trace_long_v1"
+    },
+    {
+      "correct": 10,
+      "depth": null,
+      "family": "assignment",
+      "invalid": 0,
+      "n": 24,
+      "split": "development",
+      "variant": "print_trace_long_v1"
+    },
+    {
+      "correct": 11,
+      "depth": null,
+      "family": "dependent",
+      "invalid": 0,
+      "n": 24,
+      "split": "development",
+      "variant": "print_trace_long_v1"
+    },
+    {
+      "correct": 8,
+      "depth": null,
+      "family": "expression",
+      "invalid": 0,
+      "n": 24,
+      "split": "development",
+      "variant": "print_trace_long_v1"
+    },
+    {
+      "correct": 16,
+      "depth": null,
+      "family": "independent",
+      "invalid": 1,
+      "n": 24,
+      "split": "development",
+      "variant": "print_trace_long_v1"
+    }
+  ],
+  "complete": true,
+  "heldout_outcomes_opened": false,
+  "identity_hash": "02ecc8b61cbf57d855c60f7308da30d5c27762d9f62ac65022a019a4886e52f8",
+  "queries_completed": 384,
+  "queries_planned": 384,
+  "responses_sha256": "8fd93edc7d51ec4dd386614ed68bff5a9aaa62b572551c42ef6c46a452b82139",
+  "rule": "Prefer direct on training-only elementary cells >=90% correct and <=5% invalid; validate that choice on fresh numeric examples, no fallback after validation failure",
+  "selected_protocol": null,
+  "status": "no_training_candidate",
+  "training_candidate": null
+}

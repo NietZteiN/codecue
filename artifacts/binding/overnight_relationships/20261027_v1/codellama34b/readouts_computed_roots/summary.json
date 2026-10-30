@@ -1,0 +1,49 @@
+{
+  "algebraic_methods": {
+    "categorical_value_derived": 0.5303413821465318,
+    "direct": 0.5689699535411192,
+    "literal_transfer_categorical": 0.4970103491850039,
+    "literal_transfer_direct": 0.4968559679788624,
+    "source_categorical_value_derived": 0.5156843848587958,
+    "source_direct": 0.5238140638113833,
+    "source_literal_transfer_categorical": 0.5121427320516967,
+    "source_literal_transfer_direct": 0.4896820820584279,
+    "structural_position_prior": 0.5
+  },
+  "cases": 5832,
+  "config_hash": "d687a1695801cf28103e506e74d28d75779e95fb88318b3493f886ffbcea9f98",
+  "derived_logging_summary": true,
+  "evaluation_role": "discovery_overnight_relationship_readouts_v1",
+  "factorizations": 45,
+  "generated_holdouts_opened": false,
+  "literal_transfer_rows": 262440,
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "new_model_queries": 0,
+  "panel": "computed_roots",
+  "parameter_replay_rows": 262440,
+  "report": "reports/binding/overnight_20261027_codellama34b_computed_roots.md",
+  "revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "scientific_completion": {
+    "bytes": 29695,
+    "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_computed_roots/completion_manifest_v1.json",
+    "sha256": "58f2f7ca71517c07cf7174d03b317933766db03c89c1435e9812cefa78f3449f"
+  },
+  "source_form": "computed",
+  "status": "complete_exploratory",
+  "structural_methods": {
+    "7": {
+      "direct": 0.9185528120713305,
+      "literal_transfer_direct": 0.8609396433470509,
+      "source_direct": 0.02109053497942387,
+      "source_literal_transfer_direct": 0.06412894375857339,
+      "structural_position_prior": 0.024691358024691357
+    },
+    "8": {
+      "direct": 0.5749314128943759,
+      "literal_transfer_direct": 0.4291838134430727,
+      "source_direct": 0.0037722908093278463,
+      "source_literal_transfer_direct": 0.035150891632373116,
+      "structural_position_prior": 0.024691358024691357
+    }
+  }
+}

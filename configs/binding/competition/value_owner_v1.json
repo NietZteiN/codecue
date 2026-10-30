@@ -1,0 +1,47 @@
+{
+  "answer_prefix_suffix": " ",
+  "assay": "value_owner",
+  "baseline_only": true,
+  "batch_size": 216,
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "config_path": "configs/binding/competition/value_owner_v1.json",
+  "dataset": "artifacts/binding/mechanism_followup/value_owner/discovery_v1.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "execution_backend": "Transformers BF16 SDPA; fixed-width baseline capture and same-batch multisite controls",
+  "figure": "reports/binding/value_owner_effects_v1.svg",
+  "generation": {
+    "anchor_prepared": "artifacts/binding/value_transfer/prepared_v2.json",
+    "anchor_prepared_sha256": "e012052a2099472ddfbc2e8252eafcca2cfba95dc71c50d457083d5c3d3bf1cf"
+  },
+  "hidden_size": 4096,
+  "hook_proof": "artifacts/binding/competition/llama31_8b_hook_preflight_v1/interface_diagnostics/summary.json",
+  "hook_proof_sha256": "fe9292d97202734ff9eda4b51df15b1810d14f80311821fff6284be7ee5150b5",
+  "interpretation": "Fresh numeric, familiar-structure ownership controls. Single and joint copy-site patches, spatial, stale-version and norm-matched random controls; no general binding mechanism established.",
+  "layers": [
+    4,
+    8,
+    12,
+    31
+  ],
+  "limitation": "Development discovery only. Original final/extrapolation holdouts remain sealed.",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "norm_tolerance": 0.03,
+  "preflight_result": "artifacts/binding/mechanism_followup/value_owner/preflight_v1.json",
+  "prepared_cases": "artifacts/binding/mechanism_followup/value_owner/prepared_v1.json",
+  "primary_condition": "copy_result_transfer",
+  "protocol": "short_answer_chat_v1",
+  "report": "reports/binding/value_owner_results_v1.md",
+  "report_title": "Fresh numeric value ownership with single and joint copy-site patches",
+  "require_digit_first": true,
+  "review_artifact": "artifacts/binding/mechanism_followup/value_owner/review_v1.json",
+  "run_dir": "artifacts/binding/mechanism_followup/value_owner/llama31_8b_v1",
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

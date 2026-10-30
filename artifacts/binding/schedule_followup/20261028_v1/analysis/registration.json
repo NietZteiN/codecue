@@ -1,0 +1,160 @@
+{
+  "activation_arrays_opened": false,
+  "coefficient_arrays_opened": false,
+  "config": {
+    "declared_plan": "reports/binding/schedule_score_review_plan_v1.md",
+    "declared_plan_sha256": "4ab3cb07e92c255db8149a74907cdc41b85f1213b9fe926dea5f160dbc535335",
+    "evaluation_role": "discovery_schedule_score_review_v1",
+    "readout_configs": [
+      {
+        "path": "configs/binding/schedule_decoding_20261028_v1/llama8b_readouts.json",
+        "sha256": "01d83cffc24cf7140290ee997593763bf17c34f6ea10a281e174a3c90f157792"
+      },
+      {
+        "path": "configs/binding/schedule_decoding_20261028_v1/codellama34b_readouts.json",
+        "sha256": "68eb9eda08ba45d7271a958c89fddf68e64fd174d8eea56e7629c00c595f69cf"
+      }
+    ],
+    "report": "reports/binding/schedule_score_review_findings_v1.md",
+    "run_dir": "artifacts/binding/schedule_followup/20261028_v1/analysis"
+  },
+  "config_hash": "da195db4e40abb7c64284338ec2543519b202ea831a31cbdb26ebcd6cd276774",
+  "evaluation_role": "discovery_schedule_score_review_v1",
+  "generated_holdouts_opened": false,
+  "input_pins": [
+    {
+      "bytes": 4956,
+      "path": "reports/binding/schedule_score_review_plan_v1.md",
+      "sha256": "4ab3cb07e92c255db8149a74907cdc41b85f1213b9fe926dea5f160dbc535335"
+    },
+    {
+      "bytes": 3770,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/registration.json",
+      "sha256": "418c4eae5287c0eb1a702a0b548f573afc0494b91c61dbd35e929abde99f1734"
+    },
+    {
+      "bytes": 35438614,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/results_v1.json",
+      "sha256": "328d127de3af9130775e8e1ae3e43b7df12674f835f3eeae3e0932bfd25309c2"
+    },
+    {
+      "bytes": 4121,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/summary.json",
+      "sha256": "5d605739bf6a188e6aeae78ec3d91fc681d2d0bfc88c8632aba2c32b3db59129"
+    },
+    {
+      "bytes": 347,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/audit.json",
+      "sha256": "65d7023610fee491d87fa24467d00365360c7fd78222f49a05df94e7097c66f1"
+    },
+    {
+      "bytes": 571,
+      "path": "configs/binding/schedule_decoding_20261028_v1/llama8b_readouts.json",
+      "sha256": "01d83cffc24cf7140290ee997593763bf17c34f6ea10a281e174a3c90f157792"
+    },
+    {
+      "bytes": 14139,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/completion_manifest_v1.json",
+      "sha256": "22cd2d29c5eb0d396d940555a9f33dda35c9580e9184bd8e2e2f4419febd894b"
+    },
+    {
+      "bytes": 14324,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json",
+      "sha256": "d7c0692ded059f6539807dbb37f84dfc62609711bca5756a1c092d3b4e6e9151"
+    },
+    {
+      "bytes": 738,
+      "path": "configs/binding/schedule_decoding_20261028_v1/llama8b_capture.json",
+      "sha256": "83bb5de8417694b1b331d88839d7930acc591a4aefd7446e3872575aeb2b27b0"
+    },
+    {
+      "bytes": 3351,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+      "sha256": "8a410f4713b9b0f1e07406642ef518f303d1c47a510f1a616f43c0a8e2a9829d"
+    },
+    {
+      "bytes": 14941728,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/prepared_cases.jsonl",
+      "sha256": "4730e687354ab6c3822050a047be4e3dcae55d19339edbc3984150b12f658d30"
+    },
+    {
+      "bytes": 25636666,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+      "sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287"
+    },
+    {
+      "bytes": 23668,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.manifest.json",
+      "sha256": "f08ac66c7b43c18f2d0627159d071f9936de13925695b23407d9b9375aca66c5"
+    },
+    {
+      "bytes": 3785,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/registration.json",
+      "sha256": "99f53f85570b8e9c126c07e00de007edc0c38294aac576638a9c672d2e83fd7a"
+    },
+    {
+      "bytes": 35437733,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/results_v1.json",
+      "sha256": "f9f0f311fbba6265f2bf48da24fb6d2501bec90b39d2eb04d2f77e81cb178781"
+    },
+    {
+      "bytes": 4045,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/summary.json",
+      "sha256": "d98617cfd2f0933fcf945f8608266025df4d6093f821479addca3f9117fc9a69"
+    },
+    {
+      "bytes": 347,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/audit.json",
+      "sha256": "7ac2603c78d7998c941047b84c1910ca83e31d1c445d543d0967d64a5744a5bb"
+    },
+    {
+      "bytes": 586,
+      "path": "configs/binding/schedule_decoding_20261028_v1/codellama34b_readouts.json",
+      "sha256": "68eb9eda08ba45d7271a958c89fddf68e64fd174d8eea56e7629c00c595f69cf"
+    },
+    {
+      "bytes": 14422,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/completion_manifest_v1.json",
+      "sha256": "00d8f9db8391cf2dc239e6e03a18fd790e9e384aa52a680c4bc7df87d1142c09"
+    },
+    {
+      "bytes": 14607,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json",
+      "sha256": "cee16f84127505d59ba895ac9775480877353a9d713b6d1b82bf7518dc66062a"
+    },
+    {
+      "bytes": 746,
+      "path": "configs/binding/schedule_decoding_20261028_v1/codellama34b_capture.json",
+      "sha256": "f1e2d98e3704457e1bf3db7b035d03f3dbb31401aeafc3f1f5cbd7251a663353"
+    },
+    {
+      "bytes": 3404,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/completion_manifest_v1.json",
+      "sha256": "cb9705d4133d2c072ad0fac5fabc656b9f2b98343fc41479c58b215b4f9b551b"
+    },
+    {
+      "bytes": 12123600,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/prepared_cases.jsonl",
+      "sha256": "ac75b4dcecfb638e6c3495ae3b6bf36be9b62acc1c54a12cdd55639ffe6e592b"
+    },
+    {
+      "bytes": 25636666,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+      "sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287"
+    },
+    {
+      "bytes": 23668,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.manifest.json",
+      "sha256": "f08ac66c7b43c18f2d0627159d071f9936de13925695b23407d9b9375aca66c5"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "source": {
+    "frozen_manifest_sha256": "ce23db34b7cf0708eac9cb3e4c5e571296df1c07a8418ea9e533e3490ff9fe50",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/76f592842abcad4d62c63857",
+    "snapshot_id": "76f592842abcad4d62c63857",
+    "source_sha256": "61c7104734cf8d7d4c5868983550bdf3a3cfe6f41dd89eca448d52fe191b7f5d"
+  }
+}

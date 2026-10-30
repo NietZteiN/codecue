@@ -1,0 +1,658 @@
+{
+  "activation_arrays_loaded": false,
+  "attempted_capture_prefills": 4032,
+  "capture_retry_prefills": 0,
+  "current_version_support": {
+    "current_version/0": [
+      {
+        "candidate": 1,
+        "dev_rows": 0,
+        "train_rows": 0
+      },
+      {
+        "candidate": 2,
+        "dev_rows": 576,
+        "train_rows": 1152
+      },
+      {
+        "candidate": 3,
+        "dev_rows": 0,
+        "train_rows": 72
+      },
+      {
+        "candidate": 4,
+        "dev_rows": 120,
+        "train_rows": 96
+      }
+    ],
+    "current_version/1": [
+      {
+        "candidate": 1,
+        "dev_rows": 0,
+        "train_rows": 0
+      },
+      {
+        "candidate": 2,
+        "dev_rows": 696,
+        "train_rows": 1248
+      },
+      {
+        "candidate": 3,
+        "dev_rows": 0,
+        "train_rows": 72
+      },
+      {
+        "candidate": 4,
+        "dev_rows": 0,
+        "train_rows": 0
+      }
+    ],
+    "current_version/2": [
+      {
+        "candidate": 1,
+        "dev_rows": 120,
+        "train_rows": 168
+      },
+      {
+        "candidate": 2,
+        "dev_rows": 576,
+        "train_rows": 1152
+      },
+      {
+        "candidate": 3,
+        "dev_rows": 0,
+        "train_rows": 0
+      },
+      {
+        "candidate": 4,
+        "dev_rows": 0,
+        "train_rows": 0
+      }
+    ],
+    "current_version/3": [
+      {
+        "candidate": 1,
+        "dev_rows": 120,
+        "train_rows": 168
+      },
+      {
+        "candidate": 2,
+        "dev_rows": 576,
+        "train_rows": 1152
+      },
+      {
+        "candidate": 3,
+        "dev_rows": 0,
+        "train_rows": 0
+      },
+      {
+        "candidate": 4,
+        "dev_rows": 0,
+        "train_rows": 0
+      }
+    ]
+  },
+  "decision": "Completed descriptive decoding with partial current-definition accessibility, weak whole-parent recovery and restricted version coverage; causal/generalization/reliability claims remain open.",
+  "development_group_rows": {
+    "schedule-graph:3c64a41b37bfa609de5f80b1": 192,
+    "schedule-graph:5acaac52ff5ce8fac052fd1d": 384,
+    "schedule-graph:87580ae2e9cb6ebe3fbc7b10": 24,
+    "schedule-graph:9892c99ba7c0702a2954311f": 72,
+    "schedule-graph:c7d403fca4ecbfee0f8c4fc8": 24
+  },
+  "distinct_capture_prefills": 4032,
+  "evaluation_role": "discovery_schedule_completion_followup_review_v1",
+  "factorizations": 90,
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "handoff_pins_verified": 45,
+  "independent_review_status": "passed",
+  "input_pins": [
+    {
+      "bytes": 1363,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/build_review_v1.json",
+      "sha256": "dc00de9728e6c48086424478accd44c9b17f6e26cb0f5173fbeb5d100a378d90"
+    },
+    {
+      "bytes": 373,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/closure_job_v1.json",
+      "sha256": "989827bf1082e3e4455de14be828a943d4e8f58e1532690213514afefe1ec2a6"
+    },
+    {
+      "bytes": 2190,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/audit.json",
+      "sha256": "24f71561aa1b2bfacf911daafa7ab34072cb81d45eaf17e97da15f58f3003485"
+    },
+    {
+      "bytes": 3404,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/completion_manifest_v1.json",
+      "sha256": "cb9705d4133d2c072ad0fac5fabc656b9f2b98343fc41479c58b215b4f9b551b"
+    },
+    {
+      "bytes": 5718,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/summary.json",
+      "sha256": "813f26904eeebc8eccbb7573eb8d42ba6bfde0b1d7dd7cbc96558ce8792d7f85"
+    },
+    {
+      "bytes": 347,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/audit.json",
+      "sha256": "7ac2603c78d7998c941047b84c1910ca83e31d1c445d543d0967d64a5744a5bb"
+    },
+    {
+      "bytes": 14422,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/completion_manifest_v1.json",
+      "sha256": "00d8f9db8391cf2dc239e6e03a18fd790e9e384aa52a680c4bc7df87d1142c09"
+    },
+    {
+      "bytes": 14607,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json",
+      "sha256": "cee16f84127505d59ba895ac9775480877353a9d713b6d1b82bf7518dc66062a"
+    },
+    {
+      "bytes": 4045,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/summary.json",
+      "sha256": "d98617cfd2f0933fcf945f8608266025df4d6093f821479addca3f9117fc9a69"
+    },
+    {
+      "bytes": 9430564,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/comparison_v1.json",
+      "sha256": "6742f5a0f5df6abd8baeda71d30098a7d4e22f0bbea06f968d8503941e3a0cfb"
+    },
+    {
+      "bytes": 296,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/completion_logging_review_v1.json",
+      "sha256": "7843ecbe5f29a377128d929b7626def32bbd213edaac67e0bb05d7eb6642ca34"
+    },
+    {
+      "bytes": 2212,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "22bc7d27025ee2da30315f03f1cf7deab818e029d398981d73a2a1b5589cb2de"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/execution_source_v1.json",
+      "sha256": "52305d9378a0fab247d9a3ff6bae37ed6ff4598f397bfa4c4b84bf11f94f6576"
+    },
+    {
+      "bytes": 8862,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/finish_suite_v1.py",
+      "sha256": "d4af7e280ebb7d09cff9e3dcfbd7622b0a08bde06d8b7f7c20ae9420dc266224"
+    },
+    {
+      "bytes": 3868242,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/form_cells_v1.csv",
+      "sha256": "0fb59052416459afc06d7acacdea3788f85acee2efb04d56269654537e4d0b6f"
+    },
+    {
+      "bytes": 20314,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/handoff_review_v1.json",
+      "sha256": "b8f8945eee0e2109daca9a29e154f4dbf6eba9aa2c3a060e8a7605c99b95e403"
+    },
+    {
+      "bytes": 88760,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/independent_execution_review_v1.json",
+      "sha256": "a7b1b31b5e223e186f9e22084f43f3f34c30cad524671ad5096449fd2c7598c9"
+    },
+    {
+      "bytes": 28063,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/independent_review_v1.py",
+      "sha256": "5044bcfcf87c02216d86470b81aadab49d9ccd1ec51d6032e5e729dc5e18217a"
+    },
+    {
+      "bytes": 232,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/jobs_v1.json",
+      "sha256": "c62e7e3f0549d61554d398fac0f6bf5657c0f1d81096a02e424a175c219512a4"
+    },
+    {
+      "bytes": 2170,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/audit.json",
+      "sha256": "3fbe8505cdf6bc39da99a47675a9ee182f9951fe0dfc6371b0d9018e074b7cd7"
+    },
+    {
+      "bytes": 3351,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+      "sha256": "8a410f4713b9b0f1e07406642ef518f303d1c47a510f1a616f43c0a8e2a9829d"
+    },
+    {
+      "bytes": 5665,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/summary.json",
+      "sha256": "acbb9043103935bcffe008e56bf0fadfc7fee0fc4eea1f5339578c0cfb2bf062"
+    },
+    {
+      "bytes": 347,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/audit.json",
+      "sha256": "65d7023610fee491d87fa24467d00365360c7fd78222f49a05df94e7097c66f1"
+    },
+    {
+      "bytes": 14139,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/completion_manifest_v1.json",
+      "sha256": "22cd2d29c5eb0d396d940555a9f33dda35c9580e9184bd8e2e2f4419febd894b"
+    },
+    {
+      "bytes": 14324,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json",
+      "sha256": "d7c0692ded059f6539807dbb37f84dfc62609711bca5756a1c092d3b4e6e9151"
+    },
+    {
+      "bytes": 4121,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/summary.json",
+      "sha256": "5d605739bf6a188e6aeae78ec3d91fc681d2d0bfc88c8632aba2c32b3db59129"
+    },
+    {
+      "bytes": 5915,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/publication_review_v1.json",
+      "sha256": "d73cd6b7a7ed44e94320260b8e7a07c26ef3702738be96c9d5e9bfe18bc791a2"
+    },
+    {
+      "bytes": 45640,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/publish_results_v1.py",
+      "sha256": "f57f452e1ee4bcb5d6ebf3dbb92dbb18d4c80002d46873f66a83d646b78acd63"
+    },
+    {
+      "bytes": 7049,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/readiness_at_completion_v1.csv",
+      "sha256": "d6e728902d98e34dd37d692a5d6cd0a3a2a68b30dbc5d984b6c483796eeee598"
+    },
+    {
+      "bytes": 67303,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/readiness_at_completion_v1.json",
+      "sha256": "234be8a74599ca804ebf5cf1d05bb46f0690d0a2be005659baae138306daebea"
+    },
+    {
+      "bytes": 263,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "2a32a3da2d64fbba1106e7f6c8c275886d58dcda525b8b22df7d4376fc463020"
+    },
+    {
+      "bytes": 273783,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/regression_sources_v1.zip",
+      "sha256": "f942e58fc985432137ce08c2d9a98d45b0dbab3a2bf1874f05abcf6bf45265d9"
+    },
+    {
+      "bytes": 294454,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/regression_v1.xml",
+      "sha256": "7bfd79c09adc39881754397ddac6fb9c826541531e019c7c7812fb24e75d079f"
+    },
+    {
+      "bytes": 1792,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/run_stage_v1.py",
+      "sha256": "898012b90bb71582f8000c572782c8de24f0447064c793ec6b0e1945f158b2f8"
+    },
+    {
+      "bytes": 2597,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/run_validation_v1.py",
+      "sha256": "f04d3e53ef3e2452e2014ee31113e9254d5ab0653fd73c52756108248e5543d8"
+    },
+    {
+      "bytes": 11960,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/software_validation_review_v1.json",
+      "sha256": "8823a485539e88959182399fee0fbfb612b816a8609484d2a7e2e400afb2898c"
+    },
+    {
+      "bytes": 12752,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/source_availability_review_v1.json",
+      "sha256": "a427774ba591b02b7ac83eafe8b65b90d99ee49f9d5b32ed6426492b153aceef"
+    },
+    {
+      "bytes": 1197,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/submission_review_v1.json",
+      "sha256": "bf254ee8e25dc66f9159b6e930a438936d9f794ce376abf80e5e7ca3f339bf4e"
+    },
+    {
+      "bytes": 3517,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/submit_suite_v1.py",
+      "sha256": "029eaf6b10c1d6a8bdf1a9fa8b4b850f3cf5ada0f94a392b7a0c5098a1dfe0fd"
+    },
+    {
+      "bytes": 828988,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/target_preflight_review_v1.json",
+      "sha256": "222e7ceea6d8df0eba9075fb131628261b63bce9e6feeb30832c77cb7860e02b"
+    },
+    {
+      "bytes": 52849,
+      "path": "artifacts/binding/sources/20ff6812f33085b298163a26/frozen_manifest.json",
+      "sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841"
+    },
+    {
+      "bytes": 206448,
+      "path": "reports/binding/figures/schedule_decoding_v1.png",
+      "sha256": "662398993f6b053fc56f850a0d9d9300dc0ccd6cc6bb64a826cefa3943f91730"
+    },
+    {
+      "bytes": 121767,
+      "path": "reports/binding/figures/schedule_decoding_v1.svg",
+      "sha256": "ef4e05c7ab48709ac7a85952d1a2962c813c80cc356a6064fab2cbbee5db58b3"
+    },
+    {
+      "bytes": 7216,
+      "path": "reports/binding/schedule_decoding_findings_v1.md",
+      "sha256": "a32976b190a7f7f4e184c3479fde31cbeb87f9c2efef3e123d58216f65fc5d6e"
+    },
+    {
+      "bytes": 8107,
+      "path": "reports/binding/schedule_decoding_plan_v1.md",
+      "sha256": "8180e7161a3fc8734cc611e07975facd91b6d097a681c9c439def415aed731f1"
+    },
+    {
+      "bytes": 23142,
+      "path": "reports/binding/schedule_decoding_readiness_v1.md",
+      "sha256": "e0a690cda0200c961cca48674036ef28e19fe5783de25d4da7734070802013a3"
+    }
+  ],
+  "issues": [],
+  "largest_two_dev_families_fraction": 0.8275862068965517,
+  "largest_two_dev_families_rows": 576,
+  "model_or_tokenizer_loaded": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "new_report": {
+    "bytes": 4499,
+    "path": "reports/binding/schedule_decoding_decision_v1.md",
+    "sha256": "94dab2bbdb7618b972e55f2627579a6e651dae62ec520c6d83562e966af806f5"
+  },
+  "next_step": "Existing-score fixed-target query diagnostic before further capture.",
+  "parameter_replay_case_rows": 181440,
+  "parameter_replay_repeated": false,
+  "primary": {
+    "codellama34b": {
+      "hidden": {
+        "direct": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.011805555555555557,
+            "row_accuracy": 0.032567049808429116
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.5305555555555556,
+            "row_accuracy": 0.27011494252873564
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.5333333333333333,
+            "row_accuracy": 0.896551724137931
+          }
+        },
+        "random_prefix_control": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          }
+        },
+        "training_prior": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.4,
+            "row_accuracy": 0.8275862068965517
+          }
+        }
+      },
+      "surface": {
+        "direct": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.029166666666666664,
+            "row_accuracy": 0.0210727969348659
+          },
+          "current_version": {
+            "equal_family_accuracy": 1.0,
+            "row_accuracy": 1.0
+          }
+        },
+        "random_prefix_control": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.011111111111111112,
+            "row_accuracy": 0.0019157088122605363
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.003472222222222222,
+            "row_accuracy": 0.005747126436781609
+          }
+        },
+        "training_prior": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.4,
+            "row_accuracy": 0.8275862068965517
+          }
+        }
+      }
+    },
+    "llama8b": {
+      "hidden": {
+        "direct": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.024305555555555552,
+            "row_accuracy": 0.06513409961685825
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.47754629629629636,
+            "row_accuracy": 0.2739463601532567
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.5333333333333333,
+            "row_accuracy": 0.896551724137931
+          }
+        },
+        "random_prefix_control": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.0006944444444444445,
+            "row_accuracy": 0.0019157088122605363
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.011805555555555555,
+            "row_accuracy": 0.0038314176245210726
+          }
+        },
+        "training_prior": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.4,
+            "row_accuracy": 0.8275862068965517
+          }
+        }
+      },
+      "surface": {
+        "direct": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.027777777777777776,
+            "row_accuracy": 0.019157088122605363
+          },
+          "current_version": {
+            "equal_family_accuracy": 1.0,
+            "row_accuracy": 1.0
+          }
+        },
+        "random_prefix_control": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.022222222222222223,
+            "row_accuracy": 0.0038314176245210726
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.0020833333333333333,
+            "row_accuracy": 0.0038314176245210726
+          }
+        },
+        "training_prior": {
+          "copy_parent": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_definition": {
+            "equal_family_accuracy": 0.0,
+            "row_accuracy": 0.0
+          },
+          "current_version": {
+            "equal_family_accuracy": 0.4,
+            "row_accuracy": 0.8275862068965517
+          }
+        }
+      }
+    }
+  },
+  "primary_layer": 24,
+  "primary_scalar_cells_recomputed": 36,
+  "primary_site": 7,
+  "publication_output_pins_verified": 5,
+  "resources": {
+    "codellama34b": {
+      "allocated_gpu_job_seconds": 172,
+      "capture_attempt_wall_seconds": 95.5245198640041,
+      "capture_job_id": "481264",
+      "device_name": "NVIDIA H200 NVL",
+      "gpu_monitor_samples": 57,
+      "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+      "mean_gpu_utilization_percent": 78.01754385964912,
+      "peak_device_memory_mib": 66767.0,
+      "prefill_batch_calls": 32,
+      "prefill_cases": 2016
+    },
+    "llama8b": {
+      "allocated_gpu_job_seconds": 98,
+      "capture_attempt_wall_seconds": 76.15636839391664,
+      "capture_job_id": "481261",
+      "device_name": "NVIDIA H200 NVL",
+      "gpu_monitor_samples": 20,
+      "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+      "mean_gpu_utilization_percent": 58.3,
+      "peak_device_memory_mib": 18047.0,
+      "prefill_batch_calls": 16,
+      "prefill_cases": 2016
+    }
+  },
+  "scheduler": {
+    "command": [
+      "sacct",
+      "-j",
+      "481264,481263,481265,481261,481260,481262,481259,481283",
+      "--parsable2",
+      "--noheader",
+      "--format=JobIDRaw,State,ExitCode,ElapsedRaw,AllocTRES,NodeList"
+    ],
+    "jobs": {
+      "codellama34b_capture": {
+        "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h200_nvl=1,gres/gpu=1,mem=96G,node=1",
+        "elapsed_seconds": 172,
+        "exit_code": "0:0",
+        "job_id": "481264",
+        "node": "g-08-03",
+        "state": "COMPLETED"
+      },
+      "codellama34b_prepare": {
+        "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+        "elapsed_seconds": 80,
+        "exit_code": "0:0",
+        "job_id": "481263",
+        "node": "c-03-08",
+        "state": "COMPLETED"
+      },
+      "codellama34b_readouts": {
+        "allocated_tres": "billing=8,cpu=8,mem=16G,node=1",
+        "elapsed_seconds": 350,
+        "exit_code": "0:0",
+        "job_id": "481265",
+        "node": "c-03-08",
+        "state": "COMPLETED"
+      },
+      "llama8b_capture": {
+        "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h200_nvl=1,gres/gpu=1,mem=32G,node=1",
+        "elapsed_seconds": 98,
+        "exit_code": "0:0",
+        "job_id": "481261",
+        "node": "g-08-03",
+        "state": "COMPLETED"
+      },
+      "llama8b_prepare": {
+        "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+        "elapsed_seconds": 85,
+        "exit_code": "0:0",
+        "job_id": "481260",
+        "node": "c-01-01",
+        "state": "COMPLETED"
+      },
+      "llama8b_readouts": {
+        "allocated_tres": "billing=8,cpu=8,mem=16G,node=1",
+        "elapsed_seconds": 258,
+        "exit_code": "0:0",
+        "job_id": "481262",
+        "node": "c-04-05",
+        "state": "COMPLETED"
+      },
+      "publication": {
+        "allocated_tres": "billing=4,cpu=4,mem=8G,node=1",
+        "elapsed_seconds": 23,
+        "exit_code": "0:0",
+        "job_id": "481283",
+        "node": "c-01-01",
+        "state": "COMPLETED"
+      },
+      "regression": {
+        "allocated_tres": "billing=8,cpu=8,mem=16G,node=1",
+        "elapsed_seconds": 457,
+        "exit_code": "0:0",
+        "job_id": "481259",
+        "node": "c-03-08",
+        "state": "COMPLETED"
+      }
+    },
+    "stdout_sha256": "662cc68e108821b391ceeee165837e88e52238bcd44627d7921616a0611b7d4f"
+  },
+  "software_tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1922
+  },
+  "source": {
+    "code": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26"
+  },
+  "status": "passed",
+  "visual_review_performed": false
+}

@@ -1,0 +1,96 @@
+{
+  "causal_qualification": false,
+  "current_models": {
+    "codellama34b": {
+      "committed": 0,
+      "planned": 20160,
+      "scientific_status": "pending"
+    },
+    "llama8b": {
+      "committed": 20160,
+      "planned": 20160,
+      "scientific_status": "gate_failed"
+    }
+  },
+  "current_status": "running",
+  "evaluation_role": "discovery_old_value_debug_review_v1",
+  "fixed_issues": [
+    "Morning snapshot renderer order made immutable replay differ; sorted rendering fixed.",
+    "Unique native-token input support checked before inference.",
+    "Queued logger guards did not imply a fresh index; actual tick and persisted freshness recheck fixed.",
+    "Partial setup resumes reuse immutable proofs and recover accepted submission IDs.",
+    "Completed prerequisites checked by proof rather than stale scheduler dependency IDs."
+  ],
+  "intermittent_checks": {
+    "first_check_status": "running",
+    "first_job": "481708",
+    "interval_minutes": 10,
+    "needs_attention": false,
+    "next_job": "481709",
+    "stall_warning_minutes": 30,
+    "successor_prequeued": true
+  },
+  "logging": {
+    "enabled": true,
+    "fresh_within_two_intervals": true,
+    "guard_health": true,
+    "interval_minutes": 10,
+    "last_success_age_seconds": 478.334002,
+    "last_success_utc": "2026-10-29T00:46:04.656024+00:00",
+    "pending_guards": 2,
+    "queue": [
+      {
+        "exit_code": "0:0",
+        "job_id": "481710",
+        "reason": "Dependency",
+        "state": "PENDING"
+      },
+      {
+        "exit_code": "0:0",
+        "job_id": "481700",
+        "reason": "BeginTime",
+        "state": "PENDING"
+      }
+    ]
+  },
+  "measurement_results_pending": true,
+  "monitor_synthetic_checks": 23,
+  "morning": {
+    "independent_dependency": "(null)",
+    "job_id": "481707",
+    "start_time": "2026-10-29T08:00:00",
+    "timezone": "America/Chicago"
+  },
+  "native_preparations": {
+    "codellama34b": {
+      "cases": 20160,
+      "model_inference": false,
+      "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+      "status": "passed"
+    },
+    "llama8b": {
+      "cases": 20160,
+      "model_inference": false,
+      "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+      "status": "passed"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries_for_debug": 0,
+  "publisher_synthetic_checks": 14,
+  "recorded_utc": "2026-10-29T00:54:05.794687+00:00",
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2280
+  },
+  "source": {
+    "code": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55"
+  },
+  "source_focused_checks": 89,
+  "status": "passed_setup_and_live_check",
+  "test_archive_files": 109
+}

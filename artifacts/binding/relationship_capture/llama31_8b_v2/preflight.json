@@ -1,0 +1,101 @@
+{
+  "cases": 1944,
+  "chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+  "config_hash": "06f7b2853cdfab1119f7d72bf09f43b7042b1d8bd0aaee788b956b86f644883c",
+  "dataset_sha256": "8a96759d14968605d7d2a21e9a91c552b62072e926f3a49d5cf11f5f870ac2c5",
+  "evaluation_role": "discovery_relationship_capture_v1",
+  "generated_holdouts_opened": false,
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "new_model_queries": 0,
+  "prepared_sha256": "8df7c0ab7b171eb7aae3a7bb83188e2aaef60789552957d71997a8e9f34af779",
+  "recipe": {
+    "batch_size": 32,
+    "chunk_size": 128,
+    "context_limit": 4096,
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "execution_backend": "Transformers BF16 SDPA decoder prefill, explicit left-padding position IDs, use_cache=False; no generation",
+    "hidden_size": 4096,
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "prefix_atol": 1e-05,
+    "tokenization_mode": "native",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+  },
+  "registration_sha256": "d370740d3297e5d1a8d9e632a60f3c0e3aafd672cc970edbfb19020bd773f239",
+  "source": {
+    "frozen_manifest_sha256": "aa41ec6b4ae6b55655fc6d3b4ae5b22ce11a1ec4fce1d777882d85dc71a249fa",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0",
+    "source_sha256": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5"
+  },
+  "source_review": {
+    "components": {
+      "development": 9,
+      "train": 18
+    },
+    "dataset_sha256": "8a96759d14968605d7d2a21e9a91c552b62072e926f3a49d5cf11f5f870ac2c5",
+    "feature_shape": [
+      1944,
+      9,
+      4,
+      4096
+    ],
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "numeric_stratum_rows": {
+      "additive_triplet": 648,
+      "distinct_uniform": 648,
+      "equal_pair": 648
+    },
+    "recipe": {
+      "batch_size": 32,
+      "chunk_size": 128,
+      "context_limit": 4096,
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "execution_backend": "Transformers BF16 SDPA decoder prefill, explicit left-padding position IDs, use_cache=False; no generation",
+      "hidden_size": 4096,
+      "layers": [
+        8,
+        16,
+        24,
+        31
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "prefix_atol": 1e-05,
+      "tokenization_mode": "native",
+      "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+    },
+    "sites": [
+      "statement:0",
+      "statement:1",
+      "statement:2",
+      "statement:3",
+      "statement:4",
+      "statement:5",
+      "statement:6",
+      "statement:7",
+      "pre_answer"
+    ],
+    "source_rows": 1944,
+    "split_rows": {
+      "development": 648,
+      "train": 1296
+    }
+  },
+  "status": "passed",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

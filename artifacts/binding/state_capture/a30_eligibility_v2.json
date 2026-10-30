@@ -1,0 +1,10 @@
+{
+  "job": "477455",
+  "measured_prior_peak_allocated_bytes": 17466181632,
+  "partitions": [
+    "a30",
+    "h100",
+    "h200"
+  ],
+  "reason": "The same 8B/batch32 capture workload used 16.3GiB peak allocated memory; additional site hooks add little GPU memory. A30 24GiB is eligible alongside H100/H200. Actual device is recorded, and all old/new sites are remeasured together on the granted device."
+}

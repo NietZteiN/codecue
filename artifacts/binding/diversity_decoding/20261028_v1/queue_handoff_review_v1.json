@@ -1,0 +1,328 @@
+{
+  "all_four_dev_version_classes_in_each_slot": true,
+  "application_gpu_accounting_uncapped": true,
+  "archived_regression_source_files": 100,
+  "automatic_completion_worker": "481436",
+  "automatic_logging": {
+    "enabled": true,
+    "guard_count": 2,
+    "healthy": true,
+    "interval_minutes": 10,
+    "issues": []
+  },
+  "canonical_graph_families": {
+    "development": 15,
+    "train": 45
+  },
+  "capture_batches": {
+    "codellama34b": 128,
+    "llama8b": 256
+  },
+  "completed_generated_responses": 0,
+  "completed_llama8b_actual_prefill_attempts": 5760,
+  "completed_llama8b_distinct_prefills": 5760,
+  "evaluation_role": "discovery_diversity_queue_handoff_v1",
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "codellama34b_capture": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "481414",
+      "state": "PENDING"
+    },
+    "codellama34b_prepare": {
+      "elapsed_seconds": 166,
+      "exit_code": "0:0",
+      "job_id": "481410",
+      "state": "COMPLETED"
+    },
+    "codellama34b_readouts": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "481415",
+      "state": "PENDING"
+    },
+    "llama8b_capture": {
+      "elapsed_seconds": 269,
+      "exit_code": "0:0",
+      "job_id": "481412",
+      "state": "COMPLETED"
+    },
+    "llama8b_prepare": {
+      "elapsed_seconds": 101,
+      "exit_code": "0:0",
+      "job_id": "481409",
+      "state": "COMPLETED"
+    },
+    "llama8b_readouts": {
+      "elapsed_seconds": 358,
+      "exit_code": "0:0",
+      "job_id": "481413",
+      "state": "RUNNING"
+    },
+    "regression": {
+      "elapsed_seconds": 563,
+      "exit_code": "0:0",
+      "job_id": "481411",
+      "state": "COMPLETED"
+    },
+    "review_publication": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "481436",
+      "state": "PENDING"
+    }
+  },
+  "learned_readout_outcomes_reviewed": false,
+  "limitation": "New graph/sample/class coverage differ together. This queued adaptive discovery study does not yet provide learned outcomes or qualify a causal binding mechanism, unfamiliar-program reliability, or prior failed behavioral gates.",
+  "minimum_train_current_version_class_graph_groups": 15,
+  "new_fits_by_handoff_worker": 0,
+  "new_model_queries_by_handoff_worker": 0,
+  "old_default_protocol_summary_report_bytes_unchanged": true,
+  "optional_extensions_deferred": 3,
+  "pins": [
+    {
+      "bytes": 1354,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/build_review_v1.json",
+      "sha256": "7e9c3c2c491e33cd873b507ff028fd39760ca56936218c3523f755c553a1c16d"
+    },
+    {
+      "bytes": 555,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/closure_job_v1.json",
+      "sha256": "b1d53fd6c2d1edfd4595082385ee1f9512afde188c278bf9eaa425ab9ee77456"
+    },
+    {
+      "bytes": 3792,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/preflight.json",
+      "sha256": "edb31b171fb000db5622c2764ce63afbee4ff98d69d48b79c70aa58c0c478f9b"
+    },
+    {
+      "bytes": 35874720,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/prepared_cases.jsonl",
+      "sha256": "690403eda85656e80d316fcb733187307ad85eb85800cbfca58e1e0af3572e8e"
+    },
+    {
+      "bytes": 2017,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "40ec57d0aafe965d89fed5829dbbcc778eaa3d2e2eb84df71a87f5d10465a304"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/execution_source_v1.json",
+      "sha256": "69559abd128f176fc8269a9cfaaf365a0ce1df6767e3c4d231048b5679c20c7c"
+    },
+    {
+      "bytes": 9275,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/finish_suite_v1.py",
+      "sha256": "d0721c8d3ea53fb293a1297aa5be9aefa1fcc5ec02cfae4f129748deb94b0734"
+    },
+    {
+      "bytes": 37306,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/independent_review_v1.py",
+      "sha256": "7a409230cae11a684c9e4b9919310c7f8db442052f91391af7f20986b53ea93e"
+    },
+    {
+      "bytes": 232,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/jobs_v1.json",
+      "sha256": "455029b54b7d66caca4013b48190af9720abd8caf2b4779ba2ad4d59c20fb52b"
+    },
+    {
+      "bytes": 4063,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/audit.json",
+      "sha256": "50911f07ff04862ed3120234f3a9dbd0b03cf78e381fce1d0df5b7b875a0d3ed"
+    },
+    {
+      "bytes": 5250,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+      "sha256": "ce1d4b0562df29a3b9d7e1385127a3e7cc2644d5f3002b44ead297fcdd725013"
+    },
+    {
+      "bytes": 7468,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/manifest.json",
+      "sha256": "12f88f3c65970f8ae9307dbefc9518c96309ce35e266500f5f45647e64e7bcbc"
+    },
+    {
+      "bytes": 3736,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/preflight.json",
+      "sha256": "a4e40613543b15a91ec05c5ec621d13e93dd2536267c1cbb93ff34e8779f03ba"
+    },
+    {
+      "bytes": 43963328,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/prepared_cases.jsonl",
+      "sha256": "79eab7436e7d2b724dd1517f74292f709ba627ff10d8891deadb76129ebeeb38"
+    },
+    {
+      "bytes": 7583,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/summary.json",
+      "sha256": "b7417c0e36ba45b4bc82a5fa671e21b20f4bf90fae00167b22a38918a475791b"
+    },
+    {
+      "bytes": 4024,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/log_tick_submission_stdout_v1.txt",
+      "sha256": "b08935cdaa488e81d40c2e53050648403eebbc78291d160eabf0bb50cabdaa29"
+    },
+    {
+      "bytes": 1142,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/prepared_memory_review_v1.json",
+      "sha256": "1a3b2212a656482104e1e9d37ba831299367b802fcfa7d5994bea7b4807d7f7b"
+    },
+    {
+      "bytes": 60622,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/publish_results_v1.py",
+      "sha256": "8f882bb7543b792ee1a7f0119bf0cac23eebc0e4e8c6b6b1be3907b9cd807816"
+    },
+    {
+      "bytes": 73995,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/readiness_at_submission_v1.json",
+      "sha256": "282285b77e1678678d83f37d1955dc0b4be03a3053e70ed9eacb41d1f66249e9"
+    },
+    {
+      "bytes": 74294,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/readiness_selector_failure_v1.json",
+      "sha256": "47b9a8ed669f5614f378bfc265aaa37484b99fc281a3cbb204fbd8e827e405a4"
+    },
+    {
+      "bytes": 473,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/readiness_selector_review_v1.json",
+      "sha256": "199684bb0de2af66fcd3dbbc04f768c119613274ca9d8799f7f25061c90f4841"
+    },
+    {
+      "bytes": 264,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "626882bf311ac816eb4dc6d6609340c1328cbfc7f7ec7c8ed91e88071ef6bd10"
+    },
+    {
+      "bytes": 292147,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/regression_sources_v1.zip",
+      "sha256": "132fe71b8b55ae7ada4819c38c39e9ce33c6b10b6acd5308f7c16905cbabbca2"
+    },
+    {
+      "bytes": 312506,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/regression_v1.xml",
+      "sha256": "9dd4724312a21b8cd61a701f9ac25aee00b5c5e4a1433450439c1d7fb4b9f9ae"
+    },
+    {
+      "bytes": 1864,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/run_stage_v1.py",
+      "sha256": "e47aa1c563f475165f8049faff27ce4f171c67ce4af69808745473cb739eb751"
+    },
+    {
+      "bytes": 2601,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/run_validation_v1.py",
+      "sha256": "f7b56d380711481b690ec54d54099a0718c0ce8d5d8e2ebe145a2acb34b9d784"
+    },
+    {
+      "bytes": 12551,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/software_validation_review_v1.json",
+      "sha256": "da9f5e0d28472a0cf5bee17d7b3605c0bcd335296418aba389c2c81a5d8c9c07"
+    },
+    {
+      "bytes": 808,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/source_availability_review_v1.json",
+      "sha256": "45a445936ffd37376d193b2c0d7e910fc1ae1cb3d05b488e6d7fed9d58df4d8b"
+    },
+    {
+      "bytes": 430,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/submission_logging_review_v1.json",
+      "sha256": "f06cd16459a77e715bef350310ec75a9cb243c24976741244528824fa7213784"
+    },
+    {
+      "bytes": 1563,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/submission_review_v1.json",
+      "sha256": "3f316a620fcc33789fc6e0b749f43997992853eae762e493ebdcf672e45a3758"
+    },
+    {
+      "bytes": 3906793,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/target_preflight_review_v1.json",
+      "sha256": "9e5b924f6424917978699d1fa4bac1b6aa2ab179624a5fb66797232901db300c"
+    },
+    {
+      "bytes": 74284568,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.jsonl",
+      "sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1"
+    },
+    {
+      "bytes": 26555,
+      "path": "artifacts/binding/schedule_diversity/20261028_v1/sources.manifest.json",
+      "sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f"
+    },
+    {
+      "bytes": 34399,
+      "path": "artifacts/binding/schedule_followup/20261028_v1/handoff_review_v1.json",
+      "sha256": "6bff91d7bdef24d3ac13b22bc0b065cfb02a67cdf55f742caf1cd0890a950037"
+    },
+    {
+      "bytes": 55173,
+      "path": "artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8/frozen_manifest.json",
+      "sha256": "aebd4aac3e13f1361d3eb1109b7184982f0c2ee90b9e22145932435a0b996269"
+    },
+    {
+      "bytes": 754,
+      "path": "configs/binding/diversity_decoding_20261028_v1/codellama34b_capture.json",
+      "sha256": "2ac7b82698b59e023466eca47b07b0ddf7be63bfb84f9137979fe9e31a7cfdda"
+    },
+    {
+      "bytes": 591,
+      "path": "configs/binding/diversity_decoding_20261028_v1/codellama34b_readouts.json",
+      "sha256": "19e9cc18ea658ab0b1c4564034f4e4db4703c8f4bc2123ff5ada2c29fbd0424c"
+    },
+    {
+      "bytes": 745,
+      "path": "configs/binding/diversity_decoding_20261028_v1/llama8b_capture.json",
+      "sha256": "24a73cdc6c6ad5f9adae5ff5fb3bf8bb51b32a29d0c9e0795c813aebb2715907"
+    },
+    {
+      "bytes": 576,
+      "path": "configs/binding/diversity_decoding_20261028_v1/llama8b_readouts.json",
+      "sha256": "d3acc9c2521876eafdddc2e55ef11e4d1750b77c74d015d4294e7430f6f0d36e"
+    },
+    {
+      "bytes": 62655,
+      "path": "configs/binding/preparation/readiness_v19.json",
+      "sha256": "685894e79b798cabadc480622e3b617a551eff61ae598a1e93d033aa680bab6a"
+    },
+    {
+      "bytes": 8573,
+      "path": "reports/binding/diversity_decoding_plan_v1.md",
+      "sha256": "fcb0ef8e81dc7c0e8c3f795d4ff6b6ae88746bdf3719e68a3cbcd676a85de44c"
+    },
+    {
+      "bytes": 3983,
+      "path": "reports/binding/diversity_decoding_submission_v1.md",
+      "sha256": "8f92c666d3b0074feec0c2493d26f85aa2387a419e4fe21aae87d085e25c92f1"
+    }
+  ],
+  "planned_distinct_prefills": 11520,
+  "planned_fit_banks": 90,
+  "planned_parameter_replay_rows": 518400,
+  "prepared_memory_review": "Prospective admission bounds use actual 112/92 maximum prompt tokens; no measured peak claimed.",
+  "readiness_counts": {
+    "blocked_dependency": 1,
+    "deferred_optional": 3,
+    "needs_execution": 1,
+    "needs_scientific_decision": 9,
+    "ready": 54
+  },
+  "recorded_utc": "2026-10-28T19:44:14.221168+00:00",
+  "reference_capture_batches": {
+    "codellama34b": 64,
+    "llama8b": 128
+  },
+  "scientific_decisions_remaining": 9,
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2044
+  },
+  "source": {
+    "code": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8"
+  },
+  "source_rows": 5760,
+  "status": "ready_and_queued",
+  "target_columns": 232,
+  "tracked_tasks": 68,
+  "unrelated_jobs_cancelled": 0
+}

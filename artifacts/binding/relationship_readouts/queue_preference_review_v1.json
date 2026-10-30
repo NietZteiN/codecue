@@ -1,0 +1,22 @@
+{
+  "action": "Leave existing training jobs and queued relationship chain unchanged; allow scheduler to allocate available capacity normally.",
+  "capture_job": "480208",
+  "capture_observed_reason": "QOSMaxJobsPerUserLimit",
+  "capture_observed_state": "PENDING",
+  "continuation_jobs": {
+    "capture_audit": "480209",
+    "completion_refresh": "480259",
+    "readouts": "480258"
+  },
+  "created_utc": "2026-10-27T23:41:56.273630+00:00",
+  "evaluation_role": "relationship_queue_preference_v1",
+  "generated_holdouts_opened": false,
+  "jobs_modified": [],
+  "new_model_queries": 0,
+  "preserve_running_training_jobs": [
+    "480139",
+    "480148"
+  ],
+  "status": "recorded",
+  "user_instruction": "Keep those jobs running; queue this work"
+}

@@ -1,0 +1,150 @@
+{
+  "cases": 7290,
+  "config_hash": "8ca88223de2158c16cf9fa643f12e6262c6d372c0864511b721148125a78524e",
+  "evaluation_role": "discovery_overnight_relationship_behavior_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 7290,
+  "limitation": "Adaptive discovery on reused structural components. No causal mechanism or confirmatory claim. Literal/computed formats also differ in tokens and operations.",
+  "metrics": {
+    "cells": {
+      "numeric_seed/101/computed": {
+        "accuracy": 0.02263374485596708,
+        "invalid_fraction": 0.0,
+        "rows": 486
+      },
+      "numeric_seed/101/literal": {
+        "accuracy": 0.48199588477366256,
+        "invalid_fraction": 0.0,
+        "rows": 1944
+      },
+      "numeric_seed/211/computed": {
+        "accuracy": 0.01646090534979424,
+        "invalid_fraction": 0.0,
+        "rows": 486
+      },
+      "numeric_seed/211/literal": {
+        "accuracy": 0.5637860082304527,
+        "invalid_fraction": 0.0,
+        "rows": 1944
+      },
+      "numeric_seed/307/computed": {
+        "accuracy": 0.030864197530864196,
+        "invalid_fraction": 0.0,
+        "rows": 486
+      },
+      "numeric_seed/307/literal": {
+        "accuracy": 0.5308641975308642,
+        "invalid_fraction": 0.0,
+        "rows": 1944
+      },
+      "overall": {
+        "accuracy": 0.4251028806584362,
+        "invalid_fraction": 0.0,
+        "rows": 7290
+      },
+      "query/computed/0": {
+        "accuracy": 0.023319615912208505,
+        "invalid_fraction": 0.0,
+        "rows": 1458
+      },
+      "query/literal/0": {
+        "accuracy": 0.3834019204389575,
+        "invalid_fraction": 0.0,
+        "rows": 1458
+      },
+      "query/literal/1": {
+        "accuracy": 0.6227709190672154,
+        "invalid_fraction": 0.0,
+        "rows": 1458
+      },
+      "query/literal/2": {
+        "accuracy": 0.5692729766803841,
+        "invalid_fraction": 0.0,
+        "rows": 1458
+      },
+      "query/literal/3": {
+        "accuracy": 0.5267489711934157,
+        "invalid_fraction": 0.0,
+        "rows": 1458
+      },
+      "source_form/computed": {
+        "accuracy": 0.023319615912208505,
+        "invalid_fraction": 0.0,
+        "rows": 1458
+      },
+      "source_form/literal": {
+        "accuracy": 0.5255486968449932,
+        "invalid_fraction": 0.0,
+        "rows": 5832
+      },
+      "split/development/computed": {
+        "accuracy": 0.02880658436213992,
+        "invalid_fraction": 0.0,
+        "rows": 486
+      },
+      "split/development/literal": {
+        "accuracy": 0.5396090534979424,
+        "invalid_fraction": 0.0,
+        "rows": 1944
+      },
+      "split/train/computed": {
+        "accuracy": 0.0205761316872428,
+        "invalid_fraction": 0.0,
+        "rows": 972
+      },
+      "split/train/literal": {
+        "accuracy": 0.5185185185185185,
+        "invalid_fraction": 0.0,
+        "rows": 3888
+      }
+    },
+    "computed_literal": {
+      "bootstrap_seed": 117,
+      "conditional_group_bootstrap_95": [
+        -0.5493827160493827,
+        -0.308641975308642
+      ],
+      "contrast": "computed_minus_literal",
+      "development_components": [
+        "relationship-routing:000",
+        "relationship-routing:012",
+        "relationship-routing:021",
+        "relationship-routing:102",
+        "relationship-routing:111",
+        "relationship-routing:120",
+        "relationship-routing:201",
+        "relationship-routing:210",
+        "relationship-routing:222"
+      ],
+      "draws": 2000,
+      "matched_pairs": 486,
+      "mean": -0.42181069958847733,
+      "multiplicity_adjusted": false,
+      "refits": 0
+    }
+  },
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "new_model_queries": 7290,
+  "protocol": {
+    "bootstrap_draws": 2000,
+    "bootstrap_seed": 117,
+    "do_sample": false,
+    "max_new_tokens": 12,
+    "parser": "full signed decimal integer with whitespace only",
+    "selection": "all source rows with numeric_draw == 0",
+    "uncertainty": "nine whole development components; computed-minus-literal matched format pairs",
+    "use_cache": true
+  },
+  "responses": {
+    "bytes": 2826130,
+    "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/responses.jsonl",
+    "sha256": "878a69c8ab2bba6a228bae0ffb16beb9df9a16b46b1ba43f29752d968b571ab2"
+  },
+  "source": {
+    "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+    "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+  },
+  "status": "complete_exploratory"
+}

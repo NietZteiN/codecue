@@ -1,0 +1,136 @@
+{
+  "attempts": 273,
+  "base_instances": 60,
+  "cell_attempts": {
+    "accumulator:load6:updates1": 37,
+    "accumulator:load6:updates3": 48,
+    "parallel:load6:updates1": 43,
+    "parallel:load6:updates3": 69,
+    "snapshot:load6:updates1": 35,
+    "snapshot:load6:updates3": 41
+  },
+  "cell_rejections": {
+    "accumulator:load6:updates1": 27,
+    "accumulator:load6:updates3": 38,
+    "parallel:load6:updates1": 33,
+    "parallel:load6:updates3": 59,
+    "snapshot:load6:updates1": 25,
+    "snapshot:load6:updates3": 31
+  },
+  "cohort": "competition",
+  "evaluation_role": "structural_extrapolation",
+  "generation_config": {
+    "algorithm_version": 6,
+    "answer_magnitude_bins": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "arithmetic_controls": false,
+    "cohort": "competition",
+    "counterfactual_pairs": true,
+    "distance_padding": 0,
+    "evaluation_role": "structural_extrapolation",
+    "identifier_pool": "codellama-context-matched-v1",
+    "instances_per_cell": 10,
+    "load_levels": [
+      6
+    ],
+    "reference_datasets": [
+      "artifacts/binding/pilot_matched.jsonl"
+    ],
+    "seed": 20262003,
+    "split_override": "test",
+    "templates_per_cell": 10,
+    "update_levels": [
+      1,
+      3
+    ],
+    "variable_count": 6
+  },
+  "generation_config_hash": "805d62b281939b8a266918fc987b3f831f39773eeb9375c9ed260df76d6e0ec5",
+  "independent_template_clusters": 60,
+  "primary_answer_magnitude_bins": {
+    "0": 60
+  },
+  "reference_datasets": {
+    "artifacts/binding/pilot_matched.jsonl": "fce0a27061efdee3a15ebe597b34da0e9add672e56c6f3ac2350bd7f667921a4"
+  },
+  "reference_skeleton_overlap": 0,
+  "rejected": 213,
+  "rejection_rate": 0.7802197802197802,
+  "rows": 720,
+  "schema_version": 1,
+  "sha256": "1680b0f36013c611e233066dff405ada5ee5650a8415debc24bf437fc2efef6b",
+  "split_rows": {
+    "test": 720
+  },
+  "split_templates": {
+    "development": 0,
+    "test": 60,
+    "train": 0
+  },
+  "structural_templates": 60,
+  "token_counts": "filled by the selected tokenizer at model-run time",
+  "value_distribution": {
+    "-1": 28,
+    "-10": 25,
+    "-11": 20,
+    "-12": 11,
+    "-13": 19,
+    "-14": 10,
+    "-15": 14,
+    "-16": 8,
+    "-17": 5,
+    "-18": 5,
+    "-19": 2,
+    "-2": 31,
+    "-20": 4,
+    "-21": 2,
+    "-22": 1,
+    "-23": 1,
+    "-26": 1,
+    "-29": 1,
+    "-3": 30,
+    "-4": 38,
+    "-5": 23,
+    "-6": 30,
+    "-7": 31,
+    "-8": 30,
+    "-9": 23,
+    "0": 30,
+    "1": 24,
+    "10": 23,
+    "11": 18,
+    "12": 17,
+    "13": 12,
+    "14": 13,
+    "15": 15,
+    "16": 6,
+    "17": 12,
+    "18": 4,
+    "19": 2,
+    "2": 25,
+    "20": 3,
+    "21": 4,
+    "22": 5,
+    "23": 3,
+    "24": 2,
+    "3": 28,
+    "4": 24,
+    "5": 32,
+    "6": 30,
+    "7": 26,
+    "8": 21,
+    "9": 28
+  }
+}

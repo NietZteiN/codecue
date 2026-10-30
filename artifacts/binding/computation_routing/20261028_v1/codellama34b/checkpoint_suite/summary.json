@@ -1,0 +1,163 @@
+{
+  "cells": [
+    {
+      "correct": 3067,
+      "n": 6700,
+      "section": "computation_routing",
+      "task": "routing_output_v1",
+      "valid": 6700
+    },
+    {
+      "correct": 2296,
+      "n": 6700,
+      "section": "computation_routing",
+      "task": "routing_execute_v1",
+      "valid": 6450
+    },
+    {
+      "correct": 3563,
+      "n": 6700,
+      "section": "computation_routing",
+      "task": "routing_value_v1",
+      "valid": 6521
+    }
+  ],
+  "complete": true,
+  "evaluated": 20100,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+    "mean_gpu_utilization_percent": 96.6951219512195,
+    "mean_power_watts": 675.8650609756097,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 78507.0,
+    "samples": 164,
+    "selector_verified": true
+  },
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "planned": 20100,
+  "responses_sha256": "3b187030ef23e2ecdc7bc6e9049438553354c70e062be12b14109577739d84cf",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 4.476575054053683,
+      "output_tokens": 4113,
+      "requests_per_second": 228.74630440357188
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.432664358988404,
+      "output_tokens": 4029,
+      "requests_per_second": 231.01230254972228
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.4556111509446055,
+      "output_tokens": 4057,
+      "requests_per_second": 229.82256873625707
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.492665124009363,
+      "output_tokens": 4066,
+      "requests_per_second": 227.9270703991749
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.48717363801552,
+      "output_tokens": 4056,
+      "requests_per_second": 228.2060117586335
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.549143861047924,
+      "output_tokens": 4132,
+      "requests_per_second": 225.09729990471553
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.594086397031788,
+      "output_tokens": 4205,
+      "requests_per_second": 222.89524216645128
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.677646321011707,
+      "output_tokens": 4436,
+      "requests_per_second": 218.91351541484727
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.5136454260209575,
+      "output_tokens": 4496,
+      "requests_per_second": 226.8676210356904
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.649761204025708,
+      "output_tokens": 4492,
+      "requests_per_second": 220.22636326214624
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.537339443981182,
+      "output_tokens": 4388,
+      "requests_per_second": 225.68291674944982
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.664461445005145,
+      "output_tokens": 4418,
+      "requests_per_second": 219.53231087300165
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.7283561280346476,
+      "output_tokens": 4591,
+      "requests_per_second": 216.56575187487582
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.613471832009964,
+      "output_tokens": 4168,
+      "requests_per_second": 221.9586544118708
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.494769304990768,
+      "output_tokens": 3966,
+      "requests_per_second": 227.82036863671763
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.6266277770046145,
+      "output_tokens": 4151,
+      "requests_per_second": 221.32750879366424
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.553373139991891,
+      "output_tokens": 3999,
+      "requests_per_second": 224.8882242938306
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.655017870943993,
+      "output_tokens": 4121,
+      "requests_per_second": 219.97767320973625
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.623999155010097,
+      "output_tokens": 4248,
+      "requests_per_second": 221.45332766561978
+    },
+    {
+      "cases": 644,
+      "generation_seconds": 3.080803987046238,
+      "output_tokens": 2541,
+      "requests_per_second": 209.03634334018233
+    }
+  ]
+}

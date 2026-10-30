@@ -1,0 +1,151 @@
+{
+  "attempts": 385,
+  "base_instances": 60,
+  "cell_attempts": {
+    "accumulator:load2:updates5": 144,
+    "accumulator:load4:updates5": 112,
+    "parallel:load2:updates5": 44,
+    "parallel:load4:updates5": 33,
+    "snapshot:load2:updates5": 17,
+    "snapshot:load4:updates5": 35
+  },
+  "cell_rejections": {
+    "accumulator:load2:updates5": 134,
+    "accumulator:load4:updates5": 102,
+    "parallel:load2:updates5": 34,
+    "parallel:load4:updates5": 23,
+    "snapshot:load2:updates5": 7,
+    "snapshot:load4:updates5": 25
+  },
+  "cohort": "depth",
+  "evaluation_role": "structural_extrapolation",
+  "generation_config": {
+    "algorithm_version": 6,
+    "answer_magnitude_bins": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "arithmetic_controls": false,
+    "cohort": "depth",
+    "counterfactual_pairs": true,
+    "distance_padding": 0,
+    "evaluation_role": "structural_extrapolation",
+    "identifier_pool": "codellama-context-matched-v1",
+    "instances_per_cell": 10,
+    "load_levels": [
+      2,
+      4
+    ],
+    "reference_datasets": [
+      "artifacts/binding/pilot_matched.jsonl"
+    ],
+    "seed": 20262001,
+    "split_override": "test",
+    "templates_per_cell": 10,
+    "update_levels": [
+      5
+    ],
+    "variable_count": 4
+  },
+  "generation_config_hash": "21c3992cc9f5478f3f269c0f746bb8a5d3106c27604785238c1da115543c9082",
+  "independent_template_clusters": 30,
+  "primary_answer_magnitude_bins": {
+    "0": 60
+  },
+  "reference_datasets": {
+    "artifacts/binding/pilot_matched.jsonl": "fce0a27061efdee3a15ebe597b34da0e9add672e56c6f3ac2350bd7f667921a4"
+  },
+  "reference_skeleton_overlap": 0,
+  "rejected": 325,
+  "rejection_rate": 0.8441558441558441,
+  "rows": 720,
+  "schema_version": 1,
+  "sha256": "d817873054fb91d256b1d858ab80f05311e0b2328db8adc4b4dca5455e8c1461",
+  "split_rows": {
+    "test": 720
+  },
+  "split_templates": {
+    "development": 0,
+    "test": 60,
+    "train": 0
+  },
+  "structural_templates": 60,
+  "token_counts": "filled by the selected tokenizer at model-run time",
+  "value_distribution": {
+    "-1": 28,
+    "-10": 14,
+    "-11": 21,
+    "-12": 26,
+    "-13": 14,
+    "-14": 16,
+    "-15": 16,
+    "-16": 14,
+    "-17": 17,
+    "-18": 14,
+    "-19": 10,
+    "-2": 27,
+    "-20": 9,
+    "-21": 5,
+    "-22": 8,
+    "-23": 6,
+    "-24": 4,
+    "-25": 3,
+    "-26": 3,
+    "-27": 4,
+    "-28": 3,
+    "-3": 33,
+    "-31": 1,
+    "-32": 1,
+    "-35": 1,
+    "-4": 33,
+    "-5": 22,
+    "-6": 28,
+    "-7": 25,
+    "-8": 22,
+    "-9": 27,
+    "0": 29,
+    "1": 32,
+    "10": 14,
+    "11": 14,
+    "12": 12,
+    "13": 15,
+    "14": 21,
+    "15": 14,
+    "16": 11,
+    "17": 14,
+    "18": 14,
+    "19": 9,
+    "2": 23,
+    "20": 6,
+    "21": 11,
+    "22": 8,
+    "23": 8,
+    "24": 8,
+    "25": 7,
+    "26": 2,
+    "27": 4,
+    "28": 3,
+    "29": 2,
+    "3": 23,
+    "30": 2,
+    "32": 2,
+    "34": 1,
+    "35": 1,
+    "4": 28,
+    "5": 30,
+    "6": 27,
+    "7": 24,
+    "8": 25,
+    "9": 21
+  }
+}

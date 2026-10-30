@@ -1,0 +1,279 @@
+{
+  "declared_plan": "reports/binding/overnight_20261027_plan_v1.md",
+  "declared_plan_sha256": "689fd43b88d97bc4b278538771928d4f1f1448456efe7cb5027415fb8bc1bd2e",
+  "evaluation_role": "discovery_overnight_relationship_suite_v1",
+  "morning_at": "2026-10-28T08:00:00-05:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/overnight_20261027_v1/llama8b_capture.json",
+      "config_sha256": "bbb5e3b2817e37314b6f1b62fe072fb008038e0323f011dee0dba5e6bc133145",
+      "cpus": 4,
+      "dependencies": [],
+      "expected_cases": 16038,
+      "key": "llama8b_prepare",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/capture/preflight.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/149_binding_overnight_relationship_capture.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "prepare",
+      "config": "configs/binding/overnight_20261027_v1/codellama34b_capture.json",
+      "config_sha256": "f84ecf06552a6cb574843a7b9bb185207a3b961f2622813cbc8d3dafd94ac059",
+      "cpus": 4,
+      "dependencies": [],
+      "expected_cases": 16038,
+      "key": "codellama34b_prepare",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/preflight.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/149_binding_overnight_relationship_capture.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/llama8b_capture.json",
+      "config_sha256": "bbb5e3b2817e37314b6f1b62fe072fb008038e0323f011dee0dba5e6bc133145",
+      "cpus": 8,
+      "dependencies": [
+        "llama8b_prepare"
+      ],
+      "expected_cases": 16038,
+      "key": "llama8b_capture",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/capture/summary.json",
+      "marker_status": true,
+      "mem": "48G",
+      "partition": "dev-a30,a30,h100,h200",
+      "phase": "gpu",
+      "script": "scripts/149_binding_overnight_relationship_capture.py",
+      "time": "02:00:00",
+      "time_min": "00:15:00"
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/llama8b_behavior.json",
+      "config_sha256": "0b5d02d01e878767fe250dae79b29141b16d2c97f84dde425abd32468b7fb7c8",
+      "cpus": 8,
+      "dependencies": [
+        "llama8b_capture"
+      ],
+      "expected_cases": 7290,
+      "key": "llama8b_behavior",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "48G",
+      "partition": "dev-a30,a30,h100,h200",
+      "phase": "gpu",
+      "script": "scripts/151_binding_overnight_relationship_behavior.py",
+      "time": "02:00:00",
+      "time_min": "00:15:00"
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/codellama34b_capture.json",
+      "config_sha256": "f84ecf06552a6cb574843a7b9bb185207a3b961f2622813cbc8d3dafd94ac059",
+      "cpus": 8,
+      "dependencies": [
+        "codellama34b_prepare"
+      ],
+      "expected_cases": 16038,
+      "key": "codellama34b_capture",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/summary.json",
+      "marker_status": true,
+      "mem": "96G",
+      "partition": "h100,h200",
+      "phase": "gpu",
+      "script": "scripts/149_binding_overnight_relationship_capture.py",
+      "time": "2-00:00:00",
+      "time_min": "00:30:00"
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/codellama34b_behavior.json",
+      "config_sha256": "2f18c720448baee72049a54ccf15b9b776ecd27fbdd97e5a0647442b10225e88",
+      "cpus": 8,
+      "dependencies": [
+        "codellama34b_capture"
+      ],
+      "expected_cases": 7290,
+      "key": "codellama34b_behavior",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "96G",
+      "partition": "h100,h200",
+      "phase": "gpu",
+      "script": "scripts/151_binding_overnight_relationship_behavior.py",
+      "time": "2-00:00:00",
+      "time_min": "00:30:00"
+    },
+    {
+      "command": "audit",
+      "config": "configs/binding/overnight_20261027_v1/llama8b_capture.json",
+      "config_sha256": "bbb5e3b2817e37314b6f1b62fe072fb008038e0323f011dee0dba5e6bc133145",
+      "cpus": 8,
+      "dependencies": [
+        "llama8b_capture"
+      ],
+      "expected_cases": 16038,
+      "key": "llama8b_audit",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/capture/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/149_binding_overnight_relationship_capture.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "audit",
+      "config": "configs/binding/overnight_20261027_v1/codellama34b_capture.json",
+      "config_sha256": "f84ecf06552a6cb574843a7b9bb185207a3b961f2622813cbc8d3dafd94ac059",
+      "cpus": 8,
+      "dependencies": [
+        "codellama34b_capture"
+      ],
+      "expected_cases": 16038,
+      "key": "codellama34b_audit",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/149_binding_overnight_relationship_capture.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/llama8b_numeric_replication.json",
+      "config_sha256": "160a86d954c7f4ad3dbc503f339eef082f43b6000de4ced6f67d1733b7302092",
+      "cpus": 16,
+      "dependencies": [
+        "llama8b_audit"
+      ],
+      "expected_cases": 5832,
+      "key": "llama8b_numeric_replication",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_numeric_replication/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/150_binding_overnight_relationship_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/llama8b_query_twins.json",
+      "config_sha256": "bbaa0a0b39ac42c05d6292a8c079bafa4be1e042d31c8df4b1486b07ecb5c2ac",
+      "cpus": 16,
+      "dependencies": [
+        "llama8b_audit"
+      ],
+      "expected_cases": 5832,
+      "key": "llama8b_query_twins",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_query_twins/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/150_binding_overnight_relationship_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/llama8b_computed_roots.json",
+      "config_sha256": "67decb4ce5b962b511cfbd643ffb5edd1b0997ae3ce720afb1248712a4a3b766",
+      "cpus": 16,
+      "dependencies": [
+        "llama8b_audit",
+        "llama8b_numeric_replication"
+      ],
+      "expected_cases": 5832,
+      "key": "llama8b_computed_roots",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_computed_roots/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/150_binding_overnight_relationship_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/codellama34b_numeric_replication.json",
+      "config_sha256": "156f97c3643f9b12cfb91adbf9b8571e00c4f102a41873d8e1eb6419c5ce7b28",
+      "cpus": 16,
+      "dependencies": [
+        "codellama34b_audit"
+      ],
+      "expected_cases": 5832,
+      "key": "codellama34b_numeric_replication",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_numeric_replication/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/150_binding_overnight_relationship_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/codellama34b_query_twins.json",
+      "config_sha256": "81ff1dc153c75de4128a75c137ad69057df114d9faa1c04d00991f9e09c23dc6",
+      "cpus": 16,
+      "dependencies": [
+        "codellama34b_audit"
+      ],
+      "expected_cases": 5832,
+      "key": "codellama34b_query_twins",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_query_twins/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/150_binding_overnight_relationship_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/overnight_20261027_v1/codellama34b_computed_roots.json",
+      "config_sha256": "6cae071948486cb774fd4a0fda936a8290ef73666d682d4758bd9ad8aabb3a01",
+      "cpus": 16,
+      "dependencies": [
+        "codellama34b_audit",
+        "codellama34b_numeric_replication"
+      ],
+      "expected_cases": 5832,
+      "key": "codellama34b_computed_roots",
+      "marker": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_computed_roots/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/150_binding_overnight_relationship_readouts.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/overnight_20261027_status.md",
+  "run_dir": "artifacts/binding/overnight_relationships/20261027_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/overnight_relationships/20261027_v1/regression_v1.xml",
+    "minimum_tests": 1733,
+    "review": "artifacts/binding/overnight_relationships/20261027_v1/software_validation_review_v1.json"
+  }
+}

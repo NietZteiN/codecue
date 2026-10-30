@@ -1,0 +1,30 @@
+{
+  "actual_source_preflight_passed": true,
+  "adaptive_posthoc": true,
+  "evaluation_role": "discovery_diversity_identity_build_v1",
+  "expected_regression_source_files": 102,
+  "expected_regression_tests": 2088,
+  "focused_tests": {
+    "core": 29,
+    "runner": 15
+  },
+  "generated_holdouts_opened": false,
+  "independent_synthetic_cornercase_checks": 14,
+  "metadata_only_original_llama8b_integration_passed": true,
+  "module_sha256": {
+    "scripts/162_binding_diversity_identity_review.py": "ec4a6d91c12217dcb2f64676a0a466c30a900cd5dfdb354bbf973fc56d085670",
+    "src/codecue/binding/binding_identity_diagnostics.py": "82d8a9afb22bb74791ab0d3a835a9d23c5f8895684d9bd677f5da6dddcb4e913",
+    "src/codecue/binding/diversity_identity_review.py": "26779258a95be1115fe633fb92007026a7ce54475882114f2c71eb9250b18827"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_code_and_frozen_scientific_outputs_preserved": true,
+  "parameters_reapplied": 0,
+  "source": {
+    "code": "38a8ad184e39ce39e6d9c4382834f8a95c2022e268f4b1adb0cca85829d6f38f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/56923f24389a46294d3c9c7b",
+    "snapshot_id": "56923f24389a46294d3c9c7b"
+  },
+  "source_oracle_assisted": true,
+  "status": "passed"
+}

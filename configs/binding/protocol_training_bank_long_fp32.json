@@ -1,0 +1,46 @@
+{
+  "dataset": "artifacts/binding/prompt_calibration_bank.jsonl",
+  "run_dir": "artifacts/binding/protocol_training_bank_long",
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "dtype": "float32",
+  "device": "cpu",
+  "batch_size": 4,
+  "max_new_tokens": 12,
+  "splits": [
+    "train",
+    "development"
+  ],
+  "per_cell_limit": null,
+  "control_kinds": [
+    "primary",
+    "binding_swap",
+    "arithmetic_control"
+  ],
+  "seed": 17,
+  "max_gpu_seconds": 3600,
+  "activation_limit_bytes": 68719476736,
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "extraction_splits": [
+    "train",
+    "development"
+  ],
+  "protocol": "short_answer_prefill_v2",
+  "cpu_threads": 4,
+  "calibration": {
+    "variants": [
+      "print_direct_v3",
+      "print_trace_v1"
+    ],
+    "selection": "same eight primitive fixtures and first four training IDs as prior interface diagnostic; no final-test outcomes",
+    "gate": "7/8 primitive and 2/4 training correct, all 12 parsed; then inspect fresh training bank only",
+    "case_source": "training_bank",
+    "selector_summary": "artifacts/binding/protocol_calibration_long_fp32/protocol_calibration/summary.json",
+    "per_family_sign_limit": 1
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "all_three_jobs_completed": true,
+  "evaluation_role": "discovery_identity_grammar_independent_completion_review_v1",
+  "handoff_pins_verified": 161,
+  "handoff_sha256": "4e0ce967d23f22b5eb0e98b3d8c7a763f443e3943b61ba563c3bd2fa93c5b921",
+  "headlines": {
+    "codellama34b": {
+      "free_joint": 0.13055555555555556,
+      "free_marginal": 0.27777777777777773,
+      "joint_allow_self": 0.25092592592592594,
+      "joint_no_self": 0.3194444444444445,
+      "owner_marginal_allow_self": 0.462037037037037,
+      "owner_marginal_no_self": 0.4935185185185185,
+      "source_prior_joint_grammar": 0.6222222222222222,
+      "source_prior_owner_grammar": 1.0
+    },
+    "llama8b": {
+      "free_joint": 0.06018518518518518,
+      "free_marginal": 0.08796296296296297,
+      "joint_allow_self": 0.16203703703703703,
+      "joint_no_self": 0.2064814814814815,
+      "owner_marginal_allow_self": 0.25555555555555554,
+      "owner_marginal_no_self": 0.2833333333333334,
+      "source_prior_joint_grammar": 0.6222222222222222,
+      "source_prior_owner_grammar": 1.0
+    }
+  },
+  "index_record_id": "analysis:24ecb727db722d0b02c63927",
+  "index_status": "complete_exploratory",
+  "logging_enabled": true,
+  "logging_healthy": true,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "pending_guards": 2,
+  "pins": [
+    {
+      "bytes": 2907,
+      "path": "reports/binding/identity_grammar_interpretation_v1.md",
+      "sha256": "49921434aaa26cb8733a15d85e0c3f166c693d5adb7ad88ccf975539f3f5cd47"
+    },
+    {
+      "bytes": 660,
+      "path": "reports/binding/identity_grammar_status_v1.md",
+      "sha256": "902673815792f91519365c4b9d0ba388525a7fad61af72eb7f8f82c929b533a8"
+    },
+    {
+      "bytes": 11414,
+      "path": "artifacts/binding/identity_grammar/20261028_v1/review_completion_v1.py",
+      "sha256": "f6a669bd887f055a51255bb951f8e901b90b69ed102de84915ad77da0e00e576"
+    },
+    {
+      "bytes": 15883,
+      "path": "README.md",
+      "sha256": "d48d51e737bdde73f83417d8fd379eea3bc5bba25787630df0bf67a12c4ff397"
+    },
+    {
+      "bytes": 51969,
+      "path": "reports/binding/implementation_checklist.md",
+      "sha256": "b76293fefd00311bab9e893750234f4f785fd614d1c92410429707deed834316"
+    },
+    {
+      "bytes": 36053,
+      "path": "reports/binding/research_backlog.md",
+      "sha256": "26a756cf1a47192267e3c1b8c1e45c798c8ad2c8cd5a5187528576d082adf95a"
+    }
+  ],
+  "plot_visually_reviewed": true,
+  "score_arrays_opened": false,
+  "software_tests": 2191,
+  "source": {
+    "code": "ebc4b3a9bd5270fa22eeea88d5a777a488441d9c48d5f09c94af60381581729c",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/b75fedb03895e8f9d28e29c3",
+    "snapshot_id": "b75fedb03895e8f9d28e29c3"
+  },
+  "status": "passed",
+  "test_archive_files": 106,
+  "whole8_transitions_across_dependent_seed_views": {
+    "codellama34b": {
+      "joint_allow_self": {
+        "free_joint": {
+          "corrected": 520,
+          "harmed": 0
+        },
+        "free_marginal": {
+          "corrected": 424,
+          "harmed": 540
+        }
+      },
+      "owner_marginal_allow_self": {
+        "free_joint": {
+          "corrected": 1448,
+          "harmed": 16
+        },
+        "free_marginal": {
+          "corrected": 796,
+          "harmed": 0
+        }
+      }
+    },
+    "llama8b": {
+      "joint_allow_self": {
+        "free_joint": {
+          "corrected": 440,
+          "harmed": 0
+        },
+        "free_marginal": {
+          "corrected": 532,
+          "harmed": 212
+        }
+      },
+      "owner_marginal_allow_self": {
+        "free_joint": {
+          "corrected": 920,
+          "harmed": 76
+        },
+        "free_marginal": {
+          "corrected": 724,
+          "harmed": 0
+        }
+      }
+    }
+  }
+}

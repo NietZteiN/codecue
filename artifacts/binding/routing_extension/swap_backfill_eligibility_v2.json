@@ -1,0 +1,10 @@
+{
+  "eligible_partitions": "dev-a30,a30,h100,h200",
+  "host_memory": "32G",
+  "job_id": "477716",
+  "partition_details": "PartitionName=dev-a30\n   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL\n   AllocNodes=ALL Default=NO QoS=juno-dev-a30\n   DefaultTime=NONE DisableRootJobs=NO ExclusiveUser=NO ExclusiveTopo=NO GraceTime=0 Hidden=NO\n   MaxNodes=UNLIMITED MaxTime=02:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED\n   Nodes=g-01-01,g-02-01\n   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO\n   OverTimeLimit=NONE PreemptMode=REQUEUE\n   State=UP TotalCPUs=256 TotalNodes=2 SelectTypeParameters=NONE\n   JobDefaults=(null)\n   DefMemPerNode=UNLIMITED MaxMemPerNode=UNLIMITED\n   TRES=cpu=256,mem=2000G,node=2,billing=256,gres/gpu=4,gres/gpu:nvidia_a30=4\n\n",
+  "reason": "dev-a30 allows all accounts and has an actual two-hour partition limit. Measured computed BF16 batch96 host MaxRSS 18,648,716 KiB and GPU peak 18,735,435,264 bytes support 32G host and short 24G-A30 work. Expand eligible queues and permit five-minute backfill for a finite resumable workload. Scientific cohort, frozen inference source and model configuration unchanged.",
+  "recorded_utc": "2026-10-26T17:52:18.011818+00:00",
+  "scheduler_time_min": "00:05:00",
+  "scheduler_walltime_max": "02:00:00"
+}

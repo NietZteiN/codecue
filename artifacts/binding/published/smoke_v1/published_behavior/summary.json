@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "cruxeval_metric_limit": "literal equality without execution; expressions and function calls get no credit",
+  "decoding": "one greedy completion per item; no sampled pass@k",
+  "evaluated": 10,
+  "generated_holdouts_opened": false,
+  "gpu_peak_bytes": 15428782592,
+  "metric": "python_literal_equality_and_bbh_final_letter_v1",
+  "planned": 10,
+  "responses_sha256": "d1d5d573cd5f20a7d1f6ee92b7b9c5749137414bff305c242baacc10c12bc4ea",
+  "serialization": "released prompt content inside the checkpoint single-user chat template; audited BOS boundary",
+  "tasks": [
+    {
+      "accuracy": 0.0,
+      "correct": 0,
+      "evaluated": 2,
+      "evaluated_accuracy": 0.0,
+      "planned": 2,
+      "task": "cruxeval_o_direct",
+      "token_limited": 0,
+      "upstream_postprocessing_literal_correct": 0,
+      "valid": 0
+    },
+    {
+      "accuracy": 0.0,
+      "correct": 0,
+      "evaluated": 2,
+      "evaluated_accuracy": 0.0,
+      "planned": 2,
+      "task": "bbh_tracking_3",
+      "token_limited": 0,
+      "valid": 2
+    },
+    {
+      "accuracy": 0.5,
+      "correct": 1,
+      "evaluated": 2,
+      "evaluated_accuracy": 0.5,
+      "planned": 2,
+      "task": "bbh_tracking_5",
+      "token_limited": 0,
+      "valid": 2
+    },
+    {
+      "accuracy": 0.0,
+      "correct": 0,
+      "evaluated": 2,
+      "evaluated_accuracy": 0.0,
+      "planned": 2,
+      "task": "bbh_tracking_7",
+      "token_limited": 0,
+      "valid": 2
+    },
+    {
+      "accuracy": 0.5,
+      "correct": 1,
+      "evaluated": 2,
+      "evaluated_accuracy": 0.5,
+      "planned": 2,
+      "task": "cruxeval_o_cot",
+      "token_limited": 0,
+      "upstream_postprocessing_literal_correct": 1,
+      "valid": 2
+    }
+  ]
+}

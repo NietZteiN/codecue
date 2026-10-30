@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "authorization": "User requested execution of all ten proposed experiments, including a separately scoped second-family replication after a stable effect.",
+  "primary_model": "codellama/CodeLlama-7b-Instruct-hf",
+  "primary_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "replication_model": "google/codegemma-7b-it",
+  "replication_revision": "078cdc51070553d1636d645c9a238f3b0914459a",
+  "resources": {
+    "total_gpu_seconds_cap": 14400,
+    "primary_ledger": "artifacts/binding/gpu_budget.json",
+    "replication_seconds_cap": 900,
+    "replication_rule": "Reserve the replication allowance from the global primary ledger before using a separate checkpoint-specific child ledger; reconcile actual elapsed time after the serialized job.",
+    "activation_bytes_cap": 68719476736,
+    "downloads": "Only small public metadata/reference source; all model weights must already be cached.",
+    "training": false
+  },
+  "diagnostic_selection": {
+    "protocol_order": ["print_direct_v3", "print_trace_long_v1"],
+    "minimum_elementary_accuracy": 0.9,
+    "maximum_invalid_fraction": 0.05,
+    "selection_split": "train",
+    "validation_split": "development",
+    "minimum_per_elementary_cell": 24,
+    "no_validation_fallback": true,
+    "structural_scope": "Numeric calibration validation shares task structures; no confirmatory generalization claim."
+  },
+  "experiments": [
+    {"id": 1, "name": "Checkpoint and official prompt audit", "gpu_seconds_cap": 600, "prerequisites": [], "outputs": ["checkpoint_audit.json", "tokenizer_boundary_audit.json", "boundary_validation/comparison.json"]},
+    {"id": 2, "name": "Arithmetic versus program execution", "gpu_seconds_cap": 1200, "query_cap": 384, "prerequisites": [1], "dataset": "arithmetic_forms.jsonl"},
+    {"id": 3, "name": "Arithmetic-free binding", "gpu_seconds_cap": 1200, "query_cap": 768, "prerequisites": [1], "dataset": "arithmetic_free.jsonl"},
+    {"id": 4, "name": "Binding and version competition", "gpu_seconds_cap": 1800, "prerequisites": [2, 3], "gate": "At least one diagnostic protocol passes its fresh validation. Prefer the computed task; otherwise explicitly scope the study to literal/copy bindings. Use matched value multisets, ownership swaps and version substitutions with predefined oracle answers."},
+    {"id": 5, "name": "Naming by competition by updates", "gpu_seconds_cap": 1800, "prerequisites": [4], "gate": "Use the validated task and frozen protocol. Run the complete balanced naming/load/update design with tokenizer-length audits; no selection of favorable cells."},
+    {"id": 6, "name": "Tracking versus query-time reconstruction", "gpu_seconds_cap": 1800, "prerequisites": [4], "gate": "Use fresh captures under the selected protocol, fixed pre-query/post-query sites and labels visible at each prefix. Earlier causal token representations cannot depend on a later query."},
+    {"id": 7, "name": "Distributed-state probe diagnostics", "gpu_seconds_cap": 1800, "prerequisites": [6], "gate": "Match decoder capacity, train-only preprocessing, surface information and randomized-label controls. Select all readout choices on development, with no final-test activations."},
+    {"id": 8, "name": "Value, ownership and pathway interventions", "gpu_seconds_cap": 2400, "prerequisites": [4, 6, 7], "gate": "First demonstrate reproducible counterfactual value transfer on a usable baseline. Advance to ownership and path tests only after the preceding assay succeeds; include wrong-owner/version, same-answer, unrelated-donor, norm and reciprocal controls."},
+    {"id": 9, "name": "Frozen failure prediction", "gpu_seconds_cap": 1800, "prerequisites": [5, 7, 8], "gate": "Require an evidence-supported explanation, genuine scientific registration, explicit query/feature contracts and frozen predictions before opening final outcomes. Compare A/B/C and the cheap stress baseline with clustered uncertainty."},
+    {"id": 10, "name": "Second-family replication", "gpu_seconds_cap": 900, "prerequisites": [8], "gate": "Replicate an observed stable, selective effect on the pinned cached CodeGemma checkpoint. No mechanism-free replication result is invented when experiment 8 has no eligible effect."}
+  ],
+  "heldout_rule": "All previous and fresh confirmatory model outcomes remain sealed until experiment 9 has a genuine frozen analysis and forecast artifact.",
+  "stopping_rule": "Respect every prerequisite. Record failed or unavailable prerequisites as not run, never as completed experiments. Preserve the earlier pilot and its separate stopping decision."
+}

@@ -1,0 +1,100 @@
+{
+  "analysis_source_sha256": "a12ba276ba3c4009e76c2b38a7e9768625d677f3f33129253ecccc6902173d60",
+  "bases": 60,
+  "behavior_identity_hash": "08cf2e626172ad771deab91c0240097a8cd7f85b5a1da85dcd33137ff088a9a9",
+  "dataset_sha256": "fce0a27061efdee3a15ebe597b34da0e9add672e56c6f3ac2350bd7f667921a4",
+  "endpoints": [
+    {
+      "control_kind": "arithmetic_control",
+      "label": "arithmetic_add_for_subtract",
+      "n": 360,
+      "observed_count": 8,
+      "observed_minus_shuffled_mean": -0.015522222222222219,
+      "observed_rate": 0.022222222222222223,
+      "shuffled_mean_rate": 0.03774444444444444,
+      "shuffled_reference95": [
+        0.022083333333333344,
+        0.05555555555555555
+      ]
+    },
+    {
+      "control_kind": "arithmetic_control",
+      "label": "competing_variable",
+      "n": 360,
+      "observed_count": 0,
+      "observed_minus_shuffled_mean": 0.0,
+      "observed_rate": 0.0,
+      "shuffled_mean_rate": 0.0,
+      "shuffled_reference95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "control_kind": "arithmetic_control",
+      "label": "obsolete_assignment",
+      "n": 360,
+      "observed_count": 33,
+      "observed_minus_shuffled_mean": 0.015633333333333332,
+      "observed_rate": 0.09166666666666666,
+      "shuffled_mean_rate": 0.07603333333333333,
+      "shuffled_reference95": [
+        0.05,
+        0.10277777777777777
+      ]
+    },
+    {
+      "control_kind": "primary",
+      "label": "arithmetic_add_for_subtract",
+      "n": 360,
+      "observed_count": 4,
+      "observed_minus_shuffled_mean": 0.007152777777777779,
+      "observed_rate": 0.011111111111111112,
+      "shuffled_mean_rate": 0.003958333333333333,
+      "shuffled_reference95": [
+        0.0,
+        0.013888888888888888
+      ]
+    },
+    {
+      "control_kind": "primary",
+      "label": "competing_variable",
+      "n": 360,
+      "observed_count": 62,
+      "observed_minus_shuffled_mean": 0.01897222222222225,
+      "observed_rate": 0.17222222222222222,
+      "shuffled_mean_rate": 0.15324999999999997,
+      "shuffled_reference95": [
+        0.10555555555555556,
+        0.19451388888888882
+      ]
+    },
+    {
+      "control_kind": "primary",
+      "label": "obsolete_assignment",
+      "n": 360,
+      "observed_count": 28,
+      "observed_minus_shuffled_mean": 0.0015472222222222276,
+      "observed_rate": 0.07777777777777778,
+      "shuffled_mean_rate": 0.07623055555555555,
+      "shuffled_reference95": [
+        0.058333333333333334,
+        0.09722222222222222
+      ]
+    }
+  ],
+  "interpretation": "descriptive within-cohort output-prior reference; not a mechanistic test, population CI or multiplicity-adjusted significance test",
+  "limitations": "numeric bases can share parent templates; singleton strata cannot vary; prompt/confidence effects within a cell remain uncontrolled",
+  "permutable_bases": 53,
+  "repetitions": 1000,
+  "responses_sha256": "9ef280fa8fb0620b028d9c742237fe48b6484a277453983a7b06a80e21ef0ca4",
+  "seed": 17,
+  "singleton_strata": 7,
+  "stratification": [
+    "family",
+    "load",
+    "updates",
+    "split"
+  ],
+  "unit": "complete base prediction vector, retaining naming, lexical and task pairing"
+}

@@ -1,0 +1,84 @@
+{
+  "cells": [
+    {
+      "correct": 305,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_direct",
+      "valid": 786
+    },
+    {
+      "correct": 364,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_cot",
+      "valid": 785
+    }
+  ],
+  "complete": true,
+  "evaluated": 1600,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-466ebcdb-f203-d625-f9b8-6fb25d6ad0e7",
+    "mean_gpu_utilization_percent": 94.86046511627907,
+    "mean_power_watts": 507.5104651162791,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 139035.0,
+    "samples": 43,
+    "selector_verified": true
+  },
+  "identity_hash": "cc322b566a4ad4df778595b3506d36a1570963cde5102ceb27f69e3bf4a7521a",
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "planned": 1600,
+  "preflight": {
+    "cases": 1600,
+    "config_hash": "385cf2b294097151d729206f6bc564b2fd3c4bfeadec2c28537f71d96495d23c",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "77850d58738332296c6b68b1193cf60ff11768d74b51b9add87faaeddaa90a0e",
+    "source_sha256": "e194cbdd2821a07c36c2a083afcad664912ee8907d331da7aa1e8685bc87e5c0",
+    "status": "passed"
+  },
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "runtime": {
+    "device_name": "NVIDIA H200 NVL",
+    "engine": {
+      "gpu_memory_utilization": 0.95,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 512,
+      "tensor_parallel_size": 1
+    },
+    "load_warmup_seconds": 172.9671715181321,
+    "preflight": {
+      "cases": 1600,
+      "config_hash": "385cf2b294097151d729206f6bc564b2fd3c4bfeadec2c28537f71d96495d23c",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "77850d58738332296c6b68b1193cf60ff11768d74b51b9add87faaeddaa90a0e",
+      "source_sha256": "e194cbdd2821a07c36c2a083afcad664912ee8907d331da7aa1e8685bc87e5c0",
+      "status": "passed"
+    },
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    }
+  },
+  "status": "passed",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 9.588450292125344,
+      "output_tokens": 81166,
+      "requests_per_second": 106.79515133336771
+    },
+    {
+      "cases": 576,
+      "generation_seconds": 12.985474918968976,
+      "output_tokens": 154642,
+      "requests_per_second": 44.35725328448237
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "both_valid": 128,
+  "cases": 128,
+  "complete": true,
+  "config_hash": "4b5d974db78d8d1cf12cededbbdb0c13df013a011fff26b631d826684e2a83fe",
+  "device_name": "NVIDIA H200 NVL",
+  "generated_holdouts_opened": false,
+  "hf_correct": 128,
+  "hidden_hooks": [
+    {
+      "exact_prefix_invariance": true,
+      "layer": 8,
+      "max_absolute_prefix_difference": 0.0,
+      "shape": [
+        2,
+        4096
+      ]
+    },
+    {
+      "exact_prefix_invariance": true,
+      "layer": 16,
+      "max_absolute_prefix_difference": 0.0,
+      "shape": [
+        2,
+        4096
+      ]
+    },
+    {
+      "exact_prefix_invariance": true,
+      "layer": 24,
+      "max_absolute_prefix_difference": 0.0,
+      "shape": [
+        2,
+        4096
+      ]
+    }
+  ],
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "parsed_prediction_matches": 128,
+  "purpose": "Software replay and raw-block causal-prefix invariance only. No probe or intervention effect is claimed.",
+  "status": "passed",
+  "upstream_identity": "b836d5eae30c4d46646f23fa72cd2aaa6c7eded0f7ffd884da258e07ec1dde53",
+  "vllm_correct": 128
+}

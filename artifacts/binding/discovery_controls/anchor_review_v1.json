@@ -1,0 +1,39 @@
+{
+  "check_script_sha256": "5ee458d74583a6482661614d0476a309ad8d5f67a2a4ff0e25a90032105dce7e",
+  "checks": [
+    {
+      "all_outer_inner_group_assignments_unchanged": true,
+      "anchor_predictors": [
+        "prior",
+        "A_input"
+      ],
+      "checkpoint": "llama31_8b",
+      "identities_labels_references_original_features_unchanged": true,
+      "maximum_fit_or_curve_difference": 0.0,
+      "maximum_probability_difference": 0.0,
+      "oof_records": 18432,
+      "outer_folds": 18,
+      "targets": 6144
+    },
+    {
+      "all_outer_inner_group_assignments_unchanged": true,
+      "anchor_predictors": [
+        "prior",
+        "A_input"
+      ],
+      "checkpoint": "codellama34b",
+      "identities_labels_references_original_features_unchanged": true,
+      "maximum_fit_or_curve_difference": 0.0,
+      "maximum_probability_difference": 0.0,
+      "oof_records": 18432,
+      "outer_folds": 18,
+      "targets": 6144
+    }
+  ],
+  "comparison_sha256": "fc33d31f8b05f108e223919ad44a5ce005b109030490db1a49defc5a72d0869c",
+  "complete": true,
+  "generated_holdouts_opened": false,
+  "new_language_model_queries": 0,
+  "status": "passed",
+  "tolerance": 1e-10
+}

@@ -1,0 +1,69 @@
+{
+  "automatic_scheduler": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 185,
+        "dataset": 64,
+        "job": 337,
+        "run": 73
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 2295,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_tick_utc": "2026-10-28T02:09:09.126682+00:00",
+    "next_reconcile_utc": "2026-10-28T02:19:09.126682+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "480389",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T21:27:35",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "480387",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T21:17:08",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "completed_controls_indexed": "analysis:ed85b227e079a94490ac560a",
+  "completed_handoff_indexed": "analysis:ce39a6ec70fea31c6ea80977",
+  "counts": {
+    "analysis": 186,
+    "dataset": 64,
+    "job": 337,
+    "run": 73
+  },
+  "created_utc": "2026-10-28T02:13:12.509218+00:00",
+  "evaluation_role": "relationship_completion_logging_review_v1",
+  "forced_refresh_status": "ok",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "legacy_oversized_metadata_notices": 5,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "status": "passed"
+}

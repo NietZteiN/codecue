@@ -1,0 +1,83 @@
+{
+  "actual_attempted_prefills": 11520,
+  "application_gpu_accounting_uncapped": true,
+  "both_captures_completed": true,
+  "codellama34b_readout": "running",
+  "distinct_prefills": 11520,
+  "evaluation_role": "discovery_diversity_execution_health_v1",
+  "generated_responses": 0,
+  "llama8b_readout_replay_passed": true,
+  "models": {
+    "codellama34b": {
+      "actual_attempted_prefills": 5760,
+      "batch_calls": 45,
+      "completed_cases": 5760,
+      "device": "NVIDIA H200 NVL",
+      "gpu_peak_device_memory_mib": 72407.0,
+      "gpu_utilization_percent": 90.16315789473684,
+      "gpu_utilization_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+      "recorded_attempt_sources_per_second": 33.49409397618296,
+      "recorded_attempt_wall_seconds": 171.97061679279432,
+      "retries": 0,
+      "torch_peak_allocated_bytes": 69876098048,
+      "use_cache": false
+    },
+    "llama8b": {
+      "actual_attempted_prefills": 5760,
+      "batch_calls": 23,
+      "completed_cases": 5760,
+      "device": "NVIDIA A30",
+      "gpu_peak_device_memory_mib": 19609.0,
+      "gpu_utilization_percent": 89.98469387755102,
+      "gpu_utilization_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+      "recorded_attempt_sources_per_second": 32.31357616716192,
+      "recorded_attempt_wall_seconds": 178.2532508999575,
+      "retries": 0,
+      "torch_peak_allocated_bytes": 19510117376,
+      "use_cache": false
+    }
+  },
+  "new_fits_by_health_review": 0,
+  "new_model_queries_by_health_review": 0,
+  "pins": [
+    {
+      "bytes": 7583,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/summary.json",
+      "sha256": "b7417c0e36ba45b4bc82a5fa671e21b20f4bf90fae00167b22a38918a475791b"
+    },
+    {
+      "bytes": 4063,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/audit.json",
+      "sha256": "50911f07ff04862ed3120234f3a9dbd0b03cf78e381fce1d0df5b7b875a0d3ed"
+    },
+    {
+      "bytes": 5250,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+      "sha256": "ce1d4b0562df29a3b9d7e1385127a3e7cc2644d5f3002b44ead297fcdd725013"
+    },
+    {
+      "bytes": 7663,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/summary.json",
+      "sha256": "9c04643c7f52e7293a21b03cdf5a5441a288fee26e37a1f07533d7373b271ec0"
+    },
+    {
+      "bytes": 4123,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/audit.json",
+      "sha256": "b825516e2ba2c072777898e73f23956095d0f250711e75bd5729d0aa1f126691"
+    },
+    {
+      "bytes": 5343,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/completion_manifest_v1.json",
+      "sha256": "87d400e5b1cdf7d570b39204365d1b5949f14249e105dd432baf72b626202d97"
+    },
+    {
+      "bytes": 14391,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json",
+      "sha256": "ceca45c24dc939048fd1c83e26bfba55fb11116b906525518264ac917238766c"
+    }
+  ],
+  "queue_handoff_42_pins_still_match": true,
+  "recorded_utc": "2026-10-28T19:59:56.443505+00:00",
+  "status": "passed",
+  "unrelated_jobs_cancelled": 0
+}

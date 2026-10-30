@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-10-28T00:02:43.682292+00:00",
+  "evaluation_role": "discovery_relationship_recovery_amendment_v3",
+  "generated_holdouts_opened": false,
+  "host_allocation_modified": false,
+  "new_model_queries": 0,
+  "observed_before_cancellation": {
+    "480208": [
+      "PENDING",
+      "(QOSMaxJobsPerUserLimit)"
+    ],
+    "480209": [
+      "PENDING",
+      "(Dependency)"
+    ],
+    "480258": [
+      "PENDING",
+      "(Dependency)"
+    ],
+    "480259": [
+      "PENDING",
+      "(Dependency)"
+    ]
+  },
+  "other_project_jobs_modified": false,
+  "prior_completed_tokenizer_job_preserved": "480205",
+  "prior_jobs": "artifacts/binding/relationship_readouts/jobs_v2.json",
+  "real_model_prefills_before_amendment": 0,
+  "real_readout_factorizations_before_amendment": 0,
+  "reason": "Harden capture interruption/chunk-checksum/finalization recovery and readout training-input identity/finalization before model execution. Scientific protocol, model, dataset, target eligibility and fitted grid are unchanged.",
+  "status": "superseded_before_model_execution",
+  "superseded_jobs_cancelled_in_reverse_dependency_order": [
+    "480259",
+    "480258",
+    "480209",
+    "480208"
+  ]
+}

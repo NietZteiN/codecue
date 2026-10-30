@@ -1,0 +1,71 @@
+{
+  "dataset": {
+    "bytes": 4528936,
+    "path": "artifacts/binding/relationships/discovery_sources_v1.jsonl",
+    "sha256": "aae7843e8b847875a54f275acc455d04c881fb5c97350edbe70eb7d0c8fb62d2"
+  },
+  "evaluation_role": "discovery_relationship_target_audit_v1",
+  "generated_holdout_model_outcomes_opened": false,
+  "learned_relationship_decoder_fitted": false,
+  "model_outcomes_read": false,
+  "model_responses_read": false,
+  "new_model_queries": 0,
+  "oracle_answers_retained": false,
+  "oracle_numeric_values_retained": false,
+  "original_source_record_projection_only": true,
+  "parent_source": {
+    "path": "artifacts/binding/pilot_matched.jsonl",
+    "sha256": "fce0a27061efdee3a15ebe597b34da0e9add672e56c6f3ac2350bd7f667921a4"
+  },
+  "record_fields": [
+    "id",
+    "base_id",
+    "template_id",
+    "cluster_id",
+    "family",
+    "condition",
+    "lexical_realization",
+    "canonical_source",
+    "source",
+    "rename_map",
+    "variable_slots",
+    "split",
+    "control_kind",
+    "evaluation_role",
+    "execution_trace"
+  ],
+  "rows": 2880,
+  "split_condition_rows": [
+    {
+      "condition": "informative",
+      "rows": 240,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "rows": 240,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "rows": 240,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "rows": 720,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "rows": 720,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "rows": 720,
+      "split": "train"
+    }
+  ],
+  "status": "prepared_sources_only"
+}

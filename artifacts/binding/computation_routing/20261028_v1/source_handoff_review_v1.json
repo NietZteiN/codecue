@@ -1,0 +1,110 @@
+{
+  "activation_arrays_opened": false,
+  "all_full_pairs_same_body_and_answer": true,
+  "evaluation_role": "discovery_computation_routing_source_handoff_v1",
+  "gate_minimum_required": 24,
+  "generated_holdouts_opened": false,
+  "independent_python_programs": 10050,
+  "jobs_modified": false,
+  "limitations": [
+    "Fresh discovery diagnostic after the earlier failed arithmetic gates; not an untouched confirmatory experiment.",
+    "There are 24 root-order clusters, split12TRAIN/12DEV. Three copy topologies per order are related, not72 independent families.",
+    "Only the queried root is computed; other roots are literal distractors. All forms preserve every matched root/copy state and answer.",
+    "Small and cancellation forms share binary operator and operand-sign pattern, but differ in operand magnitude, tokenization and cancellation extent.",
+    "Full-root versus full-leaf queries share identical body and answer; they still differ in queried identifier, location and recency.",
+    "Only literal arithmetic-only controls may be shared acrossTRAIN/DEV, and they are descriptive and excluded from prospective gates.",
+    "Repeated control responses and logical memberships must not be treated as independent observations or as independent structural replications.",
+    "No causal owner/version mechanism, model training, sealed final evaluation or unfamiliar-program prediction follows from this source preparation."
+  ],
+  "logical_memberships": 6912,
+  "logical_question_counts": {
+    "arithmetic_only": 864,
+    "full_leaf": 2592,
+    "full_root": 2592,
+    "roots_only": 864
+  },
+  "matched_full_root_leaf_pairs": 2592,
+  "models_or_tokenizers_loaded": false,
+  "new_model_queries": 0,
+  "nonzero_canonical_source_overlap_across_splits": 0,
+  "physical_sources": 6700,
+  "prior_exclusion_source_hashes_verified": true,
+  "prior_source_exclusions": [
+    {
+      "literal_control_repetitions": 0,
+      "noncontrol_overlaps": 0,
+      "path": "artifacts/binding/arithmetic_readout/discovery_v1.jsonl",
+      "prior_rows": 3072,
+      "sha256": "67e28feb30f8dea8f57cc0c05cb25d865cf9ef4fc31f64dadc837914388ac1fb"
+    },
+    {
+      "literal_control_repetitions": 0,
+      "noncontrol_overlaps": 0,
+      "path": "artifacts/binding/relationships/algebraic_sources_v1.jsonl",
+      "prior_rows": 1944,
+      "sha256": "8a96759d14968605d7d2a21e9a91c552b62072e926f3a49d5cf11f5f870ac2c5"
+    }
+  ],
+  "profiles": {
+    "codellama34b": {
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "path": "configs/binding/computation_routing_20261028_v1/codellama34b.json",
+      "revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "sha256": "16fd74398a18246d4b6b01bcccd6f938d8a5b4c347a56fabb7f61a37046aeb22",
+      "tokenization_mode": "codellama_official_boundary_v1"
+    },
+    "llama8b": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "path": "configs/binding/computation_routing_20261028_v1/llama8b.json",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "sha256": "87200669449d987000a79923425fb9d30edcea08dfa86d5a0c1249a76ff73b11",
+      "tokenization_mode": "native"
+    }
+  },
+  "queried_root_slot_counts_by_split": {
+    "development": {
+      "0": 864,
+      "1": 864,
+      "2": 864,
+      "3": 864
+    },
+    "train": {
+      "0": 864,
+      "1": 864,
+      "2": 864,
+      "3": 864
+    }
+  },
+  "raw_model_outcomes_read": false,
+  "recorded_utc": "2026-10-28T14:44:42.459983+00:00",
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1843
+  },
+  "required_gate_cell_unique_source_minimum": 30,
+  "root_order_clusters": 24,
+  "shared_controls_descriptive_not_independent": true,
+  "shared_literal_arithmetic_controls": 68,
+  "source_dataset": {
+    "path": "artifacts/binding/computation_routing/20261028_v1/sources.jsonl",
+    "sha256": "a05908070277c191bc0a3b173cd7925be41e09ec48c59ad8cf19a1fbd049acce"
+  },
+  "source_execution": {
+    "code": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69",
+    "snapshot_id": "eb42de7a8ba9e27d987a5a69"
+  },
+  "source_generation": {
+    "code": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/75eea9bcbf957834772dfbc6",
+    "snapshot_id": "75eea9bcbf957834772dfbc6"
+  },
+  "split_root_order_clusters": {
+    "development": 12,
+    "train": 12
+  },
+  "status": "passed_source_design_handoff",
+  "topology_units": 72
+}

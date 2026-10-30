@@ -1,0 +1,57 @@
+{
+  "cases": 2016,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/000000.npz",
+      "rows": 512,
+      "sha256": "0b4694b9f112d8dafdf5f18bc8a312ac4a9f9d0f8750f0ffa68ee8704014cb4c"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/000512.npz",
+      "rows": 512,
+      "sha256": "40e9e53517587fa97b28a3add9f464ec0c34dbe4256311733e7730be3bc5b3ce"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/001024.npz",
+      "rows": 512,
+      "sha256": "e6dfa07fc13dce1bd8b0b346a5463f09659d30e4125416e28d2749c337083eb4"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/001536.npz",
+      "rows": 480,
+      "sha256": "7b4fe0bc8c93d3c7fa26570c994ec10474a321d196e45115ee1303c516eaf5f2"
+    }
+  ],
+  "config_hash": "f1dcfcf80bed555a9d2f1cd6cde49cba19a17b2af0dba39c2557ca6e9e16c5ff",
+  "different_padding_prefix_comparisons": 0,
+  "different_padding_prefix_max_abs_diff": 0.0,
+  "evaluation_role": "discovery_schedule_capture_v1",
+  "feature_shape": [
+    2016,
+    3,
+    4,
+    8192
+  ],
+  "finite_float32_features": true,
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "new_model_queries": 0,
+  "prefix_atol": 1e-05,
+  "prefix_check_scope": "Identical token prefixes within the same prefill batch, unpadded prompt length and physical position; different-padding geometry is diagnostic only; no cross-batch numerical-identity claim.",
+  "prefix_comparisons": 3024,
+  "prefix_max_abs_diff": 0.0,
+  "source": {
+    "frozen_manifest_sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26",
+    "source_sha256": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99"
+  },
+  "source_model_prefill_cases": 2016,
+  "source_prefill_batch_calls": 32,
+  "status": "passed"
+}

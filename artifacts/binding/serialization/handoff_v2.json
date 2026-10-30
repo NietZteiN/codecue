@@ -1,0 +1,64 @@
+{
+  "comparison": "artifacts/binding/serialization/comparison_v1.json",
+  "completion_smoke_predictions": 16,
+  "decision": "reports/binding/serialization_decision.md",
+  "full_predictions_completed": 1600,
+  "generated_holdouts_opened": false,
+  "hardware": {
+    "chat": "NVIDIA H100 80GB HBM3",
+    "completion": "NVIDIA H100 80GB HBM3",
+    "native_replay": "NVIDIA H100 80GB HBM3"
+  },
+  "jobs": {
+    "analysis_source": "artifacts/binding/serialization/analysis_source_v1.json",
+    "cancelled_h100_smoke": "476710",
+    "finalize": "476727",
+    "full": "476726",
+    "maintenance_tests": "476762",
+    "partition_candidates": [
+      "h100",
+      "h200"
+    ],
+    "preflight": "476708",
+    "resource_decision": "artifacts/binding/serialization/resource_decision_v1.json",
+    "smoke": "476718",
+    "tests": "476709"
+  },
+  "live_status": "artifacts/binding/serialization/live_status_v1.json",
+  "native_replay_predictions": 16,
+  "official_execution_scoring_run": false,
+  "recommended_next": "Use released completion serialization for CRUXEval comparability. Design separately identified, scope-safe paired program variants and independent semantic validation before new mechanism claims; do not reinterpret previous synthetic gates as passed.",
+  "recorded_utc": "2026-10-26T01:21:07.292478+00:00",
+  "regression_tests_passed": 156,
+  "report": "reports/binding/serialization_comparison.md",
+  "shared_gpu_ledger": {
+    "active": {},
+    "cap_seconds": 14400,
+    "used_seconds": 3771.9201261179405
+  },
+  "software_changes": [
+    "completed published runs reuse validated saved metadata without a fresh budget reservation",
+    "final saved batch can be finalized without model inference; unknown peak memory remains null",
+    "read-only live status reports jobs, dependencies, partial appends, coverage/checksums and GPU budget"
+  ],
+  "sources": {
+    "analysis_source_v1.json": "35cd258d759f59bab0d985baa752b3c8ca8ecf04f7c50fe504075344d92a4165",
+    "maintenance_source_v1.json": "7be0738e1a268c0ba182c855970ff743dd7ddfb41f3ab9e3e96df81fa3d3017a",
+    "source_v1.json": "c09bcb69842711e63708a307d98d874a217bf9551125e563582adfb88e9d67aa"
+  },
+  "status": "complete",
+  "tests": {
+    "continuation_tests_v1.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 17
+    },
+    "maintenance_regression_v1.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 156
+    }
+  }
+}

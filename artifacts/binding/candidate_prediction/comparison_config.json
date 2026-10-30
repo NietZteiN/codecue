@@ -1,0 +1,14 @@
+{
+  "comparison_artifact": "artifacts/binding/candidate_prediction/comparison_v1.json",
+  "report": "reports/binding/candidate_prediction_results_v1.md",
+  "runs": {
+    "codellama34b": {
+      "config": "artifacts/binding/candidate_prediction/codellama34b_v1/effective_config.json",
+      "sha256": "c3db2defe55a387a8bf187a5f740c4e97516b4a97d8ff1f3268a54bfe5a72684"
+    },
+    "llama31_8b": {
+      "config": "artifacts/binding/candidate_prediction/llama31_8b_v1/effective_config.json",
+      "sha256": "69d02dc54e3a293daa9487723f06bd810679051b85b0d14199580a6e48066ad0"
+    }
+  }
+}

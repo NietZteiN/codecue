@@ -1,0 +1,14 @@
+{
+  "comparison_artifact": "artifacts/binding/joint_confidence/comparison_v1.json",
+  "report": "reports/binding/joint_confidence_results_v1.md",
+  "runs": {
+    "codellama34b": {
+      "config": "artifacts/binding/joint_confidence/codellama34b_v1/effective_config.json",
+      "sha256": "785d58c6612dfcc642f674919dc866d86dededc1fbf5ab2623dc10f048e2395b"
+    },
+    "llama31_8b": {
+      "config": "artifacts/binding/joint_confidence/llama31_8b_v1/effective_config.json",
+      "sha256": "54a1700156bf24c51962c934c3c4cdd508c6968ed58ee1c5fb0e81d88b132b66"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "declared_plan": "reports/binding/diversity_identity_review_plan_v1.md",
+  "declared_plan_sha256": "1c22d52626c55b1d508f92d7e91801e22eb8aa8240b3b4472c4c31874ff6d2c0",
+  "evaluation_role": "discovery_diversity_identity_review_v1",
+  "readout_configs": [
+    {
+      "path": "configs/binding/diversity_decoding_20261028_v1/llama8b_readouts.json",
+      "sha256": "d3acc9c2521876eafdddc2e55ef11e4d1750b77c74d015d4294e7430f6f0d36e"
+    },
+    {
+      "path": "configs/binding/diversity_decoding_20261028_v1/codellama34b_readouts.json",
+      "sha256": "19e9cc18ea658ab0b1c4564034f4e4db4703c8f4bc2123ff5ada2c29fbd0424c"
+    }
+  ],
+  "report": "reports/binding/diversity_identity_review_findings_v1.md",
+  "run_dir": "artifacts/binding/diversity_identity_review/20261028_v1/analysis"
+}

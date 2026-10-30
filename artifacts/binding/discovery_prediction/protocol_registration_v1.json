@@ -1,0 +1,35 @@
+{
+  "collection_source": {
+    "code": "26c5722b6735a2f8262e4d3693f9391ab5af0db12991139330f65fd0ef07158f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/f351eb473e2922752fcbf6ba",
+    "snapshot_id": "f351eb473e2922752fcbf6ba"
+  },
+  "collector_configs": {
+    "configs/binding/discovery_prediction/codellama34b_collect_v1.json": "21d89d66b3c4ebdbeb35ba338316d25be705a320570acee7f6390a3cd6b63532",
+    "configs/binding/discovery_prediction/llama31_8b_collect_v1.json": "ce2c0e63cb6d27922ea8e262f17cb19038331adcf86427c63301ca758f0345e5"
+  },
+  "confidence_features": false,
+  "generated_holdouts_opened": false,
+  "inner_folds": 5,
+  "l2_grid": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "language_model_queries": 0,
+  "mechanism_C_features": false,
+  "outer_folds": 6,
+  "plan": "reports/binding/discovery_prediction_plan.md",
+  "plan_sha256": "f0d2c343a9c39d769decd034d062234b1fcd6a4096d062270df459f19afdf7a1",
+  "references_per_checkpoint": 3072,
+  "registered_utc": "2026-10-27T01:15:19.753846+00:00",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "status": "fixed_analysis_for_previously_observed_discovery",
+  "structural_components": 24,
+  "target_examples_per_checkpoint": 6144
+}

@@ -1,0 +1,45 @@
+{
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "comparison_artifact": "artifacts/binding/capacity/comparison_v2.json",
+  "completed_report": "reports/binding/capacity_results.md",
+  "job_keys": [
+    "tests",
+    "codellama13b_preflight",
+    "codellama13b_run",
+    "codellama13b_audit",
+    "codellama34b_preflight",
+    "codellama34b_run",
+    "codellama34b_audit",
+    "llama32_3b_preflight",
+    "llama32_3b_run",
+    "llama32_3b_audit",
+    "collect",
+    "llama31_8b_preflight",
+    "llama31_8b_run",
+    "llama31_8b_audit"
+  ],
+  "jobs": "artifacts/binding/capacity/jobs_v2.json",
+  "output": "artifacts/binding/capacity/live_status_v2.json",
+  "plan_report": "capacity_plan.md",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/capacity/status_v2.json",
+  "report": "reports/binding/capacity_status.md",
+  "stages": [
+    {
+      "name": "codellama13b",
+      "path": "artifacts/binding/capacity/codellama13b_v1/checkpoint_suite"
+    },
+    {
+      "name": "codellama34b",
+      "path": "artifacts/binding/capacity/codellama34b_v1/checkpoint_suite"
+    },
+    {
+      "name": "llama32_3b",
+      "path": "artifacts/binding/capacity/llama32_3b_v2/checkpoint_suite"
+    },
+    {
+      "name": "llama31_8b",
+      "path": "artifacts/binding/capacity/llama31_8b_v1/checkpoint_suite"
+    }
+  ],
+  "title": "Uncapped project checkpoint suites"
+}

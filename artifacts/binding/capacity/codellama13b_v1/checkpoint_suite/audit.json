@@ -1,0 +1,164 @@
+{
+  "cells": [
+    {
+      "correct": 340,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_direct",
+      "valid": 786
+    },
+    {
+      "correct": 335,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_cot",
+      "valid": 748
+    },
+    {
+      "correct": 86,
+      "n": 250,
+      "section": "bbh",
+      "task": "bbh_tracking_3",
+      "valid": 248
+    },
+    {
+      "correct": 71,
+      "n": 250,
+      "section": "bbh",
+      "task": "bbh_tracking_5",
+      "valid": 250
+    },
+    {
+      "correct": 52,
+      "n": 250,
+      "section": "bbh",
+      "task": "bbh_tracking_7",
+      "valid": 241
+    },
+    {
+      "correct": 34,
+      "n": 192,
+      "section": "arithmetic_forms",
+      "task": "print_direct_v3",
+      "valid": 191
+    },
+    {
+      "correct": 115,
+      "n": 192,
+      "section": "arithmetic_forms",
+      "task": "print_trace_long_v1",
+      "valid": 179
+    },
+    {
+      "correct": 171,
+      "n": 384,
+      "section": "arithmetic_free",
+      "task": "print_direct_v3",
+      "valid": 384
+    },
+    {
+      "correct": 313,
+      "n": 384,
+      "section": "arithmetic_free",
+      "task": "print_trace_long_v1",
+      "valid": 324
+    },
+    {
+      "correct": 339,
+      "n": 768,
+      "section": "counterbalanced",
+      "task": "print_direct_v3",
+      "valid": 768
+    },
+    {
+      "correct": 622,
+      "n": 768,
+      "section": "counterbalanced",
+      "task": "print_trace_long_v1",
+      "valid": 637
+    }
+  ],
+  "complete": true,
+  "evaluated": 5038,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-466ebcdb-f203-d625-f9b8-6fb25d6ad0e7",
+    "mean_gpu_utilization_percent": 99.24233983286908,
+    "mean_power_watts": 574.6561559888579,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 131011.0,
+    "samples": 359,
+    "selector_verified": true
+  },
+  "identity_hash": "923d6e9385a82ce51feaf3754483ca6df4f271b276f23d1dfccdbe0fa77a96f9",
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "model": "codellama/CodeLlama-13b-Instruct-hf",
+  "planned": 5038,
+  "preflight": {
+    "cases": 5038,
+    "config_hash": "5c227738badf561905cbf325bada652cf26da6253d2b75bd6e2fc117cd01b329",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "4a55df76d09e128bd0b45d8e46383dd06b8e89d55b668fd72d88b1219b72019f",
+    "source_sha256": "07c464a9e1d1228124b046bc05dbdb4008450d3f68ba4ab60f820cc7fcd9feee",
+    "status": "passed"
+  },
+  "revision": "745795438019e47e4dad1347a0093e11deee4c68",
+  "runtime": {
+    "device_name": "NVIDIA H200 NVL",
+    "engine": {
+      "gpu_memory_utilization": 0.9,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 128
+    },
+    "load_warmup_seconds": 257.6813596780412,
+    "preflight": {
+      "cases": 5038,
+      "config_hash": "5c227738badf561905cbf325bada652cf26da6253d2b75bd6e2fc117cd01b329",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "4a55df76d09e128bd0b45d8e46383dd06b8e89d55b668fd72d88b1219b72019f",
+      "source_sha256": "07c464a9e1d1228124b046bc05dbdb4008450d3f68ba4ab60f820cc7fcd9feee",
+      "status": "passed"
+    },
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    }
+  },
+  "status": "passed",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 30.12810361199081,
+      "output_tokens": 95234,
+      "requests_per_second": 33.98819962874975
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 69.953156335745,
+      "output_tokens": 249953,
+      "requests_per_second": 14.638367353793749
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 53.397789772134274,
+      "output_tokens": 150809,
+      "requests_per_second": 19.17682369194944
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 16.290059718303382,
+      "output_tokens": 84983,
+      "requests_per_second": 62.86042026288226
+    },
+    {
+      "cases": 942,
+      "generation_seconds": 27.434633343014866,
+      "output_tokens": 163041,
+      "requests_per_second": 34.336161457752546
+    }
+  ]
+}

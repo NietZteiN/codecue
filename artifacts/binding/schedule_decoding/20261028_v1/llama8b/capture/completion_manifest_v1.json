@@ -1,0 +1,83 @@
+{
+  "cases": 2016,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/chunks/000000.npz",
+      "rows": 512,
+      "sha256": "efd56de76dd121065790752804a18ca3fb05bb8a4b137f0ddaa88c86c02e37ff"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/chunks/000512.npz",
+      "rows": 512,
+      "sha256": "bd73dd2abeae45dac4da98aab455b35838dd67cac6d8e116a140876e780a4b59"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/chunks/001024.npz",
+      "rows": 512,
+      "sha256": "7d2fc88d346ae7e6481cfba6e7dfdb5719b59069e712375988029544c9732893"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/chunks/001536.npz",
+      "rows": 480,
+      "sha256": "cdddbd4698f76b4858c3112c01d89b9b09f9c5297b32ec7b58b9ca42bd902f8d"
+    }
+  ],
+  "config_hash": "ec211769bbd24278dbb4ecb6d7a436f448532f0ef2a3399e3c0344a3424c6dfd",
+  "dataset_sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287",
+  "evaluation_role": "discovery_schedule_capture_v1",
+  "feature_shape": [
+    2016,
+    3,
+    4,
+    4096
+  ],
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "metadata": {
+    "audit.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/audit.json",
+      "sha256": "3fbe8505cdf6bc39da99a47675a9ee182f9951fe0dfc6371b0d9018e074b7cd7"
+    },
+    "manifest.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/manifest.json",
+      "sha256": "3521fc15b1adf986091d456386208e49076e8b26abe747f8c6b68b953967ff3b"
+    },
+    "preflight.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/preflight.json",
+      "sha256": "c091ffd0514cd4aedf6da810bfbe949f5387d658f50a6dd36cb25d77a3150cba"
+    },
+    "prepared_cases.jsonl": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/prepared_cases.jsonl",
+      "sha256": "4730e687354ab6c3822050a047be4e3dcae55d19339edbc3984150b12f658d30"
+    },
+    "registration.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/registration.json",
+      "sha256": "fa8baca1fa5033581322e1472acb8cc3833f5af1a74b54831317f7d6ef9e5726"
+    },
+    "summary.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/summary.json",
+      "sha256": "acbb9043103935bcffe008e56bf0fadfc7fee0fc4eea1f5339578c0cfb2bf062"
+    }
+  },
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_prefill_cases": 2016,
+  "model_prefill_cases_attempted": 2016,
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "new_model_queries": 2016,
+  "prefill_batch_calls": 16,
+  "prefix_comparisons": 3088,
+  "prefix_max_abs_diff": 0.0,
+  "schema_version": 1,
+  "source": {
+    "frozen_manifest_sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26",
+    "source_sha256": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99"
+  },
+  "status": "complete_exploratory"
+}

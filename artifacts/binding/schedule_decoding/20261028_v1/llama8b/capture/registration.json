@@ -1,0 +1,104 @@
+{
+  "config": {
+    "batch_size": 128,
+    "chunk_size": 512,
+    "context_limit": 4096,
+    "dataset": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+    "dataset_manifest_sha256": "f08ac66c7b43c18f2d0627159d071f9936de13925695b23407d9b9375aca66c5",
+    "dataset_sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287",
+    "evaluation_role": "discovery_schedule_capture_v1",
+    "hidden_size": 4096,
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "prefix_atol": 1e-05,
+    "run_dir": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+  },
+  "config_hash": "ec211769bbd24278dbb4ecb6d7a436f448532f0ef2a3399e3c0344a3424c6dfd",
+  "evaluation_role": "discovery_schedule_capture_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "schema_version": 1,
+  "source": {
+    "frozen_manifest_sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26",
+    "source_sha256": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99"
+  },
+  "source_review": {
+    "actual_generic_ssa_labels_validated": true,
+    "components": {
+      "development": 5,
+      "train": 10
+    },
+    "dataset_manifest_sha256": "f08ac66c7b43c18f2d0627159d071f9936de13925695b23407d9b9375aca66c5",
+    "dataset_sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287",
+    "effective_canonical_graph_units": 15,
+    "effective_ordered_schedule_units": 21,
+    "existing_fixed_readouts_compatible": false,
+    "feature_shape": [
+      2016,
+      3,
+      4,
+      4096
+    ],
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "maximum_assignment_version": 4,
+    "ordered_case_ids_sha256": "61406f8a96db5e9c62d4c67e725aaa76faad19e6f0ab566689ac1bbfda5f8bae",
+    "query_rows": {
+      "v0": 504,
+      "v1": 504,
+      "v2": 504,
+      "v3": 504
+    },
+    "raw_schedule_count": 28,
+    "raw_schedule_parent_templates": 84,
+    "recipe": {
+      "batch_size": 128,
+      "chunk_size": 512,
+      "context_limit": 4096,
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+      "hidden_size": 4096,
+      "layers": [
+        8,
+        16,
+        24,
+        31
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "num_hidden_layers": 32,
+      "prefix_atol": 1e-05,
+      "tokenization_mode": "native",
+      "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+    },
+    "sites": [
+      "statement:3",
+      "statement:7",
+      "pre_answer"
+    ],
+    "source_rows": 2016,
+    "source_targets_prepared_only": true,
+    "split_canonical_graph_units": {
+      "development": 5,
+      "train": 10
+    },
+    "split_rows": {
+      "development": 696,
+      "train": 1320
+    }
+  }
+}

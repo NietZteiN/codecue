@@ -1,0 +1,125 @@
+{
+  "cells": [
+    {
+      "correct": 9355,
+      "n": 9984,
+      "section": "binding_competition",
+      "task": "print_direct_v3",
+      "valid": 9981
+    }
+  ],
+  "complete": true,
+  "evaluated": 9984,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-b550a357-5e58-0622-8c46-f3a6c6bb22b1",
+    "mean_gpu_utilization_percent": 83.5,
+    "mean_power_watts": 603.2775,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 80443.0,
+    "samples": 24,
+    "selector_verified": true
+  },
+  "identity_hash": "b836d5eae30c4d46646f23fa72cd2aaa6c7eded0f7ffd884da258e07ec1dde53",
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "planned": 9984,
+  "preflight": {
+    "cases": 9984,
+    "config_hash": "873418933197c1c4f245aa68144aa9be0e15c4a279e3caca11ca0062cfbb8c99",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "18456b8d79fe04de1996a143c811faa115ba4c2d2213013ccc730afd346bd90e",
+    "source_sha256": "879fe543236610c346d227a1d704848b35e308a1001e00412e9694bfc8ffba74",
+    "status": "passed"
+  },
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "runtime": {
+    "device_name": "NVIDIA H100 80GB HBM3",
+    "engine": {
+      "gpu_memory_utilization": 0.95,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 512,
+      "tensor_parallel_size": 1
+    },
+    "load_warmup_seconds": 164.78224325401243,
+    "preflight": {
+      "cases": 9984,
+      "config_hash": "873418933197c1c4f245aa68144aa9be0e15c4a279e3caca11ca0062cfbb8c99",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "18456b8d79fe04de1996a143c811faa115ba4c2d2213013ccc730afd346bd90e",
+      "source_sha256": "879fe543236610c346d227a1d704848b35e308a1001e00412e9694bfc8ffba74",
+      "status": "passed"
+    },
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    }
+  },
+  "status": "passed",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 1.086728274996858,
+      "output_tokens": 3078,
+      "requests_per_second": 942.2778661049934
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.2088824779493734,
+      "output_tokens": 3079,
+      "requests_per_second": 847.0633156475313
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.2446506029809825,
+      "output_tokens": 3080,
+      "requests_per_second": 822.7208483629731
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.2750934089999646,
+      "output_tokens": 3090,
+      "requests_per_second": 803.0784198022848
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.1893642629729584,
+      "output_tokens": 3075,
+      "requests_per_second": 860.9641569693623
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.1752441370044835,
+      "output_tokens": 3079,
+      "requests_per_second": 871.3083245920448
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.253208636015188,
+      "output_tokens": 3084,
+      "requests_per_second": 817.1025722069712
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.2582895800005645,
+      "output_tokens": 3085,
+      "requests_per_second": 813.8031310722137
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 1.2647648800048046,
+      "output_tokens": 3076,
+      "requests_per_second": 809.6366496167335
+    },
+    {
+      "cases": 768,
+      "generation_seconds": 0.9497056429972872,
+      "output_tokens": 2314,
+      "requests_per_second": 808.6716191094525
+    }
+  ]
+}

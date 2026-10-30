@@ -1,0 +1,427 @@
+{
+  "bookkeeping_fix": "Terminal supervisor now persists fresh attempt histories as well as stage statuses; stale480745 RUNNING history repaired under lock with a preserved before snapshot. No scientific artifact changed.",
+  "continuation_source": {
+    "code": "f6b2d07a2760158f46bcde619867cf103437e52c635ce5f8bce3b4a3dfaead01",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/bb04042b777979c68679206d",
+    "snapshot_id": "bb04042b777979c68679206d"
+  },
+  "evaluation_role": "discovery_overnight_relationship_completed_handoff_v1",
+  "generated_holdouts_opened": false,
+  "highlights": {
+    "codellama34b": {
+      "answer_correct": {
+        "conditional_group_bootstrap_95": [
+          0.0102880658436214,
+          0.05144032921810699
+        ],
+        "invalid_draws": 0,
+        "point": 0.028806584362139915,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      },
+      "computed_development_cases": 486,
+      "fixed_target_query_effect": {
+        "conditional_group_bootstrap_95": [
+          -0.009945130315500681,
+          0.0023433927754915457
+        ],
+        "invalid_draws": 0,
+        "point": -0.00400091449474165,
+        "valid_draws": 2000
+      },
+      "graph_correct": {
+        "conditional_group_bootstrap_95": [
+          0.845679012345679,
+          1.0
+        ],
+        "invalid_draws": 0,
+        "point": 0.9272976680384087,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      },
+      "graph_correct_and_answer_wrong": {
+        "conditional_group_bootstrap_95": [
+          0.8237139917695473,
+          0.9629629629629631
+        ],
+        "invalid_draws": 0,
+        "point": 0.8984910836762688,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      },
+      "queried_value_correct": {
+        "conditional_group_bootstrap_95": [
+          0.041838134430727016,
+          0.0850480109739369
+        ],
+        "invalid_draws": 0,
+        "point": 0.06241426611796982,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      }
+    },
+    "llama8b": {
+      "answer_correct": {
+        "conditional_group_bootstrap_95": [
+          0.08024691358024692,
+          0.15637860082304528
+        ],
+        "invalid_draws": 0,
+        "point": 0.11728395061728393,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      },
+      "computed_development_cases": 486,
+      "fixed_target_query_effect": {
+        "conditional_group_bootstrap_95": [
+          -0.0030306927297667993,
+          0.019377286236854138
+        ],
+        "invalid_draws": 0,
+        "point": 0.008573388203017836,
+        "valid_draws": 2000
+      },
+      "graph_correct": {
+        "conditional_group_bootstrap_95": [
+          0.8696844993141288,
+          1.0
+        ],
+        "invalid_draws": 0,
+        "point": 0.9471879286694102,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      },
+      "graph_correct_and_answer_wrong": {
+        "conditional_group_bootstrap_95": [
+          0.7620027434842249,
+          0.8957475994513031
+        ],
+        "invalid_draws": 0,
+        "point": 0.8326474622770919,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      },
+      "queried_value_correct": {
+        "conditional_group_bootstrap_95": [
+          0.05967078189300411,
+          0.0823045267489712
+        ],
+        "invalid_draws": 0,
+        "point": 0.07133058984910835,
+        "point_denominator": 1.0,
+        "status": "qualified_conditional_interval",
+        "valid_draws": 2000
+      }
+    }
+  },
+  "independent_review": "Original62metadata checks plus posthoc240cells/4080intervals; selected saved scores were hashed by the scientific analysis/audit, not reopened by the independent reviewer.",
+  "interpretation": "Posthoc decoder accessibility under a known scaffold. Graph decoding despite wrong answers does not establish complete correct scalar bindings or natural causal use. Both mean fixed-target query intervals include zero. Familiar components, lexical/query relatives and weighting/numeric seeds are not independent topology replication.",
+  "mutable_paths_not_pinned": [
+    "README.md",
+    "reports/binding/implementation_checklist.md",
+    "reports/binding/preparation_readiness.md",
+    "reports/binding/experiment_log.md",
+    "artifacts/binding/overnight_relationships/20261028_completion_v1/readiness_live_v1.json",
+    "artifacts/binding/overnight_relationships/20261028_completion_v1/readiness_live_v1.csv",
+    "artifacts/binding/overnight_relationships/20261027_v1/suite/jobs_live_v1.json",
+    "artifacts/binding/overnight_relationships/20261027_v1/suite/status_review_v1.json",
+    "reports/binding/overnight_20261027_status.md"
+  ],
+  "optional_extensions_deferred": 3,
+  "original_execution_regression_tests": 1733,
+  "original_execution_source": {
+    "code": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe"
+  },
+  "original_suite_scientific_work": {
+    "capture_case_prefills": 32076,
+    "complete_stages": 14,
+    "factorizations": 270,
+    "generated_responses": 14580,
+    "gpu_allocation_seconds": 1647,
+    "literal_to_computed_parameter_applications": 524880,
+    "parameter_replay_rows": 1574640,
+    "total_case_prefills": 46656
+  },
+  "pins": [
+    {
+      "bytes": 363,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/accounting_refresh_review_v1.json",
+      "sha256": "2c04b981ff68c1fb893da9988dae0476c3e8b4777518c39093b50094cb3175e7"
+    },
+    {
+      "bytes": 904,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/behavior_link_findings_review_v1.json",
+      "sha256": "51e2ab19fabe8adca762d7166e9c35c7af863a986ffc0c3714bec98a1174414c"
+    },
+    {
+      "bytes": 1720,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/continuation_completion_review_v1.json",
+      "sha256": "991107ed145f3f73ef70981aff7196a862b8ca95625de2c053f2c32ad56394e7"
+    },
+    {
+      "bytes": 529,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/continuation_submission_review_v1.json",
+      "sha256": "9442c2516b2331541dcdd7aa72b2ffed2145ef5eed93d9957374b96175c7ead0"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/execution_source_v1.json",
+      "sha256": "525ca4d8daeeea254209fdb26f1a9984a9538ed192b0543c10d2d8a7d15c5bce"
+    },
+    {
+      "bytes": 719,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/figure_review_v1.json",
+      "sha256": "1e81f2b5cbc88720f47409fe6b98f9021fa6fd5ca5daa77a3b0db60d93a3d650"
+    },
+    {
+      "bytes": 196778,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/independent_completion_review_v1.json",
+      "sha256": "0f5832c08988159d3bdc127d97ef6022118b904db9568af381b05540e20bd4cf"
+    },
+    {
+      "bytes": 7129,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/jobs_at_completion_v1.json",
+      "sha256": "9e53ca3d5aea4f322daba3292f766f59669917243d5df05177f34abd9e45e470"
+    },
+    {
+      "bytes": 7109,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/jobs_before_accounting_refresh_v1.json",
+      "sha256": "b9da96f7483fd3cefd7a04faddb782fa5ebf68d68210a134c8bf71014b1cf16e"
+    },
+    {
+      "bytes": 761,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/jobs_v1.json",
+      "sha256": "6345d5df43bb117edaae2026e18b41e67e9d5f36acbc85bf632ccaa5701ffbbd"
+    },
+    {
+      "bytes": 554,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/logging_review_v1.json",
+      "sha256": "a3a4c2cd3544bf735b4c19dcd26f0c764d0b7a18c860d46f15479ae24db1e50a"
+    },
+    {
+      "bytes": 11651,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/postrun_review_v1.json",
+      "sha256": "2cfc7628638372652225dfb91ca7ee8706ecb5ef8d4c4827790d56e30a275f8a"
+    },
+    {
+      "bytes": 13961,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/publication_review_v1.json",
+      "sha256": "d04c3953d4c456ca4686a0a40e21ca9447111e1045b7f8689d24c7ce40b21bcc"
+    },
+    {
+      "bytes": 60746,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/readiness_at_completion_v1.json",
+      "sha256": "e8104be2c8f28bf6aeefce4ef7d95ad36f46623f3b9f40cc93e1a85ffc6f0d71"
+    },
+    {
+      "bytes": 517,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/regression_archive_review_v1.json",
+      "sha256": "02b38174bf5ba234fa0031464945d65e6d59ae1056fc9633bbcf2a1b6001d73c"
+    },
+    {
+      "bytes": 5344,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/resource_accounting_review_v1.json",
+      "sha256": "2566c3a7e544b088f5d090b6e1050d0761f066b6df1f068b222a60e9f98af763"
+    },
+    {
+      "bytes": 1750737,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/results_summary_v1.json",
+      "sha256": "10c163a13e78b08405085416cb6e94146e90cc64b20b78a3e34be336fde220de"
+    },
+    {
+      "bytes": 974,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/software_validation_review_v1.json",
+      "sha256": "e0726139f08d9cdc3df0e5e3569c4b610bc3a2edb482a2dd53d17d78fea002b2"
+    },
+    {
+      "bytes": 6768,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/status_at_completion_v1.json",
+      "sha256": "3edf8c7dcc2d5f277aefffed32fa91b9c82fbb368a48eab1e04996640fd9f87d"
+    },
+    {
+      "bytes": 271751,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/regression_v1.xml",
+      "sha256": "a638f226d226d5bf2c53ddeb89494de8bfeb6734aff802f6505246780f121a63"
+    },
+    {
+      "bytes": 2033,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/regression_stdout_v1.txt",
+      "sha256": "a057ca85c078adb8c9c6c8401714ac26639529b55bc0e4cd63051ac564ddfa4c"
+    },
+    {
+      "bytes": 249130,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/regression_sources_v1.zip",
+      "sha256": "89c471bcb8acc2bdab91721f14f32c2737b2972093cd5ac4b8946919428f8fe5"
+    },
+    {
+      "bytes": 2759,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/run_continuation_validation_v1.py",
+      "sha256": "2471ec45edf26a6df465e3a2a779dc6d7871209ae01ac0c5fb3d46d9c6037a61"
+    },
+    {
+      "bytes": 33011,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/publish_overnight_results_v1.py",
+      "sha256": "1dadb7735599e72471ddef572d346c63cbf6e3f62b1b425af3aefc753a67a379"
+    },
+    {
+      "bytes": 5514,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/publish_behavior_link_findings_v1.py",
+      "sha256": "70154744b21583bca50cb26ff01d1d98b8d85370ea864e1b1c85b6b16fd390c6"
+    },
+    {
+      "bytes": 39980,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/results_summary_v1.csv",
+      "sha256": "9b83229629119b2f88e0d0cf96bbafcd6545a9e6df784109faa671b4de963d60"
+    },
+    {
+      "bytes": 49332,
+      "path": "configs/binding/preparation/readiness_v13.json",
+      "sha256": "7e8cbd851e4b0cf6cd404a0c76772ec08b136e916ed684f5fd4f25326b71aae2"
+    },
+    {
+      "bytes": 3101,
+      "path": "configs/binding/overnight_20261028_v1/score_behavior_v1.json",
+      "sha256": "7242069c6e381d5b47417c0198dba3153f956863c812863f0188f52814bd3071"
+    },
+    {
+      "bytes": 50121,
+      "path": "artifacts/binding/sources/bb04042b777979c68679206d/frozen_manifest.json",
+      "sha256": "0a510bcf421b6a83a068219d8fd39428a67683479b3b707428300b40a5a2ba2b"
+    },
+    {
+      "bytes": 49589,
+      "path": "artifacts/binding/sources/5cf1471e56f5b3de779c8fbe/frozen_manifest.json",
+      "sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/execution_source_v1.json",
+      "sha256": "0b295e135253a2619fd8c28681d602af2d25f8976b75c33c1d945185a51017d6"
+    },
+    {
+      "bytes": 10550,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/handoff_review_v1.json",
+      "sha256": "c624fa7b476ec46dc379b05818b86689572e936d8c010d42b0ff61e1e17ed020"
+    },
+    {
+      "bytes": 1210885,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/suite/results_review_v1.json",
+      "sha256": "f7fb570615c63baa0ae7266c472755a87f4617b78daa39e81986358171bf273a"
+    },
+    {
+      "bytes": 1210885,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/suite/morning_review_v1.json",
+      "sha256": "f7fb570615c63baa0ae7266c472755a87f4617b78daa39e81986358171bf273a"
+    },
+    {
+      "bytes": 4956,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/registration.json",
+      "sha256": "d1c16561ab0587388e0b2c893ae6a53ce5467fef3377f51ab040ed370a7238b2"
+    },
+    {
+      "bytes": 2458654,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/results_v1.json",
+      "sha256": "5e9cdd8a0439b06d0a8437efaef453f11df6d7248774e345e618b37a72bb4b38"
+    },
+    {
+      "bytes": 434,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/audit.json",
+      "sha256": "fe7f5b6cb01cc16d856c71eb3b2395704fd65cbe77fc55a70f450022cbd8a97f"
+    },
+    {
+      "bytes": 568,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/summary.json",
+      "sha256": "ade8931b51cfab9193b68a687726d06d58788707d36b98fc18d4595700c531bc"
+    },
+    {
+      "bytes": 2691,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/completion_manifest_v1.json",
+      "sha256": "1d52434744eadecef878219f85ac8ee011b395063abfa2b523f622d6c70d768d"
+    },
+    {
+      "bytes": 8582,
+      "path": "reports/binding/overnight_20261027_findings_v1.md",
+      "sha256": "deb428a94ef3e8f2c8c2aee10138a3d06b16657bca7458e634da52ba673f76f5"
+    },
+    {
+      "bytes": 4288,
+      "path": "reports/binding/overnight_score_behavior_plan_v1.md",
+      "sha256": "eb7193f4c9a0bcbc440c191e47bff64833945033d3757c369fed5b5a46ad63f5"
+    },
+    {
+      "bytes": 3833,
+      "path": "reports/binding/overnight_score_behavior_v1.md",
+      "sha256": "e6fd5ede5b9e3065b3867a30385d940daab4dfe06d8d9ce91a2b593518970b39"
+    },
+    {
+      "bytes": 3093,
+      "path": "reports/binding/overnight_score_behavior_findings_v1.md",
+      "sha256": "b1b30e08bd7dfd4fe7057eaa437cd497d96dcdd225f083b0383d0b7e586fc143"
+    },
+    {
+      "bytes": 3410,
+      "path": "reports/binding/relationship_next_experiment_decision_v1.md",
+      "sha256": "9592cb88f54b67e4ec3eb72b2d66c4de690c24bb1ce6c94d97f2d3859ad5df7b"
+    },
+    {
+      "bytes": 228588,
+      "path": "reports/binding/figures/overnight_relationships_v1.png",
+      "sha256": "1c66f18fb02d36861ba7b82eae3567370dc3bec9adca777abe2891a1dfc4af0f"
+    },
+    {
+      "bytes": 126338,
+      "path": "reports/binding/figures/overnight_relationships_v1.svg",
+      "sha256": "5ec0d0d9030e50b1b68cf706a4286087ba404241d56eb9cd678cf97197163fc3"
+    },
+    {
+      "bytes": 1115,
+      "path": "log/slurm/480986_relationship-continuation-tests.json",
+      "sha256": "adbe87c40025054eeb35c3bddb41059c66c0c213a943ea80cbd42c1335f4e0f2"
+    },
+    {
+      "bytes": 1277,
+      "path": "log/slurm/480987_relationship-score-behavior.json",
+      "sha256": "c2a95112cb6887de66dc40be13be1310fbbbf6ca19547e443850abedc62fd6f2"
+    },
+    {
+      "bytes": 1303,
+      "path": "log/slurm/480988_relationship-score-behavior-audit.json",
+      "sha256": "9cc86475b1a64738f87a92a8cd8a69764e72b4cd3d564a58f81cd8254e5f10a7"
+    }
+  ],
+  "posthoc_scientific_work": {
+    "development_cases": 4860,
+    "new_fits": 0,
+    "new_model_queries": 0,
+    "original_responses_validated": 14580,
+    "parameter_replays": 0,
+    "raw_activations_loaded": false,
+    "saved_score_rows_read": 419904,
+    "selected_score_banks": 72
+  },
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 45
+  },
+  "recorded_utc": "2026-10-28T13:55:27.637816+00:00",
+  "scientific_decisions_remaining": 9,
+  "status": "complete_exploratory",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1766
+  },
+  "tracked_tasks": 57,
+  "unrelated_jobs_canceled": false
+}

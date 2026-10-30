@@ -1,0 +1,14 @@
+{
+  "artifact": "artifacts/binding/live_load/backend_review_v2.json",
+  "report": "reports/binding/live_load_backend_results_v2.md",
+  "runs": {
+    "codellama34b": {
+      "config": "configs/binding/competition/live_load_backend_codellama34b_v2.json",
+      "sha256": "d9d1339fe63907be7decd2736d97ba39ed005ee354b32db96db1f13fdfe798c0"
+    },
+    "llama31_8b": {
+      "config": "configs/binding/competition/live_load_backend_llama31_8b_v2.json",
+      "sha256": "02e40ea6b428429e16515693b45d334b407f818204a0c0fa420f96c1d448677d"
+    }
+  }
+}

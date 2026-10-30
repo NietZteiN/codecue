@@ -1,0 +1,105 @@
+{
+  "budget": {
+    "active_jobs": 0,
+    "cap_seconds": null,
+    "reserved_seconds": 0,
+    "unreserved_seconds": null,
+    "used_seconds": 5176.658031872415
+  },
+  "comparison_audited": true,
+  "completed_report": "reports/binding/live_load_results_v2.md",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "jobs": {
+    "codellama34b_audit": {
+      "elapsed_seconds": 16,
+      "exit_code": "0:0",
+      "job_id": "478140",
+      "state": "COMPLETED"
+    },
+    "codellama34b_gpu": {
+      "elapsed_seconds": 790,
+      "exit_code": "0:0",
+      "job_id": "478139",
+      "state": "COMPLETED"
+    },
+    "codellama34b_qa": {
+      "elapsed_seconds": 268,
+      "exit_code": "0:0",
+      "job_id": "478138",
+      "state": "COMPLETED"
+    },
+    "codellama34b_review": {
+      "elapsed_seconds": 15,
+      "exit_code": "0:0",
+      "job_id": "478141",
+      "state": "COMPLETED"
+    },
+    "comparison": {
+      "elapsed_seconds": 2,
+      "exit_code": "0:0",
+      "job_id": "478148",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_audit": {
+      "elapsed_seconds": 16,
+      "exit_code": "0:0",
+      "job_id": "478136",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_gpu": {
+      "elapsed_seconds": 359,
+      "exit_code": "0:0",
+      "job_id": "478135",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_qa": {
+      "elapsed_seconds": 268,
+      "exit_code": "0:0",
+      "job_id": "478134",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_review": {
+      "elapsed_seconds": 15,
+      "exit_code": "0:0",
+      "job_id": "478137",
+      "state": "COMPLETED"
+    }
+  },
+  "model_inference": false,
+  "plan_report": "live_load_plan.md",
+  "recorded_utc": "2026-10-26T22:51:22.982141+00:00",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/competition/live_load_status_v2.json",
+  "scheduler_errors": [],
+  "scientific_artifacts_modified": false,
+  "stages": [
+    {
+      "evaluated": 38016,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "llama31_8b",
+      "path": "artifacts/binding/live_load/llama31_8b_v2/checkpoint_suite",
+      "planned": 38016,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 38016
+      }
+    },
+    {
+      "evaluated": 38016,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "codellama34b",
+      "path": "artifacts/binding/live_load/codellama34b_v2/checkpoint_suite",
+      "planned": 38016,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 38016
+      }
+    }
+  ],
+  "status": "complete",
+  "title": "Computed retention-frontier study status"
+}

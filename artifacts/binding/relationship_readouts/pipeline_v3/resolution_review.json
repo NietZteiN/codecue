@@ -1,0 +1,60 @@
+{
+  "capture_completion": {
+    "path": "artifacts/binding/relationship_capture/llama31_8b_v2/completion_manifest_v1.json",
+    "sha256": "258ae28c06219ba2568497e3307844782d7d9961144589a7debbccc74c73b5a1"
+  },
+  "capture_source": {
+    "frozen_manifest_sha256": "aa41ec6b4ae6b55655fc6d3b4ae5b22ce11a1ec4fce1d777882d85dc71a249fa",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0",
+    "source_sha256": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5"
+  },
+  "config_hash": "4b100ec4a19c21130921a3f7ec6489ebb3c35b1a2a48746603d6d2ceb278f5b4",
+  "declared_plan": {
+    "path": "reports/binding/relationship_readout_plan_v2.md",
+    "sha256": "ea8a4c4c1b1732c9f099ff5dd523b3fdab4ecb5f1be10440b5fda94ce64ed4b1"
+  },
+  "evaluation_role": "discovery_relationship_pipeline_v1",
+  "generated_holdouts_opened": false,
+  "nested_jobs_submitted": 0,
+  "new_model_queries": 0,
+  "pipeline_source": {
+    "frozen_manifest_sha256": "aa41ec6b4ae6b55655fc6d3b4ae5b22ce11a1ec4fce1d777882d85dc71a249fa",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0",
+    "source_sha256": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5"
+  },
+  "protocol_sha256": "12989784dfebc4f96264697f546a39b0c3bd45c970f4e1c87823b4244361510a",
+  "resolved_config": {
+    "config_hash": "0dfeb01238e12f4c5e5e39b55d0911a2b7ae5a613a9c50e4b64ebaf87582ffa4",
+    "path": "artifacts/binding/relationship_readouts/pipeline_v3/resolved_config.json",
+    "sha256": "81e006755f71a966a82f7e945104d6d2fea75564e4721b1a2601d9d18ff065fe"
+  },
+  "resolved_metadata": {
+    "audit.json": {
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/audit.json",
+      "sha256": "b33d716910cddf1e66426ce46480fbf755932664c8140c2e1814c0f8a052eaad"
+    },
+    "registration.json": {
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/registration.json",
+      "sha256": "d370740d3297e5d1a8d9e632a60f3c0e3aafd672cc970edbfb19020bd773f239"
+    },
+    "summary.json": {
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/summary.json",
+      "sha256": "73c1657d4f4adb37055376bb671e13718a52ac12af7cd94bf354fccadf70d0ee"
+    }
+  },
+  "source_model_prefill_cases": 1944,
+  "status": "passed",
+  "template": {
+    "capture_config": "configs/binding/relationships/capture_v2.json",
+    "capture_config_sha256": "1e944fa658613954a116f07a016e1ed8c9da83d2f805bf1e4605a5ff54440a4e",
+    "declared_plan": "reports/binding/relationship_readout_plan_v2.md",
+    "declared_plan_sha256": "ea8a4c4c1b1732c9f099ff5dd523b3fdab4ecb5f1be10440b5fda94ce64ed4b1",
+    "evaluation_role": "discovery_relationship_pipeline_v1",
+    "expected_readout_protocol_sha256": "12989784dfebc4f96264697f546a39b0c3bd45c970f4e1c87823b4244361510a",
+    "pipeline_run_dir": "artifacts/binding/relationship_readouts/pipeline_v3",
+    "readout_report": "reports/binding/relationship_readouts_v3.md",
+    "readout_run_dir": "artifacts/binding/relationship_readouts/llama31_8b_v3"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "cells": [
+    {
+      "correct": 1732,
+      "n": 3072,
+      "section": "arithmetic_composition_readout",
+      "task": "print_direct_v3",
+      "valid": 3061
+    },
+    {
+      "correct": 2207,
+      "n": 3072,
+      "section": "arithmetic_composition_readout",
+      "task": "print_trace_long_v1",
+      "valid": 3067
+    }
+  ],
+  "complete": true,
+  "evaluated": 6144,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-b55f9026-f433-fe2a-67a2-0c934e82f20b",
+    "mean_gpu_utilization_percent": 98.6068376068376,
+    "mean_power_watts": 572.981282051282,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 137679.0,
+    "samples": 117,
+    "selector_verified": true
+  },
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "planned": 6144,
+  "responses_sha256": "a1884aac65f99f42e5905d9330944b7a48816732fa75ba756e27fc9af8767d72",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 3.174829911906272,
+      "output_tokens": 4113,
+      "requests_per_second": 322.5369636841921
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 2.980476289987564,
+      "output_tokens": 4235,
+      "requests_per_second": 343.56924879421626
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 2.9285402901005,
+      "output_tokens": 4564,
+      "requests_per_second": 349.6622544212492
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 18.576636486919597,
+      "output_tokens": 100180,
+      "requests_per_second": 55.12300360299515
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 18.36691855918616,
+      "output_tokens": 97261,
+      "requests_per_second": 55.752411418400364
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 18.373963772086427,
+      "output_tokens": 97667,
+      "requests_per_second": 55.73103401649525
+    }
+  ]
+}

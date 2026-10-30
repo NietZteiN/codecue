@@ -1,0 +1,59 @@
+{
+  "causal_follow_on": false,
+  "evaluation_role": "discovery_old_value_completion_pipeline_v1",
+  "helper_pins": [
+    {
+      "bytes": 3767,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/prepare_submission_v1.py",
+      "sha256": "c31cf5b20c8dbc41fc4b4f2b6dc7f7027c336031fa05f34130fca6c34d921bbf"
+    },
+    {
+      "bytes": 7544,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/queue_remaining_v1.py",
+      "sha256": "ff45447a2302be33d41cf3bcb876f9e91866e5b6d40208905915ffc535c8df23"
+    },
+    {
+      "bytes": 4049,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/run_validation_v1.py",
+      "sha256": "ed853a82cfb0e1e5ba9680b5892d46505bb93308bab1d45b0a602382af409754"
+    },
+    {
+      "bytes": 3123,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/stage_worker_v1.py",
+      "sha256": "2223896e9d5eda7d964720135423a86765c67a8cb6393c46df31a8103d2a8703"
+    },
+    {
+      "bytes": 49805,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/publish_overnight_v1.py",
+      "sha256": "5853d50cffcb8c26df61667ce15f65341d14ac54fba30e88707d4b8eab3a5add"
+    },
+    {
+      "bytes": 20826,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/watch_running_v1.py",
+      "sha256": "a26b6d257480f7e18ce4ac248ab449a7bc1aedb0ad517917dd18763392e72a58"
+    },
+    {
+      "bytes": 966,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/monitor_build_review_v1.json",
+      "sha256": "6ba4682ccfcc98636f440b386d64600768d1825f2efdd5ae297ae3df23b66a2d"
+    },
+    {
+      "bytes": 819,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/publisher_build_review_v1.json",
+      "sha256": "be0fd6c9bce51e32966f66ec461fb78a4078f2c9873195fbbd7c6865b3a3a6a4"
+    }
+  ],
+  "new_fits": 0,
+  "queued_readiness_report_sha256": "7a147d92d617dd7c5320283ce108483fd29e37a3aa32a237afa41b8481b0c43d",
+  "readiness_config": {
+    "bytes": 71965,
+    "path": "configs/binding/preparation/readiness_v24.json",
+    "sha256": "9d44a94aaf6c2ca9574dbbfb58fef3b5e44968368346fa3c889065f092cd630f"
+  },
+  "source": {
+    "code": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55"
+  },
+  "status": "ready"
+}

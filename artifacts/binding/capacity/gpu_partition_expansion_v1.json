@@ -1,0 +1,11 @@
+{
+  "exclude": "g-06-01",
+  "job": "476875",
+  "partitions": [
+    "a30",
+    "h100",
+    "h200"
+  ],
+  "reason": "The fully cached 3B model fits every eligible accelerator. Allow an available larger GPU rather than waiting exclusively for A30 resources; use actual scheduler limits and record actual hardware separately.",
+  "recorded_utc": "2026-10-26T03:18:06.247798+00:00"
+}

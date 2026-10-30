@@ -1,0 +1,829 @@
+{
+  "active_jobs_map": {
+    "path": "artifacts/binding/discovery_confidence/active_jobs_v2.json",
+    "sha256": "9f3da13b750ea3348a91ff549b0770f6fc73c811412f00f7003cd82468b1efbf"
+  },
+  "automatic_completion_refresh_jobs": [
+    "479275",
+    "479299"
+  ],
+  "automatic_logging": {
+    "enabled": true,
+    "interval_minutes": 10,
+    "metadata_limit_bytes": 8388608,
+    "scope": "Durable lifecycle/artifact events, per-model reviews and compact paired pipeline/anchor reviews are indexed; oversized rich comparison JSON is linked through compact reviews without loading it into the metadata index. Periodic reads can flag that documented size limit."
+  },
+  "candidate_collection": {
+    "cases": 12288,
+    "event_variants": 811008,
+    "generated_tokens": 0,
+    "models": {
+      "codellama34b": {
+        "cases": 6144,
+        "event_variants": 202752,
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-f6a8c9f8-6812-8572-8e81-97cec152c9ad",
+          "mean_gpu_utilization_percent": 99.24559220078822,
+          "mean_power_watts": 521.5236714374611,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 142425.0,
+          "samples": 4821,
+          "selector_verified": true
+        },
+        "gpu_job": "479272",
+        "gpu_name": "NVIDIA H200 NVL",
+        "load_seconds": 31.97694789338857,
+        "measurement_dtype": "float32",
+        "metadata": {
+          "audit": {
+            "path": "artifacts/binding/candidate_measurement/codellama34b_full_v2/candidate_measurement/audit.json",
+            "sha256": "bdc51f1c18fbaffc737b3ae81a639cf5ddfa434b08e2f40cc7082b929b7a07c7"
+          },
+          "manifest": {
+            "path": "artifacts/binding/candidate_measurement/codellama34b_full_v2/candidate_measurement/manifest.json",
+            "sha256": "bd13834d5476bc9ff2e79995f9eec5299a6aaabdc81348a244252bdda5e1bb95"
+          },
+          "runtime": {
+            "path": "artifacts/binding/candidate_measurement/codellama34b_full_v2/candidate_measurement/runtime.json",
+            "sha256": "f3eabf1a4dfe6d555e8b01e348dd703bc0f3cbe68d6dfcb8777339511ba4ee9d"
+          },
+          "summary": {
+            "path": "artifacts/binding/candidate_measurement/codellama34b_full_v2/candidate_measurement/summary.json",
+            "sha256": "f8c0268e3cdb634b9a1b0357b8acc1bd4513a1c10e640624aed3cc89a46f588a"
+          }
+        },
+        "prefix_states": 215040,
+        "scalar_sha256": "bb0a41a529ef92f7efd0b8263a55b317f5240ce390e43d52c64459d41d67936c",
+        "tf32_policy": "disabled_highest_float32",
+        "tokenization_rule": "joint_prompt_candidate_v1",
+        "wall_seconds": 2562.2234186269343
+      },
+      "llama31_8b": {
+        "cases": 6144,
+        "event_variants": 608256,
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-f5e5dcd3-9ad7-dea7-f353-b94809a7d626",
+          "mean_gpu_utilization_percent": 97.20422535211267,
+          "mean_power_watts": 473.4091247484909,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 59111.0,
+          "samples": 994,
+          "selector_verified": true
+        },
+        "gpu_job": "479269",
+        "gpu_name": "NVIDIA H200 NVL",
+        "load_seconds": 23.4363209400326,
+        "measurement_dtype": "float32",
+        "metadata": {
+          "audit": {
+            "path": "artifacts/binding/candidate_measurement/llama31_8b_full_v3/candidate_measurement/audit.json",
+            "sha256": "282a0a975d0480bab0e83b7107b70011afe82a589fc880a4396b13c121466f64"
+          },
+          "manifest": {
+            "path": "artifacts/binding/candidate_measurement/llama31_8b_full_v3/candidate_measurement/manifest.json",
+            "sha256": "9bd1881b140fa7d3d475ed6ca81cd970058926d79e74708d4f2517b8c89a1613"
+          },
+          "runtime": {
+            "path": "artifacts/binding/candidate_measurement/llama31_8b_full_v3/candidate_measurement/runtime.json",
+            "sha256": "597cdb32519e5b1b515cde35313f3743188081270a12921b6db20679ff455790"
+          },
+          "summary": {
+            "path": "artifacts/binding/candidate_measurement/llama31_8b_full_v3/candidate_measurement/summary.json",
+            "sha256": "c13e80030bcef5a475c7467d383c97f34ad55e24f56e5b353fa92182f54d81c7"
+          }
+        },
+        "prefix_states": 215040,
+        "scalar_sha256": "27db6014c5f4873d699b377e6ab308a3cab665630bfba05ac5253ef3d672536a",
+        "tf32_policy": "disabled_highest_float32",
+        "tokenization_rule": "standalone_decode_verified_v2",
+        "wall_seconds": 548.8015971072018
+      }
+    },
+    "prefix_states": 430080,
+    "review": {
+      "path": "artifacts/binding/candidate_measurement/collection_review_v1.json",
+      "sha256": "1bcd7d5babd7e78770474654b68f8709992e7db6bd37c598fb394af51da0a4b9"
+    },
+    "status": "complete_and_audited",
+    "target_outcomes_read": false,
+    "tokenizer_review": {
+      "path": "artifacts/binding/candidate_measurement/tokenizer_review_v1.json",
+      "sha256": "df0b9fc3b1302b058d3f930d9650885426b2adbbcd853ad9af640ddf851c6e30"
+    }
+  },
+  "candidate_pipeline_review": {
+    "path": "artifacts/binding/candidate_prediction/pipeline_review_v1.json",
+    "sha256": "f8bfe2a071e23e21e47efaed87e5ccd7e042ac5f3aac955fc690e194c093d3dc"
+  },
+  "closed_form_prior_fits_in_logistic_count": false,
+  "findings": {
+    "candidate_brier_intervals_crossing_zero": 10,
+    "candidate_matched_comparisons": 10,
+    "candidate_matched_contrasts": [
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0004389888616236604,
+            0.008519097499230546
+          ],
+          "mean": 0.0036739329123163396
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_input_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            0.0048795246608936155,
+            0.029728321782303925
+          ],
+          "mean": 0.016544670664324353
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_input",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0028144177515178064,
+            0.0029326221912100835
+          ],
+          "mean": -2.5945095971562657e-05
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.004754722764241794,
+            0.013040181987297594
+          ],
+          "mean": 0.004137482156638509
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0028285040714305164,
+            0.0027641838345431025
+          ],
+          "mean": -0.00012906341637195415
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_neutral_raw_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.004461006392924891,
+            0.012185607966476374
+          ],
+          "mean": 0.003653355453231875
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0012608826888732968,
+            0.0047399803164046485
+          ],
+          "mean": 0.0017875804972468795
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_oracle_neutral_raw_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.003103992109853074,
+            0.01361788247829996
+          ],
+          "mean": 0.0054284314491276865
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions_oracle_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0006333572346145517,
+            0.004745718438374514
+          ],
+          "mean": 0.0021192440719265374
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_oracle_neutral_scored_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.0008392426825996294,
+            0.014429424190194409
+          ],
+          "mean": 0.006860106936093821
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions_oracle_neutral_scored",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0011914836506623843,
+            0.0008380700495686374
+          ],
+          "mean": -0.00010429763010522121
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_input_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.004609101692748823,
+            0.0007306807427022091
+          ],
+          "mean": -0.001711633827545145
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_input",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.001130905789597444,
+            0.0008579065337627307
+          ],
+          "mean": -9.389025837170702e-05
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.0045741343689388115,
+            0.0006709877676555371
+          ],
+          "mean": -0.0017812372855102304
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0016451231766715741,
+            0.0007599685182264368
+          ],
+          "mean": -0.0003443823328271227
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_neutral_raw_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.006938210649262729,
+            -0.0001811039160094433
+          ],
+          "mean": -0.0033150623200673174
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.001330465067905602,
+            0.001997691408347136
+          ],
+          "mean": 0.00045092544433307947
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_oracle_neutral_raw_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.00919307057720053,
+            0.004087671082759536
+          ],
+          "mean": -0.001972428945853213
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions_oracle_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0014014058122229168,
+            0.002020940898403498
+          ],
+          "mean": 0.00040972744053499377
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_interactions_oracle_neutral_scored_confidence",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.008884492986518127,
+            0.0041087717316913045
+          ],
+          "mean": -0.0019888063286825886
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_event_interactions_oracle_neutral_scored",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      }
+    ],
+    "next_token_codellama_brier_source_interactions": [
+      0.123574,
+      0.116641
+    ],
+    "scope": "Exploratory grouped discovery prediction; conditional bootstrap intervals without model refits or multiplicity correction. Alternative measurement bundles change event definition, precision, tokenization, feature encoding and fitted function class. No final/general mechanism conclusion."
+  },
+  "generated_holdouts_opened": false,
+  "historical_attempts_map": {
+    "path": "artifacts/binding/discovery_confidence/jobs_v1.json",
+    "sha256": "78fb27f4c55599a74e04f24f29ec2204387f9a4c4ecc4d07f0bf7b2e0d16af38"
+  },
+  "jobs_at_handoff": {
+    "anchor-figure-v2": {
+      "elapsed_seconds": 9,
+      "exit_code": "0:0",
+      "job_id": "479273",
+      "state": "COMPLETED"
+    },
+    "collect-codellama34b": {
+      "elapsed_seconds": 6,
+      "exit_code": "0:0",
+      "job_id": "479188",
+      "state": "COMPLETED"
+    },
+    "collect-llama31_8b": {
+      "elapsed_seconds": 6,
+      "exit_code": "0:0",
+      "job_id": "479184",
+      "state": "COMPLETED"
+    },
+    "compare": {
+      "elapsed_seconds": 5,
+      "exit_code": "0:0",
+      "job_id": "479197",
+      "state": "COMPLETED"
+    },
+    "event-compare": {
+      "elapsed_seconds": 11,
+      "exit_code": "0:0",
+      "job_id": "479298",
+      "state": "COMPLETED"
+    },
+    "event-completion-refresh": {
+      "elapsed_seconds": 49,
+      "exit_code": "0:0",
+      "job_id": "479299",
+      "state": "COMPLETED"
+    },
+    "event-fit-codellama34b": {
+      "elapsed_seconds": 128,
+      "exit_code": "0:0",
+      "job_id": "479297",
+      "state": "COMPLETED"
+    },
+    "event-fit-llama31_8b": {
+      "elapsed_seconds": 103,
+      "exit_code": "0:0",
+      "job_id": "479296",
+      "state": "COMPLETED"
+    },
+    "fit-codellama34b": {
+      "elapsed_seconds": 51,
+      "exit_code": "0:0",
+      "job_id": "479196",
+      "state": "COMPLETED"
+    },
+    "fit-llama31_8b": {
+      "elapsed_seconds": 57,
+      "exit_code": "0:0",
+      "job_id": "479195",
+      "state": "COMPLETED"
+    },
+    "qualified-completion-refresh": {
+      "elapsed_seconds": 52,
+      "exit_code": "0:0",
+      "job_id": "479275",
+      "state": "COMPLETED"
+    },
+    "qualified-full-codellama34b": {
+      "elapsed_seconds": 2615,
+      "exit_code": "0:0",
+      "job_id": "479272",
+      "state": "COMPLETED"
+    },
+    "qualified-full-llama31_8b": {
+      "elapsed_seconds": 608,
+      "exit_code": "0:0",
+      "job_id": "479269",
+      "state": "COMPLETED"
+    },
+    "qualified-prepare-codellama34b": {
+      "elapsed_seconds": 93,
+      "exit_code": "0:0",
+      "job_id": "479270",
+      "state": "COMPLETED"
+    },
+    "qualified-prepare-llama31_8b": {
+      "elapsed_seconds": 91,
+      "exit_code": "0:0",
+      "job_id": "479267",
+      "state": "COMPLETED"
+    },
+    "qualified-smoke-codellama34b": {
+      "elapsed_seconds": 177,
+      "exit_code": "0:0",
+      "job_id": "479271",
+      "state": "COMPLETED"
+    },
+    "qualified-smoke-llama31_8b": {
+      "elapsed_seconds": 87,
+      "exit_code": "0:0",
+      "job_id": "479268",
+      "state": "COMPLETED"
+    },
+    "qualified-tokenizer-review": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "job_id": "479274",
+      "state": "COMPLETED"
+    }
+  },
+  "language_model_training_performed": false,
+  "literature": {
+    "additional_confidence_sources": 2,
+    "all_appendices_and_proofs_read": false,
+    "bibliographic_flags": [
+      "R4 latest landing-page and full-text titles differ; venue not verified",
+      "R8 three-author supplied preprint differs from four-author ICLR publication"
+    ],
+    "exhaustive_novelty_established": false,
+    "original_reference_ids_checked": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10",
+      "R11",
+      "R12"
+    ],
+    "review": {
+      "path": "artifacts/binding/literature/source_review_v1.json",
+      "sha256": "cd7afac3bf84f4e1f9bc54c2a84b27fe9d733cf5a8202753a6250d69130ac5aa"
+    }
+  },
+  "local_date": "2026-10-27",
+  "mechanism_C_fitted": false,
+  "new_checkpoints_downloaded": false,
+  "readiness": {
+    "counts": {
+      "deferred_optional": 3,
+      "needs_scientific_decision": 10,
+      "ready": 30
+    },
+    "review": {
+      "path": "artifacts/binding/preparation/readiness_review_v1.json",
+      "sha256": "fe066e1ef230765fcf0f0ee6c515cf250698f64442ac0a02ee3b999afca1b1fb"
+    },
+    "total_tasks": 43
+  },
+  "recorded_utc": "2026-10-27T15:56:37.055705+00:00",
+  "remaining_scope": "10 scientific decisions and 3 optional deferred tasks remain. Computed-program reliability gates and selective causal-mechanism qualification are unresolved; original final/extrapolation outcomes remain sealed.",
+  "reports": [
+    "reports/binding/candidate_prediction_findings.md",
+    "reports/binding/discovery_confidence_decision.md",
+    "reports/binding/submission_novelty_review.md",
+    "reports/binding/preparation_readiness.md"
+  ],
+  "sample_scope": {
+    "cases_per_checkpoint": 6144,
+    "consumed_discovery_only": true,
+    "partition_seeds": [
+      17,
+      29,
+      43
+    ],
+    "partition_seeds_are_independent_experiments": false,
+    "structural_groups_per_checkpoint": 24
+  },
+  "software_complete": true,
+  "source_config_checksums": {
+    "configs/binding/candidate_measurement/codellama34b_full_v1.json": "c42497a6b54766250cf092d8ec50a5cb3427a38cef49d07701b6a06dd715d35c",
+    "configs/binding/candidate_measurement/codellama34b_full_v2.json": "cedf238adbea47476568a6317be671e86d82c9726ead661a5fc7b5a5bedd12eb",
+    "configs/binding/candidate_measurement/codellama34b_smoke_v1.json": "7b066da2fa0302d46dc495509b15c8a94719f006ddc319ad74ee6d0c525a947d",
+    "configs/binding/candidate_measurement/codellama34b_smoke_v2.json": "5ddd58666e2a5fc8a0a8bdaf118cdca3044853c9cbc502387d77865cb161e3ae",
+    "configs/binding/candidate_measurement/llama31_8b_full_v1.json": "9333688795eaa7db01efd93dc73fef0e7cce6a9fe2f360e76dbe55a7c8999eb8",
+    "configs/binding/candidate_measurement/llama31_8b_full_v2.json": "d183ac0d67a9776a8855dff79d230c5ea60663041421d6fe3d577a2312a6343e",
+    "configs/binding/candidate_measurement/llama31_8b_full_v3.json": "9b3a5b1ce89fa1435c40bdb94d39268e7135f2be78f5d0525c98efe931a525fe",
+    "configs/binding/candidate_measurement/llama31_8b_smoke_v1.json": "c26fcfba0665a15838c60e0784e08352d0f1624ce360400a7c29f05f5da6e3c3",
+    "configs/binding/candidate_measurement/llama31_8b_smoke_v2.json": "8b602d8424461d1660d0f03e8a5f2760ff30c914a43113744f25ed8c7e71289d",
+    "configs/binding/candidate_measurement/llama31_8b_smoke_v3.json": "15b2f53ff53e2c3902e94c211e3755daa8d25632f3956bd98799fcc48b36fa9f",
+    "configs/binding/candidate_measurement/llama_standalone_declaration_v1.json": "8460fb1b1f9aa0e0e82d6bd7e10207928da1fd3abaab84fe6721f45c3fa70e99",
+    "configs/binding/candidate_prediction/codellama34b_pipeline_v1.json": "15d77616eb3eda6a5c0d5563b0b9f22e1ca744cd95dc8309860a359961c39df4",
+    "configs/binding/candidate_prediction/comparison_pipeline_v1.json": "cc8d755e9b97c54482231c5118d53959236c640546b55f8e183687d72338a606",
+    "configs/binding/candidate_prediction/llama31_8b_pipeline_v1.json": "ffb0e01fb7370ea993c15440bcee127628ed32049e515757d9c5cb9d748b1f23",
+    "configs/binding/discovery_confidence/codellama34b_inputs_v1.json": "364a544bd13a8f029d8af8b7fb63546c0268e0105b4f2dbd2699d33e841e3387",
+    "configs/binding/discovery_confidence/codellama34b_v1.json": "3a44b6eaccc14b402075c18f51ab5b4b427efe995f62d08b3111c2a0c9eba23c",
+    "configs/binding/discovery_confidence/comparison_v1.json": "f77ca27950c42dbd96eca1c422befb6f34fc61089d61fc6514ed8333e75900ae",
+    "configs/binding/discovery_confidence/llama31_8b_inputs_v1.json": "ccd8121075e3f329ff3f023373eead98bf0c8705a903f3e632971cd3773f12a0",
+    "configs/binding/discovery_confidence/llama31_8b_v1.json": "b3910b8cb104b4180b54fbb14665a0f474d99f3940443ef234a790e4b91ebffe",
+    "configs/binding/discovery_confidence/protocol_v1.json": "983cbc5476309b116d2c738dd7247d839715924bfaabad2d821ced48c9b08e25",
+    "configs/binding/discovery_confidence/review_v1.json": "1cae838ee047988fa273a758536b3e7971836b039f9b3af9b9e7ec263458dc77",
+    "configs/binding/discovery_confidence/review_v2.json": "34fd51b141c08c377a85c359c4e0eb8b804c1240b72dc5657d5e266b2f5fcf7d"
+  },
+  "sources": {
+    "candidate_prediction_pipeline": {
+      "code": "dc7de38dfe591e5d25b8e61b398b4036291f5d70efad1dc86eb59bf6754bd233",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/802bca4982d5fb0d338bec12",
+      "snapshot_id": "802bca4982d5fb0d338bec12"
+    },
+    "confidence_feature_collection": {
+      "code": "b4fcc4b3632f4917bfc35714f9ef7424d73995e0bfdf63d1eb50ac8f0a9ac2f3",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4928933b9bbafa6184ba8a49",
+      "snapshot_id": "4928933b9bbafa6184ba8a49"
+    },
+    "confidence_fitting": {
+      "code": "67835b4a91c5290e0a75dfcd666ddab343f729f80d0577a706a85d6e97120579",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/41c45f6c82e603a948f409b0",
+      "snapshot_id": "41c45f6c82e603a948f409b0"
+    },
+    "final_software": {
+      "code": "4188bfc51a9ab85f55f92fad47e1a5e7a6e2d79cadc0786af1653c9d350521bb",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/a5c91695559daf6212d743e7",
+      "snapshot_id": "a5c91695559daf6212d743e7"
+    },
+    "qualified_candidate_collection": {
+      "code": "a2a26a67e6b76d7adcfd923be0392e9e0e5fdd578ff91e9f09110aa10db7afc0",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/db40d805e98f9ed4e72e4e24",
+      "snapshot_id": "db40d805e98f9ed4e72e4e24"
+    }
+  },
+  "status": "complete_discovery_confidence_followup",
+  "studies": {
+    "candidate_prediction": {
+      "baseline_replay": {
+        "maximum_absolute_probability_difference": 0.0,
+        "models": {
+          "codellama34b": {
+            "fitted_parameters_and_inner_curves_identical": true,
+            "fitting_folds": 18,
+            "group_assignments_identical": true,
+            "maximum_absolute_probability_difference": 0.0,
+            "oof_rows": 18432,
+            "predictors": [
+              "prior",
+              "A_input",
+              "A_interactions",
+              "A_interactions_neutral_raw",
+              "A_interactions_neutral_scored",
+              "A_interactions_oracle",
+              "A_interactions_oracle_neutral_raw",
+              "A_interactions_oracle_neutral_scored",
+              "B_input_confidence",
+              "B_interactions_confidence",
+              "B_interactions_neutral_raw_confidence",
+              "B_interactions_oracle_neutral_raw_confidence",
+              "B_interactions_oracle_neutral_scored_confidence"
+            ],
+            "probability_values_compared": 239616,
+            "status": "passed"
+          },
+          "llama31_8b": {
+            "fitted_parameters_and_inner_curves_identical": true,
+            "fitting_folds": 18,
+            "group_assignments_identical": true,
+            "maximum_absolute_probability_difference": 0.0,
+            "oof_rows": 18432,
+            "predictors": [
+              "prior",
+              "A_input",
+              "A_interactions",
+              "A_interactions_neutral_raw",
+              "A_interactions_neutral_scored",
+              "A_interactions_oracle",
+              "A_interactions_oracle_neutral_raw",
+              "A_interactions_oracle_neutral_scored",
+              "B_input_confidence",
+              "B_interactions_confidence",
+              "B_interactions_neutral_raw_confidence",
+              "B_interactions_oracle_neutral_raw_confidence",
+              "B_interactions_oracle_neutral_scored_confidence"
+            ],
+            "probability_values_compared": 239616,
+            "status": "passed"
+          }
+        },
+        "probability_values_reproduced": 479232,
+        "review": {
+          "path": "artifacts/binding/candidate_prediction/anchor_figure_review_v1.json",
+          "sha256": "9ec4190260b37294f13c3f3849cf5eb7bfb89ed1855c8b8ba1e815177bc97911"
+        }
+      },
+      "comparison": {
+        "path": "artifacts/binding/candidate_prediction/comparison_v1.json",
+        "sha256": "359737c6e7956e5e8e3a0a97a0bf4d02388ecdc55682c10d3f22b14ea26582e1"
+      },
+      "contrasts": 37,
+      "logistic_fits": 12852,
+      "model_reviews": {
+        "codellama34b": {
+          "path": "artifacts/binding/candidate_prediction/codellama34b_v1/review_v1.json",
+          "sha256": "18716dae85a5fdb774402453f285d362b32d6d1b4d5d7782df7ed90c14c24cd2"
+        },
+        "llama31_8b": {
+          "path": "artifacts/binding/candidate_prediction/llama31_8b_v1/review_v1.json",
+          "sha256": "769178cf473d796593f09d08e533c39ab9d42a443f3e43f34b043cfffcc9954f"
+        }
+      },
+      "protocol": {
+        "path": "artifacts/binding/candidate_prediction/protocol_registration_v1.json",
+        "sha256": "ef2b6a2f39e1278b19d362d49cf3912fe04516f71fc92f32d649fc7ab5f742d4"
+      },
+      "tiers": 18
+    },
+    "discovery_confidence": {
+      "baseline_replay": {
+        "maximum_absolute_probability_difference": 0.0,
+        "models": {
+          "codellama34b": {
+            "fitted_parameters_and_inner_curves_identical": true,
+            "fitting_folds": 18,
+            "group_assignments_identical": true,
+            "maximum_absolute_probability_difference": 0.0,
+            "oof_rows": 18432,
+            "predictors": [
+              "prior",
+              "A_input",
+              "A_interactions",
+              "A_interactions_neutral_raw",
+              "A_interactions_neutral_scored",
+              "A_interactions_oracle",
+              "A_interactions_oracle_neutral_raw",
+              "A_interactions_oracle_neutral_scored"
+            ],
+            "probability_values_compared": 147456,
+            "status": "passed"
+          },
+          "llama31_8b": {
+            "fitted_parameters_and_inner_curves_identical": true,
+            "fitting_folds": 18,
+            "group_assignments_identical": true,
+            "maximum_absolute_probability_difference": 0.0,
+            "oof_rows": 18432,
+            "predictors": [
+              "prior",
+              "A_input",
+              "A_interactions",
+              "A_interactions_neutral_raw",
+              "A_interactions_neutral_scored",
+              "A_interactions_oracle",
+              "A_interactions_oracle_neutral_raw",
+              "A_interactions_oracle_neutral_scored"
+            ],
+            "probability_values_compared": 147456,
+            "status": "passed"
+          }
+        },
+        "probability_values_reproduced": 294912,
+        "review": {
+          "path": "artifacts/binding/discovery_confidence/anchor_figure_review_v2.json",
+          "sha256": "126b97abecf4642c7578e9a2a7ca48d90229083eeecd95e4fc2801b1e0dc47cb"
+        }
+      },
+      "comparison": {
+        "path": "artifacts/binding/discovery_confidence/comparison_v1.json",
+        "sha256": "995a0b9e6267ba7f20c087c355abb2254c12c4fb7108e3bc77060fc33624dced"
+      },
+      "contrasts": 24,
+      "logistic_fits": 9072,
+      "model_reviews": {
+        "codellama34b": {
+          "path": "artifacts/binding/discovery_confidence/codellama34b_v1/review_v1.json",
+          "sha256": "5cb573f51bec08b8f6972dba1ba9f319059501687e4c6ff9ec281b21ac12ef98"
+        },
+        "llama31_8b": {
+          "path": "artifacts/binding/discovery_confidence/llama31_8b_v1/review_v1.json",
+          "sha256": "36300a1363fdb1ba54a83ad2f2dc1e218396eea2ea9bf5ab734c3dd1f14f1c55"
+        }
+      },
+      "protocol": {
+        "path": "artifacts/binding/discovery_confidence/protocol_registration_v1.json",
+        "sha256": "0ab96e3ee169caf19d09808a53984b824945c60a2d508d26dd6baeb09df8f36a"
+      },
+      "tiers": 13
+    }
+  },
+  "successful_stage_jobs": 18,
+  "timezone": "America/Chicago",
+  "total_logistic_fits": 21924,
+  "validation": {
+    "errors": 0,
+    "failures": 0,
+    "junit": {
+      "path": "artifacts/binding/candidate_prediction/regression_v1.xml",
+      "sha256": "186a912fcf1c214f8a8de9c0d5487e6e71e1b0b2bd3deb03b5573cf5fccbefd4"
+    },
+    "skipped": 0,
+    "tests": 852
+  }
+}

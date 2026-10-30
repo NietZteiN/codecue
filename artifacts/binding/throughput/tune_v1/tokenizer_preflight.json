@@ -1,0 +1,21 @@
+{
+  "config_hash": "4a7f9f8760e3e4450aa6857af5302c65a15e0c0f2887a775cf600c78b11e2d5c",
+  "dataset_sha256": "0219387f4cbc67457e5a37c4dc6798edb3df1ecb69f2ece64ea5d2bb8631aceb",
+  "generated_holdouts_opened": false,
+  "model_inference": false,
+  "prompt_token_ids_sha256": "fb3e6eeaabb9a49657b1f89cb1647210c4e262467a845d64737149ac90f93299",
+  "source_sha256": "e276b7703fda73ee14d2c54a51de413f34d1a6bfe4a86b2e9fb595bfb98c9e7d",
+  "status": "passed",
+  "tasks": {
+    "cruxeval_o_cot": {
+      "max_prompt_tokens": 503,
+      "min_prompt_tokens": 372,
+      "n": 800
+    },
+    "cruxeval_o_direct": {
+      "max_prompt_tokens": 396,
+      "min_prompt_tokens": 265,
+      "n": 800
+    }
+  }
+}

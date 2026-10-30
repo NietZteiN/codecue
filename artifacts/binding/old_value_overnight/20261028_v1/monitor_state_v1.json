@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "check_config_sha256": "56803a83f0ed0858564ccfd3dc9c2f07403ddc94e15b73a2afe1c2be76e61fec",
+    "helper_sha256": "a26b6d257480f7e18ce4ac248ab449a7bc1aedb0ad517917dd18763392e72a58",
+    "snapshot_id": "4206d21342e20115539c3b55",
+    "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334"
+  },
+  "last_check": "2026-10-29T01:06:36.444475+00:00",
+  "log_dir": "/work/jvl210002/migration/codecue/log/slurm",
+  "progress": {
+    "codellama34b": {
+      "committed": 20160,
+      "last_progress_epoch": 1793235996.444475,
+      "last_seen_epoch": 1793235996.444475,
+      "running": false
+    },
+    "llama8b": {
+      "committed": 20160,
+      "last_progress_epoch": 1793235996.444475,
+      "last_seen_epoch": 1793235996.444475,
+      "running": false
+    }
+  },
+  "schema_version": 1,
+  "successors": {
+    "481708": {
+      "job_id": "481709",
+      "name": "oldvalue-watch-527ef1100787",
+      "recovered": false
+    },
+    "481709": {
+      "job_id": "481718",
+      "name": "oldvalue-watch-df7ed3649934",
+      "recovered": false
+    },
+    "481718": {
+      "job_id": "481724",
+      "name": "oldvalue-watch-b69ced9ff61d",
+      "recovered": false
+    }
+  },
+  "terminal": true
+}

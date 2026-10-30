@@ -1,0 +1,175 @@
+{
+  "budget": {
+    "active_jobs": 0,
+    "cap_seconds": null,
+    "reserved_seconds": 0,
+    "unreserved_seconds": null,
+    "used_seconds": 1990.7273764821584
+  },
+  "comparison_audited": false,
+  "completed_report": "reports/binding/competition_results.md",
+  "generated_holdouts_opened": false,
+  "issues": [
+    "job codellama34b_competition_preflight: FAILED",
+    "job codellama34b_competition_run: CANCELLED",
+    "job codellama34b_competition_audit: FAILED",
+    "job llama31_8b_competition_preflight: FAILED",
+    "job llama31_8b_competition_run: CANCELLED",
+    "job llama31_8b_competition_audit: FAILED",
+    "job competition_review: FAILED"
+  ],
+  "jobs": {
+    "codellama34b_competition_audit": {
+      "elapsed_seconds": 1,
+      "exit_code": "1:0",
+      "job_id": "477349",
+      "state": "FAILED"
+    },
+    "codellama34b_competition_preflight": {
+      "elapsed_seconds": 59,
+      "exit_code": "1:0",
+      "job_id": "477347",
+      "state": "FAILED"
+    },
+    "codellama34b_competition_run": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "477348",
+      "state": "CANCELLED"
+    },
+    "competition_review": {
+      "elapsed_seconds": 2,
+      "exit_code": "1:0",
+      "job_id": "477353",
+      "state": "FAILED"
+    },
+    "llama31_8b_competition_audit": {
+      "elapsed_seconds": 1,
+      "exit_code": "1:0",
+      "job_id": "477352",
+      "state": "FAILED"
+    },
+    "llama31_8b_competition_preflight": {
+      "elapsed_seconds": 60,
+      "exit_code": "1:0",
+      "job_id": "477350",
+      "state": "FAILED"
+    },
+    "llama31_8b_competition_run": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "477351",
+      "state": "CANCELLED"
+    },
+    "llama31_8b_serialization_audit": {
+      "elapsed_seconds": 2,
+      "exit_code": "0:0",
+      "job_id": "477332",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_serialization_preflight": {
+      "elapsed_seconds": 63,
+      "exit_code": "0:0",
+      "job_id": "477330",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_serialization_run": {
+      "elapsed_seconds": 269,
+      "exit_code": "0:0",
+      "job_id": "477331",
+      "state": "COMPLETED"
+    },
+    "llama32_3b_serialization_audit": {
+      "elapsed_seconds": 1,
+      "exit_code": "0:0",
+      "job_id": "477335",
+      "state": "COMPLETED"
+    },
+    "llama32_3b_serialization_preflight": {
+      "elapsed_seconds": 62,
+      "exit_code": "0:0",
+      "job_id": "477333",
+      "state": "COMPLETED"
+    },
+    "llama32_3b_serialization_run": {
+      "elapsed_seconds": 232,
+      "exit_code": "0:0",
+      "job_id": "477334",
+      "state": "COMPLETED"
+    },
+    "serialization_review": {
+      "elapsed_seconds": 5,
+      "exit_code": "0:0",
+      "job_id": "477354",
+      "state": "COMPLETED"
+    },
+    "tests": {
+      "elapsed_seconds": 107,
+      "exit_code": "0:0",
+      "job_id": "477346",
+      "state": "COMPLETED"
+    }
+  },
+  "model_inference": false,
+  "plan_report": "competition_plan.md",
+  "recorded_utc": "2026-10-26T12:48:32.408882+00:00",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/competition/status_v1.json",
+  "scheduler_errors": [],
+  "scientific_artifacts_modified": false,
+  "stages": [
+    {
+      "evaluated": 0,
+      "issues": [],
+      "manifest_status": "not_started",
+      "name": "codellama34b_competition",
+      "path": "artifacts/binding/competition/codellama34b_v1/checkpoint_suite",
+      "planned": null,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 0
+      }
+    },
+    {
+      "evaluated": 0,
+      "issues": [],
+      "manifest_status": "not_started",
+      "name": "llama31_8b_competition",
+      "path": "artifacts/binding/competition/llama31_8b_v1/checkpoint_suite",
+      "planned": null,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 0
+      }
+    },
+    {
+      "evaluated": 1600,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "llama31_8b_completion",
+      "path": "artifacts/binding/llama_serialization/llama31_8b_v1/checkpoint_suite",
+      "planned": 1600,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 1600
+      }
+    },
+    {
+      "evaluated": 1600,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "llama32_3b_completion",
+      "path": "artifacts/binding/llama_serialization/llama32_3b_v1/checkpoint_suite",
+      "planned": 1600,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 1600
+      }
+    }
+  ],
+  "status": "needs_attention",
+  "title": "Binding competition and interface follow-up status"
+}

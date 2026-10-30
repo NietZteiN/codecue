@@ -1,0 +1,24 @@
+{
+  "baseline_stage": "artifacts/binding/published/full_v2/published_behavior",
+  "baseline_identity_hash": "c66705be15fc7dd0c51843000a2ffd453ec6015f769ab7bee1307b5fdb548ba5",
+  "baseline_responses_sha256": "69cf64a659f089c54055b21edc0c98c6694a5d66c7ac486b93698cf36f6a0e24",
+  "baseline_source": "artifacts/binding/published_source_v2.json",
+  "baseline_source_sha256": "fb3f5cc1df82fb48c8af359a4d5308c0f4fa6dcfba0b37d48b5172c959b92aba",
+  "replay_stage": "artifacts/binding/serialization/native_replay_v1/published_behavior",
+  "replay_config": "configs/binding/serialization/native_replay_v1.json",
+  "replay_config_hash": "25fd8e8e50df6dc92174dff9854936e1140ca01775d82d5d6010217eaa240a14",
+  "smoke_config": "configs/binding/serialization/completion_smoke_v1.json",
+  "smoke_config_hash": "d31cc4707ad54396ae3022bfb716bcf81b6e45de5a76ab669c8f5df216f29fcc",
+  "replay_output": "artifacts/binding/serialization/native_replay_check_v1.json",
+  "completion_stage": "artifacts/binding/serialization/completion_full_v1/published_behavior",
+  "completion_config_hash": "417af5b92304eb62702c0a96a6da8ca6692eb6f4fc2efa5efed9e84a8ffd0e7a",
+  "completion_audit": "artifacts/binding/serialization/completion_full_v1_review.json",
+  "completion_review": {
+    "stage": "artifacts/binding/serialization/completion_full_v1/published_behavior",
+    "output": "artifacts/binding/serialization/completion_full_v1_review.json",
+    "report": "reports/binding/completion_full_v1_review.md"
+  },
+  "output": "artifacts/binding/serialization/comparison_v1.json",
+  "report": "reports/binding/serialization_comparison.md",
+  "completion_config": "configs/binding/serialization/completion_full_v1.json"
+}

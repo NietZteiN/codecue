@@ -1,0 +1,66 @@
+{
+  "artifacts": {
+    "pairs": {
+      "bytes": 226461,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/pairs_review_v1.json",
+      "sha256": "e118a9722e9ee1a794a5eb3833f8eb9c931bc706b82c233ac22715a6fbc02d81"
+    },
+    "registration": {
+      "bytes": 2969,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/registration.json",
+      "sha256": "1eb86e5f079b69028951c5a0e3f22944d5cdbc00e86cab578b0c290d487115e5"
+    },
+    "report": {
+      "bytes": 2631,
+      "path": "reports/binding/relationship_score_controls_v1.md",
+      "sha256": "ca94e048dd4875b174dbe0fd61da9cd9752b1e21bff66146ea9a6c81ac4e1f37"
+    },
+    "results": {
+      "bytes": 836729,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/results_v1.json",
+      "sha256": "8d582f3f18bac43f57b0d8d821ac4df493ca0a59a6945cf2770710fcdafdfa86"
+    }
+  },
+  "config_hash": "d6c75c62a2b3c2313d6720ce779fb715707bdabe9df97e92e408e0e004ccd5a7",
+  "evaluation_role": "posthoc_discovery_relationship_score_controls_v1",
+  "generated_holdouts_opened": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "protocol": {
+    "algebraic_contrast": "hidden_direct_minus_source_categorical_value_derived",
+    "backends": [
+      "hidden",
+      "surface"
+    ],
+    "bootstrap": {
+      "draws": 2000,
+      "minimum_valid_draws": 1900,
+      "seed": 117
+    },
+    "layer": 24,
+    "posthoc": true,
+    "provenance_sites": [
+      7,
+      8
+    ],
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "selected_score_banks": 18,
+    "sites": [
+      3,
+      7,
+      8
+    ],
+    "unconstrained_graph_threshold": 0.5
+  },
+  "source": {
+    "frozen_manifest_sha256": "2392ca55ebcfd8ce933336d2155148422f036d0c3c6f466045ff919dfca1963c",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/0e10774ed60ebedd04379f4d",
+    "snapshot_id": "0e10774ed60ebedd04379f4d",
+    "source_sha256": "85f731458f46bfec0533518358a1bf0432860bac6f4c5f7670bbf3fea5c17fe3"
+  },
+  "status": "complete_exploratory"
+}

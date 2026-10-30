@@ -1,0 +1,309 @@
+{
+  "_id": "64e78661d0964816be6a1d1b",
+  "id": "codellama/CodeLlama-7b-Instruct-hf",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-2",
+    "conversational",
+    "code",
+    "arxiv:2308.12950",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "downloads": 15485,
+  "likes": 260,
+  "modelId": "codellama/CodeLlama-7b-Instruct-hf",
+  "author": "codellama",
+  "sha": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "lastModified": "2024-04-12T14:18:42.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "model_type": "llama",
+    "tokenizer_config": {
+      "chat_template": "{% if messages[0]['role'] == 'system' %}{% set loop_messages = messages[1:] %}{% set system_message = messages[0]['content'] %}{% else %}{% set loop_messages = messages %}{% set system_message = false %}{% endif %}{% for message in loop_messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if loop.index0 == 0 and system_message != false %}{% set content = '<<SYS>>\\n' + system_message + '\\n<</SYS>>\\n\\n' + message['content'] %}{% else %}{% set content = message['content'] %}{% endif %}{% if message['role'] == 'user' %}{{ bos_token + '[INST] ' + content | trim + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ ' '  + content | trim + ' ' + eos_token }}{% endif %}{% endfor %}",
+      "bos_token": {
+        "__type": "AddedToken",
+        "content": "<s>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "eos_token": {
+        "__type": "AddedToken",
+        "content": "</s>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "pad_token": null,
+      "unk_token": {
+        "__type": "AddedToken",
+        "content": "<unk>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      }
+    }
+  },
+  "cardData": {
+    "language": [
+      "code"
+    ],
+    "pipeline_tag": "text-generation",
+    "tags": [
+      "llama-2"
+    ],
+    "license": "llama2"
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForCausalLM",
+    "pipeline_tag": "text-generation",
+    "processor": "AutoTokenizer"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "LICENSE",
+      "blobId": "51089e27e6764fb9f72c06a0f3710699fb6c9448",
+      "size": 7020
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "30b5a11cc5f750f7dcf679d31d6b435bf292a0ab",
+      "size": 6552
+    },
+    {
+      "rfilename": "USE_POLICY.md",
+      "blobId": "1ed95d8066682f283a0bd3696d7b6d6a539c18dc",
+      "size": 4790
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "8fb4018bc8ceaddbaf7d3d238911a30fd5e9081a",
+      "size": 646
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "aa9aac2cbaa80cf25094e7d9a527bd1cab9f5321",
+      "size": 116
+    },
+    {
+      "rfilename": "model-00001-of-00002.safetensors",
+      "blobId": "381e3d3ec52e501ee149a39b1db51f5e5545ab2c",
+      "size": 9976701592,
+      "lfs": {
+        "sha256": "0f52c0eab2dafa0a13e8103a426b17137f7b053e9211334158d7bd7cc1148ceb",
+        "size": 9976701592,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00002.safetensors",
+      "blobId": "f9f2927151733cd1aa6b96475ad7395b65dc8675",
+      "size": 3500425616,
+      "lfs": {
+        "sha256": "9ddab1824225fbe405cea67c5d8d87666f1ab5c59ec89abdf2cacae9b555da75",
+        "size": 3500425616,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "cd3b8fb46c4d5616e91520a7a7d9a5a75af759a8",
+      "size": 25125
+    },
+    {
+      "rfilename": "pytorch_model-00001-of-00003.bin",
+      "blobId": "a871e7a9b7ba22c13161f46da7fe1b946bd99b58",
+      "size": 4939139698,
+      "lfs": {
+        "sha256": "cc5cd56f864affdcf1b69b01dfa989ccfb584e0eebaf8d5f30441a29a4aa0a3a",
+        "size": 4939139698,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "pytorch_model-00002-of-00003.bin",
+      "blobId": "f393d9f28767de4bf3ed48612d2b6b3a9812e527",
+      "size": 4947415002,
+      "lfs": {
+        "sha256": "5ca5b2228f811a35c5fb64442bd424b95c5c8200ca1ed9b58c3fc56d93ba8a51",
+        "size": 4947415002,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "pytorch_model-00003-of-00003.bin",
+      "blobId": "925e5ace363dde5348b26be3863c12e5df9276ff",
+      "size": 3590636793,
+      "lfs": {
+        "sha256": "45cd2e0625880e9cdc0b10d606ee5addfcf6d27b0217388ae7b0404573d0755a",
+        "size": 3590636793,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "pytorch_model.bin.index.json",
+      "blobId": "6f497958131de84ae88f7dd809a090c0a0a38b9d",
+      "size": 23950
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "d85ba6cb6820b01226ef8bd40b46bb489041c6a8",
+      "size": 411
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "6b25321d89e21832a89e6273834eab0e4378a53b",
+      "size": 1843427
+    },
+    {
+      "rfilename": "tokenizer.model",
+      "blobId": "f6722e8b170230ebdd4c0f5f2ce03f219be536d4",
+      "size": 500058,
+      "lfs": {
+        "sha256": "45ccb9c8b6b561889acea59191d66986d314e7cbd6a78abc6e49b139ca91c1e6",
+        "size": 500058,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "bae6261a266d464fb34155a9ade11bccb64d875e",
+      "size": 1589
+    }
+  ],
+  "spaces": [
+    "Intel/low_bit_open_llm_leaderboard",
+    "aquanode/gpu-vram-calculator",
+    "bigcode/bigcode-models-leaderboard",
+    "BAAI/open_cn_llm_leaderboard",
+    "qiantong-xu/toolbench-leaderboard",
+    "gsaivinay/open_llm_leaderboard",
+    "KBaba7/Quant",
+    "EvanTHU/MotionLLM",
+    "FallnAI/Quantize-HF-Models",
+    "prometheus-eval/BiGGen-Bench-Leaderboard",
+    "bhaskartripathi/LLM_Quantization",
+    "openfree/LLM_Quantization",
+    "GTBench/GTBench",
+    "Vikhrmodels/small-shlepa-lb",
+    "ruslanmv/convert_to_gguf",
+    "BAAI/open_flageval_vlm_leaderboard",
+    "BAAI/FlagEval-Robo",
+    "seawolf2357/LLM_Quantization",
+    "felixz/open_llm_leaderboard",
+    "OPTML-Group/UnlearnCanvas-Benchmark",
+    "Vikhrmodels/Russian_Arena_General",
+    "anantgupta129/LitGPT-Pythia-160M",
+    "HemaAM/GPT_train_on_LLaMa",
+    "Vikhrmodels/small-shlepa",
+    "atlasas/bigcode-models-leaderboard",
+    "totolook/Quant",
+    "bardsai/performance-llm-board",
+    "K00B404/LLM_Quantization",
+    "Docfile/open_llm_leaderboard",
+    "Siva1995/UI_Code_Generation_APP",
+    "Sijuade/GPTNEXTWORD",
+    "PrarthanaTS/tsai-gpt-from-scratch",
+    "MadhurGarg/TSAIGPTRedPajama",
+    "RaviNaik/ERA-SESSION22",
+    "ka1kuk/litellm",
+    "rodrigomasini/data_only_open_llm_leaderboard",
+    "neubla/neubla-llm-evaluation-board",
+    "gevans3000/codellama-CodeLlama-7b-Instruct-hf",
+    "Canstralian/codellama-CodeLlama-7b-Instruct-hf",
+    "aldohenrique/portalprogramando",
+    "Marnostore/Projek",
+    "uparekh01151/DataEngEval",
+    "PatoFlamejanteTV/CodeBook",
+    "Xlnk/Quantize-HF-Models",
+    "exploitz3r0bbd/Quantize-HF-Models",
+    "Oss11/Quantize-HF-Models",
+    "roselee/code-generator",
+    "Sompote/codellama-CodeLlama-7b-Instruct-hf",
+    "Stef1397/codellama-CodeLlama-7b-Instruct-hf",
+    "asdvd01/codellama-CodeLlama-7b-Instruct-hf",
+    "K00B404/Ethical-CodeLlama-34b-Instruct-hf",
+    "hyerimpark/codellama",
+    "Awaken5727/codellama-CodeLlama-7b-Instruct-hf",
+    "ToletiSri/TSAI_S22",
+    "VarunSivamani/GPT-From-Scratch",
+    "mkthoma/GPT_From_Scratch",
+    "piyushgrover/MiniGPT_S22",
+    "supra-e-acc/Pythia-160M-text-generate",
+    "venkyyuvy/GPT_redpajama",
+    "sanjanatule/GPTNext",
+    "RashiAgarwal/TSAIGPTRedPajama",
+    "neuralorbs/DialogGen",
+    "Navyabhat/ERAV1-Session-22",
+    "GunaKoppula/ERA-Session-22",
+    "Vaish2705/ERA_S22",
+    "nonhuman/nnnn",
+    "smothiki/open_llm_leaderboard",
+    "LastSmile/CodeLlama-7b",
+    "kankuman/codellama-CodeLlama-7b-Instruct-hf",
+    "xh0o6/g4f0204",
+    "xh0o6/hj",
+    "gaveshaaa/codellama-CodeLlama-7b-Instruct-hf",
+    "Jahaje/codelama2train",
+    "nononno/hj",
+    "huanhoahongso3/free-webui-gpt4",
+    "gordonchan/embedding-m3e-large",
+    "HSomaskanthan/ReadImg",
+    "asir0z/open_llm_leaderboard",
+    "kenken999/litellmlope",
+    "jayachandran0403/codellama-CodeLlama-7b-Instruct-hf",
+    "kenken999/litellm",
+    "kbmlcoding/open_llm_leaderboard_free",
+    "Transcrib3D/Transcrib3D-Demo",
+    "pngwn/open_llm_leaderboard-check",
+    "0x1668/open_llm_leaderboard",
+    "aichampions/open_llm_leaderboard",
+    "Adeco/open_llm_leaderboard",
+    "Xhaheen/phoeniks_redteamers",
+    "anirudh937/open_llm_leaderboard",
+    "smothiki/open_llm_leaderboard2",
+    "Xhaheen/AI_safety_testing",
+    "mjalg/IFEvalTR",
+    "PaperMachine/codellama-CodeLlama-7b-Instruct-hf",
+    "acecalisto3/ReekeerSv",
+    "canserai/gg",
+    "lastsamuraii/LitGPT-Pythia-160M",
+    "traveler514/patchouli",
+    "Ary4nk/docker",
+    "Deepakraj2006/Code_Llama",
+    "a-issaoui/test"
+  ],
+  "createdAt": "2023-08-24T16:33:37.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 6738546688
+    },
+    "total": 6738546688
+  },
+  "usedStorage": 67386296436
+}

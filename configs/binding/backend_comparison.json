@@ -1,0 +1,8 @@
+{
+  "runs": {
+    "CPU BF16": "artifacts/binding/interface_cpu_prefill_v2/interface_diagnostics",
+    "CPU FP32": "artifacts/binding/interface_cpu_fp32_prefill_v2/interface_diagnostics",
+    "GPU BF16": "artifacts/binding/interface_gpu_prefill_v2/interface_diagnostics"
+  },
+  "output": "artifacts/binding/backend_comparison.json"
+}

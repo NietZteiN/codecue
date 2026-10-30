@@ -1,0 +1,46 @@
+{
+  "evaluation_role": "discovery_overnight_relationship_launch_preflight_v1",
+  "full_regression_release_required": true,
+  "generated_holdouts_opened": false,
+  "independent_execution_audit": "no blocker",
+  "independent_logging_audit": "healthy/enabled, 10 minutes, two guards",
+  "independent_scientific_schema_audit": "no blocker",
+  "native_preparations": {
+    "codellama34b": {
+      "cases": 16038,
+      "new_model_queries": 0,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/preflight.json",
+      "prepared_sha256": "0ef519e648e0d644d85eca6682830e4b954a1ff14b00d2c111c2b1b9c803ff44",
+      "sha256": "486423aa8dc791557d761041f5627a1794d660227fedfb85e5d9848fca27fe86",
+      "status": "passed"
+    },
+    "llama8b": {
+      "cases": 16038,
+      "new_model_queries": 0,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/capture/preflight.json",
+      "prepared_sha256": "9251c7200469b66b666c4592f111e74a4c6cd3e57eb2ba162e61ea7252b6babd",
+      "sha256": "d3d87e33eb8284bb874dbb0d1aafedbd405efc2e0ace0117346ae0d3cc8da0ca",
+      "status": "passed"
+    }
+  },
+  "new_model_queries": 0,
+  "prior_handoffs": [
+    {
+      "path": "artifacts/binding/relationship_readouts/completion_handoff_review_v1.json",
+      "pins_verified": 26,
+      "sha256": "3d8cbb9d8611cc81e9ab163d25f3f8e470d7474b08d13d4a1cf650dbfd9da49c"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/handoff_review_v1.json",
+      "pins_verified": 27,
+      "sha256": "8fb9882a2757c943a522cf3c874d7cf355d96e243c4ac829455d220a369bb9fa"
+    }
+  ],
+  "source": {
+    "code": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe"
+  },
+  "status": "passed",
+  "unrelated_jobs_canceled": false
+}

@@ -1,0 +1,726 @@
+{
+  "model_inference": false,
+  "records": [
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "train_v0",
+        "train_v7"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "train_v4",
+        "train_v5"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "train_n0",
+        "train_n7"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "train_n4",
+        "train_n5"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "train_left_first",
+        "train_left_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "train_left_result",
+        "train_right_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "train_lhs_first",
+        "train_lhs_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "train_lhs_result",
+        "train_rhs_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "train_left_first",
+        "train_left_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "train_right_result",
+        "train_left_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "train_lhs_first",
+        "train_lhs_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "train_rhs_result",
+        "train_lhs_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "dev_v0",
+        "dev_v7"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "dev_v4",
+        "dev_v5"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "dev_n0",
+        "dev_n7"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "dev_n4",
+        "dev_n5"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "dev_left_first",
+        "dev_left_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "dev_left_result",
+        "dev_right_result"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "dev_lhs_first",
+        "dev_lhs_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "dev_lhs_result",
+        "dev_rhs_result"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "dev_left_first",
+        "dev_left_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 0,
+      "model": "llama31_8b",
+      "names": [
+        "dev_right_result",
+        "dev_left_result"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "dev_lhs_first",
+        "dev_lhs_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        6,
+        6
+      ],
+      "lexical": 1,
+      "model": "llama31_8b",
+      "names": [
+        "dev_rhs_result",
+        "dev_lhs_result"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "train_v0",
+        "train_v7"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "train_v4",
+        "train_v5"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "train_n0",
+        "train_n7"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "train_n4",
+        "train_n5"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "train_left_first",
+        "train_left_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "train_left_result",
+        "train_right_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "train_lhs_first",
+        "train_lhs_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "train_lhs_result",
+        "train_rhs_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "train_left_first",
+        "train_left_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "train_right_result",
+        "train_left_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "train_lhs_first",
+        "train_lhs_other"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "train_rhs_result",
+        "train_lhs_result"
+      ],
+      "passed": true,
+      "split": "train"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "dev_v0",
+        "dev_v7"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "dev_v4",
+        "dev_v5"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "dev_n0",
+        "dev_n7"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "neutral",
+      "lengths": [
+        7,
+        7
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "dev_n4",
+        "dev_n5"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "dev_left_first",
+        "dev_left_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "dev_left_result",
+        "dev_right_result"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "dev_lhs_first",
+        "dev_lhs_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "informative",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "dev_lhs_result",
+        "dev_rhs_result"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "dev_left_first",
+        "dev_left_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        8,
+        8
+      ],
+      "lexical": 0,
+      "model": "codellama34b",
+      "names": [
+        "dev_right_result",
+        "dev_left_result"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "dev_lhs_first",
+        "dev_lhs_other"
+      ],
+      "passed": true,
+      "split": "development"
+    },
+    {
+      "condition": "misleading",
+      "lengths": [
+        9,
+        9
+      ],
+      "lexical": 1,
+      "model": "codellama34b",
+      "names": [
+        "dev_rhs_result",
+        "dev_lhs_result"
+      ],
+      "passed": true,
+      "split": "development"
+    }
+  ],
+  "status": "passed"
+}

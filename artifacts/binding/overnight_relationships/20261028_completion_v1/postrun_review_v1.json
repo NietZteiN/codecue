@@ -1,0 +1,316 @@
+{
+  "analysis_source": {
+    "frozen_manifest_sha256": "0a510bcf421b6a83a068219d8fd39428a67683479b3b707428300b40a5a2ba2b",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/bb04042b777979c68679206d",
+    "snapshot_id": "bb04042b777979c68679206d",
+    "source_sha256": "f6b2d07a2760158f46bcde619867cf103437e52c635ce5f8bce3b4a3dfaead01"
+  },
+  "assertions": 349425,
+  "behavior_marginals": {
+    "codellama34b/computed": {
+      "cases": 486,
+      "cases_per_component": 54,
+      "components": 9,
+      "correct": 14,
+      "invalid": 0
+    },
+    "codellama34b/literal": {
+      "cases": 1944,
+      "cases_per_component": 216,
+      "components": 9,
+      "correct": 1049,
+      "invalid": 0
+    },
+    "llama8b/computed": {
+      "cases": 486,
+      "cases_per_component": 54,
+      "components": 9,
+      "correct": 57,
+      "invalid": 30
+    },
+    "llama8b/literal": {
+      "cases": 1944,
+      "cases_per_component": 216,
+      "components": 9,
+      "correct": 1002,
+      "invalid": 7
+    }
+  },
+  "checked_text_and_metadata_pins": [
+    {
+      "bytes": 3101,
+      "path": "configs/binding/overnight_20261028_v1/score_behavior_v1.json",
+      "sha256": "7242069c6e381d5b47417c0198dba3153f956863c812863f0188f52814bd3071"
+    },
+    {
+      "bytes": 4288,
+      "path": "reports/binding/overnight_score_behavior_plan_v1.md",
+      "sha256": "eb7193f4c9a0bcbc440c191e47bff64833945033d3757c369fed5b5a46ad63f5"
+    },
+    {
+      "bytes": 2691,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/completion_manifest_v1.json",
+      "sha256": "1d52434744eadecef878219f85ac8ee011b395063abfa2b523f622d6c70d768d"
+    },
+    {
+      "bytes": 568,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/summary.json",
+      "sha256": "ade8931b51cfab9193b68a687726d06d58788707d36b98fc18d4595700c531bc"
+    },
+    {
+      "bytes": 434,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/audit.json",
+      "sha256": "fe7f5b6cb01cc16d856c71eb3b2395704fd65cbe77fc55a70f450022cbd8a97f"
+    },
+    {
+      "bytes": 4956,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/registration.json",
+      "sha256": "d1c16561ab0587388e0b2c893ae6a53ce5467fef3377f51ab040ed370a7238b2"
+    },
+    {
+      "bytes": 3833,
+      "path": "reports/binding/overnight_score_behavior_v1.md",
+      "sha256": "e6fd5ede5b9e3065b3867a30385d940daab4dfe06d8d9ce91a2b593518970b39"
+    },
+    {
+      "bytes": 2458654,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/results_v1.json",
+      "sha256": "5e9cdd8a0439b06d0a8437efaef453f11df6d7248774e345e618b37a72bb4b38"
+    },
+    {
+      "bytes": 50121,
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/bb04042b777979c68679206d/frozen_manifest.json",
+      "sha256": "0a510bcf421b6a83a068219d8fd39428a67683479b3b707428300b40a5a2ba2b"
+    },
+    {
+      "bytes": 647,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_query_twins.json",
+      "sha256": "81ff1dc153c75de4128a75c137ad69057df114d9faa1c04d00991f9e09c23dc6"
+    },
+    {
+      "bytes": 14855,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_query_twins/completion_manifest_v1.json",
+      "sha256": "8047ac3da6ebc2c6f6a784bd314404beb0b874b950b9cdaf9949ba2fca5f67cf"
+    },
+    {
+      "bytes": 848,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_computed_roots.json",
+      "sha256": "6cae071948486cb774fd4a0fda936a8290ef73666d682d4758bd9ad8aabb3a01"
+    },
+    {
+      "bytes": 29695,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_computed_roots/completion_manifest_v1.json",
+      "sha256": "58f2f7ca71517c07cf7174d03b317933766db03c89c1435e9812cefa78f3449f"
+    },
+    {
+      "bytes": 614,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_behavior.json",
+      "sha256": "2f18c720448baee72049a54ccf15b9b776ecd27fbdd97e5a0647442b10225e88"
+    },
+    {
+      "bytes": 1845,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/completion_manifest_v1.json",
+      "sha256": "e2c55e33f30c391852aee0846863bf58d558c7655efdecc6b04c1211fbc6092b"
+    },
+    {
+      "bytes": 677,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_capture.json",
+      "sha256": "f84ecf06552a6cb574843a7b9bb185207a3b961f2622813cbc8d3dafd94ac059"
+    },
+    {
+      "bytes": 75424012,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/union.jsonl",
+      "sha256": "75eeef184fd0513acb2d28f269574d38db4b09dee35b555abe5f4e93582345c3"
+    },
+    {
+      "bytes": 2826130,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/responses.jsonl",
+      "sha256": "878a69c8ab2bba6a228bae0ffb16beb9df9a16b46b1ba43f29752d968b571ab2"
+    },
+    {
+      "bytes": 27590790,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/readouts_query_twins/results_v1.json",
+      "sha256": "e200212f988530bb685cf7376b3d58154d1040948abf0d50f2242092eb0f86d9"
+    },
+    {
+      "bytes": 632,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_query_twins.json",
+      "sha256": "bbaa0a0b39ac42c05d6292a8c079bafa4be1e042d31c8df4b1486b07ecb5c2ac"
+    },
+    {
+      "bytes": 14593,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_query_twins/completion_manifest_v1.json",
+      "sha256": "9907649e97ca77b00cd9f86f36151f17a9ac84f05c34960e553a57230dfaac77"
+    },
+    {
+      "bytes": 828,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_computed_roots.json",
+      "sha256": "67decb4ce5b962b511cfbd643ffb5edd1b0997ae3ce720afb1248712a4a3b766"
+    },
+    {
+      "bytes": 29188,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_computed_roots/completion_manifest_v1.json",
+      "sha256": "f891f34b00430edda19845cab3b21ad53ed312de9dbdd14a0690a6053c3395eb"
+    },
+    {
+      "bytes": 599,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_behavior.json",
+      "sha256": "0b5d02d01e878767fe250dae79b29141b16d2c97f84dde425abd32468b7fb7c8"
+    },
+    {
+      "bytes": 1820,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/completion_manifest_v1.json",
+      "sha256": "ffa054c7f9005c5e3a54073470fbe5a8c6d83639728fc265e310f9d64b0451eb"
+    },
+    {
+      "bytes": 669,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_capture.json",
+      "sha256": "bbb5e3b2817e37314b6f1b62fe072fb008038e0323f011dee0dba5e6bc133145"
+    },
+    {
+      "bytes": 75424012,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/union.jsonl",
+      "sha256": "75eeef184fd0513acb2d28f269574d38db4b09dee35b555abe5f4e93582345c3"
+    },
+    {
+      "bytes": 2863883,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/responses.jsonl",
+      "sha256": "94eb7a843dfc89889271ad4f1bb1685881916a51ed7719d0b5ab31cf150083c0"
+    },
+    {
+      "bytes": 27706602,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_query_twins/results_v1.json",
+      "sha256": "05b744985e7f609405b27060a58add20060047cc142bad894f2a391881edd520"
+    },
+    {
+      "bytes": 271751,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/regression_v1.xml",
+      "sha256": "a638f226d226d5bf2c53ddeb89494de8bfeb6734aff802f6505246780f121a63"
+    }
+  ],
+  "conditional_interval_status_counts": {
+    "qualified_conditional_interval": 3134,
+    "unqualified_denominator": 946
+  },
+  "config_hash": "65bd33ffcd6e81e50bb5bb5a67aa01f3ae28fe0fde4de007cde215188c877508",
+  "counts": {
+    "cells": 240,
+    "intervals": 4080,
+    "partially_valid_intervals": 234,
+    "saved_score_rows": 419904,
+    "selected_bank_inventory_checks": 72,
+    "source_responses_validated": 14580,
+    "zero_denominators": 867
+  },
+  "created_utc": "2026-10-28T13:52:41.641652+00:00",
+  "evaluation_role": "posthoc_discovery_overnight_relationship_behavior_link_v1",
+  "issues": [],
+  "jobs": [
+    {
+      "allocated_cpus": "8",
+      "elapsed": "00:05:25",
+      "exit_code": "0:0",
+      "job_id": "480986",
+      "maximum_rss": "",
+      "requested_memory": "16G",
+      "state": "COMPLETED"
+    },
+    {
+      "allocated_cpus": "8",
+      "elapsed": "00:01:24",
+      "exit_code": "0:0",
+      "job_id": "480987",
+      "maximum_rss": "",
+      "requested_memory": "24G",
+      "state": "COMPLETED"
+    },
+    {
+      "allocated_cpus": "4",
+      "elapsed": "00:00:42",
+      "exit_code": "0:0",
+      "job_id": "480988",
+      "maximum_rss": "",
+      "requested_memory": "16G",
+      "state": "COMPLETED"
+    }
+  ],
+  "literal_marginal_comparisons": 144,
+  "models": {
+    "codellama34b": {
+      "cases": 2430,
+      "original_responses": 7290,
+      "saved_score_rows": 209952,
+      "selected_score_banks": 36
+    },
+    "llama8b": {
+      "cases": 2430,
+      "original_responses": 7290,
+      "saved_score_rows": 209952,
+      "selected_score_banks": 36
+    }
+  },
+  "query_effects": {
+    "codellama34b/hidden": {
+      "conditional_group_bootstrap_95_pp": [
+        -0.9945130315500681,
+        0.23433927754915457
+      ],
+      "site7_placebo_pp": 0.0,
+      "site8_effect_pp": -0.400091449474165,
+      "site8_minus7_pp": -0.400091449474165
+    },
+    "codellama34b/surface": {
+      "conditional_group_bootstrap_95_pp": [
+        0.07430269775948792,
+        0.5316929583904886
+      ],
+      "site7_placebo_pp": 0.0,
+      "site8_effect_pp": 0.29721079103795156,
+      "site8_minus7_pp": 0.29721079103795156
+    },
+    "llama8b/hidden": {
+      "conditional_group_bootstrap_95_pp": [
+        -0.3030692729766799,
+        1.9377286236854137
+      ],
+      "site7_placebo_pp": 0.0,
+      "site8_effect_pp": 0.8573388203017837,
+      "site8_minus7_pp": 0.8573388203017837
+    },
+    "llama8b/surface": {
+      "conditional_group_bootstrap_95_pp": [
+        -0.19433013260173748,
+        0.08001828989483313
+      ],
+      "site7_placebo_pp": 0.0,
+      "site8_effect_pp": -0.0628715134887974,
+      "site8_minus7_pp": -0.0628715134887974
+    }
+  },
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/regression_v1.xml",
+    "skipped": 0,
+    "tests": 1766
+  },
+  "review_role": "independent_postrun_metadata_and_arithmetic_review_v1",
+  "scope": {
+    "binary_inventory_scope": "72 selected NPZ files checked for exact original-receipt identity, existence and size only; no binary content hashing or loading in this review.",
+    "computed_numeric_draw0_DEV_cases_per_model": 486,
+    "computed_subset_behavior_and_joint_arithmetic_checked": true,
+    "computed_subset_score_marginal_independent_replay": false,
+    "computed_subset_score_marginal_note": "Original C summaries cover 1,944 DEV cases across all four numeric draws; the 486-case subset cannot be independently reconstructed without opening score arrays. This review validates its source and behavior support, selected-bank identity and reported joint arithmetic. The completed original audit verifies saved-score checksums.",
+    "generated_holdouts_opened": false,
+    "new_fits": 0,
+    "new_model_queries": 0,
+    "npz_loads": 0,
+    "original_B_full_DEV_marginals_checked": true,
+    "parameter_replays": 0,
+    "raw_activations_loaded": false,
+    "result_cells_read": 240,
+    "source_responses_checked": 14580
+  },
+  "source_file_sha_checks": 182,
+  "status": "passed"
+}

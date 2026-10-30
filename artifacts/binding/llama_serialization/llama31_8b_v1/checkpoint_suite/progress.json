@@ -1,0 +1,37 @@
+{
+  "cells": [
+    {
+      "correct": 305,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_direct",
+      "valid": 786
+    },
+    {
+      "correct": 364,
+      "n": 800,
+      "section": "cruxeval",
+      "task": "cruxeval_o_cot",
+      "valid": 785
+    }
+  ],
+  "complete": true,
+  "evaluated": 1600,
+  "generated_holdouts_opened": false,
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "planned": 1600,
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 9.588450292125344,
+      "output_tokens": 81166,
+      "requests_per_second": 106.79515133336771
+    },
+    {
+      "cases": 576,
+      "generation_seconds": 12.985474918968976,
+      "output_tokens": 154642,
+      "requests_per_second": 44.35725328448237
+    }
+  ]
+}

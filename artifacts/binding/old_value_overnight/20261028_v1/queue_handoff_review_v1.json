@@ -1,0 +1,98 @@
+{
+  "causal_follow_on": false,
+  "evaluation_role": "discovery_old_value_submitted_handoff_v1",
+  "immutable_baseline_check": {
+    "artifacts": 161,
+    "deep": true,
+    "hashes_checked": 161,
+    "historical_overview_pins": "Prior followup README/checklist/backlog hashes describe historical completion versions; current overviews are not frozen scientific inputs.",
+    "status": "passed"
+  },
+  "intermittent_checks_enabled": true,
+  "interval_minutes": 10,
+  "jobs": {
+    "codellama34b_behavior": "481705",
+    "codellama34b_preflight": "481694",
+    "llama8b_behavior": "481704",
+    "llama8b_preflight": "481693",
+    "morning": "481707",
+    "publication": "481706",
+    "regression": "481692"
+  },
+  "logging": {
+    "enabled": true,
+    "fresh_within_two_intervals": true,
+    "guard_health": true,
+    "interval_minutes": 10,
+    "last_success_age_seconds": 0.092709,
+    "last_success_utc": "2026-10-29T00:46:04.656024+00:00",
+    "pending_guards": 2,
+    "queue": [
+      {
+        "exit_code": "0:0",
+        "job_id": "481700",
+        "reason": "Dependency",
+        "state": "PENDING"
+      },
+      {
+        "exit_code": "0:0",
+        "job_id": "481699",
+        "reason": "BeginTime",
+        "state": "PENDING"
+      }
+    ]
+  },
+  "model_measurement_pending": true,
+  "monitor_initial_job": "481708",
+  "morning_at": "2026-10-29T08:00:00-05:00",
+  "morning_check_independent": true,
+  "new_fits": 0,
+  "pins": [
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/execution_source_v1.json",
+      "sha256": "9c94f44d87c7990ff40df1fbec697adf9d7e7df42064cc649ceed34044eebee1"
+    },
+    {
+      "bytes": 2113,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/build_review_v1.json",
+      "sha256": "18d355ca1c4400361b2a9e6b1e7ef3d51b384344d2bd0eaf1dc74148b70dd319"
+    },
+    {
+      "bytes": 219,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/jobs_v1.json",
+      "sha256": "b845345b19c2e28bac1f9ad8c49cbe6886f104db2b9490f48327d7022cec3705"
+    },
+    {
+      "bytes": 2368,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "4dff2316cf25b2a68ef67896d123ae16b416111e42afd19263eee860be93a96e"
+    },
+    {
+      "bytes": 30314,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/source_review_v1.json",
+      "sha256": "c85fdfc17fb60b440bafe67f18e0b83073aa0dd91f191e06974aff7582126dee"
+    },
+    {
+      "bytes": 988,
+      "path": "configs/binding/old_value_overnight_20261028_v1/check.json",
+      "sha256": "56803a83f0ed0858564ccfd3dc9c2f07403ddc94e15b73a2afe1c2be76e61fec"
+    },
+    {
+      "bytes": 7624,
+      "path": "reports/binding/old_value_overnight_plan_v1.md",
+      "sha256": "4e1c81fc683a141575464181853a478e3eac15497051b18274d4782e62ffee2e"
+    }
+  ],
+  "planned_scored_responses": 40320,
+  "planned_warmup_requests": 16,
+  "primary_gate_cells_per_model": 24,
+  "recorded_utc": "2026-10-29T00:46:13.468464+00:00",
+  "source": {
+    "code": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55"
+  },
+  "source_rows": 6720,
+  "status": "passed"
+}

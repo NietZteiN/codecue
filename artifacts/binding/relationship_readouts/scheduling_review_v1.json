@@ -1,0 +1,11 @@
+{
+  "actual_limit": "scheduler account partition QoS MaxJobsPU4 and occupied dev-a30 GPUs",
+  "capture_job": "480208",
+  "host_allocation_modified": false,
+  "reason": "Allow frozen-source validation and cached-model startup plus finite full prefill; avoid wasting startup in a five-minute backfill. Scientific inputs/batch/source unchanged.",
+  "requested_time_min_after": "00:15:00",
+  "requested_time_min_before": "00:05:00",
+  "status": "recorded",
+  "time_limit": "02:00:00",
+  "unrelated_bidirectional_jobs_modified": false
+}

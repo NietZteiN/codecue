@@ -1,0 +1,198 @@
+{
+  "checks": {
+    "all810_task_cells_and_class_counts_preserved": true,
+    "all90_parameter_inventory_pins_verified_as_metadata": true,
+    "all_final_slot_version_classes_present": true,
+    "both_completed_receipts_and_replay_audits_required": true,
+    "capture_attempts_and_zero_generation_verified": true,
+    "control_marginal_metadata_pinned": true,
+    "no_parameter_banks_opened": true,
+    "null_future_tasks_retained": true,
+    "primary_layer24_site7_three_seed_means_verified": true,
+    "repeated_figure_render_byte_identical": true,
+    "row_and_graph_macro_tables_preserved": true,
+    "whole_task_row_graph_means_equal": true
+  },
+  "evaluation_role": "discovery_diversity_decoding_publication_v1",
+  "generated_holdouts_opened": false,
+  "input_pins": [
+    {
+      "bytes": 4123,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/audit.json",
+      "sha256": "b825516e2ba2c072777898e73f23956095d0f250711e75bd5729d0aa1f126691"
+    },
+    {
+      "bytes": 5343,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/completion_manifest_v1.json",
+      "sha256": "87d400e5b1cdf7d570b39204365d1b5949f14249e105dd432baf72b626202d97"
+    },
+    {
+      "bytes": 3792,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/preflight.json",
+      "sha256": "edb31b171fb000db5622c2764ce63afbee4ff98d69d48b79c70aa58c0c478f9b"
+    },
+    {
+      "bytes": 7663,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture/summary.json",
+      "sha256": "9c04643c7f52e7293a21b03cdf5a5441a288fee26e37a1f07533d7373b271ec0"
+    },
+    {
+      "bytes": 349,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/audit.json",
+      "sha256": "82315e220b995cbfad5caa9bf53bcfc434fba6bfbbb75e03fb3d29176e442ccf"
+    },
+    {
+      "bytes": 14474,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/completion_manifest_v1.json",
+      "sha256": "4ef5544683206f0141d873310dba5874c589ab4dfe8caa6bbd79ca5920eae03e"
+    },
+    {
+      "bytes": 14659,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json",
+      "sha256": "f9822ed00a78d29dacf548c65db17a3a0d3f5ac63af74f92d4073f78a8d1d5d5"
+    },
+    {
+      "bytes": 3812,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/registration.json",
+      "sha256": "a9d5e96697426b9757d05b83c781cadd3a0fca82f5304517ecfa24fcb70d87ee"
+    },
+    {
+      "bytes": 64121775,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/results_v1.json",
+      "sha256": "364ced41c1ed983615198570c3e47c6df8f2108f515a0ce28bee42b6e55e68a2"
+    },
+    {
+      "bytes": 4141,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/summary.json",
+      "sha256": "24410462b85ce64f64b2b8269fd06256507344bcfedc8ad514c1ea3d134baa39"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/execution_source_v1.json",
+      "sha256": "69559abd128f176fc8269a9cfaaf365a0ce1df6767e3c4d231048b5679c20c7c"
+    },
+    {
+      "bytes": 4063,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/audit.json",
+      "sha256": "50911f07ff04862ed3120234f3a9dbd0b03cf78e381fce1d0df5b7b875a0d3ed"
+    },
+    {
+      "bytes": 5250,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/completion_manifest_v1.json",
+      "sha256": "ce1d4b0562df29a3b9d7e1385127a3e7cc2644d5f3002b44ead297fcdd725013"
+    },
+    {
+      "bytes": 3736,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/preflight.json",
+      "sha256": "a4e40613543b15a91ec05c5ec621d13e93dd2536267c1cbb93ff34e8779f03ba"
+    },
+    {
+      "bytes": 7583,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture/summary.json",
+      "sha256": "b7417c0e36ba45b4bc82a5fa671e21b20f4bf90fae00167b22a38918a475791b"
+    },
+    {
+      "bytes": 349,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/audit.json",
+      "sha256": "a3a845e956a5a9645fe595d2c5f78f661373c288e6dc70dfbf62309a2084c370"
+    },
+    {
+      "bytes": 14206,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/completion_manifest_v1.json",
+      "sha256": "ae3b1263ea8ad21f7fdcb787ba60fa6e88963c7a16f4cca0202f2716bda24bb6"
+    },
+    {
+      "bytes": 14391,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json",
+      "sha256": "ceca45c24dc939048fd1c83e26bfba55fb11116b906525518264ac917238766c"
+    },
+    {
+      "bytes": 3797,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/registration.json",
+      "sha256": "dd6eceabe1382247da66410dfe984fb15f8d8ed45b6f87bd002a5b48f825a80e"
+    },
+    {
+      "bytes": 64127342,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/results_v1.json",
+      "sha256": "f33e33d40a06129ff372b1238825f0576d3f91855e9921e6d444e9998fe0b0bd"
+    },
+    {
+      "bytes": 4211,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/summary.json",
+      "sha256": "d9af192d2a77d362a3f61f03cdcc3f9897a22ff4f9509449f72dbeee089b9728"
+    },
+    {
+      "bytes": 754,
+      "path": "artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8/configs/binding/diversity_decoding_20261028_v1/codellama34b_capture.json",
+      "sha256": "2ac7b82698b59e023466eca47b07b0ddf7be63bfb84f9137979fe9e31a7cfdda"
+    },
+    {
+      "bytes": 591,
+      "path": "artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8/configs/binding/diversity_decoding_20261028_v1/codellama34b_readouts.json",
+      "sha256": "19e9cc18ea658ab0b1c4564034f4e4db4703c8f4bc2123ff5ada2c29fbd0424c"
+    },
+    {
+      "bytes": 745,
+      "path": "artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8/configs/binding/diversity_decoding_20261028_v1/llama8b_capture.json",
+      "sha256": "24a73cdc6c6ad5f9adae5ff5fb3bf8bb51b32a29d0c9e0795c813aebb2715907"
+    },
+    {
+      "bytes": 576,
+      "path": "artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8/configs/binding/diversity_decoding_20261028_v1/llama8b_readouts.json",
+      "sha256": "d3acc9c2521876eafdddc2e55ef11e4d1750b77c74d015d4294e7430f6f0d36e"
+    },
+    {
+      "bytes": 55173,
+      "path": "artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8/frozen_manifest.json",
+      "sha256": "aebd4aac3e13f1361d3eb1109b7184982f0c2ee90b9e22145932435a0b996269"
+    },
+    {
+      "bytes": 4721,
+      "path": "reports/binding/diversity_decoding_codellama34b_v1.md",
+      "sha256": "fcd0c2c2fddf5aac884e48ada10d6a8f0634d772329b0f54038cb76adbf97dba"
+    },
+    {
+      "bytes": 4709,
+      "path": "reports/binding/diversity_decoding_llama8b_v1.md",
+      "sha256": "59aa5a757c77c749210c5a7960bf405cec88b065119921ecefe588851e854b47"
+    }
+  ],
+  "new_bootstraps": 0,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "output_pins": [
+    {
+      "bytes": 15194826,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/comparison_v1.json",
+      "sha256": "e7b251711efbc3bdc96f0bb7b8434c75a78efc25a73a3bb723f1c806ce47dfd8"
+    },
+    {
+      "bytes": 7232555,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/form_cells_v1.csv",
+      "sha256": "5e56345ca43efc47cbc115c783e27f22b5eee5702428637d827420b78ca46a7d"
+    },
+    {
+      "bytes": 8302,
+      "path": "reports/binding/diversity_decoding_findings_v1.md",
+      "sha256": "c49bf39709fc18eab5fb77436e289ca04fdfa008a9fa523aa73a584fd331cf85"
+    },
+    {
+      "bytes": 159494,
+      "path": "reports/binding/figures/diversity_decoding_v1.png",
+      "sha256": "4a9b0797ac8c0b6278e28f402b224624c250354fd825caaee0f4758920acc656"
+    },
+    {
+      "bytes": 120383,
+      "path": "reports/binding/figures/diversity_decoding_v1.svg",
+      "sha256": "f08fae6e00ddfbce2243f036a18558a4ef912d81fec9b2dce8709adae86afb92"
+    }
+  ],
+  "plotting_version": "3.11.2",
+  "publisher_script": {
+    "bytes": 60622,
+    "path": "artifacts/binding/diversity_decoding/20261028_v1/publish_results_v1.py",
+    "sha256": "8f882bb7543b792ee1a7f0119bf0cac23eebc0e4e8c6b6b1be3907b9cd807816"
+  },
+  "reproduction": "Every invocation regenerates and byte-checks all existing outputs.",
+  "status": "passed"
+}

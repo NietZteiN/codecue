@@ -1,0 +1,26 @@
+{
+  "models": {
+    "llama31_8b": {
+      "completion": {
+        "config": "configs/binding/llama_serialization/llama31_8b_v1.json",
+        "sha256": "2b7722105e4e165bbcfda7141868fad73f13564afcd2ab994a779140a1231e5c"
+      },
+      "native": {
+        "config": "configs/binding/capacity/llama31_8b_v1.json",
+        "sha256": "fa2bf1dc091f977720748414863cf539d0f8eaae42c242b11365edc0b649d2e5"
+      }
+    },
+    "llama32_3b": {
+      "completion": {
+        "config": "configs/binding/llama_serialization/llama32_3b_v1.json",
+        "sha256": "8aaacb1e07fc5a0d44396fe441ad2f1260bf162414f31d81db8f8b64221542cf"
+      },
+      "native": {
+        "config": "configs/binding/capacity/llama32_3b_v2.json",
+        "sha256": "2754c9d04827620d06719603812ce3eb328a0cee4ca0e47e18ef13ac1feac978"
+      }
+    }
+  },
+  "output": "artifacts/binding/llama_serialization/comparison_v1.json",
+  "report": "reports/binding/llama_serialization_results.md"
+}

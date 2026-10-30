@@ -1,0 +1,100 @@
+{
+  "aggregation": "Mean of three weighting-seed point estimates; five dependent DEV graph families; no interval or reliability qualification.",
+  "cases": 2016,
+  "config_hash": "2f331fb9d3595a6ac80818c6b8977ca6178b43caad2b836a04df0e75c6c8bd19",
+  "development_groups": 5,
+  "development_rows": 696,
+  "evaluation_role": "discovery_schedule_readouts_v1",
+  "factorizations": 45,
+  "fit_banks": 45,
+  "generated_holdouts_opened": false,
+  "limitations": [
+    "Adaptive discovery on 15 canonical SSA graph families: ten TRAIN and five DEV; numeric, lexical and query relatives are dependent.",
+    "All actual definition, parent and current-version identities are targets only. Hidden features contain no oracle source or target fields.",
+    "The exact-prefix character baseline and training prior are retained; neither positive decoding nor a hidden-minus-surface difference proves natural causal use.",
+    "Eligibility is descriptive TRAIN class support of at least three graph groups per observed class, distinct from historical behavioral qualification gates.",
+    "Every categorical head and held-out class is scored, including rare, unsupported and constant classes; absent classes do not count as successful discrimination.",
+    "Binary ridge scores use threshold 0.5 and categorical heads use argmax; scores are uncalibrated. No DEV threshold or hyperparameter selection occurs.",
+    "Weight seeds change graph weights and random-prefix control labels, not independent experimental replications.",
+    "Random-prefix controls preserve prefix consistency and visibility, not structural coherence, class marginals or task difficulty.",
+    "Point estimates and per-graph outcomes are descriptive; no confirmatory or multiplicity-adjusted interval is claimed from five DEV families.",
+    "Changing assignment schedules also changes variable age, positions and dependency depth. Decoding does not establish a causal version-tracking algorithm."
+  ],
+  "new_model_queries": 0,
+  "parameter_replay_rows": 90720,
+  "primary": {
+    "hidden": {
+      "direct": {
+        "copy_parent": 0.06513409961685825,
+        "current_definition": 0.27394636015325674,
+        "current_version": 0.896551724137931
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0019157088122605363,
+        "current_version": 0.0038314176245210726
+      },
+      "training_prior": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0,
+        "current_version": 0.8275862068965517
+      }
+    },
+    "surface": {
+      "direct": {
+        "copy_parent": 0.0,
+        "current_definition": 0.019157088122605363,
+        "current_version": 1.0
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0038314176245210726,
+        "current_version": 0.0038314176245210726
+      },
+      "training_prior": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0,
+        "current_version": 0.8275862068965517
+      }
+    }
+  },
+  "primary_group_macro": {
+    "hidden": {
+      "direct": {
+        "copy_parent": 0.024305555555555552,
+        "current_definition": 0.47754629629629636,
+        "current_version": 0.5333333333333333
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0006944444444444445,
+        "current_version": 0.011805555555555555
+      },
+      "training_prior": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0,
+        "current_version": 0.4000000000000001
+      }
+    },
+    "surface": {
+      "direct": {
+        "copy_parent": 0.0,
+        "current_definition": 0.027777777777777776,
+        "current_version": 1.0
+      },
+      "random_prefix_control": {
+        "copy_parent": 0.0,
+        "current_definition": 0.022222222222222223,
+        "current_version": 0.0020833333333333333
+      },
+      "training_prior": {
+        "copy_parent": 0.0,
+        "current_definition": 0.0,
+        "current_version": 0.4000000000000001
+      }
+    }
+  },
+  "status": "complete_exploratory",
+  "training_groups": 10,
+  "training_rows": 1320
+}

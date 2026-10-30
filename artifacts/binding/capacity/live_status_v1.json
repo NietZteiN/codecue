@@ -1,0 +1,136 @@
+{
+  "budget": {
+    "cap_seconds": null,
+    "reserved_seconds": 6600,
+    "unreserved_seconds": null,
+    "used_seconds": 0.0
+  },
+  "comparison_audited": false,
+  "completed_report": "reports/binding/capacity_results.md",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "jobs": {
+    "codellama13b_audit": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "476870",
+      "reason": "Dependency",
+      "state": "PENDING"
+    },
+    "codellama13b_preflight": {
+      "elapsed_seconds": 74,
+      "exit_code": "0:0",
+      "job_id": "476868",
+      "state": "COMPLETED"
+    },
+    "codellama13b_run": {
+      "elapsed_seconds": 99,
+      "exit_code": "0:0",
+      "job_id": "476869",
+      "reason": "None",
+      "state": "RUNNING"
+    },
+    "codellama34b_audit": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "476873",
+      "reason": "Dependency",
+      "state": "PENDING"
+    },
+    "codellama34b_preflight": {
+      "elapsed_seconds": 79,
+      "exit_code": "0:0",
+      "job_id": "476871",
+      "state": "COMPLETED"
+    },
+    "codellama34b_run": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "476872",
+      "reason": "Priority",
+      "state": "PENDING"
+    },
+    "collect": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "476877",
+      "reason": "Dependency",
+      "state": "PENDING"
+    },
+    "llama32_3b_audit": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "476876",
+      "reason": "Dependency",
+      "state": "PENDING"
+    },
+    "llama32_3b_preflight": {
+      "elapsed_seconds": 79,
+      "exit_code": "0:0",
+      "job_id": "476874",
+      "state": "COMPLETED"
+    },
+    "llama32_3b_run": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "476875",
+      "reason": "Priority",
+      "state": "PENDING"
+    },
+    "tests": {
+      "elapsed_seconds": 118,
+      "exit_code": "0:0",
+      "job_id": "476867",
+      "state": "COMPLETED"
+    }
+  },
+  "model_inference": false,
+  "plan_report": "capacity_plan.md",
+  "recorded_utc": "2026-10-26T03:18:06.722398+00:00",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/capacity/status_v1.json",
+  "scheduler_errors": [],
+  "scientific_artifacts_modified": false,
+  "stages": [
+    {
+      "evaluated": 0,
+      "issues": [],
+      "manifest_status": "started",
+      "name": "codellama13b",
+      "path": "artifacts/binding/capacity/codellama13b_v1/checkpoint_suite",
+      "planned": null,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 0
+      }
+    },
+    {
+      "evaluated": 0,
+      "issues": [],
+      "manifest_status": "not_started",
+      "name": "codellama34b",
+      "path": "artifacts/binding/capacity/codellama34b_v1/checkpoint_suite",
+      "planned": null,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 0
+      }
+    },
+    {
+      "evaluated": 0,
+      "issues": [],
+      "manifest_status": "not_started",
+      "name": "llama32_3b",
+      "path": "artifacts/binding/capacity/llama32_3b_v1/checkpoint_suite",
+      "planned": null,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 0
+      }
+    }
+  ],
+  "status": "running",
+  "title": "Uncapped project checkpoint suites"
+}

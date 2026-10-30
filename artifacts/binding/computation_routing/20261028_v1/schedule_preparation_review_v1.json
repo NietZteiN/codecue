@@ -1,0 +1,163 @@
+{
+  "activation_arrays_read": false,
+  "checks": {
+    "actual_dataset_and_report_sha256": true,
+    "actual_surface_query_labels_recomputed": 2016,
+    "all_numeric_lexical_query_relatives_split_disjoint": true,
+    "all_rows_grouped_by_independently_canonicalized_actual_ssa_graph": true,
+    "corrected_config_frozen_in_both_pointers": true,
+    "cross_split_source_ast_alpha_order_graph_overlap_zero": true,
+    "unique_prefixes_cover_saved_prefix_memberships": 16128,
+    "unique_truncated_surface_prefix_labels_recomputed": 2494
+  },
+  "counts": {
+    "distinct_labeled_definition_graphs": 84,
+    "distinct_visible_prefix_groups": 2494,
+    "effective_canonical_graph_units": 15,
+    "effective_ordered_schedule_units": 21,
+    "maximum_assignment_version": 4,
+    "obsolete_copy_definitions_across_templates": 24,
+    "raw_schedule_count": 28,
+    "raw_schedule_parent_templates": 84,
+    "rows": 2016,
+    "split_canonical_graph_units": {
+      "development": 5,
+      "train": 10
+    },
+    "split_rows": {
+      "development": 696,
+      "train": 1320
+    }
+  },
+  "evaluation_role": "discovery_relationship_schedule_preparation_review_v1",
+  "generated_holdouts_opened": false,
+  "independent_python_trace_rerun": false,
+  "input_pins": [
+    {
+      "bytes": 542,
+      "path": "configs/binding/relationships/schedule_generation_v2.json",
+      "sha256": "6ebd641bd9f6b3a59b74d3c1d9587277761432120d37c28fa127c9ebf4720e90"
+    },
+    {
+      "bytes": 25636666,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+      "sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287"
+    },
+    {
+      "bytes": 23668,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.manifest.json",
+      "sha256": "f08ac66c7b43c18f2d0627159d071f9936de13925695b23407d9b9375aca66c5"
+    },
+    {
+      "bytes": 27285,
+      "path": "artifacts/binding/relationships/schedule_source_review_v1.json",
+      "sha256": "7456396fde73db184a3399871b69905e06147e369a6a4d5ef8b48246dcd6f8a0"
+    },
+    {
+      "bytes": 2534,
+      "path": "reports/binding/relationship_schedule_preparation_v1.md",
+      "sha256": "31ada02f23016a71c7d69cf1bf1c6c17a58058f9a12e240f56c8f0dc5cbfc8ce"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_generation_source_v1.json",
+      "sha256": "35eaa0088fa77d01585a461a5f7a5a7a3059a0cf5b4d27200e79ec2701db2f16"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/computation_routing/20261028_v1/execution_source_v1.json",
+      "sha256": "435b4dc3eca372ef33f9d3a6af9cc6e79c20b6c3a5c9582eaf9a6054cb7443d8"
+    },
+    {
+      "bytes": 968,
+      "path": "artifacts/binding/computation_routing/20261028_v1/software_validation_review_v1.json",
+      "sha256": "92348510df0fcbf01fafc2cb2db407a2fb76239ddc20d4bfa7af70f4ebb1bf25"
+    },
+    {
+      "bytes": 539,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_setup_review_v1.json",
+      "sha256": "5980843a8d5a5a7aebff3cf8060fcdbfd54654154d37a9e2e19b1a07a2930be2"
+    },
+    {
+      "bytes": 1823,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_build_stdout_v1.txt",
+      "sha256": "a746f95bd9c9610217ec50f283485d2600dc700e8816049be90425bad1d3e4c5"
+    },
+    {
+      "bytes": 624,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_build_stdout_v2.txt",
+      "sha256": "e73c925089b8f6212ced1ddebee3b1ec1be573579f6774e25cddea1ba54b4186"
+    },
+    {
+      "bytes": 5967718,
+      "path": "artifacts/binding/relationships/routing_sources_v1.jsonl",
+      "sha256": "7a76b3e7ce1b82c8f1b869c492246cb22e2b7f64f672b1dd89f724f64a56e9dd"
+    }
+  ],
+  "learned_readout_compatible": false,
+  "limitations": [
+    "Source-only adaptive discovery preparation, not learned decoding or independent confirmation.",
+    "84rawtemplates collapse to15canonicalSSAgraphfamilies with only5DEVfamilies.",
+    "Three alpha structures overlap the prior routing sourcebank despite zero exact source/AST overlap.",
+    "No new full ordinary-Python trace rerun; completed builder reports3024validatedprograms.",
+    "Schedule changes remain coupled to definition age, position and dependency depth.",
+    "Existing fixed-schedule learned readouts cannot consume these targets unchanged."
+  ],
+  "model_or_tokenizer_loaded": false,
+  "model_queries": 0,
+  "new_fits": 0,
+  "old_source_overlap": [
+    {
+      "alpha_structures": 3,
+      "canonical_ast_sources": 0,
+      "exact_surface_sources": 0,
+      "metadata_only": true,
+      "path": "artifacts/binding/relationships/routing_sources_v1.jsonl",
+      "rows": 1296,
+      "sha256": "7a76b3e7ce1b82c8f1b869c492246cb22e2b7f64f672b1dd89f724f64a56e9dd"
+    }
+  ],
+  "published_independent_python_programs": 3024,
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1843
+  },
+  "source_snapshots": [
+    {
+      "corrected_config": {
+        "bytes": 542,
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8354aa7c9058e5346efa360a/configs/binding/relationships/schedule_generation_v2.json",
+        "sha256": "6ebd641bd9f6b3a59b74d3c1d9587277761432120d37c28fa127c9ebf4720e90"
+      },
+      "frozen_manifest": {
+        "bytes": 51283,
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8354aa7c9058e5346efa360a/frozen_manifest.json",
+        "sha256": "7ce65ec275f576023e7f7c10590eaea1ae29bc61669aa0c42d725782da155080"
+      },
+      "pointer": "artifacts/binding/computation_routing/20261028_v1/schedule_generation_source_v1.json",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8354aa7c9058e5346efa360a",
+      "snapshot_id": "8354aa7c9058e5346efa360a",
+      "source_sha256": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79"
+    },
+    {
+      "corrected_config": {
+        "bytes": 542,
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/configs/binding/relationships/schedule_generation_v2.json",
+        "sha256": "6ebd641bd9f6b3a59b74d3c1d9587277761432120d37c28fa127c9ebf4720e90"
+      },
+      "frozen_manifest": {
+        "bytes": 51560,
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/frozen_manifest.json",
+        "sha256": "1666e9fd98fd5790167e4ad5e089f59a63e7aae5b60fc1f1c5e72d0899bf0009"
+      },
+      "pointer": "artifacts/binding/computation_routing/20261028_v1/execution_source_v1.json",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69",
+      "snapshot_id": "eb42de7a8ba9e27d987a5a69",
+      "source_sha256": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79"
+    }
+  ],
+  "status": "passed",
+  "targets_prepared_only": true
+}

@@ -1,0 +1,60 @@
+{
+  "alpha": 100.0,
+  "binary_threshold": 0.5,
+  "bootstrap": {
+    "draws": 2000,
+    "minimum_valid_draws": 1900,
+    "seed": 117
+  },
+  "capture_audit": "artifacts/binding/relationship_capture/llama31_8b_v2/audit.json",
+  "capture_audit_sha256": "b33d716910cddf1e66426ce46480fbf755932664c8140c2e1814c0f8a052eaad",
+  "capture_config": "configs/binding/relationships/capture_v2.json",
+  "capture_config_sha256": "1e944fa658613954a116f07a016e1ed8c9da83d2f805bf1e4605a5ff54440a4e",
+  "capture_registration": "artifacts/binding/relationship_capture/llama31_8b_v2/registration.json",
+  "capture_registration_sha256": "d370740d3297e5d1a8d9e632a60f3c0e3aafd672cc970edbfb19020bd773f239",
+  "capture_summary": "artifacts/binding/relationship_capture/llama31_8b_v2/summary.json",
+  "capture_summary_sha256": "73c1657d4f4adb37055376bb671e13718a52ac12af7cd94bf354fccadf70d0ee",
+  "categorical_value_derivation": "four independent 32-class score argmax heads, primary",
+  "evaluation_role": "discovery_relationship_readouts_v1",
+  "feature_dimensions": 4096,
+  "fit_sites": [
+    3,
+    7,
+    8
+  ],
+  "group_weight_recipe": "discovery_readouts.group_weights: exponential+1e-6; float32 mean normalization then float64 cast",
+  "layers": [
+    8,
+    16,
+    24,
+    31
+  ],
+  "primary": {
+    "algebraic": {
+      "backend": "hidden",
+      "contrast": "direct_minus_categorical_value_derived",
+      "layer": 24,
+      "metric": "four_family_macro_balanced_accuracy",
+      "site": 3,
+      "split": "development"
+    },
+    "structural": {
+      "backend": "hidden",
+      "contrast": "direct_minus_surface",
+      "layer": 24,
+      "metric": "whole_parent_graph_accuracy",
+      "site": 7,
+      "split": "development"
+    }
+  },
+  "primary_train_class_group_minimum": 12,
+  "report": "reports/binding/relationship_readouts_v3.md",
+  "run_dir": "artifacts/binding/relationship_readouts/llama31_8b_v3",
+  "scalar_value_derivation": "clip[-64,64] then numpy.rint, secondary",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "shuffle_recipe": "component derangement; initialization-prefix base blocks; within-base copy-parent permutation; lexical ties"
+}

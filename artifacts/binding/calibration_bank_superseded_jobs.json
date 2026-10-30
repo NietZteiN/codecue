@@ -1,0 +1,19 @@
+{
+  "conditional_bank": "476260",
+  "report": "476261",
+  "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/0226dbcfa2d8fcf1bbc87839",
+  "dependency": "afterany:476251",
+  "replacement_reason": "Use a declared balanced 24-program training-bank subset after observed trace throughput; preserve all 96 bank records and avoid an unbalanced wall-limited run.",
+  "actions": [
+    {
+      "job": "476260",
+      "action": "not cancelled",
+      "previous_state": ""
+    },
+    {
+      "job": "476261",
+      "action": "not cancelled",
+      "previous_state": ""
+    }
+  ]
+}

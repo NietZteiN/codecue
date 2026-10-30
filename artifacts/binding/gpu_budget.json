@@ -1,0 +1,146 @@
+{
+  "cap_seconds": 14400,
+  "used_seconds": 6931.16775853734,
+  "active": {},
+  "completed": [
+    {
+      "id": "46ab4218bbba4f17b5428bf030acecef",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 600,
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/interface_gpu_prefill_v2",
+      "actual_seconds": 29.14371564798057,
+      "status": "complete"
+    },
+    {
+      "id": "73f67739527c4ebf82aeb92b40411318",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 600,
+      "stage": "generation_reference",
+      "run_dir": "artifacts/binding/gpu_generation_reference",
+      "actual_seconds": 29.146512093022466,
+      "status": "complete"
+    },
+    {
+      "id": "36a49287966c433489ba763b50c54cc8",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 1800,
+      "stage": "protocol_calibration",
+      "run_dir": "artifacts/binding/difficulty_ladder_bf16",
+      "actual_seconds": 99.11724137497367,
+      "status": "complete"
+    },
+    {
+      "id": "406e313c395c47f79b6c8352504001a8",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 300,
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/phase2/boundary_validation/native",
+      "actual_seconds": 26.360479569993913,
+      "status": "complete"
+    },
+    {
+      "id": "e41fed1686b04c11a77c5a39cd9fcefb",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 300,
+      "stage": "interface_diagnostics",
+      "run_dir": "artifacts/binding/phase2/boundary_validation/codellama_official_boundary_v1",
+      "actual_seconds": 4.380502418032847,
+      "status": "complete"
+    },
+    {
+      "id": "b6b3357307174393bf52e469e3adc992",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 1200,
+      "stage": "protocol_calibration",
+      "run_dir": "artifacts/binding/phase2/arithmetic_forms",
+      "actual_seconds": 127.66555291495752,
+      "status": "complete"
+    },
+    {
+      "id": "3f20b114eea443b483b9a024d8810e44",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 1200,
+      "stage": "protocol_calibration",
+      "run_dir": "artifacts/binding/phase2/arithmetic_free",
+      "actual_seconds": 331.2664443490212,
+      "status": "complete"
+    },
+    {
+      "id": "8971028cc64e4833adf8366eb923408e",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 1200,
+      "stage": "published_behavior",
+      "run_dir": "artifacts/binding/published/smoke_v1",
+      "actual_seconds": 41.349006488977466,
+      "status": "complete"
+    },
+    {
+      "id": "23986c7e054d41f8beee99da9b47174b",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 10000,
+      "stage": "published_behavior",
+      "run_dir": "artifacts/binding/published/full_v2",
+      "actual_seconds": 1876.7109413740109,
+      "status": "complete"
+    },
+    {
+      "id": "d7b3ba2595674058a3af4f0f4a89fb2c",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 600,
+      "stage": "published_behavior",
+      "run_dir": "artifacts/binding/serialization/native_replay_v1",
+      "actual_seconds": 41.71690573397791,
+      "status": "complete"
+    },
+    {
+      "id": "1223ce364f474e73b583fb331bf27003",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 600,
+      "stage": "published_behavior",
+      "run_dir": "artifacts/binding/serialization/completion_smoke_v1",
+      "actual_seconds": 20.258035377017222,
+      "status": "complete"
+    },
+    {
+      "id": "73561f36d8384fdf9911c78b4c8c6257",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 5000,
+      "stage": "published_behavior",
+      "run_dir": "artifacts/binding/serialization/completion_full_v1",
+      "actual_seconds": 1144.8047887759749,
+      "status": "complete"
+    },
+    {
+      "id": "f6a71ed893ba47d4874ba92a63a8787a",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 3600,
+      "run_dir": "artifacts/binding/throughput/tune_v2",
+      "stage": "throughput_profile",
+      "actual_seconds": 2081.0,
+      "status": "cancelled"
+    },
+    {
+      "id": "a0e7cbfb86b549f6b5ae5d1a75146c78",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 1500,
+      "stage": "throughput_profile",
+      "run_dir": "artifacts/binding/throughput/tune_v3",
+      "actual_seconds": 479.4426653950359,
+      "status": "failed"
+    },
+    {
+      "id": "c2119165e9254af4ac2a277bde2340e6",
+      "ledger": "artifacts/binding/gpu_budget.json",
+      "reserved_seconds": 1800,
+      "stage": "throughput_profile",
+      "run_dir": "artifacts/binding/throughput/tune_v4",
+      "actual_seconds": 598.8049670243636,
+      "status": "complete"
+    }
+  ],
+  "checkpoint": [
+    "codellama/CodeLlama-7b-Instruct-hf",
+    "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+  ]
+}

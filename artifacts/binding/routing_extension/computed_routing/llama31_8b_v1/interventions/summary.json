@@ -1,0 +1,117 @@
+{
+  "answer_digit_boundary_checked": true,
+  "baseline_cases": 576,
+  "baseline_correct": 461,
+  "baseline_gate": {
+    "cells": [
+      {
+        "correct": 71,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 72,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": true,
+        "query": 1
+      },
+      {
+        "correct": 65,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 1,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": false,
+        "query": 1
+      },
+      {
+        "correct": 72,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 60,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": false,
+        "query": 1
+      },
+      {
+        "correct": 71,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 49,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": false,
+        "query": 1
+      }
+    ],
+    "eligible_families": [],
+    "status": "failed",
+    "thresholds": {
+      "maximum_invalid_rate": 0.05,
+      "minimum_accuracy": 0.9,
+      "minimum_cell_n": 24
+    }
+  },
+  "baseline_sha256": "a09e63ae0d274b788368dfcea11f3836a0f1e70035662d2870250366d2872851",
+  "complete": true,
+  "device_name": "NVIDIA A30",
+  "directed_pairs": 0,
+  "first_token_consistency_cases": 576,
+  "generated_holdouts_opened": false,
+  "interpretation": "All baseline cases preserved. No interventions: behavior-only protocol or no complete family passed its registered reliability gate.",
+  "intervention_forwards": 0,
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    31
+  ],
+  "planned_directed_pairs": 768,
+  "pre_query_invariance_groups": 216,
+  "preflight": {
+    "cases": 576,
+    "config_hash": "e30555f6d497e6c3af76f9599b8bd7d113e57bb8a4e5cc6331128a3ae12bc7a0",
+    "dataset_sha256": "f8c419bf2d49ea66cab464963d5575f0c334a4fc660278692d524ed42ed2fb92",
+    "directed_pairs": 768,
+    "generated_holdouts_opened": false,
+    "prepared_sha256": "41c38b7644ba3054706bbcebeeda4158a036fc7cf23147c65306e5996f3ffb26",
+    "source_sha256": "7670ef6594a6b077a8d360bc4793904fd8fecbb8c887b4e22274f00695aa6a37",
+    "status": "passed"
+  },
+  "torch_peak_memory_bytes": 18735435264,
+  "vector_bank_sha256": "f167ec02f717c19c03358db1f69c75f42b40b37f9920b2c09dce26d3127b837e"
+}

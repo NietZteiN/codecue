@@ -1,0 +1,77 @@
+{
+  "retrieved_utc": "2026-10-25T21:55:32.494700+00:00",
+  "purpose": "Published external benchmark candidates; no code execution or model inference performed",
+  "files": [
+    {
+      "repository": "facebookresearch/cruxeval",
+      "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+      "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/data/cruxeval.jsonl",
+      "path": "artifacts/binding/benchmarks/cruxeval/cruxeval.jsonl",
+      "bytes": 186873,
+      "sha256": "8368b81047dc5014e4caf5a2f97604eff7644e0ecd7415e3ceeb184bbc2e0c96",
+      "examples": 800,
+      "fields": [
+        "code",
+        "id",
+        "input",
+        "output"
+      ],
+      "paper": "https://proceedings.mlr.press/v235/gu24c.html"
+    },
+    {
+      "repository": "facebookresearch/cruxeval",
+      "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+      "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/LICENSE",
+      "path": "artifacts/binding/benchmarks/cruxeval/LICENSE",
+      "bytes": 1061,
+      "sha256": "055ca9e3fa33562173156e02e2350ceff4089deab480b368a849b6bc04f09719",
+      "examples": null,
+      "fields": null,
+      "paper": "https://proceedings.mlr.press/v235/gu24c.html"
+    },
+    {
+      "repository": "suzgunmirac/BIG-Bench-Hard",
+      "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+      "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_three_objects.json",
+      "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/tracking_shuffled_objects_three_objects.json",
+      "bytes": 128736,
+      "sha256": "546cc7bf10c6a01a6a4c17ae28a4966485f21f29fd5d111f37858ec78e354f6b",
+      "examples": 250,
+      "fields": [
+        "input",
+        "target"
+      ],
+      "paper": "https://aclanthology.org/2023.findings-acl.824/"
+    },
+    {
+      "repository": "suzgunmirac/BIG-Bench-Hard",
+      "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+      "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_five_objects.json",
+      "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/tracking_shuffled_objects_five_objects.json",
+      "bytes": 169722,
+      "sha256": "2063a46a4fb484236ed4310523606543a3e1dd4a4dc34eda65d407910ece25a5",
+      "examples": 250,
+      "fields": [
+        "input",
+        "target"
+      ],
+      "paper": "https://aclanthology.org/2023.findings-acl.824/"
+    },
+    {
+      "repository": "suzgunmirac/BIG-Bench-Hard",
+      "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+      "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_seven_objects.json",
+      "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/tracking_shuffled_objects_seven_objects.json",
+      "bytes": 214906,
+      "sha256": "b59fd05b850c37cf57cb514ae1e6975c00b1638ade2291722056b2af3c54084d",
+      "examples": 250,
+      "fields": [
+        "input",
+        "target"
+      ],
+      "paper": "https://aclanthology.org/2023.findings-acl.824/"
+    }
+  ],
+  "inference_performed": false,
+  "original_generated_holdout_unchanged": true
+}

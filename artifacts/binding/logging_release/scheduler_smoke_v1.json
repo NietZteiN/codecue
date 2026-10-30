@@ -1,0 +1,19 @@
+{
+  "job_id": "478379",
+  "purpose": "real CPU reconciliation smoke",
+  "argv": [
+    "sbatch",
+    "--parsable",
+    "--job-name=binding-log-5f498587f4bd",
+    "--account=tnguyen",
+    "--partition=dev",
+    "--cpus-per-task=1",
+    "--mem=1G",
+    "--time=00:02:00",
+    "--dependency=singleton",
+    "--chdir=/work/jvl210002/migration/codecue",
+    "--output=/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/scheduler_jobs/%j.out",
+    "--wrap",
+    "/work/jvl210002/migration/envs/probe-cu129/bin/python /work/jvl210002/migration/codecue/scripts/118_binding_log_scheduler.py tick --force --root /work/jvl210002/migration/codecue"
+  ]
+}

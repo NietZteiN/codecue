@@ -1,0 +1,38 @@
+{
+  "backend": "vllm",
+  "cases": 512,
+  "generation_seconds": 15.69727752590552,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-9dc13b59-7377-2ec1-7886-f5d0252ec8af",
+    "mean_gpu_utilization_percent": 99.72413793103448,
+    "mean_power_watts": 534.3920689655173,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 132555.0,
+    "samples": 29,
+    "selector_verified": true
+  },
+  "output_tokens": 81971,
+  "output_tokens_per_second": 5221.98832662044,
+  "prompt_token_ids_sha256": "ec0559f54ced8dde9cd9b950d0d3ddf291a12c490bde8e46a1bfe37008d61887",
+  "quality": {
+    "both_valid": 491,
+    "correct": 191,
+    "correctness_matches": 490,
+    "n": 512,
+    "parsed_values_match": 426,
+    "raw_matches": 360,
+    "reference_correct": 189,
+    "valid": 495,
+    "validity_matches": 504
+  },
+  "requests_per_second": 32.61712097241299,
+  "setting": {
+    "chunk_size": 256,
+    "gpu_memory_utilization": 0.9,
+    "max_num_batched_tokens": 16384,
+    "max_num_seqs": 256
+  },
+  "status": "complete",
+  "torch_peak_allocated_bytes": null
+}

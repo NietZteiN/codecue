@@ -1,0 +1,17 @@
+# Published benchmark candidates
+
+Search checked October 25, 2026. The recommended next baseline is a published external benchmark; generated programs remain useful for small, controlled mechanism tests.
+
+| Dataset | Published source | Fit for this project |
+|---|---|---|
+| CRUXEval-O | [Gu et al., ICML 2024](https://proceedings.mlr.press/v235/gu24c.html); [official data, prompts and evaluator](https://github.com/facebookresearch/cruxeval) | Primary code-output prediction benchmark. The release contains 800 Python functions with input/output pairs. It supplies published baselines and avoids defining another main evaluation dataset. |
+| BIG-Bench Hard: Tracking Shuffled Objects | [Suzgun et al., Findings of ACL 2023](https://aclanthology.org/2023.findings-acl.824/); [official dataset and prompts](https://github.com/suzgunmirac/BIG-Bench-Hard) | Complementary arithmetic-free entity tracking. The downloaded three-, five- and seven-object files each contain 250 examples. This evaluates tracking in natural language rather than Python execution. |
+| LiveCodeBench execution | [ICLR 2025 paper](https://openreview.net/pdf?id=chfJJYC3iL); [official execution dataset](https://huggingface.co/datasets/livecodebench/execution-v2) and [runner](https://github.com/LiveCodeBench/LiveCodeBench) | Additional code-execution validation drawn from competitive-programming tasks. Pin the execution dataset revision separately from the frequently discussed code-generation releases. |
+
+The official CRUXEval data and the three BBH tracking files were downloaded without executing their contents or querying a model at download time. Exact repository commits, file hashes, counts, schema fields and paper URLs are recorded in `artifacts/binding/benchmarks/published_datasets_manifest.json`. Repository licenses are retained with the downloads. LiveCodeBench was inspected as an additional candidate and has not been downloaded here.
+
+The [completed behavioral baseline and audit](published_baseline_review.md) now cover all 2,350 planned predictions on the 1,550 released questions. CRUXEval was evaluated under both released direct and CoT prompt contents, with an explicitly adapted native chat wrapper and literal-only scoring. The [decision memo](published_decision.md) highlights the substantial direct-mode postprocessing mismatch and recommends a fixed serialization comparison before claiming a published-score reproduction. No downloaded program or model-generated code was executed.
+
+Recommended sequence: reproduce a CRUXEval-O behavioral baseline using the authors' prompts and evaluator, then run the BBH tracking subsets as a complementary baseline. These tasks require their own answer formats and scoring; the restricted signed-integer parser and semantic interpreter do not cover all benchmark examples. Report the actual checkpoint, decoding configuration and complete accuracy, even if performance is low. The earlier synthetic-calibration gate governs its mechanism studies, not whether a published benchmark score may be measured.
+
+Keep the benchmark releases intact for comparability. Any later filtered subset or renamed/counterfactual derivative should have separate IDs, selection rules and results. Controlled variants can support a mechanism claim after behavior is understood. Adopting a cited benchmark supplies an external evaluation target; it does not itself establish novelty or causal validity.

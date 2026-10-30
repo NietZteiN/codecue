@@ -1,0 +1,731 @@
+{
+  "activation_arrays_opened_for_handoff": false,
+  "automatic_logging": {
+    "enabled": true,
+    "healthy": true,
+    "interval_minutes": 10,
+    "issues": [],
+    "pending_successor_guards": 2
+  },
+  "computation_sources": {
+    "dev_clusters": 12,
+    "logical_memberships": 6912,
+    "minimum_required_gate_unique_support": 30,
+    "root_order_clusters": 24,
+    "shared_descriptive_literal_controls": 68,
+    "train_clusters": 12,
+    "unique_sources": 6700
+  },
+  "evaluation_role": "discovery_computation_routing_completed_handoff_v1",
+  "generated_holdouts_opened": false,
+  "limitations": [
+    "Fresh adaptive discovery calibration on familiar restricted forms; no independent confirmation or unfamiliar-program prediction.",
+    "arithmetic_only is one assignment followed by its variable readout, not a pure expression calculation.",
+    "Only the queried root is computed; the other three roots are literal distractors.",
+    "Compact and larger expressions share operator and operand-sign patterns; magnitude ranges partly overlap and tokenization/cancellation extent change.",
+    "Full-root and full-leaf questions have identical bodies and correct answers; query identifier and definition recency still differ.",
+    "Literal isolated controls can be shared across splits; reused logical views are dependent and excluded only where prospectively specified.",
+    "Question/form curves pool query slots, signs, operators and copy depths and are descriptive point estimates, not qualification gates.",
+    "Primary DEV contrasts resample 12 whole root-order clusters, conditional on fixed numeric/templates, with 2000 draws and no multiplicity adjustment.",
+    "Numeric seeds, lexical forms, copy topologies and instruction variants are related cases, not independent structural replications.",
+    "Behavioral differences do not observe an intermediate internal state or identify a copying, binding or selection mechanism.",
+    "Historical failed gates, sealed final/extrapolation outcomes, optional training and mechanism claims are unchanged.",
+    "Full-root and full-leaf share the same program body and answer but differ in query identifier, variable age, role cues and recency; this is not causal copy isolation.",
+    "The 24 root orders contain related topologies; the 72 order-depth units are not independent program families.",
+    "Varied schedule targets alone do not establish learned version recovery. Existing fixed-schedule heads require a generic replacement.",
+    "All six gates failed; software completion does not establish scientific reliability. Original causal and unfamiliar-program claims remain open."
+  ],
+  "models": {
+    "codellama34b": {
+      "physical_counts": {
+        "accuracy": 0.44407960199004975,
+        "correct": 8926,
+        "invalid": 429,
+        "invalid_rate": 0.02134328358208955,
+        "n": 20100,
+        "valid": 19671
+      },
+      "prospective_gates": [
+        {
+          "development_cells_passed": false,
+          "failed_dev_cells": 32,
+          "failed_train_cells": 30,
+          "numeric_development_qualified": false,
+          "required_dev_cells": 44,
+          "required_train_cells": 44,
+          "status": "failed",
+          "training_qualified": false,
+          "variant": "routing_output_v1"
+        },
+        {
+          "development_cells_passed": false,
+          "failed_dev_cells": 36,
+          "failed_train_cells": 36,
+          "numeric_development_qualified": false,
+          "required_dev_cells": 44,
+          "required_train_cells": 44,
+          "status": "failed",
+          "training_qualified": false,
+          "variant": "routing_execute_v1"
+        },
+        {
+          "development_cells_passed": false,
+          "failed_dev_cells": 30,
+          "failed_train_cells": 30,
+          "numeric_development_qualified": false,
+          "required_dev_cells": 44,
+          "required_train_cells": 44,
+          "status": "failed",
+          "training_qualified": false,
+          "variant": "routing_value_v1"
+        }
+      ],
+      "resources": {
+        "backend_wall_seconds_total": 341.82001896499423,
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "engine": {
+          "gpu_memory_utilization": 0.95,
+          "max_num_batched_tokens": 4096,
+          "max_num_seqs": 128,
+          "tensor_parallel_size": 1
+        },
+        "generation_requests_per_second": 223.56387085892263,
+        "generation_seconds": 89.9071926191682,
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+          "mean_gpu_utilization_percent": 96.6951219512195,
+          "mean_power_watts": 675.8650609756097,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 78507.0,
+          "samples": 164,
+          "selector_verified": true
+        },
+        "load_warmup_seconds": 248.27343320898945,
+        "scope": "Generation timing/utilization excludes engine loading; GPU memory includes allocator reservations/KV cache.",
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1",
+          "vllm": "0.26.0+cu129"
+        }
+      },
+      "scored_unique_cases": 20100,
+      "status": "complete_audited"
+    },
+    "llama8b": {
+      "physical_counts": {
+        "accuracy": 0.7465671641791045,
+        "correct": 15006,
+        "invalid": 671,
+        "invalid_rate": 0.033383084577114426,
+        "n": 20100,
+        "valid": 19429
+      },
+      "prospective_gates": [
+        {
+          "development_cells_passed": false,
+          "failed_dev_cells": 18,
+          "failed_train_cells": 17,
+          "numeric_development_qualified": false,
+          "required_dev_cells": 44,
+          "required_train_cells": 44,
+          "status": "failed",
+          "training_qualified": false,
+          "variant": "routing_output_v1"
+        },
+        {
+          "development_cells_passed": false,
+          "failed_dev_cells": 30,
+          "failed_train_cells": 29,
+          "numeric_development_qualified": false,
+          "required_dev_cells": 44,
+          "required_train_cells": 44,
+          "status": "failed",
+          "training_qualified": false,
+          "variant": "routing_execute_v1"
+        },
+        {
+          "development_cells_passed": false,
+          "failed_dev_cells": 21,
+          "failed_train_cells": 20,
+          "numeric_development_qualified": false,
+          "required_dev_cells": 44,
+          "required_train_cells": 44,
+          "status": "failed",
+          "training_qualified": false,
+          "variant": "routing_value_v1"
+        }
+      ],
+      "resources": {
+        "backend_wall_seconds_total": 260.6839199310052,
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "engine": {
+          "gpu_memory_utilization": 0.95,
+          "max_num_batched_tokens": 16384,
+          "max_num_seqs": 512,
+          "tensor_parallel_size": 1
+        },
+        "generation_requests_per_second": 1199.9303390735645,
+        "generation_seconds": 16.750972406880464,
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+          "mean_gpu_utilization_percent": 84.47058823529412,
+          "mean_power_watts": 618.7688235294117,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 80767.0,
+          "samples": 34,
+          "selector_verified": true
+        },
+        "load_warmup_seconds": 240.25679236097494,
+        "scope": "Generation timing/utilization excludes engine loading; GPU memory includes allocator reservations/KV cache.",
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1",
+          "vllm": "0.26.0+cu129"
+        }
+      },
+      "scored_unique_cases": 20100,
+      "status": "complete_audited"
+    }
+  },
+  "mutable_paths_not_pinned": [
+    "README.md",
+    "reports/binding/implementation_checklist.md",
+    "reports/binding/preparation_readiness.md",
+    "reports/binding/experiment_log.md",
+    "artifacts/binding/computation_routing/20261028_v1/readiness_live_v1.json",
+    "artifacts/binding/experiment_log/index.sqlite3"
+  ],
+  "new_fits_for_handoff": 0,
+  "new_model_queries_for_handoff": 0,
+  "optional_extensions_deferred": 3,
+  "pins": [
+    {
+      "bytes": 468,
+      "path": "artifacts/binding/computation_routing/20261028_v1/backfill_review_v1.json",
+      "sha256": "0367d5b86c9e83c37a30d3aafa726a0662f6435fe36b336b9e02a3c80a1dfa56"
+    },
+    {
+      "bytes": 10648,
+      "path": "artifacts/binding/computation_routing/20261028_v1/close_handoff_v1.py",
+      "sha256": "5b178afcc3c4b60bc71f2fb4918d645ae212bf6a1da0170c6588977b96c471a8"
+    },
+    {
+      "bytes": 5704,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/audit.json",
+      "sha256": "374bfa25343165e7fc5f4e6f1bf4253e6c3390acaef6b6ff0f81be3bfda76628"
+    },
+    {
+      "bytes": 51576,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/manifest.json",
+      "sha256": "41fc1e986c6e9205425c637e213e0cada018600e7923db5c6e479c55fdbc2a7a"
+    },
+    {
+      "bytes": 751,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/runtime.json",
+      "sha256": "560787c70ac5f22cc3d32378c5059f7fb340e4754ef5d3d41f8aa6f7578a88d0"
+    },
+    {
+      "bytes": 4358,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/summary.json",
+      "sha256": "10634f9b38f8212940a243c24c5a3ac0ca029de3058f143d53721f16e569c0cd"
+    },
+    {
+      "bytes": 2838827,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/review_v1.json",
+      "sha256": "c8d51c4d73c813f5daf78873345b5a6f1e7ce45583b91bc428281274191807df"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_attempts_v1.json",
+      "sha256": "e0144fff14c3144481722a9dc1c6863d0d0ed14d22f42cfef4acbc7fd1e2899e"
+    },
+    {
+      "bytes": 1185,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_completion_v1.json",
+      "sha256": "45623261edccade2d013d3bd73279035791a91b25da73fe21faa3bd872208b0b"
+    },
+    {
+      "bytes": 1383,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_preflight_v1.json",
+      "sha256": "856e56b54423c610e8d46ce054056d95febcae749f405f4e152bff040d0f0ebc"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/tokenizer_preflight.json",
+      "sha256": "712c5b12cbdc354ab4403f53f80d2ad9d4cf26ef6fbff0c681568e3bf1823435"
+    },
+    {
+      "bytes": 1334187,
+      "path": "artifacts/binding/computation_routing/20261028_v1/comparison_v1.json",
+      "sha256": "acf54d1c265c30d89983af1a92bb61cd15591e384fb51bd9a041817e8367e8fd"
+    },
+    {
+      "bytes": 194442,
+      "path": "artifacts/binding/computation_routing/20261028_v1/contrasts_v1.csv",
+      "sha256": "aeafbf63823dc45292a87466056033223de40cd19dcb5930ae79855a6189ca81"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/computation_routing/20261028_v1/execution_source_v1.json",
+      "sha256": "435b4dc3eca372ef33f9d3a6af9cc6e79c20b6c3a5c9582eaf9a6054cb7443d8"
+    },
+    {
+      "bytes": 728,
+      "path": "artifacts/binding/computation_routing/20261028_v1/figure_review_v1.json",
+      "sha256": "2ba7232025f660660715b010380b6270c3d0815d813d7975882f5b62537be935"
+    },
+    {
+      "bytes": 32634,
+      "path": "artifacts/binding/computation_routing/20261028_v1/form_cells_v1.csv",
+      "sha256": "31a790b76fc98e1f2bc475da2ef105e58c6c810830671d36c286b653d678dc8c"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/computation_routing/20261028_v1/generation_source_v1.json",
+      "sha256": "01640fa77cbf2c7fdcfb9e63ccbdb6dd1dd58d978db00af72b90a1f16cbe6ef4"
+    },
+    {
+      "bytes": 16580,
+      "path": "artifacts/binding/computation_routing/20261028_v1/independent_execution_review_v1.json",
+      "sha256": "d2f5407b9a6603f5112b4681b7c45b0ab4510fc1f0316854a9eb395c81345ecf"
+    },
+    {
+      "bytes": 1116,
+      "path": "artifacts/binding/computation_routing/20261028_v1/jobs_v1.json",
+      "sha256": "aea5acf28ea44002ecb45fbf95a161962812d75ae48236791701819c169572bd"
+    },
+    {
+      "bytes": 5715,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/audit.json",
+      "sha256": "910a35ca31b1e897a6fb28d143afacb6c59a768e573b82fe06efac940fb31470"
+    },
+    {
+      "bytes": 51553,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/manifest.json",
+      "sha256": "5c1d5496a86ec0308205656b24f197a060cba10424f2b759999b597aa897d27a"
+    },
+    {
+      "bytes": 752,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/runtime.json",
+      "sha256": "202cbc0ec52ceea50d0322dd06073ca346859fc51dac887411d4731646bfed19"
+    },
+    {
+      "bytes": 4371,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/summary.json",
+      "sha256": "a2eb63d5b300d49ecfb77ce1e7b8047492279c385bb4fcbf37aa4532be657ef0"
+    },
+    {
+      "bytes": 2833652,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/review_v1.json",
+      "sha256": "2cb6c6f1e7345fb2792c23e4421f4b83dc7f355d0c1991511a02f3f3dced1540"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_attempts_v1.json",
+      "sha256": "b8a5930f2c03920c61d9096c77634086d8aadf9b20ae0ab8a480a16fe29a1c09"
+    },
+    {
+      "bytes": 1175,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_completion_v1.json",
+      "sha256": "6077b2d7ed957f5ec0c8433d7fb7fe594a2c750538e2eef2645ec243864d483a"
+    },
+    {
+      "bytes": 1373,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_preflight_v1.json",
+      "sha256": "87d4c26996707c7b7eefeeee3a88ef6bb21f76605752cf8a29b54d2784817bdb"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/tokenizer_preflight.json",
+      "sha256": "c5d64bc9e03edf4328c9e15ada0f0cd502d35c19438bd24b49f9e69734ccfd8c"
+    },
+    {
+      "bytes": 3680,
+      "path": "artifacts/binding/computation_routing/20261028_v1/log_tick_completion_stdout_v1.txt",
+      "sha256": "cdd137710c4d6a3606cdaa7390de8ee1e7019f5417409bf721f28021fccb99f8"
+    },
+    {
+      "bytes": 2835,
+      "path": "artifacts/binding/computation_routing/20261028_v1/logging_review_v1.json",
+      "sha256": "26a79849cc041be20b67d6d460eda1a6de24042601418eea9a648fe65e1a6994"
+    },
+    {
+      "bytes": 220,
+      "path": "artifacts/binding/computation_routing/20261028_v1/publication_job_v1.json",
+      "sha256": "10c0b5dcf64a6454587016c4ee51090d7ff3860d67a2f15f936eb990d9c4e7f7"
+    },
+    {
+      "bytes": 6814,
+      "path": "artifacts/binding/computation_routing/20261028_v1/publication_review_v1.json",
+      "sha256": "4b390cecbc7f915f4eab4877baa707311fcf4ced0dfefb489a4c5db2f47cea9f"
+    },
+    {
+      "bytes": 330,
+      "path": "artifacts/binding/computation_routing/20261028_v1/publication_setup_review_v1.json",
+      "sha256": "b60de62c36ccdd8d1b363bd062fec683e9bce8c00e9011057a5c2ddb2a169d41"
+    },
+    {
+      "bytes": 42326,
+      "path": "artifacts/binding/computation_routing/20261028_v1/publish_results_v1.py",
+      "sha256": "4691860c03772657dd1de340ccdd9e69ec1003d9a4592789bc613121b857b569"
+    },
+    {
+      "bytes": 300,
+      "path": "artifacts/binding/computation_routing/20261028_v1/qa_job_v1.json",
+      "sha256": "79155fe95174ed7be284eb773e7b20ab65a8c5066e7b0fe0420331650eb262f3"
+    },
+    {
+      "bytes": 66114,
+      "path": "artifacts/binding/computation_routing/20261028_v1/readiness_at_completion_v1.json",
+      "sha256": "2d3fb61bd73231d9e02661ff3952f9f093810374b1e1e94f0902a056b51ad295"
+    },
+    {
+      "bytes": 66114,
+      "path": "artifacts/binding/computation_routing/20261028_v1/readiness_refresh_stdout_v1.txt",
+      "sha256": "2d3fb61bd73231d9e02661ff3952f9f093810374b1e1e94f0902a056b51ad295"
+    },
+    {
+      "bytes": 388,
+      "path": "artifacts/binding/computation_routing/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "4d19516f6286121b9371c378d9dbc22aded759d9641221d1f4bd4c03157c1412"
+    },
+    {
+      "bytes": 262490,
+      "path": "artifacts/binding/computation_routing/20261028_v1/regression_sources_v1.zip",
+      "sha256": "0b3dc8f92b0cca6f67ee3e6c85b9a20008d51b59ffe525e1ad6da59025fabdb9"
+    },
+    {
+      "bytes": 2113,
+      "path": "artifacts/binding/computation_routing/20261028_v1/regression_stdout_v1.txt",
+      "sha256": "629a1441a3934411a9e45e115e840aaaf546d6be4431a4644a407b6769513f41"
+    },
+    {
+      "bytes": 283775,
+      "path": "artifacts/binding/computation_routing/20261028_v1/regression_v1.xml",
+      "sha256": "8eef591f2558080b0c999637f15544355e29a76d821e18bccdbf5e84ee927456"
+    },
+    {
+      "bytes": 2199,
+      "path": "artifacts/binding/computation_routing/20261028_v1/resource_review_v1.json",
+      "sha256": "1c0d37ba4e35e3d95b031b1583f9acdeb2767e489041a80d70a1566d9715e28f"
+    },
+    {
+      "bytes": 218,
+      "path": "artifacts/binding/computation_routing/20261028_v1/routing_jobs_v1.json",
+      "sha256": "0d5dd2370cc03fb3b950920bc150f6107b3cea181e5de3f2e2887cffc3b89bb8"
+    },
+    {
+      "bytes": 272,
+      "path": "artifacts/binding/computation_routing/20261028_v1/run_publication_v1.py",
+      "sha256": "ef83bfa0f9d9b3e5ba02e21ae59d8834a0f7912067bd166aee0079fa5f4d22c5"
+    },
+    {
+      "bytes": 2739,
+      "path": "artifacts/binding/computation_routing/20261028_v1/run_validation_v1.py",
+      "sha256": "f98061b2e8ac0debe6b73ff88c52e113103503699c1e06cac68c83be2aa17a55"
+    },
+    {
+      "bytes": 1823,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_build_stdout_v1.txt",
+      "sha256": "a746f95bd9c9610217ec50f283485d2600dc700e8816049be90425bad1d3e4c5"
+    },
+    {
+      "bytes": 624,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_build_stdout_v2.txt",
+      "sha256": "e73c925089b8f6212ced1ddebee3b1ec1be573579f6774e25cddea1ba54b4186"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_generation_source_v1.json",
+      "sha256": "35eaa0088fa77d01585a461a5f7a5a7a3059a0cf5b4d27200e79ec2701db2f16"
+    },
+    {
+      "bytes": 6861,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_preparation_review_v1.json",
+      "sha256": "3b0430c5dee86170f6a9847fc808aa567565b34d0fd3abe7b086abb31175e1f4"
+    },
+    {
+      "bytes": 539,
+      "path": "artifacts/binding/computation_routing/20261028_v1/schedule_setup_review_v1.json",
+      "sha256": "5980843a8d5a5a7aebff3cf8060fcdbfd54654154d37a9e2e19b1a07a2930be2"
+    },
+    {
+      "bytes": 968,
+      "path": "artifacts/binding/computation_routing/20261028_v1/software_validation_review_v1.json",
+      "sha256": "92348510df0fcbf01fafc2cb2db407a2fb76239ddc20d4bfa7af70f4ebb1bf25"
+    },
+    {
+      "bytes": 40573,
+      "path": "artifacts/binding/computation_routing/20261028_v1/source_build_stdout_v1.txt",
+      "sha256": "c1816e0faf3d214522c2a0c77f9f8358dbcb2da0bd0b1912f914c577604abde1"
+    },
+    {
+      "bytes": 4579,
+      "path": "artifacts/binding/computation_routing/20261028_v1/source_handoff_review_v1.json",
+      "sha256": "457efa24b28262c82a70167572f7d8e9210c060e26d272093ffe36bb907f167e"
+    },
+    {
+      "bytes": 40573,
+      "path": "artifacts/binding/computation_routing/20261028_v1/source_review_v1.json",
+      "sha256": "c1816e0faf3d214522c2a0c77f9f8358dbcb2da0bd0b1912f914c577604abde1"
+    },
+    {
+      "bytes": 25762660,
+      "path": "artifacts/binding/computation_routing/20261028_v1/sources.jsonl",
+      "sha256": "a05908070277c191bc0a3b173cd7925be41e09ec48c59ad8cf19a1fbd049acce"
+    },
+    {
+      "bytes": 23466,
+      "path": "artifacts/binding/computation_routing/20261028_v1/sources.manifest.json",
+      "sha256": "f7753f6e9f70f94746ad409044f55d27278552ee409cf84197489615cd5f94d8"
+    },
+    {
+      "bytes": 741,
+      "path": "artifacts/binding/computation_routing/20261028_v1/submission_review_v1.json",
+      "sha256": "72e672469beb165e0f37f5e23d34ea664bd71fb2f7f2189ac6d37ce51a9c02cd"
+    },
+    {
+      "bytes": 17055,
+      "path": "artifacts/binding/overnight_relationships/20261028_completion_v1/handoff_review_v1.json",
+      "sha256": "a1dbdc09ee0627a7cd54fa58e47a9170a5a584380e5a7c1d57f2448e6566c6fe"
+    },
+    {
+      "bytes": 27285,
+      "path": "artifacts/binding/relationships/schedule_source_review_v1.json",
+      "sha256": "7456396fde73db184a3399871b69905e06147e369a6a4d5ef8b48246dcd6f8a0"
+    },
+    {
+      "bytes": 25636666,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+      "sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287"
+    },
+    {
+      "bytes": 23668,
+      "path": "artifacts/binding/relationships/schedule_sources_v1.manifest.json",
+      "sha256": "f08ac66c7b43c18f2d0627159d071f9936de13925695b23407d9b9375aca66c5"
+    },
+    {
+      "bytes": 51150,
+      "path": "artifacts/binding/sources/75eea9bcbf957834772dfbc6/frozen_manifest.json",
+      "sha256": "075d69bc7f13cc75e267833375dd9e9e7372040a3e0300b16330aa7b8c86c6da"
+    },
+    {
+      "bytes": 51283,
+      "path": "artifacts/binding/sources/8354aa7c9058e5346efa360a/frozen_manifest.json",
+      "sha256": "7ce65ec275f576023e7f7c10590eaea1ae29bc61669aa0c42d725782da155080"
+    },
+    {
+      "bytes": 2893,
+      "path": "artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/configs/binding/computation_routing_20261028_v1/codellama34b.json",
+      "sha256": "16fd74398a18246d4b6b01bcccd6f938d8a5b4c347a56fabb7f61a37046aeb22"
+    },
+    {
+      "bytes": 2869,
+      "path": "artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/configs/binding/computation_routing_20261028_v1/llama8b.json",
+      "sha256": "87200669449d987000a79923425fb9d30edcea08dfa86d5a0c1249a76ff73b11"
+    },
+    {
+      "bytes": 51560,
+      "path": "artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/frozen_manifest.json",
+      "sha256": "1666e9fd98fd5790167e4ad5e089f59a63e7aae5b60fc1f1c5e72d0899bf0009"
+    },
+    {
+      "bytes": 2893,
+      "path": "configs/binding/computation_routing_20261028_v1/codellama34b.json",
+      "sha256": "16fd74398a18246d4b6b01bcccd6f938d8a5b4c347a56fabb7f61a37046aeb22"
+    },
+    {
+      "bytes": 511,
+      "path": "configs/binding/computation_routing_20261028_v1/generation.json",
+      "sha256": "aba9fad707aa8b1a1f5b5e2704550b9efb4d33e1133dfd01e2b33be1a6e7590c"
+    },
+    {
+      "bytes": 2869,
+      "path": "configs/binding/computation_routing_20261028_v1/llama8b.json",
+      "sha256": "87200669449d987000a79923425fb9d30edcea08dfa86d5a0c1249a76ff73b11"
+    },
+    {
+      "bytes": 53026,
+      "path": "configs/binding/preparation/readiness_v14.json",
+      "sha256": "bf08c3527935c8df2f77e762935f6c543c4f0f41c50ec86ef5935e51d8d53816"
+    },
+    {
+      "bytes": 544,
+      "path": "configs/binding/relationships/schedule_generation_v1.json",
+      "sha256": "cacc91528dea5f8e35aed93fdc03550a817a184c47ba2051ca209282183ae2af"
+    },
+    {
+      "bytes": 542,
+      "path": "configs/binding/relationships/schedule_generation_v2.json",
+      "sha256": "6ebd641bd9f6b3a59b74d3c1d9587277761432120d37c28fa127c9ebf4720e90"
+    },
+    {
+      "bytes": 1087,
+      "path": "log/slurm/481109_computation-routing-publication.json",
+      "sha256": "2f042cd5d12a79fc54cf7c2e7e20af77bfec75473689c5fb9c283f1e3966565b"
+    },
+    {
+      "bytes": 940,
+      "path": "log/slurm/481109_computation-routing-publication.out",
+      "sha256": "77f95fb7b801b8d4b19b3a6fd5103922ca8ac38702f9d5f1d75daff37cd8e4f3"
+    },
+    {
+      "bytes": 2631,
+      "path": "reports/binding/computation_routing_decision_v1.md",
+      "sha256": "8f5e5038690b84ef22ffdb6f3beb5b016ebd3353b08ad2731f405a17089670b2"
+    },
+    {
+      "bytes": 7350,
+      "path": "reports/binding/computation_routing_findings_v1.md",
+      "sha256": "0f45dbd9c101f80ae3e7e9173887a67f1d1723d4dcb7592921d0641c1bbab208"
+    },
+    {
+      "bytes": 6790,
+      "path": "reports/binding/computation_routing_plan_v1.md",
+      "sha256": "d8116ea507adbb900cc8a886b43c256465b0642ff4f0a0d23a9dbdd3c9a3bdfe"
+    },
+    {
+      "bytes": 1142,
+      "path": "reports/binding/computation_routing_status_v1.md",
+      "sha256": "56ca783a1d4d68de77a167297c04d087dd5c5426c494660b6251bc7df097a258"
+    },
+    {
+      "bytes": 319582,
+      "path": "reports/binding/figures/computation_routing_v1.png",
+      "sha256": "a8540faa7070e6914ebaa272afc8203495955aee5768ee84047c7ce0d0e42fd7"
+    },
+    {
+      "bytes": 132973,
+      "path": "reports/binding/figures/computation_routing_v1.svg",
+      "sha256": "cdfee91bd114c572c194ba256aaf8e1059bd0e7e0f3acfb0065b946aac1f00da"
+    },
+    {
+      "bytes": 2534,
+      "path": "reports/binding/relationship_schedule_preparation_v1.md",
+      "sha256": "31ada02f23016a71c7d69cf1bf1c6c17a58058f9a12e240f56c8f0dc5cbfc8ce"
+    }
+  ],
+  "publication_reproduction": "CPU worker ran publisher twice; second invocation reproduced all outputs byte for byte.",
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 48
+  },
+  "recorded_utc": "2026-10-28T15:19:04.399007+00:00",
+  "resource_accounting": {
+    "allocated_cpu_seconds": 11288,
+    "gpu_allocation_seconds": 845,
+    "jobs": {
+      "481034": {
+        "allocated_cpus": 8,
+        "allocated_tres": "billing=8,cpu=8,mem=16G,node=1",
+        "allocation_seconds": 397,
+        "exit_code": "0:0",
+        "partition": "normal",
+        "state": "COMPLETED"
+      },
+      "481065": {
+        "allocated_cpus": 4,
+        "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+        "allocation_seconds": 131,
+        "exit_code": "0:0",
+        "partition": "normal",
+        "state": "COMPLETED"
+      },
+      "481068": {
+        "allocated_cpus": 4,
+        "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+        "allocation_seconds": 100,
+        "exit_code": "0:0",
+        "partition": "dev",
+        "state": "COMPLETED"
+      },
+      "481069": {
+        "allocated_cpus": 8,
+        "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h100_80gb_hbm3=1,gres/gpu=1,mem=48G,node=1",
+        "allocation_seconds": 381,
+        "exit_code": "0:0",
+        "partition": "h100",
+        "state": "COMPLETED"
+      },
+      "481070": {
+        "allocated_cpus": 8,
+        "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h100_80gb_hbm3=1,gres/gpu=1,mem=96G,node=1",
+        "allocation_seconds": 464,
+        "exit_code": "0:0",
+        "partition": "h100",
+        "state": "COMPLETED"
+      },
+      "481071": {
+        "allocated_cpus": 8,
+        "allocated_tres": "billing=8,cpu=8,mem=24G,node=1",
+        "allocation_seconds": 25,
+        "exit_code": "0:0",
+        "partition": "normal",
+        "state": "COMPLETED"
+      },
+      "481072": {
+        "allocated_cpus": 8,
+        "allocated_tres": "billing=8,cpu=8,mem=24G,node=1",
+        "allocation_seconds": 24,
+        "exit_code": "0:0",
+        "partition": "normal",
+        "state": "COMPLETED"
+      },
+      "481109": {
+        "allocated_cpus": 4,
+        "allocated_tres": "billing=4,cpu=4,mem=8G,node=1",
+        "allocation_seconds": 9,
+        "exit_code": "0:0",
+        "partition": "normal",
+        "state": "COMPLETED"
+      }
+    },
+    "scope": "SLURM worker allocation time including startup, IO and review; not CUDA kernel time. Queue waits excluded.",
+    "unrelated_jobs_canceled": false
+  },
+  "schedule_sources": {
+    "canonical_ssa_graph_families": 15,
+    "dev_graph_families": 5,
+    "learned_readout_compatible": false,
+    "maximum_assignment_version": 4,
+    "prior_alpha_structure_overlap": 3,
+    "prior_canonical_ast_overlap": 0,
+    "prior_exact_source_overlap": 0,
+    "rows": 2016,
+    "targets_prepared_only": true,
+    "train_graph_families": 10
+  },
+  "scientific_decisions_remaining": 9,
+  "scientific_work": {
+    "confirmed_warmup_requests": 16,
+    "hidden_state_captures": 0,
+    "logical_responses": 41472,
+    "new_fits": 0,
+    "prospective_instruction_gates": 6,
+    "qualified_instruction_gates": 0,
+    "scored_physical_responses": 40200,
+    "total_model_requests": 40216
+  },
+  "scope": "adaptive discovery; completed negative qualification",
+  "setup_history": [
+    "Initial schedule overlap configuration was rejected before source publication; corrected v2 is frozen. No model work was repeated.",
+    "A publication dependency submission failed after completed dependency records aged out; verified zero exit codes before resubmission. No scientific rerun.",
+    "Pending 34B backfill minimum changed from 30 to 15 minutes; maximum remained 48 hours. Completed in 464 seconds without retry."
+  ],
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1843
+  },
+  "source": {
+    "code": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/eb42de7a8ba9e27d987a5a69",
+    "snapshot_id": "eb42de7a8ba9e27d987a5a69"
+  },
+  "status": "complete_audited",
+  "tracked_tasks": 60
+}

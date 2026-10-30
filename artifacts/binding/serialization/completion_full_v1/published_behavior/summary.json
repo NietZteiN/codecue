@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "cruxeval_metric_limit": "literal equality without execution; expressions and function calls get no credit",
+  "decoding": "one greedy completion per item; no sampled pass@k",
+  "evaluated": 1600,
+  "generated_holdouts_opened": false,
+  "gpu_peak_bytes": 20022770176,
+  "metric": "python_literal_equality_and_bbh_final_letter_v2",
+  "planned": 1600,
+  "responses_sha256": "4f482f28e7ef305ae8c882ea5ac441df0916228e23773e9b4a6642b1ab936fad",
+  "serialization": "released CRUXEval prompt content as a completion prefix; one BOS plus reference SentencePiece encoding",
+  "tasks": [
+    {
+      "accuracy": 0.36875,
+      "correct": 295,
+      "evaluated": 800,
+      "evaluated_accuracy": 0.36875,
+      "planned": 800,
+      "task": "cruxeval_o_direct",
+      "token_limited": 8,
+      "upstream_postprocessing_literal_correct": 295,
+      "valid": 787
+    },
+    {
+      "accuracy": 0.3625,
+      "correct": 290,
+      "evaluated": 800,
+      "evaluated_accuracy": 0.3625,
+      "planned": 800,
+      "task": "cruxeval_o_cot",
+      "token_limited": 38,
+      "upstream_postprocessing_literal_correct": 290,
+      "valid": 755
+    }
+  ]
+}

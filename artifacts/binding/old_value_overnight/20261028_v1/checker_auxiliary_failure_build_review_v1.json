@@ -1,0 +1,69 @@
+{
+  "causal_qualification": false,
+  "change": "Overall execution now fails when any WORK or AUX stage fails. Scientific completion and gate status are unchanged; waiting/running auxiliary stages do not fail an otherwise completed scientific run.",
+  "current_files": [
+    {
+      "bytes": 20890,
+      "path": "src/codecue/binding/old_value_overnight.py",
+      "sha256": "294f47f3b5da3cc49c5e180f7785e6ee5fc8fb886b18005ee8e879c113a251d8"
+    },
+    {
+      "bytes": 13916,
+      "path": "tests/binding/test_old_value_overnight.py",
+      "sha256": "bfa713e425592fe0325be01d055747261b2e8d2be24291848fb76d1f1d9d9c9a"
+    }
+  ],
+  "diagnosis": "Stage statuses already recognized failed publication/morning jobs, but overall failure and attention aggregation used only scientific WORK stages.",
+  "evaluation_role": "discovery_old_value_checker_auxiliary_failure_build_v1",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "preserved_frozen_source": {
+    "checker": {
+      "bytes": 20831,
+      "path": "artifacts/binding/sources/4206d21342e20115539c3b55/src/codecue/binding/old_value_overnight.py",
+      "sha256": "867f9465745573ad0556e57e4762b1596a89bcd62fdf00f30045f13b9535236a"
+    },
+    "config_files_verified": 258,
+    "pipeline_helpers_verified": 8,
+    "snapshot_id": "4206d21342e20115539c3b55",
+    "source_files_verified": 215,
+    "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334"
+  },
+  "recorded_at": "2026-10-29T01:48:44.844680+00:00",
+  "reproduction": {
+    "artifact": {
+      "bytes": 5566,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/checker_auxiliary_failure_reproduction_v1.txt",
+      "sha256": "7c807def245bb5f0615c5d4796fa46b6835af1e33bb3167bf6a73b044e16bbf0"
+    },
+    "command": "PYTHONPATH=src /work/jvl210002/migration/envs/probe-cu129/bin/python -m pytest -q tests/binding/test_old_value_overnight.py -k auxiliary --tb=line",
+    "deselected": 18,
+    "exit_code": 1,
+    "expected_failures": 14
+  },
+  "scientific_results_modified": false,
+  "scope": "Current tree only. Frozen S7 source, queued morning worker, pinned suite helpers, and completed scientific artifacts retain their original identities.",
+  "status": "passed",
+  "validation": {
+    "command": "PYTHONPATH=src /work/jvl210002/migration/envs/probe-cu129/bin/python -m pytest -q tests/binding/test_old_value_overnight.py --junitxml=artifacts/binding/old_value_overnight/20261028_v1/checker_auxiliary_failure_regression_v1.xml",
+    "counts": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 32
+    },
+    "existing_cases": 18,
+    "exit_code": 0,
+    "junit": {
+      "bytes": 5495,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/checker_auxiliary_failure_regression_v1.xml",
+      "sha256": "5dcbf5caf4f553c773faff70ed21cbcce55daa88d8ae5b8c5e619e06853be315"
+    },
+    "new_failure_regression_cases": 14,
+    "stdout": {
+      "bytes": 99,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/checker_auxiliary_failure_regression_v1.txt",
+      "sha256": "d35bb24c2188acda3617cb0abb30c15d0c71f42e437228bf312fa71899539b1e"
+    }
+  }
+}

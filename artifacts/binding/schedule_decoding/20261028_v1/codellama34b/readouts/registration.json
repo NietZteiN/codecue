@@ -1,0 +1,61 @@
+{
+  "capture_source": {
+    "frozen_manifest_sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26",
+    "source_sha256": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99"
+  },
+  "config": {
+    "capture_config": "configs/binding/schedule_decoding_20261028_v1/codellama34b_capture.json",
+    "capture_config_sha256": "f1e2d98e3704457e1bf3db7b035d03f3dbb31401aeafc3f1f5cbd7251a663353",
+    "declared_plan": "reports/binding/schedule_decoding_plan_v1.md",
+    "declared_plan_sha256": "8180e7161a3fc8734cc611e07975facd91b6d097a681c9c439def415aed731f1",
+    "evaluation_role": "discovery_schedule_readouts_v1",
+    "primary_layer": 24,
+    "report": "reports/binding/schedule_decoding_codellama34b_v1.md",
+    "run_dir": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts"
+  },
+  "config_hash": "2a95e0deb66cf01a08c79bbde6352501690e3ea5eba031ca08b1cdef562eacc4",
+  "dataset_sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287",
+  "evaluation_role": "discovery_schedule_readouts_v1",
+  "fit_source": {
+    "frozen_manifest_sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26",
+    "source_sha256": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99"
+  },
+  "fixed_recipe": {
+    "alpha": 100.0,
+    "binary_threshold": 0.5,
+    "categorical_decision": "argmax across finite fitted class scores; lowest candidate breaks ties",
+    "control": "deterministic prefix-keyed random labels, separately scored",
+    "fitted_layers": "all four captured layers; primary nominated before capture",
+    "interval": "none; all five development graph outcomes retained",
+    "primary_train_class_group_minimum": 3,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "sites": [
+      3,
+      7,
+      8
+    ],
+    "source_features": "signed character ngrams 3..8, matched hidden width"
+  },
+  "generated_holdouts_opened": false,
+  "limitations": [
+    "Adaptive discovery on 15 canonical SSA graph families: ten TRAIN and five DEV; numeric, lexical and query relatives are dependent.",
+    "All actual definition, parent and current-version identities are targets only. Hidden features contain no oracle source or target fields.",
+    "The exact-prefix character baseline and training prior are retained; neither positive decoding nor a hidden-minus-surface difference proves natural causal use.",
+    "Eligibility is descriptive TRAIN class support of at least three graph groups per observed class, distinct from historical behavioral qualification gates.",
+    "Every categorical head and held-out class is scored, including rare, unsupported and constant classes; absent classes do not count as successful discrimination.",
+    "Binary ridge scores use threshold 0.5 and categorical heads use argmax; scores are uncalibrated. No DEV threshold or hyperparameter selection occurs.",
+    "Weight seeds change graph weights and random-prefix control labels, not independent experimental replications.",
+    "Random-prefix controls preserve prefix consistency and visibility, not structural coherence, class marginals or task difficulty.",
+    "Point estimates and per-graph outcomes are descriptive; no confirmatory or multiplicity-adjusted interval is claimed from five DEV families.",
+    "Changing assignment schedules also changes variable age, positions and dependency depth. Decoding does not establish a causal version-tracking algorithm."
+  ],
+  "new_model_queries": 0
+}

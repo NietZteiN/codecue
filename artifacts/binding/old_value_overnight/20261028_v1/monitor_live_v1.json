@@ -1,0 +1,127 @@
+{
+  "all_work_and_publication_terminal": true,
+  "checked_at": "2026-10-29T01:06:36.444475+00:00",
+  "checked_epoch": 1793235996.444475,
+  "checker_error": null,
+  "checker_issues": [],
+  "identity": {
+    "check_config_sha256": "56803a83f0ed0858564ccfd3dc9c2f07403ddc94e15b73a2afe1c2be76e61fec",
+    "helper_sha256": "a26b6d257480f7e18ce4ac248ab449a7bc1aedb0ad517917dd18763392e72a58",
+    "snapshot_id": "4206d21342e20115539c3b55",
+    "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334"
+  },
+  "kind": "tick",
+  "logging": {
+    "enabled": true,
+    "fresh_within_two_intervals": true,
+    "guard_health": true,
+    "interval_minutes": 10,
+    "last_success_age_seconds": 101.335709,
+    "last_success_utc": "2026-10-29T01:04:56.425019+00:00",
+    "pending_guards": 2,
+    "queue": [
+      {
+        "exit_code": "0:0",
+        "job_id": "481719",
+        "reason": "Dependency",
+        "state": "PENDING"
+      },
+      {
+        "exit_code": "0:0",
+        "job_id": "481710",
+        "reason": "BeginTime",
+        "state": "PENDING"
+      }
+    ]
+  },
+  "logging_refresh": null,
+  "models": {
+    "codellama34b": {
+      "committed": 20160,
+      "committed_delta": 20160,
+      "invalid_committed_line": null,
+      "planned": 20160,
+      "running": false,
+      "scientific_status": "gate_failed",
+      "stalled_running_seconds": 0,
+      "trailing_partial": false
+    },
+    "llama8b": {
+      "committed": 20160,
+      "committed_delta": 0,
+      "invalid_committed_line": null,
+      "planned": 20160,
+      "running": false,
+      "scientific_status": "gate_failed",
+      "stalled_running_seconds": 0,
+      "trailing_partial": false
+    }
+  },
+  "monitor_issues": [],
+  "monitor_job_id": "481718",
+  "needs_attention": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "next_monitor_job_id": "481724",
+  "progress_state_after": {
+    "codellama34b": {
+      "committed": 20160,
+      "last_progress_epoch": 1793235996.444475,
+      "last_seen_epoch": 1793235996.444475,
+      "running": false
+    },
+    "llama8b": {
+      "committed": 20160,
+      "last_progress_epoch": 1793235996.444475,
+      "last_seen_epoch": 1793235996.444475,
+      "running": false
+    }
+  },
+  "scheduler_errors": [],
+  "scientific_status": "gate_failed",
+  "stages": {
+    "codellama34b_behavior": {
+      "job_id": "481705",
+      "raw_state": "COMPLETED",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "status": "completed"
+    },
+    "codellama34b_preflight": {
+      "job_id": "481694",
+      "raw_state": "COMPLETED",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "status": "completed"
+    },
+    "llama8b_behavior": {
+      "job_id": "481704",
+      "raw_state": "COMPLETED",
+      "reason": "None",
+      "status": "completed"
+    },
+    "llama8b_preflight": {
+      "job_id": "481693",
+      "raw_state": "COMPLETED",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "status": "completed"
+    },
+    "morning": {
+      "job_id": "481707",
+      "raw_state": "PENDING",
+      "reason": "BeginTime",
+      "status": "waiting"
+    },
+    "publication": {
+      "job_id": "481706",
+      "raw_state": "COMPLETED",
+      "reason": "Dependency",
+      "status": "completed"
+    },
+    "regression": {
+      "job_id": "481692",
+      "raw_state": "COMPLETED",
+      "reason": "None",
+      "status": "completed"
+    }
+  },
+  "status": "complete"
+}

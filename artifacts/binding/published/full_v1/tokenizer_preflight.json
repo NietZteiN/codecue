@@ -1,0 +1,36 @@
+{
+  "config_hash": "16c065fe6a32017f8c70a3c3a3ba12d8cd81bac673cd72c945d06542186f49c5",
+  "dataset_sha256": "0219387f4cbc67457e5a37c4dc6798edb3df1ecb69f2ece64ea5d2bb8631aceb",
+  "generated_holdouts_opened": false,
+  "model_inference": false,
+  "prompt_token_ids_sha256": "0fe3ba3aa3bdf09d60ce909bee43cfa882829286ce426b7d659a2e4119317553",
+  "source_sha256": "07b5dcb1bbf377c1c7cf341485192fa436ec9ed9d4c850e07ad5636cad4eb76b",
+  "status": "passed",
+  "tasks": {
+    "bbh_tracking_3": {
+      "max_prompt_tokens": 973,
+      "min_prompt_tokens": 940,
+      "n": 250
+    },
+    "bbh_tracking_5": {
+      "max_prompt_tokens": 1030,
+      "min_prompt_tokens": 988,
+      "n": 250
+    },
+    "bbh_tracking_7": {
+      "max_prompt_tokens": 1089,
+      "min_prompt_tokens": 1040,
+      "n": 250
+    },
+    "cruxeval_o_cot": {
+      "max_prompt_tokens": 509,
+      "min_prompt_tokens": 378,
+      "n": 800
+    },
+    "cruxeval_o_direct": {
+      "max_prompt_tokens": 402,
+      "min_prompt_tokens": 271,
+      "n": 800
+    }
+  }
+}

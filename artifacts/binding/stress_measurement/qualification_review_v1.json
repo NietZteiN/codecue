@@ -1,0 +1,138 @@
+{
+  "case_request_attempts": 256,
+  "evaluated": 256,
+  "generated_holdouts_opened": false,
+  "generated_tokens": 920,
+  "models": {
+    "codellama34b": {
+      "case_request_attempts": 128,
+      "device_name": "NVIDIA H100 80GB HBM3",
+      "evaluated": 128,
+      "executions": [
+        {
+          "actual_model_dtype": "bfloat16",
+          "actual_model_dtype_verified": true,
+          "backend": "vllm",
+          "chunked_prefill": true,
+          "cuda_matmul_allow_tf32": false,
+          "cudnn_allow_tf32": true,
+          "device_name": "NVIDIA H100 80GB HBM3",
+          "device_total_memory_bytes": 85017493504,
+          "engine": {
+            "gpu_memory_utilization": 0.95,
+            "max_num_batched_tokens": 16384,
+            "max_num_seqs": 512,
+            "tensor_parallel_size": 1
+          },
+          "eos_token_ids": [
+            2
+          ],
+          "generation_config": "vllm",
+          "gpu_uuid": "6a84f189-485f-ab4e-5b2f-86119881df62",
+          "greedy_seed": 0,
+          "max_new_tokens": 32,
+          "prefix_caching": true,
+          "slurm_job_id": "479817",
+          "stop": [
+            "\n\n"
+          ],
+          "temperature": 0,
+          "top_p": 1,
+          "versions": {
+            "torch": "2.11.0+cu129",
+            "transformers": "5.14.1",
+            "vllm": "0.26.0+cu129"
+          }
+        }
+      ],
+      "generated_tokens": 534,
+      "incomplete_request_attempts": 0,
+      "metadata": {
+        "audit": {
+          "path": "artifacts/binding/stress_measurement/codellama34b_smoke_v1/stress_measurement/audit.json",
+          "sha256": "9f6d9adcac1d02054908160b7b43549ba7b575e93138e31b11f2d3fe95c54495"
+        },
+        "manifest": {
+          "path": "artifacts/binding/stress_measurement/codellama34b_smoke_v1/stress_measurement/manifest.json",
+          "sha256": "d0813e53c584da79864cd98e238bc459791b6e9d66dffdba70d0bc156800fa7c"
+        },
+        "runtime": {
+          "path": "artifacts/binding/stress_measurement/codellama34b_smoke_v1/stress_measurement/runtime.json",
+          "sha256": "b3c62b4464d27c0508d53ff7c1cbc427b5b431ab5b0901c307a467a27ea59dc1"
+        },
+        "summary": {
+          "path": "artifacts/binding/stress_measurement/codellama34b_smoke_v1/stress_measurement/summary.json",
+          "sha256": "c7cf5c2d40488a84f7d8e9a4b2868f2c3593e55fe199e2a42880d9ff5fdad442"
+        }
+      }
+    },
+    "llama31_8b": {
+      "case_request_attempts": 128,
+      "device_name": "NVIDIA H100 80GB HBM3",
+      "evaluated": 128,
+      "executions": [
+        {
+          "actual_model_dtype": "bfloat16",
+          "actual_model_dtype_verified": true,
+          "backend": "vllm",
+          "chunked_prefill": true,
+          "cuda_matmul_allow_tf32": false,
+          "cudnn_allow_tf32": true,
+          "device_name": "NVIDIA H100 80GB HBM3",
+          "device_total_memory_bytes": 85017493504,
+          "engine": {
+            "gpu_memory_utilization": 0.95,
+            "max_num_batched_tokens": 16384,
+            "max_num_seqs": 512,
+            "tensor_parallel_size": 1
+          },
+          "eos_token_ids": [
+            128001,
+            128008,
+            128009
+          ],
+          "generation_config": "vllm",
+          "gpu_uuid": "995aa41f-e047-f752-d32f-0c43ca6fdfe3",
+          "greedy_seed": 0,
+          "max_new_tokens": 32,
+          "prefix_caching": true,
+          "slurm_job_id": "479814",
+          "stop": [
+            "\n\n"
+          ],
+          "temperature": 0,
+          "top_p": 1,
+          "versions": {
+            "torch": "2.11.0+cu129",
+            "transformers": "5.14.1",
+            "vllm": "0.26.0+cu129"
+          }
+        }
+      ],
+      "generated_tokens": 386,
+      "incomplete_request_attempts": 0,
+      "metadata": {
+        "audit": {
+          "path": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1/stress_measurement/audit.json",
+          "sha256": "2f7e42385b8143181f6c31b57b5aba9ef0738614344fbade7556b2bfbd543127"
+        },
+        "manifest": {
+          "path": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1/stress_measurement/manifest.json",
+          "sha256": "17ea2d001c96d9928f6d9dae873f3921ef5962cfcbb165bef69eeedb2cad1981"
+        },
+        "runtime": {
+          "path": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1/stress_measurement/runtime.json",
+          "sha256": "d17082986e1ed748f1f193c11b201f60d0e92cfa321bf02667384080b80e8e23"
+        },
+        "summary": {
+          "path": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1/stress_measurement/summary.json",
+          "sha256": "00abfacc50cbfd91e32681c916c44dc31003b0934afa74ceaeb238cfe97f50c4"
+        }
+      }
+    }
+  },
+  "scope": "Metadata-only aggregation of the two completed128-prompt software qualification audits. These overlap full inputs and are counted separately from the nominal single-query feature budget.",
+  "settings_selected_on_correctness": false,
+  "status": "passed",
+  "target_outcomes_read": false
+}

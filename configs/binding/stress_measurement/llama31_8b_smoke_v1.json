@@ -1,0 +1,37 @@
+{
+  "case_limit": 128,
+  "context_limit": 4096,
+  "cuda_home": "/usr/local/cuda-12.9",
+  "cue": "Treat every variable name as an arbitrary label. Determine values only from the assignments, in their written order.",
+  "dataset": "artifacts/binding/competition/discovery_v2.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": 16384,
+    "max_num_seqs": 512
+  },
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "evaluation_role": "discovery_task_preserving_stress_measurement_v1",
+  "execution_backend": "vLLM BF16 greedy exact prepared stress prompt IDs; one distinct query per target",
+  "max_new_tokens": 32,
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "preflight_result": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1/tokenizer_preflight.json",
+  "prepared_cases": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1/prepared_cases.jsonl",
+  "protocol": "short_answer_chat_v1",
+  "request_chunk_size": 1024,
+  "run_dir": "artifacts/binding/stress_measurement/llama31_8b_smoke_v1",
+  "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+  "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+  "selection_seed": 117,
+  "source_config": "configs/binding/competition/llama31_8b_v1.json",
+  "source_config_sha256": "3b542835908d782ca23f99a409312e2ab5c64c621c744a3804eb13039e1e5b36",
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "transform": "names_are_arbitrary_instruction_v1"
+}

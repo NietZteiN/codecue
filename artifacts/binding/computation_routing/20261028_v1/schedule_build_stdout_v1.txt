@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/work/jvl210002/migration/codecue/scripts/91_binding_frozen_run.py", line 28, in <module>
+    runpy.run_path(str(path),run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/work/jvl210002/migration/codecue/artifacts/binding/sources/75eea9bcbf957834772dfbc6/scripts/155_binding_relationship_schedule_programs.py", line 25, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/work/jvl210002/migration/codecue/artifacts/binding/sources/75eea9bcbf957834772dfbc6/scripts/155_binding_relationship_schedule_programs.py", line 17, in main
+    result = programs.build(json.loads(path.read_text()))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/jvl210002/migration/codecue/artifacts/binding/sources/75eea9bcbf957834772dfbc6/src/codecue/binding/relationship_schedule_programs.py", line 386, in build
+    result = validate_rows(config, rows, independent=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/jvl210002/migration/codecue/artifacts/binding/sources/75eea9bcbf957834772dfbc6/src/codecue/binding/relationship_schedule_programs.py", line 349, in validate_rows
+    independent_python_passed=independent, old_source_overlap=_overlap(config, rows),
+                                                              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/jvl210002/migration/codecue/artifacts/binding/sources/75eea9bcbf957834772dfbc6/src/codecue/binding/relationship_schedule_programs.py", line 266, in _overlap
+    raise ValueError('only bounded old discovery relationship source rows permitted')
+ValueError: only bounded old discovery relationship source rows permitted

@@ -1,0 +1,18 @@
+{
+  "output": "artifacts/binding/capacity/comparison_v1.json",
+  "report": "reports/binding/capacity_results.md",
+  "runs": {
+    "codellama13b": {
+      "config": "configs/binding/capacity/codellama13b_v1.json",
+      "sha256": "b5b401198c00cb386b44e7b42b0f49ecfa63530e9f3e6390b1e0c02f40893f3a"
+    },
+    "codellama34b": {
+      "config": "configs/binding/capacity/codellama34b_v1.json",
+      "sha256": "bb73858f9182c2392709e37a7cfc0a1516c1671fcfde6835781d77f714629752"
+    },
+    "llama32_3b": {
+      "config": "configs/binding/capacity/llama32_3b_v1.json",
+      "sha256": "bf78cda9b0ad387bdfd0126dbe3fb115847b581b2430f394852d6b02b72239f7"
+    }
+  }
+}

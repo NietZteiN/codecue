@@ -1,0 +1,179 @@
+{
+  "analytic_controls": {
+    "answer_vector_donor_matches": 0,
+    "final_earlier_token_unchanged": 0,
+    "identity_shams_unchanged": 0,
+    "max_relative_effective_norm_error": 0.0,
+    "status": "not_run_gate_failed"
+  },
+  "anchor_replay_comparison": null,
+  "assay": "computed_routing",
+  "audit": "artifacts/binding/routing_extension/computed_routing/llama31_8b_v1/interventions/audit.json",
+  "audit_sha256": "367ae44679d495e765d0985a60e2d2949328033c9a898b0f81bbf8a45173fb81",
+  "baseline_cases": 576,
+  "baseline_cells": [
+    {
+      "correct": 71,
+      "family": "ownership",
+      "invalid": 0,
+      "mapping": 0,
+      "n": 72,
+      "query": 0,
+      "reset_target": null
+    },
+    {
+      "correct": 72,
+      "family": "ownership",
+      "invalid": 0,
+      "mapping": 0,
+      "n": 72,
+      "query": 1,
+      "reset_target": null
+    },
+    {
+      "correct": 65,
+      "family": "ownership",
+      "invalid": 0,
+      "mapping": 1,
+      "n": 72,
+      "query": 0,
+      "reset_target": null
+    },
+    {
+      "correct": 1,
+      "family": "ownership",
+      "invalid": 0,
+      "mapping": 1,
+      "n": 72,
+      "query": 1,
+      "reset_target": null
+    },
+    {
+      "correct": 72,
+      "family": "versions",
+      "invalid": 0,
+      "mapping": 0,
+      "n": 72,
+      "query": 0,
+      "reset_target": null
+    },
+    {
+      "correct": 60,
+      "family": "versions",
+      "invalid": 0,
+      "mapping": 0,
+      "n": 72,
+      "query": 1,
+      "reset_target": null
+    },
+    {
+      "correct": 71,
+      "family": "versions",
+      "invalid": 0,
+      "mapping": 1,
+      "n": 72,
+      "query": 0,
+      "reset_target": null
+    },
+    {
+      "correct": 49,
+      "family": "versions",
+      "invalid": 0,
+      "mapping": 1,
+      "n": 72,
+      "query": 1,
+      "reset_target": null
+    }
+  ],
+  "baseline_correct": 461,
+  "baseline_gate": {
+    "cells": [
+      {
+        "correct": 71,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 72,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": true,
+        "query": 1
+      },
+      {
+        "correct": 65,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 1,
+        "family": "ownership",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": false,
+        "query": 1
+      },
+      {
+        "correct": 72,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 60,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 0,
+        "n": 72,
+        "passed": false,
+        "query": 1
+      },
+      {
+        "correct": 71,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": true,
+        "query": 0
+      },
+      {
+        "correct": 49,
+        "family": "versions",
+        "invalid": 0,
+        "mapping": 1,
+        "n": 72,
+        "passed": false,
+        "query": 1
+      }
+    ],
+    "eligible_families": [],
+    "status": "failed",
+    "thresholds": {
+      "maximum_invalid_rate": 0.05,
+      "minimum_accuracy": 0.9,
+      "minimum_cell_n": 24
+    }
+  },
+  "baseline_pair_changes": [],
+  "full_counterfactual_rows": [],
+  "generated_holdouts_opened": false,
+  "intervention_cells": [],
+  "intervention_forwards": 0,
+  "report": "reports/binding/computed_routing_results_v1_analysis_v2.md",
+  "status": "complete_audited"
+}

@@ -1,0 +1,107 @@
+{
+  "load_seconds": 66.07910722598899,
+  "trials": [
+    {
+      "backend": "hf",
+      "cases": 512,
+      "generation_seconds": 333.8945412330213,
+      "gpu": {
+        "mean_gpu_utilization_percent": 76.71132376395535,
+        "mean_power_watts": 312.28773524720896,
+        "peak_device_memory_mib": 80405.0,
+        "samples": 627
+      },
+      "output_tokens": 81182,
+      "output_tokens_per_second": 243.13664937500127,
+      "prompt_token_ids_sha256": "2731cdf064abef0f63638c93f26e33384d47ebb523c57d43f99f8e7bf25fafe9",
+      "quality": {
+        "both_valid": 490,
+        "correct": 191,
+        "correctness_matches": 496,
+        "n": 512,
+        "parsed_values_match": 436,
+        "raw_matches": 375,
+        "reference_correct": 189,
+        "valid": 495,
+        "validity_matches": 502
+      },
+      "requests_per_second": 1.5334183006085171,
+      "setting": {
+        "attention": "sdpa",
+        "batch_size": 8,
+        "bucket": true,
+        "stopping": "tensor"
+      },
+      "status": "complete",
+      "torch_peak_allocated_bytes": 19919649280
+    },
+    {
+      "backend": "hf",
+      "cases": 512,
+      "generation_seconds": 287.59610749199055,
+      "gpu": {
+        "mean_gpu_utilization_percent": 77.12962962962963,
+        "mean_power_watts": 335.8825,
+        "peak_device_memory_mib": 79325.0,
+        "samples": 540
+      },
+      "output_tokens": 82170,
+      "output_tokens_per_second": 285.713185468925,
+      "prompt_token_ids_sha256": "2731cdf064abef0f63638c93f26e33384d47ebb523c57d43f99f8e7bf25fafe9",
+      "quality": {
+        "both_valid": 492,
+        "correct": 189,
+        "correctness_matches": 496,
+        "n": 512,
+        "parsed_values_match": 431,
+        "raw_matches": 372,
+        "reference_correct": 189,
+        "valid": 493,
+        "validity_matches": 508
+      },
+      "requests_per_second": 1.7802744427417503,
+      "setting": {
+        "attention": "sdpa",
+        "batch_size": 16,
+        "bucket": true,
+        "stopping": "tensor"
+      },
+      "status": "complete",
+      "torch_peak_allocated_bytes": 26234412544
+    },
+    {
+      "backend": "hf",
+      "cases": 512,
+      "generation_seconds": 258.7756332610152,
+      "gpu": {
+        "mean_gpu_utilization_percent": 76.66115702479338,
+        "mean_power_watts": 383.57845041322315,
+        "peak_device_memory_mib": 80797.0,
+        "samples": 484
+      },
+      "output_tokens": 84071,
+      "output_tokens_per_second": 324.87989282669986,
+      "prompt_token_ids_sha256": "2731cdf064abef0f63638c93f26e33384d47ebb523c57d43f99f8e7bf25fafe9",
+      "quality": {
+        "both_valid": 490,
+        "correct": 189,
+        "correctness_matches": 498,
+        "n": 512,
+        "parsed_values_match": 437,
+        "raw_matches": 377,
+        "reference_correct": 189,
+        "valid": 491,
+        "validity_matches": 506
+      },
+      "requests_per_second": 1.9785479550293243,
+      "setting": {
+        "attention": "sdpa",
+        "batch_size": 32,
+        "bucket": true,
+        "stopping": "tensor"
+      },
+      "status": "complete",
+      "torch_peak_allocated_bytes": 39009164288
+    }
+  ]
+}

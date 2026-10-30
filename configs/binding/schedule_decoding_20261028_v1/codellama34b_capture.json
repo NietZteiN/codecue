@@ -1,0 +1,21 @@
+{
+  "batch_size": 64,
+  "chunk_size": 512,
+  "context_limit": 4096,
+  "dataset": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+  "dataset_manifest_sha256": "f08ac66c7b43c18f2d0627159d071f9936de13925695b23407d9b9375aca66c5",
+  "dataset_sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287",
+  "evaluation_role": "discovery_schedule_capture_v1",
+  "hidden_size": 8192,
+  "layers": [
+    12,
+    24,
+    36,
+    47
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "prefix_atol": 1e-05,
+  "run_dir": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture",
+  "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+}

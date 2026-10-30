@@ -1,0 +1,28 @@
+{
+  "artifacts": {
+    "preflight_result": {
+      "bytes": 376,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/tokenizer_preflight.json",
+      "sha256": "03d3cdd130ec6637beebf8c97439493844b78d740849022432a8128ec7cc5335"
+    },
+    "prepared_cases": {
+      "bytes": 68012280,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/codellama34b/prepared_cases.jsonl",
+      "sha256": "24efef2bd58e1c34e404b3d7af32cdf4e9f9e67e5c03dfaec9860915cea8ec0b"
+    }
+  },
+  "config_hash": "52bc27a00cd0fa619ae96400ba4d2b0af6e3498815c50581823da38d1da7175b",
+  "dataset_manifest_sha256": "df463929abb03688e9ba2ea82b29203f4c5c19419519575b0285c472905fd958",
+  "dataset_sha256": "1f2c8676b06023ce8d5db5d396c230648aa7c9e6948b7d624ab6c4581a6d3544",
+  "declared_plan_sha256": "4e1c81fc683a141575464181853a478e3eac15497051b18274d4782e62ffee2e",
+  "evaluation_role": "discovery_old_value_calibration_v1",
+  "generated_holdouts_opened": false,
+  "model_inference": false,
+  "source": {
+    "frozen_manifest_sha256": "dbba254b12a016928db3b7b2f778538a58fc706c26d2d1201beacec3658b9072",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4206d21342e20115539c3b55",
+    "snapshot_id": "4206d21342e20115539c3b55",
+    "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,54 @@
+{
+  "model_inference": false,
+  "purpose": "Identifier selection by complete prompt token layout only; no model accuracy observed.",
+  "recommended": "cache",
+  "results": [
+    {
+      "example_failure": null,
+      "matched": 216,
+      "name": "cache",
+      "total": 216
+    },
+    {
+      "example_failure": null,
+      "matched": 216,
+      "name": "state",
+      "total": 216
+    },
+    {
+      "example_failure": null,
+      "matched": 216,
+      "name": "other",
+      "total": 216
+    },
+    {
+      "example_failure": null,
+      "matched": 216,
+      "name": "unused",
+      "total": 216
+    },
+    {
+      "example_failure": null,
+      "matched": 216,
+      "name": "value",
+      "total": 216
+    },
+    {
+      "example_failure": null,
+      "matched": 216,
+      "name": "dummy",
+      "total": 216
+    },
+    {
+      "example_failure": {
+        "alternate_length": 104,
+        "anchor_id": "value-transfer:00704783ca1c80918adc0fbd",
+        "original_length": 103
+      },
+      "matched": 0,
+      "name": "spare",
+      "total": 216
+    }
+  ],
+  "status": "passed"
+}

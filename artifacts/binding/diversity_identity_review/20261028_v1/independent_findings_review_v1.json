@@ -1,0 +1,3571 @@
+{
+  "all_cell_grid_keys_preserved": true,
+  "all_primary_categories_and_denominators_checked": true,
+  "all_scalar_joint_marginals_checked": true,
+  "evaluation_role": "discovery_diversity_identity_independent_findings_review_v1",
+  "handoff_pins_verified": 211,
+  "input_pins": [
+    {
+      "bytes": 54156,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/handoff_review_v1.json",
+      "sha256": "6cc687cd83ae23aed665e5b97557c4e6b2abbd63debc4e78b1ac1d7c04270dbe"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/execution_source_v1.json",
+      "sha256": "ae8318df3bf331bfefb273268d0c9e7b939c13caf5b3a3864b51e4c12cf9ebf4"
+    },
+    {
+      "bytes": 1921,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "680077db52a58bfaf4a61348e57cac7fef1b276ed1fd2955823de434769f44ea"
+    },
+    {
+      "bytes": 1302648,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/analysis/results_v1.json",
+      "sha256": "f113c6dee944e642dc637b14ffcffff573921cabd23e9f7ae058bbdf4b44e430"
+    },
+    {
+      "bytes": 37454,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/analysis/summary.json",
+      "sha256": "88ce559ba351c38986c696c3b9191dbece4d3e1559f69de6046fc606401dbd2d"
+    },
+    {
+      "bytes": 57606,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/analysis/completion_manifest_v1.json",
+      "sha256": "7164def16e4c5fab7da6a959247e46036aa23222c9b2fa6ec3ab8d7cb9282822"
+    },
+    {
+      "bytes": 938,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/analysis/prediction_replay_review_v1.json",
+      "sha256": "4492a16ca1f180baa646d12d64c8483ccb301fbc98edc9d75a4addd82567ed59"
+    },
+    {
+      "bytes": 4384,
+      "path": "reports/binding/diversity_identity_review_findings_v1.md",
+      "sha256": "044661d424ebb7b759fbc4bbea649167f96c96603879fba1f38c616675056aaa"
+    }
+  ],
+  "issues": [],
+  "limitations": [
+    "Adaptive posthoc discovery on the same consumed source families and existing readout scores; no independent confirmation or new confidence interval.",
+    "Source maps supply owner/version semantics after statement-index predictions. This is not a newly learned full-binding decoder; the complete source determines the targets.",
+    "Different owners can share ordinal versions. Scalar correctness and scalar/definition agreement do not establish ownership; agreement can be jointly wrong.",
+    "The current-definition TRAIN prior has 100% owner accuracy but 41.667% exact/version recovery. Supplied slots and fixed initialization/source maps undermine owner accuracy alone as learned-binding evidence.",
+    "Current definitions use the capture checkpoint; parents use consumer read time, even if obsolete later. These categories do not identify causal model computations or answer-error causes.",
+    "Rates pool four heads per case, rather than whole-state AND accuracy. Fifteen DEV families have 96 dependent rows each; the three weighting seeds are dependent estimator variants.",
+    "All 90 banks/layers/sites/seeds/profiles/classes remain retained. Undefined initial parents are not successes, and the original prefix-sham task stays separate.",
+    "No NPZ arrays or models loaded, fitting/parameter application, analysis/audit rerun or new behavioral qualification. Prior failed gates and final/extrapolation seals remain unchanged."
+  ],
+  "model_or_tokenizer_loaded": false,
+  "new_confidence_intervals": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "npz_arrays_loaded": false,
+  "parameters_reapplied": 0,
+  "per_bank_json_limit_bytes": 8388608,
+  "primary": {
+    "codellama34b": {
+      "hidden": {
+        "direct": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.15694444444444444,
+                "different_owner_obsolete": 0.0043981481481481476,
+                "exact": 0.8189814814814814,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.019675925925925927,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.8189814814814814,
+                "owner_correct": 0.8386574074074074,
+                "version_number_equal": 0.9120370370370371
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.799074074074074,
+                  "owner_correct": 0.799074074074074,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.7212962962962962,
+                  "owner_correct": 0.737962962962963,
+                  "version_number_equal": 0.8185185185185185
+                },
+                "2": {
+                  "exact": 0.762037037037037,
+                  "owner_correct": 0.8240740740740741,
+                  "version_number_equal": 0.8361111111111111
+                },
+                "3": {
+                  "exact": 0.9935185185185186,
+                  "owner_correct": 0.9935185185185186,
+                  "version_number_equal": 0.9935185185185186
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 892,
+                  "different_owner_obsolete": 24,
+                  "exact": 4736,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 108,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 908,
+                  "different_owner_obsolete": 28,
+                  "exact": 4712,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 112,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 912,
+                  "different_owner_obsolete": 24,
+                  "exact": 4704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 120,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.026157407407407407,
+                "different_owner_obsolete": 0.011342592592592593,
+                "exact": 0.9122685185185184,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.05023148148148148,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.9122685185185184,
+                "owner_correct": 0.9625,
+                "version_number_equal": 0.9206018518518517
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.9666666666666667,
+                  "owner_correct": 0.987962962962963,
+                  "version_number_equal": 0.9666666666666667
+                },
+                "1": {
+                  "exact": 0.862962962962963,
+                  "owner_correct": 0.912962962962963,
+                  "version_number_equal": 0.8796296296296297
+                },
+                "2": {
+                  "exact": 0.8796296296296297,
+                  "owner_correct": 0.9592592592592593,
+                  "version_number_equal": 0.8962962962962964
+                },
+                "3": {
+                  "exact": 0.9398148148148149,
+                  "owner_correct": 0.9898148148148148,
+                  "version_number_equal": 0.9398148148148149
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 156,
+                  "different_owner_obsolete": 64,
+                  "exact": 5256,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 284,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 152,
+                  "different_owner_obsolete": 64,
+                  "exact": 5244,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 300,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 144,
+                  "different_owner_obsolete": 68,
+                  "exact": 5264,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 284,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.7645833333333333,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.2354166666666667
+              },
+              "metric_rates": {
+                "exact": 0.7645833333333333,
+                "owner_correct": null,
+                "version_number_equal": 0.7645833333333333
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.8972222222222223,
+                  "owner_correct": null,
+                  "version_number_equal": 0.8972222222222223
+                },
+                "1": {
+                  "exact": 0.7768518518518519,
+                  "owner_correct": null,
+                  "version_number_equal": 0.7768518518518519
+                },
+                "2": {
+                  "exact": 0.6925925925925925,
+                  "owner_correct": null,
+                  "version_number_equal": 0.6925925925925925
+                },
+                "3": {
+                  "exact": 0.6916666666666668,
+                  "owner_correct": null,
+                  "version_number_equal": 0.6916666666666668
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 4408,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 1352
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 4404,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 1356
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 4400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 1360
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.05416666666666667,
+                "false__true": 0.18125,
+                "false__undefined": 0.0,
+                "true__false": 0.03356481481481482,
+                "true__true": 0.7310185185185185,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 308,
+                  "false__true": 1044,
+                  "false__undefined": 0,
+                  "true__false": 196,
+                  "true__true": 4212,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 320,
+                  "false__true": 1036,
+                  "false__undefined": 0,
+                  "true__false": 196,
+                  "true__true": 4208,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 308,
+                  "false__true": 1052,
+                  "false__undefined": 0,
+                  "true__false": 188,
+                  "true__true": 4212,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.021296296296296296,
+                "false__true": 0.21412037037037038,
+                "false__undefined": 0.0,
+                "true__false": 0.016203703703703703,
+                "true__true": 0.7483796296296297,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 128,
+                  "false__true": 1224,
+                  "false__undefined": 0,
+                  "true__false": 92,
+                  "true__true": 4316,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 124,
+                  "false__true": 1232,
+                  "false__undefined": 0,
+                  "true__false": 92,
+                  "true__true": 4312,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 116,
+                  "false__true": 1244,
+                  "false__undefined": 0,
+                  "true__false": 96,
+                  "true__true": 4304,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.052314814814814814,
+                "false__true": 0.18310185185185188,
+                "false__undefined": 0.0,
+                "true__false": 0.02708333333333333,
+                "true__true": 0.7374999999999999,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 288,
+                  "false__true": 1064,
+                  "false__undefined": 0,
+                  "true__false": 164,
+                  "true__true": 4244,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 312,
+                  "false__true": 1044,
+                  "false__undefined": 0,
+                  "true__false": 156,
+                  "true__true": 4248,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 304,
+                  "false__true": 1056,
+                  "false__undefined": 0,
+                  "true__false": 148,
+                  "true__true": 4252,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.1840277777777778,
+                "false__true": 0.051388888888888894,
+                "false__undefined": 0.0,
+                "true__false": 0.02708333333333333,
+                "true__true": 0.7374999999999999,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1072,
+                  "false__true": 280,
+                  "false__undefined": 0,
+                  "true__false": 164,
+                  "true__true": 4244,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1048,
+                  "false__true": 308,
+                  "false__undefined": 0,
+                  "true__false": 156,
+                  "true__true": 4248,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1060,
+                  "false__true": 300,
+                  "false__undefined": 0,
+                  "true__false": 148,
+                  "true__true": 4252,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        },
+        "training_prior": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.6902777777777778,
+                "different_owner_obsolete": 0.03194444444444445,
+                "exact": 0.26805555555555555,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.009722222222222222,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.26805555555555555,
+                "owner_correct": 0.27777777777777773,
+                "version_number_equal": 0.5388888888888889
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.25,
+                  "owner_correct": 0.25,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.3333333333333333,
+                  "owner_correct": 0.3333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "2": {
+                  "exact": 0.13333333333333333,
+                  "owner_correct": 0.13333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "3": {
+                  "exact": 0.35555555555555557,
+                  "owner_correct": 0.39444444444444443,
+                  "version_number_equal": 0.48888888888888893
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 3816,
+                  "different_owner_obsolete": 552,
+                  "exact": 1224,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 168,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.5833333333333334,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": 1.0,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.5833333333333334
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": null,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "surface": {
+        "direct": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.43263888888888885,
+                "different_owner_obsolete": 0.018055555555555557,
+                "exact": 0.42407407407407405,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.12523148148148147,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.42407407407407405,
+                "owner_correct": 0.5493055555555556,
+                "version_number_equal": 0.6798611111111111
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.5037037037037037,
+                  "owner_correct": 0.5037037037037037,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.3537037037037037,
+                  "owner_correct": 0.4527777777777778,
+                  "version_number_equal": 0.612037037037037
+                },
+                "2": {
+                  "exact": 0.33425925925925926,
+                  "owner_correct": 0.39999999999999997,
+                  "version_number_equal": 0.5916666666666667
+                },
+                "3": {
+                  "exact": 0.5046296296296297,
+                  "owner_correct": 0.8407407407407407,
+                  "version_number_equal": 0.5157407407407407
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 2340,
+                  "different_owner_obsolete": 64,
+                  "exact": 2520,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 836,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 2612,
+                  "different_owner_obsolete": 116,
+                  "exact": 2384,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 648,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 2524,
+                  "different_owner_obsolete": 132,
+                  "exact": 2424,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 680,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.18148148148148147,
+                "different_owner_obsolete": 0.041435185185185186,
+                "exact": 0.5835648148148148,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.19351851851851853,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.5835648148148148,
+                "owner_correct": 0.7770833333333332,
+                "version_number_equal": 0.669675925925926
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.5898148148148149,
+                  "owner_correct": 0.7648148148148147,
+                  "version_number_equal": 0.6768518518518519
+                },
+                "1": {
+                  "exact": 0.575,
+                  "owner_correct": 0.775,
+                  "version_number_equal": 0.6620370370370371
+                },
+                "2": {
+                  "exact": 0.5925925925925927,
+                  "owner_correct": 0.8009259259259259,
+                  "version_number_equal": 0.6685185185185185
+                },
+                "3": {
+                  "exact": 0.5768518518518517,
+                  "owner_correct": 0.7675925925925927,
+                  "version_number_equal": 0.6712962962962963
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 1040,
+                  "different_owner_obsolete": 188,
+                  "exact": 3388,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 1144,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 964,
+                  "different_owner_obsolete": 196,
+                  "exact": 3448,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 1152,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 1132,
+                  "different_owner_obsolete": 332,
+                  "exact": 3248,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 1048,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.5849537037037037,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.41504629629629625
+              },
+              "metric_rates": {
+                "exact": 0.5849537037037037,
+                "owner_correct": null,
+                "version_number_equal": 0.5849537037037037
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.5842592592592594,
+                  "owner_correct": null,
+                  "version_number_equal": 0.5842592592592594
+                },
+                "1": {
+                  "exact": 0.5925925925925926,
+                  "owner_correct": null,
+                  "version_number_equal": 0.5925925925925926
+                },
+                "2": {
+                  "exact": 0.5879629629629629,
+                  "owner_correct": null,
+                  "version_number_equal": 0.5879629629629629
+                },
+                "3": {
+                  "exact": 0.575,
+                  "owner_correct": null,
+                  "version_number_equal": 0.575
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3488,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 2272
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3504,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 2256
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3116,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 2644
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.2539351851851852,
+                "false__true": 0.1611111111111111,
+                "false__undefined": 0.0,
+                "true__false": 0.1625,
+                "true__true": 0.4224537037037037,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1356,
+                  "false__true": 916,
+                  "false__undefined": 0,
+                  "true__false": 1016,
+                  "true__true": 2472,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1320,
+                  "false__true": 936,
+                  "false__undefined": 0,
+                  "true__false": 992,
+                  "true__true": 2512,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1712,
+                  "false__true": 932,
+                  "false__undefined": 0,
+                  "true__false": 800,
+                  "true__true": 2316,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.09328703703703704,
+                "false__true": 0.32175925925925924,
+                "false__undefined": 0.0,
+                "true__false": 0.12962962962962962,
+                "true__true": 0.4553240740740741,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 408,
+                  "false__true": 1864,
+                  "false__undefined": 0,
+                  "true__false": 820,
+                  "true__true": 2668,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 432,
+                  "false__true": 1824,
+                  "false__undefined": 0,
+                  "true__false": 728,
+                  "true__true": 2776,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 772,
+                  "false__true": 1872,
+                  "false__undefined": 0,
+                  "true__false": 692,
+                  "true__true": 2424,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.2199074074074074,
+                "false__true": 0.1951388888888889,
+                "false__undefined": 0.0,
+                "true__false": 0.11041666666666668,
+                "true__true": 0.47453703703703703,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1200,
+                  "false__true": 1072,
+                  "false__undefined": 0,
+                  "true__false": 720,
+                  "true__true": 2768,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1144,
+                  "false__true": 1112,
+                  "false__undefined": 0,
+                  "true__false": 692,
+                  "true__true": 2812,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1456,
+                  "false__true": 1188,
+                  "false__undefined": 0,
+                  "true__false": 496,
+                  "true__true": 2620,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.24675925925925926,
+                "false__true": 0.16828703703703707,
+                "false__undefined": 0.0,
+                "true__false": 0.11041666666666668,
+                "true__true": 0.47453703703703703,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1368,
+                  "false__true": 904,
+                  "false__undefined": 0,
+                  "true__false": 720,
+                  "true__true": 2768,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1400,
+                  "false__true": 856,
+                  "false__undefined": 0,
+                  "true__false": 692,
+                  "true__true": 2812,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1496,
+                  "false__true": 1148,
+                  "false__undefined": 0,
+                  "true__false": 496,
+                  "true__true": 2620,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        },
+        "training_prior": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.6902777777777778,
+                "different_owner_obsolete": 0.03194444444444445,
+                "exact": 0.26805555555555555,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.009722222222222222,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.26805555555555555,
+                "owner_correct": 0.27777777777777773,
+                "version_number_equal": 0.5388888888888889
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.25,
+                  "owner_correct": 0.25,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.3333333333333333,
+                  "owner_correct": 0.3333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "2": {
+                  "exact": 0.13333333333333333,
+                  "owner_correct": 0.13333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "3": {
+                  "exact": 0.35555555555555557,
+                  "owner_correct": 0.39444444444444443,
+                  "version_number_equal": 0.48888888888888893
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 3816,
+                  "different_owner_obsolete": 552,
+                  "exact": 1224,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 168,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.5833333333333334,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": 1.0,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.5833333333333334
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": null,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "llama8b": {
+      "hidden": {
+        "direct": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.19212962962962962,
+                "different_owner_obsolete": 0.022916666666666665,
+                "exact": 0.7624999999999998,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.02245370370370371,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.7624999999999998,
+                "owner_correct": 0.7849537037037037,
+                "version_number_equal": 0.8856481481481481
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.8018518518518519,
+                  "owner_correct": 0.8018518518518519,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.6009259259259259,
+                  "owner_correct": 0.6611111111111111,
+                  "version_number_equal": 0.7842592592592593
+                },
+                "2": {
+                  "exact": 0.6472222222222223,
+                  "owner_correct": 0.6768518518518518,
+                  "version_number_equal": 0.7583333333333333
+                },
+                "3": {
+                  "exact": 1.0,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 1.0
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 1116,
+                  "different_owner_obsolete": 108,
+                  "exact": 4392,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 144,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 1128,
+                  "different_owner_obsolete": 124,
+                  "exact": 4388,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 120,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 1076,
+                  "different_owner_obsolete": 164,
+                  "exact": 4396,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 124,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.05254629629629629,
+                "different_owner_obsolete": 0.024305555555555556,
+                "exact": 0.8678240740740741,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.055324074074074074,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.8678240740740741,
+                "owner_correct": 0.9231481481481482,
+                "version_number_equal": 0.8875000000000001
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.9611111111111111,
+                  "owner_correct": 0.9731481481481481,
+                  "version_number_equal": 0.9796296296296295
+                },
+                "1": {
+                  "exact": 0.8203703703703704,
+                  "owner_correct": 0.8777777777777778,
+                  "version_number_equal": 0.8425925925925926
+                },
+                "2": {
+                  "exact": 0.8111111111111112,
+                  "owner_correct": 0.8805555555555555,
+                  "version_number_equal": 0.849074074074074
+                },
+                "3": {
+                  "exact": 0.8787037037037037,
+                  "owner_correct": 0.9611111111111111,
+                  "version_number_equal": 0.8787037037037037
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 308,
+                  "different_owner_obsolete": 116,
+                  "exact": 5024,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 312,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 276,
+                  "different_owner_obsolete": 152,
+                  "exact": 5012,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 320,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 324,
+                  "different_owner_obsolete": 152,
+                  "exact": 4960,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 324,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.6909722222222222,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.30902777777777773
+              },
+              "metric_rates": {
+                "exact": 0.6909722222222222,
+                "owner_correct": null,
+                "version_number_equal": 0.6909722222222222
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.762037037037037,
+                  "owner_correct": null,
+                  "version_number_equal": 0.762037037037037
+                },
+                "1": {
+                  "exact": 0.6888888888888888,
+                  "owner_correct": null,
+                  "version_number_equal": 0.6888888888888888
+                },
+                "2": {
+                  "exact": 0.7027777777777778,
+                  "owner_correct": null,
+                  "version_number_equal": 0.7027777777777778
+                },
+                "3": {
+                  "exact": 0.6101851851851853,
+                  "owner_correct": null,
+                  "version_number_equal": 0.6101851851851853
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3992,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 1768
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 4020,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 1740
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3928,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 1832
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.08287037037037037,
+                "false__true": 0.2261574074074074,
+                "false__undefined": 0.0,
+                "true__false": 0.049305555555555554,
+                "true__true": 0.6416666666666666,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 488,
+                  "false__true": 1280,
+                  "false__undefined": 0,
+                  "true__false": 248,
+                  "true__true": 3744,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 460,
+                  "false__true": 1280,
+                  "false__undefined": 0,
+                  "true__false": 288,
+                  "true__true": 3732,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 484,
+                  "false__true": 1348,
+                  "false__undefined": 0,
+                  "true__false": 316,
+                  "true__true": 3612,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.04259259259259259,
+                "false__true": 0.2664351851851852,
+                "false__undefined": 0.0,
+                "true__false": 0.03425925925925926,
+                "true__true": 0.6567129629629629,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 256,
+                  "false__true": 1512,
+                  "false__undefined": 0,
+                  "true__false": 168,
+                  "true__true": 3824,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 236,
+                  "false__true": 1504,
+                  "false__undefined": 0,
+                  "true__false": 192,
+                  "true__true": 3828,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 244,
+                  "false__true": 1588,
+                  "false__undefined": 0,
+                  "true__false": 232,
+                  "true__true": 3696,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.08148148148148147,
+                "false__true": 0.2275462962962963,
+                "false__undefined": 0.0,
+                "true__false": 0.031018518518518518,
+                "true__true": 0.6599537037037037,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 480,
+                  "false__true": 1288,
+                  "false__undefined": 0,
+                  "true__false": 168,
+                  "true__true": 3824,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 452,
+                  "false__true": 1288,
+                  "false__undefined": 0,
+                  "true__false": 172,
+                  "true__true": 3848,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 476,
+                  "false__true": 1356,
+                  "false__undefined": 0,
+                  "true__false": 196,
+                  "true__true": 3732,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.24537037037037038,
+                "false__true": 0.0636574074074074,
+                "false__undefined": 0.0,
+                "true__false": 0.031018518518518518,
+                "true__true": 0.6599537037037037,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1412,
+                  "false__true": 356,
+                  "false__undefined": 0,
+                  "true__false": 168,
+                  "true__true": 3824,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1376,
+                  "false__true": 364,
+                  "false__undefined": 0,
+                  "true__false": 172,
+                  "true__true": 3848,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1452,
+                  "false__true": 380,
+                  "false__undefined": 0,
+                  "true__false": 196,
+                  "true__true": 3732,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        },
+        "training_prior": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.6902777777777778,
+                "different_owner_obsolete": 0.03194444444444445,
+                "exact": 0.26805555555555555,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.009722222222222222,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.26805555555555555,
+                "owner_correct": 0.27777777777777773,
+                "version_number_equal": 0.5388888888888889
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.25,
+                  "owner_correct": 0.25,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.3333333333333333,
+                  "owner_correct": 0.3333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "2": {
+                  "exact": 0.13333333333333333,
+                  "owner_correct": 0.13333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "3": {
+                  "exact": 0.35555555555555557,
+                  "owner_correct": 0.39444444444444443,
+                  "version_number_equal": 0.48888888888888893
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 3816,
+                  "different_owner_obsolete": 552,
+                  "exact": 1224,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 168,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.5833333333333334,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": 1.0,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.5833333333333334
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": null,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "surface": {
+        "direct": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.43194444444444446,
+                "different_owner_obsolete": 0.01736111111111111,
+                "exact": 0.42546296296296293,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.12523148148148147,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.42546296296296293,
+                "owner_correct": 0.5506944444444445,
+                "version_number_equal": 0.680324074074074
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.5083333333333333,
+                  "owner_correct": 0.5083333333333333,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.3527777777777778,
+                  "owner_correct": 0.4537037037037037,
+                  "version_number_equal": 0.6092592592592593
+                },
+                "2": {
+                  "exact": 0.337037037037037,
+                  "owner_correct": 0.40277777777777773,
+                  "version_number_equal": 0.5962962962962963
+                },
+                "3": {
+                  "exact": 0.5037037037037037,
+                  "owner_correct": 0.8379629629629629,
+                  "version_number_equal": 0.5157407407407407
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 2344,
+                  "different_owner_obsolete": 60,
+                  "exact": 2532,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 824,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 2612,
+                  "different_owner_obsolete": 112,
+                  "exact": 2384,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 652,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 2508,
+                  "different_owner_obsolete": 128,
+                  "exact": 2436,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 688,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.18171296296296294,
+                "different_owner_obsolete": 0.04027777777777777,
+                "exact": 0.5831018518518518,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.19490740740740742,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.5831018518518518,
+                "owner_correct": 0.7780092592592592,
+                "version_number_equal": 0.6706018518518518
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.5861111111111111,
+                  "owner_correct": 0.7638888888888888,
+                  "version_number_equal": 0.6777777777777777
+                },
+                "1": {
+                  "exact": 0.5722222222222222,
+                  "owner_correct": 0.7722222222222221,
+                  "version_number_equal": 0.6611111111111111
+                },
+                "2": {
+                  "exact": 0.5962962962962963,
+                  "owner_correct": 0.8074074074074074,
+                  "version_number_equal": 0.6712962962962963
+                },
+                "3": {
+                  "exact": 0.5777777777777777,
+                  "owner_correct": 0.7685185185185186,
+                  "version_number_equal": 0.6722222222222222
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 1036,
+                  "different_owner_obsolete": 184,
+                  "exact": 3384,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 1156,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 968,
+                  "different_owner_obsolete": 188,
+                  "exact": 3448,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 1156,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 1136,
+                  "different_owner_obsolete": 324,
+                  "exact": 3244,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 1056,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.586574074074074,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.4134259259259259
+              },
+              "metric_rates": {
+                "exact": 0.586574074074074,
+                "owner_correct": null,
+                "version_number_equal": 0.586574074074074
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.5851851851851853,
+                  "owner_correct": null,
+                  "version_number_equal": 0.5851851851851853
+                },
+                "1": {
+                  "exact": 0.5916666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.5916666666666667
+                },
+                "2": {
+                  "exact": 0.5935185185185186,
+                  "owner_correct": null,
+                  "version_number_equal": 0.5935185185185186
+                },
+                "3": {
+                  "exact": 0.575925925925926,
+                  "owner_correct": null,
+                  "version_number_equal": 0.575925925925926
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3516,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 2244
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3488,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 2272
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 3132,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 2628
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.2537037037037037,
+                "false__true": 0.1597222222222222,
+                "false__undefined": 0.0,
+                "true__false": 0.16319444444444445,
+                "true__true": 0.42337962962962966,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1332,
+                  "false__true": 912,
+                  "false__undefined": 0,
+                  "true__false": 1044,
+                  "true__true": 2472,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1344,
+                  "false__true": 928,
+                  "false__undefined": 0,
+                  "true__false": 968,
+                  "true__true": 2520,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1708,
+                  "false__true": 920,
+                  "false__undefined": 0,
+                  "true__false": 808,
+                  "true__true": 2324,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.09305555555555556,
+                "false__true": 0.32037037037037036,
+                "false__undefined": 0.0,
+                "true__false": 0.12893518518518518,
+                "true__true": 0.4576388888888889,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 392,
+                  "false__true": 1852,
+                  "false__undefined": 0,
+                  "true__false": 828,
+                  "true__true": 2688,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 444,
+                  "false__true": 1828,
+                  "false__undefined": 0,
+                  "true__false": 712,
+                  "true__true": 2776,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 772,
+                  "false__true": 1856,
+                  "false__undefined": 0,
+                  "true__false": 688,
+                  "true__true": 2444,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.21851851851851853,
+                "false__true": 0.1949074074074074,
+                "false__undefined": 0.0,
+                "true__false": 0.11087962962962962,
+                "true__true": 0.4756944444444444,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1176,
+                  "false__true": 1068,
+                  "false__undefined": 0,
+                  "true__false": 740,
+                  "true__true": 2776,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1152,
+                  "false__true": 1120,
+                  "false__undefined": 0,
+                  "true__false": 672,
+                  "true__true": 2816,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1448,
+                  "false__true": 1180,
+                  "false__undefined": 0,
+                  "true__false": 504,
+                  "true__true": 2628,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.2460648148148148,
+                "false__true": 0.1673611111111111,
+                "false__undefined": 0.0,
+                "true__false": 0.11087962962962962,
+                "true__true": 0.4756944444444444,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 1364,
+                  "false__true": 880,
+                  "false__undefined": 0,
+                  "true__false": 740,
+                  "true__true": 2776,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 1404,
+                  "false__true": 868,
+                  "false__undefined": 0,
+                  "true__false": 672,
+                  "true__true": 2816,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 1484,
+                  "false__true": 1144,
+                  "false__undefined": 0,
+                  "true__false": 504,
+                  "true__true": 2628,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        },
+        "training_prior": {
+          "families": {
+            "copy_parent": {
+              "category_rates": {
+                "different_owner_current": 0.6902777777777778,
+                "different_owner_obsolete": 0.03194444444444445,
+                "exact": 0.26805555555555555,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.009722222222222222,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.26805555555555555,
+                "owner_correct": 0.27777777777777773,
+                "version_number_equal": 0.5388888888888889
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.25,
+                  "owner_correct": 0.25,
+                  "version_number_equal": 1.0
+                },
+                "1": {
+                  "exact": 0.3333333333333333,
+                  "owner_correct": 0.3333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "2": {
+                  "exact": 0.13333333333333333,
+                  "owner_correct": 0.13333333333333333,
+                  "version_number_equal": 0.3333333333333333
+                },
+                "3": {
+                  "exact": 0.35555555555555557,
+                  "owner_correct": 0.39444444444444443,
+                  "version_number_equal": 0.48888888888888893
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 3816,
+                  "different_owner_obsolete": 552,
+                  "exact": 1224,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 168,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 4056,
+                  "different_owner_obsolete": 0,
+                  "exact": 1704,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_definition": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.5833333333333334,
+                "undefined": null,
+                "wrong_version": 0.0
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": 1.0,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": 1.0,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 3360,
+                  "undefined": 0,
+                  "wrong_version": 0
+                }
+              }
+            },
+            "current_version": {
+              "category_rates": {
+                "different_owner_current": 0.0,
+                "different_owner_obsolete": 0.0,
+                "exact": 0.4166666666666667,
+                "invalid_candidate": 0.0,
+                "invalid_future": 0.0,
+                "missing": 0.0,
+                "same_owner_wrong_version": 0.0,
+                "undefined": null,
+                "wrong_version": 0.5833333333333334
+              },
+              "metric_rates": {
+                "exact": 0.4166666666666667,
+                "owner_correct": null,
+                "version_number_equal": 0.4166666666666667
+              },
+              "n_defined_per_seed": 5760,
+              "per_head": {
+                "0": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "1": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "2": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                },
+                "3": {
+                  "exact": 0.4166666666666667,
+                  "owner_correct": null,
+                  "version_number_equal": 0.4166666666666667
+                }
+              },
+              "per_seed_counts": {
+                "17": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "29": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                },
+                "43": {
+                  "different_owner_current": 0,
+                  "different_owner_obsolete": 0,
+                  "exact": 2400,
+                  "invalid_candidate": 0,
+                  "invalid_future": 0,
+                  "missing": 0,
+                  "same_owner_wrong_version": 0,
+                  "undefined": 0,
+                  "wrong_version": 3360
+                }
+              }
+            }
+          },
+          "scalar_definition_joint": {
+            "scalar_correct__definition_exact": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_owner_correct": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__definition_version_equal": {
+              "mean_cell_rates": {
+                "false__false": 0.5833333333333334,
+                "false__true": 0.0,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 3360,
+                  "false__true": 0,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            },
+            "scalar_correct__scalar_definition_agree": {
+              "mean_cell_rates": {
+                "false__false": 0.0,
+                "false__true": 0.5833333333333334,
+                "false__undefined": 0.0,
+                "true__false": 0.0,
+                "true__true": 0.4166666666666667,
+                "true__undefined": 0.0,
+                "undefined__false": 0.0,
+                "undefined__true": 0.0,
+                "undefined__undefined": 0.0
+              },
+              "n_defined_per_seed": 5760,
+              "per_seed_counts": {
+                "17": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "29": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                },
+                "43": {
+                  "false__false": 0,
+                  "false__true": 3360,
+                  "false__undefined": 0,
+                  "true__false": 0,
+                  "true__true": 2400,
+                  "true__undefined": 0,
+                  "undefined__false": 0,
+                  "undefined__true": 0,
+                  "undefined__undefined": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "primary_layer": 24,
+  "primary_site": 7,
+  "recorded_utc": "2026-10-28T20:38:53.897116+00:00",
+  "report": {
+    "bytes": 5804,
+    "path": "reports/binding/diversity_identity_review_decision_v1.md",
+    "sha256": "d9c3ee88c22525e936b118638842f4684232c36a4d1bbbbcd0fbbb9d5c4aef69"
+  },
+  "scheduler": {
+    "481436": {
+      "elapsed_seconds": 29,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481457": {
+      "elapsed_seconds": 555,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481458": {
+      "elapsed_seconds": 859,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481474": {
+      "elapsed_seconds": 27,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  },
+  "scientific_analysis_or_audit_repeated": false,
+  "score_banks": 90,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "source": {
+    "frozen_manifest_sha256": "2116b6790c9ff9af9bf6b8d60456215d17971ae08744a32c3b0f4729f03ca3ea",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/56923f24389a46294d3c9c7b",
+    "snapshot_id": "56923f24389a46294d3c9c7b",
+    "source_sha256": "38a8ad184e39ce39e6d9c4382834f8a95c2022e268f4b1adb0cca85829d6f38f"
+  },
+  "source_oracle_assisted": true,
+  "statistics_checks": {
+    "cells": 90,
+    "joint_tables": 2880,
+    "statistics_partitions": 137880
+  },
+  "status": "passed"
+}

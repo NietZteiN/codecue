@@ -1,0 +1,41 @@
+{
+  "algebraic_methods": {
+    "categorical_value_derived": 0.6569670870006342,
+    "direct": 0.7975323640760994,
+    "source_categorical_value_derived": 0.9636467925208683,
+    "source_direct": 0.6010188730045737,
+    "structural_position_prior": 0.5
+  },
+  "cases": 5832,
+  "config_hash": "11404d37b939ef548b4b646c4512fb2f930dfb9d4b1f183d869aada92966493a",
+  "derived_logging_summary": true,
+  "evaluation_role": "discovery_overnight_relationship_readouts_v1",
+  "factorizations": 45,
+  "generated_holdouts_opened": false,
+  "literal_transfer_rows": 0,
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "new_model_queries": 0,
+  "panel": "query_twins",
+  "parameter_replay_rows": 262440,
+  "report": "reports/binding/overnight_20261027_llama8b_query_twins.md",
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "scientific_completion": {
+    "bytes": 14593,
+    "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/readouts_query_twins/completion_manifest_v1.json",
+    "sha256": "9907649e97ca77b00cd9f86f36151f17a9ac84f05c34960e553a57230dfaac77"
+  },
+  "source_form": "literal",
+  "status": "complete_exploratory",
+  "structural_methods": {
+    "7": {
+      "direct": 0.7496570644718793,
+      "source_direct": 0.03635116598079561,
+      "structural_position_prior": 0.024691358024691357
+    },
+    "8": {
+      "direct": 0.49108367626886146,
+      "source_direct": 0.01800411522633745,
+      "structural_position_prior": 0.024691358024691357
+    }
+  }
+}

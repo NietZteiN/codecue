@@ -1,0 +1,134 @@
+{
+  "result": {
+    "counts": {
+      "analysis": 351,
+      "dataset": 69,
+      "job": 439,
+      "run": 83
+    },
+    "csv": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/experiments.csv",
+    "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+    "events": 3566,
+    "issues": [],
+    "notices": [
+      {
+        "bytes": 9590432,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/candidate_prediction/comparison_v1.json"
+      },
+      {
+        "bytes": 117692655,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/comparison_v1.json"
+      },
+      {
+        "bytes": 15194826,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/comparison_v1.json"
+      },
+      {
+        "bytes": 11035404,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/comparison_v1.json"
+      },
+      {
+        "bytes": 12324277,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/joint_confidence/comparison_v1.json"
+      },
+      {
+        "bytes": 10473597,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/summary.json"
+      },
+      {
+        "bytes": 10484733,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/review_v1.json"
+      },
+      {
+        "bytes": 9430564,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/comparison_v1.json"
+      },
+      {
+        "bytes": 15034398,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/stress_prediction/v2/comparison_v1.json"
+      }
+    ],
+    "records": 942,
+    "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+    "status": "ok",
+    "updated_utc": "2026-10-29T00:37:38.836000+00:00"
+  },
+  "scheduler": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 348,
+        "dataset": 68,
+        "job": 436,
+        "run": 83
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 3539,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_tick_utc": "2026-10-29T00:18:32.545258+00:00",
+    "next_reconcile_utc": "2026-10-29T00:28:32.545258+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "481685",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-28T19:39:32",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "481675",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "N/A",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "status": "complete"
+}

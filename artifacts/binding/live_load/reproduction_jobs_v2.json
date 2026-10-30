@@ -1,0 +1,307 @@
+{
+  "live2_codellama34b": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "run",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_codellama34b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": "gpu:1",
+    "name": "live2_codellama34b",
+    "partition": "h100,h200",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_codellama34b.json",
+    "submitted_utc": "2026-10-26T22:26:52.579296+00:00",
+    "time": "02:00:00",
+    "time_min": "00:30:00"
+  },
+  "live2_codellama34b_audit": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "audit",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_codellama34b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_codellama34b_audit",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_codellama34b_audit.json",
+    "submitted_utc": "2026-10-26T22:26:52.645562+00:00",
+    "time": "00:30:00",
+    "time_min": null
+  },
+  "live2_codellama34b_qa": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "preflight",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_codellama34b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_codellama34b_qa",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_codellama34b_qa.json",
+    "submitted_utc": "2026-10-26T22:26:52.507938+00:00",
+    "time": "01:00:00",
+    "time_min": null
+  },
+  "live2_codellama34b_review": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "review",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_codellama34b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_codellama34b_review",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_codellama34b_review.json",
+    "submitted_utc": "2026-10-26T22:26:52.713106+00:00",
+    "time": "00:30:00",
+    "time_min": null
+  },
+  "live2_comparison": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/c22a1af6c1a1da3fbfb781e8/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/c22a1af6c1a1da3fbfb781e8",
+      "scripts/116_binding_live_load.py",
+      "compare",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/c22a1af6c1a1da3fbfb781e8/configs/binding/competition/live_load_comparison_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_comparison",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T223623Z_live2_comparison.json",
+    "submitted_utc": "2026-10-26T22:36:23.880918+00:00",
+    "time": "00:15:00",
+    "time_min": null
+  },
+  "live2_llama31_8b": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "run",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_llama31_8b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": "gpu:1",
+    "name": "live2_llama31_8b",
+    "partition": "dev-a30,a30,h100,h200",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_llama31_8b.json",
+    "submitted_utc": "2026-10-26T22:26:52.297969+00:00",
+    "time": "02:00:00",
+    "time_min": "00:15:00"
+  },
+  "live2_llama31_8b_audit": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "audit",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_llama31_8b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_llama31_8b_audit",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_llama31_8b_audit.json",
+    "submitted_utc": "2026-10-26T22:26:52.368760+00:00",
+    "time": "00:30:00",
+    "time_min": null
+  },
+  "live2_llama31_8b_qa": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "preflight",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_llama31_8b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_llama31_8b_qa",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_llama31_8b_qa.json",
+    "submitted_utc": "2026-10-26T22:26:52.230037+00:00",
+    "time": "01:00:00",
+    "time_min": null
+  },
+  "live2_llama31_8b_review": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb",
+      "scripts/116_binding_live_load.py",
+      "review",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/bcc277e6a62fcc71e25ceceb/configs/binding/competition/live_load_llama31_8b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_llama31_8b_review",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T222652Z_live2_llama31_8b_review.json",
+    "submitted_utc": "2026-10-26T22:26:52.438207+00:00",
+    "time": "00:30:00",
+    "time_min": null
+  },
+  "live2_status_refresh": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/c22a1af6c1a1da3fbfb781e8/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/c22a1af6c1a1da3fbfb781e8",
+      "scripts/101_binding_experiment_status.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/c22a1af6c1a1da3fbfb781e8/configs/binding/competition/live_load_status_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "live2_status_refresh",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T223623Z_live2_status_refresh.json",
+    "submitted_utc": "2026-10-26T22:36:23.948868+00:00",
+    "time": "00:05:00",
+    "time_min": null
+  },
+  "liveback2_codellama34b": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6",
+      "scripts/116_binding_live_load.py",
+      "run_backend",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/configs/binding/competition/live_load_backend_codellama34b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": "gpu:1",
+    "name": "liveback2_codellama34b",
+    "partition": "h100,h200",
+    "submission_manifest": "log/slurm/submit_20261026T230125Z_liveback2_codellama34b.json",
+    "submitted_utc": "2026-10-26T23:01:25.505809+00:00",
+    "time": "00:30:00",
+    "time_min": "00:05:00"
+  },
+  "liveback2_codellama34b_audit": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6",
+      "scripts/116_binding_live_load.py",
+      "audit_backend",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/configs/binding/competition/live_load_backend_codellama34b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "liveback2_codellama34b_audit",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T230125Z_liveback2_codellama34b_audit.json",
+    "submitted_utc": "2026-10-26T23:01:25.575613+00:00",
+    "time": "00:15:00",
+    "time_min": null
+  },
+  "liveback2_codellama34b_prep": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6",
+      "scripts/116_binding_live_load.py",
+      "prepare_backend",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/configs/binding/competition/live_load_backend_codellama34b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "liveback2_codellama34b_prep",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T230125Z_liveback2_codellama34b_prep.json",
+    "submitted_utc": "2026-10-26T23:01:25.426329+00:00",
+    "time": "00:20:00",
+    "time_min": null
+  },
+  "liveback2_llama31_8b": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6",
+      "scripts/116_binding_live_load.py",
+      "run_backend",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/configs/binding/competition/live_load_backend_llama31_8b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": "gpu:1",
+    "name": "liveback2_llama31_8b",
+    "partition": "dev-a30,a30,h100,h200",
+    "submission_manifest": "log/slurm/submit_20261026T230125Z_liveback2_llama31_8b.json",
+    "submitted_utc": "2026-10-26T23:01:25.280414+00:00",
+    "time": "00:30:00",
+    "time_min": "00:05:00"
+  },
+  "liveback2_llama31_8b_audit": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6",
+      "scripts/116_binding_live_load.py",
+      "audit_backend",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/configs/binding/competition/live_load_backend_llama31_8b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "liveback2_llama31_8b_audit",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T230125Z_liveback2_llama31_8b_audit.json",
+    "submitted_utc": "2026-10-26T23:01:25.349041+00:00",
+    "time": "00:15:00",
+    "time_min": null
+  },
+  "liveback2_llama31_8b_prep": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6",
+      "scripts/116_binding_live_load.py",
+      "prepare_backend",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/a726315cf8eede8de5888cf6/configs/binding/competition/live_load_backend_llama31_8b_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "liveback2_llama31_8b_prep",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T230125Z_liveback2_llama31_8b_prep.json",
+    "submitted_utc": "2026-10-26T23:01:25.212230+00:00",
+    "time": "00:20:00",
+    "time_min": null
+  },
+  "liveback2_report": {
+    "argv": [
+      "/work/jvl210002/migration/codecue/../envs/probe-cu129/bin/python",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/8d1820e4299bac18460ac61b/scripts/91_binding_frozen_run.py",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/8d1820e4299bac18460ac61b",
+      "scripts/116_binding_live_load.py",
+      "backend_report",
+      "/work/jvl210002/migration/codecue/artifacts/binding/sources/8d1820e4299bac18460ac61b/configs/binding/competition/live_load_backend_report_v2.json"
+    ],
+    "git": "39c9e66",
+    "gres": null,
+    "name": "liveback2_report",
+    "partition": "dev,normal",
+    "submission_manifest": "log/slurm/submit_20261026T230606Z_liveback2_report.json",
+    "submitted_utc": "2026-10-26T23:06:06.243780+00:00",
+    "time": "00:10:00",
+    "time_min": null
+  }
+}

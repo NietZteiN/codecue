@@ -1,0 +1,24 @@
+{
+  "candidate_seed": 20261028,
+  "dataset": "artifacts/binding/schedule_diversity/20261028_v1/sources.jsonl",
+  "evaluation_role": "discovery_relationship_schedule_diversity_sources_v1",
+  "excluded_graph_sources": [
+    {
+      "name": "routing_sources_v1",
+      "path": "artifacts/binding/relationships/routing_sources_v1.jsonl",
+      "sha256": "7a76b3e7ce1b82c8f1b869c492246cb22e2b7f64f672b1dd89f724f64a56e9dd"
+    },
+    {
+      "name": "schedule_sources_v1",
+      "path": "artifacts/binding/relationships/schedule_sources_v1.jsonl",
+      "sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287"
+    }
+  ],
+  "numeric_seeds": [
+    751,
+    857,
+    967
+  ],
+  "report": "reports/binding/relationship_schedule_diversity_preparation_v1.md",
+  "review": "artifacts/binding/schedule_diversity/20261028_v1/source_review_v1.json"
+}

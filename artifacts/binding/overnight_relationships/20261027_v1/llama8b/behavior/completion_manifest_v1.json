@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "manifest": {
+      "bytes": 3043,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/manifest.json",
+      "sha256": "62b5053978357e22defc3e8edb7a8732a593931efede469a70bab1369f6524ab"
+    },
+    "registration": {
+      "bytes": 2087,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/registration.json",
+      "sha256": "c64f75f13206bae975523db3fe977c133e66ced4513e42993d1a11ea0e11c123"
+    },
+    "report": {
+      "bytes": 1791,
+      "path": "reports/binding/overnight_20261027_llama8b_behavior.md",
+      "sha256": "801137eae7a4538c53d72dc7bb9c64c956fe20ed01acf1654f8744a8cd6cc634"
+    },
+    "responses": {
+      "bytes": 2863883,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/responses.jsonl",
+      "sha256": "94eb7a843dfc89889271ad4f1bb1685881916a51ed7719d0b5ab31cf150083c0"
+    },
+    "summary": {
+      "bytes": 4959,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/behavior/summary.json",
+      "sha256": "b00401b260144bd3b251e7a688a1061d8bee5b1a7801ffa4fd97cb9ec1fa306c"
+    }
+  },
+  "cases": 7290,
+  "config_hash": "fb4f94a4f279e6bc6817030fce19b055032e689f50bfb6682869b8c5f2b04f07",
+  "evaluation_role": "discovery_overnight_relationship_behavior_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 7290,
+  "new_model_queries": 7290,
+  "source": {
+    "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+    "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+  },
+  "status": "complete_exploratory"
+}

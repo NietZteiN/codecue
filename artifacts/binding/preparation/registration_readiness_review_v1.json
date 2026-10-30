@@ -1,0 +1,227 @@
+{
+  "actions_taken": [],
+  "automatic_execution_enabled": false,
+  "checks": [
+    {
+      "check": "required_fields",
+      "detail": "missing or placeholder fields: hypothesis, competing_explanations, primary_intervention_endpoint, intervention_controls, model_revision, layers_and_sites, frozen_fitting_procedure, structural_predictions, ambiguity_and_exclusion_rules, multiplicity_and_uncertainty, feature_information_contract, additional_query_budgets, code_source_sha256, dataset_sha256, registered_utc",
+      "passed": false
+    },
+    {
+      "check": "required_field_types",
+      "detail": "scientific choices must be explicit text or structured metadata: ",
+      "passed": true
+    },
+    {
+      "check": "frozen_status",
+      "detail": "status must explicitly be frozen; draft never passes",
+      "passed": false
+    },
+    {
+      "check": "supported_account",
+      "detail": "supported_account must explicitly be true; this utility does not establish a mechanism",
+      "passed": false
+    },
+    {
+      "check": "run_config",
+      "detail": "run_config metadata is required to check evaluator bindings",
+      "passed": false
+    },
+    {
+      "check": "model_revision_pinned",
+      "detail": "model_revision must be an immutable 40- or 64-character hexadecimal revision",
+      "passed": false
+    },
+    {
+      "check": "code_source_sha256",
+      "detail": "registration code digest must match current analysis source identity",
+      "passed": false
+    },
+    {
+      "check": "dataset_manifest_metadata",
+      "detail": "dataset manifest metadata must declare a SHA-256 and evaluation_role; dataset body is not read",
+      "passed": false
+    },
+    {
+      "check": "dataset_sha256",
+      "detail": "registration dataset digest must match declared dataset manifest metadata",
+      "passed": false
+    },
+    {
+      "check": "behavioral_endpoint",
+      "detail": "existing heldout evaluator implements incorrect_including_invalid",
+      "passed": true
+    },
+    {
+      "check": "registered_utc",
+      "detail": "registered_utc must be an explicit UTC timestamp",
+      "passed": false
+    },
+    {
+      "check": "fit_manifest_digest",
+      "detail": "forecasting requires a pinned fit_manifest_sha256; fitted model contents are not read",
+      "passed": false
+    },
+    {
+      "check": "feature_information_contract",
+      "detail": "'NoneType' object is not iterable",
+      "passed": false
+    },
+    {
+      "check": "query_budget_declarations",
+      "detail": "declare nonnegative per-target additional-query budgets for all four predictors",
+      "passed": false
+    }
+  ],
+  "current_code_source_sha256": "897659ad87585b284ce932c9710b94da48692c8dcab6e22d10c359ada45181ac",
+  "dataset_body_read": false,
+  "dataset_metadata": {
+    "body_read": false,
+    "evaluation_role": null,
+    "sha256": null
+  },
+  "declared_payload_paths": {},
+  "eligibility_ready": false,
+  "evaluation_role": "forecast_registration_metadata_readiness_v1",
+  "frozen_predictions": {
+    "content_hash_verified": false,
+    "contents_read": false,
+    "declared": false
+  },
+  "heldout_authorized": false,
+  "heldout_outcomes_read": false,
+  "issues": [
+    {
+      "check": "required_fields",
+      "detail": "missing or placeholder fields: hypothesis, competing_explanations, primary_intervention_endpoint, intervention_controls, model_revision, layers_and_sites, frozen_fitting_procedure, structural_predictions, ambiguity_and_exclusion_rules, multiplicity_and_uncertainty, feature_information_contract, additional_query_budgets, code_source_sha256, dataset_sha256, registered_utc"
+    },
+    {
+      "check": "frozen_status",
+      "detail": "status must explicitly be frozen; draft never passes"
+    },
+    {
+      "check": "supported_account",
+      "detail": "supported_account must explicitly be true; this utility does not establish a mechanism"
+    },
+    {
+      "check": "run_config",
+      "detail": "run_config metadata is required to check evaluator bindings"
+    },
+    {
+      "check": "model_revision_pinned",
+      "detail": "model_revision must be an immutable 40- or 64-character hexadecimal revision"
+    },
+    {
+      "check": "code_source_sha256",
+      "detail": "registration code digest must match current analysis source identity"
+    },
+    {
+      "check": "dataset_manifest_metadata",
+      "detail": "dataset manifest metadata must declare a SHA-256 and evaluation_role; dataset body is not read"
+    },
+    {
+      "check": "dataset_sha256",
+      "detail": "registration dataset digest must match declared dataset manifest metadata"
+    },
+    {
+      "check": "registered_utc",
+      "detail": "registered_utc must be an explicit UTC timestamp"
+    },
+    {
+      "check": "fit_manifest_digest",
+      "detail": "forecasting requires a pinned fit_manifest_sha256; fitted model contents are not read"
+    },
+    {
+      "check": "feature_information_contract",
+      "detail": "'NoneType' object is not iterable"
+    },
+    {
+      "check": "query_budget_declarations",
+      "detail": "declare nonnegative per-target additional-query budgets for all four predictors"
+    }
+  ],
+  "limitation": "Metadata readiness does not verify scientific support, forecast contents, first-access ordering or primary-ID coverage. It does not authorize or execute final collection, scoring, pooling or model inference.",
+  "metadata_reads": [
+    {
+      "bytes": 729,
+      "kind": "bounded_metadata_json",
+      "path": "/work/jvl210002/migration/codecue/configs/binding/preparation/forecast_registration_draft_v1.json"
+    }
+  ],
+  "missing_fields": [
+    "hypothesis",
+    "competing_explanations",
+    "primary_intervention_endpoint",
+    "intervention_controls",
+    "model_revision",
+    "layers_and_sites",
+    "frozen_fitting_procedure",
+    "structural_predictions",
+    "ambiguity_and_exclusion_rules",
+    "multiplicity_and_uncertainty",
+    "feature_information_contract",
+    "additional_query_budgets",
+    "code_source_sha256",
+    "dataset_sha256",
+    "registered_utc"
+  ],
+  "model_loads": 0,
+  "prerequisite_dag": [
+    {
+      "depends_on": [],
+      "execute": false,
+      "id": "registration",
+      "prerequisite": "scientific choices supported and registration frozen"
+    },
+    {
+      "depends_on": [
+        "registration"
+      ],
+      "execute": false,
+      "id": "frozen_measurements_and_forecasts",
+      "prerequisite": "registered access contract; forecasts frozen and hash pinned before new target outcomes"
+    },
+    {
+      "depends_on": [
+        "frozen_measurements_and_forecasts"
+      ],
+      "execute": false,
+      "id": "new_heldout_responses",
+      "prerequisite": "separate authorized collection after forecast freeze; no previous target-outcome access"
+    },
+    {
+      "depends_on": [
+        "new_heldout_responses"
+      ],
+      "execute": false,
+      "id": "scoring",
+      "prerequisite": "registered evaluator and exact primary-ID coverage"
+    }
+  ],
+  "query_budget_scope": "information-access query costs only; no project compute or GPU limit",
+  "raw_predictions_read": false,
+  "registration": "configs/binding/preparation/forecast_registration_draft_v1.json",
+  "registration_semantic_sha256": "e0f34c18cc2bea988298d98e5ad829df588083806757a2ac8514bbbb95aecd3c",
+  "registration_state": "draft",
+  "required_fields": [
+    "hypothesis",
+    "competing_explanations",
+    "primary_behavioral_endpoint",
+    "primary_intervention_endpoint",
+    "intervention_controls",
+    "model_revision",
+    "layers_and_sites",
+    "frozen_fitting_procedure",
+    "structural_predictions",
+    "ambiguity_and_exclusion_rules",
+    "multiplicity_and_uncertainty",
+    "feature_information_contract",
+    "additional_query_budgets",
+    "code_source_sha256",
+    "dataset_sha256",
+    "registered_utc"
+  ],
+  "status": "draft",
+  "submissions": 0,
+  "supported_account": false
+}

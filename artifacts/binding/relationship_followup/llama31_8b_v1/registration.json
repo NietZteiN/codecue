@@ -1,0 +1,63 @@
+{
+  "config": {
+    "declared_plan": "reports/binding/relationship_score_followup_plan_v1.md",
+    "declared_plan_sha256": "c6079e28fc51f6616a26123ec3969d56da078a93fcad907b7ae6ffab84d57ac4",
+    "evaluation_role": "posthoc_discovery_relationship_score_controls_v1",
+    "pipeline_config": "configs/binding/relationships/readouts_pipeline_v3.json",
+    "pipeline_config_sha256": "61bdf8018a1dcefc774d5cc776b13a922a193460dc5f61a41cf2a007229f9704",
+    "pipeline_review": "artifacts/binding/relationship_readouts/pipeline_v3/pipeline_review_v1.json",
+    "pipeline_review_sha256": "5f9e4d95543d2e0c3808a1602f3485c236f35781c10fc79dce1c6e4f35b4e308",
+    "readout_completion": "artifacts/binding/relationship_readouts/llama31_8b_v3/completion_manifest_v1.json",
+    "readout_completion_sha256": "f24c233a150538d884bc09554f00ff918d85252d32cb77a7e79f3506c81175e4",
+    "report": "reports/binding/relationship_score_controls_v1.md",
+    "run_dir": "artifacts/binding/relationship_followup/llama31_8b_v1"
+  },
+  "config_hash": "d6c75c62a2b3c2313d6720ce779fb715707bdabe9df97e92e408e0e004ccd5a7",
+  "evaluation_role": "posthoc_discovery_relationship_score_controls_v1",
+  "generated_holdouts_opened": false,
+  "limitation": "Posthoc exploratory controls selected after inspecting the original discovery results, on the same nine development components. These are not new confirmatory tests. Original primary comparisons and artifacts are preserved. A strong source-value comparator diagnoses decoder accessibility, not a dedicated relational representation. State-matched provenance pairs differ in an explicit source copy and do not establish natural causal use. Seeds and lexical relatives are not independent replications. No raw activation arrays, model calls, refits or sealed outcomes are used.",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_readout_completion": {
+    "bytes": 21505,
+    "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/completion_manifest_v1.json",
+    "sha256": "f24c233a150538d884bc09554f00ff918d85252d32cb77a7e79f3506c81175e4"
+  },
+  "posthoc": true,
+  "protocol": {
+    "algebraic_contrast": "hidden_direct_minus_source_categorical_value_derived",
+    "backends": [
+      "hidden",
+      "surface"
+    ],
+    "bootstrap": {
+      "draws": 2000,
+      "minimum_valid_draws": 1900,
+      "seed": 117
+    },
+    "layer": 24,
+    "posthoc": true,
+    "provenance_sites": [
+      7,
+      8
+    ],
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "selected_score_banks": 18,
+    "sites": [
+      3,
+      7,
+      8
+    ],
+    "unconstrained_graph_threshold": 0.5
+  },
+  "source": {
+    "frozen_manifest_sha256": "2392ca55ebcfd8ce933336d2155148422f036d0c3c6f466045ff919dfca1963c",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/0e10774ed60ebedd04379f4d",
+    "snapshot_id": "0e10774ed60ebedd04379f4d",
+    "source_sha256": "85f731458f46bfec0533518358a1bf0432860bac6f4c5f7670bbf3fea5c17fe3"
+  }
+}

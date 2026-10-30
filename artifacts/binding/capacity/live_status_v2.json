@@ -1,0 +1,161 @@
+{
+  "budget": {
+    "active_jobs": 0,
+    "cap_seconds": null,
+    "reserved_seconds": 0,
+    "unreserved_seconds": null,
+    "used_seconds": 1627.842604353733
+  },
+  "comparison_audited": true,
+  "completed_report": "reports/binding/capacity_results.md",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "jobs": {
+    "codellama13b_audit": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "job_id": "476870",
+      "state": "COMPLETED"
+    },
+    "codellama13b_preflight": {
+      "elapsed_seconds": 74,
+      "exit_code": "0:0",
+      "job_id": "476868",
+      "state": "COMPLETED"
+    },
+    "codellama13b_run": {
+      "elapsed_seconds": 558,
+      "exit_code": "0:0",
+      "job_id": "476869",
+      "state": "COMPLETED"
+    },
+    "codellama34b_audit": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "job_id": "476873",
+      "state": "COMPLETED"
+    },
+    "codellama34b_preflight": {
+      "elapsed_seconds": 79,
+      "exit_code": "0:0",
+      "job_id": "476871",
+      "state": "COMPLETED"
+    },
+    "codellama34b_run": {
+      "elapsed_seconds": 594,
+      "exit_code": "0:0",
+      "job_id": "476872",
+      "state": "COMPLETED"
+    },
+    "collect": {
+      "elapsed_seconds": 7,
+      "exit_code": "0:0",
+      "job_id": "476930",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_audit": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "job_id": "476929",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_preflight": {
+      "elapsed_seconds": 88,
+      "exit_code": "0:0",
+      "job_id": "476927",
+      "state": "COMPLETED"
+    },
+    "llama31_8b_run": {
+      "elapsed_seconds": 473,
+      "exit_code": "0:0",
+      "job_id": "476928",
+      "state": "COMPLETED"
+    },
+    "llama32_3b_audit": {
+      "elapsed_seconds": 2,
+      "exit_code": "0:0",
+      "job_id": "476926",
+      "state": "COMPLETED"
+    },
+    "llama32_3b_preflight": {
+      "elapsed_seconds": 88,
+      "exit_code": "0:0",
+      "job_id": "476924",
+      "state": "COMPLETED"
+    },
+    "llama32_3b_run": {
+      "elapsed_seconds": 436,
+      "exit_code": "0:0",
+      "job_id": "476925",
+      "state": "COMPLETED"
+    },
+    "tests": {
+      "elapsed_seconds": 131,
+      "exit_code": "0:0",
+      "job_id": "476923",
+      "state": "COMPLETED"
+    }
+  },
+  "model_inference": false,
+  "plan_report": "capacity_plan.md",
+  "recorded_utc": "2026-10-26T04:05:36.653979+00:00",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/capacity/status_v2.json",
+  "scheduler_errors": [],
+  "scientific_artifacts_modified": false,
+  "stages": [
+    {
+      "evaluated": 5038,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "codellama13b",
+      "path": "artifacts/binding/capacity/codellama13b_v1/checkpoint_suite",
+      "planned": 5038,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 5038
+      }
+    },
+    {
+      "evaluated": 5038,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "codellama34b",
+      "path": "artifacts/binding/capacity/codellama34b_v1/checkpoint_suite",
+      "planned": 5038,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 5038
+      }
+    },
+    {
+      "evaluated": 5038,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "llama32_3b",
+      "path": "artifacts/binding/capacity/llama32_3b_v2/checkpoint_suite",
+      "planned": 5038,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 5038
+      }
+    },
+    {
+      "evaluated": 5038,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "llama31_8b",
+      "path": "artifacts/binding/capacity/llama31_8b_v1/checkpoint_suite",
+      "planned": 5038,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 5038
+      }
+    }
+  ],
+  "status": "complete",
+  "title": "Uncapped project checkpoint suites"
+}

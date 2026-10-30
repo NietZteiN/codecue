@@ -1,0 +1,27 @@
+{
+  "evaluation_role": "discovery_schedule_followup_build_v1",
+  "focused_tests": {
+    "score_review": 26,
+    "source_diversity": 26
+  },
+  "generated_holdouts_opened": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "peer_review": "Fixed-target matching, source/prediction provenance, body/comparison denominator distinction and exclusion-role guards reviewed independently.",
+  "source": {
+    "code": "61c7104734cf8d7d4c5868983550bdf3a3cfe6f41dd89eca448d52fe191b7f5d",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/76f592842abcad4d62c63857",
+    "snapshot_id": "76f592842abcad4d62c63857"
+  },
+  "source_fixture_validation": {
+    "actual_project_source_build_performed": false,
+    "new_canonical_graph_families": 60,
+    "ordinary_python_traces": 8640,
+    "rows": 5760
+  },
+  "source_module_sha256": {
+    "src/codecue/binding/schedule_diversity_programs.py": "5939feb1b3bd63ecdb07b8f6395af70539f10e106fbb8a19159aa0cf15548830",
+    "src/codecue/binding/schedule_score_review.py": "b0ca853f0b9be211ba55ba7ea5166059c52f3aee42832d3c56345f011cc8e984"
+  },
+  "status": "passed"
+}

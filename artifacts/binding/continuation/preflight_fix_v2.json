@@ -1,0 +1,26 @@
+{
+  "reason": "The first competition preflights attempted to load public assets for a generated-only suite. Asset loading is now scoped to published sections; a generated-only regression test covers this path. No model inference ran in failed v1 competition jobs.",
+  "source": {
+    "code": "879fe543236610c346d227a1d704848b35e308a1001e00412e9694bfc8ffba74",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8ce4ab3ced797204df2a7232",
+    "snapshot_id": "8ce4ab3ced797204df2a7232"
+  },
+  "superseded_jobs": {
+    "codellama34b_competition_audit": "477349",
+    "codellama34b_competition_preflight": "477347",
+    "codellama34b_competition_run": "477348",
+    "competition_review": "477353",
+    "llama31_8b_competition_audit": "477352",
+    "llama31_8b_competition_preflight": "477350",
+    "llama31_8b_competition_run": "477351",
+    "llama31_8b_serialization_audit": "477332",
+    "llama31_8b_serialization_preflight": "477330",
+    "llama31_8b_serialization_run": "477331",
+    "llama32_3b_serialization_audit": "477335",
+    "llama32_3b_serialization_preflight": "477333",
+    "llama32_3b_serialization_run": "477334",
+    "serialization_review": "477354",
+    "status": "477355",
+    "tests": "477346"
+  }
+}

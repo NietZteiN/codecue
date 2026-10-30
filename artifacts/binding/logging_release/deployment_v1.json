@@ -1,0 +1,123 @@
+{
+  "final_scheduler_checks": {
+    "command": "PYTHONPATH=src ../envs/probe-cu129/bin/python -m pytest -q tests/binding/test_log_scheduler.py",
+    "passed": 19
+  },
+  "fixture_observations_quarantined": 12,
+  "index": {
+    "counts": {
+      "analysis": 32,
+      "dataset": 38,
+      "job": 238,
+      "run": 59
+    },
+    "csv": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/experiments.csv",
+    "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+    "events": 823,
+    "issues": [],
+    "records": 367,
+    "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+    "status": "ok",
+    "updated_utc": "2026-10-26T23:53:42.715276+00:00"
+  },
+  "live_cpu_checks": {
+    "accounting": "478375|COMPLETED|0:0|0\n478377|COMPLETED|0:0|1\n478378|FAILED|7:0|2\n478379|COMPLETED|0:0|37",
+    "automatic_guard_job": "478375",
+    "intentional_failure_job": "478378",
+    "reconciler_smoke_job": "478379",
+    "success_job": "478377"
+  },
+  "recorded_utc": "2026-10-26T23:54:33.049081+00:00",
+  "regressions": {
+    "focused_final.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 96
+    },
+    "isolation_final.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 55
+    },
+    "regression_v1.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 291
+    },
+    "regression_v2.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 293
+    }
+  },
+  "scheduler": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 32,
+        "dataset": 38,
+        "job": 238,
+        "run": 59
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 823,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_tick_utc": "2026-10-26T23:49:29.288864+00:00",
+    "next_reconcile_utc": "2026-10-26T23:59:29.288864+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "478387",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-26T19:13:06",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "478376",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-26T19:03:02",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "scientific_gate_separation_verified": true,
+  "scope": "automatic metadata logging deployment; no model/tokenizer loads or scientific inference",
+  "source_files_sha256": {
+    "scripts/117_binding_experiment_log.py": "d98a93f4dec18e2c731b373c8185e92cee9b64e404e902383e0d0aba740f2e83",
+    "scripts/118_binding_log_scheduler.py": "1949fe2b324e9b20f72759c4cb572083157b6c9471e451add12f395ebbe9c80c",
+    "scripts/slurm/stamp.py": "8855715bdaaa8b4d073e3e93054092d71fd7c0d701d0288b6965b4926b7357ce",
+    "scripts/slurm/submit.py": "fecef19e64d974ba0227c8375af760589cd7b9b32e7682045beea1afd753cc08",
+    "src/codecue/binding/datasets.py": "63818b6e5aaa9713abac42b2ec26b75b447dfec2570cf797c0578b195b993c4a",
+    "src/codecue/binding/experiment_log.py": "12ab4444f7a7cfdff7aaf048a7045890020df6d4a2d12638dfcebf5d6916d436",
+    "src/codecue/binding/experiment_log_scheduler.py": "785f339de8b6b4ee6371de523b894b90fcbd8afb2107a4c24a9d46babad94067",
+    "src/codecue/binding/published_benchmarks.py": "342ae94899c5ac8597754273e9f8a413d725750e913a5c75cae8c7294e48bf8d",
+    "src/codecue/binding/registry.py": "e23ed27ea5df41b382120f193f6aac2829237bbd2217b4c453a4eecc3e544574",
+    "src/codecue/binding/snapshots.py": "c0464a1cbc04eb5ec09f8f7ab043578f42fb6acd3809dc0a8f08851fe7521ccf"
+  },
+  "status": "passed",
+  "unresolved_legacy_submissions": 6
+}

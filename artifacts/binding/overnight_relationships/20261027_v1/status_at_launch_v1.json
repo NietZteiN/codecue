@@ -1,0 +1,129 @@
+{
+  "all_terminal": false,
+  "attempts": {
+    "codellama34b_audit": [],
+    "codellama34b_behavior": [],
+    "codellama34b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "480521",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "PENDING",
+        "submitted_utc": "2026-10-28T03:48:03.967803+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "codellama34b_computed_roots": [],
+    "codellama34b_numeric_replication": [],
+    "codellama34b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "480512",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-28T03:40:25.796343+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_query_twins": [],
+    "llama8b_audit": [],
+    "llama8b_behavior": [],
+    "llama8b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "480520",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "RUNNING",
+        "submitted_utc": "2026-10-28T03:48:03.218963+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
+    "llama8b_computed_roots": [],
+    "llama8b_numeric_replication": [],
+    "llama8b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "480511",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-28T03:40:25.121297+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_query_twins": []
+  },
+  "config_hash": "97f216bb0deb7a9e80e9cd4f4d1770cef8a63aa11b671793fc75af0c911eb77f",
+  "evaluation_role": "discovery_overnight_relationship_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "observed_scientific_prefill_attempts": 1408,
+  "planned_scientific_case_prefills": 46656,
+  "recorded_utc": "2026-10-28T03:50:31.590221+00:00",
+  "scheduler_errors": [],
+  "scope": "Controller metadata only. Scientific worker query counts remain in their own manifests.",
+  "source": {
+    "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+    "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+  },
+  "stages": {
+    "codellama34b_audit": {
+      "state": "planned"
+    },
+    "codellama34b_behavior": {
+      "state": "planned"
+    },
+    "codellama34b_capture": {
+      "job_id": "480521",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "state": "pending"
+    },
+    "codellama34b_computed_roots": {
+      "state": "planned"
+    },
+    "codellama34b_numeric_replication": {
+      "state": "planned"
+    },
+    "codellama34b_prepare": {
+      "job_id": "480512",
+      "state": "complete"
+    },
+    "codellama34b_query_twins": {
+      "state": "planned"
+    },
+    "llama8b_audit": {
+      "state": "planned"
+    },
+    "llama8b_behavior": {
+      "state": "planned"
+    },
+    "llama8b_capture": {
+      "job_id": "480520",
+      "reason": "None",
+      "state": "running"
+    },
+    "llama8b_computed_roots": {
+      "state": "planned"
+    },
+    "llama8b_numeric_replication": {
+      "state": "planned"
+    },
+    "llama8b_prepare": {
+      "job_id": "480511",
+      "state": "complete"
+    },
+    "llama8b_query_twins": {
+      "state": "planned"
+    }
+  },
+  "status": "running"
+}

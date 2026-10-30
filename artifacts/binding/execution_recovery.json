@@ -1,0 +1,33 @@
+{
+  "recorded_utc": "2026-10-25T15:45:43.462612+00:00",
+  "host": "c-03-06",
+  "current_thread": "01a17129-abd1-7cc1-94fd-7f5cf1354dca",
+  "current_allocation": "476237",
+  "codex_processes": [
+    {
+      "pid": 2771011,
+      "ppid": 2770566,
+      "name": "codex",
+      "executable": "/home/jvl210002/.vscode-server/extensions/openai.chatgpt-26.1021.22027-linux-x64/bin/linux-x86_64/codex"
+    },
+    {
+      "pid": 2773563,
+      "ppid": 2771011,
+      "name": "codex-code-mode",
+      "executable": "/home/jvl210002/.vscode-server/extensions/openai.chatgpt-26.1021.22027-linux-x64/bin/linux-x86_64/codex-code-mode-host"
+    }
+  ],
+  "processes_killed": [],
+  "decision": "Only the current Codex application server and its execution worker were found; both preserved. No redundant Codex process on this node.",
+  "old_allocation": "475067 completed; no longer in active SLURM queue",
+  "observed_errors": [
+    "2026-10-25 10:03:36.791 [error] [CodexMcpConnection] cli: message=\"codex_core::tools::router: error=code-mode host closed its stdout\"",
+    "2026-10-25 10:03:42.498 [error] [CodexMcpConnection] cli: message=\"codex_core::tools::router: error=code-mode host exited with status signal: 5 (SIGTRAP) (core dumped)\"",
+    "2026-10-25 10:03:48.220 [error] [CodexMcpConnection] cli: message=\"codex_core::tools::router: error=code-mode host closed its stdout\"",
+    "2026-10-25 10:04:13.429 [error] [CodexMcpConnection] cli: message=\"codex_core::tools::router: error=code-mode host closed its stdout\"",
+    "2026-10-25 10:04:49.663 [error] [CodexMcpConnection] cli: message=\"codex_core::tools::router: error=code-mode host closed its stdout\"",
+    "2026-10-25 10:05:34.888 [error] [CodexMcpConnection] cli: message=\"codex_core::tools::router: error=code-mode host exited with status signal: 5 (SIGTRAP) (core dumped)\""
+  ],
+  "crash_root_cause": "Not established from available logs; execution recovered in a new allocation/session.",
+  "scope": "Current node/account process audit; no saved conversations deleted and no active research job terminated."
+}

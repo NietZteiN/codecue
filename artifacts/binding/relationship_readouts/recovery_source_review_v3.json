@@ -1,0 +1,62 @@
+{
+  "activation_arrays_opened": false,
+  "atomic_publication_scope": [
+    "prepared case JSONL",
+    "capture immutable metadata",
+    "capture feature chunks with prior journal pins",
+    "readout registration/results/report/audit/receipt",
+    "pipeline resolved configuration and metadata"
+  ],
+  "evaluation_role": "discovery_relationship_recovery_source_review_v3",
+  "expected_full_tests": 1537,
+  "files": {
+    "src/codecue/binding/experiment_status.py": {
+      "after_sha256": "82bf3ea996fff1e931f2c4b88f6fb6e949aabdf1ca1818b4e1885622122210eb",
+      "before_sha256": "bee2e91e84076923ddc0128a12ed822b07e521e986a9eb75c9028460fb8ab0cc"
+    },
+    "src/codecue/binding/relationship_capture.py": {
+      "after_sha256": "63b65bb9523066df70776ae142fd41db13b460e8390f1d8279deb7f69a88b75c",
+      "before_sha256": "4bf4a0dc6398999cd00f57eb291177839f941b6d5e85c156ed3533cd56ddd750"
+    },
+    "src/codecue/binding/relationship_pipeline.py": {
+      "after_sha256": "23387d680ace415a83732518f7e2ad2c732f1b4687a889a7940985609411a98e",
+      "before_sha256": "bb321e9e9005ac76fe54f551166ee764975ef6650a597c0c6af4c874f2a5b24a"
+    },
+    "src/codecue/binding/relationship_readouts.py": {
+      "after_sha256": "d92d632782f37199a6dd15a84ce81747bd24389a348f41741dc1fcab2d2a6caa",
+      "before_sha256": "d0eec24d282e2e7836309cb6c1175518677c91857850647fec6baf9d3022df3e"
+    },
+    "tests_changed": [
+      "tests/binding/test_relationship_capture.py",
+      "tests/binding/test_relationship_readouts.py",
+      "tests/binding/test_relationship_pipeline.py",
+      "tests/binding/test_experiment_status.py"
+    ]
+  },
+  "final_preflight_review": "artifacts/binding/relationship_readouts/preflight_requalification_review_v3.json",
+  "final_regression": {
+    "errors": 0,
+    "failures": 0,
+    "path": "artifacts/binding/relationship_readouts/regression_v3.xml",
+    "sha256": "59d98aa04c8bbba735531449f344bc075e761968548bea1fdd5a3a4746628663",
+    "skipped": 0,
+    "tests": 1537
+  },
+  "focused_checks": {
+    "capture": 33,
+    "pipeline": 19,
+    "readout_targets_ridge": 169,
+    "status_preparation": 25
+  },
+  "frozen_source": {
+    "code": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0"
+  },
+  "generated_holdouts_opened": false,
+  "independent_capture_recovery_review": "No blocker; durable journal ordering, interrupted counters and summary recovery checked against stable source.",
+  "model_or_tokenizer_loads": 0,
+  "new_model_queries": 0,
+  "scientific_protocol_changed": false,
+  "status": "passed_full_regression"
+}

@@ -1,0 +1,51 @@
+{
+  "evaluated": 12288,
+  "generated_holdouts_opened": false,
+  "generated_tokens": 0,
+  "mechanism_C_fitted": false,
+  "models": {
+    "codellama34b": {
+      "audit": "artifacts/binding/candidate_measurement/codellama34b_full_v2/candidate_measurement/audit.json",
+      "evaluated": 6144,
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-f6a8c9f8-6812-8572-8e81-97cec152c9ad",
+        "mean_gpu_utilization_percent": 99.24559220078822,
+        "mean_power_watts": 521.5236714374611,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 142425.0,
+        "samples": 4821,
+        "selector_verified": true
+      },
+      "manifest_error": null,
+      "measurement_dtype": "float32",
+      "scalar_sha256": "bb0a41a529ef92f7efd0b8263a55b317f5240ce390e43d52c64459d41d67936c",
+      "status": "passed",
+      "tokenization_rule": "joint_prompt_candidate_v1",
+      "wall_seconds": 2562.2234186269343
+    },
+    "llama31_8b": {
+      "audit": "artifacts/binding/candidate_measurement/llama31_8b_full_v3/candidate_measurement/audit.json",
+      "evaluated": 6144,
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-f5e5dcd3-9ad7-dea7-f353-b94809a7d626",
+        "mean_gpu_utilization_percent": 97.20422535211267,
+        "mean_power_watts": 473.4091247484909,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 59111.0,
+        "samples": 994,
+        "selector_verified": true
+      },
+      "manifest_error": null,
+      "measurement_dtype": "float32",
+      "scalar_sha256": "27db6014c5f4873d699b377e6ab308a3cab665630bfba05ac5253ef3d672536a",
+      "status": "passed",
+      "tokenization_rule": "standalone_decode_verified_v2",
+      "wall_seconds": 548.8015971072018
+    }
+  },
+  "scope": "Metadata summary of the completed per-run scalar coverage/provenance/parity audits; no correctness scoring.",
+  "status": "passed",
+  "target_outcomes_read": false
+}

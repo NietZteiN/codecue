@@ -1,0 +1,61 @@
+{
+  "data_sources": "artifacts/binding/benchmarks/published_datasets_manifest.json",
+  "data_sources_sha256": "1c00919e2360e57cf2ee7e912ccded1f8386b5d018c75a62926d7baf8fb70d14",
+  "protocol_sources": "artifacts/binding/benchmarks/protocol_sources_manifest.json",
+  "protocol_sources_sha256": "45f50eea06548d4c8dfd0d464f7b16b185ae2dc12764c065bf1e75891e44f86b",
+  "dataset": "artifacts/binding/benchmarks/published_records.jsonl",
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "protocol": "short_answer_chat_v1",
+  "tokenization_mode": "codellama_official_boundary_v1",
+  "prompt_wrapper": "cruxeval_released_completion_v1",
+  "scorer": "python_literal_equality_and_bbh_final_letter_v2",
+  "tasks": [
+    "cruxeval_o_direct",
+    "cruxeval_o_cot"
+  ],
+  "max_new_tokens": {
+    "cruxeval_o_direct": 512,
+    "cruxeval_o_cot": 1024,
+    "bbh_tracking_3": 1024,
+    "bbh_tracking_5": 1024,
+    "bbh_tracking_7": 1024
+  },
+  "context_limit": 4096,
+  "batch_size": 8,
+  "batch_time_margin_seconds": 120,
+  "budget_ledger": "artifacts/binding/gpu_budget.json",
+  "run_dir": "artifacts/binding/throughput/tune_v3",
+  "report": "reports/binding/throughput_v3.md",
+  "preflight_result": "artifacts/binding/throughput/tune_v3/tokenizer_preflight.json",
+  "max_gpu_seconds": 1500,
+  "execution_backend": "vLLM CUDA12.9 isolated runtime throughput profiling",
+  "reference_stage": "artifacts/binding/serialization/completion_full_v1/published_behavior",
+  "reference_identity_hash": "129b71377ea3c139a4235b3e4bee9f794c25d2bb99d5bdb7235ac530a8228ca6",
+  "reference_responses_sha256": "4f482f28e7ef305ae8c882ea5ac441df0916228e23773e9b4a6642b1ab936fad",
+  "profile_first_n_per_task": 256,
+  "validation_reserve_seconds": 300,
+  "validation_chunk_size": 1600,
+  "workers": [
+    {
+      "backend": "vllm",
+      "gpu_memory_utilization": 0.9,
+      "max_num_seqs": 256,
+      "max_num_batched_tokens": 16384,
+      "chunk_sizes": [
+        64,
+        128,
+        256
+      ],
+      "timeout_seconds": 1000
+    }
+  ],
+  "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+  "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+  "uuid_telemetry": true,
+  "baseline_trial": "artifacts/binding/throughput/tune_v2/throughput_profile/worker_0/hf_eager_legacy_8.json",
+  "baseline_trial_sha256": "8127592728cb2f5e732f6bfbb5c04e0bef42a0ddd52506ba55d69ca26793b7c7"
+}

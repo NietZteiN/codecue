@@ -1,0 +1,22 @@
+[
+  {
+    "exit_code": 1,
+    "log": "artifacts/binding/throughput/tune_v3/throughput_profile/worker_0/worker.log",
+    "spec": {
+      "backend": "vllm",
+      "chunk_sizes": [
+        64,
+        128,
+        256
+      ],
+      "first_n_per_task": 256,
+      "gpu_memory_utilization": 0.9,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 256,
+      "timeout_seconds": 1000
+    },
+    "status": "worker_failed",
+    "trials": [],
+    "worker_wall_seconds": 427.12789660302224
+  }
+]

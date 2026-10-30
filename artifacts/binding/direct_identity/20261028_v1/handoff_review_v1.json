@@ -1,0 +1,1896 @@
+{
+  "active_sites": [
+    7,
+    8
+  ],
+  "byte_identical_publication": true,
+  "capture_source_snapshot": "345f75b01f5c3b33bd0ca6d8",
+  "categorical_heads": 24,
+  "completion_worker_array_loading": false,
+  "component_scores_are_linear_joint_marginals": true,
+  "evaluation_role": "discovery_direct_identity_completed_handoff_v1",
+  "factorizations": 60,
+  "fit_banks": 60,
+  "generated_holdouts_opened": false,
+  "initial_site3": "All copy-event targets undefined; no fits.",
+  "joint_prediction_uses_global_codebook_only": true,
+  "limitations": "Adaptive conditional event-identity accessibility with explicit owner syntax, constant first versions, sparse final-parent version4 support and coupled score marginals; no causal use or untouched unfamiliar-program qualification.",
+  "model_summaries": {
+    "codellama34b": {
+      "active_sites": [
+        7,
+        8
+      ],
+      "capacity": {
+        "direct_joint_outputs_per_event": 16,
+        "parameter_matched": false,
+        "separate_outputs_per_event": 8
+      },
+      "capture_site_ids": [
+        3,
+        7,
+        8
+      ],
+      "cases": 5760,
+      "config_hash": "fe1898b45d06c83ed841686572de4619d3655a81512667919df4fcc7dcaa1e9f",
+      "development_groups": 15,
+      "development_rows": 1440,
+      "evaluation_role": "discovery_direct_identity_readouts_v1",
+      "factorizations": 30,
+      "fit_banks": 30,
+      "generated_holdouts_opened": false,
+      "initial_site3": "All192targets undefined; no banks or fits.",
+      "limitation": "Adaptive direct categorical decoding, not natural causal use; component ridge scores are joint-score marginals, so the comparison concerns argmax decisions rather than independent representations; rare parent/event7 version4 has only2TRAIN graph families; all classes remain evaluated.",
+      "new_model_queries": 0,
+      "parameter_replay_rows": 172800,
+      "primary": {
+        "hidden": {
+          "direct": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.5805555555555556,
+                  "group_macro_accuracy": 0.5805555555555556,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.35462962962962963,
+                  "group_macro_accuracy": 0.3546296296296297,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.2777777777777778,
+                  "group_macro_accuracy": 0.27777777777777785,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.13055555555555554,
+                  "group_macro_accuracy": 0.13055555555555554,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.45092592592592595,
+                  "group_macro_accuracy": 0.45092592592592595,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.300925925925926,
+                  "group_macro_accuracy": 0.300925925925926,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.35462962962962963,
+                "group_macro_accuracy": 0.3546296296296297,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.7101851851851851,
+                "group_macro_accuracy": 0.7101851851851851,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.7916666666666666,
+                "group_macro_accuracy": 0.7916666666666666,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.300925925925926,
+                "group_macro_accuracy": 0.300925925925926,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.6092592592592593,
+                "group_macro_accuracy": 0.6092592592592593,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.6731481481481483,
+                "group_macro_accuracy": 0.6731481481481483,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "random_prefix_control": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.000925925925925926,
+                "group_macro_accuracy": 0.0009259259259259259,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.005555555555555556,
+                "group_macro_accuracy": 0.005555555555555554,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.003703703703703704,
+                "group_macro_accuracy": 0.0037037037037037034,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.003703703703703704,
+                "group_macro_accuracy": 0.0037037037037037034,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "source_owner_version_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "training_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          }
+        },
+        "surface": {
+          "direct": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.010185185185185186,
+                  "group_macro_accuracy": 0.010185185185185184,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.008333333333333333,
+                  "group_macro_accuracy": 0.008333333333333333,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.05555555555555556,
+                  "group_macro_accuracy": 0.05555555555555556,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.06944444444444443,
+                  "group_macro_accuracy": 0.06944444444444443,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.008333333333333333,
+                "group_macro_accuracy": 0.008333333333333333,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.13055555555555556,
+                "group_macro_accuracy": 0.13055555555555556,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.08888888888888889,
+                "group_macro_accuracy": 0.08888888888888886,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.06944444444444443,
+                "group_macro_accuracy": 0.06944444444444443,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.20185185185185184,
+                "group_macro_accuracy": 0.20185185185185184,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.22592592592592595,
+                "group_macro_accuracy": 0.22592592592592595,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "random_prefix_control": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.001851851851851852,
+                "group_macro_accuracy": 0.0018518518518518517,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.000925925925925926,
+                "group_macro_accuracy": 0.0009259259259259259,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.000925925925925926,
+                "group_macro_accuracy": 0.0009259259259259259,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.004629629629629629,
+                "group_macro_accuracy": 0.004629629629629629,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "source_owner_version_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "training_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          }
+        }
+      },
+      "status": "complete_exploratory",
+      "training_groups": 45,
+      "training_rows": 4320
+    },
+    "llama8b": {
+      "active_sites": [
+        7,
+        8
+      ],
+      "capacity": {
+        "direct_joint_outputs_per_event": 16,
+        "parameter_matched": false,
+        "separate_outputs_per_event": 8
+      },
+      "capture_site_ids": [
+        3,
+        7,
+        8
+      ],
+      "cases": 5760,
+      "config_hash": "13da16772fbab1da34c57d757ba16004d5f48cabeccb2924d99d1c1f233a5930",
+      "development_groups": 15,
+      "development_rows": 1440,
+      "evaluation_role": "discovery_direct_identity_readouts_v1",
+      "factorizations": 30,
+      "fit_banks": 30,
+      "generated_holdouts_opened": false,
+      "initial_site3": "All192targets undefined; no banks or fits.",
+      "limitation": "Adaptive direct categorical decoding, not natural causal use; component ridge scores are joint-score marginals, so the comparison concerns argmax decisions rather than independent representations; rare parent/event7 version4 has only2TRAIN graph families; all classes remain evaluated.",
+      "new_model_queries": 0,
+      "parameter_replay_rows": 172800,
+      "primary": {
+        "hidden": {
+          "direct": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.41111111111111115,
+                  "group_macro_accuracy": 0.41111111111111115,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.2851851851851852,
+                  "group_macro_accuracy": 0.28518518518518515,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.08796296296296297,
+                  "group_macro_accuracy": 0.08796296296296297,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.06018518518518518,
+                  "group_macro_accuracy": 0.06018518518518518,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.28888888888888886,
+                  "group_macro_accuracy": 0.28888888888888886,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.24629629629629632,
+                  "group_macro_accuracy": 0.24629629629629626,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.2851851851851852,
+                "group_macro_accuracy": 0.28518518518518515,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.5731481481481482,
+                "group_macro_accuracy": 0.5731481481481483,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.6787037037037038,
+                "group_macro_accuracy": 0.6787037037037037,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.24629629629629632,
+                "group_macro_accuracy": 0.24629629629629626,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.4212962962962963,
+                "group_macro_accuracy": 0.4212962962962963,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.5981481481481481,
+                "group_macro_accuracy": 0.5981481481481482,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "random_prefix_control": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.004629629629629629,
+                "group_macro_accuracy": 0.004629629629629629,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.002777777777777778,
+                "group_macro_accuracy": 0.002777777777777777,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.003703703703703704,
+                "group_macro_accuracy": 0.0037037037037037034,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.001851851851851852,
+                "group_macro_accuracy": 0.0018518518518518517,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "source_owner_version_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "training_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          }
+        },
+        "surface": {
+          "direct": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.011111111111111112,
+                  "group_macro_accuracy": 0.011111111111111112,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.007407407407407408,
+                  "group_macro_accuracy": 0.007407407407407407,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.05648148148148149,
+                  "group_macro_accuracy": 0.05648148148148149,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.06944444444444443,
+                  "group_macro_accuracy": 0.06944444444444443,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.007407407407407408,
+                "group_macro_accuracy": 0.007407407407407407,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.13333333333333333,
+                "group_macro_accuracy": 0.13333333333333333,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.0861111111111111,
+                "group_macro_accuracy": 0.0861111111111111,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.06944444444444443,
+                "group_macro_accuracy": 0.06944444444444443,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.20370370370370372,
+                "group_macro_accuracy": 0.2037037037037037,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.23055555555555554,
+                "group_macro_accuracy": 0.2305555555555556,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "random_prefix_control": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.001851851851851852,
+                "group_macro_accuracy": 0.0018518518518518517,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.001851851851851852,
+                "group_macro_accuracy": 0.0018518518518518517,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.001851851851851852,
+                "group_macro_accuracy": 0.0018518518518518517,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.004629629629629629,
+                "group_macro_accuracy": 0.004629629629629629,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "source_owner_version_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.11111111111111112,
+                  "group_macro_accuracy": 0.11111111111111112,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.022222222222222223,
+                  "group_macro_accuracy": 0.022222222222222223,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.4000000000000001,
+                  "group_macro_accuracy": 0.4000000000000001,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 1.0,
+                "group_macro_accuracy": 1.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          },
+          "training_prior": {
+            "binding_comparisons": {
+              "assignment": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "combined_eight": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              },
+              "parent": {
+                "factorized": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                },
+                "joint": {
+                  "accuracy": 0.0,
+                  "group_macro_accuracy": 0.0,
+                  "n": 1440
+                }
+              }
+            },
+            "whole_families": {
+              "assignment_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "assignment_version": {
+                "accuracy": 0.11111111111111112,
+                "group_macro_accuracy": 0.11111111111111112,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_joint": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_owner": {
+                "accuracy": 0.0,
+                "group_macro_accuracy": 0.0,
+                "heads": 4,
+                "n": 1440
+              },
+              "parent_version": {
+                "accuracy": 0.4000000000000001,
+                "group_macro_accuracy": 0.4000000000000001,
+                "heads": 4,
+                "n": 1440
+              }
+            }
+          }
+        }
+      },
+      "status": "complete_exploratory",
+      "training_groups": 45,
+      "training_rows": 4320
+    }
+  },
+  "new_GPU_allocations": 0,
+  "new_model_queries": 0,
+  "parameter_replay_rows": 345600,
+  "pins": [
+    {
+      "bytes": 1600,
+      "path": "artifacts/binding/direct_identity/20261028_v1/build_review_v1.json",
+      "sha256": "10e3a052be3db0244edc1bdf6e0e377a032ed33c8f764b0225eca04a453a2eea"
+    },
+    {
+      "bytes": 519,
+      "path": "artifacts/binding/direct_identity/20261028_v1/closure_job_v1.json",
+      "sha256": "4bbf58044bfd0119bb83a3d9990929cb6226f19ba980d3084ff2ecf975ebda20"
+    },
+    {
+      "bytes": 355,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/audit.json",
+      "sha256": "e788d2faeef944c1e6f18a73d6ca9bbe5abcacae0cbfae131a1ab7d89f923ced"
+    },
+    {
+      "bytes": 10291,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/completion_manifest_v1.json",
+      "sha256": "2fe062a545eff331bb315446960ebfe472f411092a7a571daf00da93269c5a2d"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer12_site7_seed17.npz",
+      "sha256": "2f303e731f69798ed1177ab5aabb42eeb220dc602ebec9d73598244f499303f9"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer12_site7_seed29.npz",
+      "sha256": "0957840f8101a4fd685b9d94c14416b58a11a27d1c852f775f5172b7f6c17f10"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer12_site7_seed43.npz",
+      "sha256": "42c4000c2d06329a6d04435e9b34203db5d7050d583e1e1f21bdb5622e5d3f52"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer12_site8_seed17.npz",
+      "sha256": "f4df45e0a8bc12e1dd9ad74f1b670f7851605236d4de6c182af434587c965dc0"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer12_site8_seed29.npz",
+      "sha256": "f06376835c0e0b756156a9a096aef05e600c1f9c9aaed898f158f7c03f6fcc83"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer12_site8_seed43.npz",
+      "sha256": "b614908dd27dc717cd51d648e4e6fd917f8f627c308abddd2ea1e825b2835234"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer24_site7_seed17.npz",
+      "sha256": "e54c6e682c642416770d4ac45523a0564aabd0b3067e926d6c2423360e855137"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer24_site7_seed29.npz",
+      "sha256": "5f6cf60a421692c159edc68d90d9a7506bc03ce60a86c8467ff0eaaa551d65eb"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer24_site7_seed43.npz",
+      "sha256": "d43fe7b265a8de4f6ddb0c74aef90a8deba0fd3312e44f7d1ca8459cf8a7edd6"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer24_site8_seed17.npz",
+      "sha256": "61fcede6d13a4237b0b0c2d1260761ef5139dbd64a308845a69a11b18359434b"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer24_site8_seed29.npz",
+      "sha256": "99ca15428455c94e372f9678f2e62fdaffb2641affa6bc205e8bce199cfcdb28"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer24_site8_seed43.npz",
+      "sha256": "88ddd4774c2a838b2c09d057cdab24c43153c114c7b4c377eae56559494d6bec"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer36_site7_seed17.npz",
+      "sha256": "76f8d798f9368bbfc15496b3df7f727fd283cb359054a9a8d30adb6cc76b39af"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer36_site7_seed29.npz",
+      "sha256": "8f7ebbd8225a2c2401b11e1508022c9d38a5f06c00d5153ad029968706c1a160"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer36_site7_seed43.npz",
+      "sha256": "507e9b4f0ee950722543b6823ba535ff0e795722b005de3f059f5f824310a260"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer36_site8_seed17.npz",
+      "sha256": "3c6d2e8a519eb384d898914828b3b7cee81305487ce26e71b2dd086faa92bb85"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer36_site8_seed29.npz",
+      "sha256": "4022f62941deaf6fa96b8105e2119f580773db2ae21e0181e3c6d55849600889"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer36_site8_seed43.npz",
+      "sha256": "880615505b510d5d91734367d3ebcc028e3fdb0956e7ead6dc25018c7fd9e9f3"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer47_site7_seed17.npz",
+      "sha256": "c273e5b561a8b05662d8d448efa93a77daef4755b405a84a76863a904c559e7f"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer47_site7_seed29.npz",
+      "sha256": "09efd93526650d0891f6c7f44c8a39a055530f7a6503e5b82bd0c17bb6cf78e9"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer47_site7_seed43.npz",
+      "sha256": "97e461866da763c2acad5698e18dd48d77b9f56fdab28e04a708414a71d53ea9"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer47_site8_seed17.npz",
+      "sha256": "115ee1ca66c63fcac5564b50ca28dabf531e3ea07bb18aa4d6330f123946607b"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer47_site8_seed29.npz",
+      "sha256": "218f7d85d0bfd4644b493e92f8c28637bb4e30976299720b22c0934e4b715f07"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/hidden_layer47_site8_seed43.npz",
+      "sha256": "ae1416095894089480e2bccec8d1abfd32c819b8c84288a29d4556bd3d6c630b"
+    },
+    {
+      "bytes": 10476,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json",
+      "sha256": "14fb8ac230829579cb04b214e656f9e551c6159fcd054ae541b5a87e44b5ff68"
+    },
+    {
+      "bytes": 3746,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/registration.json",
+      "sha256": "2c3b7be6cb4b7cb985688651158f315e867242f76e2c5576c0a7bba38b497b66"
+    },
+    {
+      "bytes": 114699260,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/results_v1.json",
+      "sha256": "82075319a54b4c7cbfb5816bd8e547f18375b91eb92d43130b4cd713103fc078"
+    },
+    {
+      "bytes": 18992,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/summary.json",
+      "sha256": "875632bcc1ea5b7e7d2debbba9c343502bb3b63f7f7456d8a57382d0747048bf"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/surface_layer-1_site7_seed17.npz",
+      "sha256": "9f211bc0a23eac6a150827e3fd726f95bb582552f1e1905e28fc708627d244be"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/surface_layer-1_site7_seed29.npz",
+      "sha256": "dd64e6c664f5adff527f54d29694f3d049fd2f1fd41712cd91260969869ae63d"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/surface_layer-1_site7_seed43.npz",
+      "sha256": "f6f238ece78298f28b576abc29509bd85baf7b6e815622d75544f2debbbb41b3"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/surface_layer-1_site8_seed17.npz",
+      "sha256": "fda68f34d5cfecb56f3b542c0066ca7659751198b1911241d8f605ac5b2425b3"
+    },
+    {
+      "bytes": 43619604,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/surface_layer-1_site8_seed29.npz",
+      "sha256": "271808c4aca8d3fe26b74d6ee7e281b1efa222a2f19face1db35450d84c528ea"
+    },
+    {
+      "bytes": 43619603,
+      "path": "artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/surface_layer-1_site8_seed43.npz",
+      "sha256": "1be9a4b19ce70d313f33e7226d4197f0035fa91b69622cb71cc70d49ff2622eb"
+    },
+    {
+      "bytes": 117692655,
+      "path": "artifacts/binding/direct_identity/20261028_v1/comparison_v1.json",
+      "sha256": "459a28d71998b2be8345b597af57bb5fdbe53e0484deb6431e74809a55d32604"
+    },
+    {
+      "bytes": 155,
+      "path": "artifacts/binding/direct_identity/20261028_v1/completion_logging_review_v1.json",
+      "sha256": "c884be0ef53e181a9664fba669d8ef12da209b676616517bc98def847d856b39"
+    },
+    {
+      "bytes": 1872,
+      "path": "artifacts/binding/direct_identity/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "dcdbb035cdef986eb6f89cd05ff9f4c21ac7fe6662995e1d8dcc57de8f0385a8"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/direct_identity/20261028_v1/execution_source_v1.json",
+      "sha256": "2a71656b86dc467a9c0c7fd77f311e8e2ad7c69a7c4e2eb78fc0193a36e1fd08"
+    },
+    {
+      "bytes": 8880,
+      "path": "artifacts/binding/direct_identity/20261028_v1/finish_suite_v1.py",
+      "sha256": "ddb19932890718c052dafac8fbe5ec8844772c54ea11e8099e12e87eadf2c980"
+    },
+    {
+      "bytes": 14245656,
+      "path": "artifacts/binding/direct_identity/20261028_v1/form_cells_v1.csv",
+      "sha256": "6d6b04382e96bab2e82eca66748e0565fd248ea301cfb2159b0d1dcd71cf8817"
+    },
+    {
+      "bytes": 98,
+      "path": "artifacts/binding/direct_identity/20261028_v1/jobs_v1.json",
+      "sha256": "34c7c76f39e8887ecb96048216f496690fc454efaf165ee9702060884d81ff4f"
+    },
+    {
+      "bytes": 355,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/audit.json",
+      "sha256": "e305e1842c969d2e762ed23ec9f52a8a211e05fe702675a175aa525447abae0b"
+    },
+    {
+      "bytes": 10104,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/completion_manifest_v1.json",
+      "sha256": "af6c3fa9290b55cbcd2186d3d0fa043ffa19718ff052d57e9323a40f10496029"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer16_site7_seed17.npz",
+      "sha256": "d1a2e07330cb627a9a65c8d1934edd6091a85564306bed796394ac43ee3b2c07"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer16_site7_seed29.npz",
+      "sha256": "84994e5c8ebf7f70d800f6be1b846c2000e9af8be48dd65126126a17e2f211cf"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer16_site7_seed43.npz",
+      "sha256": "a1b0033c815d8c8b8c2552a1c36f3c4227a208d879ad03d59b3d0d807bc29313"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer16_site8_seed17.npz",
+      "sha256": "ff2a976eb2f7b53b48686bf8aebdc632e968fdc66c5778e03188d2663b355024"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer16_site8_seed29.npz",
+      "sha256": "1ddf8259863649adee811d13bc5bda754f1cdd9aeda1782f88fdef45b06b8799"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer16_site8_seed43.npz",
+      "sha256": "2668599786310e3e1993a5366ab9228a1b47b0cc9f005fdb0dd4cec8042ef9a1"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer24_site7_seed17.npz",
+      "sha256": "13d9db52dde6e53cfc95f757bd231b66ac25926d55b153b73e7f42f161cdb4df"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer24_site7_seed29.npz",
+      "sha256": "3f83b10b3749caf08366b37debd57f5e34c3ac3429ee37e0a62c10de5b8a414e"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer24_site7_seed43.npz",
+      "sha256": "1bbc516d22df17d770479f959011de97a11169f5f10c150ebf29d222d72c3895"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer24_site8_seed17.npz",
+      "sha256": "8e7ffdedf13752a36fb01aa6ac37ac3baa9a5870fceb01efc93a8573bbb9f0b9"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer24_site8_seed29.npz",
+      "sha256": "601bee8ee9d1a3561760ff4ff5d5e6b47839920c7addc799f3d0a7b4a17082e5"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer24_site8_seed43.npz",
+      "sha256": "87b049ebae83e4d1b44271aad7abde4320843594854d302a250348bada609e9c"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer31_site7_seed17.npz",
+      "sha256": "9d9c084efae2a53638c08acd02919ccc07cba87a82d45bdb9a6a9541daf8edb0"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer31_site7_seed29.npz",
+      "sha256": "676064bf70541390d8be9153f18b3c84fa04f13c3d391d884c12b3519b7e0056"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer31_site7_seed43.npz",
+      "sha256": "ba23ce786e66ec6c5e9eae9a97ecf26080fb67f9552fc4da8e615391913db4b5"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer31_site8_seed17.npz",
+      "sha256": "b6cf4fd68954e96fa766895b4f317e43ffd397539cb02c32dd5c03856132d5ce"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer31_site8_seed29.npz",
+      "sha256": "13781bb46b5efb0ed9bfa316839696c8c0725582d6a7834bc48cb69d265eb5ee"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer31_site8_seed43.npz",
+      "sha256": "ad382b10a1ab1b89b68a47fa58a1c1de47756cef08a908467f01252fc75a7618"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer8_site7_seed17.npz",
+      "sha256": "56a30f45acd17cd23ce020f13f5ab0b81e4b0b561687de8bec9e6f96bd45dec7"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer8_site7_seed29.npz",
+      "sha256": "198af3f74415e0437fc375bee21454439e4199077f154ab6b96dfc5284af3209"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer8_site7_seed43.npz",
+      "sha256": "85b6a3f935faa31ec6c1a015a4c9b2319be69d88b5aeb5f4804c5601d4b30031"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer8_site8_seed17.npz",
+      "sha256": "3a558a6ca37ef9e20256e6f4b5ff2ea9ef0f492136c3b6daf3d31a25dbe407ca"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer8_site8_seed29.npz",
+      "sha256": "e94b31165a6b30fb661473237647e82937235b336fc0cad015d1e7351ed6fe42"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/hidden_layer8_site8_seed43.npz",
+      "sha256": "0ac7eb5e2cf3b496f082fea1cff8991d2582d9203a926323e961d70d50a5a579"
+    },
+    {
+      "bytes": 10289,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json",
+      "sha256": "c8508f0fa9001c7a689a6f171bcc3ed5848b9fab3f5bd8a21f339110f1e59cf8"
+    },
+    {
+      "bytes": 3731,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/registration.json",
+      "sha256": "06a1b81c7e13285ba071a5148a3e6a9698959add6268d9bc08c0f7f18c9b6071"
+    },
+    {
+      "bytes": 114756123,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/results_v1.json",
+      "sha256": "f25670ca24512f9585e49ab51c32bf4c7a23e3ce6f2166fc70aeb482a0f2625d"
+    },
+    {
+      "bytes": 18998,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/summary.json",
+      "sha256": "50f06f28e805147f526cc98e21ac64dc801e45e48225014fcf93e91777d40f32"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/surface_layer-1_site7_seed17.npz",
+      "sha256": "d47d7d6e525a3c21a76ae8eb106c98a8680fa18cfe9e67ba7f5dfe6497ddb0f7"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/surface_layer-1_site7_seed29.npz",
+      "sha256": "6bef96c81db693d086abb7aa3ba2110984b384f14540ceb7b7364b7e83fc58c0"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/surface_layer-1_site7_seed43.npz",
+      "sha256": "7f69ca4b2751aacab3080dd842352aa67539e573fe3feca3d7c10018b3cf5fd5"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/surface_layer-1_site8_seed17.npz",
+      "sha256": "e818710fb6f9a52c7753b0bb3333c5bcd51f133c3bb0a1fd647bebf4d882b96b"
+    },
+    {
+      "bytes": 30938392,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/surface_layer-1_site8_seed29.npz",
+      "sha256": "0d84a1fcc14c0d2f495312d9d3baa48fa5fe5cefa9f6e2b76c18c03e616cffa5"
+    },
+    {
+      "bytes": 30938391,
+      "path": "artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/surface_layer-1_site8_seed43.npz",
+      "sha256": "9e3c6fc5b167dfee09c4be04fe70031b010bd13bf368de4670b4687cc3456536"
+    },
+    {
+      "bytes": 8868,
+      "path": "artifacts/binding/direct_identity/20261028_v1/publication_review_v1.json",
+      "sha256": "2c2d0a5f8719aaad86ba44ddafad24a89ca0c8fa2a83c33deae894947b717c64"
+    },
+    {
+      "bytes": 72127,
+      "path": "artifacts/binding/direct_identity/20261028_v1/publish_results_v1.py",
+      "sha256": "a697a65c3f06d5c00ef405b43428d89c744aee482ec4d2be6f4472bbfb6691b0"
+    },
+    {
+      "bytes": 7784,
+      "path": "artifacts/binding/direct_identity/20261028_v1/readiness_at_completion_v1.csv",
+      "sha256": "bf450369f7671e3428cdf2760ebc9e3d7db58ea4c5e10bf248d4ae2f7ae31b89"
+    },
+    {
+      "bytes": 77439,
+      "path": "artifacts/binding/direct_identity/20261028_v1/readiness_at_completion_v1.json",
+      "sha256": "eb65340534cbcd6df514c61b554d23be15edb23960345dd01b546bc11aec301c"
+    },
+    {
+      "bytes": 264,
+      "path": "artifacts/binding/direct_identity/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "f989ae84036c581cc5c469027739d22924b1d535aa9c8bdc2dd28d3954cb64f8"
+    },
+    {
+      "bytes": 308513,
+      "path": "artifacts/binding/direct_identity/20261028_v1/regression_sources_v1.zip",
+      "sha256": "fcab8bb818be6ae2f17425572255a59c31fb9b82ec759f93f68f20998a7bd2ef"
+    },
+    {
+      "bytes": 325272,
+      "path": "artifacts/binding/direct_identity/20261028_v1/regression_v1.xml",
+      "sha256": "c11d786432b38a13488b8cb479a5287a61c08f95ffa291376eda96ddb6b4e6e3"
+    },
+    {
+      "bytes": 1917,
+      "path": "artifacts/binding/direct_identity/20261028_v1/run_readouts_v1.py",
+      "sha256": "7732e0ea143d6b25c5a02aacad6af90f646c0bd4d8466d3279ff921270a83801"
+    },
+    {
+      "bytes": 3888,
+      "path": "artifacts/binding/direct_identity/20261028_v1/run_validation_v1.py",
+      "sha256": "32276a1d99866eb0a3fb9d4ebe1a4840b3acb9d7adfe4c6929e382cd96d75065"
+    },
+    {
+      "bytes": 13049,
+      "path": "artifacts/binding/direct_identity/20261028_v1/software_validation_review_v1.json",
+      "sha256": "4cba67f899488d6f2cd0206e94ca7176bd69fe4735b8c22863ccfeb0509897e4"
+    },
+    {
+      "bytes": 997,
+      "path": "artifacts/binding/direct_identity/20261028_v1/submission_review_v1.json",
+      "sha256": "6df56a3c7ab6edcf6a7c438088816c171b69b82af3ecfff62390793c68c54ce9"
+    },
+    {
+      "bytes": 2253462,
+      "path": "artifacts/binding/direct_identity/20261028_v1/target_preflight_review_v1.json",
+      "sha256": "3428c249ed51815bb762d8045e4850ea7d3287ec1bba3bec034a04f04093c476"
+    },
+    {
+      "bytes": 21082,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/handoff_review_v1.json",
+      "sha256": "d58b99348fe4dc796ea16ccf6ae4eea054581b201cd48f9ce948264280c06f1c"
+    },
+    {
+      "bytes": 54156,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/handoff_review_v1.json",
+      "sha256": "6cc687cd83ae23aed665e5b97557c4e6b2abbd63debc4e78b1ac1d7c04270dbe"
+    },
+    {
+      "bytes": 56828,
+      "path": "artifacts/binding/sources/3e5471ac9dc9b948761fc429/frozen_manifest.json",
+      "sha256": "4fd03686a39ad413fc6b95106583338af69adcb5542678ebe0119d3ab8e33016"
+    },
+    {
+      "bytes": 67234,
+      "path": "configs/binding/preparation/readiness_v22.json",
+      "sha256": "0529044de69dd630bf9d2fb5aacace1e12f16f90aa65bda2e4c6637dfea7022a"
+    },
+    {
+      "bytes": 2308,
+      "path": "reports/binding/direct_identity_codellama34b_v1.md",
+      "sha256": "a87074340213296b1438412f492993f9db8e5c6fd2fb039feda26ba7dda410c9"
+    },
+    {
+      "bytes": 7223,
+      "path": "reports/binding/direct_identity_findings_v1.md",
+      "sha256": "733dec5c67465bd4150d3a2946722bb9b8d05f1d6da56793e4acecda3fa00c5f"
+    },
+    {
+      "bytes": 3238,
+      "path": "reports/binding/direct_identity_linearity_note_v1.md",
+      "sha256": "69abe495b48785e2586edd702ca3c8a42279fa4e8ef22820d20723db3a0c7a41"
+    },
+    {
+      "bytes": 2303,
+      "path": "reports/binding/direct_identity_llama8b_v1.md",
+      "sha256": "fa945cbbc84c7f8cf5baa85be029580566e6d51b889c3f95aa1340c064274f2e"
+    },
+    {
+      "bytes": 8101,
+      "path": "reports/binding/direct_identity_plan_v1.md",
+      "sha256": "d07a30815da17c4a3f8dc61c3c3b49533a4b9e13a5268a3b0ac6bd6bb6377b62"
+    },
+    {
+      "bytes": 25752,
+      "path": "reports/binding/direct_identity_readiness_v1.md",
+      "sha256": "f616102c252c76230fc6f6fa4fba5276b8c630999c34f611ca9f39368ea44eae"
+    },
+    {
+      "bytes": 178517,
+      "path": "reports/binding/figures/direct_identity_v1.png",
+      "sha256": "84a9a803641feedc9351176f262af3af49dbaa2c17343b8e8388af48989aa156"
+    },
+    {
+      "bytes": 101361,
+      "path": "reports/binding/figures/direct_identity_v1.svg",
+      "sha256": "2b44f1ffc7de4a990477e2762d3761c46b906f83f02336877d6bb40b2210c6f5"
+    }
+  ],
+  "publication_worker_job_id": "481552",
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 58
+  },
+  "recorded_utc": "2026-10-28T21:50:03.796939+00:00",
+  "shared_inventory_refreshed": true,
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2129
+  },
+  "source": {
+    "code": "6a34415f2a9dfdab2acb5ceecc8fb88e19b8982d21881890c137f96082ddf1ee",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3e5471ac9dc9b948761fc429",
+    "snapshot_id": "3e5471ac9dc9b948761fc429"
+  },
+  "source_owner_prior_uses_TRAIN_versions_only": true,
+  "source_rows": 5760,
+  "status": "complete_audited",
+  "target_columns": 192,
+  "tracked_tasks": 70
+}

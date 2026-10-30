@@ -1,0 +1,213 @@
+{
+  "active_fit_sites": [
+    7,
+    8
+  ],
+  "archived_regression_files": 104,
+  "automatic_completion_worker": "481552",
+  "automatic_logging_healthy": true,
+  "capture_axes": [
+    1,
+    2
+  ],
+  "capture_source_snapshot": "345f75b01f5c3b33bd0ca6d8",
+  "categorical_heads": 24,
+  "component_scores_are_joint_score_marginals": true,
+  "evaluation_role": "discovery_direct_identity_queue_handoff_v1",
+  "focused_new_tests": 41,
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "codellama34b_readouts": {
+      "elapsed_seconds": 616,
+      "exit_code": "0:0",
+      "job_id": "481541",
+      "state": "COMPLETED"
+    },
+    "llama8b_readouts": {
+      "elapsed_seconds": 789,
+      "exit_code": "0:0",
+      "job_id": "481540",
+      "state": "RUNNING"
+    },
+    "regression": {
+      "elapsed_seconds": 598,
+      "exit_code": "0:0",
+      "job_id": "481539",
+      "state": "COMPLETED"
+    },
+    "review_publication": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "job_id": "481552",
+      "state": "PENDING"
+    }
+  },
+  "joint_prediction_uses_global_codebook_only": true,
+  "learned_outcomes_reviewed": false,
+  "new_GPU_allocations": 0,
+  "new_fits_by_queue_review": 0,
+  "new_model_queries": 0,
+  "old_default_output_compatibility_tests": 29,
+  "pins": [
+    {
+      "bytes": 1600,
+      "path": "artifacts/binding/direct_identity/20261028_v1/build_review_v1.json",
+      "sha256": "10e3a052be3db0244edc1bdf6e0e377a032ed33c8f764b0225eca04a453a2eea"
+    },
+    {
+      "bytes": 519,
+      "path": "artifacts/binding/direct_identity/20261028_v1/closure_job_v1.json",
+      "sha256": "4bbf58044bfd0119bb83a3d9990929cb6226f19ba980d3084ff2ecf975ebda20"
+    },
+    {
+      "bytes": 1872,
+      "path": "artifacts/binding/direct_identity/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "dcdbb035cdef986eb6f89cd05ff9f4c21ac7fe6662995e1d8dcc57de8f0385a8"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/direct_identity/20261028_v1/execution_source_v1.json",
+      "sha256": "2a71656b86dc467a9c0c7fd77f311e8e2ad7c69a7c4e2eb78fc0193a36e1fd08"
+    },
+    {
+      "bytes": 8880,
+      "path": "artifacts/binding/direct_identity/20261028_v1/finish_suite_v1.py",
+      "sha256": "ddb19932890718c052dafac8fbe5ec8844772c54ea11e8099e12e87eadf2c980"
+    },
+    {
+      "bytes": 98,
+      "path": "artifacts/binding/direct_identity/20261028_v1/jobs_v1.json",
+      "sha256": "34c7c76f39e8887ecb96048216f496690fc454efaf165ee9702060884d81ff4f"
+    },
+    {
+      "bytes": 72127,
+      "path": "artifacts/binding/direct_identity/20261028_v1/publish_results_v1.py",
+      "sha256": "a697a65c3f06d5c00ef405b43428d89c744aee482ec4d2be6f4472bbfb6691b0"
+    },
+    {
+      "bytes": 77563,
+      "path": "artifacts/binding/direct_identity/20261028_v1/readiness_at_submission_v1.json",
+      "sha256": "f0f93cf15e774e811119eff6c82f81be64ee9ee3a3cd42049f01602985e24243"
+    },
+    {
+      "bytes": 264,
+      "path": "artifacts/binding/direct_identity/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "f989ae84036c581cc5c469027739d22924b1d535aa9c8bdc2dd28d3954cb64f8"
+    },
+    {
+      "bytes": 308513,
+      "path": "artifacts/binding/direct_identity/20261028_v1/regression_sources_v1.zip",
+      "sha256": "fcab8bb818be6ae2f17425572255a59c31fb9b82ec759f93f68f20998a7bd2ef"
+    },
+    {
+      "bytes": 325272,
+      "path": "artifacts/binding/direct_identity/20261028_v1/regression_v1.xml",
+      "sha256": "c11d786432b38a13488b8cb479a5287a61c08f95ffa291376eda96ddb6b4e6e3"
+    },
+    {
+      "bytes": 1917,
+      "path": "artifacts/binding/direct_identity/20261028_v1/run_readouts_v1.py",
+      "sha256": "7732e0ea143d6b25c5a02aacad6af90f646c0bd4d8466d3279ff921270a83801"
+    },
+    {
+      "bytes": 3888,
+      "path": "artifacts/binding/direct_identity/20261028_v1/run_validation_v1.py",
+      "sha256": "32276a1d99866eb0a3fb9d4ebe1a4840b3acb9d7adfe4c6929e382cd96d75065"
+    },
+    {
+      "bytes": 13049,
+      "path": "artifacts/binding/direct_identity/20261028_v1/software_validation_review_v1.json",
+      "sha256": "4cba67f899488d6f2cd0206e94ca7176bd69fe4735b8c22863ccfeb0509897e4"
+    },
+    {
+      "bytes": 280,
+      "path": "artifacts/binding/direct_identity/20261028_v1/submission_logging_review_v1.json",
+      "sha256": "114a9435463a8d61f33197c0c04821f56219a3829fbd88c5b49dc81c60b45a28"
+    },
+    {
+      "bytes": 997,
+      "path": "artifacts/binding/direct_identity/20261028_v1/submission_review_v1.json",
+      "sha256": "6df56a3c7ab6edcf6a7c438088816c171b69b82af3ecfff62390793c68c54ce9"
+    },
+    {
+      "bytes": 2253462,
+      "path": "artifacts/binding/direct_identity/20261028_v1/target_preflight_review_v1.json",
+      "sha256": "3428c249ed51815bb762d8045e4850ea7d3287ec1bba3bec034a04f04093c476"
+    },
+    {
+      "bytes": 21082,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/handoff_review_v1.json",
+      "sha256": "d58b99348fe4dc796ea16ccf6ae4eea054581b201cd48f9ce948264280c06f1c"
+    },
+    {
+      "bytes": 54156,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/handoff_review_v1.json",
+      "sha256": "6cc687cd83ae23aed665e5b97557c4e6b2abbd63debc4e78b1ac1d7c04270dbe"
+    },
+    {
+      "bytes": 56828,
+      "path": "artifacts/binding/sources/3e5471ac9dc9b948761fc429/frozen_manifest.json",
+      "sha256": "4fd03686a39ad413fc6b95106583338af69adcb5542678ebe0119d3ab8e33016"
+    },
+    {
+      "bytes": 588,
+      "path": "configs/binding/direct_identity_20261028_v1/codellama34b_readouts.json",
+      "sha256": "07152361af3701df69c1509c74dfc7a76b4e9596a3e2c5670d50e3a0c0c5fc4e"
+    },
+    {
+      "bytes": 573,
+      "path": "configs/binding/direct_identity_20261028_v1/llama8b_readouts.json",
+      "sha256": "28720e81c4445e66ff8eb7c4012fa6047998152dd261173f2e1d4e267adbcb08"
+    },
+    {
+      "bytes": 67234,
+      "path": "configs/binding/preparation/readiness_v22.json",
+      "sha256": "0529044de69dd630bf9d2fb5aacace1e12f16f90aa65bda2e4c6637dfea7022a"
+    },
+    {
+      "bytes": 3238,
+      "path": "reports/binding/direct_identity_linearity_note_v1.md",
+      "sha256": "69abe495b48785e2586edd702ca3c8a42279fa4e8ef22820d20723db3a0c7a41"
+    },
+    {
+      "bytes": 8101,
+      "path": "reports/binding/direct_identity_plan_v1.md",
+      "sha256": "d07a30815da17c4a3f8dc61c3c3b49533a4b9e13a5268a3b0ac6bd6bb6377b62"
+    },
+    {
+      "bytes": 4469,
+      "path": "reports/binding/direct_identity_submission_v1.md",
+      "sha256": "2e6ba7aae6e0972bf7f327c5c31b1bb404f5584059e8ba44ece61e90db665da8"
+    }
+  ],
+  "planned_factorizations": 60,
+  "planned_fit_banks": 60,
+  "planned_parameter_replay_case_rows": 345600,
+  "publisher_synthetic_checks": 35,
+  "rare_parent_version4_train_graph_groups": 2,
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "needs_validation": 1,
+    "ready": 57
+  },
+  "recorded_utc": "2026-10-28T21:47:13.975806+00:00",
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2129
+  },
+  "source": {
+    "code": "6a34415f2a9dfdab2acb5ceecc8fb88e19b8982d21881890c137f96082ddf1ee",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3e5471ac9dc9b948761fc429",
+    "snapshot_id": "3e5471ac9dc9b948761fc429"
+  },
+  "source_rows": 5760,
+  "status": "ready_and_running",
+  "syntax_owner_TRAIN_version_prior": true,
+  "target_columns": 192,
+  "tracked_tasks": 70,
+  "unrelated_jobs_cancelled": 0,
+  "unsupported_classes_retained": true
+}

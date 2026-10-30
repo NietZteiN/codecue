@@ -1,0 +1,129 @@
+{
+  "cases": 5760,
+  "chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+  "config_hash": "a0820aa9cb3ce20c17e56b45b79cfe988a56bcd8d9653d4b7e5b75f2115fd7ac",
+  "dataset_sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1",
+  "evaluation_role": "discovery_diversity_capture_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "prepared_sha256": "79eab7436e7d2b724dd1517f74292f709ba627ff10d8891deadb76129ebeeb38",
+  "recipe": {
+    "batch_size": 256,
+    "chunk_size": 512,
+    "context_limit": 4096,
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+    "hidden_size": 4096,
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "num_hidden_layers": 32,
+    "prefix_atol": 1e-05,
+    "tokenization_mode": "native",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+  },
+  "registration_sha256": "7c8314f5897feec196a242d71a7045209d336f6e25c6704b80935dde833a7106",
+  "source": {
+    "frozen_manifest_sha256": "aebd4aac3e13f1361d3eb1109b7184982f0c2ee90b9e22145932435a0b996269",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8",
+    "source_sha256": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918"
+  },
+  "source_review": {
+    "actual_generic_ssa_labels_validated": true,
+    "canonical_graph_families": 60,
+    "components": {
+      "development": 15,
+      "train": 45
+    },
+    "count_profiles": [
+      [
+        2,
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0,
+        0
+      ]
+    ],
+    "dataset_manifest_sha256": "e6a778b1bdab4dbb7666795a9baed63a4410184b4d0a9458afa8ce3ce13ee12f",
+    "dataset_sha256": "d43c5c3cbb5d9d3f8982a2659d4a5bde5ba5767ad143b766763ca133ee5acbc1",
+    "existing_fixed_readouts_compatible": false,
+    "feature_shape": [
+      5760,
+      3,
+      4,
+      4096
+    ],
+    "hardware_headroom_reference_batch": 128,
+    "layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "maximum_assignment_version": 4,
+    "ordered_case_ids_sha256": "0ee223e4df0bf55318ce0a9ea021db347b57562b24d047c707370e4e0e3ba1fb",
+    "query_rows": {
+      "v0": 1440,
+      "v1": 1440,
+      "v2": 1440,
+      "v3": 1440
+    },
+    "recipe": {
+      "batch_size": 256,
+      "chunk_size": 512,
+      "context_limit": 4096,
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "execution_backend": "BF16 SDPA decoder-only prefill; left-padding position IDs; no KV cache or generation; one combined selected-tensor CPU transfer",
+      "hidden_size": 4096,
+      "layers": [
+        8,
+        16,
+        24,
+        31
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "num_hidden_layers": 32,
+      "prefix_atol": 1e-05,
+      "tokenization_mode": "native",
+      "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+    },
+    "sites": [
+      "statement:3",
+      "statement:7",
+      "pre_answer"
+    ],
+    "slot_complete_version_domain": true,
+    "slot_rotations": 4,
+    "source_rows": 5760,
+    "source_targets_prepared_only": true,
+    "split_canonical_graph_units": {
+      "development": 15,
+      "train": 45
+    },
+    "split_rows": {
+      "development": 1440,
+      "train": 4320
+    }
+  },
+  "status": "passed"
+}

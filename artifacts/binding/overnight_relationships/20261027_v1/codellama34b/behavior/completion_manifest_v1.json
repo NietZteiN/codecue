@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "manifest": {
+      "bytes": 3057,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/manifest.json",
+      "sha256": "8e44838960c3302113ffdf3dbd83f62a6d6f5ef1e4999658765625e1f1484dca"
+    },
+    "registration": {
+      "bytes": 2102,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/registration.json",
+      "sha256": "65f25c029ba1b2a0569a22b8ebcc036d5c89a7e4eb1e2784204759f6e3a0a80d"
+    },
+    "report": {
+      "bytes": 1789,
+      "path": "reports/binding/overnight_20261027_codellama34b_behavior.md",
+      "sha256": "cdff6d4e7d382ca61a08a83233ac675e7e23f472995b8f1cb898153dc01311a5"
+    },
+    "responses": {
+      "bytes": 2826130,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/responses.jsonl",
+      "sha256": "878a69c8ab2bba6a228bae0ffb16beb9df9a16b46b1ba43f29752d968b571ab2"
+    },
+    "summary": {
+      "bytes": 4692,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior/summary.json",
+      "sha256": "47789ba98dced0bbeb773356833305084a74d0e4b8252aabd4f28d336a2c2d6f"
+    }
+  },
+  "cases": 7290,
+  "config_hash": "8ca88223de2158c16cf9fa643f12e6262c6d372c0864511b721148125a78524e",
+  "evaluation_role": "discovery_overnight_relationship_behavior_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 7290,
+  "new_model_queries": 7290,
+  "source": {
+    "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+    "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+  },
+  "status": "complete_exploratory"
+}

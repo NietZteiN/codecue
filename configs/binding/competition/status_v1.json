@@ -1,0 +1,46 @@
+{
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "comparison_artifact": "artifacts/binding/competition/review_v1.json",
+  "completed_report": "reports/binding/competition_results.md",
+  "job_keys": [
+    "tests",
+    "codellama34b_competition_preflight",
+    "codellama34b_competition_run",
+    "codellama34b_competition_audit",
+    "llama31_8b_competition_preflight",
+    "llama31_8b_competition_run",
+    "llama31_8b_competition_audit",
+    "llama31_8b_serialization_preflight",
+    "llama31_8b_serialization_run",
+    "llama31_8b_serialization_audit",
+    "llama32_3b_serialization_preflight",
+    "llama32_3b_serialization_run",
+    "llama32_3b_serialization_audit",
+    "competition_review",
+    "serialization_review"
+  ],
+  "jobs": "artifacts/binding/continuation/jobs_v1.json",
+  "output": "artifacts/binding/continuation/live_status_v1.json",
+  "plan_report": "competition_plan.md",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/competition/status_v1.json",
+  "report": "reports/binding/continuation_status.md",
+  "stages": [
+    {
+      "name": "codellama34b_competition",
+      "path": "artifacts/binding/competition/codellama34b_v1/checkpoint_suite"
+    },
+    {
+      "name": "llama31_8b_competition",
+      "path": "artifacts/binding/competition/llama31_8b_v1/checkpoint_suite"
+    },
+    {
+      "name": "llama31_8b_completion",
+      "path": "artifacts/binding/llama_serialization/llama31_8b_v1/checkpoint_suite"
+    },
+    {
+      "name": "llama32_3b_completion",
+      "path": "artifacts/binding/llama_serialization/llama32_3b_v1/checkpoint_suite"
+    }
+  ],
+  "title": "Binding competition and interface follow-up status"
+}

@@ -1,0 +1,32 @@
+{
+  "attention_backend": "sdpa",
+  "batch_size": 32,
+  "candidate_declaration": "configs/binding/preparation/candidate_codellama34b_v1.json",
+  "candidate_declaration_sha256": "9ff7b7ed27c61f03faa581b91f4606efc91346d710acf9accf7ea95b138708ad",
+  "dataset": "artifacts/binding/competition/discovery_v2.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eos_token_ids": [
+    2
+  ],
+  "evaluation_role": "discovery_candidate_event_measurement_v1",
+  "event_batch_size": 32,
+  "execution_backend": "Transformers BF16/SDPA cached exact-prompt finite-candidate trie; no generation",
+  "max_active_nodes": 4096,
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "parity_atol": 0.01,
+  "parity_check": false,
+  "parity_rtol": 0.01,
+  "preparation_review": "artifacts/binding/candidate_measurement/codellama34b_full_v1/preparation_review.json",
+  "prepared_events": "artifacts/binding/candidate_measurement/codellama34b_full_v1/prepared_events.jsonl",
+  "prompt_batch_size": 32,
+  "protocol": "short_answer_chat_v1",
+  "run_dir": "artifacts/binding/candidate_measurement/codellama34b_full_v1",
+  "scoring_backend": "cached_trie",
+  "selection_seed": 117,
+  "source_confidence_config": "configs/binding/preparation/confidence_codellama34b_full_v1.json",
+  "source_confidence_config_sha256": "bc9ae4bb244b8153ac54e452397eb6c6af32046365dc08533160285b3f5bcd50",
+  "tokenization_mode": "codellama_official_boundary_v1",
+  "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+}

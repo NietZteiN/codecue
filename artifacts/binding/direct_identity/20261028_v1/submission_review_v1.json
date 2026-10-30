@@ -1,0 +1,33 @@
+{
+  "active_sites": [
+    7,
+    8
+  ],
+  "capture_axes": [
+    1,
+    2
+  ],
+  "evaluation_role": "discovery_direct_identity_submission_v1",
+  "factorizations": 60,
+  "fitted_banks": 60,
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "codellama34b_readouts": "481541",
+    "llama8b_readouts": "481540",
+    "regression": "481539"
+  },
+  "new_GPU_allocations": 0,
+  "new_checkpoint_downloads": 0,
+  "new_model_queries": 0,
+  "planned_parameter_replay_case_rows": 345600,
+  "preserved_unrelated_jobs": true,
+  "scheduled_cpu_policy": "Actual two-hour scheduler maximum on dev; finite tasks stop on completion; no project compute cap.",
+  "source": {
+    "code": "6a34415f2a9dfdab2acb5ceecc8fb88e19b8982d21881890c137f96082ddf1ee",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3e5471ac9dc9b948761fc429",
+    "snapshot_id": "3e5471ac9dc9b948761fc429"
+  },
+  "source_capture_reused": "345f75b01f5c3b33bd0ca6d8",
+  "status": "submitted",
+  "target_columns": 192
+}

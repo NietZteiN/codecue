@@ -1,0 +1,24 @@
+{
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "comparison_artifact": "artifacts/binding/throughput/audit_v4.json",
+  "completed_report": "reports/binding/throughput_results.md",
+  "job_keys": [
+    "preflight",
+    "tests",
+    "profile",
+    "audit"
+  ],
+  "jobs": "artifacts/binding/throughput/jobs_v4.json",
+  "output": "artifacts/binding/throughput/live_status_v4.json",
+  "plan_report": "throughput_plan.md",
+  "refresh_command": "python scripts/101_binding_experiment_status.py configs/binding/throughput/status_v4.json",
+  "report": "reports/binding/throughput_status.md",
+  "stages": [
+    {
+      "kind": "throughput",
+      "name": "continuous_batching_v4",
+      "path": "artifacts/binding/throughput/tune_v4/throughput_profile"
+    }
+  ],
+  "title": "GPU throughput tuning status"
+}

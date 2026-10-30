@@ -1,0 +1,19 @@
+# Source-only preparation of novel overwrite graphs
+
+The completed 2,016-row varied-schedule bank contains only five DEV graph families, no final DEV version-3 instances, and version 4 only in slot 0. This source-only follow-up prepares broader support before further capture or fitting. It does not claim a new learned result or independent causal replication.
+
+Prepare 60 canonical SSA graph families, twenty for each sorted copy-destination count profile: `(2,1,1,0)`, `(3,1,0,0)` and `(2,2,0,0)`. Four literal roots and four distinct-slot copies retain a maximum assignment version of 4. Each copy parent is chosen independently from the other three slots; parent choices are not restricted to the earlier three ring-offset patterns.
+
+An initial proposal included profile `(1,1,1,1)`. It is exhausted by the earlier routing bank: its destination permutations can be renamed to the original order, and all 81 distinct-slot parent patterns were already enumerated. It therefore cannot supply twenty new canonical graph families under the existing 24-slot-permutation equivalence. Replace that profile before generating or observing the new bank; retain this feasibility reason in the manifest. Do not weaken graph equivalence, exclusions or the meaning of an independent unit to create apparent novelty.
+
+Use a seeded candidate order across the finite 18,468 schedule/parent candidates. Exclude canonical full-graph identities from both explicitly pinned prior banks, `routing_sources_v1.jsonl` and `schedule_sources_v1.jsonl`, before selecting new families. Stop with a descriptive feasibility failure before publication if fewer than twenty remain in any profile. Novelty is relative to these named structural banks, not every program ever seen by the models or every project artifact.
+
+Keep fifteen TRAIN and five DEV canonical families per profile, giving 45 TRAIN and 15 DEV families. For every selected graph retain four cyclic slot rotations, numeric seeds 751/857/967, two neutral lexical forms and four final queries. Expected counts are 5,760 source rows: 4,320 TRAIN and 1,440 DEV. These relatives are not additional independent graph families. Rotations move higher assignment versions across all slots; they do not guarantee equal frequency of every joint label.
+
+Derive all actual statement-prefix, read-from, current/obsolete, current-version and final-query ancestry labels from the generic prefix oracle. Preserve source traces and verify generated restricted programs independently with ordinary Python. Validate exact source, canonical AST, alpha-structure and full canonical graph separation across splits. Initialization and other genuinely identical partial prefixes may recur across splits; do not relabel that as leakage of a full novel graph.
+
+Audit per-slot, per-version row counts and graph-family support. Every version 1 through 4 must occur in every slot in DEV, and each such class must have at least three TRAIN graph families. Report all class counts rather than describing the complete task as class balanced. Oracle values, node identities and labels remain targets only.
+
+Freeze source, configuration and exclusions before the actual build. Publish content-addressed JSONL, its manifest, bounded validation review and a source-preparation report only after feasibility and trace validation pass. This work performs no model/tokenizer queries, activation capture, probe fitting or sealed evaluation. The existing capture and target adapters reject a different source-bank identity; mark `targets_prepared_only=True` and `learned_readout_compatible=False` until new adapters are separately validated.
+
+This expands overwrite topology and class support within restricted literal-root copy programs. It does not establish a new causal model family, natural state tracking, computed-value reliability or unfamiliar-program prediction. Existing scientific decisions remain open.

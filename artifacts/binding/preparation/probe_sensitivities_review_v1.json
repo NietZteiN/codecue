@@ -1,0 +1,29 @@
+{
+  "activation_payloads_opened": 0,
+  "config": {
+    "alignment": {
+      "center": true,
+      "enabled": true
+    },
+    "evaluation_role": "train_only_probe_sensitivity_preparation_v1",
+    "output_review": "artifacts/binding/preparation/probe_sensitivities_review_v1.json",
+    "provenance": {
+      "scope": "software preparation only; no real activation arrays or scientific study fit",
+      "source": "dependvar core sensitivities"
+    },
+    "reduced_rank_ridge": {
+      "alpha": 1.0,
+      "rank": 4
+    },
+    "split": "train"
+  },
+  "config_hash": "517cb2c511f3d9d4255f98ca800969fdd44498b4b799e38b7d120425ae11c57c",
+  "evaluation_role": "train_only_probe_sensitivity_preparation_v1",
+  "generated_holdouts_opened": false,
+  "implementation_sha256": "5650bd9eccb4d9041c482576993a1f4a0aafbc79b10e7b1e85570e8b228be26b",
+  "limitation": "Preparation utilities only: no study activation bank or model is loaded. Fit guards rely on explicitly supplied training rows and identifiers. Alignment and ridge parameters are fixed before heldout transformation. Reduced-rank ridge requires one fixed complete target matrix; missing-label or per-output masked reduced-rank regression is not implemented. Synthetic selfchecks do not constitute a new scientific result.",
+  "new_model_queries": 0,
+  "schema_version": 1,
+  "status": "passed_preparation_preflight",
+  "study_fits_performed": 0
+}

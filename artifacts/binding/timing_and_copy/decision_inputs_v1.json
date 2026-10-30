@@ -1,0 +1,69 @@
+{
+  "baseline_responses": 4536,
+  "copy_review_sha256": "1dd1ad355c107e38517dadb51c80c946f44ba85a4ef083dd00142f756ec13ddf",
+  "decision": "reports/binding/timing_and_copy_decision.md",
+  "early_only_correct": 49,
+  "general_mechanism_established": false,
+  "generated_holdouts_opened": false,
+  "intervention_forwards": 90720,
+  "late_only_correct": 228,
+  "late_prefix_exact_comparisons": 9720,
+  "paired_patterns_sha256": "ada7dbfe53a9416cda3f8ff76e513eb56d37b0b5a983c3d5ffe7c221675fccdc",
+  "posthoc_block8_copy_summary": [
+    {
+      "n": 162,
+      "patched_correct": 162,
+      "query": 0,
+      "reverse": false,
+      "unpatched_correct": 162,
+      "unrelated_correct": 162
+    },
+    {
+      "n": 162,
+      "patched_correct": 47,
+      "query": 1,
+      "reverse": false,
+      "unpatched_correct": 34,
+      "unrelated_correct": 40
+    },
+    {
+      "n": 162,
+      "patched_correct": 137,
+      "query": 0,
+      "reverse": true,
+      "unpatched_correct": 107,
+      "unrelated_correct": 110
+    },
+    {
+      "n": 162,
+      "patched_correct": 71,
+      "query": 1,
+      "reverse": true,
+      "unpatched_correct": 118,
+      "unrelated_correct": 118
+    }
+  ],
+  "status": "complete_audited_discovery",
+  "swapped_answer_patterns": {
+    "anchor": {
+      "both_correct": 34,
+      "duplicate_query0_value": 128
+    },
+    "renamed": {
+      "both_correct": 23,
+      "duplicate_query0_value": 139
+    },
+    "reordered": {
+      "both_correct": 78,
+      "both_swapped": 15,
+      "duplicate_query0_value": 29,
+      "duplicate_query1_value": 40
+    }
+  },
+  "timing_correct": {
+    "early": 1022,
+    "late": 1201
+  },
+  "timing_n_per_condition": 1296,
+  "timing_review_sha256": "4981eec4cf54f75d67cf93469a6bfe75dd1a1a85654c7b2247cf235231b00878"
+}

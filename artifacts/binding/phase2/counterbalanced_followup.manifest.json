@@ -1,0 +1,19 @@
+{
+  "base_sha256": "f0875058ab9f26dd7d8fe3f94da4d83a357213501fcf7e70399847d15d08dae0",
+  "evaluation_role": "counterbalanced_followup_only",
+  "excluded_datasets": {
+    "artifacts/binding/difficulty_ladder.jsonl": "d2ec915de82af3a3767e7324379d493cc1e8ff14137e344cd651584a22edd18c",
+    "artifacts/binding/phase2/arithmetic_forms.jsonl": "1f45e64d77b53c7ec7d2b9876747f3bb243c80046eb9873099c84186f89b2a9e",
+    "artifacts/binding/phase2/arithmetic_free.jsonl": "b08d3e42372acbf478cbbc03bb7ed6ca70c904420e4bec9e02e050c94bb98b02",
+    "artifacts/binding/prompt_calibration_bank.jsonl": "c77b4f5d637f4da44424e2e15e66066af29c507304e1d366d68a0c870d935210"
+  },
+  "heldout_outcomes_opened": false,
+  "independent_python_programs": 768,
+  "interpretation": "Fresh numeric paired calibration candidates. Repeated structures; no confirmatory or model-performance claim. Adding an irrelevant assignment changes length and context as well as position.",
+  "model_inference_performed": false,
+  "paired_programs": 384,
+  "rows": 768,
+  "seed": 2026102505,
+  "sha256": "bea93bdfcb9cc8053ba474b191b468b3033ad2c7d344893ca1694951950b6a83",
+  "status": "validated"
+}

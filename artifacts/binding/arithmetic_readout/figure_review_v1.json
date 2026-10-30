@@ -1,0 +1,50 @@
+{
+  "analysis_role": "descriptive_development_form_accuracy_figure",
+  "comparison": "/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_readout/comparison_v1.json",
+  "comparison_sha256": "8fb990aa9648a1af8f4e4b3b66154ecafe6ee96947297accb34bebcece6d2dde",
+  "complete": true,
+  "generated_holdouts_opened": false,
+  "limitation": "All eight forms and both fixed protocols shown on numeric development only. Shared program forms do not establish structural generalization or a causal mechanism.",
+  "matplotlib_version": "3.11.2",
+  "models": [
+    "llama31_8b",
+    "codellama34b"
+  ],
+  "outputs": {
+    "png": {
+      "bytes": 255879,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/arithmetic_readout_results_v1.png",
+      "sha256": "753e0275b6c6fda2c493574fec508a17139caf129fff764f98812c8d3496fcf5"
+    },
+    "svg": {
+      "bytes": 30253,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/arithmetic_readout_results_v1.svg",
+      "sha256": "b7a980294bab3e40c98684367bbac2386d17de01dd3fc2511dd48f9f72118b58"
+    }
+  },
+  "plot_source": "/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_readout/plot_results_v1.py",
+  "plot_source_sha256": "390561e46d3846f632c801f76d8b1c788293d2c98c3b1ab4c1108b82ad72998a",
+  "protocols": [
+    "print_direct_v3",
+    "print_trace_long_v1"
+  ],
+  "reference_accuracy": 0.9,
+  "review_checksums": {
+    "artifacts/binding/arithmetic_readout/codellama34b_v1/review_v1.json": "b28b7a47d2a754a79d80f8a5a0f95aeb7c8c12fbc0cd433aaf553f6036f22c66",
+    "artifacts/binding/arithmetic_readout/llama31_8b_v1/review_v1.json": "d235f5bbd2fc4cd73dedd458b52cc25c32a18f1201719cd98638decd0888c825"
+  },
+  "scientific_status": {
+    "codellama34b": {
+      "print_direct_v3": "failed",
+      "print_trace_long_v1": "failed"
+    },
+    "llama31_8b": {
+      "print_direct_v3": "failed",
+      "print_trace_long_v1": "failed"
+    }
+  },
+  "split": "development",
+  "status": "passed",
+  "uncertainty_whiskers": false,
+  "zero_operation_controls": "Repeated exact prompts; descriptive only; excluded from qualification gates"
+}

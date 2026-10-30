@@ -1,0 +1,77 @@
+{
+  "analysis_role": "descriptive_discovery_capacity_oracle_control_figure",
+  "comparison": "/work/jvl210002/migration/codecue/artifacts/binding/discovery_controls/comparison_v1.json",
+  "comparison_sha256": "fc33d31f8b05f108e223919ad44a5ce005b109030490db1a49defc5a72d0869c",
+  "complete": true,
+  "deterministic_encoding_comparison": {
+    "left": "A_interactions_oracle_neutral_raw",
+    "new_observations": 0,
+    "right": "A_interactions_oracle_neutral_scored"
+  },
+  "evaluation": "fixed mean-probability OOF ensemble",
+  "feature_profile": "capacity_oracle_v1",
+  "generated_holdouts_opened": false,
+  "inner_folds": 5,
+  "limitation": "Previously consumed discovery data; partition seeds are not independent replications. The final scored flag re-encodes information already available in source-oracle plus raw-neutral features.",
+  "matplotlib_version": "3.11.2",
+  "mechanism_C_fitted": false,
+  "metrics": [
+    "brier_score",
+    "log_loss"
+  ],
+  "models": [
+    "llama31_8b",
+    "codellama34b"
+  ],
+  "oracle_assisted_tiers": [
+    "A_interactions_neutral_scored",
+    "A_interactions_oracle",
+    "A_interactions_oracle_neutral_raw",
+    "A_interactions_oracle_neutral_scored"
+  ],
+  "outer_folds": 6,
+  "outputs": {
+    "png": {
+      "bytes": 311732,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/discovery_controls_results_v1.png",
+      "sha256": "90db6c86ea41e187ab854ebf67ee905cd2fba06e37df62b88bfb5a50365451b1"
+    },
+    "svg": {
+      "bytes": 37655,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/discovery_controls_results_v1.svg",
+      "sha256": "3eb742b1c156405d6df717a5c6226e2bb68aae4a4670058f2b783257c5c92cb3"
+    }
+  },
+  "plot_source": "/work/jvl210002/migration/codecue/artifacts/binding/discovery_controls/plot_results_v1.py",
+  "plot_source_sha256": "78f30d343d1771d0a970e4295cc0d954654b14bad6b2511ba7c84ffb6c4a47c8",
+  "predictors": [
+    "prior",
+    "A_input",
+    "A_interactions",
+    "A_interactions_neutral_raw",
+    "A_interactions_neutral_scored",
+    "A_interactions_oracle",
+    "A_interactions_oracle_neutral_raw",
+    "A_interactions_oracle_neutral_scored"
+  ],
+  "reference_query_budget_per_target": 1,
+  "review_checksums": {
+    "artifacts/binding/discovery_controls/codellama34b_v1/review_v1.json": "a86c043508d74aad89e4bea275b8e97c096e09df4306eb420f377df3ab0f3a48",
+    "artifacts/binding/discovery_controls/llama31_8b_v1/review_v1.json": "279b1faec9a78a32d70dd57f77c7426b4bacb9bcf485b3414afe5b602c9b236e"
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "source_feature_counts": {
+    "additive": 19,
+    "interaction_terms_added": 25,
+    "interactions_total": 44,
+    "source_oracle_descriptors": 3
+  },
+  "status": "passed",
+  "targets_per_checkpoint": 6144,
+  "templates": 24,
+  "uncertainty_whiskers": false
+}

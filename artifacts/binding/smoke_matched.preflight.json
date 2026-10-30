@@ -1,0 +1,64 @@
+{
+  "aligned_programs": 2160,
+  "cached_generation_safe": true,
+  "complete_candidate_scores": {
+    "boundary": "prompt plus newline",
+    "normalization": "none",
+    "scores": [
+      {
+        "answer": -12,
+        "completion": "-12",
+        "log_likelihood_sum": -31.162456512451172,
+        "token_ids": [
+          29899,
+          29896,
+          29906
+        ]
+      },
+      {
+        "answer": 0,
+        "completion": "0",
+        "log_likelihood_sum": -10.380483627319336,
+        "token_ids": [
+          29900
+        ]
+      },
+      {
+        "answer": 7,
+        "completion": "7",
+        "log_likelihood_sum": -10.421871185302734,
+        "token_ids": [
+          29955
+        ]
+      },
+      {
+        "answer": 64,
+        "completion": "64",
+        "log_likelihood_sum": -20.772735595703125,
+        "token_ids": [
+          29953,
+          29946
+        ]
+      }
+    ]
+  },
+  "hook_cleanup": true,
+  "model_experiment": false,
+  "ridge_recovery": {
+    "complete_states": 20,
+    "defined_slot_labels": 80,
+    "mae": 0.0625,
+    "slot_exact_accuracy": 0.9375,
+    "whole_state_accuracy": 0.75
+  },
+  "self_patch_bitwise_equal": true,
+  "software_test_only": true,
+  "status": "passed",
+  "temporary_random_network_workflows": [
+    "behavior",
+    "extraction",
+    "probes",
+    "intervention_assay"
+  ],
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+}

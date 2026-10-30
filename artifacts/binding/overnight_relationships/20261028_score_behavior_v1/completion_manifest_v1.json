@@ -1,0 +1,79 @@
+{
+  "artifacts": {
+    "audit": {
+      "bytes": 434,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/audit.json",
+      "sha256": "fe7f5b6cb01cc16d856c71eb3b2395704fd65cbe77fc55a70f450022cbd8a97f"
+    },
+    "registration": {
+      "bytes": 4956,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/registration.json",
+      "sha256": "d1c16561ab0587388e0b2c893ae6a53ce5467fef3377f51ab040ed370a7238b2"
+    },
+    "report": {
+      "bytes": 3833,
+      "path": "reports/binding/overnight_score_behavior_v1.md",
+      "sha256": "e6fd5ede5b9e3065b3867a30385d940daab4dfe06d8d9ce91a2b593518970b39"
+    },
+    "results": {
+      "bytes": 2458654,
+      "path": "artifacts/binding/overnight_relationships/20261028_score_behavior_v1/results_v1.json",
+      "sha256": "5e9cdd8a0439b06d0a8437efaef453f11df6d7248774e345e618b37a72bb4b38"
+    }
+  },
+  "config_hash": "65bd33ffcd6e81e50bb5bb5a67aa01f3ae28fe0fde4de007cde215188c877508",
+  "evaluation_role": "posthoc_discovery_overnight_relationship_behavior_link_v1",
+  "generated_holdouts_opened": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameter_replays": 0,
+  "protocol": {
+    "backends": [
+      "hidden",
+      "surface"
+    ],
+    "bootstrap": {
+      "draws": 2000,
+      "minimum_valid_draws": 1900,
+      "seed": 117
+    },
+    "component_aggregation": "Equal component masses; sub-strata retain zero masses in unrepresented components.",
+    "computed_development_cases": 486,
+    "development_cases_per_model": 2430,
+    "generated_responses_validated_per_model": 7290,
+    "graph_site3": "undefined; omitted",
+    "joint_aggregation": "Average binary joint masses over fits before deriving conditional ratios.",
+    "literal_development_cases": 1944,
+    "posthoc": true,
+    "primary_layers": {
+      "codellama34b": 36,
+      "llama8b": 24
+    },
+    "query_diagnostic": "Same literal body and fixed target slot; queried minus other queries, sites7/8 and difference; retain4x4tables.",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "selected_score_banks": 72,
+    "sites": [
+      3,
+      7,
+      8
+    ],
+    "strata": [
+      "overall",
+      "query_slot",
+      "numeric_seed",
+      "response_validity"
+    ]
+  },
+  "raw_activations_loaded": false,
+  "source": {
+    "frozen_manifest_sha256": "0a510bcf421b6a83a068219d8fd39428a67683479b3b707428300b40a5a2ba2b",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/bb04042b777979c68679206d",
+    "snapshot_id": "bb04042b777979c68679206d",
+    "source_sha256": "f6b2d07a2760158f46bcde619867cf103437e52c635ce5f8bce3b4a3dfaead01"
+  },
+  "status": "complete_exploratory"
+}

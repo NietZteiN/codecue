@@ -1,0 +1,169 @@
+{
+  "activation_arrays_opened": false,
+  "additional_fits": 0,
+  "code_supported_future_improvements": [
+    {
+      "change": "Separate durable per-batch attempt journaling from expensive metadata exports; spool events and coalesce dashboard/CSV rebuilds at chunk boundaries or through the existing CPU reconciler.",
+      "evidence": "Every pre-forward manifest write calls datasets.write_json; note_artifact routes manifest writes to synchronous emit_event, SQLite updates, full CSV/dashboard exports and reconciler health checks. There are61 pre-forward writes plus16 chunk-pin manifest writes in this completed capture.",
+      "preserve": "Keep durable attempted-case counters before every forward, durable expected chunk hashes before publication, exact job/result identities and final logging. Do not weaken interrupted-work accounting.",
+      "priority": 1,
+      "proven_time_or_speedup": null
+    },
+    {
+      "change": "Keep only selected hidden tensors on GPU through forward completion, stack the four saved layers and transfer once per batch instead of copying within each layer hook.",
+      "evidence": "Each of4hooks immediately performs hidden[indices,positions].detach().float().cpu().numpy(); with61forwards this supplies244 blocking device-to-host copy points inside decoder execution.",
+      "preserve": "Same nine positions/four layers, float32 saved values, exact token geometry and numerical prefix checks; use a fresh validated performance contract.",
+      "priority": 2,
+      "proven_time_or_speedup": null
+    },
+    {
+      "change": "For a future H200 capture, qualify larger finite batch candidates64 and128 using real peak-memory and completed-case throughput.",
+      "evidence": "This run used32cases/batch and16,703MiB peak on a143,771MiB device. Current configuration accepts batch_size up to256 but fixes chunk_size128, so an effective batch cannot exceed128 without changing the chunk contract.",
+      "preserve": "Do not alter completed cohort or reuse its captures as though numerical batch geometry were unchanged; regenerate prepared geometry and rerun appropriate guards for new work. Smaller24GiB GPUs need separate qualification.",
+      "priority": 3,
+      "proven_time_or_speedup": null
+    },
+    {
+      "change": "Time input/source validation and module/model startup separately, then place reusable deterministic validation in the existing CPU preflight while retaining fast pinned-identity verification at GPU entry.",
+      "evidence": "run() calls _current_source, inputs, repeated metadata/source/case validation and source hashing before the collection attempt timer begins. The293s allocation exceeds that timer by147.54s, but the exact breakdown was not recorded.",
+      "preserve": "All source/data/config/token-layout identities must still be validated before model use; do not skip scientific guards.",
+      "priority": 4,
+      "proven_time_or_speedup": null
+    },
+    {
+      "change": "Build padded tensors from the already verified prepared token IDs instead of retokenizing all prompt strings in every forward.",
+      "evidence": "_forward retokenizes batch prompts even though prepared input_token_ids and physical geometry have already been validated, then checks equality before H2D.",
+      "preserve": "Exact native-token identity, attention masks and left-padding position IDs.",
+      "priority": 5,
+      "proven_time_or_speedup": null
+    },
+    {
+      "change": "If stage timings show publication or serialization costs matter, overlap bounded CPU chunk serialization with later GPU work and retain journal-before-publication ordering.",
+      "evidence": "The loop currently waits for np.concatenate, two prefix-check passes, uncompressed NPZ serialization, payload hashing, manifest publication and chunk fsync/link before subsequent chunks. It writes1.169GB across16chunks.",
+      "preserve": "Bounded queues, a single manifest owner, durable counters/checksums and exact resume validation.",
+      "priority": 6,
+      "proven_time_or_speedup": null
+    }
+  ],
+  "completed_cohort_preserved": true,
+  "created_utc": "2026-10-28T01:57:28.622911+00:00",
+  "derived_descriptive": {
+    "allocated_gpu_hours": 0.08138888888888889,
+    "allocation_elapsed_minus_attempt_wall_seconds": 147.53580210218206,
+    "batch_fill": {
+      "full_batches_of32": 60,
+      "last_batch_rows": 24
+    },
+    "cases_per_allocated_second": 6.63481228668942,
+    "cases_per_collection_attempt_second": 13.364113150134527,
+    "four_selected_layer_cpu_copies_per_forward": 4,
+    "nominal_selected_layer_device_to_host_copy_points": 244,
+    "residual_scope": "Difference includes work outside the attempt timer; it is not a measured startup-only or validation-only duration."
+  },
+  "evaluation_role": "discovery_relationship_capture_throughput_review_v1",
+  "evidence_pins": [
+    {
+      "bytes": 8149,
+      "path": "artifacts/binding/relationship_capture/llama31_8b_v2/summary.json",
+      "sha256": "73c1657d4f4adb37055376bb671e13718a52ac12af7cd94bf354fccadf70d0ee"
+    },
+    {
+      "bytes": 1239,
+      "path": "log/slurm/480292_relationship-capture-v2.json",
+      "sha256": "a1e334d22a2664c60ba99f091f4f20b2511cd1202ca553fc15e473d66943b60d"
+    },
+    {
+      "bytes": 2366,
+      "path": "log/slurm/480292_relationship-capture-v2.out",
+      "sha256": "83f518c603c370c7ab61c4808a29747d2e5af29a1d57d8ff0427d4eea08398c5"
+    },
+    {
+      "bytes": 49350,
+      "path": "artifacts/binding/sources/561ace2768c4c06b1c7554c0/src/codecue/binding/relationship_capture.py",
+      "sha256": "63b65bb9523066df70776ae142fd41db13b460e8390f1d8279deb7f69a88b75c"
+    },
+    {
+      "bytes": 1779,
+      "path": "artifacts/binding/sources/561ace2768c4c06b1c7554c0/src/codecue/binding/gpu_telemetry.py",
+      "sha256": "8e3d0d4aeb3a8a3d62421386a9f537039be62129180f3e2a7ebaf4fbf7b63364"
+    },
+    {
+      "bytes": 25077,
+      "path": "artifacts/binding/sources/561ace2768c4c06b1c7554c0/src/codecue/binding/throughput.py",
+      "sha256": "329de6928448f3ca10a6cbc1bcf1691c445f2bd7e705d87b78e313503b6d53dd"
+    },
+    {
+      "bytes": 20388,
+      "path": "artifacts/binding/sources/561ace2768c4c06b1c7554c0/src/codecue/binding/datasets.py",
+      "sha256": "63818b6e5aaa9713abac42b2ec26b75b447dfec2570cf797c0578b195b993c4a"
+    },
+    {
+      "bytes": 40011,
+      "path": "artifacts/binding/sources/561ace2768c4c06b1c7554c0/src/codecue/binding/experiment_log.py",
+      "sha256": "616e7b5ae688230c5c21a8f90b5dd40b3a6d01a4c1af66d4d158c055cabab700"
+    },
+    {
+      "bytes": 15322,
+      "path": "artifacts/binding/sources/561ace2768c4c06b1c7554c0/src/codecue/binding/experiment_log_scheduler.py",
+      "sha256": "785f339de8b6b4ee6371de523b894b90fcbd8afb2107a4c24a9d46babad94067"
+    }
+  ],
+  "generated_holdouts_opened": false,
+  "interpretation": "The observed GPU monitor mean is low and peak memory is far below H200 capacity. The runner has concrete synchronous CPU/publication/transfer work between GPU kernels. Timings do not establish which part dominates; no speedup or maximal-throughput claim is justified from this one short capture.",
+  "job_id": "480292",
+  "jobs_modified": [],
+  "limits": [
+    "No CUDA-event forward timings, transfer timings, serialization/write timings, input-validation timings or model-loader timings were saved.",
+    "NVML arithmetic sample mean is neither FLOP occupancy nor a wall-time-weighted measure of the whole allocation. Raw sample timestamps and utilization history are not preserved in summary.",
+    "GPU monitoring starts after model loading and covers prefill plus CPU validation/commit waits;81samples do not determine exact monitored seconds.",
+    "Torch peak allocation and NVML whole-device memory have different scopes; generic telemetry mentions KV memory but this capture explicitly used no KV cache.",
+    "No total prompt-token throughput was recorded in this summary.",
+    "Allocation-minus-attempt elapsed cannot be attributed entirely to startup, file I/O or validation.",
+    "Short completed scientifically useful work should not be repeated merely to increase a utilization percentage.",
+    "These are future engineering candidates, not measured bottleneck diagnoses or proven speedups."
+  ],
+  "measured": {
+    "allocated_gpus": 1,
+    "attention_backend": "sdpa",
+    "cases": 1944,
+    "chunk_size": 128,
+    "chunks": 16,
+    "collection_attempt_wall_seconds": 145.46419789781794,
+    "configured_batch_size": 32,
+    "device": "NVIDIA H200 NVL",
+    "device_total_memory_mib_from_job_log": 143771,
+    "device_uuid": "GPU-6b4f35b3-361c-714d-54e3-c4badfc3982b",
+    "driver_version": "580.178.04",
+    "dtype": "torch.bfloat16",
+    "generated_responses": 0,
+    "gpu_mean_power_watts": 173.08703703703702,
+    "gpu_mean_utilization_percent": 5.62962962962963,
+    "gpu_monitor_samples": 81,
+    "gpu_monitor_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+    "peak_device_memory_fraction": 0.11617781054593763,
+    "peak_device_memory_gib": 16.3115234375,
+    "peak_device_memory_mib": 16703.0,
+    "prefill_attempts": 1944,
+    "prefill_batches": 61,
+    "prefix_comparisons": 4980,
+    "prefix_max_abs_diff": 0.0,
+    "raw_float32_feature_bytes_from_shape": 1146617856,
+    "slurm_elapsed_seconds": 293.0,
+    "slurm_elapsed_source": "Parent read-only accounting observation:293seconds; job manifest separately brackets started/finished wrappers.",
+    "stored_capture_bytes": 1169099554,
+    "torch_peak_allocated_bytes": 16575400960,
+    "use_cache": false,
+    "uuid_selector_verified": true
+  },
+  "models_or_tokenizers_loaded": false,
+  "new_model_queries": 0,
+  "profiling_reruns": 0,
+  "source": {
+    "frozen_manifest_sha256": "aa41ec6b4ae6b55655fc6d3b4ae5b22ce11a1ec4fce1d777882d85dc71a249fa",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/561ace2768c4c06b1c7554c0",
+    "snapshot_id": "561ace2768c4c06b1c7554c0",
+    "source_sha256": "d4fe484d007b6f27ae5f7f6bef0a4203d602909a5a996b0e2d8eec25e63a23a5"
+  },
+  "source_files_modified": [],
+  "status": "reviewed_future_improvements_identified"
+}

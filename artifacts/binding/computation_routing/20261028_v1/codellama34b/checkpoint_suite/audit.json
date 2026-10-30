@@ -1,0 +1,199 @@
+{
+  "cells": [
+    {
+      "correct": 3067,
+      "n": 6700,
+      "section": "computation_routing",
+      "task": "routing_output_v1",
+      "valid": 6700
+    },
+    {
+      "correct": 2296,
+      "n": 6700,
+      "section": "computation_routing",
+      "task": "routing_execute_v1",
+      "valid": 6450
+    },
+    {
+      "correct": 3563,
+      "n": 6700,
+      "section": "computation_routing",
+      "task": "routing_value_v1",
+      "valid": 6521
+    }
+  ],
+  "complete": true,
+  "evaluated": 20100,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+    "mean_gpu_utilization_percent": 96.6951219512195,
+    "mean_power_watts": 675.8650609756097,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 78507.0,
+    "samples": 164,
+    "selector_verified": true
+  },
+  "identity_hash": "f9d7207f3e709e3877941f470b2219d8c46ea4d183c59d2ad9b415522c0e5b5c",
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "planned": 20100,
+  "preflight": {
+    "cases": 20100,
+    "config_hash": "1e409fe97023cc73eff3bdb3f8fadf9b525e2ea2e574ed040f67e34bfc3dcf4f",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "9645c7939e6bac0205b8d7b6b2362edd414d1903097bd0cc24c35d6f85630664",
+    "source_sha256": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79",
+    "status": "passed"
+  },
+  "revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "runtime": {
+    "device_name": "NVIDIA H100 80GB HBM3",
+    "engine": {
+      "gpu_memory_utilization": 0.95,
+      "max_num_batched_tokens": 4096,
+      "max_num_seqs": 128,
+      "tensor_parallel_size": 1
+    },
+    "load_warmup_seconds": 248.27343320898945,
+    "preflight": {
+      "cases": 20100,
+      "config_hash": "1e409fe97023cc73eff3bdb3f8fadf9b525e2ea2e574ed040f67e34bfc3dcf4f",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "9645c7939e6bac0205b8d7b6b2362edd414d1903097bd0cc24c35d6f85630664",
+      "source_sha256": "bd919b3f9a8fbd76c5fd8a4ef98b98e27861f1671f6dd44d79466d2ff66d6e79",
+      "status": "passed"
+    },
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    }
+  },
+  "status": "passed",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 4.476575054053683,
+      "output_tokens": 4113,
+      "requests_per_second": 228.74630440357188
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.432664358988404,
+      "output_tokens": 4029,
+      "requests_per_second": 231.01230254972228
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.4556111509446055,
+      "output_tokens": 4057,
+      "requests_per_second": 229.82256873625707
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.492665124009363,
+      "output_tokens": 4066,
+      "requests_per_second": 227.9270703991749
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.48717363801552,
+      "output_tokens": 4056,
+      "requests_per_second": 228.2060117586335
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.549143861047924,
+      "output_tokens": 4132,
+      "requests_per_second": 225.09729990471553
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.594086397031788,
+      "output_tokens": 4205,
+      "requests_per_second": 222.89524216645128
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.677646321011707,
+      "output_tokens": 4436,
+      "requests_per_second": 218.91351541484727
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.5136454260209575,
+      "output_tokens": 4496,
+      "requests_per_second": 226.8676210356904
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.649761204025708,
+      "output_tokens": 4492,
+      "requests_per_second": 220.22636326214624
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.537339443981182,
+      "output_tokens": 4388,
+      "requests_per_second": 225.68291674944982
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.664461445005145,
+      "output_tokens": 4418,
+      "requests_per_second": 219.53231087300165
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.7283561280346476,
+      "output_tokens": 4591,
+      "requests_per_second": 216.56575187487582
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.613471832009964,
+      "output_tokens": 4168,
+      "requests_per_second": 221.9586544118708
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.494769304990768,
+      "output_tokens": 3966,
+      "requests_per_second": 227.82036863671763
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.6266277770046145,
+      "output_tokens": 4151,
+      "requests_per_second": 221.32750879366424
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.553373139991891,
+      "output_tokens": 3999,
+      "requests_per_second": 224.8882242938306
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.655017870943993,
+      "output_tokens": 4121,
+      "requests_per_second": 219.97767320973625
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 4.623999155010097,
+      "output_tokens": 4248,
+      "requests_per_second": 221.45332766561978
+    },
+    {
+      "cases": 644,
+      "generation_seconds": 3.080803987046238,
+      "output_tokens": 2541,
+      "requests_per_second": 209.03634334018233
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "answer_prefix_suffix": " ",
+  "assay": "computed_routing",
+  "baseline_gate": {
+    "maximum_invalid_rate": 0.05,
+    "minimum_accuracy": 0.9,
+    "minimum_cell_n": 24
+  },
+  "batch_size": 96,
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "config_path": "configs/binding/competition/computed_routing_v1.json",
+  "dataset": "artifacts/binding/routing_extension/computed_routing/discovery_v1.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "execution_backend": "Transformers BF16 SDPA raw-block literal routing / greedy first-token assay",
+  "figure": "reports/binding/computed_routing_effects_v1.svg",
+  "generation": {
+    "numeric_groups": 12,
+    "seed": 2026102604
+  },
+  "hidden_size": 4096,
+  "hook_proof": "artifacts/binding/competition/llama31_8b_hook_preflight_v1/interface_diagnostics/summary.json",
+  "hook_proof_sha256": "fe9292d97202734ff9eda4b51df15b1810d14f80311821fff6284be7ee5150b5",
+  "interpretation": "Transfer at unchanged expression-end tokens after an earlier operand changes. May transport operand information rather than an abstract computed value; no general binding mechanism claimed.",
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    31
+  ],
+  "limitation": "One-token output measurement on small additions absent from all literals; two templates per family and two lexical realizations. No abstraction or held-out prediction established.",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "norm_tolerance": 0.03,
+  "preflight_result": "artifacts/binding/routing_extension/computed_routing/preflight_v1.json",
+  "prepared_cases": "artifacts/binding/routing_extension/computed_routing/prepared_v1.json",
+  "primary_condition": "computed_result_transfer",
+  "protocol": "short_answer_chat_v1",
+  "report": "reports/binding/computed_routing_results_v1.md",
+  "report_title": "Computed-expression routing discovery",
+  "require_digit_first": true,
+  "review_artifact": "artifacts/binding/routing_extension/computed_routing/review_v1.json",
+  "run_dir": "artifacts/binding/routing_extension/computed_routing/llama31_8b_v1",
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

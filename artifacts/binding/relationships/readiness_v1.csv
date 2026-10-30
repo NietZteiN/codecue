@@ -1,0 +1,48 @@
+id,category,status,title,prerequisite
+generator_software,datasets,ready,Semantic generators and independent oracles,
+cited_sources,datasets,ready,Pinned published benchmark sources,
+runtime_setup,setup,ready,Cached model/runtime setup,
+automatic_logging,operations,ready,Persistent experiment and result logging,
+regression,validation,ready,Full binding software regression,
+readiness,operations,ready,Metadata-only readiness inventory,
+confidence_code,measurement,ready,Exact-prompt next-token confidence runner,
+confidence_inputs_llama31_8b,measurement,ready,"Llama 3.1 8B: 6,144 label-free confidence inputs",
+confidence_measure_llama31_8b,measurement,ready,Llama 3.1 8B: next-token scalar collection and audit,
+confidence_inputs_codellama34b,measurement,ready,"CodeLlama 34B: 6,144 label-free confidence inputs",
+confidence_measure_codellama34b,measurement,ready,CodeLlama 34B: next-token scalar collection and audit,
+candidate_code,measurement,ready,Complete candidate-answer event scoring helper,
+candidate_plan_llama31_8b,measurement,ready,llama31_8b: signed-integer candidate-event contract,
+candidate_plan_codellama34b,measurement,ready,codellama34b: signed-integer candidate-event contract,
+candidate_real_events,measurement,ready,Validate candidate events with pinned real tokenizers,
+candidate_collect,measurement,ready,Collect full candidate-answer likelihood features,
+cohort_recipes,datasets,ready,Nine independent-generation discovery recipes,
+cohort_build,datasets,ready,"Generate and oracle-check 30,960 source records",
+cohort_overlap,datasets,ready,Cross-cohort content and split overlap audit,
+new_family,datasets,needs_scientific_decision,Genuinely new structural program family,Select a stable core claim and a useful genuinely new family before extension.
+precision_code,statistics,ready,Structural-group precision simulation,
+precision_scenarios,statistics,ready,Conditional precision and detection scenarios,
+confirmatory_size,statistics,needs_scientific_decision,Choose independent confirmatory structural cohort size,"Requires a supported claim, independent structural units and a frozen sampling/uncertainty plan."
+alignment_code,representations,ready,Train-only Procrustes alignment helper,
+rrr_code,representations,ready,Proper reduced-rank ridge helper,
+probe_preflight,representations,ready,Probe-sensitivity config and synthetic validation,
+probe_study,representations,ready,Run a targeted alignment/rank sensitivity on real captures,
+dependency_study,representations,needs_scientific_decision,Learned dependency-recovery study,Only run if the selected explanation requires directed dependency recovery.
+discovery_controls,prediction,ready,Completed discovery predictive capacity/access controls,
+confidence_predictor,prediction,ready,Grouped discovery prediction with declared confidence access,
+mechanism_account,science,needs_scientific_decision,Supported explanatory mechanism and selective intervention,Select and support an account that predicts selective effects and distinguishes the competing explanations.
+mechanism_replication,science,needs_scientific_decision,Independent-structure and second-family causal replication,A selected reproducible causal mechanism must precede causal-mechanism replication; new numeric variants are insufficient.
+registration_code,registration,ready,Metadata-only final-registration readiness linter,
+registration_draft,registration,ready,Unfilled final-registration template and readiness report,
+frozen_registration,registration,needs_scientific_decision,Complete and freeze genuine scientific registration,"Fill hypotheses, intervention/behavior endpoints, feature/access contract, fitting, sites, exclusions and uncertainty before confirmation."
+final_forecasts,prediction,needs_scientific_decision,Freeze A/B/C/stress-test forecasts before outcomes,Requires qualified measurements and immutable model fits/forecasts; original final outcomes remain sealed.
+unfamiliar_scoring,science,needs_scientific_decision,Score untouched unfamiliar-program outcomes,Only after genuine registration and forecast freezing with explicit final-evaluation authorization from the study protocol.
+literature_review,writing,ready,Primary-source/version and novelty-boundary review,
+manuscript,writing,needs_scientific_decision,New study manuscript and predictive figure,"Requires the final supported claim, complete prediction comparison and limitations; current pilot reports are available."
+optional_training,optional,deferred_optional,Targeted language-model training,
+optional_unlearning,optional,deferred_optional,Unlearning extension,
+optional_separate_paper,optional,deferred_optional,Separate paper or alignment-method project,
+candidate_prediction,prediction,ready,Grouped candidate-event versus next-token prediction,
+joint_confidence,prediction,ready,Nested joint next-token and candidate-event discovery prediction,
+stress_comparator,prediction,ready,Cheap assignment-cue extra-query discovery comparator,
+query_selectivity,representations,ready,Equal-capacity queried versus unqueried value accessibility,
+relationship_targets,representations,ready,Prefix-safe relationship targets and varied copy-routing source bank,

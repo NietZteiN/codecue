@@ -1,0 +1,30 @@
+{
+  "all_original_scientific_artifacts_unchanged": true,
+  "audit_status": "passed",
+  "completion_manifest": {
+    "path": "artifacts/binding/query_selectivity/llama31_8b_v1/completion_manifest_v2.json",
+    "sha256": "a1d318f07705876937d02b238e1d3f071a0f63fdf8815ecee8a351321bfb2c55"
+  },
+  "fit_source": {
+    "frozen_manifest_sha256": "17876118c239f059c73efb0273df06c01930de25bc318a7bd57b802153650929",
+    "scientific_config_files": [
+      {
+        "path": "configs/binding/query_selectivity/llama31_8b_v1.json",
+        "sha256": "7c3b506bb75e7eed05209ef9d79d6dd21c6885949a4dd0ddfbde4cc2636531fc"
+      }
+    ],
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/1b057cca2a542d1add330bf7",
+    "snapshot_id": "1b057cca2a542d1add330bf7",
+    "source_sha256": "3d079430db50489b40f40228ad416af1b60487282600bb109d1cababc718a98e"
+  },
+  "idempotent_seal_and_audit": true,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "review_sha256": "78a7e90cdc8674ed1a0eb65ce86613d0f6de97424e33261b8a9e5b62add74d78",
+  "scientific_artifacts_checked": 50,
+  "seal_reader_source": {
+    "git_revision": "39c9e6600feb14a45d473395a5efc848ac37c47f",
+    "source_sha256": "8e27e1940086cd554e5c599f26750db289e5a55e9a6fb828f85bb7012f7896cf"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,26 @@
+# Assignment-cue behavioral comparator: findings
+
+The extra instructed query gives context-dependent discovery prediction gains. It has **no clear Brier advantage over joint confidence in any of the ten fixed matched comparisons**. Relative to next-token confidence, the conditional Brier interval is positive in CodeLlama's source-only context and Llama's source-oracle-plus-raw-neutral context. The other eight intervals cross zero. These conditional, unadjusted intervals do not establish an independent generalization result.
+
+| Checkpoint | Shared context | Next-token Brier | Extra-query Brier | Improvement [conditional 95%] |
+|---|---|---:|---:|---|
+| CodeLlama 34B | Source | 0.125365 | 0.122131 | 0.003233 [0.001398, 0.005083] |
+| CodeLlama 34B | Source + interactions | 0.116641 | 0.115368 | 0.001273 [−0.000948, 0.003224] |
+| Llama 3.1 8B | Source + interactions | 0.039430 | 0.039446 | −0.000016 [−0.000448, 0.000366] |
+| Llama 3.1 8B | Interactions + oracle + raw neutral | 0.035738 | 0.034288 | 0.001450 [0.000145, 0.002599] |
+
+The source-interaction joint-confidence Brier scores remain 0.113499 for CodeLlama and 0.039503 for Llama. Their paired comparisons with the extra-query alternatives both include zero. CodeLlama's joint bundle has lower Brier point estimates in all five contexts, without a decisive conditional difference; Llama's point estimates vary. The [complete decision table](stress_prediction_decision_v2.md), [all results](stress_prediction_results_v2.md), and [fixed figure](stress_prediction_increments_v2.svg) retain every context, proper loss, partition seed, calibration bin and contrast.
+
+Both audited full banks contain 6,144 responses: **12,288 full observations**, plus **256 overlapping qualification responses**. The request ledger records **12,544 case-request attempts**, all committed, with no incomplete retries. Full collection emitted 44,334 tokens, including returned stopping tokens. Three Llama responses were invalid under the strict integer parser; every CodeLlama response parsed. Validity is format compliance, not correctness. No stress response was graded against an oracle.
+
+The query inserts one fixed assignment reminder before the unchanged code block. All original program bytes, printed queries, chat wrappers and checkpoint-specific `Output:` suffixes passed real-tokenizer checks. The five features are validity, response characters, output tokens, parsed integer and magnitude. The distinct query's answer identity is deliberately available. The original target response and correctness remain excluded from features; original correctness is only the already-consumed supervised label. The new tiers retain the four next-token statistics and exclude the six event-likelihood statistics, so comparisons with the joint bundle involve different observations and access costs.
+
+Collection used cached BF16 checkpoints and vLLM on two H100 allocations. Mean inference-window GPU utilization was 84.3% for the 8B model (14 samples) and 98.7% for the 34B model (138 samples); peak device memory was 80,147 and 80,749 MiB. GPU job elapsed times were 252 and 329 seconds, including imports, initialization and auditing. These measured costs do not isolate the instruction's causal effect: the query wording and declared generation/stopping profile differ from the original outcome measurement.
+
+The corrected **28-tier/70-contrast** analysis completed **20,412 logistic fits**. All **847,872** parent probabilities, parameters, normalizers, penalties, inner curves, groups and fallbacks reproduce exactly. The original CodeLlama version-1 and corrected version-2 analyses also reproduce all **516,096** probabilities across all 28 tiers exactly. Both versions' feature-table bytes are identical for each checkpoint.
+
+One initial Llama training fit needed 540 Newton iterations and exceeded the original 100-iteration allowance. The [numerical correction](stress_comparator_numerics_v2.md) allows 1,000 iterations for the five new tiers, preserving the objective, initialization, normalization, backtracking and 1e−8 tolerance. The 23 parent tiers retain 100. All 4,320 additional numerical qualification fits converged. The failed attempt and canceled dependent comparison remain logged; generation was not repeated for this correction. The final full software suite passes **1,024 tests**.
+
+The [original plan](stress_comparator_plan.md) and [corrected declaration](../../artifacts/binding/stress_prediction/protocol_registration_v2.json) preceded the relevant runs after earlier discovery results were known. There are still 24 consumed structural groups per checkpoint, not independent experiments for each partition seed or generated response. Bootstrap intervals condition on saved predictions without refitting or multiplicity adjustment. This completes the discovery behavioral comparator; it does not qualify mechanism C, selective causal ownership, unfamiliar-program confirmation, or a validated adversarial stress test. Original final/extrapolation outcomes remain sealed.
+
+Source/configuration hashes, response and query counts, audits, exact replays, all job attempts and current readiness are retained in the [machine-readable handoff](../../artifacts/binding/stress_prediction/handoff_review_v2.json).

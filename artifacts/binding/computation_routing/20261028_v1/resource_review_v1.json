@@ -1,0 +1,75 @@
+{
+  "allocated_cpu_seconds": 11288,
+  "evaluation_role": "computation_routing_resource_accounting_v1",
+  "gpu_allocation_seconds": 845,
+  "jobs": {
+    "481034": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=16G,node=1",
+      "allocation_seconds": 397,
+      "exit_code": "0:0",
+      "partition": "normal",
+      "state": "COMPLETED"
+    },
+    "481065": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+      "allocation_seconds": 131,
+      "exit_code": "0:0",
+      "partition": "normal",
+      "state": "COMPLETED"
+    },
+    "481068": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+      "allocation_seconds": 100,
+      "exit_code": "0:0",
+      "partition": "dev",
+      "state": "COMPLETED"
+    },
+    "481069": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h100_80gb_hbm3=1,gres/gpu=1,mem=48G,node=1",
+      "allocation_seconds": 381,
+      "exit_code": "0:0",
+      "partition": "h100",
+      "state": "COMPLETED"
+    },
+    "481070": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h100_80gb_hbm3=1,gres/gpu=1,mem=96G,node=1",
+      "allocation_seconds": 464,
+      "exit_code": "0:0",
+      "partition": "h100",
+      "state": "COMPLETED"
+    },
+    "481071": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=24G,node=1",
+      "allocation_seconds": 25,
+      "exit_code": "0:0",
+      "partition": "normal",
+      "state": "COMPLETED"
+    },
+    "481072": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=24G,node=1",
+      "allocation_seconds": 24,
+      "exit_code": "0:0",
+      "partition": "normal",
+      "state": "COMPLETED"
+    },
+    "481109": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=8G,node=1",
+      "allocation_seconds": 9,
+      "exit_code": "0:0",
+      "partition": "normal",
+      "state": "COMPLETED"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "scope": "SLURM worker allocation time including startup, IO and review; not CUDA kernel time. Queue waits excluded.",
+  "status": "passed"
+}

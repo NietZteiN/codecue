@@ -1,0 +1,52 @@
+{
+  "automatic_logging_enabled": true,
+  "counts_at_review": {
+    "analysis": 150,
+    "dataset": 63,
+    "job": 323,
+    "run": 72
+  },
+  "index_status": "ok",
+  "interval_minutes": 10,
+  "issues": [],
+  "notices": [
+    {
+      "bytes": 9590432,
+      "code": "metadata_size_limit",
+      "limit_bytes": 8388608,
+      "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/candidate_prediction/comparison_v1.json"
+    },
+    {
+      "bytes": 12324277,
+      "code": "metadata_size_limit",
+      "limit_bytes": 8388608,
+      "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/joint_confidence/comparison_v1.json"
+    },
+    {
+      "bytes": 10473597,
+      "code": "metadata_size_limit",
+      "limit_bytes": 8388608,
+      "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/summary.json"
+    },
+    {
+      "bytes": 10484733,
+      "code": "metadata_size_limit",
+      "limit_bytes": 8388608,
+      "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/review_v1.json"
+    },
+    {
+      "bytes": 15034398,
+      "code": "metadata_size_limit",
+      "limit_bytes": 8388608,
+      "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+      "path": "/work/jvl210002/migration/codecue/artifacts/binding/stress_prediction/v2/comparison_v1.json"
+    }
+  ],
+  "pending_guards": 2,
+  "scheduler_healthy": true,
+  "status": "passed"
+}

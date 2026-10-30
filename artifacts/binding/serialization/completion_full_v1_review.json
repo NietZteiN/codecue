@@ -1,0 +1,103 @@
+{
+  "audit_path": "artifacts/binding/serialization/completion_full_v1_review.json",
+  "checkpoint": {
+    "model": "codellama/CodeLlama-7b-Instruct-hf",
+    "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+    "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+  },
+  "diagnostics": {
+    "cruxeval_paired_correctness": {
+      "both_correct": 207,
+      "both_incorrect": 422,
+      "cot_only_correct": 83,
+      "direct_only_correct": 88,
+      "n": 800
+    },
+    "interpretation": "Descriptive checks of a fixed public benchmark. Answer format validity does not establish reasoning faithfulness. Direct/CoT change both prompt and token budget. BBH sizes use different released examples; they are not matched load contrasts.",
+    "tasks": [
+      {
+        "contains_python_section": 0,
+        "generated_tokens": 30362,
+        "mean_generated_tokens": 37.9525,
+        "n": 800,
+        "parse_errors": {
+          "SyntaxError": 9,
+          "ValueError": 4,
+          "valid": 787
+        },
+        "primary_upstream_score_disagreements": 0,
+        "starts_new_question": 0,
+        "stop_reasons": {
+          "answer_end_marker": 792,
+          "token_limit": 8
+        },
+        "task": "cruxeval_o_direct"
+      },
+      {
+        "contains_python_section": 0,
+        "generated_tokens": 233101,
+        "mean_generated_tokens": 291.37625,
+        "n": 800,
+        "parse_errors": {
+          "SyntaxError": 2,
+          "ValueError": 43,
+          "valid": 755
+        },
+        "primary_upstream_score_disagreements": 0,
+        "starts_new_question": 0,
+        "stop_reasons": {
+          "answer_end_marker": 762,
+          "token_limit": 38
+        },
+        "task": "cruxeval_o_cot"
+      }
+    ]
+  },
+  "generated_holdouts_opened": false,
+  "inference_source_sha256": "c09bcb69842711e63708a307d98d874a217bf9551125e563582adfb88e9d67aa",
+  "model_inference": false,
+  "prompt_token_ids_sha256": "fb3e6eeaabb9a49657b1f89cb1647210c4e262467a845d64737149ac90f93299",
+  "prompt_wrapper": "cruxeval_released_completion_v1",
+  "resources": {
+    "gpu_peak_bytes": 20022770176,
+    "stage_seconds": 1144.8047887759749
+  },
+  "responses_path": "artifacts/binding/serialization/completion_full_v1/published_behavior/responses.jsonl",
+  "responses_sha256": "4f482f28e7ef305ae8c882ea5ac441df0916228e23773e9b4a6642b1ab936fad",
+  "review_source_sha256": "35cd258d759f59bab0d985baa752b3c8ca8ecf04f7c50fe504075344d92a4165",
+  "run_identity_hash": "129b71377ea3c139a4235b3e4bee9f794c25d2bb99d5bdb7235ac530a8228ca6",
+  "summary": {
+    "complete": true,
+    "cruxeval_metric_limit": "literal equality without execution; expressions and function calls get no credit",
+    "decoding": "one greedy completion per item; no sampled pass@k",
+    "evaluated": 1600,
+    "generated_holdouts_opened": false,
+    "metric": "python_literal_equality_and_bbh_final_letter_v2",
+    "planned": 1600,
+    "serialization": "released CRUXEval prompt content as a completion prefix; one BOS plus reference SentencePiece encoding",
+    "tasks": [
+      {
+        "accuracy": 0.36875,
+        "correct": 295,
+        "evaluated": 800,
+        "evaluated_accuracy": 0.36875,
+        "planned": 800,
+        "task": "cruxeval_o_direct",
+        "token_limited": 8,
+        "upstream_postprocessing_literal_correct": 295,
+        "valid": 787
+      },
+      {
+        "accuracy": 0.3625,
+        "correct": 290,
+        "evaluated": 800,
+        "evaluated_accuracy": 0.3625,
+        "planned": 800,
+        "task": "cruxeval_o_cot",
+        "token_limited": 38,
+        "upstream_postprocessing_literal_correct": 290,
+        "valid": 755
+      }
+    ]
+  }
+}

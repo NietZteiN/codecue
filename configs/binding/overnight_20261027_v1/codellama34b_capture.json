@@ -1,0 +1,20 @@
+{
+  "batch_size": 64,
+  "chunk_size": 512,
+  "context_limit": 4096,
+  "dataset": "artifacts/binding/overnight_relationships/20261027_v1/union.jsonl",
+  "dataset_sha256": "75eeef184fd0513acb2d28f269574d38db4b09dee35b555abe5f4e93582345c3",
+  "evaluation_role": "discovery_overnight_relationship_capture_v1",
+  "hidden_size": 8192,
+  "layers": [
+    12,
+    24,
+    36,
+    47
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "prefix_atol": 1e-05,
+  "run_dir": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture",
+  "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+}

@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-10-28T02:06:41.057766+00:00",
+  "evaluation_role": "posthoc_relationship_interpretation_review_v1",
+  "evidence": [
+    {
+      "bytes": 836729,
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/results_v1.json",
+      "sha256": "8d582f3f18bac43f57b0d8d821ac4df493ca0a59a6945cf2770710fcdafdfa86"
+    },
+    {
+      "bytes": 33365045,
+      "path": "artifacts/binding/relationship_readouts/llama31_8b_v3/results_v1.json",
+      "sha256": "250fbdc89cc000aee117d34c912b2dd9ee2b006e667cb1d8baec40ff5944cc2f"
+    },
+    {
+      "bytes": 2631,
+      "path": "reports/binding/relationship_score_controls_v1.md",
+      "sha256": "ca94e048dd4875b174dbe0fd61da9cd9752b1e21bff66146ea9a6c81ac4e1f37"
+    },
+    {
+      "bytes": 4393,
+      "path": "artifacts/binding/relationship_followup/plot_relationship_controls_v1.py",
+      "sha256": "8e46712786423ff27c0eb68e744911b286be10e7e7db72bf904c0eeea4dd0156"
+    },
+    {
+      "bytes": 1136,
+      "path": "artifacts/binding/relationship_followup/figure_review_v1.json",
+      "sha256": "96ad1dd623f9d9ff28d7427d9c0fc97af36e13aa2b9e7ce7b9fbe1889bb45303"
+    }
+  ],
+  "figure_checks": [
+    "Source and figure hashes in manifest match actual files.",
+    "ROOT=Path(__file__).resolve().parents[3] correctly resolves projectroot for this scriptlocation.",
+    "Algebraic bars use direct hidden, hidden categorical-value-derived, and source categorical-value-derived scores.",
+    "Graph bars use declared hiddenlayer24/sourcefeaturebank sites7/8 averaged across3seeds.",
+    "Paired bars use both_first_parents_correct componentmeans, not fullgraph recovery.",
+    "Footnote labels posthoc selection, known scaffold, pairs/bases, nine components and conditional rather than barwise uncertainty."
+  ],
+  "findings": {
+    "bootstrap_invalid_draws": 0,
+    "bootstrap_recipe": {
+      "draws": 2000,
+      "minimum_valid_draws": 1900,
+      "seed": 117
+    },
+    "bootstrap_valid_draws": 2000,
+    "direct_minus_source_algebraic": {
+      "conditional_group_bootstrap_95": [
+        -0.1619152857649523,
+        -0.10419760613689026
+      ],
+      "mean": -0.1308865845189422
+    },
+    "hidden_direct_algebraic": 0.8501913460236431,
+    "original_primaries_preserved": true,
+    "paired_component_seed_means": [
+      {
+        "backend": "hidden",
+        "both_first_parents_correct": 0.9675925925925926,
+        "both_whole_graphs_correct": 0.787037037037037,
+        "first_parent_predictions_collapse": 0.0,
+        "site": 7
+      },
+      {
+        "backend": "hidden",
+        "both_first_parents_correct": 1.0,
+        "both_whole_graphs_correct": 0.16666666666666666,
+        "first_parent_predictions_collapse": 0.0,
+        "site": 8
+      },
+      {
+        "backend": "surface",
+        "both_first_parents_correct": 0.018518518518518517,
+        "both_whole_graphs_correct": 0.0,
+        "first_parent_predictions_collapse": 0.8935185185185185,
+        "site": 7
+      },
+      {
+        "backend": "surface",
+        "both_first_parents_correct": 0.0,
+        "both_whole_graphs_correct": 0.0,
+        "first_parent_predictions_collapse": 0.8981481481481481,
+        "site": 8
+      }
+    ],
+    "saved_score_rows_read": 34992,
+    "selected_score_banks": 18,
+    "source_categorical_derived_algebraic": 0.9810779305425853
+  },
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "jobs_modified": [],
+  "limitations": [
+    "Source-only categorical decoding at initialization wins this posthoc comparator; hidden relation accuracy is not an input-information advantage.",
+    "Equal numeric states differ in explicit visible source copy, so successful parent discrimination can reflect syntax access.",
+    "Both-first-parent accuracy100% at finalprompt coexists with16.667%both-whole-graph accuracy; do not describe it as complete dependency recovery.",
+    "The72lexicalpairs are36numericbases across9components, not72 independent replications; the3weightingseeds are sensitivity fits.",
+    "The original and posthoc results reuse the same discovery corpus and source model; no new confirmatory evidence or causal intervention is supplied."
+  ],
+  "minor_clarifications_for_new_findings_not_original_artifact_edits": [
+    "State explicitly that hidden metrics use layer24 and that Valid graphs means exactlyone predicted permitted parent for each copy destination under the supplied causal scaffold; it is not learned node/version validity.",
+    "When displaying the stronger source comparison, retain that total decoder parameter counts/task difficulty differ and that the confidence interval conditions on saved fits without refitting or multiplicity adjustment.",
+    "Retain fixed bootstrap seed117/2000whole-development-component draws as reproducibility metadata; these do not create independent data or replications."
+  ],
+  "models_or_tokenizers_loaded": false,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "npz_arrays_opened": false,
+  "parameter_replays": 0,
+  "report_checks": [
+    "Rounded algebraic contrast and interval match saved metadata.",
+    "All12 validity/exact-graph table rows agree with saved backend/site/seed diagnostics.",
+    "Pair table means agree with component-macro metrics across all3weighting seeds.",
+    "Report explicitly calls controls posthoc and exploratory on the same9developmentcomponents.",
+    "Report preserves the explicit source-copy difference and lack of natural-causal-use inference.",
+    "Report correctly separates paired both-first-parent recovery from paired both-complete-graph recovery.",
+    "No independent pair-level interval is claimed."
+  ],
+  "source_edits": [],
+  "status": "passed_with_minor_standalone_clarifications"
+}

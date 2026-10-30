@@ -1,0 +1,86 @@
+{
+  "backend_cases": "artifacts/binding/live_load/backend/codellama34b_v1/selected_cases_v1.json",
+  "backend_preflight": "artifacts/binding/live_load/backend/codellama34b_v1/preparation_v1.json",
+  "batch_size": 36,
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "context_limit": 4096,
+  "cuda_home": "/usr/local/cuda-12.9",
+  "data_sources": "artifacts/binding/benchmarks/published_datasets_manifest.json",
+  "data_sources_sha256": "1c00919e2360e57cf2ee7e912ccded1f8386b5d018c75a62926d7baf8fb70d14",
+  "dataset": "artifacts/binding/live_load/discovery_v2.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": "auto",
+    "max_num_seqs": "auto"
+  },
+  "engine_memory_overrides": [
+    {
+      "max_memory_gib": 90,
+      "settings": {
+        "max_num_batched_tokens": 8192,
+        "max_num_seqs": 256
+      }
+    }
+  ],
+  "eos_token_ids": [
+    2
+  ],
+  "execution_backend": "Transformers BF16 SDPA, exact-input post-hoc cross-backend replay; twelve uncached control decodes",
+  "figure": "reports/binding/live_load_codellama34b_v2.svg",
+  "generation": {
+    "initialize_results": true,
+    "noise_pairs": 4,
+    "numeric_per_template": 16,
+    "seed": 20261027,
+    "templates": 24
+  },
+  "max_gpu_seconds": null,
+  "max_new_tokens": {
+    "bbh_tracking_3": 1024,
+    "bbh_tracking_5": 1024,
+    "bbh_tracking_7": 1024,
+    "cruxeval_o_cot": 1024,
+    "cruxeval_o_direct": 512
+  },
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "preflight_result": "artifacts/binding/live_load/codellama34b_v2/tokenizer_preflight.json",
+  "prepared_cases": "artifacts/binding/live_load/codellama34b_v2/prepared_cases.jsonl",
+  "primary_contrasts": [
+    "live4_minus_live2:neutral:updates3",
+    "naming_by_load_by_updates"
+  ],
+  "protocol": "short_answer_chat_v1",
+  "protocol_sources": "artifacts/binding/benchmarks/protocol_sources_manifest.json",
+  "protocol_sources_sha256": "45f50eea06548d4c8dfd0d464f7b16b185ae2dc12764c065bf1e75891e44f86b",
+  "reliability_gate": {
+    "maximum_invalid_rate": 0.05,
+    "minimum_accuracy": 0.9,
+    "minimum_cell_n": 24
+  },
+  "report": "reports/binding/live_load_codellama34b_v2.md",
+  "request_chunk_size": 1024,
+  "review_artifact": "artifacts/binding/live_load/codellama34b_v2/review_v2.json",
+  "run_dir": "artifacts/binding/live_load/backend/codellama34b_v1",
+  "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+  "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+  "scorer": "python_literal_equality_and_bbh_final_letter_v2",
+  "sections": [
+    {
+      "dataset": "artifacts/binding/live_load/discovery_v2.jsonl",
+      "kind": "live_load",
+      "name": "computed_retention_frontiers",
+      "sha256": "73ba280d54c602593501bf40704baec678cb2932b9947bc28e2c3bc021576362",
+      "variants": [
+        "print_direct_v3"
+      ]
+    }
+  ],
+  "selection_seed": 117,
+  "tokenization_mode": "codellama_official_boundary_v1",
+  "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "upstream_config": "configs/binding/competition/live_load_codellama34b_v2.json",
+  "upstream_config_sha256": "ea6159ad30dc2b4f184a8301d10b49f35fdfaeb26112031f27892ef5db8d524b"
+}

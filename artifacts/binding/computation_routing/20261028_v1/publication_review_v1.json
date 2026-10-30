@@ -1,0 +1,163 @@
+{
+  "activation_arrays_opened": false,
+  "checks": {
+    "all_144_form_cells_preserved": true,
+    "all_216_primary_dev_contrasts_preserved": true,
+    "all_432_context_contrasts_preserved": true,
+    "all_6_prospective_gates_recomputed": true,
+    "audited_metadata_matches": true,
+    "both_completed_receipts_required": true,
+    "dependent_control_binomial_intervals_absent": true,
+    "frozen_profile_identities_verified": true,
+    "receipt_review_sha256_verified": true,
+    "repeated_figure_render_byte_identical": true
+  },
+  "evaluation_role": "discovery_computation_routing_publication_v1",
+  "generated_holdouts_opened": false,
+  "input_pins": [
+    {
+      "bytes": 5704,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/audit.json",
+      "sha256": "374bfa25343165e7fc5f4e6f1bf4253e6c3390acaef6b6ff0f81be3bfda76628"
+    },
+    {
+      "bytes": 51576,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/manifest.json",
+      "sha256": "41fc1e986c6e9205425c637e213e0cada018600e7923db5c6e479c55fdbc2a7a"
+    },
+    {
+      "bytes": 751,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/runtime.json",
+      "sha256": "560787c70ac5f22cc3d32378c5059f7fb340e4754ef5d3d41f8aa6f7578a88d0"
+    },
+    {
+      "bytes": 4358,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/checkpoint_suite/summary.json",
+      "sha256": "10634f9b38f8212940a243c24c5a3ac0ca029de3058f143d53721f16e569c0cd"
+    },
+    {
+      "bytes": 2838827,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/review_v1.json",
+      "sha256": "c8d51c4d73c813f5daf78873345b5a6f1e7ce45583b91bc428281274191807df"
+    },
+    {
+      "bytes": 1185,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_completion_v1.json",
+      "sha256": "45623261edccade2d013d3bd73279035791a91b25da73fe21faa3bd872208b0b"
+    },
+    {
+      "bytes": 1383,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/routing_preflight_v1.json",
+      "sha256": "856e56b54423c610e8d46ce054056d95febcae749f405f4e152bff040d0f0ebc"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/computation_routing/20261028_v1/codellama34b/tokenizer_preflight.json",
+      "sha256": "712c5b12cbdc354ab4403f53f80d2ad9d4cf26ef6fbff0c681568e3bf1823435"
+    },
+    {
+      "bytes": 5715,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/audit.json",
+      "sha256": "910a35ca31b1e897a6fb28d143afacb6c59a768e573b82fe06efac940fb31470"
+    },
+    {
+      "bytes": 51553,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/manifest.json",
+      "sha256": "5c1d5496a86ec0308205656b24f197a060cba10424f2b759999b597aa897d27a"
+    },
+    {
+      "bytes": 752,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/runtime.json",
+      "sha256": "202cbc0ec52ceea50d0322dd06073ca346859fc51dac887411d4731646bfed19"
+    },
+    {
+      "bytes": 4371,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/checkpoint_suite/summary.json",
+      "sha256": "a2eb63d5b300d49ecfb77ce1e7b8047492279c385bb4fcbf37aa4532be657ef0"
+    },
+    {
+      "bytes": 2833652,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/review_v1.json",
+      "sha256": "2cb6c6f1e7345fb2792c23e4421f4b83dc7f355d0c1991511a02f3f3dced1540"
+    },
+    {
+      "bytes": 1175,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_completion_v1.json",
+      "sha256": "6077b2d7ed957f5ec0c8433d7fb7fe594a2c750538e2eef2645ec243864d483a"
+    },
+    {
+      "bytes": 1373,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/routing_preflight_v1.json",
+      "sha256": "87d4c26996707c7b7eefeeee3a88ef6bb21f76605752cf8a29b54d2784817bdb"
+    },
+    {
+      "bytes": 376,
+      "path": "artifacts/binding/computation_routing/20261028_v1/llama8b/tokenizer_preflight.json",
+      "sha256": "c5d64bc9e03edf4328c9e15ada0f0cd502d35c19438bd24b49f9e69734ccfd8c"
+    },
+    {
+      "bytes": 42326,
+      "path": "artifacts/binding/computation_routing/20261028_v1/publish_results_v1.py",
+      "sha256": "4691860c03772657dd1de340ccdd9e69ec1003d9a4592789bc613121b857b569"
+    },
+    {
+      "bytes": 2893,
+      "path": "artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/configs/binding/computation_routing_20261028_v1/codellama34b.json",
+      "sha256": "16fd74398a18246d4b6b01bcccd6f938d8a5b4c347a56fabb7f61a37046aeb22"
+    },
+    {
+      "bytes": 2869,
+      "path": "artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/configs/binding/computation_routing_20261028_v1/llama8b.json",
+      "sha256": "87200669449d987000a79923425fb9d30edcea08dfa86d5a0c1249a76ff73b11"
+    },
+    {
+      "bytes": 51560,
+      "path": "artifacts/binding/sources/eb42de7a8ba9e27d987a5a69/frozen_manifest.json",
+      "sha256": "1666e9fd98fd5790167e4ad5e089f59a63e7aae5b60fc1f1c5e72d0899bf0009"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "output_pins": [
+    {
+      "bytes": 1334187,
+      "path": "artifacts/binding/computation_routing/20261028_v1/comparison_v1.json",
+      "sha256": "acf54d1c265c30d89983af1a92bb61cd15591e384fb51bd9a041817e8367e8fd"
+    },
+    {
+      "bytes": 32634,
+      "path": "artifacts/binding/computation_routing/20261028_v1/form_cells_v1.csv",
+      "sha256": "31a790b76fc98e1f2bc475da2ef105e58c6c810830671d36c286b653d678dc8c"
+    },
+    {
+      "bytes": 194442,
+      "path": "artifacts/binding/computation_routing/20261028_v1/contrasts_v1.csv",
+      "sha256": "aeafbf63823dc45292a87466056033223de40cd19dcb5930ae79855a6189ca81"
+    },
+    {
+      "bytes": 7350,
+      "path": "reports/binding/computation_routing_findings_v1.md",
+      "sha256": "0f45dbd9c101f80ae3e7e9173887a67f1d1723d4dcb7592921d0641c1bbab208"
+    },
+    {
+      "bytes": 319582,
+      "path": "reports/binding/figures/computation_routing_v1.png",
+      "sha256": "a8540faa7070e6914ebaa272afc8203495955aee5768ee84047c7ce0d0e42fd7"
+    },
+    {
+      "bytes": 132973,
+      "path": "reports/binding/figures/computation_routing_v1.svg",
+      "sha256": "cdfee91bd114c572c194ba256aaf8e1059bd0e7e0f3acfb0065b946aac1f00da"
+    }
+  ],
+  "plotting_version": "3.11.2",
+  "publisher_script": {
+    "bytes": 42326,
+    "path": "artifacts/binding/computation_routing/20261028_v1/publish_results_v1.py",
+    "sha256": "4691860c03772657dd1de340ccdd9e69ec1003d9a4592789bc613121b857b569"
+  },
+  "raw_responses_opened": false,
+  "reproduction": "Every invocation regenerates and byte-checks all existing outputs; rerun must be identical.",
+  "source_or_prepared_records_opened": false,
+  "status": "passed"
+}

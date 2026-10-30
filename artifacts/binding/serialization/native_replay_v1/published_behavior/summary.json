@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "cruxeval_metric_limit": "literal equality without execution; expressions and function calls get no credit",
+  "decoding": "one greedy completion per item; no sampled pass@k",
+  "evaluated": 16,
+  "generated_holdouts_opened": false,
+  "gpu_peak_bytes": 17056589312,
+  "metric": "python_literal_equality_and_bbh_final_letter_v2",
+  "planned": 16,
+  "responses_sha256": "e9ab4f32db58fc584ac92d93f922c8969a0ceb9500cdbdd83bb9414c7c16f4d2",
+  "serialization": "released prompt content inside the checkpoint single-user chat template; audited BOS boundary",
+  "tasks": [
+    {
+      "accuracy": 0.5,
+      "correct": 4,
+      "evaluated": 8,
+      "evaluated_accuracy": 0.5,
+      "planned": 8,
+      "task": "cruxeval_o_direct",
+      "token_limited": 0,
+      "upstream_postprocessing_literal_correct": 0,
+      "valid": 8
+    },
+    {
+      "accuracy": 0.375,
+      "correct": 3,
+      "evaluated": 8,
+      "evaluated_accuracy": 0.375,
+      "planned": 8,
+      "task": "cruxeval_o_cot",
+      "token_limited": 0,
+      "upstream_postprocessing_literal_correct": 3,
+      "valid": 7
+    }
+  ]
+}

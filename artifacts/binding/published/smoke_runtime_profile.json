@@ -1,0 +1,13 @@
+{
+  "smoke_stage_seconds": 41.349006488977466,
+  "smoke_job_elapsed_seconds": 82,
+  "batch_seconds": [
+    2.81,
+    2.29,
+    3.37,
+    3.38,
+    5.1
+  ],
+  "full_linear_query_scaling_seconds": 3983.25,
+  "note": "Conservative unbatched scaling from first two release-order cases per task; runtime planning only, not accuracy selection. Full batch size is eight; actual runtime can differ."
+}

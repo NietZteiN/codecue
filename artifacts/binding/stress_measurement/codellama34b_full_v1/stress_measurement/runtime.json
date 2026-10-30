@@ -1,0 +1,90 @@
+{
+  "backend": "vllm",
+  "case_request_attempts": 6144,
+  "chunked_prefill": true,
+  "completed_case_request_attempts": 6144,
+  "completed_request_attempts": 6,
+  "completion_observed_from_chunk_only": 0,
+  "cuda_matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "device_name": "NVIDIA H100 80GB HBM3",
+  "dtype": "bfloat16",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": 16384,
+    "max_num_seqs": 512,
+    "tensor_parallel_size": 1
+  },
+  "eos_token_ids": [
+    2
+  ],
+  "executions": [
+    {
+      "actual_model_dtype": "bfloat16",
+      "actual_model_dtype_verified": true,
+      "backend": "vllm",
+      "chunked_prefill": true,
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "device_name": "NVIDIA H100 80GB HBM3",
+      "device_total_memory_bytes": 85017493504,
+      "engine": {
+        "gpu_memory_utilization": 0.95,
+        "max_num_batched_tokens": 16384,
+        "max_num_seqs": 512,
+        "tensor_parallel_size": 1
+      },
+      "eos_token_ids": [
+        2
+      ],
+      "generation_config": "vllm",
+      "gpu_uuid": "6a84f189-485f-ab4e-5b2f-86119881df62",
+      "greedy_seed": 0,
+      "max_new_tokens": 32,
+      "prefix_caching": true,
+      "slurm_job_id": "479818",
+      "stop": [
+        "\n\n"
+      ],
+      "temperature": 0,
+      "top_p": 1,
+      "versions": {
+        "torch": "2.11.0+cu129",
+        "transformers": "5.14.1",
+        "vllm": "0.26.0+cu129"
+      }
+    }
+  ],
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+    "mean_gpu_utilization_percent": 98.68115942028986,
+    "mean_power_watts": 689.3246376811594,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 80749.0,
+    "samples": 138,
+    "selector_verified": true
+  },
+  "gpu_scope": "current attempt only; prior committed requests are preserved",
+  "greedy_seed": 0,
+  "incomplete_request_attempts": 0,
+  "load_seconds": 173.51157822395908,
+  "max_new_tokens": 32,
+  "measured_this_attempt": 6144,
+  "padding_policy": "engine-managed batching of exact unpadded saved token-ID requests",
+  "prefix_caching": true,
+  "request_attempts": 6,
+  "resumed_cases": 0,
+  "status": "recorded",
+  "stop": [
+    "\n\n"
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "uncommitted_case_request_attempts": 0,
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1",
+    "vllm": "0.26.0+cu129"
+  }
+}

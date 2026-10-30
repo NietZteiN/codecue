@@ -1,0 +1,111 @@
+{
+  "accounting": {
+    "new_fits": 0,
+    "new_model_queries": 0,
+    "parameter_replays": 0,
+    "raw_activations_loaded": false,
+    "saved_score_rows_read": 34992,
+    "selected_score_banks": 18,
+    "source_capture_prefills": 1944
+  },
+  "checks": {
+    "all_18_selected_score_entries_match_original_receipt": true,
+    "declared_plan_and_original_input_metadata_pins_verified": true,
+    "four_output_artifact_pins_verified": 4,
+    "frozen_source_and_config_hashes_verified": true,
+    "original_primary_unchanged": true,
+    "posthoc_status_and_zero_cost_flags_verified": true,
+    "public_metadata_audit_already_passed_in_job": true
+  },
+  "created_utc": "2026-10-28T02:05:44.214784+00:00",
+  "current_review": {
+    "expensive_public_audit_repeated": false,
+    "generated_holdouts_opened": false,
+    "metadata_only": true,
+    "new_fits": 0,
+    "new_model_queries": 0,
+    "np_load_called": false,
+    "parameter_replays": 0,
+    "raw_banks_hashed": false
+  },
+  "evaluation_role": "posthoc_relationship_independent_completion_review_v1",
+  "issues": [],
+  "job_accounting": [
+    {
+      "elapsed": "00:08:30",
+      "exit_code": "0:0",
+      "job_id": "480382",
+      "state": "COMPLETED"
+    },
+    {
+      "elapsed": "00:00:06",
+      "exit_code": "0:0",
+      "job_id": "480383",
+      "state": "COMPLETED"
+    }
+  ],
+  "pins": [
+    {
+      "path": "configs/binding/relationships/score_followup_v1.json",
+      "sha256": "91f77941d1650264d005e975029a4bf97d241e8158e9c2f5f25d78885b4c1125"
+    },
+    {
+      "path": "configs/binding/preparation/readiness_v12.json",
+      "sha256": "d144ace1e94591ff1d29727148abd8141296fd56f6fb12a69510d0a8112e8c4b"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/source_v1.json",
+      "sha256": "f33af8b6c733bc1d0c081a7319fafef7b1384e14a6e90da844e7011b56680d72"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/completion_manifest_v1.json",
+      "sha256": "8a76ffb479f15f83eb3ab8bcf9d441bb563eee5dec848322773a9c2a0f1c814a"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/followup_review_v1.json",
+      "sha256": "dfb98d2a86d65380570c9c9a442a2725622288f07def90a50ceb0ff1da555d87"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/registration.json",
+      "sha256": "1eb86e5f079b69028951c5a0e3f22944d5cdbc00e86cab578b0c290d487115e5"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/pairs_review_v1.json",
+      "sha256": "e118a9722e9ee1a794a5eb3833f8eb9c931bc706b82c233ac22715a6fbc02d81"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/llama31_8b_v1/results_v1.json",
+      "sha256": "8d582f3f18bac43f57b0d8d821ac4df493ca0a59a6945cf2770710fcdafdfa86"
+    },
+    {
+      "path": "reports/binding/relationship_score_controls_v1.md",
+      "sha256": "ca94e048dd4875b174dbe0fd61da9cd9752b1e21bff66146ea9a6c81ac4e1f37"
+    },
+    {
+      "path": "artifacts/binding/relationship_followup/regression_v1.xml",
+      "sha256": "9d9fd7adf7b0a826df32d76b9a7c2ce594b68445875ba00caf7b90e42cb58720"
+    },
+    {
+      "path": "reports/binding/relationship_score_followup_plan_v1.md",
+      "sha256": "c6079e28fc51f6616a26123ec3969d56da078a93fcad907b7ae6ffab84d57ac4"
+    }
+  ],
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 39
+  },
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1602
+  },
+  "source": {
+    "code": "85f731458f46bfec0533518358a1bf0432860bac6f4c5f7670bbf3fea5c17fe3",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/0e10774ed60ebedd04379f4d",
+    "snapshot_id": "0e10774ed60ebedd04379f4d"
+  },
+  "status": "passed",
+  "tracked_tasks": 51
+}

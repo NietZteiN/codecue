@@ -1,0 +1,838 @@
+{
+  "all_tracked_stage_jobs": {
+    "anchor-figure-v2": {
+      "elapsed_seconds": 9,
+      "exit_code": "0:0",
+      "job_id": "479273",
+      "state": "COMPLETED"
+    },
+    "collect-codellama34b": {
+      "elapsed_seconds": 6,
+      "exit_code": "0:0",
+      "job_id": "479188",
+      "state": "COMPLETED"
+    },
+    "collect-llama31_8b": {
+      "elapsed_seconds": 6,
+      "exit_code": "0:0",
+      "job_id": "479184",
+      "state": "COMPLETED"
+    },
+    "compare": {
+      "elapsed_seconds": 5,
+      "exit_code": "0:0",
+      "job_id": "479197",
+      "state": "COMPLETED"
+    },
+    "event-compare": {
+      "elapsed_seconds": 11,
+      "exit_code": "0:0",
+      "job_id": "479298",
+      "state": "COMPLETED"
+    },
+    "event-completion-refresh": {
+      "elapsed_seconds": 49,
+      "exit_code": "0:0",
+      "job_id": "479299",
+      "state": "COMPLETED"
+    },
+    "event-fit-codellama34b": {
+      "elapsed_seconds": 128,
+      "exit_code": "0:0",
+      "job_id": "479297",
+      "state": "COMPLETED"
+    },
+    "event-fit-llama31_8b": {
+      "elapsed_seconds": 103,
+      "exit_code": "0:0",
+      "job_id": "479296",
+      "state": "COMPLETED"
+    },
+    "fit-codellama34b": {
+      "elapsed_seconds": 51,
+      "exit_code": "0:0",
+      "job_id": "479196",
+      "state": "COMPLETED"
+    },
+    "fit-llama31_8b": {
+      "elapsed_seconds": 57,
+      "exit_code": "0:0",
+      "job_id": "479195",
+      "state": "COMPLETED"
+    },
+    "joint-compare": {
+      "elapsed_seconds": 16,
+      "exit_code": "0:0",
+      "job_id": "479745",
+      "state": "COMPLETED"
+    },
+    "joint-completion-refresh": {
+      "elapsed_seconds": 55,
+      "exit_code": "0:0",
+      "job_id": "479746",
+      "state": "COMPLETED"
+    },
+    "joint-fit-codellama34b": {
+      "elapsed_seconds": 102,
+      "exit_code": "0:0",
+      "job_id": "479744",
+      "state": "COMPLETED"
+    },
+    "joint-fit-llama31_8b": {
+      "elapsed_seconds": 111,
+      "exit_code": "0:0",
+      "job_id": "479743",
+      "state": "COMPLETED"
+    },
+    "qualified-completion-refresh": {
+      "elapsed_seconds": 52,
+      "exit_code": "0:0",
+      "job_id": "479275",
+      "state": "COMPLETED"
+    },
+    "qualified-full-codellama34b": {
+      "elapsed_seconds": 2615,
+      "exit_code": "0:0",
+      "job_id": "479272",
+      "state": "COMPLETED"
+    },
+    "qualified-full-llama31_8b": {
+      "elapsed_seconds": 608,
+      "exit_code": "0:0",
+      "job_id": "479269",
+      "state": "COMPLETED"
+    },
+    "qualified-prepare-codellama34b": {
+      "elapsed_seconds": 93,
+      "exit_code": "0:0",
+      "job_id": "479270",
+      "state": "COMPLETED"
+    },
+    "qualified-prepare-llama31_8b": {
+      "elapsed_seconds": 91,
+      "exit_code": "0:0",
+      "job_id": "479267",
+      "state": "COMPLETED"
+    },
+    "qualified-smoke-codellama34b": {
+      "elapsed_seconds": 177,
+      "exit_code": "0:0",
+      "job_id": "479271",
+      "state": "COMPLETED"
+    },
+    "qualified-smoke-llama31_8b": {
+      "elapsed_seconds": 87,
+      "exit_code": "0:0",
+      "job_id": "479268",
+      "state": "COMPLETED"
+    },
+    "qualified-tokenizer-review": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "job_id": "479274",
+      "state": "COMPLETED"
+    },
+    "representation-completion-refresh": {
+      "elapsed_seconds": 54,
+      "exit_code": "0:0",
+      "job_id": "479752",
+      "state": "COMPLETED"
+    },
+    "representation-fit": {
+      "elapsed_seconds": 81,
+      "exit_code": "0:0",
+      "job_id": "479751",
+      "state": "COMPLETED"
+    }
+  },
+  "automatic_logging": {
+    "enabled": true,
+    "healthy_at_handoff": true,
+    "large_review_policy": "Permitted oversized reviews are linked with unknown content status and nonfailure notices; contents are not read or hashed. Malformed, permission and oversized manifest failures remain indexing errors.",
+    "metadata_limit_bytes": 8388608,
+    "pending_guards_at_handoff": 2
+  },
+  "config_checksums": {
+    "configs/binding/joint_confidence/codellama34b_pipeline_v1.json": "f669e4ee6eab120c79a46a3d80109ac5ef100216889a791add9bb64b7e563fc8",
+    "configs/binding/joint_confidence/comparison_pipeline_v1.json": "60f6c2718f35316a8ffebb3161bb7125ba0f2b115497d1aa01873aa2ff4539c5",
+    "configs/binding/joint_confidence/llama31_8b_pipeline_v1.json": "95c3fc7290d94c5f9437af2f839f9cfabb7a762ce52b535340e7e69b58243f65",
+    "configs/binding/preparation/readiness_v4.json": "c2b2001338eea1921dd230faa668cc7ee264c0c1dd7b12ae07fcf66792452f73",
+    "configs/binding/representation_sensitivity/llama31_8b_v1.json": "0507b453ff3faecf4ae9502590391cf7ad50971aec164976737f24ec069b3bcf"
+  },
+  "generated_holdouts_opened": false,
+  "historical_attempts_preserved": true,
+  "joint_prediction": {
+    "anchor_review": {
+      "path": "artifacts/binding/joint_confidence/anchor_figure_review_v1.json",
+      "sha256": "79096a731fee61fd9dd31157cc890244fe953cf596b6e4504c1c49f8ee2b79a4"
+    },
+    "cases_per_checkpoint": 6144,
+    "comparison": {
+      "path": "artifacts/binding/joint_confidence/comparison_v1.json",
+      "sha256": "d1d6253bf81a85ad225c95fb299c3c919c63d947d764731b90337e4933357706"
+    },
+    "contrasts": 55,
+    "logistic_fits": 16632,
+    "maximum_absolute_probability_difference": 0.0,
+    "model_reviews": {
+      "codellama34b": {
+        "path": "artifacts/binding/joint_confidence/codellama34b_v1/review_v1.json",
+        "sha256": "4ceb224602a531179843cb4ba10c3bc502c4dfc48f8eccaf3e26e3e077da9798"
+      },
+      "llama31_8b": {
+        "path": "artifacts/binding/joint_confidence/llama31_8b_v1/review_v1.json",
+        "sha256": "6ceb1f6327f6586ffe2e010ba4051e4b25b5758190d16461e61119c28c732539"
+      }
+    },
+    "new_joint_tier_fits": 3780,
+    "new_language_model_queries": 0,
+    "parent_probability_values_reproduced": 663552,
+    "parent_replay_fits": 12852,
+    "pipeline_review": {
+      "path": "artifacts/binding/joint_confidence/pipeline_review_v1.json",
+      "sha256": "5180d9ac5f1e619e303317f2bb2b500a394e89c19867c77789ebbb0701fdef62"
+    },
+    "positive_primary_conditional_brier_intervals": {
+      "codellama34b": 2,
+      "llama31_8b": 0
+    },
+    "primary_contrasts": {
+      "codellama34b": [
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              0.0023665968837350304,
+              0.012872444438136883
+            ],
+            "mean": 0.00738065045092928
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_input_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              0.013645774652954318,
+              0.041020522138428474
+            ],
+            "mean": 0.026748145804193
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_input",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              0.00015788262391689585,
+              0.0062773620773604434
+            ],
+            "mean": 0.0031422464358207424
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              0.0042665864691433615,
+              0.021599291138987568
+            ],
+            "mean": 0.012808748939389393
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -1.2100331027692983e-05,
+              0.005794903922817846
+            ],
+            "mean": 0.0027732046103303583
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_neutral_raw_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              0.003858868972182097,
+              0.01956184923475828
+            ],
+            "mean": 0.011654543084095706
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions_neutral_raw",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -0.0009152825135653736,
+              0.004542701534596749
+            ],
+            "mean": 0.0019251410444959957
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_oracle_neutral_raw_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              -0.0031265765002210177,
+              0.01424501546948981
+            ],
+            "mean": 0.006127394422933378
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions_oracle_neutral_raw",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -0.00012143061463591166,
+              0.00486210393999516
+            ],
+            "mean": 0.002373155723815764
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_oracle_neutral_scored_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              -0.0014442757102130406,
+              0.014763053578964255
+            ],
+            "mean": 0.00679197194637594
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions_oracle_neutral_scored",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        }
+      ],
+      "llama31_8b": [
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -0.0006832445072222717,
+              0.00037541086571232926
+            ],
+            "mean": -0.0001546061123322821
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_input_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              -0.0009405534784596956,
+              0.0019325911062528132
+            ],
+            "mean": 0.0005287426163824075
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_input",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -0.0005855424399814326,
+              0.0004226061637677302
+            ],
+            "mean": -7.301101799347735e-05
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              -0.0007883644312713536,
+              0.0020559636098276064
+            ],
+            "mean": 0.0006592839553071979
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -0.0007758077891276954,
+              0.0006574384016468235
+            ],
+            "mean": -2.7232842924100023e-05
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_neutral_raw_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              -0.0016105811163385207,
+              0.0024722997952454705
+            ],
+            "mean": 0.0004909925956185951
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions_neutral_raw",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -0.0001433309037997537,
+              0.0017574616247283143
+            ],
+            "mean": 0.0008558145321326405
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_oracle_neutral_raw_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              -0.0015454944924773468,
+              0.005961198740340939
+            ],
+            "mean": 0.00233582994552492
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions_oracle_neutral_raw",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        },
+        {
+          "bootstrap_replicates": 2000,
+          "bootstrap_seed": 117,
+          "brier_score": {
+            "exploratory_template_bootstrap_95": [
+              -0.00043410300953703243,
+              0.0018574443633687923
+            ],
+            "mean": 0.000741033827680365
+          },
+          "conditional_on_saved_oof_probabilities": true,
+          "left": "B_interactions_oracle_neutral_scored_confidence",
+          "log_loss": {
+            "exploratory_template_bootstrap_95": [
+              -0.0026176110246941687,
+              0.006354021924126208
+            ],
+            "mean": 0.002056823915623454
+          },
+          "multiplicity_adjusted": false,
+          "n": 6144,
+          "positive_means": "right predictor improves on left",
+          "refits_per_bootstrap_draw": 0,
+          "resampling_unit": "template_id",
+          "right": "B_joint_interactions_oracle_neutral_scored",
+          "scope": "ensemble",
+          "seed": "mean_probability",
+          "templates": 24
+        }
+      ]
+    },
+    "protocol": {
+      "path": "artifacts/binding/joint_confidence/protocol_registration_v1.json",
+      "sha256": "443ca91221ab6813b4691a54a4ac083107561ba00116401c86d99ce9511b3d8a"
+    },
+    "status": "complete_exploratory",
+    "structural_groups_per_checkpoint": 24,
+    "tiers": 23
+  },
+  "language_model_training_performed": false,
+  "limitation": "Adaptive discovery studies on previously consumed structures; no unfamiliar-program confirmation, causal ownership or natural use claim. Conditional intervals omit refit uncertainty and multiplicity adjustment. PCA variance retention does not ensure label preservation or full-space representational equivalence. Nine scientific decisions and three optional tasks remain; original reliability failures and sealed final/extrapolation outcomes are preserved.",
+  "local_date": "2026-10-27",
+  "mechanism_C_fitted": false,
+  "new_checkpoints_downloaded": false,
+  "new_jobs": {
+    "joint_prediction": {
+      "compare": "479745",
+      "completion-refresh": "479746",
+      "fit-codellama34b": "479744",
+      "fit-llama31_8b": "479743"
+    },
+    "representation": {
+      "completion-refresh": "479752",
+      "fit": "479751"
+    }
+  },
+  "new_language_model_queries": 0,
+  "readiness": {
+    "counts": {
+      "deferred_optional": 3,
+      "needs_scientific_decision": 9,
+      "ready": 32
+    },
+    "review": {
+      "path": "artifacts/binding/preparation/readiness_review_v1.json",
+      "sha256": "d0e535ac53da6c22dda031156a54337d3160618ccff2f889a5cf20ddcde9eac3"
+    },
+    "total": 44
+  },
+  "recorded_utc": "2026-10-27T18:11:35.762236+00:00",
+  "reports": [
+    "reports/binding/continuation_followup.md",
+    "reports/binding/joint_confidence_findings.md",
+    "reports/binding/joint_confidence_decision.md",
+    "reports/binding/representation_sensitivity_v1.md",
+    "reports/binding/preparation_readiness.md"
+  ],
+  "representation": {
+    "alignment_maps": 8,
+    "all_alignment_cross_ranks": 64,
+    "alpha": 100.0,
+    "artifacts": {
+      "audit": {
+        "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/audit.json",
+        "sha256": "39ed01e78260043113b8e31f98fdb509fb9e12324aefd031af897c45b0a35330"
+      },
+      "cells": {
+        "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/cells.csv",
+        "sha256": "b041a7fa5dcad51303db7d6935270796f99549d9b3d60049ba9569b71da0d941"
+      },
+      "hidden_pre_answer": {
+        "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/hidden_pre_answer_parameters.npz",
+        "sha256": "e6f8f8eba88bd75746c09cd2ca86ca533d8a0d7c5c2e3b015ec75c1e35754435"
+      },
+      "hidden_pre_query_state": {
+        "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/hidden_pre_query_state_parameters.npz",
+        "sha256": "81332fb4dc6eab240c2b8c73f8f69c1622a149626db6dd1337b6d0029ed97fe6"
+      },
+      "report": {
+        "path": "reports/binding/representation_sensitivity_v1.md",
+        "sha256": "ed89f11133d8c7e36daf36cf091996462af4c3a71535a38fac5b8d9c9be6612b"
+      },
+      "summary": {
+        "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/summary.json",
+        "sha256": "cc963b5bb9b59d2d9ba803b7b9fe69fe283d05cf98adb0b969096a681477fabe"
+      },
+      "surface_pre_answer": {
+        "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/surface_pre_answer_parameters.npz",
+        "sha256": "e2ba60364e262c5a25ffd3bddd26b3f456498391a09134b19c6c231406017d9b"
+      },
+      "surface_pre_query_state": {
+        "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/surface_pre_query_state_parameters.npz",
+        "sha256": "d72d983c17800ac44bcf1b687477466fda46b0ffad24205fb60727e97226a9eb"
+      }
+    },
+    "banks": 4,
+    "capture_identity": "a9f5bff839c01a078e00287fcb703b0df04d9692892d652d05e879f045550414",
+    "descriptive_group_bootstrap_contrasts": 24,
+    "development_groups": 6,
+    "development_rows_per_condition": {
+      "pre_answer": 768,
+      "pre_query_state": 384
+    },
+    "fits": 336,
+    "heldout_fit_rows": 0,
+    "hidden_joint_contrasts": [
+      {
+        "bootstrap_draws": 2000,
+        "bootstrap_seed": 117,
+        "condition": "informative",
+        "conditional_group_bootstrap_95": [
+          -0.0026041666666666665,
+          0.04173177083333297
+        ],
+        "contrast": "neutral_decoder_aligned_minus_unaligned",
+        "endpoint": "joint_accuracy",
+        "limitation": "Descriptive intervals condition on the saved projection/alignment/decoder; sparse development groups, adaptive discovery and no refits prevent a generalization or mechanism claim.",
+        "mean_group_increment": 0.020833333333333332,
+        "multiplicity_adjusted": false,
+        "n": 384,
+        "partition_seeds_are_replications": false,
+        "rank": 64,
+        "refits_per_draw": 0,
+        "resampling_unit": "template_id",
+        "rows_per_template": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          64
+        ],
+        "structural_groups": 6,
+        "template_ids": [
+          "0dbb4ce319158c2dd9d69e43",
+          "18a4adf0abfd5f1110a03830",
+          "47cbd3b0e6db561dfa5aa881",
+          "4a2c17e09b0247dc9d275641",
+          "4d0804bb132bd5125cc469e1",
+          "4d2c1cbb84dcdc7691853243"
+        ],
+        "template_increments": [
+          0.03125,
+          0.0,
+          0.046875,
+          0.0,
+          -0.015625,
+          0.0625
+        ]
+      },
+      {
+        "bootstrap_draws": 2000,
+        "bootstrap_seed": 117,
+        "condition": "misleading",
+        "conditional_group_bootstrap_95": [
+          -0.015625,
+          0.010416666666666666
+        ],
+        "contrast": "neutral_decoder_aligned_minus_unaligned",
+        "endpoint": "joint_accuracy",
+        "limitation": "Descriptive intervals condition on the saved projection/alignment/decoder; sparse development groups, adaptive discovery and no refits prevent a generalization or mechanism claim.",
+        "mean_group_increment": 0.0,
+        "multiplicity_adjusted": false,
+        "n": 384,
+        "partition_seeds_are_replications": false,
+        "rank": 64,
+        "refits_per_draw": 0,
+        "resampling_unit": "template_id",
+        "rows_per_template": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          64
+        ],
+        "structural_groups": 6,
+        "template_ids": [
+          "0dbb4ce319158c2dd9d69e43",
+          "18a4adf0abfd5f1110a03830",
+          "47cbd3b0e6db561dfa5aa881",
+          "4a2c17e09b0247dc9d275641",
+          "4d0804bb132bd5125cc469e1",
+          "4d2c1cbb84dcdc7691853243"
+        ],
+        "template_increments": [
+          0.015625,
+          -0.03125,
+          0.015625,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "bootstrap_draws": 2000,
+        "bootstrap_seed": 117,
+        "condition": "informative",
+        "conditional_group_bootstrap_95": [
+          -0.020833333333333332,
+          0.020833333333333332
+        ],
+        "contrast": "neutral_decoder_aligned_minus_unaligned",
+        "endpoint": "joint_accuracy",
+        "limitation": "Descriptive intervals condition on the saved projection/alignment/decoder; sparse development groups, adaptive discovery and no refits prevent a generalization or mechanism claim.",
+        "mean_group_increment": 0.0026041666666666665,
+        "multiplicity_adjusted": false,
+        "n": 768,
+        "partition_seeds_are_replications": false,
+        "rank": 64,
+        "refits_per_draw": 0,
+        "resampling_unit": "template_id",
+        "rows_per_template": [
+          128,
+          128,
+          128,
+          128,
+          128,
+          128
+        ],
+        "structural_groups": 6,
+        "template_ids": [
+          "0dbb4ce319158c2dd9d69e43",
+          "18a4adf0abfd5f1110a03830",
+          "47cbd3b0e6db561dfa5aa881",
+          "4a2c17e09b0247dc9d275641",
+          "4d0804bb132bd5125cc469e1",
+          "4d2c1cbb84dcdc7691853243"
+        ],
+        "template_increments": [
+          0.015625,
+          0.0,
+          0.0078125,
+          0.0,
+          -0.046875,
+          0.0390625
+        ]
+      },
+      {
+        "bootstrap_draws": 2000,
+        "bootstrap_seed": 117,
+        "condition": "misleading",
+        "conditional_group_bootstrap_95": [
+          -0.009114583333333334,
+          0.0234375
+        ],
+        "contrast": "neutral_decoder_aligned_minus_unaligned",
+        "endpoint": "joint_accuracy",
+        "limitation": "Descriptive intervals condition on the saved projection/alignment/decoder; sparse development groups, adaptive discovery and no refits prevent a generalization or mechanism claim.",
+        "mean_group_increment": 0.0078125,
+        "multiplicity_adjusted": false,
+        "n": 768,
+        "partition_seeds_are_replications": false,
+        "rank": 64,
+        "refits_per_draw": 0,
+        "resampling_unit": "template_id",
+        "rows_per_template": [
+          128,
+          128,
+          128,
+          128,
+          128,
+          128
+        ],
+        "structural_groups": 6,
+        "template_ids": [
+          "0dbb4ce319158c2dd9d69e43",
+          "18a4adf0abfd5f1110a03830",
+          "47cbd3b0e6db561dfa5aa881",
+          "4a2c17e09b0247dc9d275641",
+          "4d0804bb132bd5125cc469e1",
+          "4d2c1cbb84dcdc7691853243"
+        ],
+        "template_increments": [
+          0.0078125,
+          0.03125,
+          0.0078125,
+          0.0,
+          -0.03125,
+          0.03125
+        ]
+      }
+    ],
+    "hidden_joint_intervals_including_zero": 4,
+    "metric_cells": 1568,
+    "new_checkpoint_queries": 0,
+    "parameter_replay_rows": 2322432,
+    "projection_training_variance_retained": {
+      "hidden_pre_answer": 0.928563653143522,
+      "hidden_pre_query_state": 0.9524469822414423,
+      "surface_pre_answer": 0.9956569986022609,
+      "surface_pre_query_state": 0.996848685423158
+    },
+    "protocol": {
+      "path": "artifacts/binding/representation_sensitivity/protocol_registration_v1.json",
+      "sha256": "e9fa23017424a507896e47af8fc8d873d63a3b6f58d2c330c54220c01e82ad69"
+    },
+    "ranks": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "review": {
+      "path": "artifacts/binding/representation_sensitivity/llama31_8b_v1/review_v1.json",
+      "sha256": "ba8315b853e04c85ffc979c673cb9dc96f1de481a4e131a25c9d0b26165b226e"
+    },
+    "runtime": {
+      "numpy_version": "2.3.5",
+      "slurm_cpus_per_task": "4",
+      "slurm_job_id": "479751",
+      "threadpool_limit": 4
+    },
+    "sites": [
+      "pre_query_state",
+      "pre_answer"
+    ],
+    "status": "complete_exploratory",
+    "target_columns": 64
+  },
+  "software_complete": true,
+  "sources": {
+    "final_software": {
+      "code": "9787bf0e8d3147b2be98345e7671dc72286089500529fe35f633c0e073c2066d",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e6ad03c9203eea36dd5e78d6",
+      "snapshot_id": "e6ad03c9203eea36dd5e78d6"
+    },
+    "joint_fitting": {
+      "code": "2c131f08b3b059fabecff32f25322d21ee3dd0f756a8c5f6edc4503e1f277055",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/aac84435e0743ac991e946ee",
+      "snapshot_id": "aac84435e0743ac991e946ee"
+    },
+    "representation_fitting": {
+      "code": "9787bf0e8d3147b2be98345e7671dc72286089500529fe35f633c0e073c2066d",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/2ed2a20a3da81c9df3bdaee0",
+      "snapshot_id": "2ed2a20a3da81c9df3bdaee0"
+    }
+  },
+  "status": "complete_joint_confidence_and_representation_followup",
+  "successful_new_jobs": 6,
+  "timezone": "America/Chicago",
+  "validation": {
+    "errors": 0,
+    "failures": 0,
+    "junit": {
+      "path": "artifacts/binding/joint_confidence/regression_v2.xml",
+      "sha256": "40360592b67fc655110134bd17026665919cc815cef9c374a8c761d4ac8a36ee"
+    },
+    "skipped": 0,
+    "tests": 932
+  }
+}

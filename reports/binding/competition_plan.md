@@ -1,0 +1,29 @@
+# Arithmetic-free binding competition discovery
+
+The completed capacity comparison audited all 20,152 predictions. CodeLlama 34B and Llama 3.1 8B passed the previously recorded elementary arithmetic-free gate with `print_direct_v3`; neither passed the computed-arithmetic gate. This continuation therefore studies literal/copy bindings. The original seven-billion-parameter stopping decision remains historical, and no generated final-test or extrapolation model outcomes are opened.
+
+Both eligible checkpoints run the same independently validated discovery bank. Each has 9,984 requests: 768 ownership-control renderings and 9,216 version/snapshot renderings. The two-model total is 19,968 predictions. The dataset, generation configuration and manifests are under `artifacts/binding/competition/discovery_v2.*` and `configs/binding/competition/generation_v2.json`.
+
+Ownership controls initialize two or four distinct bindings and a scratch slot. Each numeric group crosses a swap of the first two bound values with both query targets and two neutral lexical realizations. Swaps preserve the entire final value multiset while changing which answer is correct. Report all four-question groups, constant guesses, and cases where both predicted value sets are correct but ownership is wrong. These controls have only two independent alpha-normalized structural components; do not treat their numeric variants as independent structural replications.
+
+Version controls preserve a saved copy of an initial binding and later overwrite the current binding. Compare one versus three target reassignments: the two extra literal assignments target the scratch variable in the low-version control and the current variable in the high-version condition. Resetting scratch keeps the final state identical. Literal exposure and statement count are identical. Queries ask for either current or saved values. Four dead scratch-copy statements occur before or after the final current assignment, changing its query distance while preserving the statement multiset and final state.
+
+The available-binding bank has two or four initial slots, plus the saved and scratch roles. Extra bindings can be irrelevant to the selected output. This factor is not a manipulation of live output dependency count, and it also changes program length; report its cells without claiming a pure working-memory-load effect.
+
+Version cases cross informative, neutral and misleading naming, with two lexical realizations. Informative current/saved and new/old names match their generated roles; misleading names swap the current and saved roles. Actual tokenizer checks rejected `latest_value/prior_value` and the longer scratch names. The selected pairs (`current_value/saved_value`, `new_value/old_value`, scratch `temp_value`) match in both models. The full actual-tokenizer preflight requires equal prompt lengths across naming, version and tail contrasts; it aborts the entire model configuration if any case violates matching. No examples are filtered based on model answers.
+
+All 9,984 rendered programs passed the restricted interpreter and an independent Python execution/trace comparison. Every naming map is bijective and role-checked. Structural connected components group every alpha-normalized skeleton and counterfactual relative before train/development assignment: 26 components, 7,680 training rows and 2,304 development rows. No final-test bank is evaluated. Numeric variants and counterfactuals stay together.
+
+Both models use their validated direct protocol, greedy BF16 decoding and its unchanged 16-token ceiling. Persistent vLLM engines process full request backlogs with prefix caching and independent GPUs; usage accounting has no compute cap. CodeLlama is eligible on H200, while the 8B checkpoint may use H100 or H200. Full-model and prompt-token identities are pinned in configuration. Llama 3.1 8B is the candidate for a later instrumentation preflight because it is smaller and passed calibration; that choice precedes competition outcomes and does not select a favorable effect.
+
+The fixed analysis reports all factorial cells and three paired accuracy differences separately for current/saved queries: three minus one reassignments, tail after minus before, and misleading minus informative names. Uncertainty resamples structural components, keeping their numeric and lexical relatives together; intervals are suppressed below eight components. These are exploratory summaries using one readout and two naming realizations, not evidence of robustness across instruction variants. Wrong-answer labels record all compatible obsolete/competing bindings and their ambiguity; they do not establish internal causes. No probes or interventions are claimed by this experiment.
+
+The v1 CPU preflights exposed an asset-loader assumption: generated-only suites were sent through the public-benchmark manifest checker. Asset loading now occurs only for published sections, with a generated-only regression test. No model inference ran in those failed jobs. Current immutable source and job pointers are `artifacts/binding/continuation/source_v2.json` and `jobs_v2.json`; earlier failed attempts remain recorded. The post-run CPU audit rechecks every response and then exports `reports/binding/competition_results.md` and the full paired artifact.
+
+The independent Llama CRUXEval completion follow-up is already [audited](llama_serialization_results.md). It diagnoses the previously observed native-chat program echoes with the unchanged released question content and literal-only scorers. It is separate from binding discovery and does not alter earlier scores.
+
+Refresh [live continuation status](continuation_status.md) without inference:
+
+```bash
+PYTHONPATH=src ../envs/probe-cu129/bin/python scripts/101_binding_experiment_status.py configs/binding/competition/status_v2.json
+```

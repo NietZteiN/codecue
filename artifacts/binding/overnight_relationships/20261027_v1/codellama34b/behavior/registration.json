@@ -1,0 +1,39 @@
+{
+  "capture_preflight_source": {
+    "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+    "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+  },
+  "case_ids_sha256": "1af2096645d56d016b741a04babcc57c2be23d70e23acdb9883e1cc70a75d07a",
+  "cases": 7290,
+  "config": {
+    "capture_config": "configs/binding/overnight_20261027_v1/codellama34b_capture.json",
+    "capture_config_sha256": "f84ecf06552a6cb574843a7b9bb185207a3b961f2622813cbc8d3dafd94ac059",
+    "declared_plan": "reports/binding/overnight_20261027_plan_v1.md",
+    "declared_plan_sha256": "689fd43b88d97bc4b278538771928d4f1f1448456efe7cb5027415fb8bc1bd2e",
+    "evaluation_role": "discovery_overnight_relationship_behavior_v1",
+    "generation_batch_size": 64,
+    "report": "reports/binding/overnight_20261027_codellama34b_behavior.md",
+    "run_dir": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/behavior"
+  },
+  "config_hash": "8ca88223de2158c16cf9fa643f12e6262c6d372c0864511b721148125a78524e",
+  "evaluation_role": "discovery_overnight_relationship_behavior_v1",
+  "prepared_sha256": "0ef519e648e0d644d85eca6682830e4b954a1ff14b00d2c111c2b1b9c803ff44",
+  "protocol": {
+    "bootstrap_draws": 2000,
+    "bootstrap_seed": 117,
+    "do_sample": false,
+    "max_new_tokens": 12,
+    "parser": "full signed decimal integer with whitespace only",
+    "selection": "all source rows with numeric_draw == 0",
+    "uncertainty": "nine whole development components; computed-minus-literal matched format pairs",
+    "use_cache": true
+  },
+  "source": {
+    "frozen_manifest_sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe",
+    "source_sha256": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d"
+  }
+}

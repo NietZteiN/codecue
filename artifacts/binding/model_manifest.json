@@ -1,0 +1,19 @@
+{
+  "activation_cap_bytes": 68719476736,
+  "additional_checkpoint_downloaded": false,
+  "backend": "transformers/eager",
+  "behavior_identity_hash": "08cf2e626172ad771deab91c0240097a8cd7f85b5a1da85dcd33137ff088a9a9",
+  "behavior_manifest": "artifacts/binding/cpu_discovery_subset_prefill_v2/behavior/manifest.json",
+  "cache_only": true,
+  "checkpoint_training_performed": false,
+  "dtype": "bfloat16",
+  "gpu_cap_seconds": 14400,
+  "gpu_used_seconds_at_snapshot": 647.0804483679822,
+  "hf_id": "codellama/CodeLlama-7b-Instruct-hf",
+  "live_evidence_manifest": "artifacts/binding/phase2_evidence.json",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "protocol": "short_answer_prefill_v2",
+  "resource_snapshot_utc": "2026-10-25T21:52:12.426004+00:00",
+  "status": "Checkpoint/protocol feasibility pilot stopped after fixed difficulty-ladder gate failed",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+}

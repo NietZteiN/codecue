@@ -1,0 +1,125 @@
+{
+  "cells": [
+    {
+      "correct": 7483,
+      "n": 9984,
+      "section": "binding_competition",
+      "task": "print_direct_v3",
+      "valid": 9975
+    }
+  ],
+  "complete": true,
+  "evaluated": 9984,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-8503f44b-4a86-c7bc-1921-e18910bb607d",
+    "mean_gpu_utilization_percent": 96.35384615384615,
+    "mean_power_watts": 579.413,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 140479.0,
+    "samples": 130,
+    "selector_verified": true
+  },
+  "identity_hash": "9532902e182be67cb024af73356801d53875dee64bdd1d15bc7a6cfcffefb493",
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "planned": 9984,
+  "preflight": {
+    "cases": 9984,
+    "config_hash": "b0beda40d9f1adee62e00deade976b97f0a640a1a5bfebeaeeafe098d965ce89",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "feb2d32fab536aa74ded9d54d619cb2a6d78cb207536c87ff59ead4b97ddda37",
+    "source_sha256": "879fe543236610c346d227a1d704848b35e308a1001e00412e9694bfc8ffba74",
+    "status": "passed"
+  },
+  "revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "runtime": {
+    "device_name": "NVIDIA H200 NVL",
+    "engine": {
+      "gpu_memory_utilization": 0.95,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 512,
+      "tensor_parallel_size": 1
+    },
+    "load_warmup_seconds": 174.42474188888445,
+    "preflight": {
+      "cases": 9984,
+      "config_hash": "b0beda40d9f1adee62e00deade976b97f0a640a1a5bfebeaeeafe098d965ce89",
+      "generated_holdouts_opened": false,
+      "model_inference": false,
+      "prepared_cases_sha256": "feb2d32fab536aa74ded9d54d619cb2a6d78cb207536c87ff59ead4b97ddda37",
+      "source_sha256": "879fe543236610c346d227a1d704848b35e308a1001e00412e9694bfc8ffba74",
+      "status": "passed"
+    },
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    }
+  },
+  "status": "passed",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 5.866887820884585,
+      "output_tokens": 4165,
+      "requests_per_second": 174.53887499856873
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.929688010830432,
+      "output_tokens": 4475,
+      "requests_per_second": 147.77000038090995
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.89323595399037,
+      "output_tokens": 4114,
+      "requests_per_second": 148.55142154349508
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.0509531162679195,
+      "output_tokens": 4228,
+      "requests_per_second": 145.22859294546052
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.62653628597036,
+      "output_tokens": 4193,
+      "requests_per_second": 154.5302033836294
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.816596433985978,
+      "output_tokens": 4204,
+      "requests_per_second": 150.2215966452953
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.576475013978779,
+      "output_tokens": 4208,
+      "requests_per_second": 135.15520055311939
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.685024910140783,
+      "output_tokens": 4243,
+      "requests_per_second": 133.24615235127993
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.648407886270434,
+      "output_tokens": 4265,
+      "requests_per_second": 133.8840730288679
+    },
+    {
+      "cases": 768,
+      "generation_seconds": 5.789929702877998,
+      "output_tokens": 3141,
+      "requests_per_second": 132.64409749538936
+    }
+  ]
+}

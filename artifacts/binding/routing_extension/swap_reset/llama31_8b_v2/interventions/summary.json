@@ -1,0 +1,49 @@
+{
+  "answer_digit_boundary_checked": true,
+  "baseline_cases": 432,
+  "baseline_correct": 348,
+  "baseline_gate": {
+    "cells": [],
+    "eligible_families": [
+      "ownership"
+    ],
+    "status": "not_requested"
+  },
+  "complete": true,
+  "conditions": [
+    "dead_reference_transfer",
+    "unrelated_position",
+    "answer_vector",
+    "identity_sham",
+    "random_11",
+    "random_29",
+    "random_47"
+  ],
+  "device_name": "NVIDIA A30",
+  "directed_pairs": 432,
+  "first_token_consistency_cases": 432,
+  "generated_holdouts_opened": false,
+  "generation_replay_first_token_matches": 432,
+  "interpretation": "Change an output-irrelevant late assignment reference; both donor directions, all mapping/query controls, no accuracy-based selection. Does not isolate a binding register.",
+  "intervention_forwards": 15120,
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    31
+  ],
+  "planned_directed_pairs": 432,
+  "pre_query_invariance_groups": 216,
+  "preflight": {
+    "cases": 432,
+    "config_hash": "73d096490b5b44d6614570c9d0b7aa212d835714224729fbc35e52f5e24598da",
+    "dataset_sha256": "30dddd0c79afd6d4f45906b3ff02710cbde8a7881faece6803e26db48d5b8b85",
+    "directed_pairs": 432,
+    "generated_holdouts_opened": false,
+    "prepared_sha256": "6491c099ea9e7a4f70f3507e8dfcd33f6c05ed372d0e35ff25792c210c654f4a",
+    "source_sha256": "fd887797574b83bb32272f437983fccb905f781d75af6a02e5fc0c24f0140c90",
+    "status": "passed"
+  },
+  "torch_peak_memory_bytes": 19845922304
+}

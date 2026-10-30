@@ -1,0 +1,37 @@
+{
+  "actual_source_preflight_passed": true,
+  "capture_axes_7_and8_are1_and2_verified": true,
+  "evaluation_role": "discovery_direct_identity_build_v1",
+  "expected_regression_source_files": 104,
+  "expected_regression_tests": 2129,
+  "focused_new_tests": {
+    "readouts": 13,
+    "targets": 28
+  },
+  "generated_holdouts_opened": false,
+  "historical_compatibility_tests": {
+    "diversity": 12,
+    "schedule": 17
+  },
+  "linearity_note": {
+    "path": "reports/binding/direct_identity_linearity_note_v1.md",
+    "sha256": "69abe495b48785e2586edd702ca3c8a42279fa4e8ef22820d20723db3a0c7a41"
+  },
+  "metadata_only_both_model_integration_passed": true,
+  "module_sha256": {
+    "scripts/163_binding_direct_identity_readouts.py": "1fb849f903d02c775edcace6ec60e574b387c34ab760e32295c01f388273011d",
+    "src/codecue/binding/direct_identity_readouts.py": "0e51f5cf536c18e885f797aefe2c2ddf6276721d51475f86919c32378e6dda69",
+    "src/codecue/binding/direct_identity_targets.py": "20734568d40b341daf7b7b5d73d1ad56f7dd9842db98d3162b73392de054bab9",
+    "src/codecue/binding/schedule_readouts.py": "a029fe517776b68ef935ef82b32b5f182cdeec29c58a4b9607cb05ed16aae393"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "old_default_protocol_summary_report_bytes_unchanged": true,
+  "source": {
+    "code": "6a34415f2a9dfdab2acb5ceecc8fb88e19b8982d21881890c137f96082ddf1ee",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3e5471ac9dc9b948761fc429",
+    "snapshot_id": "3e5471ac9dc9b948761fc429"
+  },
+  "status": "passed",
+  "tiny_30_bank_run_reuse_and_no_refit_audit_passed": true
+}

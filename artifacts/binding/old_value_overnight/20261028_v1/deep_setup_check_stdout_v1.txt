@@ -1,0 +1,32 @@
+{
+  "all_scientific_work_complete": false,
+  "issues": [],
+  "logging": {
+    "enabled": true,
+    "fresh_within_two_intervals": false,
+    "guard_health": true,
+    "interval_minutes": 10,
+    "last_success_age_seconds": 2095.408126,
+    "last_success_utc": "2026-10-28T23:59:19.274929+00:00",
+    "pending_guards": 2,
+    "queue": [
+      {
+        "exit_code": "0:0",
+        "job_id": "481685",
+        "reason": "Dependency",
+        "state": "PENDING"
+      },
+      {
+        "exit_code": "0:0",
+        "job_id": "481675",
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "PENDING"
+      }
+    ]
+  },
+  "morning_due": false,
+  "needs_attention": true,
+  "scheduler_errors": [],
+  "scientific_status": "pending",
+  "status": "running"
+}

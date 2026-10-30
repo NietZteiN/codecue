@@ -1,0 +1,87 @@
+{
+  "collection_source": {
+    "code": "26c5722b6735a2f8262e4d3693f9391ab5af0db12991139330f65fd0ef07158f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/f351eb473e2922752fcbf6ba",
+    "snapshot_id": "f351eb473e2922752fcbf6ba"
+  },
+  "comparison_sha256": "bc857df6fb1350bff6bbbb749fbc91670046783e8f8f7df4999e282fdf8dace1",
+  "decision": "/work/jvl210002/migration/codecue/reports/binding/discovery_prediction_decision.md",
+  "decision_sha256": "ef322d3283562cc779ceb5f2d27b30e3d40549cab664e04f7221baa389894c4a",
+  "figure_review_sha256": "87aef475e0743288841069d6f3394fe1fbb076b71c7a5c24ff05fd2733d9475e",
+  "fit_counts": {
+    "codellama34b": {
+      "A_input": 378,
+      "A_neutral_raw": 378,
+      "A_neutral_scored": 378,
+      "prior": 108
+    },
+    "llama31_8b": {
+      "A_input": 378,
+      "A_neutral_raw": 378,
+      "A_neutral_scored": 378,
+      "prior": 108
+    }
+  },
+  "fitting_source": {
+    "code": "26c5722b6735a2f8262e4d3693f9391ab5af0db12991139330f65fd0ef07158f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/73c7572c2b5b686c8bb8cbfd",
+    "snapshot_id": "73c7572c2b5b686c8bb8cbfd"
+  },
+  "frozen_final_validation_completed": false,
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "collect_codellama34b": "478563",
+    "collect_llama31_8b": "478562",
+    "compare": "478567",
+    "figure": "478568",
+    "fit_codellama34b": "478566",
+    "fit_llama31_8b": "478565"
+  },
+  "language_model_training": false,
+  "learned_logistic_fits": 2268,
+  "mechanism_C_fitted": false,
+  "new_language_model_queries": 0,
+  "prior_estimates": 216,
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 385
+  },
+  "scheduler_accounting": {
+    "478562": {
+      "elapsed_seconds": 24,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478563": {
+      "elapsed_seconds": 23,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478565": {
+      "elapsed_seconds": 13,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478566": {
+      "elapsed_seconds": 12,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478567": {
+      "elapsed_seconds": 4,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478568": {
+      "elapsed_seconds": 5,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  },
+  "status": "complete_exploratory",
+  "summary_script_sha256": "b265d1ceac624d35f8d17dd322b219d1fc3ebf0b238baed39e36e824c6ea0b8f",
+  "target_examples": 12288,
+  "templates_per_checkpoint": 24
+}

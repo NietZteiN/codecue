@@ -1,0 +1,332 @@
+{
+  "capacity_program": {
+    "artifact": "artifacts/binding/capacity/comparison_v2.json",
+    "predictions": 20152,
+    "status": "complete_audited"
+  },
+  "causal_mechanism_claimed": false,
+  "competition": {
+    "artifact": "artifacts/binding/competition/review_v1.json",
+    "new_predictions": 19968,
+    "report": "reports/binding/competition_results.md",
+    "status": "complete_audited"
+  },
+  "compute_cap": null,
+  "decision": "reports/binding/continuation_decision.md",
+  "generated_holdouts_opened": false,
+  "hook_preflight": {
+    "matching_correct_answers": 128,
+    "prefix_invariance_exact": true,
+    "raw_blocks": [
+      8,
+      16,
+      24
+    ],
+    "software_replay_cases": 128,
+    "status": "passed"
+  },
+  "initial_readouts": {
+    "boundary_diagnostic": "artifacts/binding/state_readouts/boundary_diagnostic_v1.json",
+    "control_difficulty_audit": "artifacts/binding/state_readouts/control_entropy_audit_v1.json",
+    "interpretation": "Canonical identifier-control heads have two labels (1 bit), versus 32 value labels (4.81\u20134.89 bits); higher control accuracy is not a decisive rejection of value recovery. Primary fits and differences are preserved.",
+    "report": "reports/binding/state_readouts.md",
+    "status": "complete_boundary_dependent_selectivity_unresolved",
+    "summary": "artifacts/binding/state_readouts/llama31_8b_v1/summary.json"
+  },
+  "language_model_training_performed": false,
+  "live_load": {
+    "all_jobs_complete": true,
+    "analysis_source": "artifacts/binding/live_load/analysis_source_v2.json",
+    "backend_artifact": "artifacts/binding/live_load/backend_review_v2.json",
+    "backend_cases_per_model": 396,
+    "backend_jobs": "artifacts/binding/live_load/backend_jobs_v2.json",
+    "backend_report": "reports/binding/live_load_backend_results_v2.md",
+    "backend_source": "artifacts/binding/live_load/backend_source_v2.json",
+    "backend_stopping_boundary_fixed": true,
+    "backend_v1_preserved": true,
+    "comparison": "artifacts/binding/live_load/comparison_v2.json",
+    "correct": {
+      "codellama34b": 2229,
+      "llama31_8b": 3078
+    },
+    "dataset": "artifacts/binding/live_load/discovery_v2.jsonl",
+    "dataset_sha256": "73ba280d54c602593501bf40704baec678cb2932b9947bc28e2c3bc021576362",
+    "decision": "reports/binding/live_load_decision.md",
+    "final_outcomes_opened": false,
+    "fixed_defined_variables": 8,
+    "frozen_regeneration_passed": true,
+    "generation_config": "configs/binding/competition/live_load_generation_v2.json",
+    "independent_python_traces_passed": true,
+    "invalid": {
+      "codellama34b": 16,
+      "llama31_8b": 0
+    },
+    "jobs": "artifacts/binding/live_load/jobs_v2.json",
+    "limitation": "Computation scheduling and definition/query distances change with the program liveness frontier; no isolated capacity claim.",
+    "live_binding_counts": [
+      2,
+      3,
+      4
+    ],
+    "model_source": "artifacts/binding/live_load/source_v2.json",
+    "models": [
+      "llama31_8b",
+      "codellama34b"
+    ],
+    "no_qualified_new_causal_regime": true,
+    "plan": "reports/binding/live_load_plan.md",
+    "prompts_per_model": 38016,
+    "regression": "artifacts/binding/live_load/regression_v5.xml",
+    "regression_tests_passed": 247,
+    "reliability_gates": {
+      "codellama34b": "failed",
+      "llama31_8b": "failed"
+    },
+    "report": "reports/binding/live_load_results_v2.md",
+    "results_available": true,
+    "status": "complete_audited_with_failed_reliability_gates",
+    "status_config": "configs/binding/competition/live_load_status_v2.json",
+    "status_report": "reports/binding/live_load_status_v2.md",
+    "structural_components": 24,
+    "tokenizer_preflights_passed": 2,
+    "total_planned_predictions": 76032,
+    "total_predictions": 76032,
+    "uncached_arithmetic_controls": 24,
+    "uncached_raw_matches": 24,
+    "v1_retired_before_inference": true
+  },
+  "matched_probe_controls": {
+    "canonical_fits": 45,
+    "decision": "reports/binding/matched_probe_controls_decision.md",
+    "exact_class_histograms": true,
+    "final_outcomes_opened": false,
+    "jobs": "artifacts/binding/matched_probe_controls/jobs_v1.json",
+    "language_model_loaded": false,
+    "neutral_development_queried_value_block31_pre_answer": {
+      "control": 0.027777777777777776,
+      "surface_control": 0.03211805555555556,
+      "surface_value": 0.09071180555555554,
+      "value": 0.87890625
+    },
+    "original_value_prediction_matches": 967680,
+    "original_value_prediction_total": 967680,
+    "queried_value_fits": 30,
+    "regression": "artifacts/binding/matched_probe_controls/regression_v1.xml",
+    "regression_tests_passed": 234,
+    "saved_weight_row_replays": 622080,
+    "source": "artifacts/binding/matched_probe_controls/source_v1.json",
+    "status": "complete_audited"
+  },
+  "measurement_controls": {
+    "all_jobs_complete": true,
+    "all_slot_readouts": "artifacts/binding/state_readouts/llama31_8b_v2_all_slots/summary.json",
+    "backend_comparison": "artifacts/binding/state_capture/site_comparison_v2.json",
+    "block31_neutral_development_queried_value_mean_accuracy": {
+      "after_query": 0.0642361111111111,
+      "pre_answer": 0.87890625
+    },
+    "capture_audit": "artifacts/binding/state_capture/llama31_8b_v2/activations/audit.json",
+    "first_token_consistency_cases": 9216,
+    "interpretation": "Conditional value recovery depends strongly on measurement site and target. It does not establish a global binding dictionary or causal use.",
+    "plan": "reports/binding/readout_protocol.md",
+    "queried_value_readouts": "artifacts/binding/state_readouts/llama31_8b_v2_queried_value/summary.json",
+    "status": "complete_audited"
+  },
+  "mechanism_followup": {
+    "all_jobs_complete": true,
+    "baseline_cases": 7776,
+    "baseline_correct": 6857,
+    "cue_control": {
+      "common_final_early": 1191,
+      "common_final_late": 1213,
+      "difference_in_differences": -0.11342592592592593,
+      "n_per_cell": 1296,
+      "original_early": 1030,
+      "original_late": 1199,
+      "original_token_replay_matches": 2560,
+      "original_token_replay_n": 2592
+    },
+    "cue_gpu_job_elapsed_seconds": 93,
+    "cue_torch_peak_memory_bytes": 21207618560,
+    "decision": "reports/binding/mechanism_followup_decision.md",
+    "generated_holdouts_opened": false,
+    "gpu_device": "NVIDIA H200 NVL",
+    "intervention_forwards": 96768,
+    "jobs": "artifacts/binding/mechanism_followup/jobs_v1.json",
+    "maximum_relative_norm_error": 0.00345359006257311,
+    "owner_gpu_job_elapsed_seconds": 437,
+    "owner_primary_block8": {
+      "joint_donor_after": 289,
+      "joint_donor_before": 270,
+      "n": 1728,
+      "paired_donor_map_after": 24,
+      "paired_donor_map_before": 16,
+      "paired_groups": 864,
+      "selective_binding_transport_established": false
+    },
+    "owner_torch_peak_memory_bytes": 21744459264,
+    "plan": "reports/binding/mechanism_followup_plan.md",
+    "planned_intervention_forwards": 96768,
+    "regression": "artifacts/binding/matched_probe_controls/regression_v1.xml",
+    "regression_tests_passed": 234,
+    "source": "artifacts/binding/mechanism_followup/source_v1.json",
+    "status": "complete_audited"
+  },
+  "new_scientific_predictions_this_continuation": 23168,
+  "next_steps": [
+    "Register a fresh test of value-selection bias versus binding ownership at the exploratory block-8 copy endpoint, with nearby-position, wrong-value/version and reciprocal controls on both quantities.",
+    "Add common-final-query/cue-format controls and timing-coupled selective pathway tests before identifying tracking versus reconstruction; use calibrated controls for explanation equivalence.",
+    "Build an evidence-supported feature/forecast registration before unfamiliar-structure A/B/C/cheap-stress validation. Keep all existing final/extrapolation outcomes sealed and preserve failed computed/arithmetic gates."
+  ],
+  "recorded_utc": "2026-10-26T13:28:50.515158+00:00",
+  "regression_tests_passed": 223,
+  "resource_policy": "artifacts/binding/resource_policy_20261025.json",
+  "routing_extension": {
+    "all_jobs_complete": true,
+    "analysis_source": "artifacts/binding/routing_extension/analysis_source_v2.json",
+    "analytic_controls": {
+      "answer_vector_donor_matches": 432,
+      "final_earlier_token_unchanged": 2160,
+      "identity_shams_unchanged": 2160
+    },
+    "anchor_prediction_matches": "213/216",
+    "batch_sizes": {
+      "computed": 96,
+      "swap": 144
+    },
+    "computed_baselines": 576,
+    "computed_correct": 461,
+    "computed_eligible_families": [],
+    "computed_intervention_controls": "not_run_gate_failed",
+    "computed_intervention_forwards": 0,
+    "computed_report": "reports/binding/computed_routing_results_v1_analysis_v2.md",
+    "computed_review": "artifacts/binding/routing_extension/computed_routing/review_v1_analysis_v2.json",
+    "decision": "reports/binding/routing_extension_decision.md",
+    "error_compatibility": "artifacts/binding/routing_extension/computed_routing/error_compatibility_v1.json",
+    "failing_cell": {
+      "additional_errors": 6,
+      "fresh_reset_correct": 9,
+      "n": 54,
+      "rescues": 0,
+      "reused_reset_correct": 15
+    },
+    "general_binding_mechanism_established": false,
+    "generated_holdouts_opened": false,
+    "gpu_devices": {
+      "computed": "NVIDIA A30",
+      "swap": "NVIDIA A30"
+    },
+    "gpu_job_seconds": {
+      "computed": 82,
+      "swap": 335
+    },
+    "jobs": "artifacts/binding/routing_extension/jobs_v2.json",
+    "sampled_swap_gpu_utilization_percent": 98,
+    "source": "artifacts/binding/routing_extension/source_v1.json",
+    "status": "complete_audited",
+    "swap_baselines": 432,
+    "swap_correct": 348,
+    "swap_intervention_forwards": 15120,
+    "swap_report": "reports/binding/swap_reset_results_v2.md",
+    "swap_review": "artifacts/binding/routing_extension/swap_reset/review_v2.json",
+    "swap_source": "artifacts/binding/routing_extension/swap_source_v2.json",
+    "utilization_scope": "Scheduler sample, not time-average"
+  },
+  "serialization_followup": {
+    "artifact": "artifacts/binding/llama_serialization/comparison_v1.json",
+    "new_predictions": 3200,
+    "report": "reports/binding/llama_serialization_results.md",
+    "status": "complete_audited"
+  },
+  "state_captures": {
+    "audit": "artifacts/binding/state_capture/llama31_8b_v1/activations/audit.json",
+    "cases": 9216,
+    "status": "complete_audited",
+    "storage_bytes": 923860813,
+    "unique_state_prefixes": 4608
+  },
+  "targeted_checks_after_scheduler_update": 18,
+  "timing_and_copy": {
+    "all_jobs_complete": true,
+    "analysis_source": "artifacts/binding/timing_and_copy/analysis_source_v1.json",
+    "analytic_controls": {
+      "answer_vector_donor_matches": 2592,
+      "final_earlier_token_unchanged": 12960,
+      "identity_shams_unchanged": 12960,
+      "max_relative_norm_error": 0.02197830132251179
+    },
+    "baseline_responses": 4536,
+    "batch_size": 108,
+    "copy_intervention_forwards": 90720,
+    "copy_report": "reports/binding/copy_path_results_v1.md",
+    "decision": "reports/binding/timing_and_copy_decision.md",
+    "general_mechanism_established": false,
+    "generated_holdouts_opened": false,
+    "gpu_devices": {
+      "copy": "NVIDIA H200 NVL",
+      "timing": "NVIDIA H200 NVL"
+    },
+    "gpu_job_seconds": {
+      "copy": 395,
+      "timing": 77
+    },
+    "instruction_variants": 3,
+    "jobs": "artifacts/binding/timing_and_copy/jobs_v1.json",
+    "late_prefix_exact_comparisons": 9720,
+    "posthoc_candidate": "raw block 8 at copy end; development candidate, not confirmed site",
+    "source": "artifacts/binding/timing_and_copy/source_v1.json",
+    "status": "complete_audited",
+    "swapped_paired_answers": {
+      "anchor_both_correct": 34,
+      "anchor_duplicate_query0": 128,
+      "groups_per_form": 162,
+      "reordered_both_correct": 78,
+      "reordered_both_swapped": 15
+    },
+    "timing_correct": {
+      "early": 1022,
+      "late": 1201,
+      "n_per_condition": 1296
+    },
+    "timing_paired_flips": {
+      "early_only": 49,
+      "late_only": 228
+    },
+    "timing_report": "reports/binding/query_timing_results_v1.md"
+  },
+  "updated_utc": "2026-10-26T23:12:50.339615+00:00",
+  "value_transfer": {
+    "all_jobs_complete": true,
+    "analysis_source": "artifacts/binding/value_transfer/analysis_source_v2.json",
+    "analytic_controls": "artifacts/binding/value_transfer/llama31_8b_v2/interventions/analytic_controls.json",
+    "answer_digit_alignment_cases": 432,
+    "audit": "artifacts/binding/value_transfer/llama31_8b_v2/interventions/audit.json",
+    "baseline_correct": 392,
+    "block0_all_cases": {
+      "ownership_affected_replacement": "118/144",
+      "ownership_unchanged_replacement": "27/144",
+      "versions_affected_replacement": "144/144",
+      "versions_unchanged_replacement": "0/144"
+    },
+    "boundary_comparison": "artifacts/binding/value_transfer/boundary_comparison_v2.json",
+    "boundary_correction": "reports/binding/value_transfer_boundary_correction.md",
+    "decision": "reports/binding/value_transfer_decision.md",
+    "diagnostic_v1_forwards": 20160,
+    "diagnostic_v1_status": "formatting_space_boundary_not_valid_answer_transfer",
+    "directed_pairs": 576,
+    "final_answer_vector_donor_matches": 576,
+    "final_earlier_token_negative_controls": 2880,
+    "final_outcomes_opened": false,
+    "general_binding_mechanism_established": false,
+    "gpu_device": "NVIDIA H200 NVL",
+    "gpu_job_elapsed_seconds": 141,
+    "identity_shams": 2880,
+    "intervention_forwards": 20160,
+    "jobs": "artifacts/binding/value_transfer/jobs_v3.json",
+    "local_literal_routing_effect_observed": true,
+    "programs": 432,
+    "report": "reports/binding/value_transfer_results_v2.md",
+    "source": "artifacts/binding/value_transfer/source_v2.json",
+    "status": "complete_audited_digit_aligned_v2"
+  }
+}

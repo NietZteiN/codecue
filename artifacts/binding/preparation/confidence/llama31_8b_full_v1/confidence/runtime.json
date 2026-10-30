@@ -1,0 +1,26 @@
+{
+  "attention_backend": "sdpa",
+  "batch_size": 32,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-e0682e17-b51b-ce96-1e25-d1a548c4d9cf",
+    "mean_gpu_utilization_percent": 94.46518987341773,
+    "mean_power_watts": 162.2368670886076,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 16413.0,
+    "samples": 316,
+    "selector_verified": true
+  },
+  "gpu_scope": "current attempt only; committed earlier chunks are reused",
+  "load_seconds": 36.18538628285751,
+  "measured_this_attempt": 6144,
+  "padded_width": 168,
+  "resumed_cases": 0,
+  "status": "recorded",
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1"
+  }
+}

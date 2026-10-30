@@ -1,0 +1,57 @@
+{
+  "array_loading": false,
+  "evaluation_role": "discovery_diversity_completion_pipeline_v1",
+  "execution_order": [
+    "independent_metadata_review",
+    "publication",
+    "byte_identical_publication_reproduction",
+    "readiness_refresh",
+    "logging_health_check",
+    "immutable_handoff"
+  ],
+  "helper_pins": [
+    {
+      "bytes": 1864,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/run_stage_v1.py",
+      "sha256": "e47aa1c563f475165f8049faff27ce4f171c67ce4af69808745473cb739eb751"
+    },
+    {
+      "bytes": 2601,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/run_validation_v1.py",
+      "sha256": "f7b56d380711481b690ec54d54099a0718c0ce8d5d8e2ebe145a2acb34b9d784"
+    },
+    {
+      "bytes": 37306,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/independent_review_v1.py",
+      "sha256": "7a409230cae11a684c9e4b9919310c7f8db442052f91391af7f20986b53ea93e"
+    },
+    {
+      "bytes": 60622,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/publish_results_v1.py",
+      "sha256": "8f882bb7543b792ee1a7f0119bf0cac23eebc0e4e8c6b6b1be3907b9cd807816"
+    },
+    {
+      "bytes": 9275,
+      "path": "artifacts/binding/diversity_decoding/20261028_v1/finish_suite_v1.py",
+      "sha256": "d0721c8d3ea53fb293a1297aa5be9aefa1fcc5ec02cfae4f129748deb94b0734"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "queued_readiness_report_sha256": "c03ea0f0adf3a3839a47f76f4fc7a03168bb43bcbbbbcc535f4da5c3f9c88dc7",
+  "readiness_config": {
+    "bytes": 62655,
+    "path": "configs/binding/preparation/readiness_v19.json",
+    "sha256": "685894e79b798cabadc480622e3b617a551eff61ae598a1e93d033aa680bab6a"
+  },
+  "requires_completed_jobs": [
+    "481413",
+    "481415"
+  ],
+  "source": {
+    "code": "9cfa6c42fd79ddb9a4f049650ba311bb996dcb9f48afb9f9c31a2cc22254a918",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/345f75b01f5c3b33bd0ca6d8",
+    "snapshot_id": "345f75b01f5c3b33bd0ca6d8"
+  },
+  "status": "ready"
+}

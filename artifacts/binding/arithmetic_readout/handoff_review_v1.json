@@ -1,0 +1,119 @@
+{
+  "comparison_sha256": "8fb990aa9648a1af8f4e4b3b66154ecafe6ee96947297accb34bebcece6d2dde",
+  "decision": "/work/jvl210002/migration/codecue/reports/binding/arithmetic_readout_decision.md",
+  "decision_sha256": "627096b165c3c0baa0d90f527a00336d61db92411daa6af18725158d59b7c89c",
+  "empirical_forecasters_fitted": false,
+  "forecasting_maintenance_source": {
+    "code": "6d5d320d431b833a35762447408435cb860f5014613d0ecff8a1615085de9ef5",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/943a81064df91321f03adbeb",
+    "snapshot_id": "943a81064df91321f03adbeb"
+  },
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "compare": "478445",
+    "figure": "478449",
+    "final_status": "478451",
+    "preflight_codellama34b": "478433",
+    "preflight_llama31_8b": "478432",
+    "review_codellama34b": "478444",
+    "review_llama31_8b": "478442",
+    "run_codellama34b": "478443",
+    "run_llama31_8b": "478441"
+  },
+  "language_model_training": false,
+  "reliability": {
+    "codellama34b": {
+      "print_direct_v3": "failed",
+      "print_trace_long_v1": "failed"
+    },
+    "llama31_8b": {
+      "print_direct_v3": "failed",
+      "print_trace_long_v1": "failed"
+    }
+  },
+  "resources": {
+    "codellama34b": {
+      "allocated_seconds": 469,
+      "engine_load_warmup_seconds": 252.72583275311626,
+      "generation_requests_per_second": 95.40170414722851,
+      "generation_seconds": 64.40136531018652,
+      "mean_generation_gpu_utilization_percent": 98.6068376068376
+    },
+    "llama31_8b": {
+      "allocated_seconds": 394,
+      "engine_load_warmup_seconds": 243.109603212215,
+      "generation_requests_per_second": 210.6425501259695,
+      "generation_seconds": 29.167896022554487,
+      "mean_generation_gpu_utilization_percent": 95.85454545454546
+    }
+  },
+  "scheduler_accounting": {
+    "478432": {
+      "elapsed_seconds": 99,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478433": {
+      "elapsed_seconds": 94,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478441": {
+      "elapsed_seconds": 394,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478442": {
+      "elapsed_seconds": 7,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478443": {
+      "elapsed_seconds": 469,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478444": {
+      "elapsed_seconds": 6,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478445": {
+      "elapsed_seconds": 3,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478449": {
+      "elapsed_seconds": 5,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "478451": {
+      "elapsed_seconds": 2,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  },
+  "source": {
+    "code": "2a90a06179eae8f5dfffb4de4c07b047787c5ebe242a8c109f0efcb60000d878",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/3ab827997cdd2d6f41a25cf9",
+    "snapshot_id": "3ab827997cdd2d6f41a25cf9"
+  },
+  "status": "complete_audited",
+  "summary_script_sha256": "7b5785bd1fceaca465a3d1d6b54f17d0e038b9dd0961623ed4a962425ca4ed87",
+  "tests": {
+    "forecasting_access_tests_v1.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 44
+    },
+    "regression_v1.xml": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 322
+    }
+  },
+  "total_predictions": 12288
+}

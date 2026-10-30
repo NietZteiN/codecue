@@ -1,0 +1,26 @@
+{
+  "accounting": "Usage accounting only. Historical max_gpu_seconds fields are ignored by the current runner. New default and explicitly historical ledger paths route to the uncapped usage ledger.",
+  "application_concurrency_limit": null,
+  "application_gpu_count_limit": null,
+  "authorization": "User: idk what compute budget you are talking about this is the only project so maximize utility on this",
+  "checkpoint_count_limit": null,
+  "checkpoint_policy": "multiple_cached_checkpoints",
+  "cumulative_gpu_seconds_cap": null,
+  "current_plan": {
+    "path": "/work/jvl210002/migration/dependvar.txt",
+    "sha256": "fc0cb90e509e6766f5c1d557f467fff5f0110be2ab0272d39a9ccb055a0000b8"
+  },
+  "original_plan_before_update": {
+    "path": "artifacts/binding/policies/dependvar_before_uncapped_compute.txt",
+    "sha256": "393869afb59f372af7730685ab537f0c95a6e89d8998e6ad8b958410a0621a9a"
+  },
+  "per_stage_compute_limit": null,
+  "priority": "Use available local resources for this project; do not reserve capacity for unrelated projects.",
+  "profiler_timeout": null,
+  "recorded_utc": "2026-10-26T03:02:08.745904+00:00",
+  "scheduler": "Actual GPU partition maximum is 48 hours; no smaller project job default. GPU counts and model parallelism are configurable. Scheduler enforces its own job/partition quotas.",
+  "scheduling": "Use all eligible partitions and independent GPUs within actual scheduler limits; no duplicate work or idle GPU reservations.",
+  "scientific_prerequisites": "Preserve historical gates and sealed generated final outcomes. Additional checkpoint results are exploratory feasibility/capacity comparisons, not mechanism replication.",
+  "training": "No language-model training or unlearning is automatically authorized by this operational change.",
+  "updated_utc": "2026-10-26T03:36:12.341061+00:00"
+}

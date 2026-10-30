@@ -1,0 +1,24 @@
+{
+  "device_name": "NVIDIA A30",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": 4096,
+    "max_num_seqs": 128,
+    "tensor_parallel_size": 1
+  },
+  "load_warmup_seconds": 215.65231351507828,
+  "preflight": {
+    "cases": 20160,
+    "config_hash": "717fe54c2ebbe71b77d5bb8dbe2131f7623c367000b5f72255ba05542c587862",
+    "generated_holdouts_opened": false,
+    "model_inference": false,
+    "prepared_cases_sha256": "9a767850538a133da4e24bb6560e0dcb75cc010c2683def717a524ecf916f5e7",
+    "source_sha256": "e4fe80addb6c4c55b7612a7dae94a28c0f7157da6e1df7eec290843c46683334",
+    "status": "passed"
+  },
+  "versions": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.14.1",
+    "vllm": "0.26.0+cu129"
+  }
+}

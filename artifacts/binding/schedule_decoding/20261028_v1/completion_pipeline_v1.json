@@ -1,0 +1,61 @@
+{
+  "evaluation_role": "discovery_schedule_automatic_completion_v1",
+  "execution_order": [
+    "independent_review",
+    "publisher",
+    "byte-identical publisher repetition",
+    "completed readiness inventory",
+    "guard health and durable handoff"
+  ],
+  "generated_holdouts_opened": false,
+  "helper_pins": [
+    {
+      "bytes": 1792,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/run_stage_v1.py",
+      "sha256": "898012b90bb71582f8000c572782c8de24f0447064c793ec6b0e1945f158b2f8"
+    },
+    {
+      "bytes": 2597,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/run_validation_v1.py",
+      "sha256": "f04d3e53ef3e2452e2014ee31113e9254d5ab0653fd73c52756108248e5543d8"
+    },
+    {
+      "bytes": 3517,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/submit_suite_v1.py",
+      "sha256": "029eaf6b10c1d6a8bdf1a9fa8b4b850f3cf5ada0f94a392b7a0c5098a1dfe0fd"
+    },
+    {
+      "bytes": 8862,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/finish_suite_v1.py",
+      "sha256": "d4af7e280ebb7d09cff9e3dcfbd7622b0a08bde06d8b7f7c20ae9420dc266224"
+    },
+    {
+      "bytes": 28063,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/independent_review_v1.py",
+      "sha256": "5044bcfcf87c02216d86470b81aadab49d9ccd1ec51d6032e5e729dc5e18217a"
+    },
+    {
+      "bytes": 45640,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/publish_results_v1.py",
+      "sha256": "f57f452e1ee4bcb5d6ebf3dbb92dbb18d4c80002d46873f66a83d646b78acd63"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "queued_readiness_report_sha256": "7ef8c3548c9b6835fa7c2303aaad1e1ff99b08a7530ab4680097ae27fda0b9c7",
+  "readiness_config": {
+    "bytes": 56590,
+    "path": "configs/binding/preparation/readiness_v16.json",
+    "sha256": "eb90b095b8fbc1423e2f3ed6aec0d87daf8c3054575bba26ceb7bb915546eab5"
+  },
+  "requires_completed_jobs": [
+    "481262",
+    "481265"
+  ],
+  "source": {
+    "code": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26"
+  },
+  "status": "prepared"
+}

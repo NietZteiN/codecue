@@ -1,0 +1,27 @@
+{
+  "status": "predeclared_discovery_measurement_supplement",
+  "selected_ids_sha256": "806d8adcc00547446fb8caa1b5dcec4f6e3a4041dbeccc2bd6f06091b89fdaf2",
+  "rows": 1440,
+  "bases": 480,
+  "clusters": 48,
+  "split_naming_counts": {
+    "development:informative": 240,
+    "development:neutral": 240,
+    "development:misleading": 240,
+    "train:neutral": 720
+  },
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "alpha": 1,
+  "train_conditions": [
+    "neutral"
+  ],
+  "motivation": "Small-cohort decoders memorize training states but generalize weakly; increase numeric diversity on existing grouped discovery data, without selecting a layer or changing estimator.",
+  "estimated_seconds_from_smoke": 4146.360169837717,
+  "cpu_cap_seconds": 5400,
+  "heldout_outcomes_opened": false,
+  "config_sha256": "aef05a0c1d8c8ac7fcce17da16fe469e2fea7307955d56ab39bf230d72d76eae"
+}

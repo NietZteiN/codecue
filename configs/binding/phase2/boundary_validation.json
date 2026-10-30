@@ -1,0 +1,62 @@
+{
+  "activation_limit_bytes": 68719476736,
+  "batch_size": 4,
+  "boundary_audit": "artifacts/binding/phase2/tokenizer_boundary_audit.json",
+  "boundary_audit_sha256": "3d5403bea6d85cdfe0e74e3638cfd629f9f7c899e0b4996aeeb5156f96128056",
+  "checkpoint_audit": "artifacts/binding/phase2/checkpoint_audit.json",
+  "checkpoint_audit_sha256": "e8755fae37fc9d94aa86238dbe7b326bdf2b1405bd129457384305cba6166f20",
+  "control_kinds": [
+    "primary",
+    "binding_swap",
+    "arithmetic_control"
+  ],
+  "cpu_threads": 4,
+  "dataset": "artifacts/binding/pilot_matched.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "extraction_splits": [
+    "train",
+    "development"
+  ],
+  "generation": {
+    "algorithm_version": 5,
+    "answer_magnitude_bins": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "arithmetic_controls": true,
+    "counterfactual_pairs": true,
+    "identifier_pool": "codellama-context-matched-v1",
+    "instances_per_cell": 50,
+    "seed": 20261024,
+    "templates_per_cell": 10
+  },
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "max_gpu_seconds": 300,
+  "max_new_tokens": 12,
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "per_cell_limit": null,
+  "protocol": "short_answer_prefill_v2",
+  "run_dir": "artifacts/binding/phase2/boundary_validation",
+  "seed": 17,
+  "splits": [
+    "train",
+    "development"
+  ],
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+}

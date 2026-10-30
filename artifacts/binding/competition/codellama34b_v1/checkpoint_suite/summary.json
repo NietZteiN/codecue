@@ -1,0 +1,89 @@
+{
+  "cells": [
+    {
+      "correct": 7483,
+      "n": 9984,
+      "section": "binding_competition",
+      "task": "print_direct_v3",
+      "valid": 9975
+    }
+  ],
+  "complete": true,
+  "evaluated": 9984,
+  "generated_holdouts_opened": false,
+  "gpu": {
+    "driver_version": "580.178.04",
+    "gpu_uuid": "GPU-8503f44b-4a86-c7bc-1921-e18910bb607d",
+    "mean_gpu_utilization_percent": 96.35384615384615,
+    "mean_power_watts": 579.413,
+    "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+    "peak_device_memory_mib": 140479.0,
+    "samples": 130,
+    "selector_verified": true
+  },
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "planned": 9984,
+  "responses_sha256": "7d3cb35a19449ed1b1fef6c8aa2e7633070ec2c928c3528c3bac4648d6625545",
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 5.866887820884585,
+      "output_tokens": 4165,
+      "requests_per_second": 174.53887499856873
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.929688010830432,
+      "output_tokens": 4475,
+      "requests_per_second": 147.77000038090995
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.89323595399037,
+      "output_tokens": 4114,
+      "requests_per_second": 148.55142154349508
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.0509531162679195,
+      "output_tokens": 4228,
+      "requests_per_second": 145.22859294546052
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.62653628597036,
+      "output_tokens": 4193,
+      "requests_per_second": 154.5302033836294
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 6.816596433985978,
+      "output_tokens": 4204,
+      "requests_per_second": 150.2215966452953
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.576475013978779,
+      "output_tokens": 4208,
+      "requests_per_second": 135.15520055311939
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.685024910140783,
+      "output_tokens": 4243,
+      "requests_per_second": 133.24615235127993
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 7.648407886270434,
+      "output_tokens": 4265,
+      "requests_per_second": 133.8840730288679
+    },
+    {
+      "cases": 768,
+      "generation_seconds": 5.789929702877998,
+      "output_tokens": 3141,
+      "requests_per_second": 132.64409749538936
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "all_three_jobs_completed_zero": true,
+  "arrays_loaded": false,
+  "byte_identical_report_reproduction": true,
+  "development_prediction_rows": 129600,
+  "evaluation_role": "discovery_diversity_identity_completion_followup_v1",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_handoff_pins_verified": 211,
+  "parameters_reapplied": 0,
+  "pins": [
+    {
+      "bytes": 54156,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/handoff_review_v1.json",
+      "sha256": "6cc687cd83ae23aed665e5b97557c4e6b2abbd63debc4e78b1ac1d7c04270dbe"
+    },
+    {
+      "bytes": 7867,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/queue_handoff_review_v1.json",
+      "sha256": "a7f8a61df49d56a22283ef054ecd7c7619d597763e2e0ca55f0222cddb93495d"
+    },
+    {
+      "bytes": 938,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/analysis/prediction_replay_review_v1.json",
+      "sha256": "4492a16ca1f180baa646d12d64c8483ccb301fbc98edc9d75a4addd82567ed59"
+    },
+    {
+      "bytes": 360,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/publication_review_v1.json",
+      "sha256": "7b8d46526560fb21f7609e3cedf06136fb1ac187a2dc2e8c6420a3109a9cce31"
+    },
+    {
+      "bytes": 155,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/completion_logging_review_v1.json",
+      "sha256": "c884be0ef53e181a9664fba669d8ef12da209b676616517bc98def847d856b39"
+    },
+    {
+      "bytes": 4384,
+      "path": "reports/binding/diversity_identity_review_findings_v1.md",
+      "sha256": "044661d424ebb7b759fbc4bbea649167f96c96603879fba1f38c616675056aaa"
+    }
+  ],
+  "readiness_counts": {
+    "deferred_optional": 3,
+    "needs_scientific_decision": 9,
+    "ready": 57
+  },
+  "recorded_utc": "2026-10-28T20:37:12.240470+00:00",
+  "saved_score_case_rows_checked": 518400,
+  "score_banks": 90,
+  "software_validation": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 2088
+  },
+  "source": {
+    "code": "38a8ad184e39ce39e6d9c4382834f8a95c2022e268f4b1adb0cca85829d6f38f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/56923f24389a46294d3c9c7b",
+    "snapshot_id": "56923f24389a46294d3c9c7b"
+  },
+  "source_oracle_assisted": true,
+  "status": "passed",
+  "terminal_jobs": {
+    "481457": {
+      "elapsed_seconds": 555,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481458": {
+      "elapsed_seconds": 859,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481474": {
+      "elapsed_seconds": 27,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  }
+}

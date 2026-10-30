@@ -1,0 +1,1332 @@
+{
+  "automatic_logging": {
+    "all_failed_canceled_attempts_preserved": true,
+    "enabled": true,
+    "healthy": true,
+    "interval_minutes": 10,
+    "pending_guards_at_handoff": 2
+  },
+  "collection": {
+    "case_request_attempts": 12544,
+    "committed_full_generated_tokens": 44334,
+    "committed_qualification_generated_tokens": 920,
+    "full_responses": 12288,
+    "full_valid_responses": 12285,
+    "incomplete_request_attempts": 0,
+    "models": {
+      "codellama34b": {
+        "case_request_attempts": 6144,
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "evaluated": 6144,
+        "executions": [
+          {
+            "actual_model_dtype": "bfloat16",
+            "actual_model_dtype_verified": true,
+            "backend": "vllm",
+            "chunked_prefill": true,
+            "cuda_matmul_allow_tf32": false,
+            "cudnn_allow_tf32": true,
+            "device_name": "NVIDIA H100 80GB HBM3",
+            "device_total_memory_bytes": 85017493504,
+            "engine": {
+              "gpu_memory_utilization": 0.95,
+              "max_num_batched_tokens": 16384,
+              "max_num_seqs": 512,
+              "tensor_parallel_size": 1
+            },
+            "eos_token_ids": [
+              2
+            ],
+            "generation_config": "vllm",
+            "gpu_uuid": "6a84f189-485f-ab4e-5b2f-86119881df62",
+            "greedy_seed": 0,
+            "max_new_tokens": 32,
+            "prefix_caching": true,
+            "slurm_job_id": "479818",
+            "stop": [
+              "\n\n"
+            ],
+            "temperature": 0,
+            "top_p": 1,
+            "versions": {
+              "torch": "2.11.0+cu129",
+              "transformers": "5.14.1",
+              "vllm": "0.26.0+cu129"
+            }
+          }
+        ],
+        "generated_tokens": 25839,
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-6a84f189-485f-ab4e-5b2f-86119881df62",
+          "mean_gpu_utilization_percent": 98.68115942028986,
+          "mean_power_watts": 689.3246376811594,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 80749.0,
+          "samples": 138,
+          "selector_verified": true
+        },
+        "incomplete_request_attempts": 0,
+        "load_seconds": 173.51157822395908,
+        "metadata": {
+          "audit": {
+            "path": "artifacts/binding/stress_measurement/codellama34b_full_v1/stress_measurement/audit.json",
+            "sha256": "79791b8abb509df91762409508868ecef19b06ed35eeaec88f76a13e6df4ff53"
+          },
+          "manifest": {
+            "path": "artifacts/binding/stress_measurement/codellama34b_full_v1/stress_measurement/manifest.json",
+            "sha256": "7cb7cb09478687097991c7ddfad8f24298220b8054a8cb0200d7bdebeb86f791"
+          },
+          "runtime": {
+            "path": "artifacts/binding/stress_measurement/codellama34b_full_v1/stress_measurement/runtime.json",
+            "sha256": "9277c4ceb131ffdd64eeee09ed8bd52da78adefdf88ab35888dd396036252b64"
+          },
+          "summary": {
+            "path": "artifacts/binding/stress_measurement/codellama34b_full_v1/stress_measurement/summary.json",
+            "sha256": "152fb0cfb264cc55a035be2c3e02da7a678f239870e545c3944d47ebfa04289a"
+          }
+        },
+        "request_attempts": 6,
+        "valid": 6144,
+        "wall_seconds": 283.49654016498243
+      },
+      "llama31_8b": {
+        "case_request_attempts": 6144,
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "evaluated": 6144,
+        "executions": [
+          {
+            "actual_model_dtype": "bfloat16",
+            "actual_model_dtype_verified": true,
+            "backend": "vllm",
+            "chunked_prefill": true,
+            "cuda_matmul_allow_tf32": false,
+            "cudnn_allow_tf32": true,
+            "device_name": "NVIDIA H100 80GB HBM3",
+            "device_total_memory_bytes": 85017493504,
+            "engine": {
+              "gpu_memory_utilization": 0.95,
+              "max_num_batched_tokens": 16384,
+              "max_num_seqs": 512,
+              "tensor_parallel_size": 1
+            },
+            "eos_token_ids": [
+              128001,
+              128008,
+              128009
+            ],
+            "generation_config": "vllm",
+            "gpu_uuid": "995aa41f-e047-f752-d32f-0c43ca6fdfe3",
+            "greedy_seed": 0,
+            "max_new_tokens": 32,
+            "prefix_caching": true,
+            "slurm_job_id": "479815",
+            "stop": [
+              "\n\n"
+            ],
+            "temperature": 0,
+            "top_p": 1,
+            "versions": {
+              "torch": "2.11.0+cu129",
+              "transformers": "5.14.1",
+              "vllm": "0.26.0+cu129"
+            }
+          }
+        ],
+        "generated_tokens": 18495,
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-995aa41f-e047-f752-d32f-0c43ca6fdfe3",
+          "mean_gpu_utilization_percent": 84.28571428571429,
+          "mean_power_watts": 599.1750000000001,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 80147.0,
+          "samples": 14,
+          "selector_verified": true
+        },
+        "incomplete_request_attempts": 0,
+        "load_seconds": 163.70346987404628,
+        "metadata": {
+          "audit": {
+            "path": "artifacts/binding/stress_measurement/llama31_8b_full_v1/stress_measurement/audit.json",
+            "sha256": "d0aa404b8a9fd82a616625f6332fc6b539f14bc9a0a34b8939151bb161ea4ca7"
+          },
+          "manifest": {
+            "path": "artifacts/binding/stress_measurement/llama31_8b_full_v1/stress_measurement/manifest.json",
+            "sha256": "344b1564c8f1fd12b20000d473a038027556a7e58daffb0489fa345108161d37"
+          },
+          "runtime": {
+            "path": "artifacts/binding/stress_measurement/llama31_8b_full_v1/stress_measurement/runtime.json",
+            "sha256": "45d194f766b52860fb65fb1624ff43015c6c32c8c717d5bd1c1879d0276b301c"
+          },
+          "summary": {
+            "path": "artifacts/binding/stress_measurement/llama31_8b_full_v1/stress_measurement/summary.json",
+            "sha256": "1485af2bb38b3a1244f40c13b1672ce1545133380ed3b9f9eb18c150dfcb559e"
+          }
+        },
+        "request_attempts": 6,
+        "valid": 6141,
+        "wall_seconds": 206.5075202860171
+      }
+    },
+    "original_target_response_payloads_read": false,
+    "qualification_responses": 256,
+    "qualification_review": {
+      "path": "artifacts/binding/stress_measurement/qualification_review_v1.json",
+      "sha256": "41155446389ebb289e96597eb16fe2e9d675adcf0c65f4cf47a3043ecffd7651"
+    },
+    "review": {
+      "path": "artifacts/binding/stress_measurement/collection_review_v1.json",
+      "sha256": "964fe8ecc30b4f6bb6b2b7bf6d44fde7edecd2df10748421af58eff2abe80ce0"
+    },
+    "stress_correctness_scored": false,
+    "tokenizer_review": {
+      "path": "artifacts/binding/stress_measurement/tokenizer_review_v1.json",
+      "sha256": "7b20dc5647bf23ca83c0aa24ac5b5bd0f8b235b73ef39df40bad83f691da7399"
+    }
+  },
+  "config_checksums": {
+    "configs/binding/stress_measurement/codellama34b_full_v1.json": "258c5ebd784e146c1636079cfd97167e62f1ee0aaadeb08dae50291e36d29a6c",
+    "configs/binding/stress_measurement/codellama34b_smoke_v1.json": "24ac6e67607172a02673b6eb11f3631a55f9404fadf13c50d04891b653aa4274",
+    "configs/binding/stress_measurement/llama31_8b_full_v1.json": "d1b0368c618174cf4a501e7f480d1da76264e7e47926b48d653c22486c24fec3",
+    "configs/binding/stress_measurement/llama31_8b_smoke_v1.json": "88a6f8579805b683a3a277b96a724c006382e5a1426b14ca5fc10b3680143052",
+    "configs/binding/stress_prediction/codellama34b_pipeline_v1.json": "fcf957d851d352b2b938c99ce7b1b3adc139026ddcd9570e190f5c687179136e",
+    "configs/binding/stress_prediction/codellama34b_pipeline_v2.json": "e91a91e5ecf87c336a8b2f8785e6fbdb29d2f0d09dc0fe50c3ce51a30f6afdc1",
+    "configs/binding/stress_prediction/comparison_pipeline_v1.json": "734f8539f710181ddc7f8c9268a0f8495e3a34845979b54e31ea704b1e448824",
+    "configs/binding/stress_prediction/comparison_pipeline_v2.json": "16a58a90abd30a047aa99948276dc4ef62270df674078f8e13f035b0dcbbb327",
+    "configs/binding/stress_prediction/llama31_8b_pipeline_v1.json": "3cfff1c3098709e8f75f98ee4e3be3b31894d00da1341523841a1946eb0bb73b",
+    "configs/binding/stress_prediction/llama31_8b_pipeline_v2.json": "6ff998d35e10ec67fcaa4d51e65f93bcd05a7473b7217470fcfe9568ae87a851"
+  },
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "all16_attempt_states": {
+      "479809": {
+        "elapsed_seconds": 90,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479811": {
+        "elapsed_seconds": 86,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479812": {
+        "elapsed_seconds": 91,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479813": {
+        "elapsed_seconds": 84,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479814": {
+        "elapsed_seconds": 261,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479815": {
+        "elapsed_seconds": 252,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479816": {
+        "elapsed_seconds": 111,
+        "exit_code": "1:0",
+        "state": "FAILED"
+      },
+      "479817": {
+        "elapsed_seconds": 275,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479818": {
+        "elapsed_seconds": 329,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479819": {
+        "elapsed_seconds": 160,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479820": {
+        "elapsed_seconds": 0,
+        "exit_code": "0:0",
+        "state": "CANCELLED"
+      },
+      "479821": {
+        "elapsed_seconds": 46,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479854": {
+        "elapsed_seconds": 144,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479855": {
+        "elapsed_seconds": 129,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479856": {
+        "elapsed_seconds": 17,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      },
+      "479857": {
+        "elapsed_seconds": 46,
+        "exit_code": "0:0",
+        "state": "COMPLETED"
+      }
+    },
+    "all_tracked_active_stage_jobs": {
+      "anchor-figure-v2": {
+        "elapsed_seconds": 9,
+        "exit_code": "0:0",
+        "job_id": "479273",
+        "state": "COMPLETED"
+      },
+      "collect-codellama34b": {
+        "elapsed_seconds": 6,
+        "exit_code": "0:0",
+        "job_id": "479188",
+        "state": "COMPLETED"
+      },
+      "collect-llama31_8b": {
+        "elapsed_seconds": 6,
+        "exit_code": "0:0",
+        "job_id": "479184",
+        "state": "COMPLETED"
+      },
+      "compare": {
+        "elapsed_seconds": 5,
+        "exit_code": "0:0",
+        "job_id": "479197",
+        "state": "COMPLETED"
+      },
+      "event-compare": {
+        "elapsed_seconds": 11,
+        "exit_code": "0:0",
+        "job_id": "479298",
+        "state": "COMPLETED"
+      },
+      "event-completion-refresh": {
+        "elapsed_seconds": 49,
+        "exit_code": "0:0",
+        "job_id": "479299",
+        "state": "COMPLETED"
+      },
+      "event-fit-codellama34b": {
+        "elapsed_seconds": 128,
+        "exit_code": "0:0",
+        "job_id": "479297",
+        "state": "COMPLETED"
+      },
+      "event-fit-llama31_8b": {
+        "elapsed_seconds": 103,
+        "exit_code": "0:0",
+        "job_id": "479296",
+        "state": "COMPLETED"
+      },
+      "fit-codellama34b": {
+        "elapsed_seconds": 51,
+        "exit_code": "0:0",
+        "job_id": "479196",
+        "state": "COMPLETED"
+      },
+      "fit-llama31_8b": {
+        "elapsed_seconds": 57,
+        "exit_code": "0:0",
+        "job_id": "479195",
+        "state": "COMPLETED"
+      },
+      "joint-compare": {
+        "elapsed_seconds": 16,
+        "exit_code": "0:0",
+        "job_id": "479745",
+        "state": "COMPLETED"
+      },
+      "joint-completion-refresh": {
+        "elapsed_seconds": 55,
+        "exit_code": "0:0",
+        "job_id": "479746",
+        "state": "COMPLETED"
+      },
+      "joint-fit-codellama34b": {
+        "elapsed_seconds": 102,
+        "exit_code": "0:0",
+        "job_id": "479744",
+        "state": "COMPLETED"
+      },
+      "joint-fit-llama31_8b": {
+        "elapsed_seconds": 111,
+        "exit_code": "0:0",
+        "job_id": "479743",
+        "state": "COMPLETED"
+      },
+      "qualified-completion-refresh": {
+        "elapsed_seconds": 52,
+        "exit_code": "0:0",
+        "job_id": "479275",
+        "state": "COMPLETED"
+      },
+      "qualified-full-codellama34b": {
+        "elapsed_seconds": 2615,
+        "exit_code": "0:0",
+        "job_id": "479272",
+        "state": "COMPLETED"
+      },
+      "qualified-full-llama31_8b": {
+        "elapsed_seconds": 608,
+        "exit_code": "0:0",
+        "job_id": "479269",
+        "state": "COMPLETED"
+      },
+      "qualified-prepare-codellama34b": {
+        "elapsed_seconds": 93,
+        "exit_code": "0:0",
+        "job_id": "479270",
+        "state": "COMPLETED"
+      },
+      "qualified-prepare-llama31_8b": {
+        "elapsed_seconds": 91,
+        "exit_code": "0:0",
+        "job_id": "479267",
+        "state": "COMPLETED"
+      },
+      "qualified-smoke-codellama34b": {
+        "elapsed_seconds": 177,
+        "exit_code": "0:0",
+        "job_id": "479271",
+        "state": "COMPLETED"
+      },
+      "qualified-smoke-llama31_8b": {
+        "elapsed_seconds": 87,
+        "exit_code": "0:0",
+        "job_id": "479268",
+        "state": "COMPLETED"
+      },
+      "qualified-tokenizer-review": {
+        "elapsed_seconds": 3,
+        "exit_code": "0:0",
+        "job_id": "479274",
+        "state": "COMPLETED"
+      },
+      "representation-completion-refresh": {
+        "elapsed_seconds": 54,
+        "exit_code": "0:0",
+        "job_id": "479752",
+        "state": "COMPLETED"
+      },
+      "representation-fit": {
+        "elapsed_seconds": 81,
+        "exit_code": "0:0",
+        "job_id": "479751",
+        "state": "COMPLETED"
+      },
+      "stress-collect-codellama34b": {
+        "elapsed_seconds": 329,
+        "exit_code": "0:0",
+        "job_id": "479818",
+        "state": "COMPLETED"
+      },
+      "stress-collect-llama31_8b": {
+        "elapsed_seconds": 252,
+        "exit_code": "0:0",
+        "job_id": "479815",
+        "state": "COMPLETED"
+      },
+      "stress-compare": {
+        "elapsed_seconds": 17,
+        "exit_code": "0:0",
+        "job_id": "479856",
+        "state": "COMPLETED"
+      },
+      "stress-completion-refresh": {
+        "elapsed_seconds": 46,
+        "exit_code": "0:0",
+        "job_id": "479857",
+        "state": "COMPLETED"
+      },
+      "stress-fit-codellama34b": {
+        "elapsed_seconds": 129,
+        "exit_code": "0:0",
+        "job_id": "479855",
+        "state": "COMPLETED"
+      },
+      "stress-fit-llama31_8b": {
+        "elapsed_seconds": 144,
+        "exit_code": "0:0",
+        "job_id": "479854",
+        "state": "COMPLETED"
+      },
+      "stress-prepare-codellama34b-full": {
+        "elapsed_seconds": 91,
+        "exit_code": "0:0",
+        "job_id": "479812",
+        "state": "COMPLETED"
+      },
+      "stress-prepare-codellama34b-smoke": {
+        "elapsed_seconds": 84,
+        "exit_code": "0:0",
+        "job_id": "479813",
+        "state": "COMPLETED"
+      },
+      "stress-prepare-llama31_8b-full": {
+        "elapsed_seconds": 90,
+        "exit_code": "0:0",
+        "job_id": "479809",
+        "state": "COMPLETED"
+      },
+      "stress-prepare-llama31_8b-smoke": {
+        "elapsed_seconds": 86,
+        "exit_code": "0:0",
+        "job_id": "479811",
+        "state": "COMPLETED"
+      },
+      "stress-smoke-codellama34b": {
+        "elapsed_seconds": 275,
+        "exit_code": "0:0",
+        "job_id": "479817",
+        "state": "COMPLETED"
+      },
+      "stress-smoke-llama31_8b": {
+        "elapsed_seconds": 261,
+        "exit_code": "0:0",
+        "job_id": "479814",
+        "state": "COMPLETED"
+      }
+    },
+    "canceled_dependent_jobs": 1,
+    "corrected": {
+      "compare": "479856",
+      "completion-refresh": "479857",
+      "fit-codellama34b": "479855",
+      "fit-llama31_8b": "479854"
+    },
+    "failed_jobs": 1,
+    "initial": {
+      "collect-codellama34b": "479818",
+      "collect-llama31_8b": "479815",
+      "compare": "479820",
+      "completion-refresh": "479821",
+      "fit-codellama34b": "479819",
+      "fit-llama31_8b": "479816",
+      "prepare-codellama34b-full": "479812",
+      "prepare-codellama34b-smoke": "479813",
+      "prepare-llama31_8b-full": "479809",
+      "prepare-llama31_8b-smoke": "479811",
+      "smoke-codellama34b": "479817",
+      "smoke-llama31_8b": "479814"
+    },
+    "latest_active_stage_jobs": 12,
+    "successful_attempt_jobs": 14
+  },
+  "language_model_training_performed": false,
+  "limitation": "Adaptive discovery on the same 24 structural groups per checkpoint; partition seeds and responses are not independent replications. The fixed extra query changes instruction, length, stopping and execution profile, so it is not an isolated naming intervention. Its parsed answer identity is an allowed feature; original target responses/correctness and stress correctness remain excluded from features. Conditional bootstrap intervals omit fitting uncertainty and multiplicity adjustment. No unfamiliar-program confirmation, selective causal mechanism or natural-use claim is established.",
+  "local_date": "2026-10-27",
+  "mechanism_C_fitted": false,
+  "new_checkpoints_downloaded": false,
+  "numerical_correction": {
+    "all28_code_probabilities_reproduced": 516096,
+    "code_v1_v2_anchor_review": {
+      "path": "artifacts/binding/stress_prediction/code_numerical_anchor_review_v2.json",
+      "sha256": "134f050674d802aec58c055817593d910ec28b49030552471d383711b942ce99"
+    },
+    "failed_initial_llama_partial_fit_count": "not durably recorded; excluded from successful analysis count",
+    "failed_summary": {
+      "path": "artifacts/binding/stress_prediction/llama31_8b_v1/cv/summary.json",
+      "sha256": "ddc9e47478129b1835b8a3e202491fc2044f516bff9f4d2a8af321794e87c7da"
+    },
+    "generation_repeated_for_solver_correction": false,
+    "initial_completed_code_analysis_fits": 10206,
+    "initial_failed_job": "479816",
+    "new_stress_max_iterations": 1000,
+    "objective_normalization_initialization_and_backtracking_unchanged": true,
+    "parent_max_iterations": 100,
+    "qualification_numerical_fits": 4320,
+    "response_banks_or_feature_bytes_changed": false,
+    "review": {
+      "path": "artifacts/binding/stress_prediction/numerical_review_v2.json",
+      "sha256": "3aea9612c737b1c42972dae4edb97a1e65547c234eb6bc60972afc10f7e439ed"
+    },
+    "step_stopping_tolerance": 1e-08
+  },
+  "prediction": {
+    "anchor_review": {
+      "path": "artifacts/binding/stress_prediction/v2/anchor_figure_review_v1.json",
+      "sha256": "b944fa0bccfddf94e69ba9221232df166281c862ff8cd344fba46bffb7b8c183"
+    },
+    "comparison": {
+      "path": "artifacts/binding/stress_prediction/v2/comparison_v1.json",
+      "sha256": "b5495d035a2485309507e391529965539e5ce692952279ffb945691144150593"
+    },
+    "contrasts": 70,
+    "joint_alternative_intervals_including_zero": 10,
+    "joint_alternatives": [
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.010102257651478494,
+            0.0013701003988428751
+          ],
+          "mean": -0.0041471766483743835
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_input",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.031876957542000886,
+            -0.00018449556567015244
+          ],
+          "mean": -0.015480941062862075
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_input",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.005338164471905323,
+            0.0013869659595354877
+          ],
+          "mean": -0.001869459839015046
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.01649643073945018,
+            0.0021883444048271987
+          ],
+          "mean": -0.0068682118166034515
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.005959473993515867,
+            0.0002462995287230531
+          ],
+          "mean": -0.00277519255649325
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions_neutral_raw",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.01785136719914261,
+            -0.001304014827773213
+          ],
+          "mean": -0.009332063014849847
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0036955387728082535,
+            0.0014452696117710662
+          ],
+          "mean": -0.001063315027846228
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions_oracle_neutral_raw",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.009149404446120462,
+            0.005696625070891536
+          ],
+          "mean": -0.0018132453276030744
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions_oracle_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.003683178388588797,
+            0.0013633919583215675
+          ],
+          "mean": -0.0010984888966164789
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions_oracle_neutral_scored",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.007667943202382248,
+            0.006317543046687863
+          ],
+          "mean": -0.000518452509009947
+        },
+        "model": "codellama34b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions_oracle_neutral_scored",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0005692040817901093,
+            0.0007581892304927617
+          ],
+          "mean": 7.987117301995749e-05
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_input",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.0024094873160124307,
+            0.0017865583974922372
+          ],
+          "mean": -0.00030485964183702314
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_input",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0005720431666823073,
+            0.0006819256742345241
+          ],
+          "mean": 5.669107510612135e-05
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.00245863595005082,
+            0.001704382461609778
+          ],
+          "mean": -0.00032384559980720424
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0008826224795100077,
+            0.0006083152493356808
+          ],
+          "mean": -8.647472203618851e-05
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions_neutral_raw",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.0034563967905017322,
+            0.001305331523393658
+          ],
+          "mean": -0.0008909503951602675
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0007620491593522008,
+            0.0017834919629292026
+          ],
+          "mean": 0.0005942994024215732
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions_oracle_neutral_raw",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.0045455023530354905,
+            0.005085094689010532
+          ],
+          "mean": 0.00040965797409140987
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions_oracle_neutral_raw",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      },
+      {
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 117,
+        "brier_score": {
+          "exploratory_template_bootstrap_95": [
+            -0.0007653801493396554,
+            0.00186962889173238
+          ],
+          "mean": 0.0006054089237142747
+        },
+        "conditional_on_saved_oof_probabilities": true,
+        "left": "B_joint_interactions_oracle_neutral_scored",
+        "log_loss": {
+          "exploratory_template_bootstrap_95": [
+            -0.003689864119208165,
+            0.006202704507388512
+          ],
+          "mean": 0.0014090096754699611
+        },
+        "model": "llama31_8b",
+        "multiplicity_adjusted": false,
+        "n": 6144,
+        "positive_means": "right predictor improves on left",
+        "refits_per_bootstrap_draw": 0,
+        "resampling_unit": "template_id",
+        "right": "B_stress_interactions_oracle_neutral_scored",
+        "scope": "ensemble",
+        "seed": "mean_probability",
+        "templates": 24
+      }
+    ],
+    "maximum_absolute_probability_difference": 0.0,
+    "models": {
+      "codellama34b": {
+        "anchors": {
+          "fitted_parameters_and_inner_curves_identical": true,
+          "fitting_folds": 18,
+          "group_assignments_identical": true,
+          "maximum_absolute_probability_difference": 0.0,
+          "oof_rows": 18432,
+          "predictors": [
+            "prior",
+            "A_input",
+            "A_interactions",
+            "A_interactions_neutral_raw",
+            "A_interactions_neutral_scored",
+            "A_interactions_oracle",
+            "A_interactions_oracle_neutral_raw",
+            "A_interactions_oracle_neutral_scored",
+            "B_input_confidence",
+            "B_interactions_confidence",
+            "B_interactions_neutral_raw_confidence",
+            "B_interactions_oracle_neutral_raw_confidence",
+            "B_interactions_oracle_neutral_scored_confidence",
+            "B_event_input",
+            "B_event_interactions",
+            "B_event_interactions_neutral_raw",
+            "B_event_interactions_oracle_neutral_raw",
+            "B_event_interactions_oracle_neutral_scored",
+            "B_joint_input",
+            "B_joint_interactions",
+            "B_joint_interactions_neutral_raw",
+            "B_joint_interactions_oracle_neutral_raw",
+            "B_joint_interactions_oracle_neutral_scored"
+          ],
+          "probability_values_compared": 423936,
+          "status": "passed"
+        },
+        "feature_bytes_unchanged_from_initial_attempt": true,
+        "feature_table_sha256": "27e92216dc59492c5c4fec169e63b3c789b222a34340938863d2b2d82afda53a",
+        "groups": 24,
+        "n": 6144,
+        "primary_contrasts": [
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                0.0013982444197417638,
+                0.005083250855169513
+              ],
+              "mean": 0.0032334738025548964
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_input_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                0.006257548890190167,
+                0.01619289959259105
+              ],
+              "mean": 0.011267204741330928
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_input",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -0.000948096459695781,
+                0.0032242851184353214
+              ],
+              "mean": 0.0012727865968056964
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                0.0001179411069144529,
+                0.011041291458626616
+              ],
+              "mean": 0.005940537122785937
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -0.0016933895134983205,
+                0.001434864537264965
+              ],
+              "mean": -1.9879461628922544e-06
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_neutral_raw_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                -0.0018137515905973652,
+                0.0062292531152530264
+              ],
+              "mean": 0.0023224800692458556
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions_neutral_raw",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -0.0011415737670485268,
+                0.0024518317071754313
+              ],
+              "mean": 0.0008618260166497678
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_oracle_neutral_raw_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                -0.0009734561807424721,
+                0.008982312177936628
+              ],
+              "mean": 0.0043141490953303024
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions_oracle_neutral_raw",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -0.00034065093707339356,
+                0.0027604669704346515
+              ],
+              "mean": 0.0012746668271992848
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_oracle_neutral_scored_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                0.000771677295027571,
+                0.011439853447059589
+              ],
+              "mean": 0.006273519437365993
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions_oracle_neutral_scored",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          }
+        ],
+        "review": {
+          "path": "artifacts/binding/stress_prediction/codellama34b_v2/review_v1.json",
+          "sha256": "6facb2b0554d581b7907170abd9b03f008f392aa24a9a0ab4fab6bd89f2a3636"
+        }
+      },
+      "llama31_8b": {
+        "anchors": {
+          "fitted_parameters_and_inner_curves_identical": true,
+          "fitting_folds": 18,
+          "group_assignments_identical": true,
+          "maximum_absolute_probability_difference": 0.0,
+          "oof_rows": 18432,
+          "predictors": [
+            "prior",
+            "A_input",
+            "A_interactions",
+            "A_interactions_neutral_raw",
+            "A_interactions_neutral_scored",
+            "A_interactions_oracle",
+            "A_interactions_oracle_neutral_raw",
+            "A_interactions_oracle_neutral_scored",
+            "B_input_confidence",
+            "B_interactions_confidence",
+            "B_interactions_neutral_raw_confidence",
+            "B_interactions_oracle_neutral_raw_confidence",
+            "B_interactions_oracle_neutral_scored_confidence",
+            "B_event_input",
+            "B_event_interactions",
+            "B_event_interactions_neutral_raw",
+            "B_event_interactions_oracle_neutral_raw",
+            "B_event_interactions_oracle_neutral_scored",
+            "B_joint_input",
+            "B_joint_interactions",
+            "B_joint_interactions_neutral_raw",
+            "B_joint_interactions_oracle_neutral_raw",
+            "B_joint_interactions_oracle_neutral_scored"
+          ],
+          "probability_values_compared": 423936,
+          "status": "passed"
+        },
+        "feature_bytes_unchanged_from_initial_attempt": true,
+        "feature_table_sha256": "3e8c1f205d4fa0ed47a357ca902f6d6539b94f1a4e7e9c962ffd0eac20c8ecd0",
+        "groups": 24,
+        "n": 6144,
+        "primary_contrasts": [
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -0.0005382056523374898,
+                0.0003507349551153846
+              ],
+              "mean": -7.473493931232454e-05
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_input_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                -0.001159601870754762,
+                0.001554021547553307
+              ],
+              "mean": 0.0002238829745453844
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_input",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -0.0004477683685262687,
+                0.0003662852093422896
+              ],
+              "mean": -1.6319942887355965e-05
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                -0.0010061105062736918,
+                0.0016181228452162631
+              ],
+              "mean": 0.00033543835549999383
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -0.00106622918321774,
+                0.0005799129447606751
+              ],
+              "mean": -0.00011370756496028847
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_neutral_raw_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                -0.002949663670414004,
+                0.0017031018673366047
+              ],
+              "mean": -0.00039995779954167255
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions_neutral_raw",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                0.00014545345922404104,
+                0.002598810966483799
+              ],
+              "mean": 0.0014501139345542138
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_oracle_neutral_raw_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                -0.001523060638312377,
+                0.0063271845588429325
+              ],
+              "mean": 0.00274548791961633
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions_oracle_neutral_raw",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          },
+          {
+            "bootstrap_replicates": 2000,
+            "bootstrap_seed": 117,
+            "brier_score": {
+              "exploratory_template_bootstrap_95": [
+                -6.044157261727722e-05,
+                0.0025596509917511475
+              ],
+              "mean": 0.0013464427513946396
+            },
+            "conditional_on_saved_oof_probabilities": true,
+            "left": "B_interactions_oracle_neutral_scored_confidence",
+            "log_loss": {
+              "exploratory_template_bootstrap_95": [
+                -0.0011860824090849595,
+                0.007508662275744585
+              ],
+              "mean": 0.0034658335910934153
+            },
+            "multiplicity_adjusted": false,
+            "n": 6144,
+            "positive_means": "right predictor improves on left",
+            "refits_per_bootstrap_draw": 0,
+            "resampling_unit": "template_id",
+            "right": "B_stress_interactions_oracle_neutral_scored",
+            "scope": "ensemble",
+            "seed": "mean_probability",
+            "templates": 24
+          }
+        ],
+        "review": {
+          "path": "artifacts/binding/stress_prediction/llama31_8b_v2/review_v1.json",
+          "sha256": "4c9b48971a7112c2cf5e2da5ff5773c820ad52f1bb3decbc395cc1c5ecdd2b0c"
+        }
+      }
+    },
+    "new_stress_tier_fits": 3780,
+    "parent_probability_values_reproduced": 847872,
+    "parent_replay_fits": 16632,
+    "pipeline_review": {
+      "path": "artifacts/binding/stress_prediction/v2/pipeline_review_v1.json",
+      "sha256": "f8c3c5e6395254bffe4fc4cd3b6710b37bb02b945d9430830701f84df7536d4d"
+    },
+    "positive_primary_conditional_brier_intervals": {
+      "codellama34b": 1,
+      "llama31_8b": 1
+    },
+    "successful_corrected_analysis_logistic_fits": 20412,
+    "tiers": 28
+  },
+  "protocols": {
+    "corrected": {
+      "path": "artifacts/binding/stress_prediction/protocol_registration_v2.json",
+      "sha256": "2d9a4a012b5b952df56a461299dae558df871841b1c2c2bafefa6a9ed78d0bc4"
+    },
+    "initial": {
+      "path": "artifacts/binding/stress_prediction/protocol_registration_v1.json",
+      "sha256": "33d10e827f4bd83d46b15046a3cd0c6b0643bb64ee87a3001a1b76e91b4042a0"
+    }
+  },
+  "readiness": {
+    "config": {
+      "path": "configs/binding/preparation/readiness_v5.json",
+      "sha256": "196d711ab42c16ef472a5d7f2212fd64271291a4166cba1e0b30df269e98f671"
+    },
+    "counts": {
+      "deferred_optional": 3,
+      "needs_scientific_decision": 9,
+      "ready": 33
+    },
+    "review": {
+      "path": "artifacts/binding/preparation/readiness_review_v1.json",
+      "sha256": "4b5fac36a799df54924d91873d06592861cf07ac65c2a3b832a64c2928b2ece7"
+    },
+    "total_tasks": 45
+  },
+  "recorded_utc": "2026-10-27T19:19:56.680817+00:00",
+  "reports": [
+    "reports/binding/stress_comparator_findings.md",
+    "reports/binding/stress_prediction_decision_v2.md",
+    "reports/binding/stress_comparator_numerics_v2.md",
+    "reports/binding/preparation_readiness.md"
+  ],
+  "software_complete": true,
+  "sources": {
+    "collection": {
+      "code": "4606b83d8a8b2105ee6de59e0ee2136ce3a968214ecfa3c910959451f21fefd1",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/59c64c7080933e3623169f0b",
+      "snapshot_id": "59c64c7080933e3623169f0b"
+    },
+    "corrected_fitting": {
+      "code": "324add2c6809ef979c3b9c91e4624d1b3fc17c468b5aed677d953f787e943fac",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/9829b51560e1da6ff162bd31",
+      "snapshot_id": "9829b51560e1da6ff162bd31"
+    },
+    "release": {
+      "code": "324add2c6809ef979c3b9c91e4624d1b3fc17c468b5aed677d953f787e943fac",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/93823611a948e8cb39ddde1b",
+      "snapshot_id": "93823611a948e8cb39ddde1b"
+    }
+  },
+  "status": "complete_assignment_cue_comparator_v2",
+  "timezone": "America/Chicago",
+  "validation": {
+    "errors": 0,
+    "failures": 0,
+    "junit": {
+      "path": "artifacts/binding/stress_prediction/regression_v2.xml",
+      "sha256": "829a9b648152fbfbbfeeecddd08bb3f93e977b1a5f9f1a918b4688b3d98a48e8"
+    },
+    "skipped": 0,
+    "tests": 1024
+  }
+}

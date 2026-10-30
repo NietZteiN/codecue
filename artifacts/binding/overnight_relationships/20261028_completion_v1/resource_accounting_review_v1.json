@@ -1,0 +1,158 @@
+{
+  "evaluation_role": "discovery_overnight_relationship_resource_accounting_v1",
+  "generated_holdouts_opened": false,
+  "gpu_allocation_hours": 0.4575,
+  "gpu_allocation_seconds": 1647,
+  "gpu_workers": 4,
+  "jobs": {
+    "480511": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+      "allocation_seconds": 115,
+      "end_scheduler_local": "2026-10-27T22:42:20",
+      "exit_code": "0:0",
+      "partition": "dev",
+      "start_scheduler_local": "2026-10-27T22:40:25",
+      "state": "COMPLETED"
+    },
+    "480512": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=24G,node=1",
+      "allocation_seconds": 117,
+      "end_scheduler_local": "2026-10-27T22:42:38",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-27T22:40:41",
+      "state": "COMPLETED"
+    },
+    "480520": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_a30=1,gres/gpu=1,mem=48G,node=1",
+      "allocation_seconds": 485,
+      "end_scheduler_local": "2026-10-27T22:56:09",
+      "exit_code": "0:0",
+      "partition": "dev-a30",
+      "start_scheduler_local": "2026-10-27T22:48:04",
+      "state": "COMPLETED"
+    },
+    "480521": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h100_80gb_hbm3=1,gres/gpu=1,mem=96G,node=1",
+      "allocation_seconds": 481,
+      "end_scheduler_local": "2026-10-28T00:30:45",
+      "exit_code": "0:0",
+      "partition": "h100",
+      "start_scheduler_local": "2026-10-28T00:22:44",
+      "state": "COMPLETED"
+    },
+    "480535": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_a30=1,gres/gpu=1,mem=48G,node=1",
+      "allocation_seconds": 422,
+      "end_scheduler_local": "2026-10-27T23:05:38",
+      "exit_code": "0:0",
+      "partition": "dev-a30",
+      "start_scheduler_local": "2026-10-27T22:58:36",
+      "state": "COMPLETED"
+    },
+    "480634": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,gres/gpu:nvidia_h100_80gb_hbm3=1,gres/gpu=1,mem=96G,node=1",
+      "allocation_seconds": 259,
+      "end_scheduler_local": "2026-10-28T00:51:30",
+      "exit_code": "0:0",
+      "partition": "h100",
+      "start_scheduler_local": "2026-10-28T00:47:11",
+      "state": "COMPLETED"
+    },
+    "480650": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=32G,node=1",
+      "allocation_seconds": 33,
+      "end_scheduler_local": "2026-10-28T01:13:26",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T01:12:53",
+      "state": "COMPLETED"
+    },
+    "480651": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=32G,node=1",
+      "allocation_seconds": 41,
+      "end_scheduler_local": "2026-10-28T01:14:34",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T01:13:53",
+      "state": "COMPLETED"
+    },
+    "480682": {
+      "allocated_cpus": 16,
+      "allocated_tres": "billing=16,cpu=16,mem=64G,node=1",
+      "allocation_seconds": 264,
+      "end_scheduler_local": "2026-10-28T01:42:19",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T01:37:55",
+      "state": "COMPLETED"
+    },
+    "480683": {
+      "allocated_cpus": 16,
+      "allocated_tres": "billing=16,cpu=16,mem=64G,node=1",
+      "allocation_seconds": 340,
+      "end_scheduler_local": "2026-10-28T01:48:05",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T01:42:25",
+      "state": "COMPLETED"
+    },
+    "480684": {
+      "allocated_cpus": 16,
+      "allocated_tres": "billing=16,cpu=16,mem=64G,node=1",
+      "allocation_seconds": 353,
+      "end_scheduler_local": "2026-10-28T01:54:19",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T01:48:26",
+      "state": "COMPLETED"
+    },
+    "480685": {
+      "allocated_cpus": 16,
+      "allocated_tres": "billing=16,cpu=16,mem=64G,node=1",
+      "allocation_seconds": 352,
+      "end_scheduler_local": "2026-10-28T02:00:18",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T01:54:26",
+      "state": "COMPLETED"
+    },
+    "480732": {
+      "allocated_cpus": 16,
+      "allocated_tres": "billing=16,cpu=16,mem=64G,node=1",
+      "allocation_seconds": 402,
+      "end_scheduler_local": "2026-10-28T02:07:09",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T02:00:27",
+      "state": "COMPLETED"
+    },
+    "480745": {
+      "allocated_cpus": 16,
+      "allocated_tres": "billing=16,cpu=16,mem=64G,node=1",
+      "allocation_seconds": 586,
+      "end_scheduler_local": "2026-10-28T02:17:13",
+      "exit_code": "0:0",
+      "partition": "normal",
+      "start_scheduler_local": "2026-10-28T02:07:27",
+      "state": "COMPLETED"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "queue_time_included": false,
+  "scheduler_timestamp_zone": "America/Chicago",
+  "scope": "SLURM allocation time, including worker startup and IO; not CUDA kernel time or utilization.",
+  "status": "passed",
+  "supervisor_time_included": false,
+  "worker_allocated_cpu_seconds": 51448,
+  "workers": 14
+}

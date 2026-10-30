@@ -1,0 +1,29 @@
+{
+  "actual_gpu_utilization_percent": {
+    "codellama13b": 99.24233983286908,
+    "codellama34b": 99.51142857142857
+  },
+  "application_gpu_count_limit": null,
+  "completed_models": [
+    "codellama13b",
+    "codellama34b"
+  ],
+  "completed_predictions": 10076,
+  "cumulative_gpu_seconds_cap": null,
+  "generated_holdouts_opened": false,
+  "jobs": "artifacts/binding/capacity/jobs_v2.json",
+  "per_stage_compute_cap": null,
+  "planned_total_predictions": 20152,
+  "profiler_timeout": null,
+  "queued_models": [
+    "llama32_3b",
+    "llama31_8b"
+  ],
+  "recorded_utc": "2026-10-26T03:36:56.969633+00:00",
+  "regression_tests_passed": 181,
+  "report": "reports/binding/capacity_status.md",
+  "resource_policy": "artifacts/binding/resource_policy_20261025.json",
+  "source": "artifacts/binding/capacity/source_v2.json",
+  "status_config": "configs/binding/capacity/status_v2.json",
+  "usage_ledger": "artifacts/binding/gpu_usage_uncapped.json"
+}

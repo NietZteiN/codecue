@@ -1,0 +1,12 @@
+{
+  "reason": "H100 smoke remained pending for resources; documented cluster fallback to H200. Shared normal/h200 pool has one existing hold-node job, below its four-job cap. Same checkpoint and frozen inference; native replay checks numerical changes. GPU model names and any replay differences will be reported.",
+  "shared_jobs_at_submission": [
+    "476554|normal|RUNNING"
+  ],
+  "cancelled_h100_job": "476710",
+  "partition_candidates": [
+    "h100",
+    "h200"
+  ],
+  "scheduler_update": "Pending smoke made eligible for H100 or H200, excluding g-06-01; no duplicate job. Full run uses the same candidates."
+}

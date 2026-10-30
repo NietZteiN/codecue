@@ -1,0 +1,61 @@
+{
+  "cells": [
+    {
+      "correct": 1893,
+      "n": 3072,
+      "section": "arithmetic_composition_readout",
+      "task": "print_direct_v3",
+      "valid": 3072
+    },
+    {
+      "correct": 2573,
+      "n": 3072,
+      "section": "arithmetic_composition_readout",
+      "task": "print_trace_long_v1",
+      "valid": 3066
+    }
+  ],
+  "complete": true,
+  "evaluated": 6144,
+  "generated_holdouts_opened": false,
+  "interpretation": "Exploratory checkpoint feasibility/capacity comparison. No causal or confirmatory claim; historical gates unchanged.",
+  "planned": 6144,
+  "timings": [
+    {
+      "cases": 1024,
+      "generation_seconds": 0.7135116090066731,
+      "output_tokens": 3072,
+      "requests_per_second": 1435.1553458612655
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 0.7084942315705121,
+      "output_tokens": 3073,
+      "requests_per_second": 1445.3187540145661
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 0.6992561337538064,
+      "output_tokens": 3072,
+      "requests_per_second": 1464.4133252044226
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 8.49774352600798,
+      "output_tokens": 162312,
+      "requests_per_second": 120.50257775678583
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 9.544410604983568,
+      "output_tokens": 167122,
+      "requests_per_second": 107.28792404062366
+    },
+    {
+      "cases": 1024,
+      "generation_seconds": 9.004479917231947,
+      "output_tokens": 168755,
+      "requests_per_second": 113.72117095184618
+    }
+  ]
+}

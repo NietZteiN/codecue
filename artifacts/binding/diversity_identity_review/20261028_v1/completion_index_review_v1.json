@@ -1,0 +1,45 @@
+{
+  "all_executed_jobs_completed_zero": true,
+  "enabled": true,
+  "evaluation_role": "discovery_diversity_identity_completion_index_v1",
+  "healthy": true,
+  "independent_review": "passed",
+  "indexed_counts": {
+    "analysis": 311,
+    "dataset": 68,
+    "job": 428,
+    "run": 83
+  },
+  "indexed_events": 3412,
+  "interval_minutes": 10,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "pending_guards": 2,
+  "pins": [
+    {
+      "bytes": 4370,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/log_tick_completion_stdout_v1.txt",
+      "sha256": "35a0cb2d101660ca257b2ca15a59245cb79691d431c071dd3dd956eee195c6b8"
+    },
+    {
+      "bytes": 132678,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/independent_findings_review_v1.json",
+      "sha256": "31d0968e2efce34b5c805b3068c491631308104d66372a23669b13ce16f93ad8"
+    },
+    {
+      "bytes": 2634,
+      "path": "artifacts/binding/diversity_identity_review/20261028_v1/completion_followup_review_v1.json",
+      "sha256": "9be24ace17166a338dfdecdea0430e88ea30b1a45e008ac9910da65782090b63"
+    },
+    {
+      "bytes": 5804,
+      "path": "reports/binding/diversity_identity_review_decision_v1.md",
+      "sha256": "d9c3ee88c22525e936b118638842f4684232c36a4d1bbbbcd0fbbb9d5c4aef69"
+    }
+  ],
+  "reconciliation_issues": [],
+  "reconciliation_status": "ok",
+  "source_oracle_assisted": true,
+  "status": "passed"
+}

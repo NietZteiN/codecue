@@ -1,0 +1,48 @@
+{
+  "interpretation": "Compare whether the state-site decoder reads the immediately preceding current literal. This diagnostic does not establish missing or present internal binding information.",
+  "results": [
+    {
+      "current_accuracy": 0.9895833333333334,
+      "n": 192,
+      "saved_accuracy": 0.125,
+      "seed": 11,
+      "tail_placement": "before"
+    },
+    {
+      "current_accuracy": 0.057291666666666664,
+      "n": 192,
+      "saved_accuracy": 0.10416666666666667,
+      "seed": 11,
+      "tail_placement": "after"
+    },
+    {
+      "current_accuracy": 0.9947916666666666,
+      "n": 192,
+      "saved_accuracy": 0.15104166666666666,
+      "seed": 29,
+      "tail_placement": "before"
+    },
+    {
+      "current_accuracy": 0.078125,
+      "n": 192,
+      "saved_accuracy": 0.08333333333333333,
+      "seed": 29,
+      "tail_placement": "after"
+    },
+    {
+      "current_accuracy": 0.9947916666666666,
+      "n": 192,
+      "saved_accuracy": 0.10416666666666667,
+      "seed": 47,
+      "tail_placement": "before"
+    },
+    {
+      "current_accuracy": 0.0625,
+      "n": 192,
+      "saved_accuracy": 0.08854166666666667,
+      "seed": 47,
+      "tail_placement": "after"
+    }
+  ],
+  "role": "posthoc_descriptive_measurement_diagnostic"
+}

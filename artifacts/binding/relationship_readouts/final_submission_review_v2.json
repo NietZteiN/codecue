@@ -1,0 +1,104 @@
+{
+  "activation_arrays_opened": false,
+  "capture_source": {
+    "code": "d2be0722be3e3cf59ccac90cc2a10f37554e634fb7f473c485975ef0aa94c997",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/334d7261c7adb7a6a7467f89",
+    "snapshot_id": "334d7261c7adb7a6a7467f89"
+  },
+  "checks": {
+    "capture_source_unchanged": true,
+    "corrected_plan_protocol_pins_verified": true,
+    "frozen_source_and_config_identity_verified": true,
+    "handoff_static_pins_verified": 33,
+    "queued_execution_distinguished_from_completed_preparation": true,
+    "scheduler_script_dependency_and_frozen_source_wiring_verified": true,
+    "software_oracle_controls_excluded_from_model_results": true
+  },
+  "completed": {
+    "generated_responses": 0,
+    "learned_results_available": false,
+    "model_prefill_cases": 0,
+    "native_tokenizer_preflight_cases": 1944,
+    "readout_factorizations": 0,
+    "regression": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 1486
+    },
+    "saved_parameter_case_replays": 0
+  },
+  "corrected_pipeline_source": {
+    "code": "172debf945fcccc46439a983dd6fa1bb3aee8fcf74736b04ed95fdc09e248353",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/b8af84de97657b011d24cbc8",
+    "snapshot_id": "b8af84de97657b011d24cbc8"
+  },
+  "evaluation_role": "discovery_relationship_final_submission_review_v2",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "job_ids": {
+    "capture": "480208",
+    "capture-audit": "480209",
+    "capture-prepare": "480205",
+    "completion-refresh": "480259",
+    "readouts": "480258"
+  },
+  "models_or_tokenizers_loaded": false,
+  "new_model_queries": 0,
+  "pins": {
+    "handoff": {
+      "path": "artifacts/binding/relationship_readouts/handoff_review_v2.json",
+      "sha256": "3634c9480878d5d19767bbd779bec43ed654bdbeab6a56d4e89640d6949c1552"
+    },
+    "pipeline_config": {
+      "path": "configs/binding/relationships/readouts_pipeline_v2.json",
+      "sha256": "e4c1987a01665173684d5dae8ec86f0e0f7f5a18384716021154be7d0f70c378"
+    },
+    "readiness_config": {
+      "path": "configs/binding/preparation/readiness_v10.json",
+      "sha256": "e09ced094e357c08bcadf3d9410cb4feb9b1a5e05fd2eb21de38409380e79d53"
+    },
+    "status_report": {
+      "path": "reports/binding/relationship_readout_status_v2.md",
+      "sha256": "5d5ea0c78a1929a4af129828deacc8374f371acfa3139233122efebbb28571f5"
+    }
+  },
+  "planned": {
+    "capture_layers": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "capture_sites": 9,
+    "fitted_sites": [
+      3,
+      7,
+      8
+    ],
+    "generated_responses": 0,
+    "model_prefill_cases": 1944,
+    "readout_factorizations": 45,
+    "saved_parameter_case_replays": 87480
+  },
+  "protocol_sha256": "12989784dfebc4f96264697f546a39b0c3bd45c970f4e1c87823b4244361510a",
+  "readiness_at_submission": {
+    "deferred_optional": 3,
+    "needs_execution": 1,
+    "needs_scientific_decision": 9,
+    "ready": 37
+  },
+  "readout_fits_performed": 0,
+  "recorded_utc": "2026-10-27T23:27:43.167729+00:00",
+  "scheduler_mutations": 0,
+  "scheduler_read_only_observation": {
+    "480205": "COMPLETED 0:0; elapsed145s",
+    "480208": "PENDING QOSMaxJobsPerUserLimit",
+    "480209": "PENDING afterok:480208",
+    "480238": "CANCELLED; elapsed0s; never started",
+    "480239": "CANCELLED; elapsed0s; never started",
+    "480258": "PENDING afterok:480209",
+    "480259": "PENDING afterany:480258"
+  },
+  "status": "passed_queued_submission"
+}

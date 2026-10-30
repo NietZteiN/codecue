@@ -1,0 +1,45 @@
+{
+  "bootstrap": {
+    "minimum_structural_components": 8,
+    "replicates": 2000,
+    "seed": 2026102602
+  },
+  "dataset": "artifacts/binding/competition/discovery_v2.jsonl",
+  "dataset_sha256": "baf0a1c52fff0160e7b195525be4e9083869d81d26c6e1a66e45d802c6beb0d5",
+  "final_model_outcomes_opened": false,
+  "interpretation": "Discovery only, one validated readout and two lexical realizations. Counterfactual-consistent errors are not causes. Available bindings include irrelevant competitors, not live output load.",
+  "matching": [
+    "final state",
+    "literal exposure",
+    "statement count",
+    "prompt token length for naming/version/tail"
+  ],
+  "models": {
+    "codellama34b": {
+      "config": "configs/binding/competition/codellama34b_v1.json",
+      "sha256": "4b658f85b0fd46c4579f6405a02fdd57adbd5f3699e5688fb71b95f7a320adb0"
+    },
+    "llama31_8b": {
+      "config": "configs/binding/competition/llama31_8b_v1.json",
+      "sha256": "3b542835908d782ca23f99a409312e2ab5c64c621c744a3804eb13039e1e5b36"
+    }
+  },
+  "prerequisites": {
+    "path": "artifacts/binding/capacity/comparison_v2.json",
+    "scope": "literal/copy binding only",
+    "selected_protocol": "print_direct_v3",
+    "sha256": "99920979e6e94cb88ad291bf475fa411e92a5b2a1caef2206a3a488d73142d83"
+  },
+  "primary_contrasts": [
+    "three_minus_one_updates",
+    "tail_after_minus_before",
+    "misleading_minus_informative"
+  ],
+  "primary_mechanistic_candidate": "llama31_8b if a subsequent assay passes; smaller checkpoint reduces capture/intervention cost",
+  "query_roles": [
+    "current",
+    "saved"
+  ],
+  "role": "exploratory_discovery",
+  "structure_cluster": "template_id after alpha-skeleton connected-component grouping"
+}

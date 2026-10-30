@@ -1,0 +1,14 @@
+{
+  "application_gpu_accounting_uncapped": true,
+  "eligible_partitions": "dev,normal",
+  "job_id": "481457",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_partition": "dev",
+  "reason": "Current34Breadoutusesseparatesingledevlane;allowpendingQA tofillavailablenormalCPUcapacity nowbothGPUcapturesarecomplete. SamejobID,source,8CPUs16G2h,dependenciesandworkload preserved.",
+  "recorded_utc": "2026-10-28T20:10:34.450070+00:00",
+  "scheduler_record": "JobId=481457 JobName=diversity-identity-regression UserId=jvl210002(736106) GroupId=sn(215) MCS_label=N/A Priority=28571 Nice=0 Account=tnguyen QOS=normal JobState=PENDING Reason=QOSMaxJobsPerUserLimit Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-28T15:09:27 EligibleTime=2026-10-28T15:09:27 AccrueTime=2026-10-28T15:09:27 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-28T15:10:34 Scheduler=Main Partition=dev,normal AllocNode:Sid=c-06-04:3745529 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=16G,node=1,billing=8 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=8 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/work/jvl210002/migration/codecue/log/slurm/submit_20261028T200927281146Z_diversity-identity-regression.sbatch SubmitLine=sbatch --parsable /work/jvl210002/migration/codecue/log/slurm/submit_20261028T200927281146Z_diversity-identity-regression.sbatch WorkDir=/work/jvl210002/migration/codecue StdErr=/work/jvl210002/migration/codecue/log/slurm/481457_diversity-identity-regression.out StdIn=/dev/null StdOut=/work/jvl210002/migration/codecue/log/slurm/481457_diversity-identity-regression.out KillOnInvalidDependent=Yes TresPerTask=cpu=8\n",
+  "scientific_cohort_or_precision_modified": false,
+  "status": "updated",
+  "unrelated_jobs_cancelled": 0
+}

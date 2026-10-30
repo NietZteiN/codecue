@@ -1,0 +1,43 @@
+{
+  "alpha": 0.05,
+  "comparison": "artifacts/binding/discovery_controls/comparison_v1.json",
+  "comparison_sha256": "fc33d31f8b05f108e223919ad44a5ce005b109030490db1a49defc5a72d0869c",
+  "component_counts": [
+    24,
+    48,
+    72,
+    96,
+    144,
+    240
+  ],
+  "contrasts": [
+    {
+      "left": "A_interactions",
+      "right": "A_interactions_neutral_raw"
+    },
+    {
+      "left": "A_interactions_oracle_neutral_raw",
+      "right": "A_interactions_oracle_neutral_scored"
+    }
+  ],
+  "csv": "artifacts/binding/preparation/precision_v1/scenarios.csv",
+  "draws": 2000,
+  "effect_scenarios": [
+    0,
+    0.001,
+    0.0025,
+    0.005,
+    0.01
+  ],
+  "metrics": [
+    "brier_score",
+    "log_loss"
+  ],
+  "output_dir": "artifacts/binding/preparation/precision_v1",
+  "report": "reports/binding/precision_planning_v1.md",
+  "review_artifact": "artifacts/binding/preparation/precision_v1/planning_review.json",
+  "seed": 117,
+  "source_config": "configs/binding/discovery_controls/comparison_v1.json",
+  "source_config_sha256": "747eea2a53df01219e7828d1a0f8bf0c8159926b613ff02279256546e5d21e88",
+  "stratify": true
+}

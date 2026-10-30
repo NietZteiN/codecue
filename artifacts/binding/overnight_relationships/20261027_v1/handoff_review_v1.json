@@ -1,0 +1,281 @@
+{
+  "automatic_resume": "Transient scheduler interruptions only; failed scientific guards and user cancellations stop the affected branch.",
+  "controller_begin_advanced_after_validation": "480516",
+  "controllers_at_launch": [
+    "480510",
+    "480516",
+    "480519"
+  ],
+  "created_utc": "2026-10-28T03:50:32.795667+00:00",
+  "evaluation_role": "discovery_overnight_relationship_launch_handoff_v1",
+  "generated_holdouts_opened": false,
+  "generation_source": {
+    "code": "1f3ea1c10e8cf6b1b6519d58011afb0ce8ef2b4a866edbe6428a4bd5f7a69a2d",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/b49393f1768a23fad5898141",
+    "snapshot_id": "b49393f1768a23fad5898141"
+  },
+  "handoff_model_queries": 0,
+  "initial_capture_jobs": {
+    "codellama34b": "480521",
+    "llama8b": "480520"
+  },
+  "initial_preparation_jobs": {
+    "codellama34b": "480512",
+    "llama8b": "480511"
+  },
+  "interpretation": "Adaptive discovery on reused 81 graphs/27 components. Three numeric seeds and weighting seeds are not independent topology replication. Root formats also differ in tokens/positions/operations; general causal owner/version claims remain open.",
+  "live_job_map": "artifacts/binding/overnight_relationships/20261027_v1/suite/jobs_live_v1.json",
+  "live_status": "reports/binding/overnight_20261027_status.md",
+  "morning_at": "2026-10-28T08:00:00-05:00",
+  "morning_review": "artifacts/binding/overnight_relationships/20261027_v1/suite/morning_review_v1.json",
+  "mutable_paths_not_pinned": [
+    "reports/binding/overnight_20261027_status.md",
+    "artifacts/binding/overnight_relationships/20261027_v1/suite/jobs_live_v1.json",
+    "artifacts/binding/overnight_relationships/20261027_v1/suite/status_review_v1.json",
+    "reports/binding/experiment_log.md",
+    "README.md",
+    "reports/binding/implementation_checklist.md"
+  ],
+  "pins": [
+    {
+      "bytes": 614,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_behavior.json",
+      "sha256": "2f18c720448baee72049a54ccf15b9b776ecd27fbdd97e5a0647442b10225e88"
+    },
+    {
+      "bytes": 677,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_capture.json",
+      "sha256": "f84ecf06552a6cb574843a7b9bb185207a3b961f2622813cbc8d3dafd94ac059"
+    },
+    {
+      "bytes": 848,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_computed_roots.json",
+      "sha256": "6cae071948486cb774fd4a0fda936a8290ef73666d682d4758bd9ad8aabb3a01"
+    },
+    {
+      "bytes": 671,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_numeric_replication.json",
+      "sha256": "156f97c3643f9b12cfb91adbf9b8571e00c4f102a41873d8e1eb6419c5ce7b28"
+    },
+    {
+      "bytes": 647,
+      "path": "configs/binding/overnight_20261027_v1/codellama34b_query_twins.json",
+      "sha256": "81ff1dc153c75de4128a75c137ad69057df114d9faa1c04d00991f9e09c23dc6"
+    },
+    {
+      "bytes": 375,
+      "path": "configs/binding/overnight_20261027_v1/dataset.json",
+      "sha256": "d29cbf940bd1687ef07b869a10b8ccb8bff1e86b3f1e4d0c820aa67b5d76d9b7"
+    },
+    {
+      "bytes": 599,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_behavior.json",
+      "sha256": "0b5d02d01e878767fe250dae79b29141b16d2c97f84dde425abd32468b7fb7c8"
+    },
+    {
+      "bytes": 669,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_capture.json",
+      "sha256": "bbb5e3b2817e37314b6f1b62fe072fb008038e0323f011dee0dba5e6bc133145"
+    },
+    {
+      "bytes": 828,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_computed_roots.json",
+      "sha256": "67decb4ce5b962b511cfbd643ffb5edd1b0997ae3ce720afb1248712a4a3b766"
+    },
+    {
+      "bytes": 656,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_numeric_replication.json",
+      "sha256": "160a86d954c7f4ad3dbc503f339eef082f43b6000de4ced6f67d1733b7302092"
+    },
+    {
+      "bytes": 632,
+      "path": "configs/binding/overnight_20261027_v1/llama8b_query_twins.json",
+      "sha256": "bbaa0a0b39ac42c05d6292a8c079bafa4be1e042d31c8df4b1486b07ecb5c2ac"
+    },
+    {
+      "bytes": 10829,
+      "path": "configs/binding/overnight_20261027_v1/suite.json",
+      "sha256": "8ef04e572586317000d466c72688389714251c34dce800e3f48c0365c16b1f23"
+    },
+    {
+      "bytes": 6822,
+      "path": "reports/binding/overnight_20261027_plan_v1.md",
+      "sha256": "689fd43b88d97bc4b278538771928d4f1f1448456efe7cb5027415fb8bc1bd2e"
+    },
+    {
+      "bytes": 1811,
+      "path": "reports/binding/overnight_20261027_sources.md",
+      "sha256": "fa4b81a8fce8c8c30cd67ff626e8e97331901f88523e44779f8c0d3cb1b274ad"
+    },
+    {
+      "bytes": 75424012,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/union.jsonl",
+      "sha256": "75eeef184fd0513acb2d28f269574d38db4b09dee35b555abe5f4e93582345c3"
+    },
+    {
+      "bytes": 700701,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/union.manifest.json",
+      "sha256": "600f942cdfdaff36f3ab8bbc4c4901f5f1029abbd35b6f5cc4550711fdd482d2"
+    },
+    {
+      "bytes": 702835,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/source_review_v1.json",
+      "sha256": "c6d97ca30a34960dab6f339d795b9c5f9f669fb8814bdb7756e74907c62afa5f"
+    },
+    {
+      "bytes": 35385,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/overnight_target_review_v1.json",
+      "sha256": "5baba16b6813aba7edefdd10d3835dae5e2ec9d8a50238fbd65651b9baaaf00c"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/generation_source_v1.json",
+      "sha256": "6d04cad1c65e762c14fda21c71df01a362aadedc55816875d7e5bd2a5e3d0b24"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/execution_source_v1.json",
+      "sha256": "0b295e135253a2619fd8c28681d602af2d25f8976b75c33c1d945185a51017d6"
+    },
+    {
+      "bytes": 1915,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/launch_preflight_review_v1.json",
+      "sha256": "e8813abb3b222ade98831aabf43bfd3b411514689c573b51f433a996486c3182"
+    },
+    {
+      "bytes": 554,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/software_validation_review_v1.json",
+      "sha256": "72ec99a183847eaf1f65e39b30941a0bb446c923e9ba22b10d53ee1b39d23064"
+    },
+    {
+      "bytes": 266446,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/regression_v1.xml",
+      "sha256": "5a02dfba895ba2a8f71007ea069ed702baca36b8c4b7b156d2290a2227345da3"
+    },
+    {
+      "bytes": 2033,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/regression_stdout_v1.txt",
+      "sha256": "c8b0996019b10e24680d6c9f9f112f3aacdb0f146fa42e1c55eca839dfebcc79"
+    },
+    {
+      "bytes": 337,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/logging_review_v1.json",
+      "sha256": "21a219795a63b7344e3f486e6485d1d6321ecd7eec53e06c41d9873bb35c7223"
+    },
+    {
+      "bytes": 3237,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/jobs_at_launch_v1.json",
+      "sha256": "e418cee80619d60a1a058a5a4554c8a69ceaac6c73ab5d64cbef06424db20d1b"
+    },
+    {
+      "bytes": 3593,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/status_at_launch_v1.json",
+      "sha256": "86b169b7d3d2d3149a64be00b43a6d101308a87d990ad3fc82872b1d76467ff1"
+    },
+    {
+      "bytes": 49589,
+      "path": "artifacts/binding/sources/5cf1471e56f5b3de779c8fbe/frozen_manifest.json",
+      "sha256": "63d53f8de85be2e4f50d8a98bc6c5b9483f6140d2ca97a198b35909f365f688a"
+    },
+    {
+      "bytes": 48052,
+      "path": "artifacts/binding/sources/b49393f1768a23fad5898141/frozen_manifest.json",
+      "sha256": "fde34db03d5fc11dd73de354bbf51420ca0a269038c8a4008f9d5f27c05c04cd"
+    },
+    {
+      "bytes": 2814,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/capture/registration.json",
+      "sha256": "3c3101064faefcb7a80641b2e3ac59b7c19b2b84900d218de025ba8578ba3e47"
+    },
+    {
+      "bytes": 3130,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/llama8b/capture/preflight.json",
+      "sha256": "d3d87e33eb8284bb874dbb0d1aafedbd405efc2e0ace0117346ae0d3cc8da0ca"
+    },
+    {
+      "bytes": 2850,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/registration.json",
+      "sha256": "c407cb93aef7b3c358954c4463ac12fced3541759a8633b039ce5a1f7d8a9a94"
+    },
+    {
+      "bytes": 3185,
+      "path": "artifacts/binding/overnight_relationships/20261027_v1/codellama34b/capture/preflight.json",
+      "sha256": "486423aa8dc791557d761041f5627a1794d660227fedfb85e5d9848fca27fe86"
+    }
+  ],
+  "planned": {
+    "capture_case_prefills": 32076,
+    "checkpoints": 2,
+    "exact_parameter_replay_rows": 1574640,
+    "generated_responses": 14580,
+    "literal_to_computed_parameter_applications": 524880,
+    "panels_per_model": 3,
+    "rows_per_panel": 5832,
+    "total_scientific_case_prefills": 46656,
+    "unique_programs": 16038,
+    "weighted_ridge_factorizations": 270
+  },
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 1733
+  },
+  "source": {
+    "code": "acb67fad8bd960496c3d7163de924f0540ad37bf126010735417928617c5013d",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5cf1471e56f5b3de779c8fbe",
+    "snapshot_id": "5cf1471e56f5b3de779c8fbe"
+  },
+  "stages_at_launch": {
+    "codellama34b_audit": {
+      "state": "planned"
+    },
+    "codellama34b_behavior": {
+      "state": "planned"
+    },
+    "codellama34b_capture": {
+      "job_id": "480521",
+      "reason": "QOSMaxJobsPerUserLimit",
+      "state": "pending"
+    },
+    "codellama34b_computed_roots": {
+      "state": "planned"
+    },
+    "codellama34b_numeric_replication": {
+      "state": "planned"
+    },
+    "codellama34b_prepare": {
+      "job_id": "480512",
+      "state": "complete"
+    },
+    "codellama34b_query_twins": {
+      "state": "planned"
+    },
+    "llama8b_audit": {
+      "state": "planned"
+    },
+    "llama8b_behavior": {
+      "state": "planned"
+    },
+    "llama8b_capture": {
+      "job_id": "480520",
+      "reason": "None",
+      "state": "running"
+    },
+    "llama8b_computed_roots": {
+      "state": "planned"
+    },
+    "llama8b_numeric_replication": {
+      "state": "planned"
+    },
+    "llama8b_prepare": {
+      "job_id": "480511",
+      "state": "complete"
+    },
+    "llama8b_query_twins": {
+      "state": "planned"
+    }
+  },
+  "status": "launched_exploratory",
+  "unrelated_jobs_canceled": false
+}

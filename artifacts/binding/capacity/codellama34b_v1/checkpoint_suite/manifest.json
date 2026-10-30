@@ -1,0 +1,400 @@
+{
+  "artifact_dir": "/work/jvl210002/migration/codecue/artifacts/binding/capacity/codellama34b_v1/checkpoint_suite",
+  "attempts": [
+    {
+      "host": "g-07-07",
+      "slurm_job_id": "476872",
+      "started_utc": "2026-10-26T03:27:37.588746+00:00",
+      "status": "complete",
+      "wall_seconds": 487.18017352884635
+    }
+  ],
+  "budget_lease": null,
+  "budget_seconds_available": 6600,
+  "evaluated": 5038,
+  "finished_utc": "2026-10-26T03:35:44.828140+00:00",
+  "host": "g-07-07",
+  "identity": {
+    "code": {
+      "git_revision": "39c9e6600feb14a45d473395a5efc848ac37c47f",
+      "source_files": {
+        "scripts/100_binding_serialization_dispatch.py": "eb240bbe72459f16e2cb4ec873af99f7bb93f1feca45abb24cb29c7cbeb27584",
+        "scripts/101_binding_experiment_status.py": "44e5ff8c411a060f35dd7c99b80ec91d54a1a371a1acb6b52c13d05dbbe22457",
+        "scripts/102_binding_throughput.py": "9a825c92f5087c3f3d14343d6feb9692fe1215f7c6c0a5715d96c7259752e733",
+        "scripts/103_binding_throughput_audit.py": "0f720957b63d92fa2212e75ac56446b16e63a4a3d68cb450b2e47c648df326c5",
+        "scripts/104_binding_checkpoint_suite.py": "8e813d81624a7b593a73dfcbfdb76292611792ad9e9ecc5ec9ef860fbd8ebc8d",
+        "scripts/87_binding_preflight.py": "a40b6c151ea345bc67a0001993d2566af67a96a1370852fd90095c518d88171e",
+        "scripts/88_binding_pipeline.py": "1df592eeddb0cb0023c6bdffd232b0531025ff564650e3aeaec69861f47b5901",
+        "scripts/89_binding_design_audit.py": "3f85ce9ce6e848117b00dbcf5a683699b286ccf98a96481d1b5be9bc88a38787",
+        "scripts/90_binding_vocab_check.py": "efd3df6ae6a6f898f94005e76538b5e1543be56dcc42a9b4d42db55bc666e20a",
+        "scripts/91_binding_frozen_run.py": "bd133b0f37338d6c6ff84562dab60825752b17b8d6a62f4e7845fa36217402f9",
+        "scripts/92_binding_progress_report.py": "129169011b1f41cd2d848e1062c95e7a13b050f642122e65e98f561a3f9f3891",
+        "scripts/93_binding_calibration_pipeline.py": "f69200a2697f74560cc6b6bd5b4bdf9063f606f3d64470d9dfe77c9f456df868",
+        "scripts/94_binding_probe_regularization.py": "e0cf3ced607cdd8ea4146ffdc8a9d2bf880505553f88e7e804ce8df2fce1e0ed",
+        "scripts/95_binding_difficulty_ladder.py": "33c9751bfa5ef06349b5e0237874c4e9dbc18f6f70328f62bd48eeb4ccf2b35a",
+        "scripts/96_binding_program.py": "81db24a50b380fe2b8075dd88a0f2a8daf80185801e8ec7bba9af012f3e4ba53",
+        "scripts/97_binding_published_benchmarks.py": "1ca9860f39c0900910ec95dcefed767de7e64ebadbcff34fb09604ae39d2623f",
+        "scripts/98_binding_published_review.py": "7035d765fad92aaa0659d73426e24c7cf7916408230811fa1ec61b32e26ea049",
+        "scripts/99_binding_serialization.py": "578ccb6238761d956a2976b12090a888a70eb1ad00d5732d128b255834b93f79",
+        "scripts/env.sh": "86e2295b918282f91c3966e39348442dc8c5bf8931792ee2348bd64c5655ac3f",
+        "scripts/slurm/stamp.py": "73c0da322c7e95e113c9c677e846edfef3ec398a8695ad1d61e6d1a12463e054",
+        "scripts/slurm/submit.py": "a4818a7cd08515912199fa443701e3a61e2442db3c0ba253321eeac3cf680c40",
+        "src/codecue/__init__.py": "74db69d1fc22dd62cedbdca06ab7591136d94214770978df425cc6332099a105",
+        "src/codecue/binding/__init__.py": "e8f5e6a1b024e4d538dceeb0c817e5c79f092cf531c177e38e1b951201edddbe",
+        "src/codecue/binding/__main__.py": "8304c724489bbf6607ff1e464a59e4996019b7177d13223bb9348431e8f1edd7",
+        "src/codecue/binding/activations.py": "fc4332a713e62e520e29c4b1d14c7ae8cacad7301d8e365101a8cd7cee5c16f8",
+        "src/codecue/binding/analysis.py": "11db4b7dd47978b5ef56dcb7b1412ca123b8fc8d1ee0053cdd5949ba63eb2c44",
+        "src/codecue/binding/backend_comparison.py": "8838edf7f5971dc513aa2c105bb3bdbfef9d7d4faf93f92bc71d8f88b73fe4e8",
+        "src/codecue/binding/behavior.py": "a9fd155f459724eb7383207a93f97b482eeeee38058e17b491e45999f6a29bde",
+        "src/codecue/binding/budget.py": "b95255bd56eb8661e87511205df455b5e852937b903348805eb9ebd44a9caa3f",
+        "src/codecue/binding/calibration.py": "661c96e6c8bc152906c6aee229368f5164e117e07775993108235fe0a28de309",
+        "src/codecue/binding/checkpoint_audit.py": "7ea16d9685c2ce88fb8453e9500115dc5e0d8715d6f667047e5367973df39f9c",
+        "src/codecue/binding/checkpoint_suite.py": "0b2652d9742865dcccba4bfabd90d1de4db9f54f0947e99047204f804a51692b",
+        "src/codecue/binding/datasets.py": "e0558070376d04418c57504e69a9ddc3e7af30f172290c4cc0c4f1530ca8f506",
+        "src/codecue/binding/diagnostic_null.py": "d3f3e5294f9c4b8aa89033f95702924a6edb1ffadf363b475781ef903618cef2",
+        "src/codecue/binding/diagnostic_review.py": "cee695ee96f215e15fbb7a50639d1e86282f1b01f121b77914660694258f2a0a",
+        "src/codecue/binding/diagnostics.py": "c3eda1dcf681a7f542af055906c662a6a2a7d8eeb34b4345974029a0e6acc60b",
+        "src/codecue/binding/experiment_status.py": "972eff691a5acf18738b104ec34c577108e70b42bb8a5850cb50230b43b40895",
+        "src/codecue/binding/forecasting.py": "0a5a7386ef40c8a2b96174b943236b3612f30968c0dff74acad088b62607376a",
+        "src/codecue/binding/generation_reference.py": "62a06dd302d96508ee6a06f45ae79c5b73cc57d35f5ae13e0b97d9e3b52c7ad4",
+        "src/codecue/binding/gpu_telemetry.py": "8e3d0d4aeb3a8a3d62421386a9f537039be62129180f3e2a7ebaf4fbf7b63364",
+        "src/codecue/binding/heldout.py": "33b2cebf6fa9e039be6aa11b832de799d57d57f347dceea2b9a3ccd1a30bb303",
+        "src/codecue/binding/interpreter.py": "64bf9821eda3a9069089550ddf9d4e0b973de3270f39d9ef3555df76fa407166",
+        "src/codecue/binding/interventions.py": "5b67eeb7827541f6270eaaf4bc16c355dadf2f47a74fdee25ae61ff22ef7e9d6",
+        "src/codecue/binding/ladder.py": "2f2b5cbe87430f611398480d1bab72f3d0ba8bbbdd973fa0b52dfae2612d9533",
+        "src/codecue/binding/model_adapter.py": "d9ce0345b98c2cf2c1ab51ae76f1dd47b594da8cedcd2321e0974285d2bf2ce5",
+        "src/codecue/binding/probes.py": "c93249a483df7ad53fb3b68635e7fd2ed810a88a55c3e7e07d25aef1221954a1",
+        "src/codecue/binding/profiling.py": "664ba309445b7ac6ecb18105607c9b1e9c671542d8f8316e902695e383603556",
+        "src/codecue/binding/program_diagnostics.py": "fd309730c820002cd42dad1e7aac283fd569f2b075948d1c3ec08096d9c08a31",
+        "src/codecue/binding/programs.py": "16e74f772c7cd89bc6c9e69d62f095f230cd2533007ff07dfb2a42bcf6596329",
+        "src/codecue/binding/published_benchmarks.py": "ba0309097200c07a73cc1fd4ac9ce4635cf9028d3332b34e90898b2324cd0e69",
+        "src/codecue/binding/published_review.py": "58e102ad5e03f1b98f8ec2a1cc6cc24148e8884627c438f29bafb1eaacdc18b6",
+        "src/codecue/binding/readouts.py": "413c9df1297f968b23db62e05412b2bf69408445aefdf617e7bc3c70fe79920c",
+        "src/codecue/binding/registry.py": "01261f05fd0973822508d04e920dfdfce87ef4cc76f06182488389178074ab2d",
+        "src/codecue/binding/research_program.py": "1c92f2b699ec2d105c8fa299c6880bf8c51d999336c22cd6fa422769b4736e2b",
+        "src/codecue/binding/serialization_comparison.py": "3959e4f26bfc44c9e9e0c1497975c8ebc9df9f05c563119b5fe98e2fd31f163f",
+        "src/codecue/binding/snapshots.py": "1d9c4b49b89ffd2398353f708e2eb00e0d563a3535ba1ad640271d5bbcd458e5",
+        "src/codecue/binding/throughput.py": "a932f879857f2b583c1df9a26b92f37f6d4708d3abde9e5ff707cbd6da19c0bc",
+        "src/codecue/binding/throughput_audit.py": "38da1218a76c33946815358c701edf1e732b49f174965085809e4ef2795c87ba",
+        "src/codecue/cache.py": "0f4464439774ac53474ddc0e9322a9902c60b36ec666c05fabfb0695d215e946",
+        "src/codecue/config.py": "4ba803420f421f8af330488fffd4a1c66623a739b0043b4bef17c87dce2f40ca",
+        "src/codecue/followups.py": "b20b371ff79eabe6a22510ecefdd66f38a9c9b6fccbef8887f87ce4b72daf1d2",
+        "src/codecue/generator.py": "eeb41aedc72cad9ef160a1defe0db9b895000a065f6669922837b19dba73730b",
+        "src/codecue/gentask.py": "8163f104b02356b006692e7496e50d7a801dee55b4b0031d5e0e405f410ebb2d",
+        "src/codecue/layout.py": "b7a4457402e13ffa4c0df8aa010fbec6fffa4c97cd02d1ceb9ed365302820d4e",
+        "src/codecue/lures.py": "9e63aac1eee60817daf504bb0cab2d692b4851526b78041cf41c00e91cbaeff3",
+        "src/codecue/models.py": "b58f6e511cb48933cd5076c29624a44adf21c9d3167b54b7fa5cf679d4342ad5",
+        "src/codecue/patching.py": "a69b35d8d870250b4f445065bf6794a604f0e53aff4def0a91770a67c76f7b45",
+        "src/codecue/probe_data.py": "d36a5b6c480351675ca494b6c5ed735174c207231caa4f8dacd9686175148ea4",
+        "src/codecue/probe_validation.py": "554fed59d434a2a04d69abe43f5e85a1db2d01176bf1df0077108088ef652e28",
+        "src/codecue/probes.py": "28d257bc30cc4891530de9ae9c917340535362d4e7e4a26e1820f90bdd03cc83",
+        "src/codecue/prompt_comparison.py": "32c61120fa4cb51b1ed310af8b45ab381726129fb085f6956e4d837b295fbc93",
+        "src/codecue/prompts.py": "019eeeb3379c1eeac8f8f29c7af636281d7d79abd1e37ec2da1b3ca130906b1d",
+        "src/codecue/reporting.py": "4633a5f13d6b4a365e892ec2a6402aad1b2f0f781da5fa17ccc6fdd88dd20678",
+        "src/codecue/round6.py": "58eda7d56904c5b6ee3684d09cda0be88824acfc8826f5f54f809f68c1360efa",
+        "src/codecue/runner.py": "72c78f8d1a12c38fb3fa9b22b766727a9570098a8e3c86b112558b68b9a82b84",
+        "src/codecue/sandbox.py": "bad3c187164d33d58c1b15521227999eb325400396d0fe4af932894045ccfbab",
+        "src/codecue/stats.py": "0acbe61acaea72a8505accc3f8bdb106aa9102247a213201cfaa3e32b0f48aea"
+      },
+      "source_sha256": "07c464a9e1d1228124b046bc05dbdb4008450d3f68ba4ab60f820cc7fcd9feee"
+    },
+    "config": {
+      "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+      "context_limit": 4096,
+      "cuda_home": "/usr/local/cuda-12.9",
+      "data_sources": "artifacts/binding/benchmarks/published_datasets_manifest.json",
+      "data_sources_sha256": "1c00919e2360e57cf2ee7e912ccded1f8386b5d018c75a62926d7baf8fb70d14",
+      "dataset": "artifacts/binding/benchmarks/published_records.jsonl",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "engine": {
+        "gpu_memory_utilization": 0.9,
+        "max_num_batched_tokens": 16384,
+        "max_num_seqs": 256
+      },
+      "eos_token_ids": [
+        2
+      ],
+      "execution_backend": "vLLM CUDA12.9 continuously batched cached-checkpoint feasibility suite",
+      "max_gpu_seconds": 6600,
+      "max_new_tokens": {
+        "bbh_tracking_3": 1024,
+        "bbh_tracking_5": 1024,
+        "bbh_tracking_7": 1024,
+        "cruxeval_o_cot": 1024,
+        "cruxeval_o_direct": 512
+      },
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "preflight_result": "artifacts/binding/capacity/codellama34b_v1/tokenizer_preflight.json",
+      "prepared_cases": "artifacts/binding/capacity/codellama34b_v1/prepared_cases.jsonl",
+      "protocol": "short_answer_chat_v1",
+      "protocol_sources": "artifacts/binding/benchmarks/protocol_sources_manifest.json",
+      "protocol_sources_sha256": "45f50eea06548d4c8dfd0d464f7b16b185ae2dc12764c065bf1e75891e44f86b",
+      "request_chunk_size": 1024,
+      "run_dir": "artifacts/binding/capacity/codellama34b_v1",
+      "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+      "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+      "scorer": "python_literal_equality_and_bbh_final_letter_v2",
+      "sections": [
+        {
+          "dataset": "artifacts/binding/benchmarks/published_records.jsonl",
+          "kind": "published",
+          "name": "cruxeval",
+          "prompt_wrapper": "cruxeval_released_completion_v1",
+          "sha256": "0219387f4cbc67457e5a37c4dc6798edb3df1ecb69f2ece64ea5d2bb8631aceb",
+          "tasks": [
+            "cruxeval_o_direct",
+            "cruxeval_o_cot"
+          ]
+        },
+        {
+          "dataset": "artifacts/binding/benchmarks/published_records.jsonl",
+          "kind": "published",
+          "name": "bbh",
+          "prompt_wrapper": "native_single_user_official_boundary_v1",
+          "sha256": "0219387f4cbc67457e5a37c4dc6798edb3df1ecb69f2ece64ea5d2bb8631aceb",
+          "tasks": [
+            "bbh_tracking_3",
+            "bbh_tracking_5",
+            "bbh_tracking_7"
+          ]
+        },
+        {
+          "dataset": "artifacts/binding/phase2/arithmetic_forms.jsonl",
+          "diagnostic_kind": "arithmetic_forms",
+          "kind": "diagnostic",
+          "name": "arithmetic_forms",
+          "sha256": "1f45e64d77b53c7ec7d2b9876747f3bb243c80046eb9873099c84186f89b2a9e",
+          "variants": [
+            "print_direct_v3",
+            "print_trace_long_v1"
+          ]
+        },
+        {
+          "dataset": "artifacts/binding/phase2/arithmetic_free.jsonl",
+          "diagnostic_kind": "arithmetic_free",
+          "kind": "diagnostic",
+          "name": "arithmetic_free",
+          "sha256": "b08d3e42372acbf478cbbc03bb7ed6ca70c904420e4bec9e02e050c94bb98b02",
+          "variants": [
+            "print_direct_v3",
+            "print_trace_long_v1"
+          ]
+        },
+        {
+          "dataset": "artifacts/binding/phase2/counterbalanced_followup.jsonl",
+          "kind": "counterbalanced",
+          "name": "counterbalanced",
+          "sha256": "bea93bdfcb9cc8053ba474b191b468b3033ad2c7d344893ca1694951950b6a83",
+          "variants": [
+            "print_direct_v3",
+            "print_trace_long_v1"
+          ]
+        }
+      ],
+      "tokenization_mode": "codellama_official_boundary_v1",
+      "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+    },
+    "config_hash": "c1f0ac9f7a25598121256da6d8420641fe01b246cd78b4cce1907c3b783bc6aa",
+    "dataset_manifest": {
+      "counts": {
+        "bbh_tracking_3": 250,
+        "bbh_tracking_5": 250,
+        "bbh_tracking_7": 250,
+        "cruxeval_o": 800
+      },
+      "data_sources": {
+        "files": [
+          {
+            "bytes": 186873,
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "examples": 800,
+            "fields": [
+              "code",
+              "id",
+              "input",
+              "output"
+            ],
+            "paper": "https://proceedings.mlr.press/v235/gu24c.html",
+            "path": "artifacts/binding/benchmarks/cruxeval/cruxeval.jsonl",
+            "repository": "facebookresearch/cruxeval",
+            "sha256": "8368b81047dc5014e4caf5a2f97604eff7644e0ecd7415e3ceeb184bbc2e0c96",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/data/cruxeval.jsonl"
+          },
+          {
+            "bytes": 1061,
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "examples": null,
+            "fields": null,
+            "paper": "https://proceedings.mlr.press/v235/gu24c.html",
+            "path": "artifacts/binding/benchmarks/cruxeval/LICENSE",
+            "repository": "facebookresearch/cruxeval",
+            "sha256": "055ca9e3fa33562173156e02e2350ceff4089deab480b368a849b6bc04f09719",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/LICENSE"
+          },
+          {
+            "bytes": 128736,
+            "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+            "examples": 250,
+            "fields": [
+              "input",
+              "target"
+            ],
+            "paper": "https://aclanthology.org/2023.findings-acl.824/",
+            "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/tracking_shuffled_objects_three_objects.json",
+            "repository": "suzgunmirac/BIG-Bench-Hard",
+            "sha256": "546cc7bf10c6a01a6a4c17ae28a4966485f21f29fd5d111f37858ec78e354f6b",
+            "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_three_objects.json"
+          },
+          {
+            "bytes": 169722,
+            "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+            "examples": 250,
+            "fields": [
+              "input",
+              "target"
+            ],
+            "paper": "https://aclanthology.org/2023.findings-acl.824/",
+            "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/tracking_shuffled_objects_five_objects.json",
+            "repository": "suzgunmirac/BIG-Bench-Hard",
+            "sha256": "2063a46a4fb484236ed4310523606543a3e1dd4a4dc34eda65d407910ece25a5",
+            "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_five_objects.json"
+          },
+          {
+            "bytes": 214906,
+            "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+            "examples": 250,
+            "fields": [
+              "input",
+              "target"
+            ],
+            "paper": "https://aclanthology.org/2023.findings-acl.824/",
+            "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/tracking_shuffled_objects_seven_objects.json",
+            "repository": "suzgunmirac/BIG-Bench-Hard",
+            "sha256": "b59fd05b850c37cf57cb514ae1e6975c00b1638ade2291722056b2af3c54084d",
+            "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_seven_objects.json"
+          }
+        ],
+        "inference_performed": false,
+        "original_generated_holdout_unchanged": true,
+        "purpose": "Published external benchmark candidates; no code execution or model inference performed",
+        "retrieved_utc": "2026-10-25T21:55:32.494700+00:00"
+      },
+      "generated_holdouts_opened": false,
+      "protocol_sources": {
+        "files": [
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/prompts.py",
+            "sha256": "8e5378163b70897fcce63035f520ac35b8de333c96ee32029c83a472b17c1fca",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/prompts.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/evaluation/utils_general.py",
+            "sha256": "982613e50087c8d5bfea7e8ed954930a005545bcd5ec7409d92a2346340bbf00",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/evaluation/utils_general.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/evaluation/utils_execute.py",
+            "sha256": "3da60293cb6d75115920acd7c890445810108334d6f787a6e6d6955aef166a2f",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/evaluation/utils_execute.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/evaluation/evaluate_generations.py",
+            "sha256": "85d240723247323eaf840c07f0fc4e476da7d46480d927b7617115d1bca62ac6",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/evaluation/evaluate_generations.py"
+          },
+          {
+            "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+            "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/upstream/cot-prompts/tracking_shuffled_objects_three_objects.txt",
+            "sha256": "2ef54cb2a72052adc3484a76209cb6a6535f194d677e79bcec2e2e71cf3768af",
+            "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/cot-prompts/tracking_shuffled_objects_three_objects.txt"
+          },
+          {
+            "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+            "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/upstream/cot-prompts/tracking_shuffled_objects_five_objects.txt",
+            "sha256": "2ef54cb2a72052adc3484a76209cb6a6535f194d677e79bcec2e2e71cf3768af",
+            "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/cot-prompts/tracking_shuffled_objects_five_objects.txt"
+          },
+          {
+            "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+            "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/upstream/cot-prompts/tracking_shuffled_objects_seven_objects.txt",
+            "sha256": "2ef54cb2a72052adc3484a76209cb6a6535f194d677e79bcec2e2e71cf3768af",
+            "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/cot-prompts/tracking_shuffled_objects_seven_objects.txt"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/inference/tasks/output_prediction.py",
+            "sha256": "b48a75651d8d5982063db989dac2abb197ffff453ce7840adc59614962825020",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/inference/tasks/output_prediction.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/inference/tasks/base.py",
+            "sha256": "bf53626d76b3fa859954376f55cd7b6af40a44e7145b048d15b0154746230678",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/inference/tasks/base.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/inference/generator.py",
+            "sha256": "fae20dfac9b9e698f83df237bdaf74ec1d0bfec9b347aa08da395007aab6b7d0",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/inference/generator.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/inference/utils.py",
+            "sha256": "4da463493c1902b414b5f0cf718eda6100f1545213df7732e8c283dd9677f7cf",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/inference/utils.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/inference/main.py",
+            "sha256": "c5e0b00d92d68b1052259664eae24a4b0b353d39001a85e28fbea0bcfa4a918e",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/inference/main.py"
+          },
+          {
+            "commit": "190faf16d175b5847b0af05d937872b1fb395942",
+            "path": "artifacts/binding/benchmarks/cruxeval/upstream/inference/generation_arguments.py",
+            "sha256": "696e7e1fe2b51ea4d4f12400f4f2fbee9eb54c1e244cf61f659ea97e73726520",
+            "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/inference/generation_arguments.py"
+          },
+          {
+            "commit": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+            "path": "artifacts/binding/benchmarks/BIG-Bench-Hard/LICENSE",
+            "sha256": "4ef2ff4295d26ab6211235039c132697408cec5391d2c091b41e983771978db8",
+            "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/LICENSE"
+          }
+        ]
+      },
+      "role": "public_external_benchmarks",
+      "rows": 1550,
+      "sha256": "0219387f4cbc67457e5a37c4dc6798edb3df1ecb69f2ece64ea5d2bb8631aceb",
+      "source_manifests": {
+        "artifacts/binding/benchmarks/protocol_sources_manifest.json": "45f50eea06548d4c8dfd0d464f7b16b185ae2dc12764c065bf1e75891e44f86b",
+        "artifacts/binding/benchmarks/published_datasets_manifest.json": "1c00919e2360e57cf2ee7e912ccded1f8386b5d018c75a62926d7baf8fb70d14"
+      }
+    },
+    "environment": {
+      "backend": "vLLM CUDA12.9 continuously batched cached-checkpoint feasibility suite",
+      "platform": "Linux-5.14.0-687.41.1.el9_8.x86_64-x86_64-with-glibc2.34",
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "sampling": "greedy, do_sample=False",
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1"
+    },
+    "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+    "stage": "checkpoint_suite",
+    "tokenizer_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d"
+  },
+  "identity_hash": "afa2801d3bfcf5088d5f848672e6c1faf65a699d0c833062641b74d0aed66f75",
+  "planned": 5038,
+  "responses_sha256": "cb7f12287a537178072cc71b4021cdef60d02ae10c7ddbfa9fd4eebe4b295cde",
+  "slurm_job_id": "476872",
+  "started_utc": "2026-10-26T03:27:37.588682+00:00",
+  "status": "complete",
+  "wall_seconds_total": 487.18017352884635
+}

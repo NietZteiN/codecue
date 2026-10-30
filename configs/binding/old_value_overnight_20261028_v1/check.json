@@ -1,0 +1,22 @@
+{
+  "baseline_handoff": {
+    "path": "artifacts/binding/identity_grammar/20261028_v1/handoff_review_v1.json",
+    "sha256": "4e0ce967d23f22b5eb0e98b3d8c7a763f443e3943b61ba563c3bd2fa93c5b921"
+  },
+  "evaluation_role": "discovery_old_value_overnight_check_v1",
+  "model_configs": [
+    {
+      "path": "configs/binding/old_value_overnight_20261028_v1/llama8b.json",
+      "sha256": "118573d02cef7041f51fd9d98490d176e7afe3547680a8cb750d5efaff0819cc"
+    },
+    {
+      "path": "configs/binding/old_value_overnight_20261028_v1/codellama34b.json",
+      "sha256": "c97b0a88b70ace575a8ffd2c6895e8741e0321a8630605313fa5fc35db34102f"
+    }
+  ],
+  "morning_at": "2026-10-29T08:00:00-05:00",
+  "morning_report": "reports/binding/old_value_overnight_morning_v1.md",
+  "report": "reports/binding/old_value_overnight_status_v1.md",
+  "source_pointer": "artifacts/binding/old_value_overnight/20261028_v1/execution_source_v1.json",
+  "suite_root": "artifacts/binding/old_value_overnight/20261028_v1"
+}

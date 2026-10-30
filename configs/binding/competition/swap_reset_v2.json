@@ -1,0 +1,50 @@
+{
+  "answer_prefix_suffix": " ",
+  "assay": "swap_reset",
+  "batch_size": 144,
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "config_path": "configs/binding/competition/swap_reset_v2.json",
+  "dataset": "artifacts/binding/routing_extension/swap_reset/discovery_v2.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "execution_backend": "Transformers BF16 SDPA raw-block literal routing / greedy first-token assay",
+  "figure": "reports/binding/swap_reset_effects_v2.svg",
+  "generation": {
+    "anchor_baselines": "artifacts/binding/value_transfer/llama31_8b_v2/interventions/baselines.json",
+    "anchor_baselines_sha256": "b041b6e88313fbcf40948cfa6b96a7a685fc8b24e8b02b8b964d6cd9ca05e81c",
+    "anchor_prepared": "artifacts/binding/value_transfer/prepared_v2.json",
+    "anchor_prepared_sha256": "e012052a2099472ddfbc2e8252eafcca2cfba95dc71c50d457083d5c3d3bf1cf",
+    "unused_name": "cache"
+  },
+  "hidden_size": 4096,
+  "hook_proof": "artifacts/binding/competition/llama31_8b_hook_preflight_v1/interface_diagnostics/summary.json",
+  "hook_proof_sha256": "fe9292d97202734ff9eda4b51df15b1810d14f80311821fff6284be7ee5150b5",
+  "interpretation": "Change an output-irrelevant late assignment reference; both donor directions, all mapping/query controls, no accuracy-based selection. Does not isolate a binding register.",
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    31
+  ],
+  "limitation": "Same-answer dead-reference perturbations; lexical identity and number of distinct variables differ. No general binding-mechanism or held-out error prediction claim.",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "norm_tolerance": 0.03,
+  "preflight_result": "artifacts/binding/routing_extension/swap_reset/preflight_v2.json",
+  "prepared_cases": "artifacts/binding/routing_extension/swap_reset/prepared_v2.json",
+  "primary_condition": "dead_reference_transfer",
+  "protocol": "short_answer_chat_v1",
+  "report": "reports/binding/swap_reset_results_v2.md",
+  "report_title": "Late dead-reference swap discovery",
+  "require_digit_first": true,
+  "review_artifact": "artifacts/binding/routing_extension/swap_reset/review_v2.json",
+  "run_dir": "artifacts/binding/routing_extension/swap_reset/llama31_8b_v2",
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

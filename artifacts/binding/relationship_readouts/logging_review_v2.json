@@ -1,0 +1,72 @@
+{
+  "activation_arrays_opened": false,
+  "created_utc": "2026-10-27T23:27:37.042920+00:00",
+  "evaluation_role": "discovery_relationship_logging_review_v2",
+  "index_counts": {
+    "analysis": 165,
+    "dataset": 64,
+    "job": 330,
+    "run": 72
+  },
+  "index_issues": [],
+  "indexed_handoff": {
+    "id": "analysis:f5bb10062e7e67f3029be44b",
+    "path": "/work/jvl210002/migration/codecue/artifacts/binding/relationship_readouts/handoff_review_v2.json",
+    "status": "execution_queued"
+  },
+  "legacy_oversized_metadata_notices": 5,
+  "metadata_only": true,
+  "new_model_queries": 0,
+  "scheduler": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 163,
+        "dataset": 64,
+        "job": 330,
+        "run": 72
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 2022,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_tick_utc": "2026-10-27T23:25:33.249880+00:00",
+    "next_reconcile_utc": "2026-10-27T23:35:33.249880+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "480255",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T18:39:16",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "480250",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T18:28:44",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "status": "passed",
+  "tick_status": "ok"
+}

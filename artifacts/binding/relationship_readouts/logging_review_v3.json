@@ -1,0 +1,73 @@
+{
+  "activation_arrays_opened": false,
+  "automatic_scheduler": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 172,
+        "dataset": 64,
+        "job": 335,
+        "run": 72
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 2064,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_tick_utc": "2026-10-28T00:21:07.444170+00:00",
+    "next_reconcile_utc": "2026-10-28T00:31:07.444170+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "480297",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T19:42:24",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "480283",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T19:31:53",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "created_utc": "2026-10-28T00:23:23.121741+00:00",
+  "evaluation_role": "discovery_relationship_logging_review_v3",
+  "forced_tick_status": "ok",
+  "generated_holdouts_opened": false,
+  "index_counts": {
+    "analysis": 173,
+    "dataset": 64,
+    "job": 335,
+    "run": 72
+  },
+  "index_issues": [],
+  "indexed_handoff": {
+    "id": "analysis:0765b0968264a30717beeab3",
+    "path": "/work/jvl210002/migration/codecue/artifacts/binding/relationship_readouts/handoff_review_v3.json",
+    "status": "execution_queued"
+  },
+  "legacy_oversized_metadata_notices": 5,
+  "metadata_only": true,
+  "new_model_queries": 0,
+  "status": "passed"
+}

@@ -1,0 +1,53 @@
+{
+  "analysis_role": "descriptive_discovery_oof_probability_score_figure",
+  "comparison": "/work/jvl210002/migration/codecue/artifacts/binding/discovery_prediction/comparison_v1.json",
+  "comparison_sha256": "bc857df6fb1350bff6bbbb749fbc91670046783e8f8f7df4999e282fdf8dace1",
+  "complete": true,
+  "evaluation": "fixed mean-probability OOF ensemble",
+  "generated_holdouts_opened": false,
+  "limitation": "Previously consumed discovery data; no final-test claim. Partition seeds are not independent replications.",
+  "matplotlib_version": "3.11.2",
+  "mechanism_C_fitted": false,
+  "metrics": [
+    "brier_score",
+    "log_loss"
+  ],
+  "models": [
+    "llama31_8b",
+    "codellama34b"
+  ],
+  "oracle_scored_tier": "A_neutral_scored additionally requires reference gold; raw tiers do not",
+  "outputs": {
+    "png": {
+      "bytes": 225723,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/discovery_prediction_results_v1.png",
+      "sha256": "91db54f776d7dee86936fa91addc7c4a6a5a48ba26147385d15cf783e7fdc8f2"
+    },
+    "svg": {
+      "bytes": 30104,
+      "path": "/work/jvl210002/migration/codecue/reports/binding/discovery_prediction_results_v1.svg",
+      "sha256": "bfb1118e457e2f9a212588d110667ec41d0b62fda13d8eb941a40bd928279381"
+    }
+  },
+  "plot_source": "/work/jvl210002/migration/codecue/artifacts/binding/discovery_prediction/plot_results_v1.py",
+  "plot_source_sha256": "d6b09e4ff59a854c79eec9ba5ccc0b19c2977019db4d318099b0dfe0cfadb8af",
+  "predictors": [
+    "prior",
+    "A_input",
+    "A_neutral_raw",
+    "A_neutral_scored"
+  ],
+  "reference_query_budget_per_target": 1,
+  "review_checksums": {
+    "artifacts/binding/discovery_prediction/codellama34b_v1/review_v1.json": "bed63d22d89c12e22ce5461926027bc3be4e5d32b237f36b62aeab332668bde7",
+    "artifacts/binding/discovery_prediction/llama31_8b_v1/review_v1.json": "3d0ea0f04f86b57e113ec97d12616b0cf2536fd79cf84a88a27dda6fd213d729"
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "status": "passed",
+  "templates": 24,
+  "uncertainty_whiskers": false
+}

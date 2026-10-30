@@ -1,0 +1,66 @@
+{
+  "actual_scheduler_accounting": "481752|COMPLETED|0:0|00:02:04|00:10:00|2026-10-28T20:46:11|2026-10-28T20:48:15\n",
+  "actual_tick_status": "complete",
+  "checked_at": "2026-10-29T01:48:47.562490+00:00",
+  "evaluation_role": "operational_logging_timeout_recovery_v1",
+  "fresh_within_two_intervals": true,
+  "frozen_scientific_source_changed": false,
+  "future_worker_limit": "00:10:00",
+  "interval_minutes": 10,
+  "last_success_age_seconds": 34.112261,
+  "last_success_utc": "2026-10-29T01:48:13.450229+00:00",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_model_calls": 0,
+  "past_success_not_inferred_from_queued_guards": true,
+  "pending_guards_verified": [
+    {
+      "job_id": "481744",
+      "raw": "JobId=481744 JobName=binding-log-5f498587f4bd UserId=jvl210002(736106) GroupId=sn(215) MCS_label=N/A Priority=27497 Nice=1000 Account=tnguyen QOS=normal JobState=PENDING Reason=Dependency Dependency=singleton(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-10-28T20:40:36 EligibleTime=2026-10-28T21:00:36 AccrueTime=Unknown StartTime=2026-10-28T21:00:36 EndTime=2026-10-28T21:10:36 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-28T20:40:36 Scheduler=Main Partition=dev AllocNode:Sid=c-01-01:1972759 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=1,mem=1G,node=1,billing=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=1G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=(null) SubmitLine=sbatch --parsable --job-name=binding-log-5f498587f4bd --account=tnguyen --partition=dev --cpus-per-task=1 --mem=1G --time=00:02:00 --requeue --dependency=singleton --nice=1000 --begin=now+20minutes --chdir=/work/jvl210002/migration/codecue --output=/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/scheduler_jobs/%j.out --comment=CodeCue experiment-log reconciliation; no model or GPU --wrap /work/jvl210002/migration/envs/probe-cu129/bin/python /work/jvl210002/migration/codecue/scripts/118_binding_log_scheduler.py tick --root /work/jvl210002/migration/codecue WorkDir=/work/jvl210002/migration/codecue Comment=CodeCue experiment-log reconciliation; no model or GPU StdErr= StdIn=/dev/null StdOut=/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/scheduler_jobs/481744.out TresPerTask=cpu=1\n",
+      "state": "PENDING",
+      "time_limit": "00:10:00"
+    },
+    {
+      "job_id": "481732",
+      "raw": "JobId=481732 JobName=binding-log-5f498587f4bd UserId=jvl210002(736106) GroupId=sn(215) MCS_label=N/A Priority=27497 Nice=1000 Account=tnguyen QOS=normal JobState=PENDING Reason=BeginTime Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:10:00 TimeMin=N/A SubmitTime=2026-10-28T20:30:35 EligibleTime=2026-10-28T20:50:35 AccrueTime=Unknown StartTime=2026-10-28T20:50:35 EndTime=2026-10-28T21:00:35 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-28T20:30:35 Scheduler=Main Partition=dev AllocNode:Sid=c-01-01:1971140 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=1,mem=1G,node=1,billing=1 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=1G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=(null) SubmitLine=sbatch --parsable --job-name=binding-log-5f498587f4bd --account=tnguyen --partition=dev --cpus-per-task=1 --mem=1G --time=00:02:00 --requeue --dependency=singleton --nice=1000 --begin=now+20minutes --chdir=/work/jvl210002/migration/codecue --output=/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/scheduler_jobs/%j.out --comment=CodeCue experiment-log reconciliation; no model or GPU --wrap /work/jvl210002/migration/envs/probe-cu129/bin/python /work/jvl210002/migration/codecue/scripts/118_binding_log_scheduler.py tick --root /work/jvl210002/migration/codecue WorkDir=/work/jvl210002/migration/codecue Comment=CodeCue experiment-log reconciliation; no model or GPU StdErr= StdIn=/dev/null StdOut=/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/scheduler_jobs/481732.out TresPerTask=cpu=1\n",
+      "state": "PENDING",
+      "time_limit": "00:10:00"
+    }
+  ],
+  "pins": [
+    {
+      "bytes": 8495,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/logging_recovery_submission_v1.json",
+      "sha256": "65d761592ed7a30234df201c454c13e76bc9a6b979338008ee86e3290bcbbd40"
+    },
+    {
+      "bytes": 3265,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/logging_timeout_build_review_v1.json",
+      "sha256": "9c24b05d8a682f09a51a61eeb356f2cbeff94631f82ab5a9dadb44aa63c5c0ca"
+    },
+    {
+      "bytes": 100,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/logging_timeout_validation_stdout_v1.txt",
+      "sha256": "08a9eeb4fdf272f13e99674118548861e411307c2e071e98b032234a3aa859dc"
+    },
+    {
+      "bytes": 5452,
+      "path": "log/slurm/481752_oldvalue-log-recovery-v1.out",
+      "sha256": "5116afb9aa8ebfbbe2f83a390753344e3b6494ab9e996d4c450822a02ae135a3"
+    },
+    {
+      "bytes": 15486,
+      "path": "src/codecue/binding/experiment_log_scheduler.py",
+      "sha256": "b3ea63f059d4332a7490d8ef3c823be168b5439ddb281ee9f690b590c2f89a45"
+    },
+    {
+      "bytes": 12777,
+      "path": "tests/binding/test_log_scheduler.py",
+      "sha256": "063cd4c9425ba4aaed71ea6143348f20213e44cab5e78033a5e80a964eaa8dce"
+    }
+  ],
+  "recovery_job_id": "481752",
+  "scientific_results_changed": false,
+  "source": "Current operational scheduler, separate from immutable S7 run source",
+  "status": "passed"
+}

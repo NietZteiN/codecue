@@ -1,0 +1,72 @@
+{
+  "budget_ledger": "artifacts/binding/gpu_usage_uncapped.json",
+  "context_limit": 4096,
+  "cuda_home": "/usr/local/cuda-12.9",
+  "data_sources": "artifacts/binding/benchmarks/published_datasets_manifest.json",
+  "data_sources_sha256": "1c00919e2360e57cf2ee7e912ccded1f8386b5d018c75a62926d7baf8fb70d14",
+  "dataset": "artifacts/binding/live_load/discovery_v1.jsonl",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "engine": {
+    "gpu_memory_utilization": 0.95,
+    "max_num_batched_tokens": "auto",
+    "max_num_seqs": "auto"
+  },
+  "eos_token_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "execution_backend": "vLLM BF16 CUDA12.9; matched computed-retention development study; no project admission caps",
+  "figure": "reports/binding/live_load_llama31_8b_v1.svg",
+  "generation": {
+    "noise_pairs": 4,
+    "numeric_per_template": 16,
+    "seed": 20261027,
+    "templates": 24
+  },
+  "max_gpu_seconds": null,
+  "max_new_tokens": {
+    "bbh_tracking_3": 1024,
+    "bbh_tracking_5": 1024,
+    "bbh_tracking_7": 1024,
+    "cruxeval_o_cot": 1024,
+    "cruxeval_o_direct": 512
+  },
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "preflight_result": "artifacts/binding/live_load/llama31_8b_v1/tokenizer_preflight.json",
+  "prepared_cases": "artifacts/binding/live_load/llama31_8b_v1/prepared_cases.jsonl",
+  "primary_contrasts": [
+    "live4_minus_live2:neutral:updates3",
+    "naming_by_load_by_updates"
+  ],
+  "protocol": "short_answer_chat_v1",
+  "protocol_sources": "artifacts/binding/benchmarks/protocol_sources_manifest.json",
+  "protocol_sources_sha256": "45f50eea06548d4c8dfd0d464f7b16b185ae2dc12764c065bf1e75891e44f86b",
+  "reliability_gate": {
+    "maximum_invalid_rate": 0.05,
+    "minimum_accuracy": 0.9,
+    "minimum_cell_n": 24
+  },
+  "report": "reports/binding/live_load_llama31_8b_v1.md",
+  "request_chunk_size": 1024,
+  "review_artifact": "artifacts/binding/live_load/llama31_8b_v1/review_v1.json",
+  "run_dir": "artifacts/binding/live_load/llama31_8b_v1",
+  "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+  "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+  "scorer": "python_literal_equality_and_bbh_final_letter_v2",
+  "sections": [
+    {
+      "dataset": "artifacts/binding/live_load/discovery_v1.jsonl",
+      "kind": "live_load",
+      "name": "computed_retention_frontiers",
+      "sha256": "4a56dca9935d7333945e3876be57fa3bb1a68a540310df77fb580a860c3bd6d9",
+      "variants": [
+        "print_direct_v3"
+      ]
+    }
+  ],
+  "tokenization_mode": "native",
+  "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+}

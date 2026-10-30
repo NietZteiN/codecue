@@ -1,0 +1,313 @@
+{
+  "analysis_source_sha256": "07c464a9e1d1228124b046bc05dbdb4008450d3f68ba4ab60f820cc7fcd9feee",
+  "artifact_checksums": {
+    "artifacts/binding/throughput/tune_v2/throughput_profile/worker_0/worker.json": "32059c04321f770f71e052e4d1c2cd2a67a2b85b74e8fbd4163ecc943c4ed09b",
+    "artifacts/binding/throughput/tune_v4/throughput_profile/validation/vllm_selected.json": "242621ef9f7ef665efae48579472cacfffa4f3a2e019319950f0b2a603f443bc",
+    "artifacts/binding/throughput/tune_v4/throughput_profile/validation_candidates/vllm_128.json": "6c15e6cd651b4de6a09ec02e87ee6d0ad51b4e251c1f15828ef5350a5f661a06",
+    "artifacts/binding/throughput/tune_v4/throughput_profile/validation_candidates/vllm_1600.json": "242621ef9f7ef665efae48579472cacfffa4f3a2e019319950f0b2a603f443bc",
+    "artifacts/binding/throughput/tune_v4/throughput_profile/validation_candidates/vllm_256.json": "53f89684c9ec034ebd66783843fbacc36054ec09e3ae204c5392f6621be6b11d",
+    "artifacts/binding/throughput/tune_v4/throughput_profile/worker_0/vllm_128.json": "6b42cf92a8ff350e72f18b0b9eb4525dd95e23375611e8387ea6c9dbbec43f50",
+    "artifacts/binding/throughput/tune_v4/throughput_profile/worker_0/vllm_256.json": "fc051c44f32cc12934ae711d31f98c3b2c605a77b7044d7cbfe7e3c34b8f6a78",
+    "artifacts/binding/throughput/tune_v4/throughput_profile/worker_0/vllm_64.json": "23e4854a004144698851fc8e5d3fd4d9a20117ff22687471438e6b11aba1d9bd"
+  },
+  "baseline": {
+    "backend": "hf",
+    "cases": 512,
+    "generation_seconds": 329.755663190037,
+    "gpu": {
+      "mean_gpu_utilization_percent": 95.0,
+      "mean_power_watts": 359.7273990306947,
+      "peak_device_memory_mib": 79023.0,
+      "samples": 619
+    },
+    "output_tokens": 81154,
+    "output_tokens_per_second": 246.10343068841016,
+    "prompt_token_ids_sha256": "ec0559f54ced8dde9cd9b950d0d3ddf291a12c490bde8e46a1bfe37008d61887",
+    "quality": {
+      "both_valid": 495,
+      "correct": 189,
+      "correctness_matches": 512,
+      "n": 512,
+      "parsed_values_match": 495,
+      "raw_matches": 512,
+      "reference_correct": 189,
+      "valid": 495,
+      "validity_matches": 512
+    },
+    "requests_per_second": 1.552664767139833,
+    "setting": {
+      "attention": "eager",
+      "batch_size": 8,
+      "bucket": false,
+      "stopping": "legacy"
+    },
+    "status": "complete",
+    "torch_peak_allocated_bytes": 19804573696
+  },
+  "baseline_device_name": "NVIDIA H100 80GB HBM3",
+  "full_workload_candidates": [
+    {
+      "artifact": "artifacts/binding/throughput/tune_v4/throughput_profile/validation_candidates/vllm_128.json",
+      "backend": "vllm",
+      "cases": 1600,
+      "generation_seconds": 72.38796778814867,
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-9dc13b59-7377-2ec1-7886-f5d0252ec8af",
+        "mean_gpu_utilization_percent": 99.17557251908397,
+        "mean_power_watts": 516.7221374045802,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 132555.0,
+        "samples": 131,
+        "selector_verified": true
+      },
+      "output_tokens": 263386,
+      "output_tokens_per_second": 3638.532867379673,
+      "prompt_token_ids_sha256": "fb3e6eeaabb9a49657b1f89cb1647210c4e262467a845d64737149ac90f93299",
+      "quality": {
+        "both_valid": 1524,
+        "correct": 579,
+        "correctness_matches": 1526,
+        "n": 1600,
+        "parsed_values_match": 1320,
+        "raw_matches": 1128,
+        "reference_correct": 585,
+        "valid": 1536,
+        "validity_matches": 1570
+      },
+      "requests_per_second": 22.10312084851692,
+      "setting": {
+        "chunk_size": 128,
+        "gpu_memory_utilization": 0.9,
+        "max_num_batched_tokens": 16384,
+        "max_num_seqs": 256
+      },
+      "status": "complete",
+      "torch_peak_allocated_bytes": null
+    },
+    {
+      "artifact": "artifacts/binding/throughput/tune_v4/throughput_profile/validation_candidates/vllm_1600.json",
+      "backend": "vllm",
+      "cases": 1600,
+      "generation_seconds": 39.781690035015345,
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-9dc13b59-7377-2ec1-7886-f5d0252ec8af",
+        "mean_gpu_utilization_percent": 98.61111111111111,
+        "mean_power_watts": 574.6736111111111,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 132555.0,
+        "samples": 72,
+        "selector_verified": true
+      },
+      "output_tokens": 264246,
+      "output_tokens_per_second": 6642.4025667942715,
+      "prompt_token_ids_sha256": "fb3e6eeaabb9a49657b1f89cb1647210c4e262467a845d64737149ac90f93299",
+      "quality": {
+        "both_valid": 1524,
+        "correct": 575,
+        "correctness_matches": 1528,
+        "n": 1600,
+        "parsed_values_match": 1325,
+        "raw_matches": 1142,
+        "reference_correct": 585,
+        "valid": 1537,
+        "validity_matches": 1569
+      },
+      "requests_per_second": 40.219507984494875,
+      "setting": {
+        "chunk_size": 1600,
+        "gpu_memory_utilization": 0.9,
+        "max_num_batched_tokens": 16384,
+        "max_num_seqs": 256
+      },
+      "status": "complete",
+      "torch_peak_allocated_bytes": null
+    },
+    {
+      "artifact": "artifacts/binding/throughput/tune_v4/throughput_profile/validation_candidates/vllm_256.json",
+      "backend": "vllm",
+      "cases": 1600,
+      "generation_seconds": 53.759333360008895,
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-9dc13b59-7377-2ec1-7886-f5d0252ec8af",
+        "mean_gpu_utilization_percent": 98.72448979591837,
+        "mean_power_watts": 536.9728571428572,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 132555.0,
+        "samples": 98,
+        "selector_verified": true
+      },
+      "output_tokens": 261404,
+      "output_tokens_per_second": 4862.485891509514,
+      "prompt_token_ids_sha256": "fb3e6eeaabb9a49657b1f89cb1647210c4e262467a845d64737149ac90f93299",
+      "quality": {
+        "both_valid": 1526,
+        "correct": 575,
+        "correctness_matches": 1530,
+        "n": 1600,
+        "parsed_values_match": 1325,
+        "raw_matches": 1152,
+        "reference_correct": 585,
+        "valid": 1540,
+        "validity_matches": 1570
+      },
+      "requests_per_second": 29.762273822953063,
+      "setting": {
+        "chunk_size": 256,
+        "gpu_memory_utilization": 0.9,
+        "max_num_batched_tokens": 16384,
+        "max_num_seqs": 256
+      },
+      "status": "complete",
+      "torch_peak_allocated_bytes": null
+    }
+  ],
+  "generated_holdouts_opened": false,
+  "model_inference": false,
+  "old_scientific_runs_modified": false,
+  "preset": {
+    "context_limit": 4096,
+    "cuda_home": "/usr/local/cuda-12.9",
+    "device_name": "NVIDIA H200 NVL",
+    "dtype": "bfloat16",
+    "flashinfer_sampler": false,
+    "include_stop_str_in_output": true,
+    "input_contract": "pretokenized single-BOS plus reference-SP prompt IDs; no engine chat wrapping",
+    "max_new_tokens": {
+      "bbh_tracking_3": 1024,
+      "bbh_tracking_5": 1024,
+      "bbh_tracking_7": 1024,
+      "cruxeval_o_cot": 1024,
+      "cruxeval_o_direct": 512
+    },
+    "model": "codellama/CodeLlama-7b-Instruct-hf",
+    "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+    "profile_identity_hash": "90998f6cef746f8270183c7cb38a8ce219df595f759103fd6b9831b5382cce10",
+    "prompt_wrapper": "cruxeval_released_completion_v1",
+    "runtime_manifest": "artifacts/binding/throughput/runtime/vllm_cu129_manifest.json",
+    "runtime_manifest_sha256": "d85892916c8519c13fa677146912a9a750d7d705b38d234a17b96c456e7a4e61",
+    "sampling": "greedy",
+    "stop": [
+      "[/ANSWER]"
+    ],
+    "tokenization_mode": "codellama_official_boundary_v1",
+    "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+    "uuid_telemetry": true,
+    "validation_quality": {
+      "both_valid": 1524,
+      "correct": 575,
+      "correctness_matches": 1528,
+      "n": 1600,
+      "parsed_values_match": 1325,
+      "raw_matches": 1142,
+      "reference_correct": 585,
+      "valid": 1537,
+      "validity_matches": 1569
+    },
+    "versions": {
+      "torch": "2.11.0+cu129",
+      "transformers": "5.14.1",
+      "vllm": "0.26.0+cu129"
+    },
+    "worker": {
+      "backend": "vllm",
+      "chunk_sizes": [
+        1600
+      ],
+      "first_n_per_task": null,
+      "gpu_memory_utilization": 0.9,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 256,
+      "timeout_seconds": 1680
+    }
+  },
+  "profile_identity_hash": "90998f6cef746f8270183c7cb38a8ce219df595f759103fd6b9831b5382cce10",
+  "profile_trials_audited": 3,
+  "registered_gpu_stage_seconds": 598.8049670243636,
+  "same_device_model": false,
+  "selected": {
+    "artifact": "artifacts/binding/throughput/tune_v4/throughput_profile/worker_0/vllm_256.json",
+    "backend": "vllm",
+    "cases": 512,
+    "generation_seconds": 15.69727752590552,
+    "gpu": {
+      "driver_version": "580.178.04",
+      "gpu_uuid": "GPU-9dc13b59-7377-2ec1-7886-f5d0252ec8af",
+      "mean_gpu_utilization_percent": 99.72413793103448,
+      "mean_power_watts": 534.3920689655173,
+      "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+      "peak_device_memory_mib": 132555.0,
+      "samples": 29,
+      "selector_verified": true
+    },
+    "output_tokens": 81971,
+    "output_tokens_per_second": 5221.98832662044,
+    "prompt_token_ids_sha256": "ec0559f54ced8dde9cd9b950d0d3ddf291a12c490bde8e46a1bfe37008d61887",
+    "quality": {
+      "both_valid": 491,
+      "correct": 191,
+      "correctness_matches": 490,
+      "n": 512,
+      "parsed_values_match": 426,
+      "raw_matches": 360,
+      "reference_correct": 189,
+      "valid": 495,
+      "validity_matches": 504
+    },
+    "requests_per_second": 32.61712097241299,
+    "setting": {
+      "chunk_size": 256,
+      "gpu_memory_utilization": 0.9,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 256
+    },
+    "status": "complete",
+    "torch_peak_allocated_bytes": null
+  },
+  "speedup": 21.00718819845256,
+  "status": "passed",
+  "validation": {
+    "artifact": "artifacts/binding/throughput/tune_v4/throughput_profile/validation/vllm_selected.json",
+    "backend": "vllm",
+    "cases": 1600,
+    "generation_seconds": 39.781690035015345,
+    "gpu": {
+      "driver_version": "580.178.04",
+      "gpu_uuid": "GPU-9dc13b59-7377-2ec1-7886-f5d0252ec8af",
+      "mean_gpu_utilization_percent": 98.61111111111111,
+      "mean_power_watts": 574.6736111111111,
+      "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+      "peak_device_memory_mib": 132555.0,
+      "samples": 72,
+      "selector_verified": true
+    },
+    "output_tokens": 264246,
+    "output_tokens_per_second": 6642.4025667942715,
+    "prompt_token_ids_sha256": "fb3e6eeaabb9a49657b1f89cb1647210c4e262467a845d64737149ac90f93299",
+    "quality": {
+      "both_valid": 1524,
+      "correct": 575,
+      "correctness_matches": 1528,
+      "n": 1600,
+      "parsed_values_match": 1325,
+      "raw_matches": 1142,
+      "reference_correct": 585,
+      "valid": 1537,
+      "validity_matches": 1569
+    },
+    "requests_per_second": 40.219507984494875,
+    "setting": {
+      "chunk_size": 1600,
+      "gpu_memory_utilization": 0.9,
+      "max_num_batched_tokens": 16384,
+      "max_num_seqs": 256
+    },
+    "status": "complete",
+    "torch_peak_allocated_bytes": null
+  },
+  "validation_cases": 1600,
+  "worker_end_to_end_seconds": 598.725897190161,
+  "worker_timing_scope": "shared engine lifetime including profiling; no second model load"
+}

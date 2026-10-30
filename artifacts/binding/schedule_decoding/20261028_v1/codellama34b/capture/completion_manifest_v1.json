@@ -1,0 +1,83 @@
+{
+  "cases": 2016,
+  "chunks": [
+    {
+      "first": 0,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/000000.npz",
+      "rows": 512,
+      "sha256": "0b4694b9f112d8dafdf5f18bc8a312ac4a9f9d0f8750f0ffa68ee8704014cb4c"
+    },
+    {
+      "first": 512,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/000512.npz",
+      "rows": 512,
+      "sha256": "40e9e53517587fa97b28a3add9f464ec0c34dbe4256311733e7730be3bc5b3ce"
+    },
+    {
+      "first": 1024,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/001024.npz",
+      "rows": 512,
+      "sha256": "e6dfa07fc13dce1bd8b0b346a5463f09659d30e4125416e28d2749c337083eb4"
+    },
+    {
+      "first": 1536,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/chunks/001536.npz",
+      "rows": 480,
+      "sha256": "7b4fe0bc8c93d3c7fa26570c994ec10474a321d196e45115ee1303c516eaf5f2"
+    }
+  ],
+  "config_hash": "f1dcfcf80bed555a9d2f1cd6cde49cba19a17b2af0dba39c2557ca6e9e16c5ff",
+  "dataset_sha256": "4021f720282fbd7b1344a4a92d5da02abf5269cd9b62d13eebbd5e40e2f4e287",
+  "evaluation_role": "discovery_schedule_capture_v1",
+  "feature_shape": [
+    2016,
+    3,
+    4,
+    8192
+  ],
+  "generated_holdouts_opened": false,
+  "generated_responses": 0,
+  "generation_calls": 0,
+  "metadata": {
+    "audit.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/audit.json",
+      "sha256": "24f71561aa1b2bfacf911daafa7ab34072cb81d45eaf17e97da15f58f3003485"
+    },
+    "manifest.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/manifest.json",
+      "sha256": "49144806c324cfe284fefc3099c3d3ba29a55c0b9d078fc422d1702198c8aa71"
+    },
+    "preflight.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/preflight.json",
+      "sha256": "287f64986dcc1a36f4df963202d83e1f4e07e2b7eb6364205dbbc6e027ac3321"
+    },
+    "prepared_cases.jsonl": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/prepared_cases.jsonl",
+      "sha256": "ac75b4dcecfb638e6c3495ae3b6bf36be9b62acc1c54a12cdd55639ffe6e592b"
+    },
+    "registration.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/registration.json",
+      "sha256": "2fdf96f424b6a51affc086ffc8dffdf6c007f03f1e4df142f560786cffa77906"
+    },
+    "summary.json": {
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/summary.json",
+      "sha256": "813f26904eeebc8eccbb7573eb8d42ba6bfde0b1d7dd7cbc96558ce8792d7f85"
+    }
+  },
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "model_prefill_cases": 2016,
+  "model_prefill_cases_attempted": 2016,
+  "model_revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+  "new_model_queries": 2016,
+  "prefill_batch_calls": 32,
+  "prefix_comparisons": 3024,
+  "prefix_max_abs_diff": 0.0,
+  "schema_version": 1,
+  "source": {
+    "frozen_manifest_sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26",
+    "source_sha256": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99"
+  },
+  "status": "complete_exploratory"
+}

@@ -1,0 +1,12 @@
+{
+  "interface": "476293",
+  "report": "476294",
+  "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8e7cb32face7c8895a19e90c",
+  "purpose": "Bounded same-checkpoint CPU/GPU interface consistency check; no full expansion or final-test outcomes.",
+  "partition_update": {
+    "requested": "h100,a30",
+    "returncode": 0,
+    "message": "",
+    "reason": "The free H100 hardware has all CPUs allocated. Let one short generic-GPU job use either partition; same BF16 checkpoint is about 13.5 GB and the fixed batch/context fits a 24 GB A30. Actual GPU model and peak allocation are recorded. No duplicate GPU job is created."
+  }
+}

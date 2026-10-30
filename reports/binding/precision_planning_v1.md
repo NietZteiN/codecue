@@ -1,0 +1,265 @@
+# Conditional structural-cohort precision planning
+
+Conditional planning scenarios from previously observed discovery-template losses. Resampling empirical templates does not create new structures or independent scientific replications. Projected detection probabilities use a centered empirical null and are not guaranteed confirmatory power. They omit model refitting, feature/penalty selection and pilot-distribution uncertainty. No cohort size or positive result is selected automatically.
+
+All scenarios use whole structural-component means. Original partition seeds are averaged into one OOF probability per target before loss is scored; they are not additional groups. Strata, when enabled, remain balanced in each simulated future cohort.
+
+| Checkpoint | Left | Right | Metric | Pilot groups | Pilot mean difference | Eligible |
+|---|---|---|---|---:|---:|---|
+| codellama34b | A_interactions | A_interactions_neutral_raw | brier_score | 24 | -0.000287 | True |
+| codellama34b | A_interactions | A_interactions_neutral_raw | log_loss | 24 | -0.000448 | True |
+| codellama34b | A_interactions_oracle_neutral_raw | A_interactions_oracle_neutral_scored | brier_score | 24 | +0.004428 | True |
+| codellama34b | A_interactions_oracle_neutral_raw | A_interactions_oracle_neutral_scored | log_loss | 24 | +0.013315 | True |
+| llama31_8b | A_interactions | A_interactions_neutral_raw | brier_score | 24 | -0.000364 | True |
+| llama31_8b | A_interactions | A_interactions_neutral_raw | log_loss | 24 | -0.001265 | True |
+| llama31_8b | A_interactions_oracle_neutral_raw | A_interactions_oracle_neutral_scored | brier_score | 24 | +0.001199 | True |
+| llama31_8b | A_interactions_oracle_neutral_raw | A_interactions_oracle_neutral_scored | log_loss | 24 | +0.003606 | True |
+
+## Complete effect and component-count matrix
+
+Effects are hypothetical future mean improvements, not newly measured effects. Detection means exceeding the centered empirical-null (1−alpha) quantile. It is a conditional simulation result, not guaranteed statistical power or a recommendation to begin confirmation. Degenerate pilots retain every row with ineligible/null projections.
+
+| Checkpoint | Metric | Left → right | Components | Scenario effect | Projection half-width | Conditional detection probability |
+|---|---|---|---:|---:|---:|---:|
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.000000 | 0.000910 | 0.0500 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.001000 | 0.000910 | 0.7075 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.002500 | 0.000910 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.005000 | 0.000910 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.010000 | 0.000910 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.000000 | 0.000668 | 0.0500 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.001000 | 0.000668 | 0.8835 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.002500 | 0.000668 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.005000 | 0.000668 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.010000 | 0.000668 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.000000 | 0.000519 | 0.0500 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.001000 | 0.000519 | 0.9795 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.002500 | 0.000519 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.005000 | 0.000519 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.010000 | 0.000519 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.000000 | 0.000469 | 0.0500 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.001000 | 0.000469 | 0.9915 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.002500 | 0.000469 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.005000 | 0.000469 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.010000 | 0.000469 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.000000 | 0.000391 | 0.0500 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.001000 | 0.000391 | 0.9995 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.002500 | 0.000391 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.005000 | 0.000391 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.010000 | 0.000391 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.000000 | 0.000293 | 0.0500 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.001000 | 0.000293 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.002500 | 0.000293 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.005000 | 0.000293 | 1.0000 |
+| codellama34b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.010000 | 0.000293 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.000000 | 0.002565 | 0.0500 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.001000 | 0.002565 | 0.1970 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.002500 | 0.002565 | 0.6040 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.005000 | 0.002565 | 0.9810 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.010000 | 0.002565 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.000000 | 0.001883 | 0.0500 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.001000 | 0.001883 | 0.2735 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.002500 | 0.001883 | 0.8245 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.005000 | 0.001883 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.010000 | 0.001883 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.000000 | 0.001503 | 0.0500 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.001000 | 0.001503 | 0.3845 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.002500 | 0.001503 | 0.9515 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.005000 | 0.001503 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.010000 | 0.001503 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.000000 | 0.001305 | 0.0500 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.001000 | 0.001305 | 0.4485 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.002500 | 0.001305 | 0.9785 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.005000 | 0.001305 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.010000 | 0.001305 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.000000 | 0.001103 | 0.0500 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.001000 | 0.001103 | 0.5675 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.002500 | 0.001103 | 0.9985 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.005000 | 0.001103 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.010000 | 0.001103 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.000000 | 0.000827 | 0.0500 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.001000 | 0.000827 | 0.7635 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.002500 | 0.000827 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.005000 | 0.000827 | 1.0000 |
+| codellama34b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.010000 | 0.000827 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.000000 | 0.002527 | 0.0500 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.001000 | 0.002527 | 0.2025 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.002500 | 0.002527 | 0.6195 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.005000 | 0.002527 | 0.9885 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.010000 | 0.002527 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.000000 | 0.001771 | 0.0500 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.001000 | 0.001771 | 0.2860 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.002500 | 0.001771 | 0.8645 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.005000 | 0.001771 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.010000 | 0.001771 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.000000 | 0.001475 | 0.0500 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.001000 | 0.001475 | 0.3960 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.002500 | 0.001475 | 0.9590 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.005000 | 0.001475 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.010000 | 0.001475 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.000000 | 0.001243 | 0.0500 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.001000 | 0.001243 | 0.4845 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.002500 | 0.001243 | 0.9885 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.005000 | 0.001243 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.010000 | 0.001243 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.000000 | 0.001006 | 0.0500 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.001000 | 0.001006 | 0.6060 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.002500 | 0.001006 | 0.9995 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.005000 | 0.001006 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.010000 | 0.001006 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.000000 | 0.000806 | 0.0500 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.001000 | 0.000806 | 0.7565 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.002500 | 0.000806 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.005000 | 0.000806 | 1.0000 |
+| codellama34b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.010000 | 0.000806 | 1.0000 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.000000 | 0.006833 | 0.0500 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.001000 | 0.006833 | 0.0935 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.002500 | 0.006833 | 0.1880 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.005000 | 0.006833 | 0.4005 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.010000 | 0.006833 | 0.8870 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.000000 | 0.004717 | 0.0500 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.001000 | 0.004717 | 0.1090 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.002500 | 0.004717 | 0.2690 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.005000 | 0.004717 | 0.6500 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.010000 | 0.004717 | 0.9925 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.000000 | 0.003924 | 0.0500 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.001000 | 0.003924 | 0.1320 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.002500 | 0.003924 | 0.3630 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.005000 | 0.003924 | 0.8145 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.010000 | 0.003924 | 1.0000 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.000000 | 0.003358 | 0.0500 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.001000 | 0.003358 | 0.1475 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.002500 | 0.003358 | 0.4440 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.005000 | 0.003358 | 0.8895 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.010000 | 0.003358 | 1.0000 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.000000 | 0.002775 | 0.0500 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.001000 | 0.002775 | 0.1825 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.002500 | 0.002775 | 0.5465 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.005000 | 0.002775 | 0.9690 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.010000 | 0.002775 | 1.0000 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.000000 | 0.002213 | 0.0500 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.001000 | 0.002213 | 0.2150 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.002500 | 0.002213 | 0.6740 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.005000 | 0.002213 | 0.9975 |
+| codellama34b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.010000 | 0.002213 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.000000 | 0.000486 | 0.0500 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.001000 | 0.000486 | 0.9895 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.002500 | 0.000486 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.005000 | 0.000486 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 24 | +0.010000 | 0.000486 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.000000 | 0.000345 | 0.0500 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.001000 | 0.000345 | 0.9995 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.002500 | 0.000345 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.005000 | 0.000345 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 48 | +0.010000 | 0.000345 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.000000 | 0.000280 | 0.0500 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.001000 | 0.000280 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.002500 | 0.000280 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.005000 | 0.000280 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 72 | +0.010000 | 0.000280 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.000000 | 0.000239 | 0.0500 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.001000 | 0.000239 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.002500 | 0.000239 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.005000 | 0.000239 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 96 | +0.010000 | 0.000239 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.000000 | 0.000199 | 0.0500 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.001000 | 0.000199 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.002500 | 0.000199 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.005000 | 0.000199 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 144 | +0.010000 | 0.000199 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.000000 | 0.000156 | 0.0500 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.001000 | 0.000156 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.002500 | 0.000156 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.005000 | 0.000156 | 1.0000 |
+| llama31_8b | brier_score | A_interactions → A_interactions_neutral_raw | 240 | +0.010000 | 0.000156 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.000000 | 0.001170 | 0.0500 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.001000 | 0.001170 | 0.5380 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.002500 | 0.001170 | 0.9935 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.005000 | 0.001170 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 24 | +0.010000 | 0.001170 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.000000 | 0.000833 | 0.0500 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.001000 | 0.000833 | 0.7665 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.002500 | 0.000833 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.005000 | 0.000833 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 48 | +0.010000 | 0.000833 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.000000 | 0.000669 | 0.0500 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.001000 | 0.000669 | 0.8805 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.002500 | 0.000669 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.005000 | 0.000669 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 72 | +0.010000 | 0.000669 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.000000 | 0.000567 | 0.0500 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.001000 | 0.000567 | 0.9595 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.002500 | 0.000567 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.005000 | 0.000567 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 96 | +0.010000 | 0.000567 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.000000 | 0.000477 | 0.0500 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.001000 | 0.000477 | 0.9910 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.002500 | 0.000477 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.005000 | 0.000477 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 144 | +0.010000 | 0.000477 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.000000 | 0.000364 | 0.0500 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.001000 | 0.000364 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.002500 | 0.000364 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.005000 | 0.000364 | 1.0000 |
+| llama31_8b | log_loss | A_interactions → A_interactions_neutral_raw | 240 | +0.010000 | 0.000364 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.000000 | 0.001458 | 0.0500 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.001000 | 0.001458 | 0.3685 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.002500 | 0.001458 | 0.9575 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.005000 | 0.001458 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.010000 | 0.001458 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.000000 | 0.001038 | 0.0500 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.001000 | 0.001038 | 0.5960 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.002500 | 0.001038 | 0.9985 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.005000 | 0.001038 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.010000 | 0.001038 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.000000 | 0.000862 | 0.0500 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.001000 | 0.000862 | 0.7430 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.002500 | 0.000862 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.005000 | 0.000862 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.010000 | 0.000862 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.000000 | 0.000738 | 0.0500 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.001000 | 0.000738 | 0.8545 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.002500 | 0.000738 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.005000 | 0.000738 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.010000 | 0.000738 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.000000 | 0.000593 | 0.0500 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.001000 | 0.000593 | 0.9585 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.002500 | 0.000593 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.005000 | 0.000593 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.010000 | 0.000593 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.000000 | 0.000451 | 0.0500 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.001000 | 0.000451 | 0.9950 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.002500 | 0.000451 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.005000 | 0.000451 | 1.0000 |
+| llama31_8b | brier_score | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.010000 | 0.000451 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.000000 | 0.003957 | 0.0500 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.001000 | 0.003957 | 0.1235 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.002500 | 0.003957 | 0.3280 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.005000 | 0.003957 | 0.7870 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 24 | +0.010000 | 0.003957 | 0.9990 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.000000 | 0.002855 | 0.0500 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.001000 | 0.002855 | 0.1810 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.002500 | 0.002855 | 0.5480 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.005000 | 0.002855 | 0.9655 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 48 | +0.010000 | 0.002855 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.000000 | 0.002298 | 0.0500 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.001000 | 0.002298 | 0.2225 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.002500 | 0.002298 | 0.6945 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.005000 | 0.002298 | 0.9940 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 72 | +0.010000 | 0.002298 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.000000 | 0.001946 | 0.0500 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.001000 | 0.001946 | 0.2550 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.002500 | 0.001946 | 0.8050 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.005000 | 0.001946 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 96 | +0.010000 | 0.001946 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.000000 | 0.001610 | 0.0500 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.001000 | 0.001610 | 0.3290 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.002500 | 0.001610 | 0.9210 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.005000 | 0.001610 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 144 | +0.010000 | 0.001610 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.000000 | 0.001242 | 0.0500 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.001000 | 0.001242 | 0.4725 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.002500 | 0.001242 | 0.9865 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.005000 | 0.001242 | 1.0000 |
+| llama31_8b | log_loss | A_interactions_oracle_neutral_raw → A_interactions_oracle_neutral_scored | 240 | +0.010000 | 0.001242 | 1.0000 |
+
+No final/extrapolation outcomes, model loading, new model responses, language-model training or final cohort selection were performed. Fresh independently generated structures and a supported scientific claim remain prerequisites for genuine confirmation.

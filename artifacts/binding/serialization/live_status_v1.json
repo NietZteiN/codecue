@@ -1,0 +1,96 @@
+{
+  "budget": {
+    "cap_seconds": 14400,
+    "reserved_seconds": 0,
+    "unreserved_seconds": 10628.07987388206,
+    "used_seconds": 3771.9201261179405
+  },
+  "comparison_audited": true,
+  "completed_report": "reports/binding/serialization_comparison.md",
+  "generated_holdouts_opened": false,
+  "issues": [],
+  "jobs": {
+    "finalize": {
+      "elapsed_seconds": 5,
+      "exit_code": "0:0",
+      "job_id": "476727",
+      "state": "COMPLETED"
+    },
+    "full": {
+      "elapsed_seconds": 1194,
+      "exit_code": "0:0",
+      "job_id": "476726",
+      "state": "COMPLETED"
+    },
+    "maintenance_tests": {
+      "elapsed_seconds": 127,
+      "exit_code": "0:0",
+      "job_id": "476762",
+      "state": "COMPLETED"
+    },
+    "preflight": {
+      "elapsed_seconds": 80,
+      "exit_code": "0:0",
+      "job_id": "476708",
+      "state": "COMPLETED"
+    },
+    "smoke": {
+      "elapsed_seconds": 117,
+      "exit_code": "0:0",
+      "job_id": "476718",
+      "state": "COMPLETED"
+    },
+    "tests": {
+      "elapsed_seconds": 117,
+      "exit_code": "0:0",
+      "job_id": "476709",
+      "state": "COMPLETED"
+    }
+  },
+  "model_inference": false,
+  "recorded_utc": "2026-10-26T01:18:53.238602+00:00",
+  "scheduler_errors": [],
+  "scientific_artifacts_modified": false,
+  "stages": [
+    {
+      "evaluated": 16,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "native_replay_v1",
+      "path": "artifacts/binding/serialization/native_replay_v1/published_behavior",
+      "planned": 16,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 16
+      }
+    },
+    {
+      "evaluated": 16,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "completion_smoke_v1",
+      "path": "artifacts/binding/serialization/completion_smoke_v1/published_behavior",
+      "planned": 16,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 16
+      }
+    },
+    {
+      "evaluated": 1600,
+      "issues": [],
+      "manifest_status": "complete",
+      "name": "completion_full_v1",
+      "path": "artifacts/binding/serialization/completion_full_v1/published_behavior",
+      "planned": 1600,
+      "responses": {
+        "incomplete_tail": false,
+        "malformed_lines": [],
+        "records": 1600
+      }
+    }
+  ],
+  "status": "complete"
+}

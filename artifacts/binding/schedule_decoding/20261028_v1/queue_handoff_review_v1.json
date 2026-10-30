@@ -1,0 +1,276 @@
+{
+  "automatic_completion": true,
+  "automatic_logging": "healthy;10min;2successorguards",
+  "closure_job": "481283",
+  "completed_preparations": 2,
+  "development_graph_groups": 5,
+  "evaluation_role": "discovery_schedule_queue_handoff_v1",
+  "generated_holdouts_opened": false,
+  "independent_helper_synthetic_checks": "passed; source-only, actual completion review not yet run",
+  "maximum_assignment_version": 4,
+  "mutable_paths_not_pinned": [
+    "README.md",
+    "reports/binding/implementation_checklist.md",
+    "reports/binding/preparation_readiness.md",
+    "reports/binding/experiment_log.md"
+  ],
+  "new_fits_at_checkpoint": 0,
+  "new_model_queries_at_checkpoint": 0,
+  "pins": [
+    {
+      "bytes": 52849,
+      "path": "artifacts/binding/sources/20ff6812f33085b298163a26/frozen_manifest.json",
+      "sha256": "83710942c19ad82996183900359959534c558cf8ba6d7594e2b49d7025886841"
+    },
+    {
+      "bytes": 1363,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/build_review_v1.json",
+      "sha256": "dc00de9728e6c48086424478accd44c9b17f6e26cb0f5173fbeb5d100a378d90"
+    },
+    {
+      "bytes": 373,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/closure_job_v1.json",
+      "sha256": "989827bf1082e3e4455de14be828a943d4e8f58e1532690213514afefe1ec2a6"
+    },
+    {
+      "bytes": 3582,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/preflight.json",
+      "sha256": "287f64986dcc1a36f4df963202d83e1f4e07e2b7eb6364205dbbc6e027ac3321"
+    },
+    {
+      "bytes": 12123600,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/prepared_cases.jsonl",
+      "sha256": "ac75b4dcecfb638e6c3495ae3b6bf36be9b62acc1c54a12cdd55639ffe6e592b"
+    },
+    {
+      "bytes": 3319,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture/registration.json",
+      "sha256": "2fdf96f424b6a51affc086ffc8dffdf6c007f03f1e4df142f560786cffa77906"
+    },
+    {
+      "bytes": 2212,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/completion_pipeline_v1.json",
+      "sha256": "22bc7d27025ee2da30315f03f1cf7deab818e029d398981d73a2a1b5589cb2de"
+    },
+    {
+      "bytes": 228,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/execution_source_v1.json",
+      "sha256": "52305d9378a0fab247d9a3ff6bae37ed6ff4598f397bfa4c4b84bf11f94f6576"
+    },
+    {
+      "bytes": 8862,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/finish_suite_v1.py",
+      "sha256": "d4af7e280ebb7d09cff9e3dcfbd7622b0a08bde06d8b7f7c20ae9420dc266224"
+    },
+    {
+      "bytes": 28063,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/independent_review_v1.py",
+      "sha256": "5044bcfcf87c02216d86470b81aadab49d9ccd1ec51d6032e5e729dc5e18217a"
+    },
+    {
+      "bytes": 232,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/jobs_v1.json",
+      "sha256": "c62e7e3f0549d61554d398fac0f6bf5657c0f1d81096a02e424a175c219512a4"
+    },
+    {
+      "bytes": 3527,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/preflight.json",
+      "sha256": "c091ffd0514cd4aedf6da810bfbe949f5387d658f50a6dd36cb25d77a3150cba"
+    },
+    {
+      "bytes": 14941728,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/prepared_cases.jsonl",
+      "sha256": "4730e687354ab6c3822050a047be4e3dcae55d19339edbc3984150b12f658d30"
+    },
+    {
+      "bytes": 3283,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture/registration.json",
+      "sha256": "fa8baca1fa5033581322e1472acb8cc3833f5af1a74b54831317f7d6ef9e5726"
+    },
+    {
+      "bytes": 839,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/logging_review_v1.json",
+      "sha256": "a3631cf6cc9c08534d24432ed4926558c50c0ea4bd2b8232f99f796c9c77a28b"
+    },
+    {
+      "bytes": 45640,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/publish_results_v1.py",
+      "sha256": "f57f452e1ee4bcb5d6ebf3dbb92dbb18d4c80002d46873f66a83d646b78acd63"
+    },
+    {
+      "bytes": 67568,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/readiness_at_submission_v1.json",
+      "sha256": "51da9f20eec6ddfcab93ea4af83ea38a1c651ac1a80e5ed82ac97906306d4845"
+    },
+    {
+      "bytes": 67568,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/readiness_at_submission_v2.json",
+      "sha256": "2faeeeb301d41d2db927746032457b7ef12f108bfc53601e958c8fb912e6bc48"
+    },
+    {
+      "bytes": 263,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/regression_archive_review_v1.json",
+      "sha256": "2a32a3da2d64fbba1106e7f6c8c275886d58dcda525b8b22df7d4376fc463020"
+    },
+    {
+      "bytes": 273783,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/regression_sources_v1.zip",
+      "sha256": "f942e58fc985432137ce08c2d9a98d45b0dbab3a2bf1874f05abcf6bf45265d9"
+    },
+    {
+      "bytes": 294454,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/regression_v1.xml",
+      "sha256": "7bfd79c09adc39881754397ddac6fb9c826541531e019c7c7812fb24e75d079f"
+    },
+    {
+      "bytes": 1792,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/run_stage_v1.py",
+      "sha256": "898012b90bb71582f8000c572782c8de24f0447064c793ec6b0e1945f158b2f8"
+    },
+    {
+      "bytes": 2597,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/run_validation_v1.py",
+      "sha256": "f04d3e53ef3e2452e2014ee31113e9254d5ab0653fd73c52756108248e5543d8"
+    },
+    {
+      "bytes": 11960,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/software_validation_review_v1.json",
+      "sha256": "8823a485539e88959182399fee0fbfb612b816a8609484d2a7e2e400afb2898c"
+    },
+    {
+      "bytes": 12752,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/source_availability_review_v1.json",
+      "sha256": "a427774ba591b02b7ac83eafe8b65b90d99ee49f9d5b32ed6426492b153aceef"
+    },
+    {
+      "bytes": 1197,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/submission_review_v1.json",
+      "sha256": "bf254ee8e25dc66f9159b6e930a438936d9f794ce376abf80e5e7ca3f339bf4e"
+    },
+    {
+      "bytes": 3517,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/submit_suite_v1.py",
+      "sha256": "029eaf6b10c1d6a8bdf1a9fa8b4b850f3cf5ada0f94a392b7a0c5098a1dfe0fd"
+    },
+    {
+      "bytes": 828988,
+      "path": "artifacts/binding/schedule_decoding/20261028_v1/target_preflight_review_v1.json",
+      "sha256": "222e7ceea6d8df0eba9075fb131628261b63bce9e6feeb30832c77cb7860e02b"
+    },
+    {
+      "bytes": 56546,
+      "path": "configs/binding/preparation/readiness_v15.json",
+      "sha256": "5587671ef24fa7efa1c50245f9580de602b7fe41848757d44edc47adaa1e0163"
+    },
+    {
+      "bytes": 56590,
+      "path": "configs/binding/preparation/readiness_v16.json",
+      "sha256": "eb90b095b8fbc1423e2f3ed6aec0d87daf8c3054575bba26ceb7bb915546eab5"
+    },
+    {
+      "bytes": 746,
+      "path": "configs/binding/schedule_decoding_20261028_v1/codellama34b_capture.json",
+      "sha256": "f1e2d98e3704457e1bf3db7b035d03f3dbb31401aeafc3f1f5cbd7251a663353"
+    },
+    {
+      "bytes": 586,
+      "path": "configs/binding/schedule_decoding_20261028_v1/codellama34b_readouts.json",
+      "sha256": "68eb9eda08ba45d7271a958c89fddf68e64fd174d8eea56e7629c00c595f69cf"
+    },
+    {
+      "bytes": 738,
+      "path": "configs/binding/schedule_decoding_20261028_v1/llama8b_capture.json",
+      "sha256": "83bb5de8417694b1b331d88839d7930acc591a4aefd7446e3872575aeb2b27b0"
+    },
+    {
+      "bytes": 571,
+      "path": "configs/binding/schedule_decoding_20261028_v1/llama8b_readouts.json",
+      "sha256": "01d83cffc24cf7140290ee997593763bf17c34f6ea10a281e174a3c90f157792"
+    },
+    {
+      "bytes": 8107,
+      "path": "reports/binding/schedule_decoding_plan_v1.md",
+      "sha256": "8180e7161a3fc8734cc611e07975facd91b6d097a681c9c439def415aed731f1"
+    },
+    {
+      "bytes": 1821,
+      "path": "reports/binding/schedule_decoding_submission_v1.md",
+      "sha256": "26cbdd03e0ee53f5339c81206b33300d03822544556e2d90c35fd45df92f6a7e"
+    }
+  ],
+  "planned_fit_banks": 90,
+  "planned_prefill_cases": 4032,
+  "publisher_synthetic_checks": 18,
+  "readiness_counts": {
+    "blocked_dependency": 1,
+    "deferred_optional": 3,
+    "needs_execution": 1,
+    "needs_scientific_decision": 9,
+    "ready": 49
+  },
+  "recorded_utc": "2026-10-28T17:42:06.680803+00:00",
+  "scheduler_observations": {
+    "481259": {
+      "elapsed_seconds": 457,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481260": {
+      "elapsed_seconds": 85,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481261": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "state": "PENDING"
+    },
+    "481262": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "state": "PENDING"
+    },
+    "481263": {
+      "elapsed_seconds": 80,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481264": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "state": "PENDING"
+    },
+    "481265": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "state": "PENDING"
+    },
+    "481283": {
+      "elapsed_seconds": 0,
+      "exit_code": "0:0",
+      "state": "PENDING"
+    }
+  },
+  "scientific_qualification": "No new learned outcome or causal claim. Prior six failed calibration gates remain failed.",
+  "software_tests": 1922,
+  "source": {
+    "code": "a42b01fa7f1fa201639287c5b0761f2cdeaf0a84163c662e7e986b3fbf555f99",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/20ff6812f33085b298163a26",
+    "snapshot_id": "20ff6812f33085b298163a26"
+  },
+  "source_rows": 2016,
+  "stage_jobs": {
+    "codellama34b_capture": "481264",
+    "codellama34b_prepare": "481263",
+    "codellama34b_readouts": "481265",
+    "llama8b_capture": "481261",
+    "llama8b_prepare": "481260",
+    "llama8b_readouts": "481262",
+    "regression": "481259"
+  },
+  "status": "ready_and_queued",
+  "target_columns": 232,
+  "tracked_tasks": 63,
+  "training_graph_groups": 10,
+  "unrelated_jobs_cancelled": []
+}

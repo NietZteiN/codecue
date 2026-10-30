@@ -1,0 +1,41 @@
+{
+  "allocated_cpu_seconds": 5532,
+  "evaluation_role": "discovery_schedule_followup_resource_v1",
+  "gpu_allocation_seconds": 0,
+  "jobs": {
+    "481360": {
+      "allocated_cpus": 8,
+      "allocated_tres": "billing=8,cpu=8,mem=16G,node=1",
+      "allocation_seconds": 516,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481361": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=8G,node=1",
+      "allocation_seconds": 301,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481362": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=8G,node=1",
+      "allocation_seconds": 43,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    },
+    "481374": {
+      "allocated_cpus": 4,
+      "allocated_tres": "billing=4,cpu=4,mem=8G,node=1",
+      "allocation_seconds": 7,
+      "exit_code": "0:0",
+      "state": "COMPLETED"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "scope": "CPU worker allocation time includes preparation, validation, I/O and publication; all scientific model/fit work is reused.",
+  "status": "passed",
+  "unrelated_jobs_cancelled": []
+}

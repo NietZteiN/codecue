@@ -1,0 +1,17 @@
+{
+  "alignment": {
+    "center": true,
+    "enabled": true
+  },
+  "evaluation_role": "train_only_probe_sensitivity_preparation_v1",
+  "output_review": "artifacts/binding/preparation/probe_sensitivities_review_v1.json",
+  "provenance": {
+    "scope": "software preparation only; no real activation arrays or scientific study fit",
+    "source": "dependvar core sensitivities"
+  },
+  "reduced_rank_ridge": {
+    "alpha": 1.0,
+    "rank": 4
+  },
+  "split": "train"
+}

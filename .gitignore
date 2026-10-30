@@ -6,3 +6,16 @@ runs/
 data/L*/
 *.npy
 *.npz
+# Generated binding-study data and retired development fixtures.
+artifacts/binding/*.jsonl
+artifacts/binding/*.log
+artifacts/binding/*_v[0-9]*
+artifacts/binding/smoke.manifest.json
+artifacts/binding/smoke.validation.json
+artifacts/binding/*_final.*
+artifacts/binding/sources/
+# Downloaded primary-paper reading cache; provenance hashes live outside this directory.
+artifacts/binding/literature/
+# Publication uses an explicit curated metadata list and lossless archives in
+# reproducibility/. Raw arrays, installed runtimes and live control state stay local.
+/artifacts/binding/

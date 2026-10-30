@@ -1,0 +1,55 @@
+{
+  "actual_helper_executions": 2,
+  "byte_identical_immutable_republication_passed": true,
+  "checks": [
+    "strict ASCII scoring ' -7\\n'",
+    "strict ASCII scoring '+7'",
+    "strict ASCII scoring '0'",
+    "strict ASCII scoring '\\t4 '",
+    "strict ASCII scoring '0004'",
+    "strict ASCII scoring ''",
+    "strict ASCII scoring 'words'",
+    "strict ASCII scoring 'x = 4'",
+    "strict ASCII scoring '```\\n4\\n```'",
+    "strict ASCII scoring '\uff14'",
+    "strict ASCII scoring '\\xa04'",
+    "strict ASCII scoring '4444444444444444'",
+    "strict ASCII scoring '4.0'",
+    "strict ASCII scoring '4\\n5'",
+    "last overwrite AST truth differs from initial and current values",
+    "disjoint category valid_correct_integer",
+    "disjoint category valid_wrong_other_question_integer",
+    "disjoint category valid_wrong_other_integer",
+    "disjoint category invalid_assignment_integer",
+    "disjoint category invalid_fenced_integer",
+    "disjoint category invalid_empty",
+    "disjoint category invalid_other",
+    "equal-value control is excluded from other-question intrusion"
+  ],
+  "helper": {
+    "bytes": 25883,
+    "path": "artifacts/binding/old_value_overnight/20261028_v1/postrun_response_diagnostics_v1.py",
+    "sha256": "a92b4f27d8c0c62a8e8fac5d7436139a39d4758a906330f69693e79a60f813c8"
+  },
+  "input_pins_reverified": 30,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_completion_and_comparison_pins_verified": true,
+  "outputs": [
+    {
+      "bytes": 160004,
+      "path": "artifacts/binding/old_value_overnight/20261028_v1/postrun_response_diagnostics_v1.json",
+      "sha256": "0ba80898b262fbceb3045b39faa506518419bdac14290931cb90914edd185d47"
+    },
+    {
+      "bytes": 5781,
+      "path": "reports/binding/old_value_postrun_response_diagnostics_v1.md",
+      "sha256": "5e596c4e45498e8084adc1741f525f60e803a8409ce69ec83c49a4f21b80afda"
+    }
+  ],
+  "primary_gate_cells_checked": 48,
+  "scores_or_gates_changed": false,
+  "status": "passed",
+  "strict_scores_checked": 40320,
+  "synthetic_guard_checks": 23
+}

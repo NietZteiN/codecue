@@ -1,0 +1,34 @@
+{
+  "baseline_audit": {
+    "baseline_cases": 2592,
+    "baseline_correct": 2224,
+    "baseline_gate": {
+      "cells": [],
+      "eligible_families": [],
+      "status": "behavior_only"
+    },
+    "baseline_sha256": "8ab2d82ecf68f9559adcb1285a1547edb4306deeb9900d9fbb0e6f13b9df6249",
+    "generated_holdouts_opened": false,
+    "identity_hash": "7f0c935d4717b3e7ab3446884cb7ec9dd2b237d563e76becdf3e160636327491",
+    "interpretation": "Behavior-only capture audit passed; no interventions requested.",
+    "intervention_forwards": 0,
+    "preflight": {
+      "cases": 2592,
+      "config_hash": "fac5a3fe53ae0050dc854e632d76914645e534d130d4c168de8164399655de74",
+      "control_pairs": 1728,
+      "dataset_sha256": "9230d321797c486b889188085729a2e6f3f67e2d46641617dcfa23fe35d99e5e",
+      "generated_holdouts_opened": false,
+      "prepared_sha256": "ff34571b018c4eb5de72b6cad1fb3a8cb93afe0187701e72a5d197e18a6d8061",
+      "source_sha256": "f5b278df54204b356c085e4c15dffdd65c02b7fea639c06607e0cb7f6f8b55b3",
+      "status": "passed"
+    },
+    "status": "passed",
+    "vector_bank_sha256": "ae7371845afbf358127850709f82e341a49d32abe20bc407e3d71002dc87181b"
+  },
+  "generated_holdouts_opened": false,
+  "identity_hash": "a5524705f33fbe79073be2118fab090060c891e7d7c4a8ec5f27409150b22cf6",
+  "intervention_forwards": 96768,
+  "maximum_relative_norm_error": 0.00345359006257311,
+  "status": "passed",
+  "summary_sha256": "043c3785e7db84ea93b113e69ad546560ecd6b63a2f9d3c44b8a4fb51063a9b7"
+}

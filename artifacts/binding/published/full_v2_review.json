@@ -1,0 +1,226 @@
+{
+  "audit_path": "artifacts/binding/published/full_v2_review.json",
+  "checkpoint": {
+    "model": "codellama/CodeLlama-7b-Instruct-hf",
+    "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+    "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed"
+  },
+  "diagnostics": {
+    "cruxeval_paired_correctness": {
+      "both_correct": 249,
+      "both_incorrect": 461,
+      "cot_only_correct": 49,
+      "direct_only_correct": 41,
+      "n": 800
+    },
+    "interpretation": "Descriptive checks of a fixed public benchmark. Answer format validity does not establish reasoning faithfulness. Direct/CoT change both prompt and token budget. BBH sizes use different released examples; they are not matched load contrasts.",
+    "tasks": [
+      {
+        "contains_python_section": 786,
+        "generated_tokens": 105262,
+        "mean_generated_tokens": 131.5775,
+        "n": 800,
+        "parse_errors": {
+          "SyntaxError": 12,
+          "ValueError": 13,
+          "valid": 775
+        },
+        "primary_upstream_score_disagreements": 287,
+        "starts_new_question": 0,
+        "stop_reasons": {
+          "answer_end_marker": 781,
+          "eos": 11,
+          "token_limit": 8
+        },
+        "task": "cruxeval_o_direct"
+      },
+      {
+        "contains_python_section": 0,
+        "generated_tokens": 33633,
+        "gold_letters": {
+          "(A)": 79,
+          "(B)": 88,
+          "(C)": 83
+        },
+        "mean_generated_tokens": 134.532,
+        "n": 250,
+        "parse_errors": {
+          "valid": 250
+        },
+        "predicted_letters": {
+          "(A)": 133,
+          "(B)": 74,
+          "(C)": 43
+        },
+        "starts_new_question": 2,
+        "stop_reasons": {
+          "eos": 250
+        },
+        "task": "bbh_tracking_3",
+        "uniform_guess_accuracy": 0.3333333333333333
+      },
+      {
+        "contains_python_section": 0,
+        "generated_tokens": 66071,
+        "gold_letters": {
+          "(A)": 50,
+          "(B)": 54,
+          "(C)": 52,
+          "(D)": 51,
+          "(E)": 43
+        },
+        "mean_generated_tokens": 264.284,
+        "n": 250,
+        "parse_errors": {
+          "missing final in-range answer letter": 1,
+          "valid": 249
+        },
+        "predicted_letters": {
+          "(A)": 86,
+          "(B)": 81,
+          "(C)": 33,
+          "(D)": 24,
+          "(E)": 25,
+          "invalid": 1
+        },
+        "starts_new_question": 18,
+        "stop_reasons": {
+          "answer_end_marker": 14,
+          "eos": 236
+        },
+        "task": "bbh_tracking_5",
+        "uniform_guess_accuracy": 0.2
+      },
+      {
+        "contains_python_section": 0,
+        "generated_tokens": 103085,
+        "gold_letters": {
+          "(A)": 36,
+          "(B)": 37,
+          "(C)": 38,
+          "(D)": 36,
+          "(E)": 30,
+          "(F)": 34,
+          "(G)": 39
+        },
+        "mean_generated_tokens": 412.34,
+        "n": 250,
+        "parse_errors": {
+          "missing final in-range answer letter": 8,
+          "valid": 242
+        },
+        "predicted_letters": {
+          "(A)": 71,
+          "(B)": 45,
+          "(C)": 46,
+          "(D)": 24,
+          "(E)": 20,
+          "(F)": 13,
+          "(G)": 23,
+          "invalid": 8
+        },
+        "starts_new_question": 56,
+        "stop_reasons": {
+          "answer_end_marker": 50,
+          "eos": 200
+        },
+        "task": "bbh_tracking_7",
+        "uniform_guess_accuracy": 0.14285714285714285
+      },
+      {
+        "contains_python_section": 793,
+        "generated_tokens": 210093,
+        "mean_generated_tokens": 262.61625,
+        "n": 800,
+        "parse_errors": {
+          "SyntaxError": 4,
+          "ValueError": 44,
+          "valid": 752
+        },
+        "primary_upstream_score_disagreements": 0,
+        "starts_new_question": 0,
+        "stop_reasons": {
+          "answer_end_marker": 773,
+          "token_limit": 27
+        },
+        "task": "cruxeval_o_cot"
+      }
+    ]
+  },
+  "generated_holdouts_opened": false,
+  "inference_source_sha256": "fb3f5cc1df82fb48c8af359a4d5308c0f4fa6dcfba0b37d48b5172c959b92aba",
+  "model_inference": false,
+  "prompt_token_ids_sha256": "0fe3ba3aa3bdf09d60ce909bee43cfa882829286ce426b7d659a2e4119317553",
+  "resources": {
+    "gpu_peak_bytes": 21424295936,
+    "stage_seconds": 1876.7109413740109
+  },
+  "responses_path": "artifacts/binding/published/full_v2/published_behavior/responses.jsonl",
+  "responses_sha256": "69cf64a659f089c54055b21edc0c98c6694a5d66c7ac486b93698cf36f6a0e24",
+  "review_source_sha256": "b497c63bb03016cf8ad094655d667f26c30fc384e892773bdfa24db5e82cd986",
+  "run_identity_hash": "c66705be15fc7dd0c51843000a2ffd453ec6015f769ab7bee1307b5fdb548ba5",
+  "summary": {
+    "complete": true,
+    "cruxeval_metric_limit": "literal equality without execution; expressions and function calls get no credit",
+    "decoding": "one greedy completion per item; no sampled pass@k",
+    "evaluated": 2350,
+    "generated_holdouts_opened": false,
+    "metric": "python_literal_equality_and_bbh_final_letter_v2",
+    "planned": 2350,
+    "serialization": "released prompt content inside the checkpoint single-user chat template; audited BOS boundary",
+    "tasks": [
+      {
+        "accuracy": 0.3625,
+        "correct": 290,
+        "evaluated": 800,
+        "evaluated_accuracy": 0.3625,
+        "planned": 800,
+        "task": "cruxeval_o_direct",
+        "token_limited": 8,
+        "upstream_postprocessing_literal_correct": 3,
+        "valid": 775
+      },
+      {
+        "accuracy": 0.36,
+        "correct": 90,
+        "evaluated": 250,
+        "evaluated_accuracy": 0.36,
+        "planned": 250,
+        "task": "bbh_tracking_3",
+        "token_limited": 0,
+        "valid": 250
+      },
+      {
+        "accuracy": 0.252,
+        "correct": 63,
+        "evaluated": 250,
+        "evaluated_accuracy": 0.252,
+        "planned": 250,
+        "task": "bbh_tracking_5",
+        "token_limited": 0,
+        "valid": 249
+      },
+      {
+        "accuracy": 0.156,
+        "correct": 39,
+        "evaluated": 250,
+        "evaluated_accuracy": 0.156,
+        "planned": 250,
+        "task": "bbh_tracking_7",
+        "token_limited": 0,
+        "valid": 242
+      },
+      {
+        "accuracy": 0.3725,
+        "correct": 298,
+        "evaluated": 800,
+        "evaluated_accuracy": 0.3725,
+        "planned": 800,
+        "task": "cruxeval_o_cot",
+        "token_limited": 27,
+        "upstream_postprocessing_literal_correct": 298,
+        "valid": 752
+      }
+    ]
+  }
+}

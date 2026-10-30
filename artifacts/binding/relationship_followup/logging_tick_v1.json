@@ -1,0 +1,106 @@
+{
+  "result": {
+    "counts": {
+      "analysis": 185,
+      "dataset": 64,
+      "job": 337,
+      "run": 73
+    },
+    "csv": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/experiments.csv",
+    "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+    "events": 2295,
+    "issues": [],
+    "notices": [
+      {
+        "bytes": 9590432,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/candidate_prediction/comparison_v1.json"
+      },
+      {
+        "bytes": 12324277,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/joint_confidence/comparison_v1.json"
+      },
+      {
+        "bytes": 10473597,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/summary.json"
+      },
+      {
+        "bytes": 10484733,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/query_selectivity/llama31_8b_v1/review_v1.json"
+      },
+      {
+        "bytes": 15034398,
+        "code": "metadata_size_limit",
+        "limit_bytes": 8388608,
+        "message": "Metadata linked without reading or hashing; execution and scientific status are unknown.",
+        "path": "/work/jvl210002/migration/codecue/artifacts/binding/stress_prediction/v2/comparison_v1.json"
+      }
+    ],
+    "records": 659,
+    "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+    "status": "ok",
+    "updated_utc": "2026-10-28T02:10:33.835282+00:00"
+  },
+  "scheduler": {
+    "account": "tnguyen",
+    "cached": false,
+    "enabled": true,
+    "error": null,
+    "healthy": true,
+    "installed": true,
+    "interval_minutes": 10,
+    "job_name": "binding-log-5f498587f4bd",
+    "last_result": {
+      "counts": {
+        "analysis": 184,
+        "dataset": 64,
+        "job": 337,
+        "run": 73
+      },
+      "database": "/work/jvl210002/migration/codecue/artifacts/binding/experiment_log/index.sqlite3",
+      "events": 2294,
+      "report": "/work/jvl210002/migration/codecue/reports/binding/experiment_log.md",
+      "status": "ok"
+    },
+    "last_tick_utc": "2026-10-28T02:02:08.487997+00:00",
+    "next_reconcile_utc": "2026-10-28T02:12:08.487997+00:00",
+    "partition": "dev",
+    "pending_guards": 2,
+    "root": "/work/jvl210002/migration/codecue",
+    "running_workers": 0,
+    "scheduler_error": null,
+    "status": "enabled",
+    "workers": [
+      {
+        "account": "tnguyen",
+        "job_id": "480389",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T21:27:35",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      },
+      {
+        "account": "tnguyen",
+        "job_id": "480387",
+        "name": "binding-log-5f498587f4bd",
+        "start_time": "2026-10-27T21:17:08",
+        "state": "PENDING",
+        "user": "jvl210002",
+        "verified": true
+      }
+    ]
+  },
+  "status": "complete"
+}

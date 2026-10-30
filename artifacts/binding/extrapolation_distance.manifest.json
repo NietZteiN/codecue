@@ -1,0 +1,149 @@
+{
+  "attempts": 555,
+  "base_instances": 120,
+  "cell_attempts": {
+    "accumulator:load2:updates1": 64,
+    "accumulator:load2:updates3": 65,
+    "accumulator:load4:updates1": 56,
+    "accumulator:load4:updates3": 65,
+    "parallel:load2:updates1": 55,
+    "parallel:load2:updates3": 33,
+    "parallel:load4:updates1": 35,
+    "parallel:load4:updates3": 73,
+    "snapshot:load2:updates1": 23,
+    "snapshot:load2:updates3": 25,
+    "snapshot:load4:updates1": 25,
+    "snapshot:load4:updates3": 36
+  },
+  "cell_rejections": {
+    "accumulator:load2:updates1": 54,
+    "accumulator:load2:updates3": 55,
+    "accumulator:load4:updates1": 46,
+    "accumulator:load4:updates3": 55,
+    "parallel:load2:updates1": 45,
+    "parallel:load2:updates3": 23,
+    "parallel:load4:updates1": 25,
+    "parallel:load4:updates3": 63,
+    "snapshot:load2:updates1": 13,
+    "snapshot:load2:updates3": 15,
+    "snapshot:load4:updates1": 15,
+    "snapshot:load4:updates3": 26
+  },
+  "cohort": "distance",
+  "evaluation_role": "structural_extrapolation",
+  "generation_config": {
+    "algorithm_version": 6,
+    "answer_magnitude_bins": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "arithmetic_controls": false,
+    "cohort": "distance",
+    "counterfactual_pairs": true,
+    "distance_padding": 8,
+    "evaluation_role": "structural_extrapolation",
+    "identifier_pool": "codellama-context-matched-v1",
+    "instances_per_cell": 10,
+    "load_levels": [
+      2,
+      4
+    ],
+    "reference_datasets": [
+      "artifacts/binding/pilot_matched.jsonl"
+    ],
+    "seed": 20262002,
+    "split_override": "test",
+    "templates_per_cell": 10,
+    "update_levels": [
+      1,
+      3
+    ],
+    "variable_count": 4
+  },
+  "generation_config_hash": "0d8e966f0b045535816a65a9f215e212e302046a1ee7833b1e89033aa2c3b1a0",
+  "independent_template_clusters": 60,
+  "primary_answer_magnitude_bins": {
+    "0": 120
+  },
+  "reference_datasets": {
+    "artifacts/binding/pilot_matched.jsonl": "fce0a27061efdee3a15ebe597b34da0e9add672e56c6f3ac2350bd7f667921a4"
+  },
+  "reference_skeleton_overlap": 0,
+  "rejected": 435,
+  "rejection_rate": 0.7837837837837838,
+  "rows": 1440,
+  "schema_version": 1,
+  "sha256": "73c306ec1443e94cfbbb5d595323b20d33dbb63a224ce0780ae74fe840342289",
+  "split_rows": {
+    "test": 1440
+  },
+  "split_templates": {
+    "development": 0,
+    "test": 120,
+    "train": 0
+  },
+  "structural_templates": 120,
+  "token_counts": "filled by the selected tokenizer at model-run time",
+  "value_distribution": {
+    "-1": 65,
+    "-10": 51,
+    "-11": 34,
+    "-12": 24,
+    "-13": 44,
+    "-14": 45,
+    "-15": 28,
+    "-16": 15,
+    "-17": 6,
+    "-18": 22,
+    "-19": 6,
+    "-2": 80,
+    "-20": 10,
+    "-21": 13,
+    "-22": 11,
+    "-23": 4,
+    "-3": 80,
+    "-4": 68,
+    "-5": 72,
+    "-6": 53,
+    "-7": 65,
+    "-8": 72,
+    "-9": 47,
+    "0": 85,
+    "1": 89,
+    "10": 33,
+    "11": 40,
+    "12": 39,
+    "13": 22,
+    "14": 16,
+    "15": 33,
+    "16": 46,
+    "17": 33,
+    "18": 25,
+    "19": 10,
+    "2": 99,
+    "20": 15,
+    "21": 3,
+    "23": 1,
+    "24": 4,
+    "26": 1,
+    "27": 1,
+    "28": 1,
+    "3": 91,
+    "4": 118,
+    "5": 62,
+    "6": 109,
+    "7": 71,
+    "8": 56,
+    "9": 62
+  }
+}

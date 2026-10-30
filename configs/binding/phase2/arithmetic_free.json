@@ -1,0 +1,44 @@
+{
+  "dataset": "artifacts/binding/phase2/arithmetic_free.jsonl",
+  "run_dir": "artifacts/binding/phase2/arithmetic_free",
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "batch_size": 4,
+  "max_new_tokens": 12,
+  "splits": [
+    "train",
+    "development"
+  ],
+  "per_cell_limit": null,
+  "control_kinds": [
+    "primary",
+    "binding_swap",
+    "arithmetic_control"
+  ],
+  "seed": 2026102504,
+  "max_gpu_seconds": 1200,
+  "activation_limit_bytes": 68719476736,
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "extraction_splits": [
+    "train",
+    "development"
+  ],
+  "protocol": "short_answer_prefill_v2",
+  "cpu_threads": 4,
+  "diagnostic_kind": "arithmetic_free",
+  "tokenization_mode": "codellama_official_boundary_v1",
+  "calibration": {
+    "case_source": "phase2_diagnostics",
+    "variants": [
+      "print_direct_v3",
+      "print_trace_long_v1"
+    ]
+  }
+}

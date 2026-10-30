@@ -1,0 +1,69 @@
+{
+  "generation": {
+    "seed": 20262003,
+    "instances_per_cell": 10,
+    "templates_per_cell": 10,
+    "counterfactual_pairs": true,
+    "arithmetic_controls": false,
+    "algorithm_version": 6,
+    "answer_magnitude_bins": [
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "identifier_pool": "codellama-context-matched-v1",
+    "evaluation_role": "structural_extrapolation",
+    "split_override": "test",
+    "cohort": "competition",
+    "reference_datasets": [
+      "artifacts/binding/pilot_matched.jsonl"
+    ],
+    "variable_count": 6,
+    "load_levels": [
+      6
+    ],
+    "update_levels": [
+      1,
+      3
+    ],
+    "distance_padding": 0
+  },
+  "dataset": "artifacts/binding/extrapolation_competition.jsonl",
+  "run_dir": "artifacts/binding/extrapolation_competition_behavior",
+  "model": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "tokenizer_revision": "22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "batch_size": 16,
+  "max_new_tokens": 12,
+  "splits": [
+    "test"
+  ],
+  "per_cell_limit": null,
+  "control_kinds": [
+    "primary",
+    "binding_swap"
+  ],
+  "seed": 17,
+  "max_gpu_seconds": 13000,
+  "activation_limit_bytes": 68719476736,
+  "layers": [
+    8,
+    16,
+    24
+  ],
+  "extraction_splits": [
+    "test"
+  ],
+  "protocol": "short_answer_prefill_v2"
+}

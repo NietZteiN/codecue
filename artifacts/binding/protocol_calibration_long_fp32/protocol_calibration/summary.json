@@ -1,0 +1,32 @@
+{
+  "actual_model_dtype": "torch.float32",
+  "complete": true,
+  "gate": "At least 7/8 primitive and 2/4 training answers correct, all 12 parsed, only motivates a fresh training-bank check",
+  "heldout_outcomes_opened": false,
+  "interpretation": "training-only calibration; explicit reasoning changes computation and is kept separate from short answers",
+  "model_experiment": true,
+  "variants": [
+    {
+      "families": {
+        "discovery_training": {
+          "correct": 0,
+          "invalid": 1,
+          "n": 4
+        },
+        "primitive": {
+          "correct": 7,
+          "invalid": 0,
+          "n": 8
+        }
+      },
+      "invalid": 1,
+      "n": 12,
+      "primitive_correct": 7,
+      "primitive_n": 8,
+      "promising_for_training_bank_only": false,
+      "training_correct": 0,
+      "training_n": 4,
+      "variant": "print_trace_long_v1"
+    }
+  ]
+}

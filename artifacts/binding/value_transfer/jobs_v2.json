@@ -1,0 +1,18 @@
+{
+  "preflight": "477620",
+  "tests": "477621",
+  "previous_attempt": "jobs_v1.json",
+  "correction": "Preserve virtualenv Python path; resolving its symlink selected the base interpreter. No model inference ran in v1.",
+  "tests_eligible_partitions_updated": "dev,normal (allow CPU regression after tokenizer preflight without waiting only on normal)",
+  "run": "477624",
+  "audit": "477625",
+  "review": "477626",
+  "inference_source": "source_v1.json",
+  "review_source": "review_source_v1.json",
+  "gpu_eligibility_reason": "Same pinned 8B BF16 model; earlier capture peak 16.3 GiB at batch32, short fixed-width prompts at batch48; choose available local A30/H100/H200 without a compute cap.",
+  "tests_scheduler_update": {
+    "time_limit": "02:00:00",
+    "time_min": "00:05:00",
+    "reason": "The original normal CPU 48h request exceeded the dev partition maximum after expanding eligible partitions. Align with the dev partition walltime and permit short backfill; no application time cutoff."
+  }
+}

@@ -1,0 +1,633 @@
+{
+  "activation_arrays_opened": false,
+  "coefficient_arrays_opened": false,
+  "config_hash": "da195db4e40abb7c64284338ec2543519b202ea831a31cbdb26ebcd6cd276774",
+  "development_prediction_rows": 62640,
+  "development_rows_per_bank": 696,
+  "evaluation_role": "discovery_schedule_score_review_v1",
+  "generated_holdouts_opened": false,
+  "graph_groups": 5,
+  "limitations": [
+    "Posthoc discovery analysis after examining the original aggregate results; this is neither an untouched test nor a reliability-gate rescue.",
+    "Five unequal DEV graph families are the structural units. Numeric, lexical, body-query and weighting-seed relatives are dependent; no new confidence interval is claimed.",
+    "Every fixed target slot is compared with itself across the four queries on an identical assignment body. Query effects do not compare different queried targets.",
+    "Site7 is a pre-query placebo; site8 observes the explicit query. Any site7 disagreement or margin difference is retained, including numerical or padding effects.",
+    "Joint scalar-version/definition/parent correctness describes different decoder tasks; correct version integers do not establish correct bindings or a causal state-tracking algorithm.",
+    "Random-prefix controls are separate sham tasks with different class marginals and potentially unlawful joint graphs. Their diagnostic results do not establish matched task difficulty.",
+    "Scores are uncalibrated ridge outputs; margins and top scores are descriptive. No threshold, layer, seed, class or subgroup is selected using this analysis.",
+    "No model/tokenizer/activation/coefficient arrays are loaded, no parameters are reapplied, and no model or probe is fitted."
+  ],
+  "matched_bodies": 174,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "parameters_reapplied": 0,
+  "primary": {
+    "codellama34b": {
+      "hidden": {
+        "7": {
+          "direct": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        },
+        "8": {
+          "direct": {
+            "current_definition": {
+              "effect": 0.03991060025542784,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.026041666666666654,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.011015325670498085,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.04166666666666668,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": -0.008301404853128991,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": -0.016550925925925927,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": -0.004469987228607937,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.010956790123456794,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        }
+      },
+      "surface": {
+        "7": {
+          "direct": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        },
+        "8": {
+          "direct": {
+            "current_definition": {
+              "effect": -0.0035121328224776613,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": -0.00038580246913579535,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": 0.0033524904214559392,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0037808641975308616,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.006385696040868444,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0014853395061728374,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        }
+      }
+    },
+    "llama8b": {
+      "hidden": {
+        "7": {
+          "direct": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        },
+        "8": {
+          "direct": {
+            "current_definition": {
+              "effect": 0.03975095785440611,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": -0.013348765432098791,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.007822477650063867,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.02746913580246914,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": -0.003991060025542781,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": -0.008468364197530866,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0007982120051085636,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": -0.021701388888888885,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        }
+      },
+      "surface": {
+        "7": {
+          "direct": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        },
+        "8": {
+          "direct": {
+            "current_definition": {
+              "effect": -0.0038314176245210774,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": -0.008796296296296293,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "random_prefix_control": {
+            "current_definition": {
+              "effect": 0.00367177522349936,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0067901234567901226,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0038314176245210774,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": -0.005574845679012342,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          },
+          "training_prior": {
+            "current_definition": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            },
+            "current_version": {
+              "effect": 0.0,
+              "fixed_target_comparisons_per_seed": 696,
+              "group_macro_effect": 0.0,
+              "matched_bodies_per_seed": 174,
+              "seeds": [
+                17,
+                29,
+                43
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "saved_score_rows_checked": 181440,
+  "score_banks": 90,
+  "status": "complete_exploratory"
+}

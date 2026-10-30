@@ -1,0 +1,105 @@
+{
+  "automatic_next_steps": [
+    "one GPU: three fixed-prompt 512-request vLLM profiles, then three 1600-request validations in the same engine",
+    "CPU: verify every saved candidate, export fastest full-workload execution preset and report",
+    "CPU: refresh live status after terminal GPU/audit result"
+  ],
+  "completed_profile_baseline": {
+    "artifact": "artifacts/binding/throughput/tune_v2/throughput_profile/worker_0/hf_eager_legacy_8.json",
+    "backend": "hf",
+    "cases": 512,
+    "generation_seconds": 329.755663190037,
+    "gpu": {
+      "mean_gpu_utilization_percent": 95.0,
+      "mean_power_watts": 359.7273990306947,
+      "peak_device_memory_mib": 79023.0,
+      "samples": 619
+    },
+    "output_tokens": 81154,
+    "output_tokens_per_second": 246.10343068841016,
+    "prompt_token_ids_sha256": "ec0559f54ced8dde9cd9b950d0d3ddf291a12c490bde8e46a1bfe37008d61887",
+    "quality": {
+      "both_valid": 495,
+      "correct": 189,
+      "correctness_matches": 512,
+      "n": 512,
+      "parsed_values_match": 495,
+      "raw_matches": 512,
+      "reference_correct": 189,
+      "valid": 495,
+      "validity_matches": 512
+    },
+    "requests_per_second": 1.552664767139833,
+    "setting": {
+      "attention": "eager",
+      "batch_size": 8,
+      "bucket": false,
+      "stopping": "legacy"
+    },
+    "status": "complete",
+    "torch_peak_allocated_bytes": 19804573696
+  },
+  "completed_profile_best": {
+    "artifact": "artifacts/binding/throughput/tune_v2/throughput_profile/worker_2/hf_sdpa_tensor_32.json",
+    "backend": "hf",
+    "cases": 512,
+    "generation_seconds": 258.7756332610152,
+    "gpu": {
+      "mean_gpu_utilization_percent": 76.66115702479338,
+      "mean_power_watts": 383.57845041322315,
+      "peak_device_memory_mib": 80797.0,
+      "samples": 484
+    },
+    "output_tokens": 84071,
+    "output_tokens_per_second": 324.87989282669986,
+    "prompt_token_ids_sha256": "2731cdf064abef0f63638c93f26e33384d47ebb523c57d43f99f8e7bf25fafe9",
+    "quality": {
+      "both_valid": 490,
+      "correct": 189,
+      "correctness_matches": 498,
+      "n": 512,
+      "parsed_values_match": 437,
+      "raw_matches": 377,
+      "reference_correct": 189,
+      "valid": 491,
+      "validity_matches": 506
+    },
+    "requests_per_second": 1.9785479550293243,
+    "setting": {
+      "attention": "sdpa",
+      "batch_size": 32,
+      "bucket": true,
+      "stopping": "tensor"
+    },
+    "status": "complete",
+    "torch_peak_allocated_bytes": 39009164288
+  },
+  "completed_profile_limitation": "Completed 512-request Transformers trials only; parent sweep cancelled and no full-workload validation. Historical GPU telemetry selector was unverified.",
+  "full_workload_validation_complete": false,
+  "generated_holdouts_opened": false,
+  "jobs": {
+    "audit": "476842",
+    "preflight": "476839",
+    "profile": "476841",
+    "status": "476856",
+    "tests": "476840"
+  },
+  "live_status": "artifacts/binding/throughput/live_status_v4.json",
+  "old_scientific_runs_modified": false,
+  "profile_speedup": 1.2742917833280982,
+  "recorded_utc": "2026-10-26T02:56:45.158565+00:00",
+  "regression_tests_passed": 169,
+  "shared_gpu_budget_at_record_time": {
+    "cap_seconds": 14400,
+    "reserved_seconds": 0,
+    "unreserved_seconds": 8067.637208487024,
+    "used_seconds": 6332.362791512976
+  },
+  "source": "artifacts/binding/throughput/source_v4.json",
+  "status_as_of_recorded_time": "queued",
+  "status_report": "reports/binding/throughput_status.md",
+  "status_source": "artifacts/binding/throughput/status_source_v4.json",
+  "status_tests_passed": 8,
+  "validated_preset_when_ready": "artifacts/binding/throughput/selected_execution_v4.json",
+  "validated_report_when_ready": "reports/binding/throughput_results.md"
+}
