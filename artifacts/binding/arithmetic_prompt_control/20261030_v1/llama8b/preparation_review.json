@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "bytes": 491694,
+    "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/responses.jsonl",
+    "sha256": "c30b62c2a38e81345c5a68203a9bac28c60b8be9a8c51afa72c44a5572ee18d2"
+  },
+  "baseline_prompt_matches": 1152,
+  "baseline_receipt_sha256": "dc06a778d5849f63e2cb051e7e875234396b1107a2e7d1fb98afe2fce086bc97",
+  "baseline_source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "cases": 5760,
+  "config": {
+    "capture_config": "configs/binding/arithmetic_graph_20261029_v3/llama8b_capture.json",
+    "capture_config_sha256": "41b80899c5847a0f6e53ed56871e3839a828a2fc0522b5d5fcb36dfdacc2bcb9",
+    "declared_plan": "reports/binding/arithmetic_prompt_control_plan_v1.md",
+    "declared_plan_sha256": "d39f68059017dda7c583b20bb5bbff57788663bd762f9ee715b7ed7a04518438",
+    "evaluation_role": "discovery_arithmetic_prompt_control_v1",
+    "generation_batch_size": 64,
+    "report": "reports/binding/arithmetic_prompt_control_llama8b_v1.md",
+    "run_dir": "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b"
+  },
+  "config_hash": "00f40302f13bf99e080b5c2926e72acf071ee1004efedd341a20c10e2f0eb15f",
+  "generated_holdouts_opened": false,
+  "independent_print_outputs": 1152,
+  "max_prompt_tokens": 140,
+  "new_model_queries": 0,
+  "prepared_sha256": "380724886ce5f25a0c897c335fde22d0d8b4dfe94c762718cfba4ebc7289fe84",
+  "source": {
+    "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+    "snapshot_id": "5d321f96dcdb4555d85e61b7",
+    "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+  },
+  "status": "passed"
+}

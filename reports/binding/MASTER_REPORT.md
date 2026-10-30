@@ -1,5 +1,7 @@
 # Master research document
 
+Morning follow-up, October30: [review and next decisions](arithmetic_graph_morning_decision_v1.md), [probe TRAIN/DEV audit](arithmetic_graph_morning_review_v2.md), and [completed printed-query controls](arithmetic_prompt_control_findings_v1.md). The replay is exact; probe generalization and arithmetic competence remain unresolved.
+
 [GitHub-friendly master document](../../docs/binding/MASTER_REPORT.md)
 
 [Open the complete master report with embedded figures](master_research_report_v4.html) · [Read the Markdown edition](master_research_report_v4.md)

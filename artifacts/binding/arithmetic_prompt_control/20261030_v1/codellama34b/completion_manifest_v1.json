@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "manifest": {
+      "bytes": 3826,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b/manifest.json",
+      "sha256": "f4dbe732416c125656bd587cfb04c5f6693b464358397b74ea814ef65f6fdab4"
+    },
+    "registration": {
+      "bytes": 2835,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b/registration.json",
+      "sha256": "b8f87b4e1f47f4d499de397d8c71d8239a16e921d014921280797bebc3c704bc"
+    },
+    "report": {
+      "bytes": 6472,
+      "path": "reports/binding/arithmetic_prompt_control_codellama34b_v1.md",
+      "sha256": "75b89e69c29ee6ab4344c338fa001ab5357f88d6074dbae6efc6d78cc2dceca1"
+    },
+    "responses": {
+      "bytes": 2325855,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b/responses.jsonl",
+      "sha256": "3749be863ec2804752929ddcf9194d3fb8dd8094370e2d9d4e43e3c689a814de"
+    },
+    "summary": {
+      "bytes": 13574,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b/summary.json",
+      "sha256": "783cc59f4ea2ccb716f3f9ff76c71f54e0dccd09604b06a2d41e3b708841ba50"
+    }
+  },
+  "cases": 5760,
+  "config_hash": "304bb4aeee2a2d9003ba7dc5d08e687d235cd4f4b744f7e7452e178351727bae",
+  "evaluation_role": "discovery_arithmetic_prompt_control_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 5760,
+  "new_model_queries": 5760,
+  "source": {
+    "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+    "snapshot_id": "5d321f96dcdb4555d85e61b7",
+    "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+  },
+  "status": "complete_exploratory"
+}

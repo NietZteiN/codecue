@@ -49,7 +49,10 @@ SCRIPT_NAMES = ('87_binding_preflight.py', '88_binding_pipeline.py', '89_binding
                 '168_binding_arithmetic_graph_readouts.py',
                 '169_binding_arithmetic_graph_behavior.py',
                 '170_binding_arithmetic_graph_suite.py',
-                '171_binding_arithmetic_graph_setup.py')
+                '171_binding_arithmetic_graph_setup.py',
+                '172_binding_arithmetic_graph_review.py',
+                '173_binding_arithmetic_prompt_behavior.py',
+                '174_binding_arithmetic_prompt_suite.py')
 
 
 def source_files(root):

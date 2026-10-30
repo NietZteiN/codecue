@@ -1,0 +1,416 @@
+{
+  "cases": 5760,
+  "config_hash": "304bb4aeee2a2d9003ba7dc5d08e687d235cd4f4b744f7e7452e178351727bae",
+  "evaluation_role": "discovery_arithmetic_prompt_control_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 5760,
+  "limitation": "Adaptive matched discovery on reused program families. Print syntax and wording change token context. Original outcomes and parser remain unchanged; no causal or confirmatory claim.",
+  "metrics": {
+    "cells": {
+      "all/bare_i0": {
+        "accuracy": 0.2144097222222222,
+        "invalid_fraction": 0.0,
+        "rows": 1152
+      },
+      "all/bare_i1": {
+        "accuracy": 0.21788194444444445,
+        "invalid_fraction": 0.06510416666666667,
+        "rows": 1152
+      },
+      "all/bare_i2": {
+        "accuracy": 0.1796875,
+        "invalid_fraction": 0.04774305555555555,
+        "rows": 1152
+      },
+      "all/print_i0": {
+        "accuracy": 0.3602430555555556,
+        "invalid_fraction": 0.0,
+        "rows": 1152
+      },
+      "all/print_i1": {
+        "accuracy": 0.4053819444444444,
+        "invalid_fraction": 0.0026041666666666665,
+        "rows": 1152
+      },
+      "all/print_i2": {
+        "accuracy": 0.3576388888888889,
+        "invalid_fraction": 0.033854166666666664,
+        "rows": 1152
+      },
+      "development/arithmetic_written/bare_i0": {
+        "accuracy": 0.10185185185185185,
+        "invalid_fraction": 0.0,
+        "rows": 216
+      },
+      "development/arithmetic_written/bare_i1": {
+        "accuracy": 0.1712962962962963,
+        "invalid_fraction": 0.05555555555555555,
+        "rows": 216
+      },
+      "development/arithmetic_written/bare_i2": {
+        "accuracy": 0.14814814814814814,
+        "invalid_fraction": 0.032407407407407406,
+        "rows": 216
+      },
+      "development/arithmetic_written/print_i0": {
+        "accuracy": 0.11574074074074074,
+        "invalid_fraction": 0.0,
+        "rows": 216
+      },
+      "development/arithmetic_written/print_i1": {
+        "accuracy": 0.18981481481481483,
+        "invalid_fraction": 0.004629629629629629,
+        "rows": 216
+      },
+      "development/arithmetic_written/print_i2": {
+        "accuracy": 0.16203703703703703,
+        "invalid_fraction": 0.037037037037037035,
+        "rows": 216
+      },
+      "development/bare_i0": {
+        "accuracy": 0.2013888888888889,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "development/bare_i1": {
+        "accuracy": 0.22569444444444445,
+        "invalid_fraction": 0.05555555555555555,
+        "rows": 288
+      },
+      "development/bare_i2": {
+        "accuracy": 0.1840277777777778,
+        "invalid_fraction": 0.04861111111111111,
+        "rows": 288
+      },
+      "development/print_i0": {
+        "accuracy": 0.3298611111111111,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "development/print_i1": {
+        "accuracy": 0.3854166666666667,
+        "invalid_fraction": 0.003472222222222222,
+        "rows": 288
+      },
+      "development/print_i2": {
+        "accuracy": 0.3194444444444444,
+        "invalid_fraction": 0.04513888888888889,
+        "rows": 288
+      },
+      "development/untouched_literal/bare_i0": {
+        "accuracy": 0.5,
+        "invalid_fraction": 0.0,
+        "rows": 72
+      },
+      "development/untouched_literal/bare_i1": {
+        "accuracy": 0.3888888888888889,
+        "invalid_fraction": 0.05555555555555555,
+        "rows": 72
+      },
+      "development/untouched_literal/bare_i2": {
+        "accuracy": 0.2916666666666667,
+        "invalid_fraction": 0.09722222222222222,
+        "rows": 72
+      },
+      "development/untouched_literal/print_i0": {
+        "accuracy": 0.9722222222222222,
+        "invalid_fraction": 0.0,
+        "rows": 72
+      },
+      "development/untouched_literal/print_i1": {
+        "accuracy": 0.9722222222222222,
+        "invalid_fraction": 0.0,
+        "rows": 72
+      },
+      "development/untouched_literal/print_i2": {
+        "accuracy": 0.7916666666666666,
+        "invalid_fraction": 0.06944444444444445,
+        "rows": 72
+      },
+      "train/arithmetic_written/bare_i0": {
+        "accuracy": 0.10069444444444445,
+        "invalid_fraction": 0.0,
+        "rows": 576
+      },
+      "train/arithmetic_written/bare_i1": {
+        "accuracy": 0.09895833333333333,
+        "invalid_fraction": 0.05555555555555555,
+        "rows": 576
+      },
+      "train/arithmetic_written/bare_i2": {
+        "accuracy": 0.09375,
+        "invalid_fraction": 0.026041666666666668,
+        "rows": 576
+      },
+      "train/arithmetic_written/print_i0": {
+        "accuracy": 0.1111111111111111,
+        "invalid_fraction": 0.0,
+        "rows": 576
+      },
+      "train/arithmetic_written/print_i1": {
+        "accuracy": 0.1579861111111111,
+        "invalid_fraction": 0.003472222222222222,
+        "rows": 576
+      },
+      "train/arithmetic_written/print_i2": {
+        "accuracy": 0.13020833333333334,
+        "invalid_fraction": 0.015625,
+        "rows": 576
+      },
+      "train/bare_i0": {
+        "accuracy": 0.21875,
+        "invalid_fraction": 0.0,
+        "rows": 864
+      },
+      "train/bare_i1": {
+        "accuracy": 0.2152777777777778,
+        "invalid_fraction": 0.06828703703703703,
+        "rows": 864
+      },
+      "train/bare_i2": {
+        "accuracy": 0.17824074074074073,
+        "invalid_fraction": 0.047453703703703706,
+        "rows": 864
+      },
+      "train/print_i0": {
+        "accuracy": 0.37037037037037035,
+        "invalid_fraction": 0.0,
+        "rows": 864
+      },
+      "train/print_i1": {
+        "accuracy": 0.41203703703703703,
+        "invalid_fraction": 0.0023148148148148147,
+        "rows": 864
+      },
+      "train/print_i2": {
+        "accuracy": 0.37037037037037035,
+        "invalid_fraction": 0.03009259259259259,
+        "rows": 864
+      },
+      "train/untouched_literal/bare_i0": {
+        "accuracy": 0.4548611111111111,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "train/untouched_literal/bare_i1": {
+        "accuracy": 0.4479166666666667,
+        "invalid_fraction": 0.09375,
+        "rows": 288
+      },
+      "train/untouched_literal/bare_i2": {
+        "accuracy": 0.3472222222222222,
+        "invalid_fraction": 0.09027777777777778,
+        "rows": 288
+      },
+      "train/untouched_literal/print_i0": {
+        "accuracy": 0.8888888888888888,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "train/untouched_literal/print_i1": {
+        "accuracy": 0.9201388888888888,
+        "invalid_fraction": 0.0,
+        "rows": 288
+      },
+      "train/untouched_literal/print_i2": {
+        "accuracy": 0.8506944444444444,
+        "invalid_fraction": 0.059027777777777776,
+        "rows": 288
+      }
+    },
+    "computed_literal": {
+      "arithmetic_written:bare_i1_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          -0.025462962962962965,
+          0.15972222222222224
+        ],
+        "families": 12,
+        "family_macro_difference": 0.061342592592592594,
+        "paired_rows": 216,
+        "row_weighted_difference": 0.06944444444444445
+      },
+      "arithmetic_written:bare_i2_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          -0.0474537037037037,
+          0.12962962962962962
+        ],
+        "families": 12,
+        "family_macro_difference": 0.04050925925925925,
+        "paired_rows": 216,
+        "row_weighted_difference": 0.046296296296296294
+      },
+      "arithmetic_written:print_i0_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          -0.011574074074074075,
+          0.03935185185185185
+        ],
+        "families": 12,
+        "family_macro_difference": 0.012731481481481483,
+        "paired_rows": 216,
+        "row_weighted_difference": 0.013888888888888888
+      },
+      "arithmetic_written:print_i1_minus_bare_i1": {
+        "conditional_family_bootstrap_95": [
+          -0.02199074074074074,
+          0.07060185185185185
+        ],
+        "families": 12,
+        "family_macro_difference": 0.024305555555555552,
+        "paired_rows": 216,
+        "row_weighted_difference": 0.018518518518518517
+      },
+      "arithmetic_written:print_i2_minus_bare_i2": {
+        "conditional_family_bootstrap_95": [
+          -0.032407407407407406,
+          0.07870370370370369
+        ],
+        "families": 12,
+        "family_macro_difference": 0.020833333333333332,
+        "paired_rows": 216,
+        "row_weighted_difference": 0.013888888888888888
+      },
+      "bare_i1_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          -0.05208333333333334,
+          0.11805555555555557
+        ],
+        "families": 12,
+        "family_macro_difference": 0.024305555555555556,
+        "paired_rows": 288,
+        "row_weighted_difference": 0.024305555555555556
+      },
+      "bare_i2_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          -0.08680555555555557,
+          0.06944444444444443
+        ],
+        "families": 12,
+        "family_macro_difference": -0.017361111111111115,
+        "paired_rows": 288,
+        "row_weighted_difference": -0.017361111111111112
+      },
+      "print_i0_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          0.0625,
+          0.19453124999999957
+        ],
+        "families": 12,
+        "family_macro_difference": 0.12847222222222224,
+        "paired_rows": 288,
+        "row_weighted_difference": 0.1284722222222222
+      },
+      "print_i1_minus_bare_i1": {
+        "conditional_family_bootstrap_95": [
+          0.06944444444444443,
+          0.25
+        ],
+        "families": 12,
+        "family_macro_difference": 0.15972222222222224,
+        "paired_rows": 288,
+        "row_weighted_difference": 0.1597222222222222
+      },
+      "print_i2_minus_bare_i2": {
+        "conditional_family_bootstrap_95": [
+          0.052083333333333336,
+          0.21874999999999997
+        ],
+        "families": 12,
+        "family_macro_difference": 0.13541666666666666,
+        "paired_rows": 288,
+        "row_weighted_difference": 0.13541666666666666
+      },
+      "untouched_literal:bare_i1_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          -0.2222222222222222,
+          0.05555555555555555
+        ],
+        "families": 9,
+        "family_macro_difference": -0.08333333333333331,
+        "paired_rows": 72,
+        "row_weighted_difference": -0.1111111111111111
+      },
+      "untouched_literal:bare_i2_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          -0.3796296296296296,
+          -0.027777777777777773
+        ],
+        "families": 9,
+        "family_macro_difference": -0.2037037037037037,
+        "paired_rows": 72,
+        "row_weighted_difference": -0.20833333333333334
+      },
+      "untouched_literal:print_i0_minus_bare_i0": {
+        "conditional_family_bootstrap_95": [
+          0.3055555555555555,
+          0.5925925925925926
+        ],
+        "families": 9,
+        "family_macro_difference": 0.4444444444444444,
+        "paired_rows": 72,
+        "row_weighted_difference": 0.4722222222222222
+      },
+      "untouched_literal:print_i1_minus_bare_i1": {
+        "conditional_family_bootstrap_95": [
+          0.38888888888888884,
+          0.6576388888888877
+        ],
+        "families": 9,
+        "family_macro_difference": 0.5277777777777778,
+        "paired_rows": 72,
+        "row_weighted_difference": 0.5833333333333334
+      },
+      "untouched_literal:print_i2_minus_bare_i2": {
+        "conditional_family_bootstrap_95": [
+          0.31481481481481477,
+          0.6296296296296297
+        ],
+        "families": 9,
+        "family_macro_difference": 0.4722222222222222,
+        "paired_rows": 72,
+        "row_weighted_difference": 0.5
+      }
+    }
+  },
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "new_model_queries": 5760,
+  "protocol": {
+    "arms": [
+      "bare_i0",
+      "print_i0",
+      "bare_i1",
+      "print_i1",
+      "bare_i2",
+      "print_i2"
+    ],
+    "do_sample": false,
+    "instructions": [
+      "Execute this Python program and return only its final integer output.",
+      "Execute the assignments in order. The last line identifies the variable to report, either directly or inside print. Return its final value as a signed integer with no other text.",
+      "Track each variable through all assignments, including overwrites. Report the integer named on the last line; if it is inside print(...), report that printed value. Reply with only the signed integer."
+    ],
+    "max_new_tokens": 12,
+    "new_arms": [
+      "print_i0",
+      "bare_i1",
+      "print_i1",
+      "bare_i2",
+      "print_i2"
+    ],
+    "parser": "full signed decimal integer with whitespace only",
+    "selection": "five new form/wording arms on all original numeric_draw0 cases; bare_i0 responses cached",
+    "uncertainty": "2000 fixed-parameter resamples of whole DEV families; relatives not independent",
+    "use_cache": true
+  },
+  "responses": {
+    "bytes": 2325855,
+    "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b/responses.jsonl",
+    "sha256": "3749be863ec2804752929ddcf9194d3fb8dd8094370e2d9d4e43e3c689a814de"
+  },
+  "source": {
+    "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+    "snapshot_id": "5d321f96dcdb4555d85e61b7",
+    "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+  },
+  "status": "complete_exploratory"
+}

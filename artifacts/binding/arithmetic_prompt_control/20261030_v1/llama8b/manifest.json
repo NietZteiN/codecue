@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "generation_calls": 90,
+      "generation_memory_review": {
+        "driver_free_bytes": 133493227520,
+        "kv_cache_estimate_bytes": 1275068416,
+        "working_margin_bytes": 2147483648
+      },
+      "gpu": {
+        "driver_version": "580.178.04",
+        "gpu_uuid": "GPU-c033b2b1-3111-3eda-e957-525c603bf84d",
+        "mean_gpu_utilization_percent": 85.71134020618557,
+        "mean_power_watts": 457.059381443299,
+        "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+        "peak_device_memory_mib": 18493.0,
+        "samples": 97,
+        "selector_verified": true
+      },
+      "model_loaded": true,
+      "prefill_cases_attempted": 5760,
+      "slurm_job_id": "484443",
+      "status": "complete",
+      "wall_seconds": 111.80128502612934
+    }
+  ],
+  "identity": {
+    "capture_preflight_source": {
+      "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+      "snapshot_id": "5d321f96dcdb4555d85e61b7",
+      "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+    },
+    "case_ids_sha256": "68a3cedd0615a7ff7014f400052bea35aef88a18d1797a5e8adda9d67122b823",
+    "cases": 5760,
+    "config": {
+      "capture_config": "configs/binding/arithmetic_graph_20261029_v3/llama8b_capture.json",
+      "capture_config_sha256": "41b80899c5847a0f6e53ed56871e3839a828a2fc0522b5d5fcb36dfdacc2bcb9",
+      "declared_plan": "reports/binding/arithmetic_prompt_control_plan_v1.md",
+      "declared_plan_sha256": "d39f68059017dda7c583b20bb5bbff57788663bd762f9ee715b7ed7a04518438",
+      "evaluation_role": "discovery_arithmetic_prompt_control_v1",
+      "generation_batch_size": 64,
+      "report": "reports/binding/arithmetic_prompt_control_llama8b_v1.md",
+      "run_dir": "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b"
+    },
+    "config_hash": "00f40302f13bf99e080b5c2926e72acf071ee1004efedd341a20c10e2f0eb15f",
+    "evaluation_role": "discovery_arithmetic_prompt_control_v1",
+    "prepared_sha256": "380724886ce5f25a0c897c335fde22d0d8b4dfe94c762718cfba4ebc7289fe84",
+    "protocol": {
+      "arms": [
+        "bare_i0",
+        "print_i0",
+        "bare_i1",
+        "print_i1",
+        "bare_i2",
+        "print_i2"
+      ],
+      "do_sample": false,
+      "instructions": [
+        "Execute this Python program and return only its final integer output.",
+        "Execute the assignments in order. The last line identifies the variable to report, either directly or inside print. Return its final value as a signed integer with no other text.",
+        "Track each variable through all assignments, including overwrites. Report the integer named on the last line; if it is inside print(...), report that printed value. Reply with only the signed integer."
+      ],
+      "max_new_tokens": 12,
+      "new_arms": [
+        "print_i0",
+        "bare_i1",
+        "print_i1",
+        "bare_i2",
+        "print_i2"
+      ],
+      "parser": "full signed decimal integer with whitespace only",
+      "selection": "five new form/wording arms on all original numeric_draw0 cases; bare_i0 responses cached",
+      "uncertainty": "2000 fixed-parameter resamples of whole DEV families; relatives not independent",
+      "use_cache": true
+    },
+    "source": {
+      "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+      "snapshot_id": "5d321f96dcdb4555d85e61b7",
+      "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+    }
+  },
+  "status": "complete"
+}

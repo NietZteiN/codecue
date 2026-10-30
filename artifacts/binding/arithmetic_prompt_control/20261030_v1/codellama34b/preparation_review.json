@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "bytes": 482186,
+    "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/responses.jsonl",
+    "sha256": "260c6235fe908a5023600ee09cf475e75aaa3ae665d7188cf511c34349f707bf"
+  },
+  "baseline_prompt_matches": 1152,
+  "baseline_receipt_sha256": "2a3ef61218621bf862f2172ec4862f3d0a50e593b098ec19f574da01d9cd655b",
+  "baseline_source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "cases": 5760,
+  "config": {
+    "capture_config": "configs/binding/arithmetic_graph_20261029_v3/codellama34b_capture.json",
+    "capture_config_sha256": "81ee5c91db2a8beb9e2c5d44eee9965e1a8abb0f16d680f8a1b889e02f32e5e6",
+    "declared_plan": "reports/binding/arithmetic_prompt_control_plan_v1.md",
+    "declared_plan_sha256": "d39f68059017dda7c583b20bb5bbff57788663bd762f9ee715b7ed7a04518438",
+    "evaluation_role": "discovery_arithmetic_prompt_control_v1",
+    "generation_batch_size": 64,
+    "report": "reports/binding/arithmetic_prompt_control_codellama34b_v1.md",
+    "run_dir": "artifacts/binding/arithmetic_prompt_control/20261030_v1/codellama34b"
+  },
+  "config_hash": "304bb4aeee2a2d9003ba7dc5d08e687d235cd4f4b744f7e7452e178351727bae",
+  "generated_holdouts_opened": false,
+  "independent_print_outputs": 1152,
+  "max_prompt_tokens": 119,
+  "new_model_queries": 0,
+  "prepared_sha256": "1b8f5dd5e171a50829a0f6c9d02991e7b1f2b926a0186cdabf42326a120f9888",
+  "source": {
+    "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+    "snapshot_id": "5d321f96dcdb4555d85e61b7",
+    "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+  },
+  "status": "passed"
+}

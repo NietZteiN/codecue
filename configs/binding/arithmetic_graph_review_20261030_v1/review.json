@@ -1,0 +1,20 @@
+{
+  "evaluation_role": "discovery_arithmetic_graph_postrun_review_v1",
+  "figure": "reports/binding/figures/arithmetic_graph_train_dev_review_v1.png",
+  "models": [
+    {
+      "name": "llama8b",
+      "readout_config": "configs/binding/arithmetic_graph_20261029_v3/llama8b_readouts.json",
+      "readout_config_sha256": "f346d200af58014054b7bd0121064f533609b79f1b15a7b2a29ee0d58c197a1c",
+      "results_sha256": "b7a4ed9c159caf0e3123b977efa104012f2d1a735babbe777bec3b3407d58470"
+    },
+    {
+      "name": "codellama34b",
+      "readout_config": "configs/binding/arithmetic_graph_20261029_v3/codellama34b_readouts.json",
+      "readout_config_sha256": "a9f9e99e4df2ed5514af202d13bf1650a6f1743571592df5319ee6b84969accd",
+      "results_sha256": "34153c0a228496954cd75d0ee2d0154dc1d239eeb9c968f8022fd1c32868d331"
+    }
+  ],
+  "report": "reports/binding/arithmetic_graph_morning_review_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_graph_review/20261030_v1"
+}

@@ -1,0 +1,771 @@
+{
+  "cached_baseline_responses": 2304,
+  "evaluation_role": "discovery_arithmetic_prompt_control_findings_v1",
+  "limitations": "Adaptive discovery on reused families. Changed syntax and wording also change token context. Parser and original scores unchanged; no mechanism or untouched-confirmation claim.",
+  "models": {
+    "codellama34b": {
+      "generated_responses": 5760,
+      "metrics": {
+        "cells": {
+          "all/bare_i0": {
+            "accuracy": 0.2144097222222222,
+            "invalid_fraction": 0.0,
+            "rows": 1152
+          },
+          "all/bare_i1": {
+            "accuracy": 0.21788194444444445,
+            "invalid_fraction": 0.06510416666666667,
+            "rows": 1152
+          },
+          "all/bare_i2": {
+            "accuracy": 0.1796875,
+            "invalid_fraction": 0.04774305555555555,
+            "rows": 1152
+          },
+          "all/print_i0": {
+            "accuracy": 0.3602430555555556,
+            "invalid_fraction": 0.0,
+            "rows": 1152
+          },
+          "all/print_i1": {
+            "accuracy": 0.4053819444444444,
+            "invalid_fraction": 0.0026041666666666665,
+            "rows": 1152
+          },
+          "all/print_i2": {
+            "accuracy": 0.3576388888888889,
+            "invalid_fraction": 0.033854166666666664,
+            "rows": 1152
+          },
+          "development/arithmetic_written/bare_i0": {
+            "accuracy": 0.10185185185185185,
+            "invalid_fraction": 0.0,
+            "rows": 216
+          },
+          "development/arithmetic_written/bare_i1": {
+            "accuracy": 0.1712962962962963,
+            "invalid_fraction": 0.05555555555555555,
+            "rows": 216
+          },
+          "development/arithmetic_written/bare_i2": {
+            "accuracy": 0.14814814814814814,
+            "invalid_fraction": 0.032407407407407406,
+            "rows": 216
+          },
+          "development/arithmetic_written/print_i0": {
+            "accuracy": 0.11574074074074074,
+            "invalid_fraction": 0.0,
+            "rows": 216
+          },
+          "development/arithmetic_written/print_i1": {
+            "accuracy": 0.18981481481481483,
+            "invalid_fraction": 0.004629629629629629,
+            "rows": 216
+          },
+          "development/arithmetic_written/print_i2": {
+            "accuracy": 0.16203703703703703,
+            "invalid_fraction": 0.037037037037037035,
+            "rows": 216
+          },
+          "development/bare_i0": {
+            "accuracy": 0.2013888888888889,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "development/bare_i1": {
+            "accuracy": 0.22569444444444445,
+            "invalid_fraction": 0.05555555555555555,
+            "rows": 288
+          },
+          "development/bare_i2": {
+            "accuracy": 0.1840277777777778,
+            "invalid_fraction": 0.04861111111111111,
+            "rows": 288
+          },
+          "development/print_i0": {
+            "accuracy": 0.3298611111111111,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "development/print_i1": {
+            "accuracy": 0.3854166666666667,
+            "invalid_fraction": 0.003472222222222222,
+            "rows": 288
+          },
+          "development/print_i2": {
+            "accuracy": 0.3194444444444444,
+            "invalid_fraction": 0.04513888888888889,
+            "rows": 288
+          },
+          "development/untouched_literal/bare_i0": {
+            "accuracy": 0.5,
+            "invalid_fraction": 0.0,
+            "rows": 72
+          },
+          "development/untouched_literal/bare_i1": {
+            "accuracy": 0.3888888888888889,
+            "invalid_fraction": 0.05555555555555555,
+            "rows": 72
+          },
+          "development/untouched_literal/bare_i2": {
+            "accuracy": 0.2916666666666667,
+            "invalid_fraction": 0.09722222222222222,
+            "rows": 72
+          },
+          "development/untouched_literal/print_i0": {
+            "accuracy": 0.9722222222222222,
+            "invalid_fraction": 0.0,
+            "rows": 72
+          },
+          "development/untouched_literal/print_i1": {
+            "accuracy": 0.9722222222222222,
+            "invalid_fraction": 0.0,
+            "rows": 72
+          },
+          "development/untouched_literal/print_i2": {
+            "accuracy": 0.7916666666666666,
+            "invalid_fraction": 0.06944444444444445,
+            "rows": 72
+          },
+          "train/arithmetic_written/bare_i0": {
+            "accuracy": 0.10069444444444445,
+            "invalid_fraction": 0.0,
+            "rows": 576
+          },
+          "train/arithmetic_written/bare_i1": {
+            "accuracy": 0.09895833333333333,
+            "invalid_fraction": 0.05555555555555555,
+            "rows": 576
+          },
+          "train/arithmetic_written/bare_i2": {
+            "accuracy": 0.09375,
+            "invalid_fraction": 0.026041666666666668,
+            "rows": 576
+          },
+          "train/arithmetic_written/print_i0": {
+            "accuracy": 0.1111111111111111,
+            "invalid_fraction": 0.0,
+            "rows": 576
+          },
+          "train/arithmetic_written/print_i1": {
+            "accuracy": 0.1579861111111111,
+            "invalid_fraction": 0.003472222222222222,
+            "rows": 576
+          },
+          "train/arithmetic_written/print_i2": {
+            "accuracy": 0.13020833333333334,
+            "invalid_fraction": 0.015625,
+            "rows": 576
+          },
+          "train/bare_i0": {
+            "accuracy": 0.21875,
+            "invalid_fraction": 0.0,
+            "rows": 864
+          },
+          "train/bare_i1": {
+            "accuracy": 0.2152777777777778,
+            "invalid_fraction": 0.06828703703703703,
+            "rows": 864
+          },
+          "train/bare_i2": {
+            "accuracy": 0.17824074074074073,
+            "invalid_fraction": 0.047453703703703706,
+            "rows": 864
+          },
+          "train/print_i0": {
+            "accuracy": 0.37037037037037035,
+            "invalid_fraction": 0.0,
+            "rows": 864
+          },
+          "train/print_i1": {
+            "accuracy": 0.41203703703703703,
+            "invalid_fraction": 0.0023148148148148147,
+            "rows": 864
+          },
+          "train/print_i2": {
+            "accuracy": 0.37037037037037035,
+            "invalid_fraction": 0.03009259259259259,
+            "rows": 864
+          },
+          "train/untouched_literal/bare_i0": {
+            "accuracy": 0.4548611111111111,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "train/untouched_literal/bare_i1": {
+            "accuracy": 0.4479166666666667,
+            "invalid_fraction": 0.09375,
+            "rows": 288
+          },
+          "train/untouched_literal/bare_i2": {
+            "accuracy": 0.3472222222222222,
+            "invalid_fraction": 0.09027777777777778,
+            "rows": 288
+          },
+          "train/untouched_literal/print_i0": {
+            "accuracy": 0.8888888888888888,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "train/untouched_literal/print_i1": {
+            "accuracy": 0.9201388888888888,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "train/untouched_literal/print_i2": {
+            "accuracy": 0.8506944444444444,
+            "invalid_fraction": 0.059027777777777776,
+            "rows": 288
+          }
+        },
+        "computed_literal": {
+          "arithmetic_written:bare_i1_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.025462962962962965,
+              0.15972222222222224
+            ],
+            "families": 12,
+            "family_macro_difference": 0.061342592592592594,
+            "paired_rows": 216,
+            "row_weighted_difference": 0.06944444444444445
+          },
+          "arithmetic_written:bare_i2_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.0474537037037037,
+              0.12962962962962962
+            ],
+            "families": 12,
+            "family_macro_difference": 0.04050925925925925,
+            "paired_rows": 216,
+            "row_weighted_difference": 0.046296296296296294
+          },
+          "arithmetic_written:print_i0_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.011574074074074075,
+              0.03935185185185185
+            ],
+            "families": 12,
+            "family_macro_difference": 0.012731481481481483,
+            "paired_rows": 216,
+            "row_weighted_difference": 0.013888888888888888
+          },
+          "arithmetic_written:print_i1_minus_bare_i1": {
+            "conditional_family_bootstrap_95": [
+              -0.02199074074074074,
+              0.07060185185185185
+            ],
+            "families": 12,
+            "family_macro_difference": 0.024305555555555552,
+            "paired_rows": 216,
+            "row_weighted_difference": 0.018518518518518517
+          },
+          "arithmetic_written:print_i2_minus_bare_i2": {
+            "conditional_family_bootstrap_95": [
+              -0.032407407407407406,
+              0.07870370370370369
+            ],
+            "families": 12,
+            "family_macro_difference": 0.020833333333333332,
+            "paired_rows": 216,
+            "row_weighted_difference": 0.013888888888888888
+          },
+          "bare_i1_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.05208333333333334,
+              0.11805555555555557
+            ],
+            "families": 12,
+            "family_macro_difference": 0.024305555555555556,
+            "paired_rows": 288,
+            "row_weighted_difference": 0.024305555555555556
+          },
+          "bare_i2_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.08680555555555557,
+              0.06944444444444443
+            ],
+            "families": 12,
+            "family_macro_difference": -0.017361111111111115,
+            "paired_rows": 288,
+            "row_weighted_difference": -0.017361111111111112
+          },
+          "print_i0_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              0.0625,
+              0.19453124999999957
+            ],
+            "families": 12,
+            "family_macro_difference": 0.12847222222222224,
+            "paired_rows": 288,
+            "row_weighted_difference": 0.1284722222222222
+          },
+          "print_i1_minus_bare_i1": {
+            "conditional_family_bootstrap_95": [
+              0.06944444444444443,
+              0.25
+            ],
+            "families": 12,
+            "family_macro_difference": 0.15972222222222224,
+            "paired_rows": 288,
+            "row_weighted_difference": 0.1597222222222222
+          },
+          "print_i2_minus_bare_i2": {
+            "conditional_family_bootstrap_95": [
+              0.052083333333333336,
+              0.21874999999999997
+            ],
+            "families": 12,
+            "family_macro_difference": 0.13541666666666666,
+            "paired_rows": 288,
+            "row_weighted_difference": 0.13541666666666666
+          },
+          "untouched_literal:bare_i1_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.2222222222222222,
+              0.05555555555555555
+            ],
+            "families": 9,
+            "family_macro_difference": -0.08333333333333331,
+            "paired_rows": 72,
+            "row_weighted_difference": -0.1111111111111111
+          },
+          "untouched_literal:bare_i2_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.3796296296296296,
+              -0.027777777777777773
+            ],
+            "families": 9,
+            "family_macro_difference": -0.2037037037037037,
+            "paired_rows": 72,
+            "row_weighted_difference": -0.20833333333333334
+          },
+          "untouched_literal:print_i0_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              0.3055555555555555,
+              0.5925925925925926
+            ],
+            "families": 9,
+            "family_macro_difference": 0.4444444444444444,
+            "paired_rows": 72,
+            "row_weighted_difference": 0.4722222222222222
+          },
+          "untouched_literal:print_i1_minus_bare_i1": {
+            "conditional_family_bootstrap_95": [
+              0.38888888888888884,
+              0.6576388888888877
+            ],
+            "families": 9,
+            "family_macro_difference": 0.5277777777777778,
+            "paired_rows": 72,
+            "row_weighted_difference": 0.5833333333333334
+          },
+          "untouched_literal:print_i2_minus_bare_i2": {
+            "conditional_family_bootstrap_95": [
+              0.31481481481481477,
+              0.6296296296296297
+            ],
+            "families": 9,
+            "family_macro_difference": 0.4722222222222222,
+            "paired_rows": 72,
+            "row_weighted_difference": 0.5
+          }
+        }
+      },
+      "new_model_queries": 5760,
+      "source": {
+        "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+        "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+        "snapshot_id": "5d321f96dcdb4555d85e61b7",
+        "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+      },
+      "summary_sha256": "783cc59f4ea2ccb716f3f9ff76c71f54e0dccd09604b06a2d41e3b708841ba50"
+    },
+    "llama8b": {
+      "generated_responses": 5760,
+      "metrics": {
+        "cells": {
+          "all/bare_i0": {
+            "accuracy": 0.17881944444444445,
+            "invalid_fraction": 0.033854166666666664,
+            "rows": 1152
+          },
+          "all/bare_i1": {
+            "accuracy": 0.125,
+            "invalid_fraction": 0.0026041666666666665,
+            "rows": 1152
+          },
+          "all/bare_i2": {
+            "accuracy": 0.08680555555555555,
+            "invalid_fraction": 0.3376736111111111,
+            "rows": 1152
+          },
+          "all/print_i0": {
+            "accuracy": 0.3793402777777778,
+            "invalid_fraction": 0.008680555555555556,
+            "rows": 1152
+          },
+          "all/print_i1": {
+            "accuracy": 0.3845486111111111,
+            "invalid_fraction": 0.036458333333333336,
+            "rows": 1152
+          },
+          "all/print_i2": {
+            "accuracy": 0.09114583333333333,
+            "invalid_fraction": 0.7456597222222222,
+            "rows": 1152
+          },
+          "development/arithmetic_written/bare_i0": {
+            "accuracy": 0.10185185185185185,
+            "invalid_fraction": 0.023148148148148147,
+            "rows": 216
+          },
+          "development/arithmetic_written/bare_i1": {
+            "accuracy": 0.05555555555555555,
+            "invalid_fraction": 0.0,
+            "rows": 216
+          },
+          "development/arithmetic_written/bare_i2": {
+            "accuracy": 0.023148148148148147,
+            "invalid_fraction": 0.375,
+            "rows": 216
+          },
+          "development/arithmetic_written/print_i0": {
+            "accuracy": 0.1111111111111111,
+            "invalid_fraction": 0.009259259259259259,
+            "rows": 216
+          },
+          "development/arithmetic_written/print_i1": {
+            "accuracy": 0.1574074074074074,
+            "invalid_fraction": 0.05092592592592592,
+            "rows": 216
+          },
+          "development/arithmetic_written/print_i2": {
+            "accuracy": 0.0,
+            "invalid_fraction": 0.7870370370370371,
+            "rows": 216
+          },
+          "development/bare_i0": {
+            "accuracy": 0.1875,
+            "invalid_fraction": 0.027777777777777776,
+            "rows": 288
+          },
+          "development/bare_i1": {
+            "accuracy": 0.0763888888888889,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "development/bare_i2": {
+            "accuracy": 0.059027777777777776,
+            "invalid_fraction": 0.3541666666666667,
+            "rows": 288
+          },
+          "development/print_i0": {
+            "accuracy": 0.3229166666666667,
+            "invalid_fraction": 0.006944444444444444,
+            "rows": 288
+          },
+          "development/print_i1": {
+            "accuracy": 0.3506944444444444,
+            "invalid_fraction": 0.03819444444444445,
+            "rows": 288
+          },
+          "development/print_i2": {
+            "accuracy": 0.03819444444444445,
+            "invalid_fraction": 0.7881944444444444,
+            "rows": 288
+          },
+          "development/untouched_literal/bare_i0": {
+            "accuracy": 0.4444444444444444,
+            "invalid_fraction": 0.041666666666666664,
+            "rows": 72
+          },
+          "development/untouched_literal/bare_i1": {
+            "accuracy": 0.1388888888888889,
+            "invalid_fraction": 0.0,
+            "rows": 72
+          },
+          "development/untouched_literal/bare_i2": {
+            "accuracy": 0.16666666666666666,
+            "invalid_fraction": 0.2916666666666667,
+            "rows": 72
+          },
+          "development/untouched_literal/print_i0": {
+            "accuracy": 0.9583333333333334,
+            "invalid_fraction": 0.0,
+            "rows": 72
+          },
+          "development/untouched_literal/print_i1": {
+            "accuracy": 0.9305555555555556,
+            "invalid_fraction": 0.0,
+            "rows": 72
+          },
+          "development/untouched_literal/print_i2": {
+            "accuracy": 0.1527777777777778,
+            "invalid_fraction": 0.7916666666666666,
+            "rows": 72
+          },
+          "train/arithmetic_written/bare_i0": {
+            "accuracy": 0.07465277777777778,
+            "invalid_fraction": 0.03125,
+            "rows": 576
+          },
+          "train/arithmetic_written/bare_i1": {
+            "accuracy": 0.08680555555555555,
+            "invalid_fraction": 0.003472222222222222,
+            "rows": 576
+          },
+          "train/arithmetic_written/bare_i2": {
+            "accuracy": 0.03819444444444445,
+            "invalid_fraction": 0.3263888888888889,
+            "rows": 576
+          },
+          "train/arithmetic_written/print_i0": {
+            "accuracy": 0.13541666666666666,
+            "invalid_fraction": 0.012152777777777778,
+            "rows": 576
+          },
+          "train/arithmetic_written/print_i1": {
+            "accuracy": 0.1371527777777778,
+            "invalid_fraction": 0.034722222222222224,
+            "rows": 576
+          },
+          "train/arithmetic_written/print_i2": {
+            "accuracy": 0.026041666666666668,
+            "invalid_fraction": 0.7447916666666666,
+            "rows": 576
+          },
+          "train/bare_i0": {
+            "accuracy": 0.17592592592592593,
+            "invalid_fraction": 0.03587962962962963,
+            "rows": 864
+          },
+          "train/bare_i1": {
+            "accuracy": 0.1412037037037037,
+            "invalid_fraction": 0.003472222222222222,
+            "rows": 864
+          },
+          "train/bare_i2": {
+            "accuracy": 0.09606481481481481,
+            "invalid_fraction": 0.33217592592592593,
+            "rows": 864
+          },
+          "train/print_i0": {
+            "accuracy": 0.39814814814814814,
+            "invalid_fraction": 0.009259259259259259,
+            "rows": 864
+          },
+          "train/print_i1": {
+            "accuracy": 0.3958333333333333,
+            "invalid_fraction": 0.03587962962962963,
+            "rows": 864
+          },
+          "train/print_i2": {
+            "accuracy": 0.1087962962962963,
+            "invalid_fraction": 0.7314814814814815,
+            "rows": 864
+          },
+          "train/untouched_literal/bare_i0": {
+            "accuracy": 0.3784722222222222,
+            "invalid_fraction": 0.04513888888888889,
+            "rows": 288
+          },
+          "train/untouched_literal/bare_i1": {
+            "accuracy": 0.25,
+            "invalid_fraction": 0.003472222222222222,
+            "rows": 288
+          },
+          "train/untouched_literal/bare_i2": {
+            "accuracy": 0.21180555555555555,
+            "invalid_fraction": 0.34375,
+            "rows": 288
+          },
+          "train/untouched_literal/print_i0": {
+            "accuracy": 0.9236111111111112,
+            "invalid_fraction": 0.003472222222222222,
+            "rows": 288
+          },
+          "train/untouched_literal/print_i1": {
+            "accuracy": 0.9131944444444444,
+            "invalid_fraction": 0.03819444444444445,
+            "rows": 288
+          },
+          "train/untouched_literal/print_i2": {
+            "accuracy": 0.2743055555555556,
+            "invalid_fraction": 0.7048611111111112,
+            "rows": 288
+          }
+        },
+        "computed_literal": {
+          "arithmetic_written:bare_i1_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.10766782407407406,
+              0.016203703703703703
+            ],
+            "families": 12,
+            "family_macro_difference": -0.03935185185185185,
+            "paired_rows": 216,
+            "row_weighted_difference": -0.046296296296296294
+          },
+          "arithmetic_written:bare_i2_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.13310185185185183,
+              -0.006944444444444445
+            ],
+            "families": 12,
+            "family_macro_difference": -0.06597222222222221,
+            "paired_rows": 216,
+            "row_weighted_difference": -0.0787037037037037
+          },
+          "arithmetic_written:print_i0_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.03819444444444445,
+              0.09143518518518517
+            ],
+            "families": 12,
+            "family_macro_difference": 0.024305555555555552,
+            "paired_rows": 216,
+            "row_weighted_difference": 0.009259259259259259
+          },
+          "arithmetic_written:print_i1_minus_bare_i1": {
+            "conditional_family_bootstrap_95": [
+              0.04973958333333334,
+              0.14351851851851852
+            ],
+            "families": 12,
+            "family_macro_difference": 0.0949074074074074,
+            "paired_rows": 216,
+            "row_weighted_difference": 0.10185185185185185
+          },
+          "arithmetic_written:print_i2_minus_bare_i2": {
+            "conditional_family_bootstrap_95": [
+              -0.04282407407407407,
+              -0.003472222222222222
+            ],
+            "families": 12,
+            "family_macro_difference": -0.020833333333333332,
+            "paired_rows": 216,
+            "row_weighted_difference": -0.023148148148148147
+          },
+          "bare_i1_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.16319444444444445,
+              -0.05902777777777777
+            ],
+            "families": 12,
+            "family_macro_difference": -0.1111111111111111,
+            "paired_rows": 288,
+            "row_weighted_difference": -0.1111111111111111
+          },
+          "bare_i2_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.1770833333333333,
+              -0.08680555555555557
+            ],
+            "families": 12,
+            "family_macro_difference": -0.1284722222222222,
+            "paired_rows": 288,
+            "row_weighted_difference": -0.1284722222222222
+          },
+          "print_i0_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              0.03125000000000001,
+              0.2396701388888884
+            ],
+            "families": 12,
+            "family_macro_difference": 0.13541666666666666,
+            "paired_rows": 288,
+            "row_weighted_difference": 0.13541666666666666
+          },
+          "print_i1_minus_bare_i1": {
+            "conditional_family_bootstrap_95": [
+              0.19097222222222224,
+              0.3611111111111111
+            ],
+            "families": 12,
+            "family_macro_difference": 0.2743055555555555,
+            "paired_rows": 288,
+            "row_weighted_difference": 0.2743055555555556
+          },
+          "print_i2_minus_bare_i2": {
+            "conditional_family_bootstrap_95": [
+              -0.05208333333333332,
+              0.006944444444444444
+            ],
+            "families": 12,
+            "family_macro_difference": -0.020833333333333332,
+            "paired_rows": 288,
+            "row_weighted_difference": -0.020833333333333332
+          },
+          "untouched_literal:bare_i1_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.4351851851851852,
+              -0.23148148148148145
+            ],
+            "families": 9,
+            "family_macro_difference": -0.32407407407407407,
+            "paired_rows": 72,
+            "row_weighted_difference": -0.3055555555555556
+          },
+          "untouched_literal:bare_i2_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              -0.3888888888888889,
+              -0.23148148148148145
+            ],
+            "families": 9,
+            "family_macro_difference": -0.3055555555555556,
+            "paired_rows": 72,
+            "row_weighted_difference": -0.2777777777777778
+          },
+          "untouched_literal:print_i0_minus_bare_i0": {
+            "conditional_family_bootstrap_95": [
+              0.3145833333333333,
+              0.5925925925925926
+            ],
+            "families": 9,
+            "family_macro_difference": 0.45370370370370366,
+            "paired_rows": 72,
+            "row_weighted_difference": 0.5138888888888888
+          },
+          "untouched_literal:print_i1_minus_bare_i1": {
+            "conditional_family_bootstrap_95": [
+              0.6111111111111112,
+              0.8703703703703705
+            ],
+            "families": 9,
+            "family_macro_difference": 0.7407407407407407,
+            "paired_rows": 72,
+            "row_weighted_difference": 0.7916666666666666
+          },
+          "untouched_literal:print_i2_minus_bare_i2": {
+            "conditional_family_bootstrap_95": [
+              -0.16666666666666669,
+              0.07407407407407407
+            ],
+            "families": 9,
+            "family_macro_difference": -0.03703703703703704,
+            "paired_rows": 72,
+            "row_weighted_difference": -0.013888888888888888
+          }
+        }
+      },
+      "new_model_queries": 5760,
+      "source": {
+        "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+        "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+        "snapshot_id": "5d321f96dcdb4555d85e61b7",
+        "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+      },
+      "summary_sha256": "08acf84cc4eed456c4a900da287df017c6b8d40a88fc41966300ef1bc5052b03"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "outputs": {
+    "reports/binding/arithmetic_prompt_control_findings_v1.md": "0f2b2fd51e60f2ca1e1b883a14fc3268db3580bc7cf15828f9bce4b1340253d4",
+    "reports/binding/figures/arithmetic_prompt_control_v1.png": "3b898a06218acb4b4bcac7ded483090a32c947ebfde415c9b04aca737cc0da23",
+    "reports/binding/figures/arithmetic_prompt_control_v1.svg": "fbd9d250b95090e140c7f9a85c4e25b64e3a1fa26cdd088449ef36c666c454e5"
+  },
+  "script_sha256": "395e519323aa6797e215d6a333239f19f14e266bf2e85ff498ec7112ee2dfab7",
+  "source_generated_responses": 11520,
+  "status": "complete_exploratory"
+}

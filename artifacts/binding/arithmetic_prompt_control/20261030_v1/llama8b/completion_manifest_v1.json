@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "manifest": {
+      "bytes": 3810,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b/manifest.json",
+      "sha256": "8f4b47aeeebe6343fa7668452107d561c86c926f519e0d643486277211d4159e"
+    },
+    "registration": {
+      "bytes": 2820,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b/registration.json",
+      "sha256": "d3b1aec4a6716b98ab0042d80eb312d637a83ec7e3605ca67977788a696285a3"
+    },
+    "report": {
+      "bytes": 6525,
+      "path": "reports/binding/arithmetic_prompt_control_llama8b_v1.md",
+      "sha256": "4963fdaa3ae3e4c232e7f7fd6a59946b09d48b7a04bf494bda22e913c6fa0834"
+    },
+    "responses": {
+      "bytes": 2442657,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b/responses.jsonl",
+      "sha256": "e4c4dd020ecbdefb9740062940916740c66e4464ac85034290267b9ef1537409"
+    },
+    "summary": {
+      "bytes": 13769,
+      "path": "artifacts/binding/arithmetic_prompt_control/20261030_v1/llama8b/summary.json",
+      "sha256": "08acf84cc4eed456c4a900da287df017c6b8d40a88fc41966300ef1bc5052b03"
+    }
+  },
+  "cases": 5760,
+  "config_hash": "00f40302f13bf99e080b5c2926e72acf071ee1004efedd341a20c10e2f0eb15f",
+  "evaluation_role": "discovery_arithmetic_prompt_control_v1",
+  "generated_holdouts_opened": false,
+  "generated_responses": 5760,
+  "new_model_queries": 5760,
+  "source": {
+    "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+    "snapshot_id": "5d321f96dcdb4555d85e61b7",
+    "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+  },
+  "status": "complete_exploratory"
+}

@@ -1,0 +1,86 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "codellama34b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484444",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T15:39:19.107392+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "codellama34b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484428",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T15:34:32.961057+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484443",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T15:39:18.516165+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
+    "llama8b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484427",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T15:34:32.366316+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "c510f1b79aebfffe981cd83b45e79dd53c0595d1d0f38eeed8180dd725b15f34",
+  "evaluation_role": "discovery_arithmetic_prompt_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "observed_model_prefill_attempts": 11520,
+  "planned_model_prefills": 11520,
+  "recorded_utc": "2026-10-30T15:55:59.587781+00:00",
+  "scheduler_errors": [],
+  "source": {
+    "frozen_manifest_sha256": "66046a0fde183acaf86ce51d6d5dfde78dbc25fe3cabed36b86c3094cb870cfb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/5d321f96dcdb4555d85e61b7",
+    "snapshot_id": "5d321f96dcdb4555d85e61b7",
+    "source_sha256": "9a9a72e6f0f93309ffaf8472a220c1208c24ede3056a79a41c6f4d7704ed891e"
+  },
+  "stages": {
+    "codellama34b_behavior": {
+      "job_id": "484444",
+      "state": "complete"
+    },
+    "codellama34b_prepare": {
+      "job_id": "484428",
+      "state": "complete"
+    },
+    "llama8b_behavior": {
+      "job_id": "484443",
+      "state": "complete"
+    },
+    "llama8b_prepare": {
+      "job_id": "484427",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}

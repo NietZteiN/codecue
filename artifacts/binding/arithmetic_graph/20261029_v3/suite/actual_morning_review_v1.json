@@ -1,0 +1,484 @@
+{
+  "actual_morning_utc": "2026-10-30T13:00:04.934639+00:00",
+  "all_terminal": true,
+  "attempts": {
+    "codellama34b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483473",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:05:25.675533+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "codellama34b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483461",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:55:16.038481+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "codellama34b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483449",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:42:17.569535+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_readouts": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483485",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:15:03.987768+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483472",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:05:24.884808+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
+    "llama8b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483460",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:55:15.186182+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
+    "llama8b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483448",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:42:16.765599+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_readouts": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483484",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T02:15:03.272462+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "483447",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T01:42:15.863638+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "2ca6603d48d1db619f0352c6be0514d8d32eb7c297b12e6f2e47b1966fa72b29",
+  "evaluation_role": "discovery_arithmetic_graph_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "observed_scientific_prefill_attempts": 11520,
+  "planned_scientific_case_prefills": 11520,
+  "recorded_utc": "2026-10-30T13:00:04.877679+00:00",
+  "scheduler_errors": [],
+  "scientific_results": {
+    "codellama34b_behavior": {
+      "cases": 1152,
+      "contrasts": null,
+      "metrics": {
+        "cells": {
+          "overall": {
+            "accuracy": 0.2144097222222222,
+            "invalid_fraction": 0.0,
+            "rows": 1152
+          },
+          "query/0": {
+            "accuracy": 0.2881944444444444,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "query/1": {
+            "accuracy": 0.1840277777777778,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "query/2": {
+            "accuracy": 0.1840277777777778,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "query/3": {
+            "accuracy": 0.2013888888888889,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "split/development": {
+            "accuracy": 0.2013888888888889,
+            "invalid_fraction": 0.0,
+            "rows": 288
+          },
+          "split/train": {
+            "accuracy": 0.21875,
+            "invalid_fraction": 0.0,
+            "rows": 864
+          }
+        },
+        "computed_literal": {
+          "accuracy": 0.20138888888888887,
+          "conditional_family_bootstrap_95": [
+            0.13194444444444445,
+            0.27083333333333337
+          ],
+          "families": 12
+        }
+      },
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "source_result": {
+        "bytes": 2496,
+        "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/behavior/summary.json",
+        "sha256": "d4df8a65b028e3cfe06cf07ee72838446ce5994e007ed78427933ddb55860cd3"
+      }
+    },
+    "codellama34b_readouts": {
+      "cases": 4608,
+      "contrasts": [
+        {
+          "conditional_family_bootstrap_95": [
+            -0.6840277777777777,
+            -0.5277488425925928
+          ],
+          "hidden": 0.3923611111111111,
+          "hidden_minus_source": -0.6076388888888887,
+          "metric": "whole_state_accuracy",
+          "site": 0,
+          "source": 1.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.22395833333333337,
+            -0.17708333333333337
+          ],
+          "hidden": 0.7989004629629629,
+          "hidden_minus_source": -0.2010995370370371,
+          "metric": "value_accuracy",
+          "site": 0,
+          "source": 1.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "hidden": 0.0,
+          "hidden_minus_source": 0.0,
+          "metric": "whole_parent_accuracy",
+          "site": 1,
+          "source": 0.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.01273148148148148,
+            0.0
+          ],
+          "hidden": 0.0,
+          "hidden_minus_source": -0.004629629629629629,
+          "metric": "whole_state_accuracy",
+          "site": 1,
+          "source": 0.004629629629629629
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.17159288194444444,
+            -0.057581018518518524
+          ],
+          "hidden": 0.09201388888888888,
+          "hidden_minus_source": -0.11400462962962964,
+          "metric": "value_accuracy",
+          "site": 1,
+          "source": 0.20601851851851852
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "hidden": 0.0,
+          "hidden_minus_source": 0.0,
+          "metric": "whole_parent_accuracy",
+          "site": 2,
+          "source": 0.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.010416666666666666,
+            0.001736111111111111
+          ],
+          "hidden": 0.0005787037037037037,
+          "hidden_minus_source": -0.002893518518518519,
+          "metric": "whole_state_accuracy",
+          "site": 2,
+          "source": 0.003472222222222222
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.07863859953703704,
+            -0.006365740740740739
+          ],
+          "hidden": 0.1623263888888889,
+          "hidden_minus_source": -0.0396412037037037,
+          "metric": "value_accuracy",
+          "site": 2,
+          "source": 0.2019675925925926
+        }
+      ],
+      "metrics": null,
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "source_result": {
+        "bytes": 7989164,
+        "path": "artifacts/binding/arithmetic_graph/20261029_v3/codellama34b/readouts/results.json",
+        "sha256": "34153c0a228496954cd75d0ee2d0154dc1d239eeb9c968f8022fd1c32868d331"
+      }
+    },
+    "llama8b_behavior": {
+      "cases": 1152,
+      "contrasts": null,
+      "metrics": {
+        "cells": {
+          "overall": {
+            "accuracy": 0.17881944444444445,
+            "invalid_fraction": 0.033854166666666664,
+            "rows": 1152
+          },
+          "query/0": {
+            "accuracy": 0.2048611111111111,
+            "invalid_fraction": 0.04513888888888889,
+            "rows": 288
+          },
+          "query/1": {
+            "accuracy": 0.1597222222222222,
+            "invalid_fraction": 0.04513888888888889,
+            "rows": 288
+          },
+          "query/2": {
+            "accuracy": 0.1388888888888889,
+            "invalid_fraction": 0.03125,
+            "rows": 288
+          },
+          "query/3": {
+            "accuracy": 0.21180555555555555,
+            "invalid_fraction": 0.013888888888888888,
+            "rows": 288
+          },
+          "split/development": {
+            "accuracy": 0.1875,
+            "invalid_fraction": 0.027777777777777776,
+            "rows": 288
+          },
+          "split/train": {
+            "accuracy": 0.17592592592592593,
+            "invalid_fraction": 0.03587962962962963,
+            "rows": 864
+          }
+        },
+        "computed_literal": {
+          "accuracy": 0.1875,
+          "conditional_family_bootstrap_95": [
+            0.15277777777777776,
+            0.22916666666666663
+          ],
+          "families": 12
+        }
+      },
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "source_result": {
+        "bytes": 2580,
+        "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/behavior/summary.json",
+        "sha256": "d88ea0d7305bf2542c54b1b601839b49c71031a0952acd330bf78d9bfe1c37af"
+      }
+    },
+    "llama8b_readouts": {
+      "cases": 4608,
+      "contrasts": [
+        {
+          "conditional_family_bootstrap_95": [
+            -0.6689887152777778,
+            -0.5610460069444445
+          ],
+          "hidden": 0.37991898148148145,
+          "hidden_minus_source": -0.6200810185185185,
+          "metric": "whole_state_accuracy",
+          "site": 0,
+          "source": 1.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.2708369502314815,
+            -0.21216724537037035
+          ],
+          "hidden": 0.7588252314814814,
+          "hidden_minus_source": -0.24117476851851852,
+          "metric": "value_accuracy",
+          "site": 0,
+          "source": 1.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "hidden": 0.0,
+          "hidden_minus_source": 0.0,
+          "metric": "whole_parent_accuracy",
+          "site": 1,
+          "source": 0.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.01273148148148148,
+            0.0
+          ],
+          "hidden": 0.0,
+          "hidden_minus_source": -0.004629629629629629,
+          "metric": "whole_state_accuracy",
+          "site": 1,
+          "source": 0.004629629629629629
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.19299768518518515,
+            -0.058653428819444506
+          ],
+          "hidden": 0.08101851851851852,
+          "hidden_minus_source": -0.12471064814814815,
+          "metric": "value_accuracy",
+          "site": 1,
+          "source": 0.20572916666666666
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "hidden": 0.0,
+          "hidden_minus_source": 0.0,
+          "metric": "whole_parent_accuracy",
+          "site": 2,
+          "source": 0.0
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            0.0,
+            0.008680555555555554
+          ],
+          "hidden": 0.00636574074074074,
+          "hidden_minus_source": 0.002893518518518518,
+          "metric": "whole_state_accuracy",
+          "site": 2,
+          "source": 0.003472222222222222
+        },
+        {
+          "conditional_family_bootstrap_95": [
+            -0.0961498119212963,
+            -0.01280201099537037
+          ],
+          "hidden": 0.1537181712962963,
+          "hidden_minus_source": -0.05099826388888889,
+          "metric": "value_accuracy",
+          "site": 2,
+          "source": 0.20471643518518523
+        }
+      ],
+      "metrics": null,
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "source_result": {
+        "bytes": 7990200,
+        "path": "artifacts/binding/arithmetic_graph/20261029_v3/llama8b/readouts/results.json",
+        "sha256": "b7a4ed9c159caf0e3123b977efa104012f2d1a735babbe777bec3b3407d58470"
+      }
+    }
+  },
+  "scope": "Controller metadata only. Scientific worker query counts remain in their own manifests.",
+  "source": {
+    "frozen_manifest_sha256": "fb51d4532172dddf419fba9fc4b784bef6b3ea9bcbcd7db9aaceb768ddd82e34",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/e71af09e675ea7a66cf5c8f1",
+    "snapshot_id": "e71af09e675ea7a66cf5c8f1",
+    "source_sha256": "b2078f7b46daabe6a67e4f4b311b606b8a3ab0fc690eb6604c195915af3fbb9b"
+  },
+  "stages": {
+    "codellama34b_behavior": {
+      "job_id": "483473",
+      "state": "complete"
+    },
+    "codellama34b_capture": {
+      "job_id": "483461",
+      "state": "complete"
+    },
+    "codellama34b_prepare": {
+      "job_id": "483449",
+      "state": "complete"
+    },
+    "codellama34b_readouts": {
+      "job_id": "483485",
+      "state": "complete"
+    },
+    "llama8b_behavior": {
+      "job_id": "483472",
+      "state": "complete"
+    },
+    "llama8b_capture": {
+      "job_id": "483460",
+      "state": "complete"
+    },
+    "llama8b_prepare": {
+      "job_id": "483448",
+      "state": "complete"
+    },
+    "llama8b_readouts": {
+      "job_id": "483484",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "483447",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}
