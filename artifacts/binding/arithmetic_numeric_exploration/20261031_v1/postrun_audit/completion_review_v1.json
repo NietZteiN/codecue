@@ -1,0 +1,116 @@
+{
+  "cv": "all CV payloads and metadata verified; selections recomputed from stored TRAIN validation records; CV scores were not reapplied",
+  "max_abs_replay_difference": 0.0,
+  "metrics": "independent target semantics, family means and class recall verified for real/control/TRAIN-prior panels",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "recipe": {
+    "bytes": 417,
+    "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_audit/recipe_review_v1.json",
+    "sha256": "6563145f1b471e2ad64ec58e807544154652e48b200105cea91f8219fd05ea4e"
+  },
+  "recorded_utc": "2026-10-31T18:30:28.513522+00:00",
+  "replayed_scores": 2151139032,
+  "replayed_selected_banks": 216,
+  "script": {
+    "bytes": 13369,
+    "path": "/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_audit/197_binding_numeric_postrun_audit.py",
+    "sha256": "41ef16f43465877bdedc81ee69bf5c31fc885933102504265128613f54a7fcc6"
+  },
+  "sealed_final_opened": false,
+  "source_snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8c1bda5687b078517a933459",
+  "status": "passed",
+  "verified_banks": 918,
+  "workers": [
+    {
+      "config": {
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_root_definition.json",
+        "sha256": "f2a1bcfca7ef6b1ed3a38ac281e7f59d82f11ccfec909bbe8619017d79241afd"
+      },
+      "cv_banks": 108,
+      "max_abs_replay_difference": 0.0,
+      "replayed_scores": 361210752,
+      "results": {
+        "bytes": 1300670,
+        "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_root_definition/results.json",
+        "sha256": "0ba39586024b25f10a9ecd0f895cad6bfdfe1821bf7a62126f3baac76c6b89a1"
+      },
+      "selected_banks": 36
+    },
+    {
+      "config": {
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_computed_definition.json",
+        "sha256": "0446635badc9c7a102023413eaf6538ba25087de34e232ba04d45943775710a1"
+      },
+      "cv_banks": 108,
+      "max_abs_replay_difference": 0.0,
+      "replayed_scores": 355682016,
+      "results": {
+        "bytes": 2013063,
+        "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_computed_definition/results.json",
+        "sha256": "d8514050639b47df29c2699cc91d680379e9e8df7d59e2d8960c36150f1433e0"
+      },
+      "selected_banks": 36
+    },
+    {
+      "config": {
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_root_definition.json",
+        "sha256": "19aa128f8de046f36f8652f375f18647115aaeb87965215d2ca6c472dedaabf0"
+      },
+      "cv_banks": 108,
+      "max_abs_replay_difference": 0.0,
+      "replayed_scores": 331109856,
+      "results": {
+        "bytes": 1198104,
+        "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_root_definition/results.json",
+        "sha256": "6444988730e7ce141c7a960116ae9521421ba571323a175927bcabff2907fe79"
+      },
+      "selected_banks": 33
+    },
+    {
+      "config": {
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_computed_definition.json",
+        "sha256": "ce567575440b20eb4ae31f9ceb3e28d887bdead09619eaf94ae9cf6c96ac3ab5"
+      },
+      "cv_banks": 108,
+      "max_abs_replay_difference": 0.0,
+      "replayed_scores": 296401680,
+      "results": {
+        "bytes": 1678659,
+        "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_computed_definition/results.json",
+        "sha256": "97eb0d0b7bc9e1cc2e26cf75c5282a7247284dc40aba0955f4d304ddcf4fd93f"
+      },
+      "selected_banks": 30
+    },
+    {
+      "config": {
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_root_definition.json",
+        "sha256": "0280afc2b66df46aaa9ff86aeaaef8ae90d2c1cb2ad8f7316adaf13013d84eb3"
+      },
+      "cv_banks": 135,
+      "max_abs_replay_difference": 0.0,
+      "replayed_scores": 421412544,
+      "results": {
+        "bytes": 1510623,
+        "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_root_definition/results.json",
+        "sha256": "43e3f73f9cea47b56c7c33c40e70a100c1a708322a63dbe8c541c85ea1be8d3b"
+      },
+      "selected_banks": 42
+    },
+    {
+      "config": {
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_computed_definition.json",
+        "sha256": "c0ca7cae03b557ee76c63036ddfba2d6e054c736abc687949e2576030664905c"
+      },
+      "cv_banks": 135,
+      "max_abs_replay_difference": 0.0,
+      "replayed_scores": 385322184,
+      "results": {
+        "bytes": 2182253,
+        "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_computed_definition/results.json",
+        "sha256": "5d0a63df5534075ad34a36db83484763a10847fcb1e662a42eb8ee11cb061abe"
+      },
+      "selected_banks": 39
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 31 completed compression/encoding wave:** [Audited review and figure](../../reports/binding/arithmetic_numeric_postrun_review_v1.md) · [Full findings](../../reports/binding/arithmetic_numeric_exploration_findings_v1.md). All workers and the report finished, with successful independent bank/selection/parameter/metric checks. Wider hidden features help within the fixed-layer assay; exact computed-value recovery remains weak. These are exploratory results.
+
 > **October 31 storage recovery:** Numeric exploration passed2,467 tests and all cache stages before a `/work` quota failure. [Verified relocation and resume](../../reports/binding/arithmetic_numeric_storage_recovery_20261031_v1.md) moved large data and future readout outputs to scratch, preserved66 saved/recovered banks and restored the controller. The first restarted worker is making new progress.
 
 > **October 31, next wave:** [Compression and numeric encoding submitted](../../reports/binding/arithmetic_numeric_exploration_launch_v1.md). Fixed-layer role-specific probes compare 64/256/1024/uncompressed features and numeric component encodings with shared source controls. Full frozen regression gates the CPU experiment DAG. [Live status](../../reports/binding/arithmetic_numeric_exploration_status_v1.md).

@@ -1,0 +1,25 @@
+{
+  "audit": {
+    "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_audit/completion_review_v1.json",
+    "sha256": "940ad9a9aff1dcc7e6b1dc10120ff0f7adcda926551f6785f2de6e2dd9d7f4ec"
+  },
+  "logger": {
+    "freshness_grace_seconds": 1800,
+    "freshness_status": "fresh",
+    "healthy": true,
+    "last_success_utc": "2026-10-31T18:32:29.861828+00:00",
+    "pending_guards": 2
+  },
+  "max_abs_replay_difference": 0.0,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "recorded_utc": "2026-10-31T18:32:40.568550+00:00",
+  "replayed_selected_banks": 216,
+  "status": "passed",
+  "storage_checks": {
+    "scratch": "write+fsync passed",
+    "work": "write+fsync passed"
+  },
+  "suite_status": "complete_exploratory",
+  "verified_fit_banks": 918
+}
