@@ -1,0 +1,57 @@
+{
+  "backend": "hidden",
+  "config_hash": "02f2c0737be03f176c4d5bdcadd2e9d7c920aa030e30bcecf907e2a4f0e926a1",
+  "evaluation_role": "discovery_numeric_exploration_cache_v1",
+  "examples": 42012,
+  "features": {
+    "projected_seed11": {
+      "bytes": 172081280,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache/projected_seed11.npy",
+      "sha256": "6866bffb2f1720e6c495dabf6ddad5d9ed2485b32d2efd63a385bca3dd03f20a",
+      "shape": [
+        42012,
+        1024
+      ]
+    },
+    "projected_seed29": {
+      "bytes": 172081280,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache/projected_seed29.npy",
+      "sha256": "f51bd07c8098af105d4fe0f5411341d1c9d0298499675d46333be5f89abef46a",
+      "shape": [
+        42012,
+        1024
+      ]
+    },
+    "projected_seed47": {
+      "bytes": 172081280,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache/projected_seed47.npy",
+      "sha256": "2e834c22054eb70e928e31a93785694cebc4a3ffc416799887b61cae6e66ec6a",
+      "shape": [
+        42012,
+        1024
+      ]
+    },
+    "raw": {
+      "bytes": 688324736,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache/raw.npy",
+      "sha256": "2bc2b8e195a972fea312f54d52c0e2c1e617dcb20b6dbdc62432d05bba655787",
+      "shape": [
+        42012,
+        4096
+      ]
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "nominated_layer": 24,
+  "row_count": 5292,
+  "source": {
+    "frozen_manifest_sha256": "847e9820558c1354bf19569adcbb62cc5f97b7e0aedce9fb96885744f7f02635",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8c1bda5687b078517a933459",
+    "snapshot_id": "8c1bda5687b078517a933459",
+    "source_sha256": "de7b8fe0ef63edbc83bb022be3b3a0682324325a7cb4aacd083901205d2c17a6"
+  },
+  "status": "complete_exploratory",
+  "table_sha256": "1699466a2012c7c5c3b68b60a76f1a1386a2de83abb3e6c7c81661e361575c29",
+  "width": 4096
+}

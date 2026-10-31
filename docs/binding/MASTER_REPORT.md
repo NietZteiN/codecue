@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 31 storage recovery:** Numeric exploration passed2,467 tests and all cache stages before a `/work` quota failure. [Verified relocation and resume](../../reports/binding/arithmetic_numeric_storage_recovery_20261031_v1.md) moved large data and future readout outputs to scratch, preserved66 saved/recovered banks and restored the controller. The first restarted worker is making new progress.
+
 > **October 31, next wave:** [Compression and numeric encoding submitted](../../reports/binding/arithmetic_numeric_exploration_launch_v1.md). Fixed-layer role-specific probes compare 64/256/1024/uncompressed features and numeric component encodings with shared source controls. Full frozen regression gates the CPU experiment DAG. [Live status](../../reports/binding/arithmetic_numeric_exploration_status_v1.md).
 
 > **October 31:** The [completed current-state follow-up](../../reports/binding/arithmetic_current_state_findings_v1.md) finds weak computed-value recovery and near-chance derived relationships. The [exploratory roadmap](../../reports/binding/arithmetic_exploration_20261031_plan_v1.md) tests compression, numeric encoding, timing, binding/arithmetic, direct relations and behavior prediction before gated causal work. Its [completed first diagnostic](../../reports/binding/arithmetic_measurement_diagnostics_v2.md) reports structural-family uncertainty, positive hidden/source dependency contrasts and weak numeric states even with oracle routing.

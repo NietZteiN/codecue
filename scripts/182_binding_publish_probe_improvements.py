@@ -20,6 +20,11 @@ ROOTS = ['artifacts/binding/arithmetic_probe_selection/20261030_v1',
          'artifacts/binding/arithmetic_state_followup/20261030_v2',
          'artifacts/binding/arithmetic_state_diagnostics/20261031_v1',
          'artifacts/binding/arithmetic_numeric_exploration/20261031_v1']
+NUMERIC_ROOT = 'artifacts/binding/arithmetic_numeric_exploration/20261031_v1'
+ROOTS += [NUMERIC_ROOT + '/' + name for name in (
+    'llama8b_root_definition', 'llama8b_computed_definition',
+    'codellama34b_root_definition', 'codellama34b_computed_definition',
+    'source_root_definition', 'source_computed_definition')]
 MUTABLE = {'manifest.json', 'progress.json', 'jobs_live_v1.json', 'status_review_v1.json'}
 
 
@@ -64,16 +69,24 @@ def main():
     for relative in ROOTS:
         folder = ROOT / relative
         for path in sorted(folder.rglob('*')):
-            if not path.is_file() or path.is_symlink() or '__pycache__' in path.parts or 'regression_sources' in path.parts:
+            if not path.is_file() or '__pycache__' in path.parts or 'regression_sources' in path.parts or 'saved_work_prefix' in path.parts:
                 continue
             name = str(path.relative_to(ROOT))
+            if path.is_symlink():
+                expected = Path('/scratch/juno/jvl210002/codecue/arithmetic_numeric_exploration/20261031_v1/caches')
+                if relative == NUMERIC_ROOT and path.suffix in export.RAW and path.resolve().is_relative_to(expected):
+                    local[name] = dict(path=name, bytes=path.stat().st_size, reason='raw array relocated to verified scratch storage; original hash-pinned path retained')
+                continue
             if path.suffix in export.RAW:
                 local[name] = dict(path=name, bytes=path.stat().st_size, reason='raw array/model/dependency or transient state')
                 continue
             if path.name in MUTABLE or path.name.startswith('.') or path.suffix not in export.TEXT:
                 continue
             export.scan_secret(path)
-            if path.suffix == '.jsonl':
+            # Git cannot track children of the scratch-backed directory links.
+            # Publish their immutable text through the existing lossless gzip
+            # catalog, whose restore command recreates original artifact paths.
+            if path.suffix == '.jsonl' or relative.startswith(NUMERIC_ROOT + '/'):
                 target = ROOT / 'reproducibility/compressed' / (name + '.gz')
                 target.parent.mkdir(parents=True, exist_ok=True)
                 with target.open('wb') as raw:
@@ -123,7 +136,7 @@ def main():
     export.atomic(local_catalog, export.csv_bytes(sorted(local.values(), key=lambda e: e['path']), ['path', 'bytes', 'reason']))
     proof = dict(status='published_metadata', recorded_utc=datetime.now(timezone.utc).isoformat(),
         source_ids=sorted(source_ids), artifacts=pins, regression_archives=archives,
-        policy='Raw arrays remain local; source and immutable metadata published; JSONL losslessly compressed. Mutable live state excluded.',
+        policy='Raw arrays remain local; source and immutable metadata published; JSONL and scratch-backed worker text losslessly compressed. Mutable live state excluded.',
         new_model_queries=0, new_fits=0, credentials_detected=0)
     export.atomic(proof_path, (json.dumps(proof, sort_keys=True, indent=2) + '\n').encode())
     paths.update(str(p.relative_to(ROOT)) for p in [source_catalog, compressed_catalog, local_catalog, proof_path])

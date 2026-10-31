@@ -1,5 +1,7 @@
 # Master research document
 
+October 31 storage recovery: numeric exploration passed2,467 regression tests and all cache stages, then hit a `/work` quota failure. [Verified relocation and resume](arithmetic_numeric_storage_recovery_20261031_v1.md) moved feature arrays and future readout outputs to scratch, preserved65 committed banks and recovered one saved bank without refitting. The restarted worker advanced beyond that prefix; the controller is restored.
+
 October 31, next wave: [compression and numeric encoding submitted](arithmetic_numeric_exploration_launch_v1.md). A fixed-layer, role-specific grid compares 64/256/1024/uncompressed features and numeric component encodings with shared source controls. Targeted checks passed; full frozen regression gates the CPU experiment DAG. [Live status](arithmetic_numeric_exploration_status_v1.md).
 
 October 31: the [completed current-state follow-up](arithmetic_current_state_findings_v1.md) finds weak computed-value recovery and near-chance derived relationships despite strong local parent decoding. The [exploratory roadmap](arithmetic_exploration_20261031_plan_v1.md) separates compression, numeric encoding, temporal sites, binding/arithmetic, direct relations, behavior prediction and causal tests. Its [completed first diagnostic](arithmetic_measurement_diagnostics_v2.md) reuses saved predictions with family-cluster uncertainty and explicit oracle substitutions; local hidden-minus-source contrasts are positive in both checkpoints, while oracle routing still leaves numeric-state recovery weak.

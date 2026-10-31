@@ -1,0 +1,32 @@
+{
+  "config": {
+    "bytes": 880,
+    "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_root_definition.json",
+    "sha256": "f2a1bcfca7ef6b1ed3a38ac281e7f59d82f11ccfec909bbe8619017d79241afd"
+  },
+  "existing_bank_control": "exact metadata equality",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_committed_banks_verified": 65,
+  "orphan_replay_max_difference": 0.0,
+  "positive_replay_max_difference": 0.0,
+  "reason": "Quota exhaustion prevented completion JSON publication after the model and scores were saved.",
+  "recorded_utc": "2026-10-31T15:50:13.110508+00:00",
+  "recovered_bank": {
+    "bytes": 30654,
+    "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_root_definition/width256_selected_seed11_alpha10000.json",
+    "sha256": "a57e94e397a6650c27259c959234c6d06a4e871ce92841709f39d58583f550e6"
+  },
+  "recovery_script": {
+    "bytes": 10481,
+    "path": "/work/jvl210002/migration/codecue/scripts/195_binding_numeric_storage_recovery.py",
+    "sha256": "c657d5079473a4727c49f402dbe0543c1b2b84f26355d764e84147638160399c"
+  },
+  "source": {
+    "frozen_manifest_sha256": "847e9820558c1354bf19569adcbb62cc5f97b7e0aedce9fb96885744f7f02635",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8c1bda5687b078517a933459",
+    "snapshot_id": "8c1bda5687b078517a933459",
+    "source_sha256": "de7b8fe0ef63edbc83bb022be3b3a0682324325a7cb4aacd083901205d2c17a6"
+  },
+  "status": "recovered_verified"
+}
