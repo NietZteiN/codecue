@@ -1,0 +1,22 @@
+{
+  "config_hash": "9c2d7ae2b407d59e8a676c2657d44a2b06c16da3934c96c129449e7ba245cc80",
+  "methods": {
+    "anchor_query": "mlp",
+    "answer_query": "mlp",
+    "position_only": "bilinear",
+    "source_query": "bilinear"
+  },
+  "selection_split": "TRAIN only",
+  "source": {
+    "frozen_manifest_sha256": "ddbdcb9e7d15f976c8b9879ac01f0a7ede81a39e16a8f680192652dcb9183f27",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/82aa60555d1e9b67df97b706",
+    "snapshot_id": "82aa60555d1e9b67df97b706",
+    "source_sha256": "bbc601d34d9d423808e74b7e7e1a08d43bdab11ec66265fbed72e0b87a147334"
+  },
+  "status": "selection_locked",
+  "tie_break": [
+    "linear",
+    "bilinear",
+    "mlp"
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "audit_report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485822",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:23:00.789108+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_audit": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485791",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:10:37.083926+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_binding": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485819",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:22:58.533867+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_capacity": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485821",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:23:00.038799+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_compose": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485994",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T04:52:32.673600+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_numeric": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485820",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:22:59.281207+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_audit": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485790",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:10:36.388937+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_binding": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485816",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:22:56.290946+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_capacity": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485818",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:22:57.820181+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_compose": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485865",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T03:12:29.979451+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_numeric": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485817",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T02:22:57.063513+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485775",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T01:55:17.233936+00:00",
+        "time_min": null
+      }
+    ],
+    "state_report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486004",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T05:02:45.157886+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "f03c8a8129532059d7e6dce18df07af9e75b28746a57f149c75bb20b8bde0b76",
+  "evaluation_role": "discovery_arithmetic_state_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "recorded_utc": "2026-10-31T05:13:02.039023+00:00",
+  "scheduler_errors": [],
+  "scientific_results": {
+    "audit_report": {
+      "model": null,
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 2465,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/audit_report/results.json",
+        "sha256": "827564b95173cdc3c884afa1c0c44e3004846c1b5eb4f075fb0f49d23ddb42c8"
+      },
+      "summary": {
+        "codellama34b": {
+          "hidden_global": {
+            "accuracy": 0.24027992112482854,
+            "control": 0.19506601508916324,
+            "whole": 0.0
+          },
+          "hidden_local": {
+            "accuracy": 0.834287122770919,
+            "control": 0.1879179526748971,
+            "whole": 0.3454218106995885
+          },
+          "source_local": {
+            "accuracy": 0.7753450788751715,
+            "control": 0.20111025377229078,
+            "whole": 0.2623456790123457
+          }
+        },
+        "llama8b": {
+          "hidden_global": {
+            "accuracy": 0.2249335562414266,
+            "control": 0.18759645061728394,
+            "whole": 0.0
+          },
+          "hidden_local": {
+            "accuracy": 0.8671982167352538,
+            "control": 0.18860382373113857,
+            "whole": 0.41460905349794236
+          },
+          "source_local": {
+            "accuracy": 0.7753450788751715,
+            "control": 0.20111025377229078,
+            "whole": 0.2623456790123457
+          }
+        }
+      }
+    },
+    "codellama34b_audit": {
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 586637,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/audit/summary_review_v1.json",
+        "sha256": "588c21c0ca8abe7a48dcbcaf2fb4a4669ec65bd39b0c1d16fc1222efd729e2da"
+      },
+      "summary": null
+    },
+    "codellama34b_binding": {
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 582448,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/binding/results.json",
+        "sha256": "61099de236c8e28153d265a32c2e7d279a8ea6b1628afb17eb7b50af3ae40d8b"
+      },
+      "summary": null
+    },
+    "codellama34b_capacity": {
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 288821,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/capacity/results.json",
+        "sha256": "8e6a46a54a55af939d7e849cd206556148d21a9f64d7cc187cdee4b17faa8074"
+      },
+      "summary": null
+    },
+    "codellama34b_compose": {
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 3060943,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/compose/results.json",
+        "sha256": "6bc6ea9b257f4295affce068dbd4cf3400e6c1333ea9c1bbc7a3598cd096807c"
+      },
+      "summary": null
+    },
+    "codellama34b_numeric": {
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 1656862,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/numeric/results.json",
+        "sha256": "6b51f783484c04e8157c0766df477e20ac912a4bfda553fb3bce168397be64d5"
+      },
+      "summary": null
+    },
+    "llama8b_audit": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 586848,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/audit/summary_review_v1.json",
+        "sha256": "239e02070a0fcde08214cf38804567156d6af88e8417e4fa70c5c518f7a3c2a6"
+      },
+      "summary": null
+    },
+    "llama8b_binding": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 583089,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/binding/results.json",
+        "sha256": "d1648aca281ec4d4b427572a81607835b8f6e8e690b679c07d982d9bb18b5ee6"
+      },
+      "summary": null
+    },
+    "llama8b_capacity": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 358707,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/capacity/results.json",
+        "sha256": "8d01861855932750f7912e2214bfa622d7d6a75325b22d3444b15c57d6a0788d"
+      },
+      "summary": null
+    },
+    "llama8b_compose": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 3059214,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/compose/results.json",
+        "sha256": "5688da0b2df16f90eb694139ce90d550a9198aeb7fb7f926af289903532825e1"
+      },
+      "summary": null
+    },
+    "llama8b_numeric": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 1659902,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/numeric/results.json",
+        "sha256": "6459ab38e017f79fe352ee485979f8e54d0303ecdf6dda8a76b826a67db220ba"
+      },
+      "summary": null
+    },
+    "state_report": {
+      "model": null,
+      "new_model_queries": 0,
+      "source_result": {
+        "bytes": 4172,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/state_report/results.json",
+        "sha256": "479534e24f8b5ec5136fdc161f5d48f1d8396ddf61186a65deb96966c03b6aef"
+      },
+      "summary": {
+        "codellama34b": {
+          "('anchor_query', 'hidden', 'categorical')": {
+            "mae": 4.229938271604937,
+            "relations": 0.5311091059451966,
+            "whole_state_accuracy": 0.004629629629629629
+          },
+          "('anchor_query', 'hidden', 'regression')": {
+            "mae": 4.190140284720711,
+            "relations": 0.523580721658445,
+            "whole_state_accuracy": 0.00025720164609053495
+          },
+          "('anchor_query_operands', 'hidden', 'regression')": {
+            "mae": 4.113670011246874,
+            "relations": 0.529022087851752,
+            "whole_state_accuracy": 0.00025720164609053495
+          },
+          "('answer_query', 'hidden', 'regression')": {
+            "mae": 4.091513940152384,
+            "relations": 0.5271477517019275,
+            "whole_state_accuracy": 0.0
+          },
+          "('oracle_route', 'hidden', 'regression')": {
+            "mae": 3.649380394330389,
+            "relations": 0.5439613421036321,
+            "whole_state_accuracy": 0.001286008230452675
+          },
+          "('pure_answer_state', 'hidden', 'regression')": {
+            "mae": 4.314360439507876,
+            "relations": 0.5057428717524372,
+            "whole_state_accuracy": 0.0005144032921810699
+          },
+          "('pure_answer_state', 'source', 'regression')": {
+            "mae": 4.327276854350626,
+            "relations": 0.5041087840134914,
+            "whole_state_accuracy": 0.0
+          },
+          "('source_query', 'source', 'regression')": {
+            "mae": 4.079023790795973,
+            "relations": 0.53285846604801,
+            "whole_state_accuracy": 0.0007716049382716049
+          }
+        },
+        "llama8b": {
+          "('anchor_query', 'hidden', 'categorical')": {
+            "mae": 4.12962962962963,
+            "relations": 0.5347844998395904,
+            "whole_state_accuracy": 0.006944444444444444
+          },
+          "('anchor_query', 'hidden', 'regression')": {
+            "mae": 4.169962169250486,
+            "relations": 0.5228110590275915,
+            "whole_state_accuracy": 0.0007716049382716049
+          },
+          "('anchor_query_operands', 'hidden', 'regression')": {
+            "mae": 4.0376234666690065,
+            "relations": 0.5255257273601682,
+            "whole_state_accuracy": 0.0010288065843621398
+          },
+          "('answer_query', 'hidden', 'regression')": {
+            "mae": 4.088513969719098,
+            "relations": 0.5224773854916207,
+            "whole_state_accuracy": 0.0005144032921810699
+          },
+          "('oracle_route', 'hidden', 'regression')": {
+            "mae": 3.6719159818659435,
+            "relations": 0.5398791513037288,
+            "whole_state_accuracy": 0.0007716049382716049
+          },
+          "('pure_answer_state', 'hidden', 'regression')": {
+            "mae": 4.369146040468263,
+            "relations": 0.5049760326477234,
+            "whole_state_accuracy": 0.0
+          },
+          "('pure_answer_state', 'source', 'regression')": {
+            "mae": 4.340628662408275,
+            "relations": 0.502197661777425,
+            "whole_state_accuracy": 0.00025720164609053495
+          },
+          "('source_query', 'source', 'regression')": {
+            "mae": 3.8167030018486616,
+            "relations": 0.5451595725496884,
+            "whole_state_accuracy": 0.00025720164609053495
+          }
+        }
+      }
+    }
+  },
+  "source": {
+    "frozen_manifest_sha256": "ddbdcb9e7d15f976c8b9879ac01f0a7ede81a39e16a8f680192652dcb9183f27",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/82aa60555d1e9b67df97b706",
+    "snapshot_id": "82aa60555d1e9b67df97b706",
+    "source_sha256": "bbc601d34d9d423808e74b7e7e1a08d43bdab11ec66265fbed72e0b87a147334"
+  },
+  "stages": {
+    "audit_report": {
+      "job_id": "485822",
+      "state": "complete"
+    },
+    "codellama34b_audit": {
+      "job_id": "485791",
+      "state": "complete"
+    },
+    "codellama34b_binding": {
+      "job_id": "485819",
+      "state": "complete"
+    },
+    "codellama34b_capacity": {
+      "job_id": "485821",
+      "state": "complete"
+    },
+    "codellama34b_compose": {
+      "job_id": "485994",
+      "state": "complete"
+    },
+    "codellama34b_numeric": {
+      "job_id": "485820",
+      "state": "complete"
+    },
+    "llama8b_audit": {
+      "job_id": "485790",
+      "state": "complete"
+    },
+    "llama8b_binding": {
+      "job_id": "485816",
+      "state": "complete"
+    },
+    "llama8b_capacity": {
+      "job_id": "485818",
+      "state": "complete"
+    },
+    "llama8b_compose": {
+      "job_id": "485865",
+      "state": "complete"
+    },
+    "llama8b_numeric": {
+      "job_id": "485817",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "485775",
+      "state": "complete"
+    },
+    "state_report": {
+      "job_id": "486004",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}

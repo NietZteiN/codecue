@@ -1,0 +1,111 @@
+{
+  "config_hash": "a4188da86e26afa29ba07cf9cefb1181caec905e2c96d222901adc75d9c24b6a",
+  "evaluation_role": "discovery_arithmetic_state_report_v1",
+  "inputs": {
+    "codellama34b": {
+      "bytes": 3060943,
+      "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/compose/results.json",
+      "sha256": "6bc6ea9b257f4295affce068dbd4cf3400e6c1333ea9c1bbc7a3598cd096807c"
+    },
+    "llama8b": {
+      "bytes": 3059214,
+      "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/compose/results.json",
+      "sha256": "5688da0b2df16f90eb694139ce90d550a9198aeb7fb7f926af289903532825e1"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "source": {
+    "frozen_manifest_sha256": "ddbdcb9e7d15f976c8b9879ac01f0a7ede81a39e16a8f680192652dcb9183f27",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/82aa60555d1e9b67df97b706",
+    "snapshot_id": "82aa60555d1e9b67df97b706",
+    "source_sha256": "bbc601d34d9d423808e74b7e7e1a08d43bdab11ec66265fbed72e0b87a147334"
+  },
+  "status": "complete_exploratory",
+  "summary": {
+    "codellama34b": {
+      "('anchor_query', 'hidden', 'categorical')": {
+        "mae": 4.229938271604937,
+        "relations": 0.5311091059451966,
+        "whole_state_accuracy": 0.004629629629629629
+      },
+      "('anchor_query', 'hidden', 'regression')": {
+        "mae": 4.190140284720711,
+        "relations": 0.523580721658445,
+        "whole_state_accuracy": 0.00025720164609053495
+      },
+      "('anchor_query_operands', 'hidden', 'regression')": {
+        "mae": 4.113670011246874,
+        "relations": 0.529022087851752,
+        "whole_state_accuracy": 0.00025720164609053495
+      },
+      "('answer_query', 'hidden', 'regression')": {
+        "mae": 4.091513940152384,
+        "relations": 0.5271477517019275,
+        "whole_state_accuracy": 0.0
+      },
+      "('oracle_route', 'hidden', 'regression')": {
+        "mae": 3.649380394330389,
+        "relations": 0.5439613421036321,
+        "whole_state_accuracy": 0.001286008230452675
+      },
+      "('pure_answer_state', 'hidden', 'regression')": {
+        "mae": 4.314360439507876,
+        "relations": 0.5057428717524372,
+        "whole_state_accuracy": 0.0005144032921810699
+      },
+      "('pure_answer_state', 'source', 'regression')": {
+        "mae": 4.327276854350626,
+        "relations": 0.5041087840134914,
+        "whole_state_accuracy": 0.0
+      },
+      "('source_query', 'source', 'regression')": {
+        "mae": 4.079023790795973,
+        "relations": 0.53285846604801,
+        "whole_state_accuracy": 0.0007716049382716049
+      }
+    },
+    "llama8b": {
+      "('anchor_query', 'hidden', 'categorical')": {
+        "mae": 4.12962962962963,
+        "relations": 0.5347844998395904,
+        "whole_state_accuracy": 0.006944444444444444
+      },
+      "('anchor_query', 'hidden', 'regression')": {
+        "mae": 4.169962169250486,
+        "relations": 0.5228110590275915,
+        "whole_state_accuracy": 0.0007716049382716049
+      },
+      "('anchor_query_operands', 'hidden', 'regression')": {
+        "mae": 4.0376234666690065,
+        "relations": 0.5255257273601682,
+        "whole_state_accuracy": 0.0010288065843621398
+      },
+      "('answer_query', 'hidden', 'regression')": {
+        "mae": 4.088513969719098,
+        "relations": 0.5224773854916207,
+        "whole_state_accuracy": 0.0005144032921810699
+      },
+      "('oracle_route', 'hidden', 'regression')": {
+        "mae": 3.6719159818659435,
+        "relations": 0.5398791513037288,
+        "whole_state_accuracy": 0.0007716049382716049
+      },
+      "('pure_answer_state', 'hidden', 'regression')": {
+        "mae": 4.369146040468263,
+        "relations": 0.5049760326477234,
+        "whole_state_accuracy": 0.0
+      },
+      "('pure_answer_state', 'source', 'regression')": {
+        "mae": 4.340628662408275,
+        "relations": 0.502197661777425,
+        "whole_state_accuracy": 0.00025720164609053495
+      },
+      "('source_query', 'source', 'regression')": {
+        "mae": 3.8167030018486616,
+        "relations": 0.5451595725496884,
+        "whole_state_accuracy": 0.00025720164609053495
+      }
+    }
+  }
+}

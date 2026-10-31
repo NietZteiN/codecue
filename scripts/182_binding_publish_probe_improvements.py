@@ -17,7 +17,8 @@ ROOTS = ['artifacts/binding/arithmetic_probe_selection/20261030_v1',
          'artifacts/binding/arithmetic_probe_selection/20261030_v2',
          'artifacts/binding/arithmetic_local/20261030_v1',
          'artifacts/binding/arithmetic_state_followup/20261030_v1',
-         'artifacts/binding/arithmetic_state_followup/20261030_v2']
+         'artifacts/binding/arithmetic_state_followup/20261030_v2',
+         'artifacts/binding/arithmetic_state_diagnostics/20261031_v1']
 MUTABLE = {'manifest.json', 'progress.json', 'jobs_live_v1.json', 'status_review_v1.json'}
 
 

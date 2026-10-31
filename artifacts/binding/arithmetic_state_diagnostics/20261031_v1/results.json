@@ -1,0 +1,1705 @@
+{
+  "bootstrap": "2000 paired structural-family resamples; seed averages inside family; exploratory percentile intervals",
+  "models": {
+    "codellama34b": {
+      "composition": {
+        "all_bindings_correct": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.050411522633744855,
+            0.09284979423868311
+          ],
+          "mean": 0.07021604938271604,
+          "observations": 1296
+        },
+        "anchor_query_decoded_values": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.0,
+            0.0007716049382716049
+          ],
+          "mean": 0.00025720164609053495,
+          "observations": 1296
+        },
+        "correct_state_with_wrong_binding": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.0,
+            0.0007716049382716049
+          ],
+          "mean": 0.00025720164609053495,
+          "observations": 1296
+        },
+        "oracle_route_decoded_values": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.00025720164609053495,
+            0.00257201646090535
+          ],
+          "mean": 0.001286008230452675,
+          "observations": 1296
+        },
+        "oracle_route_oracle_values_sanity": 1.0,
+        "predicted_route_oracle_values": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.07046682098765432,
+            0.11702674897119339
+          ],
+          "mean": 0.09207818930041152,
+          "observations": 1296
+        }
+      },
+      "dependency_hidden_minus_matched_source": {
+        "families": 72,
+        "fitting_seeds": 3,
+        "interval95": [
+          0.03408832733196159,
+          0.0642693329903978
+        ],
+        "mean": 0.04945773319615913,
+        "observations": 72
+      },
+      "numeric": {
+        "hidden/categorical": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.06088616573041303,
+                0.08906971417462906
+              ],
+              "mean": 0.07463256567232299,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.2607261265561585,
+                6.016592280555267
+              ],
+              "mean": 5.637028136487421,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.014412175205201947,
+                0.021821330495352453
+              ],
+              "mean": 0.0038780565629703704,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.0744170096021948,
+                0.10024594907407407
+              ],
+              "mean": 0.087019890260631,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.7607194144375855,
+                5.445179076646091
+              ],
+              "mean": 5.098593964334706,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.003665123456790121,
+                0.0262795781893004
+              ],
+              "mean": 0.010888203017832644,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.0918113425925926,
+                0.14351851851851852
+              ],
+              "mean": 0.11728395061728396,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.9999903549382716,
+                4.729562114197531
+              ],
+              "mean": 4.356481481481481,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.011574074074074065,
+                0.05709876543209877
+              ],
+              "mean": 0.023919753086419752,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.06847993827160494,
+                0.10494309413580245
+              ],
+              "mean": 0.08564814814814814,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.582089120370371,
+                5.57374614197531
+              ],
+              "mean": 5.052469135802469,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.015629822530864198,
+                0.0318287037037037
+              ],
+              "mean": 0.008487654320987656,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.04886831275720164,
+                0.0680298353909465
+              ],
+              "mean": 0.058127572016460904,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.28242991255144,
+                6.624765303497942
+              ],
+              "mean": 5.886831275720165,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.01388888888888889,
+                0.01581790123456789
+              ],
+              "mean": 0.0002572016460905315,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.10252600864836779,
+                0.15145872092174908
+              ],
+              "mean": 0.1261416595923638,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.0416297871403506,
+                3.443226554190463
+              ],
+              "mean": 3.23607799998645,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.0014840198599001388,
+                0.06380378969947632
+              ],
+              "mean": 0.03306874072719143,
+              "observations": 1290
+            }
+          }
+        },
+        "hidden/regression": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05605926269908546,
+                0.06932637878894667
+              ],
+              "mean": 0.06269626554310805,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.894255277468928,
+                5.6301414172120925
+              ],
+              "mean": 5.252038308855098,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.03273961460366759,
+                -0.002591231850394104
+              ],
+              "mean": -0.01768490250291029,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.06597222222222222,
+                0.07926097393689985
+              ],
+              "mean": 0.07246656378600821,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.4285277944523616,
+                5.064640008390893
+              ],
+              "mean": 4.732620325104724,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.02122020747599451,
+                0.004395468964334694
+              ],
+              "mean": -0.008659122085048012,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.07021604938271604,
+                0.09606481481481481
+              ],
+              "mean": 0.08256172839506173,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.70032933846782,
+                4.4276620510741225
+              ],
+              "mean": 4.053417384415938,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.047067901234567895,
+                0.01389853395061723
+              ],
+              "mean": -0.016589506172839507,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.06616512345679011,
+                0.08681037808641971
+              ],
+              "mean": 0.07619598765432097,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.238066777638626,
+                5.143719425895424
+              ],
+              "mean": 4.671448825490537,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.0320264274691358,
+                0.007908950617283946
+              ],
+              "mean": -0.012345679012345684,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.04963991769547325,
+                0.06815843621399176
+              ],
+              "mean": 0.058641975308641965,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.900979035535784,
+                6.1951283284686385
+              ],
+              "mean": 5.472994765407699,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.012474279835390943,
+                0.018775720164609048
+              ],
+              "mean": 0.002957818930041149,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.08760458934974781,
+                0.11594973142728417
+              ],
+              "mean": 0.10182408879591978,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                2.764128842739329,
+                3.070915728525242
+              ],
+              "mean": 2.9148963204203113,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.0011995845996726285,
+                0.043838617042842386
+              ],
+              "mean": 0.021505349762392014,
+              "observations": 1290
+            }
+          }
+        },
+        "source/categorical": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.04333439555500321,
+                0.06696668852149959
+              ],
+              "mean": 0.05461546570238555,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.238088185502181,
+                5.949316841071574
+              ],
+              "mean": 5.586117956984961,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.048525506717493165,
+                -0.008636232842123035
+              ],
+              "mean": -0.028030670458443898,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.07728802297668039,
+                0.10213102280521262
+              ],
+              "mean": 0.08959190672153634,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.647524434156379,
+                5.291194594478737
+              ],
+              "mean": 4.959897976680384,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.018284357853223594,
+                0.01931209276406036
+              ],
+              "mean": 0.0014146090534979414,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.08719135802469136,
+                0.14082754629629626
+              ],
+              "mean": 0.11342592592592593,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.984548611111111,
+                4.83220486111111
+              ],
+              "mean": 4.40162037037037,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.059413580246913573,
+                0.03317901234567902
+              ],
+              "mean": -0.012731481481481477,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.07079475308641976,
+                0.10956790123456789
+              ],
+              "mean": 0.08989197530864197,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.468282214506172,
+                5.455560378086418
+              ],
+              "mean": 4.914158950617284,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.02354359567901235,
+                0.028935185185185185
+              ],
+              "mean": 0.0019290123456790112,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05272633744855967,
+                0.07818930041152264
+              ],
+              "mean": 0.06545781893004114,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.998820087448559,
+                6.248016332304527
+              ],
+              "mean": 5.563914609053498,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.002572016460905349,
+                0.03202481995884772
+              ],
+              "mean": 0.015046296296296294,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.15750866203110922,
+                0.22837470530252219
+              ],
+              "mean": 0.19184670311430876,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                2.657484187532603,
+                3.0540297680768638
+              ],
+              "mean": 2.8497523538016494,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.04437066422101633,
+                0.13625264211531812
+              ],
+              "mean": 0.09089274705471889,
+              "observations": 1290
+            }
+          }
+        },
+        "source/regression": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.038458101906183435,
+                0.056672543804900964
+              ],
+              "mean": 0.047035164122523655,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.240183565609067,
+                5.94787407264511
+              ],
+              "mean": 5.579093796720118,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.051253403347025946,
+                -0.01655568397740922
+              ],
+              "mean": -0.03324839782011155,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.055598422496570654,
+                0.0721890003429355
+              ],
+              "mean": 0.06397890946502058,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.576095923017583,
+                5.212289042760304
+              ],
+              "mean": 4.881989512242553,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.03573227451989026,
+                -0.005371763545953408
+              ],
+              "mean": -0.019718792866941014,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.04513888888888889,
+                0.08333333333333333
+              ],
+              "mean": 0.0640432098765432,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.890852872240983,
+                4.766462654209547
+              ],
+              "mean": 4.333037068433583,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.07716049382716049,
+                -0.009249614197530912
+              ],
+              "mean": -0.04359567901234568,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05227623456790124,
+                0.08024691358024692
+              ],
+              "mean": 0.06616512345679011,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.460057835098409,
+                5.418528417381063
+              ],
+              "mean": 4.902946226526651,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.04900173611111111,
+                0.0009645061728395075
+              ],
+              "mean": -0.023533950617283955,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05156571502057613,
+                0.07291666666666666
+              ],
+              "mean": 0.06172839506172839,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.851349818139539,
+                6.133442112626864
+              ],
+              "mean": 5.409985241767427,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.011188271604938273,
+                0.026748971193415638
+              ],
+              "mean": 0.007973251028806581,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.09851614690082999,
+                0.1421521670003184
+              ],
+              "mean": 0.1199191588276095,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                2.3275873137097935,
+                2.657691334406367
+              ],
+              "mean": 2.4796197992396447,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.014080368640227794,
+                0.06122995451340519
+              ],
+              "mean": 0.024785562637675316,
+              "observations": 1290
+            }
+          }
+        }
+      },
+      "token_timing": {
+        "computed_definitions": 20844,
+        "different_numeric_target": 19550,
+        "same_token_as_right_operand": 20844
+      }
+    },
+    "llama8b": {
+      "composition": {
+        "all_bindings_correct": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.0419238683127572,
+            0.07973251028806584
+          ],
+          "mean": 0.05967078189300411,
+          "observations": 1296
+        },
+        "anchor_query_decoded_values": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.0,
+            0.0018004115226337447
+          ],
+          "mean": 0.0007716049382716049,
+          "observations": 1296
+        },
+        "correct_state_with_wrong_binding": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.0,
+            0.0018004115226337447
+          ],
+          "mean": 0.0007716049382716049,
+          "observations": 1296
+        },
+        "oracle_route_decoded_values": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.0,
+            0.0018004115226337447
+          ],
+          "mean": 0.0007716049382716049,
+          "observations": 1296
+        },
+        "oracle_route_oracle_values_sanity": 1.0,
+        "predicted_route_oracle_values": {
+          "families": 72,
+          "fitting_seeds": 3,
+          "interval95": [
+            0.06301440329218107,
+            0.10545910493827157
+          ],
+          "mean": 0.08359053497942387,
+          "observations": 1296
+        }
+      },
+      "dependency_hidden_minus_matched_source": {
+        "families": 72,
+        "fitting_seeds": 3,
+        "interval95": [
+          0.0769016846707819,
+          0.10714056069958845
+        ],
+        "mean": 0.09185313786008231,
+        "observations": 72
+      },
+      "numeric": {
+        "hidden/categorical": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.0701246934709637,
+                0.0974430395508643
+              ],
+              "mean": 0.08346733150548502,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.2511000153314535,
+                6.001233247002715
+              ],
+              "mean": 5.6170202755675,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.01330068894522653,
+                0.024132760303439277
+              ],
+              "mean": 0.005536755762986875,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.0815323859739369,
+                0.10817526148834018
+              ],
+              "mean": 0.09462877229080932,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.7168440286351165,
+                5.388832090192044
+              ],
+              "mean": 5.040402091906722,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.00450156464334705,
+                0.027737590020576113
+              ],
+              "mean": 0.011123971193415636,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.10339506172839506,
+                0.15741705246913573
+              ],
+              "mean": 0.12962962962962962,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.940190972222222,
+                4.783960262345678
+              ],
+              "mean": 4.351851851851852,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.02006172839506173,
+                0.0571084104938271
+              ],
+              "mean": 0.01774691358024691,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.07214506172839506,
+                0.11477623456790122
+              ],
+              "mean": 0.0927854938271605,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.575004822530865,
+                5.560228587962963
+              ],
+              "mean": 5.049575617283951,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.014274691358024692,
+                0.03800154320987654
+              ],
+              "mean": 0.01099537037037037,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.051951517489711926,
+                0.07099086934156376
+              ],
+              "mean": 0.06147119341563786,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.109690072016462,
+                6.466923868312756
+              ],
+              "mean": 5.719778806584363,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.010288065843621397,
+                0.019807741769547305
+              ],
+              "mean": 0.00462962962962963,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.10399383887500084,
+                0.16496970744109826
+              ],
+              "mean": 0.1330841465524564,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                2.851048189714562,
+                3.2282060625700586
+              ],
+              "mean": 3.0335294726139796,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.004402884055172783,
+                0.07106279088673452
+              ],
+              "mean": 0.03288562311449635,
+              "observations": 1290
+            }
+          }
+        },
+        "hidden/regression": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.055141560892171655,
+                0.0711352053201336
+              ],
+              "mean": 0.06330301344875304,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.00826830938382,
+                5.7361663688898075
+              ],
+              "mean": 5.360410781422452,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.02665257930455629,
+                0.0038045239175450766
+              ],
+              "mean": -0.010921065968187113,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.06487857938957475,
+                0.07861796982167352
+              ],
+              "mean": 0.07169495884773662,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.509556284363931,
+                5.173051109838918
+              ],
+              "mean": 4.831487531841257,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.018285429526748973,
+                0.006087641460905346
+              ],
+              "mean": -0.005594135802469136,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.07098765432098765,
+                0.09953703703703703
+              ],
+              "mean": 0.08564814814814814,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.745212472243253,
+                4.545128706508443
+              ],
+              "mean": 4.134055874619539,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.041290509259259256,
+                0.018904320987654325
+              ],
+              "mean": -0.00925925925925926,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05960165895061728,
+                0.0794753086419753
+              ],
+              "mean": 0.06886574074074074,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.420383072211426,
+                5.348429973837495
+              ],
+              "mean": 4.856795056684181,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.03317901234567901,
+                -0.0005738811728395311
+              ],
+              "mean": -0.01678240740740741,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05144032921810699,
+                0.0700906635802469
+              ],
+              "mean": 0.060570987654320986,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.913810176342974,
+                6.255351896919893
+              ],
+              "mean": 5.50361166422005,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.006044238683127571,
+                0.025720164609053492
+              ],
+              "mean": 0.009259259259259257,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.08133562284090451,
+                0.10657359422984422
+              ],
+              "mean": 0.09431169052647925,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                2.793146630812204,
+                3.1233017432196655
+              ],
+              "mean": 2.9508542882504067,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.01407399891774892,
+                0.03259092930087639
+              ],
+              "mean": 0.01081026107434558,
+              "observations": 1290
+            }
+          }
+        },
+        "source/categorical": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.043792473668986504,
+                0.067084905393134
+              ],
+              "mean": 0.05522744456136895,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.257243844316619,
+                5.9811017457002125
+              ],
+              "mean": 5.610118557613309,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.049472303549113854,
+                -0.00801952274780507
+              ],
+              "mean": -0.02831553864257092,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.07651588220164608,
+                0.10086644804526748
+              ],
+              "mean": 0.08849879972565157,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.666825274348423,
+                5.324018882887517
+              ],
+              "mean": 4.984696502057613,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.020492005315500685,
+                0.018068951474622768
+              ],
+              "mean": -2.143347050754622e-05,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.08603395061728396,
+                0.1400462962962963
+              ],
+              "mean": 0.11188271604938271,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.991425540123457,
+                4.846469907407407
+              ],
+              "mean": 4.4155092592592595,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.06328125,
+                0.0327932098765432
+              ],
+              "mean": -0.015046296296296295,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.07118055555555557,
+                0.10976562499999999
+              ],
+              "mean": 0.09008487654320989,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.4409529320987655,
+                5.412673611111111
+              ],
+              "mean": 4.888117283950617,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.022381365740740747,
+                0.02893518518518518
+              ],
+              "mean": 0.0021219135802469087,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05079732510288065,
+                0.07613168724279835
+              ],
+              "mean": 0.06352880658436215,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.062554655349794,
+                6.350909850823045
+              ],
+              "mean": 5.650462962962965,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.0046296296296296285,
+                0.03073559670781893
+              ],
+              "mean": 0.012860082304526748,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.15659215181662367,
+                0.23050824200252018
+              ],
+              "mean": 0.19225029339465963,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                2.634862215493818,
+                3.0638603125486923
+              ],
+              "mean": 2.840322624037413,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.04330148268528552,
+                0.13681139234396272
+              ],
+              "mean": 0.09210569685921799,
+              "observations": 1290
+            }
+          }
+        },
+        "source/regression": {
+          "absent_from_initial_literals": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.03729026982400576,
+                0.0552581867694536
+              ],
+              "mean": 0.0456881822902465,
+              "observations": 3894
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                5.252369733217897,
+                5.98347950144936
+              ],
+              "mean": 5.602666955752297,
+              "observations": 3894
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.03646240121848544,
+                -0.007122140972830818
+              ],
+              "mean": -0.021829610430312143,
+              "observations": 3894
+            }
+          },
+          "all": {
+            "exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.05287637174211249,
+                0.06897344393004115
+              ],
+              "mean": 0.06102109053497943,
+              "observations": 5184
+            },
+            "mae": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.597138350293658,
+                5.250747874856658
+              ],
+              "mean": 4.9081474669520215,
+              "observations": 5184
+            },
+            "real_minus_shuffled_exact": {
+              "families": 72,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.021734610768175584,
+                0.004160772462277079
+              ],
+              "mean": -0.008294753086419755,
+              "observations": 5184
+            }
+          },
+          "depth2": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.045910493827160496,
+                0.08487654320987655
+              ],
+              "mean": 0.06558641975308642,
+              "observations": 864
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                3.886640131309756,
+                4.830882197494404
+              ],
+              "mean": 4.359183316960046,
+              "observations": 864
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.041666666666666664,
+                0.011583719135802419
+              ],
+              "mean": -0.014660493827160495,
+              "observations": 864
+            }
+          },
+          "depth4": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.046870177469135806,
+                0.06770833333333333
+              ],
+              "mean": 0.05690586419753086,
+              "observations": 1728
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.574844733859878,
+                5.568587280724334
+              ],
+              "mean": 5.0302741387103955,
+              "observations": 1728
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.03935185185185185,
+                0.002512538580246889
+              ],
+              "mean": -0.01871141975308642,
+              "observations": 1728
+            }
+          },
+          "depth6": {
+            "exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.04925090020576131,
+                0.07291666666666667
+              ],
+              "mean": 0.06057098765432098,
+              "observations": 2592
+            },
+            "mae": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                4.760647907101543,
+                6.099705313098571
+              ],
+              "mean": 5.334984945185624,
+              "observations": 2592
+            },
+            "real_minus_shuffled_exact": {
+              "families": 24,
+              "fitting_seeds": 3,
+              "interval95": [
+                -0.010291280864197531,
+                0.02726337448559671
+              ],
+              "mean": 0.008487654320987656,
+              "observations": 2592
+            }
+          },
+          "matches_initial_literal": {
+            "exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.09133330073030776,
+                0.13515835217859865
+              ],
+              "mean": 0.11252482520088154,
+              "observations": 1290
+            },
+            "mae": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                2.35306578966974,
+                2.655930273049377
+              ],
+              "mean": 2.496985610544972,
+              "observations": 1290
+            },
+            "real_minus_shuffled_exact": {
+              "families": 71,
+              "fitting_seeds": 3,
+              "interval95": [
+                0.0031046311702121582,
+                0.06616280311042634
+              ],
+              "mean": 0.03527678307607886,
+              "observations": 1290
+            }
+          }
+        }
+      },
+      "token_timing": {
+        "computed_definitions": 20844,
+        "different_numeric_target": 19550,
+        "same_token_as_right_operand": 20844
+      }
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "sealed_final_opened": false,
+  "status": "complete_exploratory"
+}

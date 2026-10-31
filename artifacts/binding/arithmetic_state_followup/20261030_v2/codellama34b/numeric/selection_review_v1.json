@@ -1,0 +1,43 @@
+{
+  "choices": {
+    "hidden": {
+      "categorical": {
+        "alpha": 10000.0,
+        "format": "categorical",
+        "representation": "hidden_layer_24",
+        "selection_score": -5.304162379972565
+      },
+      "regression": {
+        "alpha": 100.0,
+        "format": "regression",
+        "representation": "hidden_layer_24",
+        "selection_score": -4.975017843431275
+      }
+    },
+    "source": {
+      "categorical": {
+        "alpha": 10000.0,
+        "format": "categorical",
+        "representation": "source_char",
+        "selection_score": -5.238140146319159
+      },
+      "regression": {
+        "alpha": 10000.0,
+        "format": "regression",
+        "representation": "source_char",
+        "selection_score": -5.0663162982932795
+      }
+    }
+  },
+  "config_hash": "f6e1c9f162d348d429069d6f02cedea9ac163a4c7aceab0c937ce4a114cd0fe6",
+  "objective": "family-macro computed-definition MAE",
+  "selection_split": "TRAIN only",
+  "source": {
+    "frozen_manifest_sha256": "ddbdcb9e7d15f976c8b9879ac01f0a7ede81a39e16a8f680192652dcb9183f27",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/82aa60555d1e9b67df97b706",
+    "snapshot_id": "82aa60555d1e9b67df97b706",
+    "source_sha256": "bbc601d34d9d423808e74b7e7e1a08d43bdab11ec66265fbed72e0b87a147334"
+  },
+  "status": "selection_locked",
+  "tie_break": "larger alpha then lexicographically larger representation"
+}

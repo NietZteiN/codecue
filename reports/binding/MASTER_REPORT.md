@@ -1,5 +1,7 @@
 # Master research document
 
+October 31: the [completed current-state follow-up](arithmetic_current_state_findings_v1.md) finds weak computed-value recovery and near-chance derived relationships despite strong local parent decoding. The [exploratory roadmap](arithmetic_exploration_20261031_plan_v1.md) separates compression, numeric encoding, temporal sites, binding/arithmetic, direct relations, behavior prediction and causal tests. Its [completed first diagnostic](arithmetic_measurement_diagnostics_v2.md) reuses saved predictions with family-cluster uncertainty and explicit oracle substitutions; local hidden-minus-source contrasts are positive in both checkpoints, while oracle routing still leaves numeric-state recovery weak.
+
 October 30 evening: the [audited local-dependency results and figure](arithmetic_local_dependency_findings_v1.md) show 86.72% / 83.43% parent accuracy and 41.46% / 34.54% complete graphs. Both checkpoints passed exact replay of all saved readouts. Complete numeric states and natural causal use remain unestablished. The [validated follow-up release](arithmetic_state_followup_launch_v2.md) queues matched-capacity controls, current binding lookup and numeric/algebraic decoding without new language-model calls.
 
 October30 probe revision: [implementation, source expansion and submitted experiments](arithmetic_probe_improvement_launch_v1.md). TRAIN-only layer/regularization/rank selection and shared local dependency scorers are implemented; original negative findings remain preserved.

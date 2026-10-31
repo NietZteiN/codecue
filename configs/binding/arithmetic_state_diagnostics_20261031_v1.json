@@ -1,0 +1,70 @@
+{
+  "bootstrap_draws": 2000,
+  "models": {
+    "codellama34b": {
+      "capacity": {
+        "bytes": 288821,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/capacity/results.json",
+        "sha256": "8e6a46a54a55af939d7e849cd206556148d21a9f64d7cc187cdee4b17faa8074"
+      },
+      "compose": {
+        "bytes": 3060943,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/compose/results.json",
+        "sha256": "6bc6ea9b257f4295affce068dbd4cf3400e6c1333ea9c1bbc7a3598cd096807c"
+      },
+      "local": {
+        "bytes": 1287222,
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/codellama34b/probes/results.json",
+        "sha256": "31ff01845ca47071aced1d21efd0856deb7d4269322111e97d7b089ced6f78f2"
+      },
+      "numeric": {
+        "bytes": 1656862,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/numeric/results.json",
+        "sha256": "6b51f783484c04e8157c0766df477e20ac912a4bfda553fb3bce168397be64d5"
+      },
+      "prepared": {
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/codellama34b/capture/prepared_cases.jsonl",
+        "sha256": "541f7d7567bdc154413bc74886d54aefe064f54afd014e0cb5a7fb78833d8dce"
+      }
+    },
+    "llama8b": {
+      "capacity": {
+        "bytes": 358707,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/capacity/results.json",
+        "sha256": "8d01861855932750f7912e2214bfa622d7d6a75325b22d3444b15c57d6a0788d"
+      },
+      "compose": {
+        "bytes": 3059214,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/compose/results.json",
+        "sha256": "5688da0b2df16f90eb694139ce90d550a9198aeb7fb7f926af289903532825e1"
+      },
+      "local": {
+        "bytes": 1292518,
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/llama8b/probes/results.json",
+        "sha256": "404e025db02e9beb519f545a65bf2955f8a56a8ecb03d4750139033cdd9b9501"
+      },
+      "numeric": {
+        "bytes": 1659902,
+        "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/numeric/results.json",
+        "sha256": "6459ab38e017f79fe352ee485979f8e54d0303ecdf6dda8a76b826a67db220ba"
+      },
+      "prepared": {
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/llama8b/capture/prepared_cases.jsonl",
+        "sha256": "248d27b4181d4ba60a1d0c68266963cb985df2ed25274f88197f17b416cf6d80"
+      }
+    }
+  },
+  "plan": "reports/binding/arithmetic_exploration_20261031_plan_v1.md",
+  "plan_receipt": {
+    "path": "artifacts/binding/arithmetic_state_diagnostics/20261031_v1/protocol_review_v1.json",
+    "sha256": "108278a7b91abb10dec802d2e25b784ddeb9bc2ca854f88adee6903781df8223"
+  },
+  "plan_sha256": "e12cdd7f3c59169780786386879754549562566b6cc992e2bfd7177b96870154",
+  "report": "reports/binding/arithmetic_measurement_diagnostics_v1.md",
+  "rows": {
+    "path": "artifacts/binding/arithmetic_local/20261030_v1/sources.jsonl",
+    "sha256": "7d4a1261da83e68ce0e95f17bb9be5ad658b728d42c4c8810c03f82f5ae40ca9"
+  },
+  "run_dir": "artifacts/binding/arithmetic_state_diagnostics/20261031_v1",
+  "script_sha256": "b5caf1e1242d1c44a98908f23d46e115a4d1a0772827e68a36aa58cf25a3ef47"
+}

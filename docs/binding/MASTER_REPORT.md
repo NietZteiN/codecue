@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 31:** The [completed current-state follow-up](../../reports/binding/arithmetic_current_state_findings_v1.md) finds weak computed-value recovery and near-chance derived relationships. The [exploratory roadmap](../../reports/binding/arithmetic_exploration_20261031_plan_v1.md) tests compression, numeric encoding, timing, binding/arithmetic, direct relations and behavior prediction before gated causal work. Its [completed first diagnostic](../../reports/binding/arithmetic_measurement_diagnostics_v2.md) reports structural-family uncertainty, positive hidden/source dependency contrasts and weak numeric states even with oracle routing.
+
 > **October 30 evening:** [Audited local-dependency results and figure](../../reports/binding/arithmetic_local_dependency_findings_v1.md) show 86.72% / 83.43% parent accuracy and 41.46% / 34.54% complete graphs. All 108 saved readouts passed exact replay. The [validated follow-up release](../../reports/binding/arithmetic_state_followup_launch_v2.md) queues capacity controls and current-binding/numeric/algebraic decoding. Complete numeric-state recovery and causal use remain unestablished.
 
 > **October30 probe revision:** [Implementation and submitted experiments](../../reports/binding/arithmetic_probe_improvement_launch_v1.md). TRAIN-only layer/regularization/rank selection, a larger structural dataset and shared local dependency scorers are implemented. Original negative findings remain preserved.
