@@ -1,0 +1,250 @@
+{
+  "declared_plan": "reports/binding/arithmetic_numeric_geometry_plan_v1.md",
+  "declared_plan_sha256": "7182099499b51b2ebcece760d8f5f15a8ecefad543ea81c757434344b96fd11c",
+  "evaluation_role": "discovery_numeric_geometry_suite_v1",
+  "morning_at": "2026-11-01T08:00:00-06:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/qa.json",
+      "config_sha256": "1f933acc02536e96f831eacdd8c49417654c56041fc199ab3298e384e081aa08",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/qa/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/llama8b_root_definition.json",
+      "config_sha256": "8e8e239cf3afa23f39806e68ed5e5a3066900a2691c4f2824fbf211c7c4c90d1",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_root_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/llama8b_root_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/llama8b_computed_definition.json",
+      "config_sha256": "127be78b5ece56c0dd116d7ad30e5448e5297534fe72bc7bc1e7294a07296e9e",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_computed_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/llama8b_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/codellama34b_root_definition.json",
+      "config_sha256": "94f393aa7fdcacdbb9669d66df0f7fb775a8660c5dbb8a3e9dcd64d826e5c956",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_root_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/codellama34b_root_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/codellama34b_computed_definition.json",
+      "config_sha256": "c87cfb02f29bfc223189878831ccf76c9b50f15e25befd559fcbf37e45aa8509",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_computed_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/codellama34b_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source4096_root_definition.json",
+      "config_sha256": "41efa4c868d2d42021efa8079931dfcca1f91c896c46e6e29f45e36e63faac69",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "source4096_root_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source4096_root_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source4096_computed_definition.json",
+      "config_sha256": "635d85640cf6a22811f7a9dc4d0e0178bff9391c079e95d4380e7bd63406110a",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "source4096_computed_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source4096_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source8192_root_definition.json",
+      "config_sha256": "390af704a0e0fa8265914f34bdcc1d375baeff9dc3f7f0b7f8d66dc4f49c850c",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "source8192_root_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source8192_root_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source8192_computed_definition.json",
+      "config_sha256": "0cdebc1cb429f3f23445a3010a0c870c72a16abf083380a278ac88fcf23a6fd1",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "source8192_computed_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source8192_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/llama8b_query_cache.json",
+      "config_sha256": "1ade988f9cf01a2c93172c6db3d1ac540a87c1df1db12a9c95cde2357127ca7d",
+      "cpus": 8,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_query_cache",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/llama8b_query_cache/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "8G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/codellama34b_query_cache.json",
+      "config_sha256": "0c6c2f6a4059eb3815fec6c33728da3b59867fdb3dbb2bac372900357f374d0f",
+      "cpus": 8,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_query_cache",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/codellama34b_query_cache/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "8G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_geometry_20261031_v1/report.json",
+      "config_sha256": "982f74e3fa2e54ff8edf3396938c90df6bbb7f6e493a44e390570c260d64d26f",
+      "cpus": 4,
+      "dependencies": [
+        "llama8b_root_definition",
+        "llama8b_computed_definition",
+        "codellama34b_root_definition",
+        "codellama34b_computed_definition",
+        "source4096_root_definition",
+        "source4096_computed_definition",
+        "source8192_root_definition",
+        "source8192_computed_definition",
+        "llama8b_query_cache",
+        "codellama34b_query_cache"
+      ],
+      "expected_cases": 0,
+      "key": "report",
+      "marker": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "8G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/200_binding_numeric_geometry.py",
+      "time": "02:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_numeric_geometry_status_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/qa/regression.xml",
+    "minimum_tests": 2486,
+    "review": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/qa/regression_review.json"
+  }
+}

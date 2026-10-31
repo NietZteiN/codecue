@@ -5,6 +5,14 @@ figures, small scientific metadata and losslessly compressed large text artifact
 No experiment is rerun to publish this snapshot, and original result bytes are
 preserved. Start with [the master research report](../docs/binding/MASTER_REPORT.md).
 
+The [numeric-geometry wave](../reports/binding/arithmetic_numeric_geometry_launch_v1.md)
+uses frozen source `a154e0ecd0112622590fa080` and the separate
+`arithmetic_numeric_geometry_regression_20261031_v1.tar.gz` test/support mirror.
+Its immutable scratch-worker metadata uses the same lossless gzip catalog;
+as new results are published, restore them with
+`python scripts/export_binding_repository.py restore --match arithmetic_numeric_geometry/20261031_v1`.
+Large output arrays are created directly on scratch and remain local.
+
 ## Stored artifacts
 
 - `compressed_artifacts.csv` maps each original JSON/JSONL/large-text path to its

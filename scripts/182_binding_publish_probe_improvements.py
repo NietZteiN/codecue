@@ -20,12 +20,20 @@ ROOTS = ['artifacts/binding/arithmetic_probe_selection/20261030_v1',
          'artifacts/binding/arithmetic_state_followup/20261030_v2',
          'artifacts/binding/arithmetic_state_diagnostics/20261031_v1',
          'artifacts/binding/arithmetic_numeric_exploration/20261031_v1',
-         'artifacts/binding/arithmetic_next_runs/20261031_v1']
+         'artifacts/binding/arithmetic_next_runs/20261031_v1',
+         'artifacts/binding/arithmetic_numeric_geometry/20261031_v1']
 NUMERIC_ROOT = 'artifacts/binding/arithmetic_numeric_exploration/20261031_v1'
 ROOTS += [NUMERIC_ROOT + '/' + name for name in (
     'llama8b_root_definition', 'llama8b_computed_definition',
     'codellama34b_root_definition', 'codellama34b_computed_definition',
     'source_root_definition', 'source_computed_definition')]
+GEOMETRY_ROOT = 'artifacts/binding/arithmetic_numeric_geometry/20261031_v1'
+ROOTS += [GEOMETRY_ROOT + '/' + name for name in (
+    'llama8b_root_definition', 'llama8b_computed_definition',
+    'codellama34b_root_definition', 'codellama34b_computed_definition',
+    'source4096_root_definition', 'source4096_computed_definition',
+    'source8192_root_definition', 'source8192_computed_definition',
+    'llama8b_query_cache', 'codellama34b_query_cache')]
 MUTABLE = {'manifest.json', 'progress.json', 'jobs_live_v1.json', 'status_review_v1.json'}
 
 
@@ -87,7 +95,7 @@ def main():
             # Git cannot track children of the scratch-backed directory links.
             # Publish their immutable text through the existing lossless gzip
             # catalog, whose restore command recreates original artifact paths.
-            if path.suffix == '.jsonl' or relative.startswith(NUMERIC_ROOT + '/'):
+            if path.suffix == '.jsonl' or relative.startswith((NUMERIC_ROOT + '/', GEOMETRY_ROOT + '/')):
                 target = ROOT / 'reproducibility/compressed' / (name + '.gz')
                 target.parent.mkdir(parents=True, exist_ok=True)
                 with target.open('wb') as raw:
@@ -117,7 +125,9 @@ def main():
         mirror = folder / 'regression_sources'
         if mirror.exists():
             label = 'local' if '/arithmetic_local/' in relative else 'selection'
-            if '/arithmetic_numeric_exploration/' in relative:
+            if '/arithmetic_numeric_geometry/' in relative:
+                filename = f'arithmetic_numeric_geometry_regression_{folder.name}.tar.gz'
+            elif '/arithmetic_numeric_exploration/' in relative:
                 filename = f'arithmetic_numeric_exploration_regression_{folder.name}.tar.gz'
             elif '/arithmetic_state_followup/' in relative:
                 filename = f'arithmetic_state_regression_{folder.name}.tar.gz'

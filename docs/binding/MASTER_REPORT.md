@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 31 methods upgrade:** [Competing mechanisms and advanced methods](../../reports/binding/advanced_methods_20261031_v1.md) · [Submitted geometry wave](../../reports/binding/arithmetic_numeric_geometry_launch_v1.md) · [Controlled protocol](../../reports/binding/arithmetic_numeric_geometry_plan_v1.md). The new assay tests circular numeric geometry with matched permutations and prepares final-query vectors. Shared-slot models, calibrated MDL and causal alignment remain proposed follow-ups.
+
 > **October 31 next-run planning:** [Latest results snapshot](../../reports/binding/arithmetic_results_for_next_runs_v1.md) · [Ordered run plan](../../reports/binding/arithmetic_next_runs_20261031_plan_v1.md). Cached full-width global decoding of all four values/direct relations comes first, alongside paired timing/overwrite/retention dataset preparation. No new run is submitted by this planning step.
 
 > **October 31 completed compression/encoding wave:** [Audited review and figure](../../reports/binding/arithmetic_numeric_postrun_review_v1.md) · [Full findings](../../reports/binding/arithmetic_numeric_exploration_findings_v1.md). All workers and the report finished, with successful independent bank/selection/parameter/metric checks. Wider hidden features help within the fixed-layer assay; exact computed-value recovery remains weak. These are exploratory results.

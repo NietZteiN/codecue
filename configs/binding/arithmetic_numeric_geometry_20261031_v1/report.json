@@ -1,0 +1,54 @@
+{
+  "declared_plan": "reports/binding/arithmetic_numeric_geometry_plan_v1.md",
+  "declared_plan_sha256": "7182099499b51b2ebcece760d8f5f15a8ecefad543ea81c757434344b96fd11c",
+  "evaluation_role": "discovery_numeric_geometry_report_v1",
+  "report": "reports/binding/arithmetic_numeric_geometry_findings_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/report",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "workers": [
+    {
+      "bytes": 880,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/llama8b_root_definition.json",
+      "sha256": "8e8e239cf3afa23f39806e68ed5e5a3066900a2691c4f2824fbf211c7c4c90d1"
+    },
+    {
+      "bytes": 888,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/llama8b_computed_definition.json",
+      "sha256": "127be78b5ece56c0dd116d7ad30e5448e5297534fe72bc7bc1e7294a07296e9e"
+    },
+    {
+      "bytes": 895,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/codellama34b_root_definition.json",
+      "sha256": "94f393aa7fdcacdbb9669d66df0f7fb775a8660c5dbb8a3e9dcd64d826e5c956"
+    },
+    {
+      "bytes": 903,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/codellama34b_computed_definition.json",
+      "sha256": "c87cfb02f29bfc223189878831ccf76c9b50f15e25befd559fcbf37e45aa8509"
+    },
+    {
+      "bytes": 882,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source4096_root_definition.json",
+      "sha256": "41efa4c868d2d42021efa8079931dfcca1f91c896c46e6e29f45e36e63faac69"
+    },
+    {
+      "bytes": 890,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source4096_computed_definition.json",
+      "sha256": "635d85640cf6a22811f7a9dc4d0e0178bff9391c079e95d4380e7bd63406110a"
+    },
+    {
+      "bytes": 882,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source8192_root_definition.json",
+      "sha256": "390af704a0e0fa8265914f34bdcc1d375baeff9dc3f7f0b7f8d66dc4f49c850c"
+    },
+    {
+      "bytes": 890,
+      "path": "configs/binding/arithmetic_numeric_geometry_20261031_v1/source8192_computed_definition.json",
+      "sha256": "0cdebc1cb429f3f23445a3010a0c870c72a16abf083380a278ac88fcf23a6fd1"
+    }
+  ]
+}
