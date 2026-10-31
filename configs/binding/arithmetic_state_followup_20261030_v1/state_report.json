@@ -1,0 +1,36 @@
+{
+  "capacity_models": [
+    {
+      "config": "configs/binding/arithmetic_state_followup_20261030_v1/llama8b_capacity.json",
+      "name": "llama8b",
+      "sha256": "522d5a6d021fb5676cad9bf1c05f724f0e2c389a8caa17f6ac952d8b06695142"
+    },
+    {
+      "config": "configs/binding/arithmetic_state_followup_20261030_v1/codellama34b_capacity.json",
+      "name": "codellama34b",
+      "sha256": "b873fdcbef3d2b2400e9b7c24d2d3cc0fc4d0437f5a0f63bb3e6ae0c8e5bd9ef"
+    }
+  ],
+  "declared_plan": "reports/binding/arithmetic_state_followup_plan_v1.md",
+  "declared_plan_sha256": "b36dcb83f4171bd060e4eb833e7829b8ad2da4b168866ce248de54045404a7a7",
+  "evaluation_role": "discovery_arithmetic_state_report_v1",
+  "models": [
+    {
+      "config": "configs/binding/arithmetic_state_followup_20261030_v1/llama8b_compose.json",
+      "name": "llama8b",
+      "sha256": "1529a824b8a56992b6388007e9a073ba91abcea0098c72ed07b522e2267964b7"
+    },
+    {
+      "config": "configs/binding/arithmetic_state_followup_20261030_v1/codellama34b_compose.json",
+      "name": "codellama34b",
+      "sha256": "ac87c0ac170014ca915c12ba54bc68196119def0201ca4df7b60a543d8b0041c"
+    }
+  ],
+  "report": "reports/binding/arithmetic_current_state_findings_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_state_followup/20261030_v1/state_report",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}

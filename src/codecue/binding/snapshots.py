@@ -58,7 +58,10 @@ SCRIPT_NAMES = ('87_binding_preflight.py', '88_binding_pipeline.py', '89_binding
                 '178_binding_arithmetic_local_probes.py',
                 '179_binding_arithmetic_local_behavior.py',
                 '180_binding_arithmetic_local_suite.py',
-                '181_binding_probe_improvement_setup.py')
+                '181_binding_probe_improvement_setup.py',
+                '185_binding_state_followup.py',
+                '186_binding_state_suite.py',
+                '187_binding_state_setup.py')
 
 
 def source_files(root):

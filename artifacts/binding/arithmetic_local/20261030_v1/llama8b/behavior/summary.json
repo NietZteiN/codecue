@@ -1,0 +1,232 @@
+{
+  "attempts": [
+    {
+      "generated_answers_attempted": 5508,
+      "generated_answers_returned": 5508,
+      "model_loaded": true,
+      "runtime": {
+        "attention_backend": "sdpa",
+        "device_name": "NVIDIA A30",
+        "dtype": "torch.bfloat16",
+        "forward": "greedy language-model generation, max12 tokens, KV cache enabled",
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-99e42228-ee6f-698a-0713-31bda9939903",
+          "mean_gpu_utilization_percent": 84.16712328767123,
+          "mean_power_watts": 149.32539726027397,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 16715.0,
+          "samples": 365,
+          "selector_verified": true
+        },
+        "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+        "gpu_uuid": "99e42228-ee6f-698a-0713-31bda9939903",
+        "position_ids": "(attention_mask.cumsum(-1)-1).clamp_min(0)",
+        "torch_peak_allocated_bytes": 16937977344,
+        "use_cache": false,
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1"
+        }
+      },
+      "slurm_job_id": "485061",
+      "status": "complete",
+      "wall_seconds": 207.40833880007267
+    }
+  ],
+  "cases": 5508,
+  "config_hash": "7e6f55f0341a7ec9513dbd4faf9165dd7a31902e8fd8118003cf7d6661e1de19",
+  "evaluation_role": "discovery_arithmetic_local_behavior_v1",
+  "generated_holdouts_opened": false,
+  "limitations": "Adaptive discovery with explicit printed queries. All three instructions and invalids retained. One-update calibration structures excluded from probe fits. No causal or untouched confirmation claim.",
+  "metrics": [
+    {
+      "accuracy": 0.37037037037037035,
+      "cases": 108,
+      "correct": 40,
+      "depth": 1,
+      "families": 6,
+      "family_macro_accuracy": 0.3703703703703704,
+      "instruction": 0,
+      "invalid": 8,
+      "query_kind": "arithmetic_written",
+      "split": "calibration"
+    },
+    {
+      "accuracy": 0.2625,
+      "cases": 240,
+      "correct": 63,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.2625,
+      "instruction": 0,
+      "invalid": 7,
+      "query_kind": "arithmetic_written",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.921875,
+      "cases": 192,
+      "correct": 177,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.921875,
+      "instruction": 0,
+      "invalid": 1,
+      "query_kind": "untouched_literal",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.21388888888888888,
+      "cases": 720,
+      "correct": 154,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.2138888888888889,
+      "instruction": 0,
+      "invalid": 33,
+      "query_kind": "arithmetic_written",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.9461805555555556,
+      "cases": 576,
+      "correct": 545,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.9461805555555556,
+      "instruction": 0,
+      "invalid": 3,
+      "query_kind": "untouched_literal",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.6481481481481481,
+      "cases": 108,
+      "correct": 70,
+      "depth": 1,
+      "families": 6,
+      "family_macro_accuracy": 0.6481481481481481,
+      "instruction": 1,
+      "invalid": 6,
+      "query_kind": "arithmetic_written",
+      "split": "calibration"
+    },
+    {
+      "accuracy": 0.2875,
+      "cases": 240,
+      "correct": 69,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.28750000000000003,
+      "instruction": 1,
+      "invalid": 10,
+      "query_kind": "arithmetic_written",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.9270833333333334,
+      "cases": 192,
+      "correct": 178,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.9270833333333334,
+      "instruction": 1,
+      "invalid": 1,
+      "query_kind": "untouched_literal",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.2611111111111111,
+      "cases": 720,
+      "correct": 188,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.2611111111111111,
+      "instruction": 1,
+      "invalid": 14,
+      "query_kind": "arithmetic_written",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.96875,
+      "cases": 576,
+      "correct": 558,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.96875,
+      "instruction": 1,
+      "invalid": 1,
+      "query_kind": "untouched_literal",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.24074074074074073,
+      "cases": 108,
+      "correct": 26,
+      "depth": 1,
+      "families": 6,
+      "family_macro_accuracy": 0.24074074074074073,
+      "instruction": 2,
+      "invalid": 51,
+      "query_kind": "arithmetic_written",
+      "split": "calibration"
+    },
+    {
+      "accuracy": 0.225,
+      "cases": 240,
+      "correct": 54,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.225,
+      "instruction": 2,
+      "invalid": 93,
+      "query_kind": "arithmetic_written",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.052083333333333336,
+      "cases": 192,
+      "correct": 10,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.052083333333333336,
+      "instruction": 2,
+      "invalid": 178,
+      "query_kind": "untouched_literal",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.14444444444444443,
+      "cases": 720,
+      "correct": 104,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.14444444444444446,
+      "instruction": 2,
+      "invalid": 255,
+      "query_kind": "arithmetic_written",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.06770833333333333,
+      "cases": 576,
+      "correct": 39,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.06770833333333333,
+      "instruction": 2,
+      "invalid": 524,
+      "query_kind": "untouched_literal",
+      "split": "train"
+    }
+  ],
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  },
+  "status": "complete_exploratory"
+}

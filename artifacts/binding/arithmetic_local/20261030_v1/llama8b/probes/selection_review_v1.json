@@ -1,0 +1,19 @@
+{
+  "calibration_excluded": true,
+  "candidate_records": 81,
+  "config_hash": "df92d1e5b16e114f6ba53e59a6d85d54eb181240eecf025b186831617dc7c91d",
+  "fit_split": "TRAIN only",
+  "methods": {
+    "hidden_global": "linear",
+    "hidden_local": "bilinear",
+    "source_local": "bilinear"
+  },
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  },
+  "status": "selection_locked",
+  "tie_break": "linear, then bilinear, then MLP"
+}

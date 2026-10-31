@@ -1,0 +1,73 @@
+{
+  "config_hash": "07edd8a21ca1b6965d2088e1d1763f87a850e7e85a8167e7ef5a720ef98158d7",
+  "evaluation_role": "discovery_arithmetic_local_audit_report_v1",
+  "figure_artifacts": {
+    "png": {
+      "bytes": 114257,
+      "path": "reports/binding/figures/arithmetic_local_dependency_v1.png",
+      "sha256": "a8435aa43334ddd24c19b5bdca5a68c3446b45d329677c7704d8b8a1c64f191c"
+    },
+    "svg": {
+      "bytes": 72897,
+      "path": "reports/binding/figures/arithmetic_local_dependency_v1.svg",
+      "sha256": "e065f545456134232120b3447f9fc594f0fa7a9ab1c956d07ba8f8cbb990df6c"
+    }
+  },
+  "inputs": {
+    "codellama34b": {
+      "bytes": 586637,
+      "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/audit/summary_review_v1.json",
+      "sha256": "588c21c0ca8abe7a48dcbcaf2fb4a4669ec65bd39b0c1d16fc1222efd729e2da"
+    },
+    "llama8b": {
+      "bytes": 586848,
+      "path": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/audit/summary_review_v1.json",
+      "sha256": "239e02070a0fcde08214cf38804567156d6af88e8417e4fa70c5c518f7a3c2a6"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "source": {
+    "frozen_manifest_sha256": "ddbdcb9e7d15f976c8b9879ac01f0a7ede81a39e16a8f680192652dcb9183f27",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/82aa60555d1e9b67df97b706",
+    "snapshot_id": "82aa60555d1e9b67df97b706",
+    "source_sha256": "bbc601d34d9d423808e74b7e7e1a08d43bdab11ec66265fbed72e0b87a147334"
+  },
+  "status": "complete_exploratory",
+  "summary": {
+    "codellama34b": {
+      "hidden_global": {
+        "accuracy": 0.24027992112482854,
+        "control": 0.19506601508916324,
+        "whole": 0.0
+      },
+      "hidden_local": {
+        "accuracy": 0.834287122770919,
+        "control": 0.1879179526748971,
+        "whole": 0.3454218106995885
+      },
+      "source_local": {
+        "accuracy": 0.7753450788751715,
+        "control": 0.20111025377229078,
+        "whole": 0.2623456790123457
+      }
+    },
+    "llama8b": {
+      "hidden_global": {
+        "accuracy": 0.2249335562414266,
+        "control": 0.18759645061728394,
+        "whole": 0.0
+      },
+      "hidden_local": {
+        "accuracy": 0.8671982167352538,
+        "control": 0.18860382373113857,
+        "whole": 0.41460905349794236
+      },
+      "source_local": {
+        "accuracy": 0.7753450788751715,
+        "control": 0.20111025377229078,
+        "whole": 0.2623456790123457
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "config_hash": "7e6f55f0341a7ec9513dbd4faf9165dd7a31902e8fd8118003cf7d6661e1de19",
+  "evaluation_role": "discovery_arithmetic_local_behavior_v1",
+  "ids": [
+    "local-case:aa799b0ecc3ab0008a6cd473:i2",
+    "local-case:158424eb164b6f3cdee78b35:i0",
+    "local-case:158424eb164b6f3cdee78b35:i1",
+    "local-case:158424eb164b6f3cdee78b35:i2"
+  ],
+  "responses": [
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": true,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:aa799b0ecc3ab0008a6cd473:i2",
+      "input_ids_sha256": "5114f07e8e1a073dd4796f76040659e83a4fd4e5226889474ca26a60c84704a4",
+      "instruction": 2,
+      "lexical_realization": 0,
+      "numeric_seed": 1301,
+      "parsed": 7,
+      "query_kind": "arithmetic_written",
+      "raw_response": " 7",
+      "split": "calibration"
+    },
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": false,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:158424eb164b6f3cdee78b35:i0",
+      "input_ids_sha256": "668f44a2f6e05e1aa3f2172929f2859092196b3f2fed558e815b49adaf6f7440",
+      "instruction": 0,
+      "lexical_realization": 1,
+      "numeric_seed": 1301,
+      "parsed": null,
+      "query_kind": "arithmetic_written",
+      "raw_response": " \n1 - (-6) = 7\n7",
+      "split": "calibration"
+    },
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": true,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:158424eb164b6f3cdee78b35:i1",
+      "input_ids_sha256": "92a572bd30c295bd9696997736dcbb18f0fc0364a14bfac4d08a29b1aad8bfc8",
+      "instruction": 1,
+      "lexical_realization": 1,
+      "numeric_seed": 1301,
+      "parsed": 7,
+      "query_kind": "arithmetic_written",
+      "raw_response": " 7",
+      "split": "calibration"
+    },
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": true,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:158424eb164b6f3cdee78b35:i2",
+      "input_ids_sha256": "018aa2f76c3b346771a3fc5982b2f9dff20104ee7bb1f16a326378fd49c564f6",
+      "instruction": 2,
+      "lexical_realization": 1,
+      "numeric_seed": 1301,
+      "parsed": 7,
+      "query_kind": "arithmetic_written",
+      "raw_response": " 7",
+      "split": "calibration"
+    }
+  ],
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  }
+}

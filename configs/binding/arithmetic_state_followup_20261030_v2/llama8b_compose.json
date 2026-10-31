@@ -1,0 +1,19 @@
+{
+  "audit_config": {
+    "path": "configs/binding/arithmetic_state_followup_20261030_v2/llama8b_audit.json",
+    "sha256": "2253783df26facde448f268806fcab9e088aa22ee9d31417652e84c684866da3"
+  },
+  "binding_config": "configs/binding/arithmetic_state_followup_20261030_v2/llama8b_binding.json",
+  "binding_config_sha256": "f91cafdee7c4b8142059bc77b85131f0b2d1e32f98427be31a870a0907450a8c",
+  "declared_plan": "reports/binding/arithmetic_state_followup_plan_v2.md",
+  "declared_plan_sha256": "772ea3063734d690246525db800886a8245dde8da7dd376d85da41e60d5490fb",
+  "evaluation_role": "discovery_arithmetic_state_composition_v1",
+  "numeric_config": "configs/binding/arithmetic_state_followup_20261030_v2/llama8b_numeric.json",
+  "numeric_config_sha256": "d97603f593dcbdb409a42681e53fce16576d351a23c2c78d730e722474e16a43",
+  "run_dir": "artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/compose",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}

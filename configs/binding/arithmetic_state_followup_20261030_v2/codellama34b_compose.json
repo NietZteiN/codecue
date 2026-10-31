@@ -1,0 +1,19 @@
+{
+  "audit_config": {
+    "path": "configs/binding/arithmetic_state_followup_20261030_v2/codellama34b_audit.json",
+    "sha256": "8502b7884d52493737c0f3c957082569d94e32e387bc68465550e0045e76d084"
+  },
+  "binding_config": "configs/binding/arithmetic_state_followup_20261030_v2/codellama34b_binding.json",
+  "binding_config_sha256": "1510b0f5f38c0bb1f6a70a604f3551da2139aeb6ce9ee8f6fb62469d3c1e51b2",
+  "declared_plan": "reports/binding/arithmetic_state_followup_plan_v2.md",
+  "declared_plan_sha256": "772ea3063734d690246525db800886a8245dde8da7dd376d85da41e60d5490fb",
+  "evaluation_role": "discovery_arithmetic_state_composition_v1",
+  "numeric_config": "configs/binding/arithmetic_state_followup_20261030_v2/codellama34b_numeric.json",
+  "numeric_config_sha256": "354f133d138445a3930037083658f5abebf80508193e92a6502ea30e9fc9e790",
+  "run_dir": "artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/compose",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}

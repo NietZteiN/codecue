@@ -1,0 +1,25 @@
+{
+  "declared_plan": "reports/binding/arithmetic_state_followup_plan_v1.md",
+  "declared_plan_sha256": "b36dcb83f4171bd060e4eb833e7829b8ad2da4b168866ce248de54045404a7a7",
+  "evaluation_role": "discovery_arithmetic_local_audit_report_v1",
+  "figure": "reports/binding/figures/arithmetic_local_dependency_v1",
+  "models": [
+    {
+      "config": "configs/binding/arithmetic_state_followup_20261030_v1/llama8b_audit.json",
+      "name": "llama8b",
+      "sha256": "59dba428b01508fa3e5e6f39b2c746774ecac641ad6bf28452753496dac95224"
+    },
+    {
+      "config": "configs/binding/arithmetic_state_followup_20261030_v1/codellama34b_audit.json",
+      "name": "codellama34b",
+      "sha256": "2748f3efcb3f0ce7cf9d867ce92285ff3a376736eb38a2d5761e7de5610cafe0"
+    }
+  ],
+  "report": "reports/binding/arithmetic_local_dependency_findings_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_state_followup/20261030_v1/audit_report",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}

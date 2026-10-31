@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 30 evening:** [Audited local-dependency results and figure](../../reports/binding/arithmetic_local_dependency_findings_v1.md) show 86.72% / 83.43% parent accuracy and 41.46% / 34.54% complete graphs. All 108 saved readouts passed exact replay. The [validated follow-up release](../../reports/binding/arithmetic_state_followup_launch_v2.md) queues capacity controls and current-binding/numeric/algebraic decoding. Complete numeric-state recovery and causal use remain unestablished.
+
 > **October30 probe revision:** [Implementation and submitted experiments](../../reports/binding/arithmetic_probe_improvement_launch_v1.md). TRAIN-only layer/regularization/rank selection, a larger structural dataset and shared local dependency scorers are implemented. Original negative findings remain preserved.
 
 > **Completed archived-feature comparison:** [Results and figure](../../reports/binding/arithmetic_probe_selection_findings_v2.md). Complete-graph recovery remains zero; numeric error improves modestly. The new local experiment passed 2,408 software tests and both native layout checks before capture submission.

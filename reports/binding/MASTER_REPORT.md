@@ -1,5 +1,7 @@
 # Master research document
 
+October 30 evening: the [audited local-dependency results and figure](arithmetic_local_dependency_findings_v1.md) show 86.72% / 83.43% parent accuracy and 41.46% / 34.54% complete graphs. Both checkpoints passed exact replay of all saved readouts. Complete numeric states and natural causal use remain unestablished. The [validated follow-up release](arithmetic_state_followup_launch_v2.md) queues matched-capacity controls, current binding lookup and numeric/algebraic decoding without new language-model calls.
+
 October30 probe revision: [implementation, source expansion and submitted experiments](arithmetic_probe_improvement_launch_v1.md). TRAIN-only layer/regularization/rank selection and shared local dependency scorers are implemented; original negative findings remain preserved.
 
 The [completed archived-feature revision and comparison figure](arithmetic_probe_selection_findings_v2.md) retain zero complete graphs, with modestly lower numeric error. The larger local-dependency experiment passed 2,408 software tests and both native layout checks before capture submission.

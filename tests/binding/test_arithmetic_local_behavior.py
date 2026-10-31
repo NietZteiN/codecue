@@ -1,6 +1,7 @@
 from codecue.binding import arithmetic_local_behavior as behavior
 from codecue.binding import arithmetic_local_suite as local
 from codecue.binding import overnight_relationship_suite as original
+import pytest
 
 
 def test_calibration_keeps_all_wordings_invalids_and_family_weighting():
@@ -30,3 +31,21 @@ def test_completed_capture_releases_cpu_work_without_waiting_for_other_gpu_jobs(
     assert local.reconcile(config, state, {}) == ['probes']
     state['status']['capture']['state'] = 'failed'
     assert local.reconcile(config, state, {}) == []
+
+
+def test_behavior_audit_accepts_legacy_batch_traversal_roundoff_only():
+    cell = dict(instruction=1, split='train', depth=2, query_kind='arithmetic_written', cases=720,
+        correct=188, invalid=0, families=72, accuracy=188 / 720, family_macro_accuracy=.2611111111111111)
+    other = dict(cell, family_macro_accuracy=.2611111111111112)
+    behavior.verify_metrics([cell], [other])
+
+
+@pytest.mark.parametrize('change', ['count', 'rate', 'nan', 'count_type'])
+def test_behavior_audit_still_rejects_scoring_or_identity_changes(change):
+    cell = dict(cases=10, correct=3, instruction=0, accuracy=.3, family_macro_accuracy=.3)
+    altered = dict(cell)
+    if change == 'count':altered['correct'] = 4
+    elif change == 'rate':altered['accuracy'] += 1e-6
+    elif change == 'nan':altered['family_macro_accuracy'] = float('nan')
+    else:altered['cases'] = 10.
+    with pytest.raises(ValueError):behavior.verify_metrics([cell], [altered])

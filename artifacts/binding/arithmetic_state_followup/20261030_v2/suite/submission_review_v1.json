@@ -1,0 +1,40 @@
+{
+  "attempts": {
+    "audit_report": [],
+    "codellama34b_audit": [],
+    "codellama34b_binding": [],
+    "codellama34b_capacity": [],
+    "codellama34b_compose": [],
+    "codellama34b_numeric": [],
+    "llama8b_audit": [],
+    "llama8b_binding": [],
+    "llama8b_capacity": [],
+    "llama8b_compose": [],
+    "llama8b_numeric": [],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "job_id": "485775",
+        "progress_before": 0,
+        "state": "SUBMITTED",
+        "submitted_utc": "2026-10-31T01:55:17.233936+00:00",
+        "time_min": null
+      }
+    ],
+    "state_report": []
+  },
+  "config_hash": "f03c8a8129532059d7e6dce18df07af9e75b28746a57f149c75bb20b8bde0b76",
+  "controllers": [
+    "485774"
+  ],
+  "new_model_queries": 0,
+  "recorded_utc": "2026-10-31T02:04:22.551415+00:00",
+  "scope": "Submission snapshot; recurring status advances in jobs_live_v1.json",
+  "source": {
+    "frozen_manifest_sha256": "ddbdcb9e7d15f976c8b9879ac01f0a7ede81a39e16a8f680192652dcb9183f27",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/82aa60555d1e9b67df97b706",
+    "snapshot_id": "82aa60555d1e9b67df97b706",
+    "source_sha256": "bbc601d34d9d423808e74b7e7e1a08d43bdab11ec66265fbed72e0b87a147334"
+  },
+  "status": "submitted"
+}

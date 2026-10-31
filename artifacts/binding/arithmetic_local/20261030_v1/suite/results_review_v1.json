@@ -1,0 +1,603 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "codellama34b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485240",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T20:57:14.428750+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "codellama34b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484991",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T19:55:20.715107+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "codellama34b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484975",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T19:34:05.163458+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_probes": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485241",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T20:57:15.073541+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_behavior": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485061",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T20:26:32.770209+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
+    "llama8b_capture": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484990",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T19:55:20.013501+00:00",
+        "time_min": "00:15:00"
+      }
+    ],
+    "llama8b_prepare": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484974",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T19:34:04.546676+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_probes": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485062",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T20:26:33.417498+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "484973",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-30T19:34:03.923141+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "c80dd70734dd121b51e2b29fff822e143590697a4c94bb666aca269abaa662da",
+  "evaluation_role": "discovery_arithmetic_local_suite_v1",
+  "generated_holdouts_opened": false,
+  "observed_capture_prefill_attempts": 10584,
+  "observed_generated_answers_attempted": 11016,
+  "planned_capture_prefills": 10584,
+  "planned_generated_answers": 11016,
+  "recorded_utc": "2026-10-30T23:11:14.100359+00:00",
+  "scheduler_errors": [],
+  "scientific_results": {
+    "codellama34b_behavior": {
+      "cases": 5508,
+      "metrics": [
+        {
+          "accuracy": 0.7592592592592593,
+          "cases": 108,
+          "correct": 82,
+          "depth": 1,
+          "families": 6,
+          "family_macro_accuracy": 0.7592592592592592,
+          "instruction": 0,
+          "invalid": 0,
+          "query_kind": "arithmetic_written",
+          "split": "calibration"
+        },
+        {
+          "accuracy": 0.3125,
+          "cases": 240,
+          "correct": 75,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.3125,
+          "instruction": 0,
+          "invalid": 0,
+          "query_kind": "arithmetic_written",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.921875,
+          "cases": 192,
+          "correct": 177,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.921875,
+          "instruction": 0,
+          "invalid": 0,
+          "query_kind": "untouched_literal",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.2833333333333333,
+          "cases": 720,
+          "correct": 204,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.2833333333333333,
+          "instruction": 0,
+          "invalid": 0,
+          "query_kind": "arithmetic_written",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.8732638888888888,
+          "cases": 576,
+          "correct": 503,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.8732638888888888,
+          "instruction": 0,
+          "invalid": 0,
+          "query_kind": "untouched_literal",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.26851851851851855,
+          "cases": 108,
+          "correct": 29,
+          "depth": 1,
+          "families": 6,
+          "family_macro_accuracy": 0.26851851851851855,
+          "instruction": 1,
+          "invalid": 68,
+          "query_kind": "arithmetic_written",
+          "split": "calibration"
+        },
+        {
+          "accuracy": 0.3,
+          "cases": 240,
+          "correct": 72,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.3,
+          "instruction": 1,
+          "invalid": 2,
+          "query_kind": "arithmetic_written",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.8854166666666666,
+          "cases": 192,
+          "correct": 170,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.8854166666666666,
+          "instruction": 1,
+          "invalid": 1,
+          "query_kind": "untouched_literal",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.2833333333333333,
+          "cases": 720,
+          "correct": 204,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.2833333333333333,
+          "instruction": 1,
+          "invalid": 15,
+          "query_kind": "arithmetic_written",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.8541666666666666,
+          "cases": 576,
+          "correct": 492,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.8541666666666666,
+          "instruction": 1,
+          "invalid": 0,
+          "query_kind": "untouched_literal",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.6944444444444444,
+          "cases": 108,
+          "correct": 75,
+          "depth": 1,
+          "families": 6,
+          "family_macro_accuracy": 0.6944444444444445,
+          "instruction": 2,
+          "invalid": 0,
+          "query_kind": "arithmetic_written",
+          "split": "calibration"
+        },
+        {
+          "accuracy": 0.325,
+          "cases": 240,
+          "correct": 78,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.325,
+          "instruction": 2,
+          "invalid": 0,
+          "query_kind": "arithmetic_written",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.9479166666666666,
+          "cases": 192,
+          "correct": 182,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.9479166666666666,
+          "instruction": 2,
+          "invalid": 0,
+          "query_kind": "untouched_literal",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.33055555555555555,
+          "cases": 720,
+          "correct": 238,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.33055555555555555,
+          "instruction": 2,
+          "invalid": 0,
+          "query_kind": "arithmetic_written",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.9149305555555556,
+          "cases": 576,
+          "correct": 527,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.9149305555555556,
+          "instruction": 2,
+          "invalid": 0,
+          "query_kind": "untouched_literal",
+          "split": "train"
+        }
+      ],
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "selected_methods": null,
+      "source_result": {
+        "bytes": 6585,
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/codellama34b/behavior/summary.json",
+        "sha256": "3907b51eb4b4d963c25cf3be353f04c89d13672bb97cb78331a934c5a563105e"
+      }
+    },
+    "codellama34b_capture": {
+      "cases": 5292,
+      "metrics": null,
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "selected_methods": null,
+      "source_result": {
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/codellama34b/capture/summary.json",
+        "sha256": "5178633e2bfcd4264aa5f9fc2edcbd57d910a5a11f369c13a558d22688cde834"
+      }
+    },
+    "codellama34b_probes": {
+      "cases": null,
+      "metrics": null,
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "selected_methods": {
+        "hidden_global": "bilinear",
+        "hidden_local": "mlp",
+        "source_local": "bilinear"
+      },
+      "source_result": {
+        "bytes": 1287222,
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/codellama34b/probes/results.json",
+        "sha256": "31ff01845ca47071aced1d21efd0856deb7d4269322111e97d7b089ced6f78f2"
+      }
+    },
+    "llama8b_behavior": {
+      "cases": 5508,
+      "metrics": [
+        {
+          "accuracy": 0.37037037037037035,
+          "cases": 108,
+          "correct": 40,
+          "depth": 1,
+          "families": 6,
+          "family_macro_accuracy": 0.3703703703703704,
+          "instruction": 0,
+          "invalid": 8,
+          "query_kind": "arithmetic_written",
+          "split": "calibration"
+        },
+        {
+          "accuracy": 0.2625,
+          "cases": 240,
+          "correct": 63,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.2625,
+          "instruction": 0,
+          "invalid": 7,
+          "query_kind": "arithmetic_written",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.921875,
+          "cases": 192,
+          "correct": 177,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.921875,
+          "instruction": 0,
+          "invalid": 1,
+          "query_kind": "untouched_literal",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.21388888888888888,
+          "cases": 720,
+          "correct": 154,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.2138888888888889,
+          "instruction": 0,
+          "invalid": 33,
+          "query_kind": "arithmetic_written",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.9461805555555556,
+          "cases": 576,
+          "correct": 545,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.9461805555555556,
+          "instruction": 0,
+          "invalid": 3,
+          "query_kind": "untouched_literal",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.6481481481481481,
+          "cases": 108,
+          "correct": 70,
+          "depth": 1,
+          "families": 6,
+          "family_macro_accuracy": 0.6481481481481481,
+          "instruction": 1,
+          "invalid": 6,
+          "query_kind": "arithmetic_written",
+          "split": "calibration"
+        },
+        {
+          "accuracy": 0.2875,
+          "cases": 240,
+          "correct": 69,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.28750000000000003,
+          "instruction": 1,
+          "invalid": 10,
+          "query_kind": "arithmetic_written",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.9270833333333334,
+          "cases": 192,
+          "correct": 178,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.9270833333333334,
+          "instruction": 1,
+          "invalid": 1,
+          "query_kind": "untouched_literal",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.2611111111111111,
+          "cases": 720,
+          "correct": 188,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.2611111111111111,
+          "instruction": 1,
+          "invalid": 14,
+          "query_kind": "arithmetic_written",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.96875,
+          "cases": 576,
+          "correct": 558,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.96875,
+          "instruction": 1,
+          "invalid": 1,
+          "query_kind": "untouched_literal",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.24074074074074073,
+          "cases": 108,
+          "correct": 26,
+          "depth": 1,
+          "families": 6,
+          "family_macro_accuracy": 0.24074074074074073,
+          "instruction": 2,
+          "invalid": 51,
+          "query_kind": "arithmetic_written",
+          "split": "calibration"
+        },
+        {
+          "accuracy": 0.225,
+          "cases": 240,
+          "correct": 54,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.225,
+          "instruction": 2,
+          "invalid": 93,
+          "query_kind": "arithmetic_written",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.052083333333333336,
+          "cases": 192,
+          "correct": 10,
+          "depth": 2,
+          "families": 24,
+          "family_macro_accuracy": 0.052083333333333336,
+          "instruction": 2,
+          "invalid": 178,
+          "query_kind": "untouched_literal",
+          "split": "development"
+        },
+        {
+          "accuracy": 0.14444444444444443,
+          "cases": 720,
+          "correct": 104,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.14444444444444446,
+          "instruction": 2,
+          "invalid": 255,
+          "query_kind": "arithmetic_written",
+          "split": "train"
+        },
+        {
+          "accuracy": 0.06770833333333333,
+          "cases": 576,
+          "correct": 39,
+          "depth": 2,
+          "families": 72,
+          "family_macro_accuracy": 0.06770833333333333,
+          "instruction": 2,
+          "invalid": 524,
+          "query_kind": "untouched_literal",
+          "split": "train"
+        }
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "selected_methods": null,
+      "source_result": {
+        "bytes": 6583,
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/llama8b/behavior/summary.json",
+        "sha256": "10627b096cc54dfebebae4f3691f39b4d361e8c708aa3549d2732e4a591541cd"
+      }
+    },
+    "llama8b_capture": {
+      "cases": 5292,
+      "metrics": null,
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "selected_methods": null,
+      "source_result": {
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/llama8b/capture/summary.json",
+        "sha256": "5d32a27593242f7698b8ec1887f223973d42c7067300a15b18d72f5e6d14d3e6"
+      }
+    },
+    "llama8b_probes": {
+      "cases": null,
+      "metrics": null,
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "selected_methods": {
+        "hidden_global": "linear",
+        "hidden_local": "bilinear",
+        "source_local": "bilinear"
+      },
+      "source_result": {
+        "bytes": 1292518,
+        "path": "artifacts/binding/arithmetic_local/20261030_v1/llama8b/probes/results.json",
+        "sha256": "404e025db02e9beb519f545a65bf2955f8a56a8ecb03d4750139033cdd9b9501"
+      }
+    }
+  },
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  },
+  "stages": {
+    "codellama34b_behavior": {
+      "job_id": "485240",
+      "state": "complete"
+    },
+    "codellama34b_capture": {
+      "job_id": "484991",
+      "state": "complete"
+    },
+    "codellama34b_prepare": {
+      "job_id": "484975",
+      "state": "complete"
+    },
+    "codellama34b_probes": {
+      "job_id": "485241",
+      "state": "complete"
+    },
+    "llama8b_behavior": {
+      "job_id": "485061",
+      "state": "complete"
+    },
+    "llama8b_capture": {
+      "job_id": "484990",
+      "state": "complete"
+    },
+    "llama8b_prepare": {
+      "job_id": "484974",
+      "state": "complete"
+    },
+    "llama8b_probes": {
+      "job_id": "485062",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "484973",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}

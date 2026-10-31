@@ -1,0 +1,232 @@
+{
+  "attempts": [
+    {
+      "generated_answers_attempted": 5508,
+      "generated_answers_returned": 5508,
+      "model_loaded": true,
+      "runtime": {
+        "attention_backend": "sdpa",
+        "device_name": "NVIDIA H100 80GB HBM3",
+        "dtype": "torch.bfloat16",
+        "forward": "greedy language-model generation, max12 tokens, KV cache enabled",
+        "gpu": {
+          "driver_version": "580.178.04",
+          "gpu_uuid": "GPU-995aa41f-e047-f752-d32f-0c43ca6fdfe3",
+          "mean_gpu_utilization_percent": 67.78947368421052,
+          "mean_power_watts": 505.54578947368424,
+          "memory_scope": "whole allocated GPU, including allocator reservations and KV cache",
+          "peak_device_memory_mib": 66277.0,
+          "samples": 209,
+          "selector_verified": true
+        },
+        "gpu_scope": "Current attempt prefill capture and chunk commits after model load; excludes model loading.",
+        "gpu_uuid": "995aa41f-e047-f752-d32f-0c43ca6fdfe3",
+        "position_ids": "(attention_mask.cumsum(-1)-1).clamp_min(0)",
+        "torch_peak_allocated_bytes": 68611679232,
+        "use_cache": false,
+        "versions": {
+          "torch": "2.11.0+cu129",
+          "transformers": "5.14.1"
+        }
+      },
+      "slurm_job_id": "485240",
+      "status": "complete",
+      "wall_seconds": 136.51357546600047
+    }
+  ],
+  "cases": 5508,
+  "config_hash": "3315a23aedd07effb8e0e9ff95dfd52d5cfa89e96cf9a3c469e3c2bf70c8d200",
+  "evaluation_role": "discovery_arithmetic_local_behavior_v1",
+  "generated_holdouts_opened": false,
+  "limitations": "Adaptive discovery with explicit printed queries. All three instructions and invalids retained. One-update calibration structures excluded from probe fits. No causal or untouched confirmation claim.",
+  "metrics": [
+    {
+      "accuracy": 0.7592592592592593,
+      "cases": 108,
+      "correct": 82,
+      "depth": 1,
+      "families": 6,
+      "family_macro_accuracy": 0.7592592592592592,
+      "instruction": 0,
+      "invalid": 0,
+      "query_kind": "arithmetic_written",
+      "split": "calibration"
+    },
+    {
+      "accuracy": 0.3125,
+      "cases": 240,
+      "correct": 75,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.3125,
+      "instruction": 0,
+      "invalid": 0,
+      "query_kind": "arithmetic_written",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.921875,
+      "cases": 192,
+      "correct": 177,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.921875,
+      "instruction": 0,
+      "invalid": 0,
+      "query_kind": "untouched_literal",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.2833333333333333,
+      "cases": 720,
+      "correct": 204,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.2833333333333333,
+      "instruction": 0,
+      "invalid": 0,
+      "query_kind": "arithmetic_written",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.8732638888888888,
+      "cases": 576,
+      "correct": 503,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.8732638888888888,
+      "instruction": 0,
+      "invalid": 0,
+      "query_kind": "untouched_literal",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.26851851851851855,
+      "cases": 108,
+      "correct": 29,
+      "depth": 1,
+      "families": 6,
+      "family_macro_accuracy": 0.26851851851851855,
+      "instruction": 1,
+      "invalid": 68,
+      "query_kind": "arithmetic_written",
+      "split": "calibration"
+    },
+    {
+      "accuracy": 0.3,
+      "cases": 240,
+      "correct": 72,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.3,
+      "instruction": 1,
+      "invalid": 2,
+      "query_kind": "arithmetic_written",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.8854166666666666,
+      "cases": 192,
+      "correct": 170,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.8854166666666666,
+      "instruction": 1,
+      "invalid": 1,
+      "query_kind": "untouched_literal",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.2833333333333333,
+      "cases": 720,
+      "correct": 204,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.2833333333333333,
+      "instruction": 1,
+      "invalid": 15,
+      "query_kind": "arithmetic_written",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.8541666666666666,
+      "cases": 576,
+      "correct": 492,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.8541666666666666,
+      "instruction": 1,
+      "invalid": 0,
+      "query_kind": "untouched_literal",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.6944444444444444,
+      "cases": 108,
+      "correct": 75,
+      "depth": 1,
+      "families": 6,
+      "family_macro_accuracy": 0.6944444444444445,
+      "instruction": 2,
+      "invalid": 0,
+      "query_kind": "arithmetic_written",
+      "split": "calibration"
+    },
+    {
+      "accuracy": 0.325,
+      "cases": 240,
+      "correct": 78,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.325,
+      "instruction": 2,
+      "invalid": 0,
+      "query_kind": "arithmetic_written",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.9479166666666666,
+      "cases": 192,
+      "correct": 182,
+      "depth": 2,
+      "families": 24,
+      "family_macro_accuracy": 0.9479166666666666,
+      "instruction": 2,
+      "invalid": 0,
+      "query_kind": "untouched_literal",
+      "split": "development"
+    },
+    {
+      "accuracy": 0.33055555555555555,
+      "cases": 720,
+      "correct": 238,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.33055555555555555,
+      "instruction": 2,
+      "invalid": 0,
+      "query_kind": "arithmetic_written",
+      "split": "train"
+    },
+    {
+      "accuracy": 0.9149305555555556,
+      "cases": 576,
+      "correct": 527,
+      "depth": 2,
+      "families": 72,
+      "family_macro_accuracy": 0.9149305555555556,
+      "instruction": 2,
+      "invalid": 0,
+      "query_kind": "untouched_literal",
+      "split": "train"
+    }
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  },
+  "status": "complete_exploratory"
+}

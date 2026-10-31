@@ -34,6 +34,24 @@ def summarize(records):
     return results
 
 
+def verify_metrics(saved, recomputed, tolerance=1e-12):
+    """Batch traversal can permute floating summation; counts stay exact."""
+    if len(saved) != len(recomputed):
+        raise ValueError('calibration metric cell coverage differs')
+    rates = {'accuracy', 'family_macro_accuracy'}
+    for before, after in zip(saved, recomputed):
+        if set(before) != set(after):
+            raise ValueError('calibration metric schema differs')
+        for key, expected in after.items():
+            actual = before[key]
+            if key in rates:
+                if (type(actual) is not float or type(expected) is not float or not np.isfinite(actual) or not np.isfinite(expected)
+                        or not 0 <= actual <= 1 or not 0 <= expected <= 1 or abs(actual - expected) > tolerance):
+                    raise ValueError('calibration rate exceeds roundoff tolerance')
+            elif type(actual) is not type(expected) or actual != expected:
+                raise ValueError('calibration counts or identities differ')
+
+
 def run(config):
     from .confidence import _run_lock
     from .model_adapter import normalize_prompt
@@ -169,6 +187,5 @@ def audit(config):
     if len(responses) != 5508 or len({r['id'] for r in responses}) != 5508:
         raise ValueError('complete unique calibration answers required')
     summary = base._json(folder / 'summary.json')
-    if summary['metrics'] != summarize(responses):
-        raise ValueError('calibration summary differs from saved responses')
+    verify_metrics(summary['metrics'], summarize(responses))
     return receipt

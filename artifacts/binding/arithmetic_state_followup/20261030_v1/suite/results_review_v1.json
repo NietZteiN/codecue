@@ -1,0 +1,86 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "audit_report": [],
+    "codellama34b_audit": [],
+    "codellama34b_binding": [],
+    "codellama34b_capacity": [],
+    "codellama34b_compose": [],
+    "codellama34b_numeric": [],
+    "llama8b_audit": [],
+    "llama8b_binding": [],
+    "llama8b_capacity": [],
+    "llama8b_compose": [],
+    "llama8b_numeric": [],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "485767",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "CANCELLED",
+        "submitted_utc": "2026-10-31T01:45:07.250632+00:00",
+        "time_min": null
+      }
+    ],
+    "state_report": []
+  },
+  "config_hash": "c058f181c8c132a4a554bc67d7a1911ccea4946de7f446db66f810c3488b6e24",
+  "evaluation_role": "discovery_arithmetic_state_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "recorded_utc": "2026-10-31T01:54:53.940820+00:00",
+  "scheduler_errors": [],
+  "scientific_results": {},
+  "source": {
+    "frozen_manifest_sha256": "622149feac69e194f2f36d978d7c505e8923098a25093ce4b79319c0a4db741a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/06e1b8ee6730629c94b814de",
+    "snapshot_id": "06e1b8ee6730629c94b814de",
+    "source_sha256": "651bf2f8f468cad00b99a84fb843b74e1d221c413bdb504898397f22f6eee297"
+  },
+  "stages": {
+    "audit_report": {
+      "state": "blocked"
+    },
+    "codellama34b_audit": {
+      "state": "blocked"
+    },
+    "codellama34b_binding": {
+      "state": "blocked"
+    },
+    "codellama34b_capacity": {
+      "state": "blocked"
+    },
+    "codellama34b_compose": {
+      "state": "blocked"
+    },
+    "codellama34b_numeric": {
+      "state": "blocked"
+    },
+    "llama8b_audit": {
+      "state": "blocked"
+    },
+    "llama8b_binding": {
+      "state": "blocked"
+    },
+    "llama8b_capacity": {
+      "state": "blocked"
+    },
+    "llama8b_compose": {
+      "state": "blocked"
+    },
+    "llama8b_numeric": {
+      "state": "blocked"
+    },
+    "software_validation": {
+      "job_id": "485767",
+      "reason": "None",
+      "state": "failed"
+    },
+    "state_report": {
+      "state": "blocked"
+    }
+  },
+  "status": "needs_attention"
+}

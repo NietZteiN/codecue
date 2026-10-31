@@ -1,0 +1,78 @@
+{
+  "config_hash": "3315a23aedd07effb8e0e9ff95dfd52d5cfa89e96cf9a3c469e3c2bf70c8d200",
+  "evaluation_role": "discovery_arithmetic_local_behavior_v1",
+  "ids": [
+    "local-case:aa799b0ecc3ab0008a6cd473:i2",
+    "local-case:158424eb164b6f3cdee78b35:i0",
+    "local-case:158424eb164b6f3cdee78b35:i1",
+    "local-case:158424eb164b6f3cdee78b35:i2"
+  ],
+  "responses": [
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": false,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:aa799b0ecc3ab0008a6cd473:i2",
+      "input_ids_sha256": "86051cc2468d8de97a92bc678ee1d81d2eba8ae4533ea031e87bdfa4d99efe08",
+      "instruction": 2,
+      "lexical_realization": 0,
+      "numeric_seed": 1301,
+      "parsed": -7,
+      "query_kind": "arithmetic_written",
+      "raw_response": "-7",
+      "split": "calibration"
+    },
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": true,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:158424eb164b6f3cdee78b35:i0",
+      "input_ids_sha256": "69e27c04531cbe424516085c8eaf7544bb748ddc784879f4ed1f8e53091af2ea",
+      "instruction": 0,
+      "lexical_realization": 1,
+      "numeric_seed": 1301,
+      "parsed": 7,
+      "query_kind": "arithmetic_written",
+      "raw_response": "7",
+      "split": "calibration"
+    },
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": false,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:158424eb164b6f3cdee78b35:i1",
+      "input_ids_sha256": "77a0eb3bc11da29bfad5320b0d575479161bb7ac9bf4b7b66071cd11c8f6a9a5",
+      "instruction": 1,
+      "lexical_realization": 1,
+      "numeric_seed": 1301,
+      "parsed": -7,
+      "query_kind": "arithmetic_written",
+      "raw_response": "-7",
+      "split": "calibration"
+    },
+    {
+      "component_id": "arithmetic-local:267788e8f6ebd70c240cb732",
+      "correct": true,
+      "depth": 1,
+      "expected": 7,
+      "id": "local-case:158424eb164b6f3cdee78b35:i2",
+      "input_ids_sha256": "5f2c6e673be98f5be52fc6570e70520bd472e599d18671755393d8ba47c67906",
+      "instruction": 2,
+      "lexical_realization": 1,
+      "numeric_seed": 1301,
+      "parsed": 7,
+      "query_kind": "arithmetic_written",
+      "raw_response": "7",
+      "split": "calibration"
+    }
+  ],
+  "source": {
+    "frozen_manifest_sha256": "eb295fb4471a15175e737ca5d7014bae68d16ba30f61964d4bd660fb97ebc283",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/58d9ed00fe8655447e2f177f",
+    "snapshot_id": "58d9ed00fe8655447e2f177f",
+    "source_sha256": "653465cf1b9989f4b823f83c10184712f69ccd4cad30100418610f482627cee5"
+  }
+}
