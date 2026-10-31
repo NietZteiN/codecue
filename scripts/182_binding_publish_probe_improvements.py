@@ -18,7 +18,8 @@ ROOTS = ['artifacts/binding/arithmetic_probe_selection/20261030_v1',
          'artifacts/binding/arithmetic_local/20261030_v1',
          'artifacts/binding/arithmetic_state_followup/20261030_v1',
          'artifacts/binding/arithmetic_state_followup/20261030_v2',
-         'artifacts/binding/arithmetic_state_diagnostics/20261031_v1']
+         'artifacts/binding/arithmetic_state_diagnostics/20261031_v1',
+         'artifacts/binding/arithmetic_numeric_exploration/20261031_v1']
 MUTABLE = {'manifest.json', 'progress.json', 'jobs_live_v1.json', 'status_review_v1.json'}
 
 
@@ -102,7 +103,12 @@ def main():
         mirror = folder / 'regression_sources'
         if mirror.exists():
             label = 'local' if '/arithmetic_local/' in relative else 'selection'
-            filename = f'arithmetic_state_regression_{folder.name}.tar.gz' if '/arithmetic_state_followup/' in relative else f'arithmetic_probe_regression_{label}_20261030_v1.tar.gz'
+            if '/arithmetic_numeric_exploration/' in relative:
+                filename = f'arithmetic_numeric_exploration_regression_{folder.name}.tar.gz'
+            elif '/arithmetic_state_followup/' in relative:
+                filename = f'arithmetic_state_regression_{folder.name}.tar.gz'
+            else:
+                filename = f'arithmetic_probe_regression_{label}_20261030_v1.tar.gz'
             item = archive(mirror, ROOT / 'reproducibility' / filename)
             archives.append(item)
             paths.add(item['path'])

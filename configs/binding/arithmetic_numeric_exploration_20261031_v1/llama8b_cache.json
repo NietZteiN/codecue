@@ -1,0 +1,16 @@
+{
+  "audit_config": {
+    "path": "configs/binding/arithmetic_state_followup_20261030_v2/llama8b_audit.json",
+    "sha256": "2253783df26facde448f268806fcab9e088aa22ee9d31417652e84c684866da3"
+  },
+  "backend": "hidden",
+  "declared_plan": "reports/binding/arithmetic_numeric_exploration_plan_v1.md",
+  "declared_plan_sha256": "e03c8048bef7396dda720993c4fcf0e3774be798c46942e6b762421fd2cd8677",
+  "evaluation_role": "discovery_numeric_exploration_cache_v1",
+  "run_dir": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}

@@ -1,0 +1,9 @@
+# Compression and encoding: submitted first wave
+
+The [frozen protocol](arithmetic_numeric_exploration_plan_v1.md) is implemented and submitted using source `8c1bda5687b078517a933459`. The targeted regression passed 91 tests, including signed-target reconstruction, projection-prefix preservation, exact source-hash folding, separate selection criteria, train-only identities, grouped folds, saved-model replay and completion reuse. Full frozen binding regression is now running as job 486504; supervisor 486503 releases caches and readouts after that gate passes.
+
+The finite grid has 26 role/feature-width cells: 16 hidden-state cells across two checkpoints and two definition roles, plus ten shared-source cells. Each uses three fitting/weighting seeds, three structural TRAIN folds and three candidate alphas. Independent numeric heads share a ridge factorization. Source fits at matching widths are reused across checkpoints. The grid has 702 CV factorizations and at most 234 selected factorizations; each completed bank is immutable and resumable.
+
+Literal definitions serve as copying positive controls; computed definitions are the primary target. Widths are 64/256/1024/uncompressed, at fixed layers 24/36. Scalar, categorical, sign, magnitude, decimal components, parity/residue and joint signed-digit results retain source, prior and coherent-family controls. Later operand-use sites, new temporal captures and causal interventions remain separate follow-ups.
+
+All work uses CPU allocations and archived activations, with zero new language-model calls. Existing DEV remains an adaptive discovery cohort; sealed final outcomes are preserved. The automatic experiment logger records job events and results, and the durable supervisor checks about every ten minutes. [Live status](arithmetic_numeric_exploration_status_v1.md) · [DAG configuration](../../configs/binding/arithmetic_numeric_exploration_20261031_v1/suite.json).

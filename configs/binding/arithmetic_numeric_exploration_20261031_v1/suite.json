@@ -1,0 +1,227 @@
+{
+  "declared_plan": "reports/binding/arithmetic_numeric_exploration_plan_v1.md",
+  "declared_plan_sha256": "e03c8048bef7396dda720993c4fcf0e3774be798c46942e6b762421fd2cd8677",
+  "evaluation_role": "discovery_numeric_exploration_suite_v1",
+  "morning_at": "2026-11-01T08:00:00-06:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/qa.json",
+      "config_sha256": "af4f181e75fbaf51ea9c2bed0e52dd86e3a08c4f7b27227edb0ae4d81c519868",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/qa/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_cache.json",
+      "config_sha256": "69bfa6f27be09fe2b6395e8142f147d37c4a98fe87eb7392f9956eaa505e501d",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_cache",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_cache.json",
+      "config_sha256": "06ce7134545a79029ba9c9f4cb52cb348152764afe590d9fe7dccdbc8c16db88",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_cache",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_cache/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_cache.json",
+      "config_sha256": "fa48ea191655db2476db9d0bf8993595839419271dea0e346bcd8334ebcc8f5c",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "source_cache",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_cache/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_root_definition.json",
+      "config_sha256": "f2a1bcfca7ef6b1ed3a38ac281e7f59d82f11ccfec909bbe8619017d79241afd",
+      "cpus": 16,
+      "dependencies": [
+        "llama8b_cache"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_root_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_root_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_computed_definition.json",
+      "config_sha256": "0446635badc9c7a102023413eaf6538ba25087de34e232ba04d45943775710a1",
+      "cpus": 16,
+      "dependencies": [
+        "llama8b_cache"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_computed_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_root_definition.json",
+      "config_sha256": "19aa128f8de046f36f8652f375f18647115aaeb87965215d2ca6c472dedaabf0",
+      "cpus": 16,
+      "dependencies": [
+        "codellama34b_cache"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_root_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_root_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_computed_definition.json",
+      "config_sha256": "ce567575440b20eb4ae31f9ceb3e28d887bdead09619eaf94ae9cf6c96ac3ab5",
+      "cpus": 16,
+      "dependencies": [
+        "codellama34b_cache"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_computed_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_root_definition.json",
+      "config_sha256": "0280afc2b66df46aaa9ff86aeaaef8ae90d2c1cb2ad8f7316adaf13013d84eb3",
+      "cpus": 16,
+      "dependencies": [
+        "source_cache"
+      ],
+      "expected_cases": 0,
+      "key": "source_root_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_root_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_computed_definition.json",
+      "config_sha256": "c0ca7cae03b557ee76c63036ddfba2d6e054c736abc687949e2576030664905c",
+      "cpus": 16,
+      "dependencies": [
+        "source_cache"
+      ],
+      "expected_cases": 0,
+      "key": "source_computed_definition",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "64G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_numeric_exploration_20261031_v1/report.json",
+      "config_sha256": "9714950589c0fc14035d7efbaa5f2cbec4dccdd41f2e450f58cc4354f21240fd",
+      "cpus": 4,
+      "dependencies": [
+        "llama8b_root_definition",
+        "llama8b_computed_definition",
+        "codellama34b_root_definition",
+        "codellama34b_computed_definition",
+        "source_root_definition",
+        "source_computed_definition"
+      ],
+      "expected_cases": 0,
+      "key": "report",
+      "marker": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "8G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/192_binding_numeric_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_numeric_exploration_status_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/qa/regression.xml",
+    "minimum_tests": 2446,
+    "review": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/qa/regression_review.json"
+  }
+}

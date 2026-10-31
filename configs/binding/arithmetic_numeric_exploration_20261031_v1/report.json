@@ -1,0 +1,38 @@
+{
+  "declared_plan": "reports/binding/arithmetic_numeric_exploration_plan_v1.md",
+  "declared_plan_sha256": "e03c8048bef7396dda720993c4fcf0e3774be798c46942e6b762421fd2cd8677",
+  "evaluation_role": "discovery_numeric_exploration_report_v1",
+  "report": "reports/binding/arithmetic_numeric_exploration_findings_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/report",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "workers": [
+    {
+      "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_root_definition.json",
+      "sha256": "f2a1bcfca7ef6b1ed3a38ac281e7f59d82f11ccfec909bbe8619017d79241afd"
+    },
+    {
+      "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_computed_definition.json",
+      "sha256": "0446635badc9c7a102023413eaf6538ba25087de34e232ba04d45943775710a1"
+    },
+    {
+      "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_root_definition.json",
+      "sha256": "19aa128f8de046f36f8652f375f18647115aaeb87965215d2ca6c472dedaabf0"
+    },
+    {
+      "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_computed_definition.json",
+      "sha256": "ce567575440b20eb4ae31f9ceb3e28d887bdead09619eaf94ae9cf6c96ac3ab5"
+    },
+    {
+      "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_root_definition.json",
+      "sha256": "0280afc2b66df46aaa9ff86aeaaef8ae90d2c1cb2ad8f7316adaf13013d84eb3"
+    },
+    {
+      "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_computed_definition.json",
+      "sha256": "c0ca7cae03b557ee76c63036ddfba2d6e054c736abc687949e2576030664905c"
+    }
+  ]
+}

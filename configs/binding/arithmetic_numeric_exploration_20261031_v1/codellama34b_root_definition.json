@@ -1,0 +1,27 @@
+{
+  "audit_config": {
+    "path": "configs/binding/arithmetic_state_followup_20261030_v2/codellama34b_audit.json",
+    "sha256": "8502b7884d52493737c0f3c957082569d94e32e387bc68465550e0045e76d084"
+  },
+  "backend": "hidden",
+  "cache_config": {
+    "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_cache.json",
+    "sha256": "06ce7134545a79029ba9c9f4cb52cb348152764afe590d9fe7dccdbc8c16db88"
+  },
+  "declared_plan": "reports/binding/arithmetic_numeric_exploration_plan_v1.md",
+  "declared_plan_sha256": "e03c8048bef7396dda720993c4fcf0e3774be798c46942e6b762421fd2cd8677",
+  "evaluation_role": "discovery_numeric_exploration_fit_v1",
+  "role": "root_definition",
+  "run_dir": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_root_definition",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "widths": [
+    64,
+    256,
+    1024,
+    8192
+  ]
+}
