@@ -23,3 +23,14 @@ calibrated MDL and causal alignment remain later stages. The prior broader
 next-run plan is preserved, with this targeted geometry comparison as an addendum.
 
 [Launch receipt](../../artifacts/binding/arithmetic_numeric_geometry/20261031_v1/launch_review_v1.json).
+
+## Verified handoff
+
+All 2486 frozen binding tests passed (zero failures/errors/skips).
+The controller submitted all eight fits and both query-cache extractions.
+Initial running fits: Llama root **486869** and computed **486870**.
+The remaining jobs queue under actual account QoS; no unrelated job was canceled.
+The first successor monitor is **486868**. Scientific results are still pending.
+
+[Verified handoff](../../artifacts/binding/arithmetic_numeric_geometry/20261031_v1/handoff_review_v1.json)
+includes the source identity, QA receipt and released job IDs.

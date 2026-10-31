@@ -1,0 +1,50 @@
+{
+  "all_variable_fits_started": false,
+  "controller_jobs": [
+    "486854",
+    "486868"
+  ],
+  "initial_committed_cv_banks": {
+    "llama8b_computed_definition": 27,
+    "llama8b_root_definition": 27
+  },
+  "logging": "automatic lifecycle/SLURM result synchronization; durable monitor scheduled",
+  "new_model_queries": 0,
+  "qa_observed_peak_rss_kib_at_status_check": 2781220,
+  "recorded_utc": "2026-10-31T21:48:53.819647+00:00",
+  "regression": {
+    "config_hash": "825cc000ae4be9496a6d249907b1ec327761fcf94f2b031c44b805e185b24799",
+    "junit_sha256": "fc9f79dbf7632527180dff7cc10392d17d34d054ee09e488f3406c09d6daac54",
+    "source": {
+      "frozen_manifest_sha256": "e84f06829c1964811367e00d06a876d08d163162fe66d42b10e2f61737c86211",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/a154e0ecd0112622590fa080",
+      "snapshot_id": "a154e0ecd0112622590fa080",
+      "source_sha256": "540fb9168dfb9897f767510c3bd022410669c5cae0e2cb97f5e5b6c2f65f8da4"
+    },
+    "source_sha256": "540fb9168dfb9897f767510c3bd022410669c5cae0e2cb97f5e5b6c2f65f8da4",
+    "status": "passed",
+    "tests": 2486
+  },
+  "regression_review_sha256": "0385fa74986ab74659f689ecaef8a323f287f36deaa93de714aa716d9dcc029d",
+  "scheduler_snapshot": "486855|COMPLETED|0:0\n486869|RUNNING|0:0\n486870|RUNNING|0:0\n486871|PENDING|0:0\n486872|PENDING|0:0\n486873|PENDING|0:0\n486874|PENDING|0:0\n486875|PENDING|0:0\n486876|PENDING|0:0\n486877|PENDING|0:0\n486878|PENDING|0:0\n",
+  "science_jobs": {
+    "codellama34b_computed_definition": "486872",
+    "codellama34b_query_cache": "486878",
+    "codellama34b_root_definition": "486871",
+    "llama8b_computed_definition": "486870",
+    "llama8b_query_cache": "486877",
+    "llama8b_root_definition": "486869",
+    "source4096_computed_definition": "486874",
+    "source4096_root_definition": "486873",
+    "source8192_computed_definition": "486876",
+    "source8192_root_definition": "486875"
+  },
+  "scientific_results_complete": false,
+  "source": {
+    "frozen_manifest_sha256": "e84f06829c1964811367e00d06a876d08d163162fe66d42b10e2f61737c86211",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/a154e0ecd0112622590fa080",
+    "snapshot_id": "a154e0ecd0112622590fa080",
+    "source_sha256": "540fb9168dfb9897f767510c3bd022410669c5cae0e2cb97f5e5b6c2f65f8da4"
+  },
+  "status": "regression_passed_science_released"
+}
