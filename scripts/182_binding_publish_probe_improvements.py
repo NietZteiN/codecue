@@ -19,7 +19,8 @@ ROOTS = ['artifacts/binding/arithmetic_probe_selection/20261030_v1',
          'artifacts/binding/arithmetic_state_followup/20261030_v1',
          'artifacts/binding/arithmetic_state_followup/20261030_v2',
          'artifacts/binding/arithmetic_state_diagnostics/20261031_v1',
-         'artifacts/binding/arithmetic_numeric_exploration/20261031_v1']
+         'artifacts/binding/arithmetic_numeric_exploration/20261031_v1',
+         'artifacts/binding/arithmetic_next_runs/20261031_v1']
 NUMERIC_ROOT = 'artifacts/binding/arithmetic_numeric_exploration/20261031_v1'
 ROOTS += [NUMERIC_ROOT + '/' + name for name in (
     'llama8b_root_definition', 'llama8b_computed_definition',

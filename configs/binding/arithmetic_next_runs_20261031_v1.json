@@ -1,0 +1,246 @@
+{
+  "alphas": [
+    1,
+    100,
+    10000
+  ],
+  "backbone_training": false,
+  "compute": "finite scientific workloads; no cumulative project allowance; actual scheduler/hardware limits only",
+  "created_utc": "2026-10-31T19:27:40.733295+00:00",
+  "evaluation_role": "planning_only_arithmetic_next_runs_v1",
+  "fitting_seeds": [
+    11,
+    29,
+    47
+  ],
+  "folds": 3,
+  "inputs": {
+    "audit": {
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_audit/completion_review_v1.json",
+      "sha256": "940ad9a9aff1dcc7e6b1dc10120ff0f7adcda926551f6785f2de6e2dd9d7f4ec"
+    },
+    "codellama34b_computed_definition": {
+      "bytes": 1678659,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_computed_definition/results.json",
+      "sha256": "97eb0d0b7bc9e1cc2e26cf75c5282a7247284dc40aba0955f4d304ddcf4fd93f"
+    },
+    "codellama34b_root_definition": {
+      "bytes": 1198104,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_root_definition/results.json",
+      "sha256": "6444988730e7ce141c7a960116ae9521421ba571323a175927bcabff2907fe79"
+    },
+    "llama8b_computed_definition": {
+      "bytes": 2013063,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_computed_definition/results.json",
+      "sha256": "d8514050639b47df29c2699cc91d680379e9e8df7d59e2d8960c36150f1433e0"
+    },
+    "llama8b_root_definition": {
+      "bytes": 1300670,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_root_definition/results.json",
+      "sha256": "0ba39586024b25f10a9ecd0f895cad6bfdfe1821bf7a62126f3baac76c6b89a1"
+    },
+    "prospective_plan": {
+      "path": "reports/binding/arithmetic_next_runs_20261031_plan_v1.md",
+      "sha256": "65131221643616244d62300775ae367527897c9dc2ca177635b4afe327f2d774"
+    },
+    "source_computed_definition": {
+      "bytes": 2182253,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_computed_definition/results.json",
+      "sha256": "5d0a63df5534075ad34a36db83484763a10847fcb1e662a42eb8ee11cb061abe"
+    },
+    "source_root_definition": {
+      "bytes": 1510623,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_root_definition/results.json",
+      "sha256": "43e3f73f9cea47b56c7c33c40e70a100c1a708322a63dbe8c541c85ea1be8d3b"
+    }
+  },
+  "launchable": false,
+  "models": [
+    {
+      "alias": "llama8b",
+      "archived_layers": [
+        8,
+        16,
+        24,
+        31
+      ],
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "primary_layer": 24,
+      "profile": {
+        "path": "configs/binding/arithmetic_graph_20261029_v3/llama8b_capture.json",
+        "sha256": "41b80899c5847a0f6e53ed56871e3839a828a2fc0522b5d5fcb36dfdacc2bcb9"
+      },
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "width": 4096
+    },
+    {
+      "alias": "codellama34b",
+      "archived_layers": [
+        12,
+        24,
+        36,
+        47
+      ],
+      "model": "codellama/CodeLlama-34b-Instruct-hf",
+      "primary_layer": 36,
+      "profile": {
+        "path": "configs/binding/arithmetic_graph_20261029_v3/codellama34b_capture.json",
+        "sha256": "81ee5c91db2a8beb9e2c5d44eee9965e1a8abb0f16d680f8a1b889e02f32e5e6"
+      },
+      "revision": "d4c1c474abcacd32d2a6eda45f9811d38c83e93d",
+      "width": 8192
+    }
+  ],
+  "script": {
+    "path": "scripts/199_binding_numeric_results_and_plan.py",
+    "sha256": "a7e94e5c9a3c37118197ed671629a04c7557a9a11055e77f919381ebacdec5b8"
+  },
+  "sealed_final_access": false,
+  "stages": [
+    {
+      "cache_sites": "actual answer point_count-1 at all archived layers; primary fits at fixed layer",
+      "cv_factorizations": 189,
+      "data": "existing inspected local cohort",
+      "depends_on": [],
+      "feature_inputs": "one hidden vector plus intercept; no candidate history or gold pointer",
+      "hidden_widths": "1024 and model full width",
+      "id": "global_cached",
+      "maximum_selected_factorizations": 63,
+      "new_model_queries": 0,
+      "question": "All four values and 48 direct relations from one final state",
+      "real_target_columns": 824,
+      "resource": "CPU",
+      "reuse": "Existing 64-wide fixed-alpha scalar/relation banks are read-only historical references",
+      "shared_source_widths": [
+        1024,
+        4096,
+        8192
+      ]
+    },
+    {
+      "calibration": "finite one-hop/literal skeletons excluded from fits; actual available counts determined before inference",
+      "controls": [
+        "irrelevant write",
+        "operand mutation after computed assignment",
+        "same-bag binding twins",
+        "semantic-preserving renaming/root order"
+      ],
+      "counts_validated": false,
+      "delay_statements": [
+        0,
+        4,
+        12
+      ],
+      "depends_on": [],
+      "grouping": "connected closure over canonical skeletons of every numeric/lexical/counterfactual relative",
+      "id": "paired_data",
+      "numeric_generation_seeds": [
+        20261101,
+        20261102,
+        20261103
+      ],
+      "question": "Separate arithmetic, binding and retention",
+      "resource": "CPU",
+      "target_dev_components": 32,
+      "target_train_components": 96
+    },
+    {
+      "checks": [
+        "independent oracles",
+        "counterfactual collisions",
+        "canonical split closure",
+        "native distinct sites",
+        "causal token prefixes",
+        "scratch write/capacity"
+      ],
+      "depends_on": [
+        "paired_data"
+      ],
+      "id": "native_preflight",
+      "resource": "CPU SLURM for tokenizers"
+    },
+    {
+      "checks": [
+        "parser",
+        "copying positive control",
+        "arithmetic competence",
+        "native layout",
+        "batch/memory profile"
+      ],
+      "depends_on": [
+        "native_preflight"
+      ],
+      "id": "calibration",
+      "resource": "GPU",
+      "rule": "preserve pilot; freeze any protocol revision before formal cohort; no DEV-based wording choice"
+    },
+    {
+      "depends_on": [
+        "calibration"
+      ],
+      "id": "temporal_capture",
+      "primary": "within-site full-width scalar/categorical",
+      "protocols": [
+        "output-only",
+        "explicit intermediate query",
+        "model-generated stepwise"
+      ],
+      "resource": "GPU",
+      "secondary": "cross-site transfer and 1024-wide sensitivity",
+      "sites": [
+        "RHS end",
+        "newline/delimiter if native-distinct",
+        "later use",
+        "pre-answer query"
+      ],
+      "value_visibility": "source/trace-visible targets separately flagged; no gold intermediate in main assay"
+    },
+    {
+      "depends_on": [
+        "calibration"
+      ],
+      "id": "behavior",
+      "instruction_variants": 3,
+      "resource": "GPU",
+      "retain": [
+        "all invalid/truncated responses",
+        "attempted/returned counts",
+        "same-instruction links to hidden states"
+      ]
+    },
+    {
+      "depends_on": [
+        "global_cached",
+        "temporal_capture",
+        "behavior"
+      ],
+      "id": "analysis",
+      "outputs": [
+        "within-site/transfer curves",
+        "arithmetic versus overwrite versus delay contrasts",
+        "direct versus derived relations",
+        "group-cross-fitted error prediction versus input difficulty and output uncertainty"
+      ],
+      "resource": "CPU"
+    },
+    {
+      "depends_on": [
+        "analysis"
+      ],
+      "gate": "freeze primary measurement and contrasts before new independent structural families",
+      "id": "confirmation",
+      "resource": "CPU/GPU",
+      "sample_size": "chosen from meaningful effect and structural-family variance; not fitted-seed count"
+    },
+    {
+      "depends_on": [
+        "confirmation"
+      ],
+      "gate": "robust readouts, behavioral positive controls, functional counterfactuals and exact native donor layout",
+      "id": "causal_gate",
+      "resource": "not scheduled"
+    }
+  ],
+  "status": "planned_not_submitted",
+  "storage": "large artifacts on verified scratch from outset; small metadata/logs on work; existing automatic logger"
+}

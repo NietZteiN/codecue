@@ -1,0 +1,445 @@
+{
+  "inputs": {
+    "audit": {
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_audit/completion_review_v1.json",
+      "sha256": "940ad9a9aff1dcc7e6b1dc10120ff0f7adcda926551f6785f2de6e2dd9d7f4ec"
+    },
+    "codellama34b_computed_definition": {
+      "bytes": 1678659,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_computed_definition/results.json",
+      "sha256": "97eb0d0b7bc9e1cc2e26cf75c5282a7247284dc40aba0955f4d304ddcf4fd93f"
+    },
+    "codellama34b_root_definition": {
+      "bytes": 1198104,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_root_definition/results.json",
+      "sha256": "6444988730e7ce141c7a960116ae9521421ba571323a175927bcabff2907fe79"
+    },
+    "llama8b_computed_definition": {
+      "bytes": 2013063,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_computed_definition/results.json",
+      "sha256": "d8514050639b47df29c2699cc91d680379e9e8df7d59e2d8960c36150f1433e0"
+    },
+    "llama8b_root_definition": {
+      "bytes": 1300670,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_root_definition/results.json",
+      "sha256": "0ba39586024b25f10a9ecd0f895cad6bfdfe1821bf7a62126f3baac76c6b89a1"
+    },
+    "prospective_plan": {
+      "path": "reports/binding/arithmetic_next_runs_20261031_plan_v1.md",
+      "sha256": "65131221643616244d62300775ae367527897c9dc2ca177635b4afe327f2d774"
+    },
+    "source_computed_definition": {
+      "bytes": 2182253,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_computed_definition/results.json",
+      "sha256": "5d0a63df5534075ad34a36db83484763a10847fcb1e662a42eb8ee11cb061abe"
+    },
+    "source_root_definition": {
+      "bytes": 1510623,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_root_definition/results.json",
+      "sha256": "43e3f73f9cea47b56c7c33c40e70a100c1a708322a63dbe8c541c85ea1be8d3b"
+    }
+  },
+  "manifest": {
+    "path": "configs/binding/arithmetic_next_runs_20261031_v1.json",
+    "sha256": "020ba443796e09f7eda006d4e4c3678c30d4697208825e94226efca84fb31890"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "plan": {
+    "path": "reports/binding/arithmetic_next_runs_20261031_plan_v1.md",
+    "sha256": "65131221643616244d62300775ae367527897c9dc2ca177635b4afe327f2d774"
+  },
+  "report": {
+    "path": "reports/binding/arithmetic_results_for_next_runs_v1.md",
+    "sha256": "6db25111b95d57e19c16f661a8fa3435adbdbc8f705f524bd86f23c5dba14681"
+  },
+  "script": {
+    "path": "scripts/199_binding_numeric_results_and_plan.py",
+    "sha256": "a7e94e5c9a3c37118197ed671629a04c7557a9a11055e77f919381ebacdec5b8"
+  },
+  "status": "planned_not_submitted",
+  "summary": {
+    "codellama34b": {
+      "categorical64": {
+        "control": {
+          "exact": 0.07184499314128943,
+          "mae": 5.4738082990397805
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.052597736625515
+        },
+        "real": {
+          "exact": 0.08804869684499314,
+          "mae": 5.19352280521262
+        }
+      },
+      "categorical_full": {
+        "control": {
+          "exact": 0.06050668724279835,
+          "mae": 5.878793724279835
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.052597736625515
+        },
+        "real": {
+          "exact": 0.13132287379972565,
+          "mae": 4.222693758573388
+        }
+      },
+      "components": {
+        "magnitude": {
+          "control": {
+            "balanced_accuracy": 0.34980714103010463,
+            "exact": 0.6096965020576132
+          },
+          "prior": {
+            "balanced_accuracy": 0.3333333333333333,
+            "exact": 0.7776491769547326
+          },
+          "real": {
+            "balanced_accuracy": 0.47097607493275684,
+            "exact": 0.6896219135802469
+          }
+        },
+        "mod10": {
+          "control": {
+            "balanced_accuracy": 0.10306064764530602,
+            "exact": 0.10890346364883402
+          },
+          "prior": {
+            "balanced_accuracy": 0.1,
+            "exact": 0.13117283950617284
+          },
+          "real": {
+            "balanced_accuracy": 0.1396905045076839,
+            "exact": 0.15453532235939643
+          }
+        },
+        "mod5": {
+          "control": {
+            "balanced_accuracy": 0.2053883429787116,
+            "exact": 0.20588991769547327
+          },
+          "prior": {
+            "balanced_accuracy": 0.2,
+            "exact": 0.21849279835390945
+          },
+          "real": {
+            "balanced_accuracy": 0.2179636523186817,
+            "exact": 0.21984310699588477
+          }
+        },
+        "parity": {
+          "control": {
+            "balanced_accuracy": 0.5009458099971471,
+            "exact": 0.5139103223593965
+          },
+          "prior": {
+            "balanced_accuracy": 0.5,
+            "exact": 0.55054012345679
+          },
+          "real": {
+            "balanced_accuracy": 0.5602216750001251,
+            "exact": 0.5749314128943758
+          }
+        },
+        "sign": {
+          "control": {
+            "balanced_accuracy": 0.33316411696436066,
+            "exact": 0.4570258916323731
+          },
+          "prior": {
+            "balanced_accuracy": 0.3333333333333333,
+            "exact": 0.4256687242798354
+          },
+          "real": {
+            "balanced_accuracy": 0.5678441346326172,
+            "exact": 0.7336676954732511
+          }
+        },
+        "tens": {
+          "control": {
+            "balanced_accuracy": 0.262289248880352,
+            "exact": 0.751414609053498
+          },
+          "prior": {
+            "balanced_accuracy": 0.25,
+            "exact": 0.8720421810699589
+          },
+          "real": {
+            "balanced_accuracy": 0.289711322495384,
+            "exact": 0.7944101508916324
+          }
+        },
+        "units": {
+          "control": {
+            "balanced_accuracy": 0.10493776811922645,
+            "exact": 0.1284079218106996
+          },
+          "prior": {
+            "balanced_accuracy": 0.1,
+            "exact": 0.13503086419753085
+          },
+          "real": {
+            "balanced_accuracy": 0.14411809262816927,
+            "exact": 0.17824074074074073
+          }
+        }
+      },
+      "digits_full": {
+        "control": {
+          "exact": 0.042631172839506175,
+          "invalid": 0.1606224279835391,
+          "mae": 5.780885631001372
+        },
+        "prior": {
+          "exact": 0.05066872427983539,
+          "invalid": 0.0,
+          "mae": 5.201260288065844
+        },
+        "real": {
+          "exact": 0.10641718106995884,
+          "invalid": 0.15316358024691357,
+          "mae": 4.201731824417009
+        }
+      },
+      "full_width": 8192,
+      "label": "CodeLlama 34B",
+      "root_full": {
+        "control": {
+          "exact": 0.07426697530864197,
+          "mae": 4.08031121399177
+        },
+        "prior": {
+          "exact": 0.0747170781893004,
+          "mae": 4.0074588477366255
+        },
+        "real": {
+          "exact": 1.0,
+          "mae": 0.0
+        }
+      },
+      "scalar64": {
+        "control": {
+          "exact": 0.07690329218106996,
+          "mae": 5.109905941863688
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.054761433383105
+        },
+        "real": {
+          "exact": 0.06963734567901235,
+          "mae": 4.838525585280126
+        }
+      },
+      "scalar_full": {
+        "control": {
+          "exact": 0.06545781893004114,
+          "mae": 5.277244378750669
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.054761433383105
+        },
+        "real": {
+          "exact": 0.11481910150891632,
+          "mae": 3.5267968739375686
+        }
+      }
+    },
+    "llama8b": {
+      "categorical64": {
+        "control": {
+          "exact": 0.07293810013717421,
+          "mae": 5.403527949245541
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.052597736625515
+        },
+        "real": {
+          "exact": 0.09295696159122085,
+          "mae": 5.158886316872429
+        }
+      },
+      "categorical_full": {
+        "control": {
+          "exact": 0.06541495198902605,
+          "mae": 5.7607596021947876
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.052597736625515
+        },
+        "real": {
+          "exact": 0.12133487654320989,
+          "mae": 4.404256687242799
+        }
+      },
+      "components": {
+        "magnitude": {
+          "control": {
+            "balanced_accuracy": 0.3544922694322967,
+            "exact": 0.6825917352537723
+          },
+          "prior": {
+            "balanced_accuracy": 0.3333333333333333,
+            "exact": 0.7776491769547326
+          },
+          "real": {
+            "balanced_accuracy": 0.4743763596246966,
+            "exact": 0.7445558984910836
+          }
+        },
+        "mod10": {
+          "control": {
+            "balanced_accuracy": 0.10398060143893642,
+            "exact": 0.1111539780521262
+          },
+          "prior": {
+            "balanced_accuracy": 0.1,
+            "exact": 0.13117283950617284
+          },
+          "real": {
+            "balanced_accuracy": 0.13927449438848358,
+            "exact": 0.15631430041152264
+          }
+        },
+        "mod5": {
+          "control": {
+            "balanced_accuracy": 0.20658883169498912,
+            "exact": 0.20694015775034294
+          },
+          "prior": {
+            "balanced_accuracy": 0.2,
+            "exact": 0.21849279835390945
+          },
+          "real": {
+            "balanced_accuracy": 0.2286055741878941,
+            "exact": 0.2347608024691358
+          }
+        },
+        "parity": {
+          "control": {
+            "balanced_accuracy": 0.5088615444676347,
+            "exact": 0.5145961934156379
+          },
+          "prior": {
+            "balanced_accuracy": 0.5,
+            "exact": 0.55054012345679
+          },
+          "real": {
+            "balanced_accuracy": 0.5427196104045606,
+            "exact": 0.5565414951989026
+          }
+        },
+        "sign": {
+          "control": {
+            "balanced_accuracy": 0.3401363471005293,
+            "exact": 0.44877400548696844
+          },
+          "prior": {
+            "balanced_accuracy": 0.3333333333333333,
+            "exact": 0.4256687242798354
+          },
+          "real": {
+            "balanced_accuracy": 0.563780594412441,
+            "exact": 0.6911222565157751
+          }
+        },
+        "tens": {
+          "control": {
+            "balanced_accuracy": 0.2628929851139548,
+            "exact": 0.7596450617283951
+          },
+          "prior": {
+            "balanced_accuracy": 0.25,
+            "exact": 0.8720421810699589
+          },
+          "real": {
+            "balanced_accuracy": 0.2987944462153512,
+            "exact": 0.8121356310013718
+          }
+        },
+        "units": {
+          "control": {
+            "balanced_accuracy": 0.10487162362925166,
+            "exact": 0.12823645404663922
+          },
+          "prior": {
+            "balanced_accuracy": 0.1,
+            "exact": 0.13503086419753085
+          },
+          "real": {
+            "balanced_accuracy": 0.13986327537116852,
+            "exact": 0.1791409465020576
+          }
+        }
+      },
+      "digits_full": {
+        "control": {
+          "exact": 0.043038408779149516,
+          "invalid": 0.11201131687242798,
+          "mae": 6.536929869684499
+        },
+        "prior": {
+          "exact": 0.05066872427983539,
+          "invalid": 0.0,
+          "mae": 5.201260288065844
+        },
+        "real": {
+          "exact": 0.10071587791495198,
+          "invalid": 0.09375,
+          "mae": 4.779985425240055
+        }
+      },
+      "full_width": 4096,
+      "label": "Llama 8B",
+      "root_full": {
+        "control": {
+          "exact": 0.07426697530864197,
+          "mae": 4.019418724279835
+        },
+        "prior": {
+          "exact": 0.0747170781893004,
+          "mae": 4.0074588477366255
+        },
+        "real": {
+          "exact": 1.0,
+          "mae": 0.0
+        }
+      },
+      "scalar64": {
+        "control": {
+          "exact": 0.07733196159122085,
+          "mae": 5.100851648116333
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.054761433383105
+        },
+        "real": {
+          "exact": 0.07113768861454046,
+          "mae": 4.830083053379421
+        }
+      },
+      "scalar_full": {
+        "control": {
+          "exact": 0.07060185185185185,
+          "mae": 5.202223015642159
+        },
+        "prior": {
+          "exact": 0.09439300411522633,
+          "mae": 5.054761433383105
+        },
+        "real": {
+          "exact": 0.09960133744855966,
+          "mae": 3.841224179331742
+        }
+      }
+    }
+  }
+}

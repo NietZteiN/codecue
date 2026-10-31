@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 31 next-run planning:** [Latest results snapshot](../../reports/binding/arithmetic_results_for_next_runs_v1.md) · [Ordered run plan](../../reports/binding/arithmetic_next_runs_20261031_plan_v1.md). Cached full-width global decoding of all four values/direct relations comes first, alongside paired timing/overwrite/retention dataset preparation. No new run is submitted by this planning step.
+
 > **October 31 completed compression/encoding wave:** [Audited review and figure](../../reports/binding/arithmetic_numeric_postrun_review_v1.md) · [Full findings](../../reports/binding/arithmetic_numeric_exploration_findings_v1.md). All workers and the report finished, with successful independent bank/selection/parameter/metric checks. Wider hidden features help within the fixed-layer assay; exact computed-value recovery remains weak. These are exploratory results.
 
 > **October 31 storage recovery:** Numeric exploration passed2,467 tests and all cache stages before a `/work` quota failure. [Verified relocation and resume](../../reports/binding/arithmetic_numeric_storage_recovery_20261031_v1.md) moved large data and future readout outputs to scratch, preserved66 saved/recovered banks and restored the controller. The first restarted worker is making new progress.

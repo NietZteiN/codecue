@@ -1,5 +1,7 @@
 # Master research document
 
+October 31 next-run planning: [latest results snapshot](arithmetic_results_for_next_runs_v1.md) · [ordered run plan](arithmetic_next_runs_20261031_plan_v1.md). First priority is cached full-width global decoding of all four values and direct relations; paired timing/overwrite/retention data preparation follows in parallel. The plan is prospective and not submitted; canonical grouping, native token sites and scratch-storage checks precede new GPU work.
+
 October 31 completed compression/encoding wave: [audited review and figure](arithmetic_numeric_postrun_review_v1.md) · [full findings](arithmetic_numeric_exploration_findings_v1.md). All six workers and the report finished. The independent postrun audit verified saved banks, TRAIN selections, selected parameter replay and numeric metrics. Wider hidden features improve computed-value readouts within this assay, while exact computed-value recovery remains weak. [Terminal suite status](arithmetic_numeric_exploration_status_v1.md).
 
 October 31 storage recovery: numeric exploration passed2,467 regression tests and all cache stages, then hit a `/work` quota failure. [Verified relocation and resume](arithmetic_numeric_storage_recovery_20261031_v1.md) moved feature arrays and future readout outputs to scratch, preserved65 committed banks and recovered one saved bank without refitting. The restarted worker advanced beyond that prefix; the controller is restored.
