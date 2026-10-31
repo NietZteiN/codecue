@@ -24,6 +24,8 @@ The next priority is a shared-checkpoint test of all four current variables and 
 
 This run tests the original all-variable objective more directly than a decoder that receives the correct current-definition node. A positive direct-relation result with poor absolute values would motivate a relational representation assay; source controls and later causal tests are still needed.
 
+The archived prompts request one printed value. Interpret a negative all-variable readout in that task context: it would not rule out a different representation when all values are requested. The new query-scope control below addresses that possibility.
+
 ## Runs 2–3: paired dataset preparation, then temporal captures
 
 **Questions:** When does a computed value become accessible, and which operation causes errors?
@@ -53,6 +55,8 @@ Then use the cached, revision-pinned8B/34B checkpoints for GPU inference. Retain
 ## Run 4: query and behavior protocols
 
 Use output-only, explicit intermediate-query and model-generated stepwise protocols as separate conditions. Keep three instruction variants and every invalid/truncated response. Use the original deterministic generation/parser where compatible; freeze any new trace parser before inference, selecting the last `Answer:` as required by the repository rules.
+
+Within the explicit-query condition, compare one requested variable with all four current variables. Validate a separate ordered four-value parser, retain per-slot and joint accuracy, and mark values already emitted in the generated answer when studying later states. The all-variable task changes the requested computation; task-dependent decodability is informative without establishing a task-independent register representation.
 
 For an explicit query appended after a code prefix, verify that supposedly matched earlier token prefixes really are identical. Stepwise instructions change the prompt and computation; interpret that as a protocol intervention. Never teacher-force a correct intermediate into the main measurement. A gold-intermediate condition is a separately labeled copying control. Mark when the target appeared in the source or generated trace, and separate value-visible cases from latent readout claims. Capture pre-answer states before the final answer token.
 
