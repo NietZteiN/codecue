@@ -27,3 +27,11 @@ metadata correction. The corrected frozen source is `8f7e0d51b270fa36abf4c84c`.
 
 [Live status](arithmetic_semantic_controls_status_v2.md) ·
 [Launch receipt](../../artifacts/binding/arithmetic_semantic_controls/20261031_v2/launch_review_v1.json).
+
+## Verified handoff
+
+All 2507 frozen binding tests passed. Both interpreters verified all 5292 cases and 42012 definition points, with zero excluded rows.
+Llama **487066** and CodeLlama **487067** are running; the source controls are queued.
+The first worker has committed saved validation banks. All-variable/version and pair/triple labels are prepared, not decoded outcomes.
+
+[Handoff receipt](../../artifacts/binding/arithmetic_semantic_controls/20261031_v2/handoff_review_v1.json).

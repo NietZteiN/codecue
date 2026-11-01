@@ -67,7 +67,11 @@ def archive(folder, target):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--edition', type=int, required=True)
-    edition = parser.parse_args().edition
+    parser.add_argument('--only-root', action='append', choices=ROOTS,
+        help='Publish this root and registered subroots; omitted roots retain their existing catalog entries')
+    args = parser.parse_args()
+    edition = args.edition
+    roots = ROOTS if not args.only_root else [r for r in ROOTS if any(r == p or r.startswith(p + '/') for p in args.only_root)]
     proof_path = ROOT / f'reproducibility/arithmetic_probe_publication_20261030_v{edition}.json'
     if edition < 1 or proof_path.exists():
         raise ValueError('a new positive publication edition is required')
@@ -80,7 +84,7 @@ def main():
     with local_catalog.open() as stream:
         local = {e['path']: e for e in csv.DictReader(stream)}
     paths, pins, source_ids, archives = set(), {}, set(), []
-    for relative in ROOTS:
+    for relative in roots:
         folder = ROOT / relative
         for path in sorted(folder.rglob('*')):
             if not path.is_file() or '__pycache__' in path.parts or 'regression_sources' in path.parts or 'saved_work_prefix' in path.parts:
@@ -153,7 +157,7 @@ def main():
     export.atomic(compressed_catalog, export.csv_bytes(sorted(compressed.values(), key=lambda e: e['original_path']), fields))
     export.atomic(local_catalog, export.csv_bytes(sorted(local.values(), key=lambda e: e['path']), ['path', 'bytes', 'reason']))
     proof = dict(status='published_metadata', recorded_utc=datetime.now(timezone.utc).isoformat(),
-        source_ids=sorted(source_ids), artifacts=pins, regression_archives=archives,
+        source_ids=sorted(source_ids), published_roots=roots, artifacts=pins, regression_archives=archives,
         policy='Raw arrays remain local; source and immutable metadata published; JSONL and scratch-backed worker text losslessly compressed. Mutable live state excluded.',
         new_model_queries=0, new_fits=0, credentials_detected=0)
     export.atomic(proof_path, (json.dumps(proof, sort_keys=True, indent=2) + '\n').encode())

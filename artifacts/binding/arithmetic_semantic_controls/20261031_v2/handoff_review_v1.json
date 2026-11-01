@@ -1,0 +1,62 @@
+{
+  "controllers": [
+    "487056",
+    "487061",
+    "487063",
+    "487065"
+  ],
+  "direct_relation_fits_started": false,
+  "fit_jobs": {
+    "codellama34b_computed_definition": "487067",
+    "llama8b_computed_definition": "487066",
+    "source4096_computed_definition": "487068",
+    "source8192_computed_definition": "487069"
+  },
+  "label_preparation": {
+    "cases": 5292,
+    "completion": {
+      "bytes": 1840,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/labels/completion_manifest_v1.json",
+      "sha256": "959fb1a7649294d22faec571bbbbad2d3066ae5da49903fae9e46300a1f2fe4f"
+    },
+    "examples": 42012,
+    "excluded_rows": 0,
+    "independent_python_verified": true
+  },
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "new_model_queries": 0,
+  "recorded_utc": "2026-11-01T00:44:45.658597+00:00",
+  "regression": {
+    "config_hash": "2d63675e673a8898e8cf4b42753aff01c31fa46a108afd14e1c1d63106215d93",
+    "junit_sha256": "bb39ef21c89640159825bcc517053915c9219270f3044a1c284674ecc3cafc71",
+    "source": {
+      "frozen_manifest_sha256": "4150c6952ed65f368902355d84622c688658131f52e4f29a17fb4993a01394b4",
+      "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8f7e0d51b270fa36abf4c84c",
+      "snapshot_id": "8f7e0d51b270fa36abf4c84c",
+      "source_sha256": "87fbe8c030a2bb72320da2a477a97d52a2e95b1613be380aa570c974096ac47a"
+    },
+    "source_sha256": "87fbe8c030a2bb72320da2a477a97d52a2e95b1613be380aa570c974096ac47a",
+    "status": "passed",
+    "tests": 2507
+  },
+  "scientific_results_complete": false,
+  "source": {
+    "frozen_manifest_sha256": "4150c6952ed65f368902355d84622c688658131f52e4f29a17fb4993a01394b4",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8f7e0d51b270fa36abf4c84c",
+    "snapshot_id": "8f7e0d51b270fa36abf4c84c",
+    "source_sha256": "87fbe8c030a2bb72320da2a477a97d52a2e95b1613be380aa570c974096ac47a"
+  },
+  "status": "regression_and_independent_labels_passed_fits_released",
+  "story": "Qualify numerical readouts before binding/version/use claims."
+}
