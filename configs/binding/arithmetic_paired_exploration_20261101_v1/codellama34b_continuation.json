@@ -1,0 +1,30 @@
+{
+  "declared_plan": "reports/binding/arithmetic_paired_exploration_plan_20261101_v1.md",
+  "declared_plan_sha256": "32a279e68aeecaf40cd56f9786fcc32e04ce03283e86ba3d44e69d131b72089a",
+  "evaluation_role": "discovery_arithmetic_paired_continuation_v1",
+  "generation_batch_size": 32,
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "pilot": {
+    "bytes": 1359,
+    "path": "configs/binding/arithmetic_paired_20261101_v1/codellama34b_calibration.json",
+    "sha256": "505f251e57f998713d76efb4928c7533654bd8cd983c712f590ab1bd5043c62f"
+  },
+  "run_dir": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/codellama34b_continuation",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "total_generated_token_ceiling": 1024
+}

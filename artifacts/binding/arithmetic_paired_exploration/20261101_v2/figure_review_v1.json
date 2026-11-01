@@ -1,0 +1,162 @@
+{
+  "artifacts": {
+    "pdf": {
+      "bytes": 31139,
+      "path": "reports/binding/figures/arithmetic_calibration_error_audit_v1.pdf",
+      "sha256": "fc6a0ce7d0d82af9c3c872a39d1e4c8b230ab0f1f6860e6c2e08346defe08821"
+    },
+    "png": {
+      "bytes": 182242,
+      "path": "reports/binding/figures/arithmetic_calibration_error_audit_v1.png",
+      "sha256": "90fe6d73e87e6b1cd820a3a09f364ac1de2623937e8103b317d27f17e9e6da5a"
+    },
+    "svg": {
+      "bytes": 104760,
+      "path": "reports/binding/figures/arithmetic_calibration_error_audit_v1.svg",
+      "sha256": "9709347e5442f27e6d45c2475d6b57e63cf5ef9129aa73028f800280acd18b97"
+    }
+  },
+  "config": {
+    "bytes": 1281,
+    "path": "configs/binding/arithmetic_paired_exploration_20261101_v2/error_audit.json",
+    "sha256": "df7c990d8b9b7886a96c400e69dd78c81ad4acdaac8c3d2b9ab835d74474c3e8"
+  },
+  "input": {
+    "bytes": 321742,
+    "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/error_audit/results.json",
+    "sha256": "79f0a11d4ec923afc879566b39b91b96f4677994f16d4894d53c26dc61ea9535"
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "plotted_values": {
+    "codellama34b": {
+      "intermediate_query/all": {
+        "counts": {
+          "Accepted, wrong": 0,
+          "Completed, invalid format": 0,
+          "Strict correct": 1,
+          "Truncated": 215
+        },
+        "diagnostic_complete_correct": 1,
+        "rows": 216
+      },
+      "intermediate_query/single": {
+        "counts": {
+          "Accepted, wrong": 54,
+          "Completed, invalid format": 0,
+          "Strict correct": 54,
+          "Truncated": 108
+        },
+        "diagnostic_complete_correct": 54,
+        "rows": 216
+      },
+      "output_only/all": {
+        "counts": {
+          "Accepted, wrong": 101,
+          "Completed, invalid format": 1,
+          "Strict correct": 64,
+          "Truncated": 50
+        },
+        "diagnostic_complete_correct": 64,
+        "rows": 216
+      },
+      "output_only/single": {
+        "counts": {
+          "Accepted, wrong": 144,
+          "Completed, invalid format": 0,
+          "Strict correct": 72,
+          "Truncated": 0
+        },
+        "diagnostic_complete_correct": 72,
+        "rows": 216
+      },
+      "stepwise/all": {
+        "counts": {
+          "Accepted, wrong": 28,
+          "Completed, invalid format": 9,
+          "Strict correct": 175,
+          "Truncated": 4
+        },
+        "diagnostic_complete_correct": 175,
+        "rows": 216
+      },
+      "stepwise/single": {
+        "counts": {
+          "Accepted, wrong": 16,
+          "Completed, invalid format": 43,
+          "Strict correct": 157,
+          "Truncated": 0
+        },
+        "diagnostic_complete_correct": 157,
+        "rows": 216
+      }
+    },
+    "llama8b": {
+      "intermediate_query/all": {
+        "counts": {
+          "Accepted, wrong": 0,
+          "Completed, invalid format": 0,
+          "Strict correct": 0,
+          "Truncated": 216
+        },
+        "diagnostic_complete_correct": 0,
+        "rows": 216
+      },
+      "intermediate_query/single": {
+        "counts": {
+          "Accepted, wrong": 0,
+          "Completed, invalid format": 0,
+          "Strict correct": 0,
+          "Truncated": 216
+        },
+        "diagnostic_complete_correct": 0,
+        "rows": 216
+      },
+      "output_only/all": {
+        "counts": {
+          "Accepted, wrong": 67,
+          "Completed, invalid format": 0,
+          "Strict correct": 69,
+          "Truncated": 80
+        },
+        "diagnostic_complete_correct": 69,
+        "rows": 216
+      },
+      "output_only/single": {
+        "counts": {
+          "Accepted, wrong": 97,
+          "Completed, invalid format": 4,
+          "Strict correct": 115,
+          "Truncated": 0
+        },
+        "diagnostic_complete_correct": 115,
+        "rows": 216
+      },
+      "stepwise/all": {
+        "counts": {
+          "Accepted, wrong": 17,
+          "Completed, invalid format": 18,
+          "Strict correct": 156,
+          "Truncated": 25
+        },
+        "diagnostic_complete_correct": 168,
+        "rows": 216
+      },
+      "stepwise/single": {
+        "counts": {
+          "Accepted, wrong": 12,
+          "Completed, invalid format": 77,
+          "Strict correct": 100,
+          "Truncated": 27
+        },
+        "diagnostic_complete_correct": 174,
+        "rows": 216
+      }
+    }
+  },
+  "status": "audited_figure",
+  "utility": {
+    "path": "/work/jvl210002/migration/codecue/scripts/218_binding_calibration_error_figure.py",
+    "sha256": "655ea6755f18974fd57c01cf96c619dd3b1cb2b0121aeecb19ebf86aedae45e9"
+  }
+}

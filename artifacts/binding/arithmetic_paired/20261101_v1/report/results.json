@@ -1,0 +1,357 @@
+{
+  "competence_gates": {
+    "codellama/CodeLlama-34b-Instruct-hf": [
+      {
+        "accuracy": 0.8333333333333334,
+        "instruction": 0,
+        "kind": "literal",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 0.6666666666666666,
+        "instruction": 1,
+        "kind": "literal",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 0.8333333333333334,
+        "instruction": 2,
+        "kind": "literal",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 0.8333333333333334,
+        "instruction": 0,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.8333333333333334,
+        "instruction": 1,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.8333333333333334,
+        "instruction": 2,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.16666666666666666,
+        "instruction": 0,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "single",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.25,
+        "instruction": 1,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "single",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.16666666666666666,
+        "instruction": 2,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "single",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 0,
+        "kind": "literal",
+        "passed": true,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 0.6666666666666666,
+        "instruction": 1,
+        "kind": "literal",
+        "passed": false,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 2,
+        "kind": "literal",
+        "passed": true,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 0.5,
+        "instruction": 0,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.0,
+        "instruction": 1,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.5,
+        "instruction": 2,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.4166666666666667,
+        "instruction": 0,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "all",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.08333333333333333,
+        "instruction": 1,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "all",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.16666666666666666,
+        "instruction": 2,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "all",
+        "threshold": 0.7
+      }
+    ],
+    "meta-llama/Llama-3.1-8B-Instruct": [
+      {
+        "accuracy": 1.0,
+        "instruction": 0,
+        "kind": "literal",
+        "passed": true,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 1,
+        "kind": "literal",
+        "passed": true,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 2,
+        "kind": "literal",
+        "passed": true,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 0.3333333333333333,
+        "instruction": 0,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.6666666666666666,
+        "instruction": 1,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.3333333333333333,
+        "instruction": 2,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "single",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.5,
+        "instruction": 0,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "single",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.75,
+        "instruction": 1,
+        "kind": "arithmetic",
+        "passed": true,
+        "rows": 12,
+        "scope": "single",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.6666666666666666,
+        "instruction": 2,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "single",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 0,
+        "kind": "literal",
+        "passed": true,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 0.0,
+        "instruction": 1,
+        "kind": "literal",
+        "passed": false,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 2,
+        "kind": "literal",
+        "passed": true,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.95
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 0,
+        "kind": "copy",
+        "passed": true,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.0,
+        "instruction": 1,
+        "kind": "copy",
+        "passed": false,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 1.0,
+        "instruction": 2,
+        "kind": "copy",
+        "passed": true,
+        "rows": 6,
+        "scope": "all",
+        "threshold": 0.9
+      },
+      {
+        "accuracy": 0.8333333333333334,
+        "instruction": 0,
+        "kind": "arithmetic",
+        "passed": true,
+        "rows": 12,
+        "scope": "all",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.0,
+        "instruction": 1,
+        "kind": "arithmetic",
+        "passed": false,
+        "rows": 12,
+        "scope": "all",
+        "threshold": 0.7
+      },
+      {
+        "accuracy": 0.75,
+        "instruction": 2,
+        "kind": "arithmetic",
+        "passed": true,
+        "rows": 12,
+        "scope": "all",
+        "threshold": 0.7
+      }
+    ]
+  },
+  "config_hash": "0d0c25fa76293913fc31c0d90a137fe1c6366b722299d8e3bdb846294d2145de",
+  "evaluation_role": "discovery_arithmetic_paired_report_v1",
+  "formal_capture_submitted": false,
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "configs/binding/arithmetic_paired_20261101_v1/codellama34b_calibration.json": {
+      "bytes": 41214,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/codellama34b_calibration/results.json",
+      "sha256": "65779caf59685612e521bfa565cf09a823eff110c7ee11c7a9236faaa61c010a"
+    },
+    "configs/binding/arithmetic_paired_20261101_v1/llama8b_calibration.json": {
+      "bytes": 40529,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/results.json",
+      "sha256": "6eaee04a5eeee8f0bbd8560b39e47c96adaa2af254935741531f0229a64c0147"
+    }
+  },
+  "new_model_queries": 0,
+  "source": {
+    "frozen_manifest_sha256": "f55735feb7c8fa920d95e6e86c344a225faa6e2935430b98a36ec5dbcc35db1f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4da3d9b46a28a90f13ea58be",
+    "snapshot_id": "4da3d9b46a28a90f13ea58be",
+    "source_sha256": "aa28ae00297759c74b75db8443621e7ce3077e84d2c6270ff18b740b000a3e65"
+  },
+  "status": "complete_exploratory",
+  "total_calibration_prompts": 2592
+}

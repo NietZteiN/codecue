@@ -1,0 +1,132 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "codellama34b_calibration": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487743",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T15:48:31.269624+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_native": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487739",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T15:44:28.342218+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_calibration": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487742",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T15:48:30.639331+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_native": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487738",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T15:44:27.715059+00:00",
+        "time_min": null
+      }
+    ],
+    "report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487935",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T19:16:09.959210+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487727",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T15:27:44.908298+00:00",
+        "time_min": null
+      }
+    ],
+    "sources": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487731",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T15:40:15.050735+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "3c78cf168ca4377b477ed708516f001b36bce04ea1a246fc6975fa4dbccea309",
+  "evaluation_role": "discovery_arithmetic_paired_suite_v1",
+  "formal_capture_submitted": false,
+  "generated_holdouts_opened": false,
+  "recorded_utc": "2026-11-01T19:26:40.847239+00:00",
+  "scheduler_errors": [],
+  "source": {
+    "frozen_manifest_sha256": "f55735feb7c8fa920d95e6e86c344a225faa6e2935430b98a36ec5dbcc35db1f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4da3d9b46a28a90f13ea58be",
+    "snapshot_id": "4da3d9b46a28a90f13ea58be",
+    "source_sha256": "aa28ae00297759c74b75db8443621e7ce3077e84d2c6270ff18b740b000a3e65"
+  },
+  "stages": {
+    "codellama34b_calibration": {
+      "job_id": "487743",
+      "state": "complete"
+    },
+    "codellama34b_native": {
+      "job_id": "487739",
+      "state": "complete"
+    },
+    "llama8b_calibration": {
+      "job_id": "487742",
+      "state": "complete"
+    },
+    "llama8b_native": {
+      "job_id": "487738",
+      "state": "complete"
+    },
+    "report": {
+      "job_id": "487935",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "487727",
+      "state": "complete"
+    },
+    "sources": {
+      "job_id": "487731",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}

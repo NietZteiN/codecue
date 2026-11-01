@@ -1,0 +1,30 @@
+{
+  "declared_plan": "reports/binding/arithmetic_paired_exploration_plan_20261101_v2.md",
+  "declared_plan_sha256": "60db407c7a23f7eb25ea3f839381334802127b589e2658367de179feaf06465c",
+  "evaluation_role": "discovery_arithmetic_paired_continuation_v1",
+  "generation_batch_size": 64,
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "pilot": {
+    "bytes": 1345,
+    "path": "configs/binding/arithmetic_paired_20261101_v1/llama8b_calibration.json",
+    "sha256": "bf133f548ea76accd43b2eadcf7e8ffa6cb31c10e1a9b49efe7b5952cf635324"
+  },
+  "run_dir": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "total_generated_token_ceiling": 1024
+}

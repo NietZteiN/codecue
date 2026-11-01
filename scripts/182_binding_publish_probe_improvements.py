@@ -46,6 +46,11 @@ ROOTS += [GLOBAL_ROOT] + [GLOBAL_ROOT + '/' + name for name in (
 PAIRED_ROOT = 'artifacts/binding/arithmetic_paired/20261101_v1'
 ROOTS += [PAIRED_ROOT] + [PAIRED_ROOT + '/' + name for name in (
     'sources', 'llama8b_native', 'codellama34b_native', 'llama8b_calibration', 'codellama34b_calibration')]
+EXPLORATION_ROOTS = tuple(f'artifacts/binding/arithmetic_paired_exploration/20261101_v{edition}' for edition in (1, 2))
+ROOTS += list(EXPLORATION_ROOTS)
+ROOTS += [root + '/' + name for root in EXPLORATION_ROOTS for name in (
+    'error_audit', 'audit_report', 'llama8b_continuation', 'codellama34b_continuation', 'report')]
+ROOTS += ['artifacts/binding/arithmetic_capture_preparation/20261101_v1']
 MUTABLE = {'manifest.json', 'progress.json', 'jobs_live_v1.json', 'status_review_v1.json'}
 
 
@@ -114,7 +119,7 @@ def main():
             # Git cannot track children of the scratch-backed directory links.
             # Publish their immutable text through the existing lossless gzip
             # catalog, whose restore command recreates original artifact paths.
-            if path.suffix == '.jsonl' or relative.startswith(tuple(root + '/' for root in (NUMERIC_ROOT, GEOMETRY_ROOT, GLOBAL_ROOT, PAIRED_ROOT, *SEMANTIC_ROOTS))):
+            if path.suffix == '.jsonl' or relative.startswith(tuple(root + '/' for root in (NUMERIC_ROOT, GEOMETRY_ROOT, GLOBAL_ROOT, PAIRED_ROOT, *SEMANTIC_ROOTS, *EXPLORATION_ROOTS))):
                 target = ROOT / 'reproducibility/compressed' / (name + '.gz')
                 target.parent.mkdir(parents=True, exist_ok=True)
                 with target.open('wb') as raw:
@@ -144,7 +149,9 @@ def main():
         mirror = folder / 'regression_sources'
         if mirror.exists():
             label = 'local' if '/arithmetic_local/' in relative else 'selection'
-            if '/arithmetic_paired/' in relative:
+            if '/arithmetic_paired_exploration/' in relative:
+                filename = f'arithmetic_paired_exploration_regression_{folder.name}.tar.gz'
+            elif '/arithmetic_paired/' in relative:
                 filename = f'arithmetic_paired_regression_{folder.name}.tar.gz'
             elif '/arithmetic_global_state/' in relative:
                 filename = f'arithmetic_global_state_regression_{folder.name}.tar.gz'
@@ -166,6 +173,11 @@ def main():
         item = archive(folder, ROOT / f'reproducibility/frozen_sources/{identity}.tar.gz')
         sources[identity] = dict(snapshot_id=identity, stored_path=item['path'], bytes=item['bytes'], sha256=item['sha256'])
         paths.add(item['path'])
+    # Catch a newly registered scratch-backed family before issuing a stage list.
+    for name in paths:
+        path = ROOT / name
+        if path.is_symlink() or any(parent.is_symlink() for parent in path.parents):
+            raise ValueError('publication path traverses a symbolic link: ' + name)
     export.atomic(source_catalog, (json.dumps(sorted(sources.values(), key=lambda e: e['snapshot_id']), sort_keys=True, indent=2) + '\n').encode())
     fields = ['original_path', 'stored_path', 'encoding', 'original_bytes', 'stored_bytes', 'original_sha256', 'stored_sha256']
     export.atomic(compressed_catalog, export.csv_bytes(sorted(compressed.values(), key=lambda e: e['original_path']), fields))

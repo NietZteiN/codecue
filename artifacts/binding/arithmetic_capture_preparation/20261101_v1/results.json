@@ -1,0 +1,151 @@
+{
+  "formal_capture_submitted": false,
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "codellama34b": {
+      "config": {
+        "bytes": 1205,
+        "path": "configs/binding/arithmetic_paired_20261101_v1/codellama34b_native.json",
+        "sha256": "10c4eda4732ab527abcafced03647c98cfd0c9af1ab3c3ef84c20398754ea97e"
+      },
+      "prepared": {
+        "bytes": 149924382,
+        "path": "artifacts/binding/arithmetic_paired/20261101_v1/codellama34b_native/prepared_cases.jsonl",
+        "sha256": "d9296e83ede3f216c7bc6785b1599b17473f077585aea3060fa36e4d8c61e304"
+      }
+    },
+    "llama8b": {
+      "config": {
+        "bytes": 1195,
+        "path": "configs/binding/arithmetic_paired_20261101_v1/llama8b_native.json",
+        "sha256": "c5890478b6e1e36fbcd869c501a8d9c7622ad0e9ee7ea77c864d1638ab6adfe1"
+      },
+      "prepared": {
+        "bytes": 158056470,
+        "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_native/prepared_cases.jsonl",
+        "sha256": "a17eb70dfe09288c08552e47d275826de9a5bc738047ab1bfe43c6009252c194"
+      }
+    }
+  },
+  "models": {
+    "codellama34b": {
+      "counts": {
+        "cases/calibration": 3888,
+        "cases/development": 10368,
+        "cases/train": 31104,
+        "requested/calibration/assignment_newline": 3888,
+        "requested/calibration/generation": 3888,
+        "requested/calibration/later_use": 3888,
+        "requested/calibration/rhs_end": 3888,
+        "requested/development/assignment_newline": 10368,
+        "requested/development/generation": 10368,
+        "requested/development/later_use": 10368,
+        "requested/development/rhs_end": 10368,
+        "requested/train/assignment_newline": 31104,
+        "requested/train/generation": 31104,
+        "requested/train/later_use": 31104,
+        "requested/train/rhs_end": 31104
+      },
+      "four_layer_full_width_storage_bytes": {
+        "bfloat16": {
+          "requested": 10871635968,
+          "unique": 3321888768
+        },
+        "float32": {
+          "requested": 21743271936,
+          "unique": 6643777536
+        }
+      },
+      "site_unique_counts": {
+        "calibration/assignment_newline": 36,
+        "calibration/generation": 3888,
+        "calibration/later_use": 216,
+        "calibration/rhs_end": 36,
+        "development/assignment_newline": 288,
+        "development/generation": 10368,
+        "development/later_use": 1728,
+        "development/rhs_end": 288,
+        "train/assignment_newline": 864,
+        "train/generation": 31104,
+        "train/later_use": 5184,
+        "train/rhs_end": 864
+      },
+      "totals": {
+        "formal_requested_site_rows": 165888,
+        "formal_reuse_factor": 3.272727272727273,
+        "formal_unique_prefixes": 50688,
+        "full_native_input_tokens_if_prefixes_separate": 9445026,
+        "prefixes_shared_across_train_dev": 0,
+        "prefixes_shared_formal_calibration": 0,
+        "requested_site_rows": 181440,
+        "unique_prefixes": 54864
+      },
+      "width": 8192
+    },
+    "llama8b": {
+      "counts": {
+        "cases/calibration": 3888,
+        "cases/development": 10368,
+        "cases/train": 31104,
+        "requested/calibration/assignment_newline": 3888,
+        "requested/calibration/generation": 3888,
+        "requested/calibration/later_use": 3888,
+        "requested/calibration/rhs_end": 3888,
+        "requested/development/assignment_newline": 10368,
+        "requested/development/generation": 10368,
+        "requested/development/later_use": 10368,
+        "requested/development/rhs_end": 10368,
+        "requested/train/assignment_newline": 31104,
+        "requested/train/generation": 31104,
+        "requested/train/later_use": 31104,
+        "requested/train/rhs_end": 31104
+      },
+      "four_layer_full_width_storage_bytes": {
+        "bfloat16": {
+          "requested": 5435817984,
+          "unique": 1660944384
+        },
+        "float32": {
+          "requested": 10871635968,
+          "unique": 3321888768
+        }
+      },
+      "site_unique_counts": {
+        "calibration/assignment_newline": 36,
+        "calibration/generation": 3888,
+        "calibration/later_use": 216,
+        "calibration/rhs_end": 36,
+        "development/assignment_newline": 288,
+        "development/generation": 10368,
+        "development/later_use": 1728,
+        "development/rhs_end": 288,
+        "train/assignment_newline": 864,
+        "train/generation": 31104,
+        "train/later_use": 5184,
+        "train/rhs_end": 864
+      },
+      "totals": {
+        "formal_requested_site_rows": 165888,
+        "formal_reuse_factor": 3.272727272727273,
+        "formal_unique_prefixes": 50688,
+        "full_native_input_tokens_if_prefixes_separate": 10619208,
+        "prefixes_shared_across_train_dev": 0,
+        "prefixes_shared_formal_calibration": 0,
+        "requested_site_rows": 181440,
+        "unique_prefixes": 54864
+      },
+      "width": 4096
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "policy": "potential prefix reuse only; oracle labels stay outside model inputs; no independent-family or numerical-identity claim; future capture must audit padding/backend tolerance before reuse",
+  "source_sha256": "58f859456f28b58e48341c2f9aa5d10560a5ed9efa6c7d1451e5f3d61b961362",
+  "source_snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8cd435cb3b81fce4fe55a146",
+  "source_snapshot_id": "8cd435cb3b81fce4fe55a146",
+  "status": "complete_exploratory",
+  "utility": {
+    "path": "/work/jvl210002/migration/codecue/scripts/217_binding_paired_capture_inventory.py",
+    "sha256": "1e9fd1ab8e60398a9b7edef3966c95bff6566773ebf6c369cd365b42e178fe89"
+  }
+}

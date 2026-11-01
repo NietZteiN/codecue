@@ -1,0 +1,128 @@
+{
+  "declared_plan": "reports/binding/arithmetic_paired_exploration_plan_20261101_v1.md",
+  "declared_plan_sha256": "32a279e68aeecaf40cd56f9786fcc32e04ce03283e86ba3d44e69d131b72089a",
+  "evaluation_role": "discovery_arithmetic_paired_exploration_suite_v1",
+  "morning_at": "2026-11-02T08:00:00-06:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_paired_exploration_20261101_v1/qa.json",
+      "config_sha256": "34123b4a2bb4e9f4f3892027699db0332a1415ae57811e95a71dcf6c0398218b",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/qa/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/214_binding_paired_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_exploration_20261101_v1/error_audit.json",
+      "config_sha256": "e872d733f8ea97b7db818c93ef7e31ae950c14b3133528b22a44cd3c4028d74c",
+      "cpus": 4,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "error_audit",
+      "marker": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/error_audit/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "12G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/214_binding_paired_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_exploration_20261101_v1/audit_report.json",
+      "config_sha256": "34407f0af0003f7c452aa9d805ae8fe926134c126473f9cce7c4c03d0ef270df",
+      "cpus": 4,
+      "dependencies": [
+        "error_audit"
+      ],
+      "expected_cases": 0,
+      "key": "audit_report",
+      "marker": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/audit_report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "12G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/214_binding_paired_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_exploration_20261101_v1/llama8b_continuation.json",
+      "config_sha256": "b807ae5f53742614447f878585719114917a5b273821b3e0f5dc34d022c9df2e",
+      "cpus": 8,
+      "dependencies": [
+        "error_audit"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_continuation",
+      "marker": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/llama8b_continuation/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "96G",
+      "partition": "h100,h200",
+      "phase": "cpu",
+      "script": "scripts/214_binding_paired_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": "00:30:00"
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_exploration_20261101_v1/codellama34b_continuation.json",
+      "config_sha256": "c1d27c1c32c1927d3b1b0911208775edadc8570ede98176e36d74e3fdab826f5",
+      "cpus": 8,
+      "dependencies": [
+        "error_audit"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_continuation",
+      "marker": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/codellama34b_continuation/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "96G",
+      "partition": "h200",
+      "phase": "cpu",
+      "script": "scripts/214_binding_paired_exploration.py",
+      "time": "2-00:00:00",
+      "time_min": "00:30:00"
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_exploration_20261101_v1/report.json",
+      "config_sha256": "dde1a6d6a45d97a9f7fe7f528cfb6c181a25baa9c141631e77f81d9de600838f",
+      "cpus": 4,
+      "dependencies": [
+        "llama8b_continuation",
+        "codellama34b_continuation"
+      ],
+      "expected_cases": 0,
+      "key": "report",
+      "marker": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "12G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/214_binding_paired_exploration.py",
+      "time": "02:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_paired_exploration_status_20261101_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/qa/regression.xml",
+    "minimum_tests": 2611,
+    "review": "artifacts/binding/arithmetic_paired_exploration/20261101_v1/qa/regression_review.json"
+  }
+}

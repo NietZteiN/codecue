@@ -1,0 +1,41 @@
+{
+  "audit": {
+    "bytes": 1281,
+    "path": "configs/binding/arithmetic_paired_exploration_20261101_v2/error_audit.json",
+    "sha256": "df7c990d8b9b7886a96c400e69dd78c81ad4acdaac8c3d2b9ab835d74474c3e8"
+  },
+  "continuations": {
+    "codellama34b": {
+      "bytes": 1117,
+      "path": "configs/binding/arithmetic_paired_exploration_20261101_v2/codellama34b_continuation.json",
+      "sha256": "4dd75ac216f749b7dee68e32f6aa36e2a73ee4c46d5a5774d6b7f558cd284f85"
+    },
+    "llama8b": {
+      "bytes": 1107,
+      "path": "configs/binding/arithmetic_paired_exploration_20261101_v2/llama8b_continuation.json",
+      "sha256": "d95ab35f521883f2d0d26bb5d9e1b9cbd142eac2387dcca16917f5bb1c3fcfae"
+    }
+  },
+  "declared_plan": "reports/binding/arithmetic_paired_exploration_plan_20261101_v2.md",
+  "declared_plan_sha256": "60db407c7a23f7eb25ea3f839381334802127b589e2658367de179feaf06465c",
+  "evaluation_role": "discovery_arithmetic_paired_exploration_report_v1",
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "report": "reports/binding/arithmetic_paired_exploration_findings_20261101_v2.md",
+  "run_dir": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/report",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}
