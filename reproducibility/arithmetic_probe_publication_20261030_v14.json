@@ -1,0 +1,64 @@
+{
+  "artifacts": {
+    "artifacts/binding/arithmetic_global_state/20261031_v1/controller_expedite_v1.json": {
+      "sha256": "d092d934003a52c43fdbb61fb1c2e6adfe31ba4d73e05f2aad4337830d916225"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/controller_expedite_v2.json": {
+      "sha256": "15808f8471a715a299fdf150b7021f82ed87ad209dfb4a6309929fcf7116589f"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/qa/regression.xml": {
+      "sha256": "03c28e72c98b7f21d103ee40843d89c3c7379ae70d3972cac46aa073169c7050"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/qa/regression_review.json": {
+      "sha256": "66bb08e533c8c9bb338cc3ec3560a4f70f2748398a5d5c3f8d345298a2be7c4a"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/semantic_audit/completion_manifest_v1.json": {
+      "sha256": "60448c02222daf21cc0d62650d9705672478ef56c9b90220d4fab0c0a718462c"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/semantic_audit/results.json": {
+      "sha256": "2296296d1afb79fad90bccb266ed42bea3add745af5915844e48da3bb0d81aa9"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/semantic_figure_review_v1.json": {
+      "sha256": "70ba181379c126458b580965708855e7a73916245230b56e3bcb14f1340f5e1b"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/semantic_figure_review_v3.json": {
+      "sha256": "c270c9dac2941693b7af6b01069b483734940d0626700777b0093b08748a240c"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/semantic_figure_script_v2.py": {
+      "sha256": "af2de2e3765500df138131e616b77aceeacc0c4c371d5dc2a03b76883aee9cdd"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/semantic_figure_source_history_v1.json": {
+      "sha256": "deb90bcf29ff6116e6bd3cbc1ec7215858fef4b9c7194ec3784c2c03e1598c22"
+    },
+    "artifacts/binding/arithmetic_global_state/20261031_v1/source_review_v1.json": {
+      "sha256": "0ce1fc7921a59ed8fdfeea35b4f939dbf5e66092da1a0a3b0aca19fd623e4c51"
+    }
+  },
+  "credentials_detected": 0,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "policy": "Raw arrays remain local; source and immutable metadata published; JSONL and scratch-backed worker text losslessly compressed. Mutable live state excluded.",
+  "published_roots": [
+    "artifacts/binding/arithmetic_global_state/20261031_v1",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/cache",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/llama8b_width1024",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/llama8b_width4096",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/codellama34b_width1024",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/codellama34b_width8192",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/source_width1024",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/source_width4096",
+    "artifacts/binding/arithmetic_global_state/20261031_v1/source_width8192"
+  ],
+  "recorded_utc": "2026-11-01T02:01:20.531318+00:00",
+  "regression_archives": [
+    {
+      "bytes": 1435862,
+      "path": "reproducibility/arithmetic_global_state_regression_20261031_v1.tar.gz",
+      "sha256": "16307eb338ffd1a024049cda4c0d7f0b200e139442c9109a49d241d46bb19c22"
+    }
+  ],
+  "source_ids": [
+    "542b39eaf523e6b6a0f8e3db"
+  ],
+  "status": "published_metadata"
+}

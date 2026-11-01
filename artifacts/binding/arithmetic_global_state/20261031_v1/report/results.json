@@ -1,0 +1,197 @@
+{
+  "config_hash": "c5f57c4be0bd12ab19dfba06c3694eae5e0ee3ec4b3e9764d307a036d832dba9",
+  "evaluation_role": "discovery_global_state_report_v1",
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "configs/binding/arithmetic_global_state_20261031_v1/codellama34b_width1024.json": {
+      "bytes": 3623654,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/codellama34b_width1024/results.json",
+      "sha256": "adbb36fd689a3b4d710adc802e30c503ac8983aef78968998ee2201b539bc8e6"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/codellama34b_width8192.json": {
+      "bytes": 1812245,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/codellama34b_width8192/results.json",
+      "sha256": "407bba21c953ee0f2ca080302a5332f9b1412d910da1251d56b0451c0a23e5b9"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/llama8b_width1024.json": {
+      "bytes": 3622911,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/llama8b_width1024/results.json",
+      "sha256": "5b8188a67d0aea2d3893d7f4c1ad14c51e26564c7b24d064cc139fe8c48d8c01"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/llama8b_width4096.json": {
+      "bytes": 1812234,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/llama8b_width4096/results.json",
+      "sha256": "21d40324cbcea3858b101a4d1a7f89d4fe267da361f2fd8fef8bdc26a0448d68"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/source_width1024.json": {
+      "bytes": 3623119,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/source_width1024/results.json",
+      "sha256": "573429914ef24b73413a8da79d9210db404ee84b6c2434d5485fae2cf9d17c8f"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/source_width4096.json": {
+      "bytes": 3623022,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/source_width4096/results.json",
+      "sha256": "98371b6ef3b1cb013f025fd8e1f633ed43b42df9ffdca0314b4b0dccd7742409"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/source_width8192.json": {
+      "bytes": 3623029,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/source_width8192/results.json",
+      "sha256": "bdc1818e113138a709cf2d05722d60706b7603a0bc0404ddc6a09f5556519ed0"
+    }
+  },
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "new_model_queries": 0,
+  "new_readout_fits": 225,
+  "paired_family_contrasts": [
+    {
+      "alias": "llama8b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.035166060487196775,
+      "families": 72,
+      "lower": -0.11365075108849547,
+      "metric": "mae",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.04449495445322866,
+      "width": 1024
+    },
+    {
+      "alias": "llama8b",
+      "bootstrap_replicates": 2000,
+      "delta": 0.00025720164609053495,
+      "families": 72,
+      "lower": 0.0,
+      "metric": "scalar_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0007716049382716049,
+      "width": 1024
+    },
+    {
+      "alias": "llama8b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.014660493827160495,
+      "families": 72,
+      "lower": -0.026498199588477368,
+      "metric": "categorical_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.005401234567901234,
+      "width": 1024
+    },
+    {
+      "alias": "llama8b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.05997067683332556,
+      "families": 72,
+      "lower": -0.15502834808163213,
+      "metric": "mae",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.032551749912710114,
+      "width": 4096
+    },
+    {
+      "alias": "llama8b",
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "metric": "scalar_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0,
+      "width": 4096
+    },
+    {
+      "alias": "llama8b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.014660493827160491,
+      "families": 72,
+      "lower": -0.026234567901234566,
+      "metric": "categorical_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.005401234567901235,
+      "width": 4096
+    },
+    {
+      "alias": "codellama34b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.10921154422564636,
+      "families": 72,
+      "lower": -0.18601119931332244,
+      "metric": "mae",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.030996854416673453,
+      "width": 1024
+    },
+    {
+      "alias": "codellama34b",
+      "bootstrap_replicates": 2000,
+      "delta": 0.00025720164609053495,
+      "families": 72,
+      "lower": 0.0,
+      "metric": "scalar_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0007716049382716049,
+      "width": 1024
+    },
+    {
+      "alias": "codellama34b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.012602880658436214,
+      "families": 72,
+      "lower": -0.023919753086419755,
+      "metric": "categorical_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.003858024691358025,
+      "width": 1024
+    },
+    {
+      "alias": "codellama34b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.21106858239434115,
+      "families": 72,
+      "lower": -0.3111795823633647,
+      "metric": "mae",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.11404348179926485,
+      "width": 8192
+    },
+    {
+      "alias": "codellama34b",
+      "bootstrap_replicates": 2000,
+      "delta": 0.00025720164609053495,
+      "families": 72,
+      "lower": 0.0,
+      "metric": "scalar_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0007716049382716049,
+      "width": 8192
+    },
+    {
+      "alias": "codellama34b",
+      "bootstrap_replicates": 2000,
+      "delta": -0.012345679012345678,
+      "families": 72,
+      "lower": -0.023148148148148147,
+      "metric": "categorical_all_four",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.0036008230452674902,
+      "width": 8192
+    }
+  ],
+  "source": {
+    "frozen_manifest_sha256": "a28e6271339c9b02c41a603cf7bf27a8d1ecb3dacfb32d460ad2c304f46853fb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/542b39eaf523e6b6a0f8e3db",
+    "snapshot_id": "542b39eaf523e6b6a0f8e3db",
+    "source_sha256": "2e31d7e88a58d6af13336094e277c95d8d0bbfe9e2013be1759d653c9ea9efe1"
+  },
+  "status": "complete_exploratory"
+}

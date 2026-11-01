@@ -1,0 +1,156 @@
+{
+  "cells": [
+    {
+      "alias": "llama8b",
+      "computed_relation_ba": 0.5471390161398996,
+      "value_strata": [
+        0.06419324417009603,
+        0.11775878442545108,
+        0.11188271604938271,
+        0.07321673525377229,
+        0.0820687585733882,
+        0.41604938271604935
+      ],
+      "width": 1024
+    },
+    {
+      "alias": "llama8b",
+      "computed_relation_ba": 0.5485154789320493,
+      "value_strata": [
+        0.06584362139917695,
+        0.12659069325735992,
+        0.1183127572016461,
+        0.07536008230452675,
+        0.08382630315500685,
+        0.44501424501424497
+      ],
+      "width": 4096
+    },
+    {
+      "alias": "codellama34b",
+      "computed_relation_ba": 0.56513606347196,
+      "value_strata": [
+        0.05898491083676268,
+        0.13433048433048433,
+        0.10648148148148147,
+        0.07913237311385458,
+        0.08603395061728396,
+        0.5016144349477684
+      ],
+      "width": 1024
+    },
+    {
+      "alias": "codellama34b",
+      "computed_relation_ba": 0.5610485689679862,
+      "value_strata": [
+        0.0755744170096022,
+        0.13000949667616335,
+        0.11213991769547327,
+        0.08753429355281206,
+        0.0853909465020576,
+        0.6022792022792022
+      ],
+      "width": 8192
+    },
+    {
+      "alias": "source",
+      "computed_relation_ba": 0.5420404898477168,
+      "value_strata": [
+        0.05300497256515776,
+        0.12336182336182337,
+        0.07407407407407408,
+        0.0823045267489712,
+        0.08534807956104253,
+        0.8282526115859449
+      ],
+      "width": 1024
+    },
+    {
+      "alias": "source",
+      "computed_relation_ba": 0.5452247590480668,
+      "value_strata": [
+        0.05306927297668038,
+        0.12773029439696107,
+        0.07304526748971192,
+        0.08487654320987653,
+        0.08588391632373114,
+        0.8372744539411205
+      ],
+      "width": 4096
+    },
+    {
+      "alias": "source",
+      "computed_relation_ba": 0.5445162550356696,
+      "value_strata": [
+        0.05339077503429355,
+        0.12540360873694206,
+        0.07484567901234568,
+        0.08419067215363511,
+        0.08618398491083677,
+        0.8384140550807216
+      ],
+      "width": 8192
+    }
+  ],
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "configs/binding/arithmetic_global_state_20261031_v1/codellama34b_width1024.json": {
+      "bytes": 3623654,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/codellama34b_width1024/results.json",
+      "sha256": "adbb36fd689a3b4d710adc802e30c503ac8983aef78968998ee2201b539bc8e6"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/codellama34b_width8192.json": {
+      "bytes": 1812245,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/codellama34b_width8192/results.json",
+      "sha256": "407bba21c953ee0f2ca080302a5332f9b1412d910da1251d56b0451c0a23e5b9"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/llama8b_width1024.json": {
+      "bytes": 3622911,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/llama8b_width1024/results.json",
+      "sha256": "5b8188a67d0aea2d3893d7f4c1ad14c51e26564c7b24d064cc139fe8c48d8c01"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/llama8b_width4096.json": {
+      "bytes": 1812234,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/llama8b_width4096/results.json",
+      "sha256": "21d40324cbcea3858b101a4d1a7f89d4fe267da361f2fd8fef8bdc26a0448d68"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/source_width1024.json": {
+      "bytes": 3623119,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/source_width1024/results.json",
+      "sha256": "573429914ef24b73413a8da79d9210db404ee84b6c2434d5485fae2cf9d17c8f"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/source_width4096.json": {
+      "bytes": 3623022,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/source_width4096/results.json",
+      "sha256": "98371b6ef3b1cb013f025fd8e1f633ed43b42df9ffdca0314b4b0dccd7742409"
+    },
+    "configs/binding/arithmetic_global_state_20261031_v1/source_width8192.json": {
+      "bytes": 3623029,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/source_width8192/results.json",
+      "sha256": "bdc1818e113138a709cf2d05722d60706b7603a0bc0404ddc6a09f5556519ed0"
+    },
+    "report": {
+      "bytes": 7165,
+      "path": "artifacts/binding/arithmetic_global_state/20261031_v1/report/results.json",
+      "sha256": "26b22818f0b260b2a5250d3f37ac1bc55e0955517c0a20928edb58dfcb54b833"
+    },
+    "report_config": {
+      "bytes": 2344,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/report.json",
+      "sha256": "cb3964135b039d4764005e594a462c14db71541b08f296d6ec1190a862b676ac"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "output": {
+    "bytes": 2257,
+    "path": "reports/binding/arithmetic_global_state_strata_v1.md",
+    "sha256": "41f74afda97209b333b0e99516751b7fcf1ee42e7fe3764f736891428fc33d32"
+  },
+  "script": {
+    "bytes": 4802,
+    "path": "/work/jvl210002/migration/codecue/scripts/210_binding_global_state_strata.py",
+    "sha256": "f70a05a919c21fe9f5bc1e630cd93c405ae0f7be3eec8e0268c83c71fe527fed"
+  },
+  "status": "rendered_existing_results"
+}

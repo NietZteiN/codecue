@@ -1,0 +1,87 @@
+{
+  "config_hash": "90a59ed83c6bf28828708174df2bbf7e4b940573db13b0c81b4dbeebfce108d8",
+  "cv_scope": "all CV parameter hashes, TRAIN ids and fold groups checked; selection recomputed; no CV score reapplication",
+  "evaluation_role": "discovery_semantic_postrun_audit_v1",
+  "generated_holdouts_opened": false,
+  "max_abs_difference": 0.0,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "ordinary_fits": "reused with original numeric postrun audit; no duplicate refits",
+  "parity_invariant_comparisons": 231228,
+  "replayed_scores": 9629928,
+  "replayed_selected_banks": 21,
+  "source": {
+    "frozen_manifest_sha256": "a28e6271339c9b02c41a603cf7bf27a8d1ecb3dacfb32d460ad2c304f46853fb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/542b39eaf523e6b6a0f8e3db",
+    "snapshot_id": "542b39eaf523e6b6a0f8e3db",
+    "source_sha256": "2e31d7e88a58d6af13336094e277c95d8d0bbfe9e2013be1759d653c9ea9efe1"
+  },
+  "status": "complete_exploratory",
+  "verified_cv_banks": 108,
+  "workers": [
+    {
+      "config": {
+        "bytes": 1365,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v2/llama8b_computed_definition.json",
+        "sha256": "779664828aa8a1c426540ed5d3a151b63bfb889e7e62af8096a0460498a16638"
+      },
+      "cv_banks": 27,
+      "max_abs_difference": 0.0,
+      "replayed_scores": 2751408,
+      "results": {
+        "bytes": 94643,
+        "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/llama8b_computed_definition/results.json",
+        "sha256": "0680fdf8a33dfcdef346160d61015121f4e59593bb5066de8358c6f7ae835baa"
+      },
+      "selected_banks": 6
+    },
+    {
+      "config": {
+        "bytes": 1380,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v2/codellama34b_computed_definition.json",
+        "sha256": "a0468400a4e9b7e6bb4aacab3169c7ec1c519a297f5ed316c4d3f01be3d4e79e"
+      },
+      "cv_banks": 27,
+      "max_abs_difference": 0.0,
+      "replayed_scores": 1375704,
+      "results": {
+        "bytes": 47993,
+        "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/codellama34b_computed_definition/results.json",
+        "sha256": "37ace6f934c9ab59730c87b12f8daa49001b80535a01612daa883239463a681d"
+      },
+      "selected_banks": 3
+    },
+    {
+      "config": {
+        "bytes": 1367,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v2/source4096_computed_definition.json",
+        "sha256": "88c79edaa456cdf927db6ad34998ce469b2bfa1afdf9e62eada6e807366c099a"
+      },
+      "cv_banks": 27,
+      "max_abs_difference": 0.0,
+      "replayed_scores": 2751408,
+      "results": {
+        "bytes": 94704,
+        "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/source4096_computed_definition/results.json",
+        "sha256": "02a520d1fb11ae683dcc51c3982b661d951dd39f073e0054793bc1967e1ee0df"
+      },
+      "selected_banks": 6
+    },
+    {
+      "config": {
+        "bytes": 1367,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v2/source8192_computed_definition.json",
+        "sha256": "f353a824437446c1dab6f69bff1ac51e504d541434a7649d8c75fc940efc31e6"
+      },
+      "cv_banks": 27,
+      "max_abs_difference": 0.0,
+      "replayed_scores": 2751408,
+      "results": {
+        "bytes": 94694,
+        "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/source8192_computed_definition/results.json",
+        "sha256": "a926c019ebc49a0376d4604b1c8c61170f8bd2f25e4e7cf2c0230a1259e88475"
+      },
+      "selected_banks": 6
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "config_hash": "562c7ac6f94ad6233d0eb874e9beba4b53c50d809bca596bc31e3d9b0ea03645",
+  "evaluation_role": "discovery_semantic_control_report_v1",
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_computed_definition.json": {
+      "bytes": 1678659,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_computed_definition/results.json",
+      "sha256": "97eb0d0b7bc9e1cc2e26cf75c5282a7247284dc40aba0955f4d304ddcf4fd93f"
+    },
+    "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_computed_definition.json": {
+      "bytes": 2013063,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_computed_definition/results.json",
+      "sha256": "d8514050639b47df29c2699cc91d680379e9e8df7d59e2d8960c36150f1433e0"
+    },
+    "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_computed_definition.json": {
+      "bytes": 2182253,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_computed_definition/results.json",
+      "sha256": "5d0a63df5534075ad34a36db83484763a10847fcb1e662a42eb8ee11cb061abe"
+    },
+    "configs/binding/arithmetic_semantic_controls_20261031_v2/codellama34b_computed_definition.json": {
+      "bytes": 47993,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/codellama34b_computed_definition/results.json",
+      "sha256": "37ace6f934c9ab59730c87b12f8daa49001b80535a01612daa883239463a681d"
+    },
+    "configs/binding/arithmetic_semantic_controls_20261031_v2/llama8b_computed_definition.json": {
+      "bytes": 94643,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/llama8b_computed_definition/results.json",
+      "sha256": "0680fdf8a33dfcdef346160d61015121f4e59593bb5066de8358c6f7ae835baa"
+    },
+    "configs/binding/arithmetic_semantic_controls_20261031_v2/source4096_computed_definition.json": {
+      "bytes": 94704,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/source4096_computed_definition/results.json",
+      "sha256": "02a520d1fb11ae683dcc51c3982b661d951dd39f073e0054793bc1967e1ee0df"
+    },
+    "configs/binding/arithmetic_semantic_controls_20261031_v2/source8192_computed_definition.json": {
+      "bytes": 94694,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/source8192_computed_definition/results.json",
+      "sha256": "a926c019ebc49a0376d4604b1c8c61170f8bd2f25e4e7cf2c0230a1259e88475"
+    },
+    "prepared": {
+      "bytes": 11524,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/labels/results.json",
+      "sha256": "6252b0ceebe876e1b0b932373d5e64d91f8432913db60f0f3bc9da4ad6da7ae9"
+    }
+  },
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "paired_family_contrasts": [
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.04487324287850766,
+      "families": 72,
+      "lower": -0.08457987277159841,
+      "name": "llama8b",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.00015968856863632846
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.036217318784950575,
+      "families": 72,
+      "lower": -0.07085416879925047,
+      "name": "codellama34b",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0011108141783115863
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.10347029204173777,
+      "families": 72,
+      "lower": -0.15533229379791486,
+      "name": "source4096",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.047333376800422156
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.1040351036437354,
+      "families": 72,
+      "lower": -0.15566469769813543,
+      "name": "source8192",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.04772615733172597
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "hidden semantic preference minus matched source preference",
+      "delta": 0.05859704916323009,
+      "families": 72,
+      "lower": 0.021189686198510835,
+      "name": "llama8b",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.09471193001176174
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "hidden semantic preference minus matched source preference",
+      "delta": 0.06781778485878481,
+      "families": 72,
+      "lower": 0.03011479871411262,
+      "name": "codellama34b",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.10540613520712729
+    }
+  ],
+  "source": {
+    "frozen_manifest_sha256": "4150c6952ed65f368902355d84622c688658131f52e4f29a17fb4993a01394b4",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8f7e0d51b270fa36abf4c84c",
+    "snapshot_id": "8f7e0d51b270fa36abf4c84c",
+    "source_sha256": "87fbe8c030a2bb72320da2a477a97d52a2e95b1613be380aa570c974096ac47a"
+  },
+  "status": "complete_exploratory"
+}

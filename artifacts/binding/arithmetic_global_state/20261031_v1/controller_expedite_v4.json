@@ -1,0 +1,26 @@
+{
+  "command": [
+    "scontrol",
+    "update",
+    "JobId=487181",
+    "StartTime=now"
+  ],
+  "reason": "Finalize completed suite accounting after all seven cells and report passed; no new science work.",
+  "recorded_utc": "2026-11-01T02:14:43.933538+00:00",
+  "scientific_protocol_changed": false,
+  "source": {
+    "frozen_manifest_sha256": "a28e6271339c9b02c41a603cf7bf27a8d1ecb3dacfb32d460ad2c304f46853fb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/542b39eaf523e6b6a0f8e3db",
+    "snapshot_id": "542b39eaf523e6b6a0f8e3db",
+    "source_sha256": "2e31d7e88a58d6af13336094e277c95d8d0bbfe9e2013be1759d653c9ea9efe1"
+  },
+  "status": "updated_owned_controller",
+  "stderr": "",
+  "stdout": "",
+  "upstream": "487182",
+  "upstream_review": {
+    "bytes": 7165,
+    "path": "artifacts/binding/arithmetic_global_state/20261031_v1/report/results.json",
+    "sha256": "26b22818f0b260b2a5250d3f37ac1bc55e0955517c0a20928edb58dfcb54b833"
+  }
+}

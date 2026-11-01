@@ -39,6 +39,10 @@ ROOTS += list(SEMANTIC_ROOTS)
 ROOTS += [root + '/' + name for root in SEMANTIC_ROOTS for name in (
     'labels', 'llama8b_computed_definition', 'codellama34b_computed_definition',
     'source4096_computed_definition', 'source8192_computed_definition')]
+GLOBAL_ROOT = 'artifacts/binding/arithmetic_global_state/20261031_v1'
+ROOTS += [GLOBAL_ROOT] + [GLOBAL_ROOT + '/' + name for name in (
+    'cache', 'llama8b_width1024', 'llama8b_width4096', 'codellama34b_width1024',
+    'codellama34b_width8192', 'source_width1024', 'source_width4096', 'source_width8192')]
 MUTABLE = {'manifest.json', 'progress.json', 'jobs_live_v1.json', 'status_review_v1.json'}
 
 
@@ -104,7 +108,7 @@ def main():
             # Git cannot track children of the scratch-backed directory links.
             # Publish their immutable text through the existing lossless gzip
             # catalog, whose restore command recreates original artifact paths.
-            if path.suffix == '.jsonl' or relative.startswith(tuple(root + '/' for root in (NUMERIC_ROOT, GEOMETRY_ROOT, *SEMANTIC_ROOTS))):
+            if path.suffix == '.jsonl' or relative.startswith(tuple(root + '/' for root in (NUMERIC_ROOT, GEOMETRY_ROOT, GLOBAL_ROOT, *SEMANTIC_ROOTS))):
                 target = ROOT / 'reproducibility/compressed' / (name + '.gz')
                 target.parent.mkdir(parents=True, exist_ok=True)
                 with target.open('wb') as raw:
@@ -134,7 +138,9 @@ def main():
         mirror = folder / 'regression_sources'
         if mirror.exists():
             label = 'local' if '/arithmetic_local/' in relative else 'selection'
-            if '/arithmetic_semantic_controls/' in relative:
+            if '/arithmetic_global_state/' in relative:
+                filename = f'arithmetic_global_state_regression_{folder.name}.tar.gz'
+            elif '/arithmetic_semantic_controls/' in relative:
                 filename = f'arithmetic_semantic_controls_regression_{folder.name}.tar.gz'
             elif '/arithmetic_numeric_geometry/' in relative:
                 filename = f'arithmetic_numeric_geometry_regression_{folder.name}.tar.gz'

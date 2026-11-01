@@ -1,0 +1,140 @@
+{
+  "artifacts": {
+    "pdf": {
+      "bytes": 32873,
+      "path": "reports/binding/figures/arithmetic_semantic_controls_v3.pdf",
+      "sha256": "27b86adcbe4ddff335ec6ca8cab50bb57152d6070d80609e78f6b8c97273dcb7"
+    },
+    "png": {
+      "bytes": 148330,
+      "path": "reports/binding/figures/arithmetic_semantic_controls_v3.png",
+      "sha256": "afb126f3b4384025e756d552200d32be7be7af90ba40744779060e362f294c9c"
+    },
+    "svg": {
+      "bytes": 102012,
+      "path": "reports/binding/figures/arithmetic_semantic_controls_v3.svg",
+      "sha256": "df924698ecfce530c7125e4eb23db6fdd81733649964b3e0ce7367e734754453"
+    }
+  },
+  "contrasts": [
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.04487324287850766,
+      "families": 72,
+      "lower": -0.08457987277159841,
+      "name": "llama8b",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.00015968856863632846
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.036217318784950575,
+      "families": 72,
+      "lower": -0.07085416879925047,
+      "name": "codellama34b",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0011108141783115863
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.10347029204173777,
+      "families": 72,
+      "lower": -0.15533229379791486,
+      "name": "source4096",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.047333376800422156
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "alternate minus ordinary normalized MAE",
+      "delta": -0.1040351036437354,
+      "families": 72,
+      "lower": -0.15566469769813543,
+      "name": "source8192",
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.04772615733172597
+    }
+  ],
+  "inputs": {
+    "codellama34b_alternate": {
+      "bytes": 47993,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/codellama34b_computed_definition/results.json",
+      "sha256": "37ace6f934c9ab59730c87b12f8daa49001b80535a01612daa883239463a681d"
+    },
+    "codellama34b_ordinary": {
+      "bytes": 1678659,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_computed_definition/results.json",
+      "sha256": "97eb0d0b7bc9e1cc2e26cf75c5282a7247284dc40aba0955f4d304ddcf4fd93f"
+    },
+    "config": {
+      "bytes": 3655,
+      "path": "configs/binding/arithmetic_semantic_controls_20261031_v2/report.json",
+      "sha256": "bb5c30bf5869b11d379c58375a08966d207883f281b3af2222c809009b9f631c"
+    },
+    "llama8b_alternate": {
+      "bytes": 94643,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/llama8b_computed_definition/results.json",
+      "sha256": "0680fdf8a33dfcdef346160d61015121f4e59593bb5066de8358c6f7ae835baa"
+    },
+    "llama8b_ordinary": {
+      "bytes": 2013063,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_computed_definition/results.json",
+      "sha256": "d8514050639b47df29c2699cc91d680379e9e8df7d59e2d8960c36150f1433e0"
+    },
+    "report": {
+      "bytes": 5779,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/report/results.json",
+      "sha256": "89985cd34e1139873b1d1026cca2e58cf49395c3a2a52a4bdb35e0f3a7fb4c19"
+    },
+    "source4096_alternate": {
+      "bytes": 94704,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/source4096_computed_definition/results.json",
+      "sha256": "02a520d1fb11ae683dcc51c3982b661d951dd39f073e0054793bc1967e1ee0df"
+    },
+    "source4096_ordinary": {
+      "bytes": 2182253,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_computed_definition/results.json",
+      "sha256": "5d0a63df5534075ad34a36db83484763a10847fcb1e662a42eb8ee11cb061abe"
+    },
+    "source8192_alternate": {
+      "bytes": 94694,
+      "path": "artifacts/binding/arithmetic_semantic_controls/20261031_v2/source8192_computed_definition/results.json",
+      "sha256": "a926c019ebc49a0376d4604b1c8c61170f8bd2f25e4e7cf2c0230a1259e88475"
+    },
+    "source8192_ordinary": {
+      "bytes": 2182253,
+      "path": "artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_computed_definition/results.json",
+      "sha256": "5d0a63df5534075ad34a36db83484763a10847fcb1e662a42eb8ee11cb061abe"
+    }
+  },
+  "limitation": "Existing adaptive DEV; no native-semantic preference or causal-use conclusion",
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "scalar_mae": [
+    [
+      3.8412241793317414,
+      3.7177422400935414
+    ],
+    [
+      3.526796873937568,
+      3.452015964766733
+    ],
+    [
+      4.937905959234556,
+      4.434114665168182
+    ],
+    [
+      4.942864289620989,
+      4.43511184835301
+    ]
+  ],
+  "script": {
+    "bytes": 5059,
+    "path": "/work/jvl210002/migration/codecue/scripts/209_binding_semantic_control_figure.py",
+    "sha256": "7c0e64f659ad8f038bd4c3a922e2afe74ecd273a918cf64c9c6d190fd322ffbc"
+  },
+  "status": "rendered_existing_results"
+}

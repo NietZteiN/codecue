@@ -1,0 +1,61 @@
+{
+  "declared_plan": "reports/binding/arithmetic_global_state_plan_v1.md",
+  "declared_plan_sha256": "b8c7ee0cacb6df609367f0d6ae2165816457e3db742478f054eca8b402818fd9",
+  "evaluation_role": "discovery_global_state_report_v1",
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "report": "reports/binding/arithmetic_global_state_findings_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_global_state/20261031_v1/report",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "workers": [
+    {
+      "bytes": 1292,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/llama8b_width1024.json",
+      "sha256": "75a16aec8d7f73348adc18026c73fe642c4c7d7fc44ac05e271c7e1d1a5d7981"
+    },
+    {
+      "bytes": 1292,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/llama8b_width4096.json",
+      "sha256": "0325a2abf576e98bc866394e7872fcc56534461527a168f6e912bd7aa781a12e"
+    },
+    {
+      "bytes": 1307,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/codellama34b_width1024.json",
+      "sha256": "9a09e6dcc9667e32bec8393d2a221e36bb525f9e996e59a862cfeade0156629e"
+    },
+    {
+      "bytes": 1307,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/codellama34b_width8192.json",
+      "sha256": "1199a63d4fac7a20fb4c8f4a3ae43db2ab7da754c3051b26e3aee9bb5fbe9524"
+    },
+    {
+      "bytes": 1290,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/source_width1024.json",
+      "sha256": "191235165bd28d2fbbcd9cbe965e34302564c3c9a8d46c475a0779d5ee044686"
+    },
+    {
+      "bytes": 1290,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/source_width4096.json",
+      "sha256": "8011f2d6fca00098925251cf8113b67b3520cf1e91aeaa571c260ca8dd50498f"
+    },
+    {
+      "bytes": 1290,
+      "path": "configs/binding/arithmetic_global_state_20261031_v1/source_width8192.json",
+      "sha256": "3df7918b51e4746fd447c0a6a7bc4f6ea13570cb2373cfb75507b608d36c74e2"
+    }
+  ]
+}

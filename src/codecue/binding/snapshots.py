@@ -71,7 +71,10 @@ SCRIPT_NAMES = ('87_binding_preflight.py', '88_binding_pipeline.py', '89_binding
                 '202_binding_numeric_geometry_setup.py',
                 '203_binding_semantic_controls.py',
                 '204_binding_semantic_controls_suite.py',
-                '205_binding_semantic_controls_setup.py')
+                '205_binding_semantic_controls_setup.py',
+                '206_binding_global_state.py',
+                '207_binding_global_state_suite.py',
+                '208_binding_global_state_setup.py')
 
 
 def source_files(root):

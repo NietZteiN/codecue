@@ -1,0 +1,196 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "cache": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487158",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:01:01.113538+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_width1024": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487167",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:02:16.411540+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_width8192": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487168",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:02:17.175319+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_width1024": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487165",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:02:14.863082+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_width4096": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487166",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:02:15.659783+00:00",
+        "time_min": null
+      }
+    ],
+    "report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487182",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:12:30.985081+00:00",
+        "time_min": null
+      }
+    ],
+    "semantic_audit": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487153",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T01:58:09.132172+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487138",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T01:44:16.356204+00:00",
+        "time_min": null
+      }
+    ],
+    "source_width1024": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487169",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:02:17.928960+00:00",
+        "time_min": null
+      }
+    ],
+    "source_width4096": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487170",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:02:18.684286+00:00",
+        "time_min": null
+      }
+    ],
+    "source_width8192": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "487171",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T02:02:19.425323+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "a6c5765ecc7ea8dc8c7aa1e44bcce2088eece167ff7cc7796190dd740f43e141",
+  "evaluation_role": "discovery_global_state_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "recorded_utc": "2026-11-01T02:14:51.222561+00:00",
+  "scheduler_errors": [],
+  "source": {
+    "frozen_manifest_sha256": "a28e6271339c9b02c41a603cf7bf27a8d1ecb3dacfb32d460ad2c304f46853fb",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/542b39eaf523e6b6a0f8e3db",
+    "snapshot_id": "542b39eaf523e6b6a0f8e3db",
+    "source_sha256": "2e31d7e88a58d6af13336094e277c95d8d0bbfe9e2013be1759d653c9ea9efe1"
+  },
+  "stages": {
+    "cache": {
+      "job_id": "487158",
+      "state": "complete"
+    },
+    "codellama34b_width1024": {
+      "job_id": "487167",
+      "state": "complete"
+    },
+    "codellama34b_width8192": {
+      "job_id": "487168",
+      "state": "complete"
+    },
+    "llama8b_width1024": {
+      "job_id": "487165",
+      "state": "complete"
+    },
+    "llama8b_width4096": {
+      "job_id": "487166",
+      "state": "complete"
+    },
+    "report": {
+      "job_id": "487182",
+      "state": "complete"
+    },
+    "semantic_audit": {
+      "job_id": "487153",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "487138",
+      "state": "complete"
+    },
+    "source_width1024": {
+      "job_id": "487169",
+      "state": "complete"
+    },
+    "source_width4096": {
+      "job_id": "487170",
+      "state": "complete"
+    },
+    "source_width8192": {
+      "job_id": "487171",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}
