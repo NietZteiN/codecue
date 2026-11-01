@@ -1,6 +1,6 @@
 # Automatic experiment log
 
-Updated 2026-10-30T00:11:03.095068+00:00. 991 indexed records: 388 analysis, 69 dataset, 449 job, 85 run.
+Updated 2026-11-01T21:11:15.455626+00:00. 1499 indexed records: 671 analysis, 74 dataset, 659 job, 95 run.
 
 Execution status, audit status and scientific reliability are separate. A completed/audited experiment can have a failed reliability gate. Full results remain in their original artifacts. This index reads metadata only; sealed final/extrapolation outcomes and raw prediction/activation payloads are excluded.
 
@@ -8,311 +8,311 @@ Execution status, audit status and scientific reliability are separate. A comple
 
 | Kind | Execution | Stage | Model | Audit | Scientific gate | Artifact |
 |---|---|---|---|---|---|---|
-| analysis | passed | review | — | — | — | [interactive_controls_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v3/interactive_controls_review_v1.json) |
-| analysis | passed | review | — | — | — | [verification_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v3/verification_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v3/publication_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [daytime_check_review_20261029_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v3/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/daytime_check_review_20261029_v1.json) |
-| analysis | complete_audited | review | — | — | — | [format_ceiling_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v3/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/format_ceiling_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v3/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/completion_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v3/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/comparison_v1.json) |
-| analysis | superseded | review | — | — | — | [superseded_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v1/superseded_review_v1.json) |
-| analysis | passed | review | — | — | — | [verification_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v2/verification_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v2/publication_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [daytime_check_review_20261029_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v2/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/daytime_check_review_20261029_v1.json) |
-| analysis | complete_audited | review | — | — | — | [format_ceiling_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v2/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/format_ceiling_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v2/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/completion_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v2/input_snapshot/artifacts/binding/old_value_overnight/20261028_v1/comparison_v1.json) |
-| analysis | complete_audited | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/master_report/20261029_v1/publication_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [daytime_check_review_20261029_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/daytime_check_review_20261029_v1.json) |
-| analysis | complete | review | — | — | — | [morning_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/morning_review_v1.json) |
-| analysis | passed | review | — | — | — | [checker_auxiliary_failure_build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/checker_auxiliary_failure_build_review_v1.json) |
-| analysis | passed | review | — | — | — | [format_ceiling_verification_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/format_ceiling_verification_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [format_ceiling_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/format_ceiling_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [postrun_followup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/postrun_followup_review_v1.json) |
-| analysis | passed | review | — | — | — | [logging_recovery_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/logging_recovery_review_v1.json) |
-| analysis | passed | review | — | — | — | [postrun_integrity_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/postrun_integrity_review_v1.json) |
-| analysis | needs_attention | review | — | — | — | [postrun_logging_timeout_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/postrun_logging_timeout_review_v1.json) |
-| analysis | passed | review | — | — | — | [logging_timeout_build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/logging_timeout_build_review_v1.json) |
-| analysis | passed | review | — | — | — | [postrun_diagnostics_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/postrun_diagnostics_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/completion_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [readiness_completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/readiness_completion_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/completion_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/comparison_v1.json) |
-| run | complete | checkpoint_suite | codellama/CodeLlama-34b-Instruct-hf | passed | failed | [checkpoint_suite](/work/jvl210002/migration/codecue/reports/binding/old_value_codellama34b_v1.md) |
-| analysis | complete_audited | review | codellama/CodeLlama-34b-Instruct-hf | — | failed | [review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/codellama34b/review_v1.json) |
-| analysis | passed_setup_and_live_check | review | — | — | — | [debug_pass_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/debug_pass_review_v1.json) |
-| run | complete | checkpoint_suite | meta-llama/Llama-3.1-8B-Instruct | passed | failed | [checkpoint_suite](/work/jvl210002/migration/codecue/reports/binding/old_value_llama8b_v1.md) |
-| analysis | complete_audited | review | meta-llama/Llama-3.1-8B-Instruct | — | failed | [review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/llama8b/review_v1.json) |
-| analysis | passed | review | — | — | — | [queue_handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/queue_handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [monitor_build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/monitor_build_review_v1.json) |
-| analysis | passed | review | — | — | — | [publisher_build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/publisher_build_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/software_validation_review_v1.json) |
-| analysis | passed | review | — | — | — | [build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/build_review_v1.json) |
-| analysis | passed | review | — | — | — | [source_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/source_review_v1.json) |
-| dataset | recorded | — | — | — | — | [sources.manifest.json](/work/jvl210002/migration/codecue/artifacts/binding/old_value_overnight/20261028_v1/sources.manifest.json) |
-| analysis | passed | review | — | — | — | [completion_followup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/completion_followup_review_v1.json) |
-| analysis | passed_source_and_synthetic_review | review | — | — | — | [independent_build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/independent_build_review_v1.json) |
-| analysis | passed | review | — | — | — | [publisher_build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/publisher_build_review_v1.json) |
-| analysis | unknown | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/comparison_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/publication_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/completion_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [grammar_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/analysis/grammar_replay_review_v1.json) |
-| analysis | complete_exploratory | analysis | — | passed | — | [analysis](/work/jvl210002/migration/codecue/reports/binding/identity_grammar_findings_v1.md) |
-| analysis | submitted_with_automatic_closure | review | — | — | — | [queue_handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/queue_handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [submission_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/submission_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [target_preflight_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/target_preflight_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/software_validation_review_v1.json) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/submission_review_v1.json) |
-| analysis | passed | review | — | — | — | [build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/build_review_v1.json) |
-| analysis | prospective_source_only_review | review | — | — | — | [prospective_review_notes_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/identity_grammar/20261028_v1/prospective_review_notes_v1.json) |
-| analysis | passed | review | — | — | — | [independent_findings_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/independent_findings_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_index_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/completion_index_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_followup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/completion_followup_review_v1.json) |
-| analysis | unknown | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/comparison_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/publication_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/completion_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [parameter_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json) |
-| analysis | ready_and_running | review | — | — | — | [queue_handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/queue_handoff_review_v1.json) |
-| analysis | complete_exploratory | analysis | meta-llama/Llama-3.1-8B-Instruct | passed | — | [readouts](/work/jvl210002/migration/codecue/reports/binding/direct_identity_llama8b_v1.md) |
-| analysis | passed | review | — | — | — | [parameter_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json) |
-| analysis | complete_exploratory | analysis | codellama/CodeLlama-34b-Instruct-hf | passed | — | [readouts](/work/jvl210002/migration/codecue/reports/binding/direct_identity_codellama34b_v1.md) |
-| analysis | passed | review | — | — | — | [submission_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/submission_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/software_validation_review_v1.json) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/submission_review_v1.json) |
-| analysis | passed | review | — | — | — | [build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/build_review_v1.json) |
-| analysis | passed | review | — | — | — | [target_preflight_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/direct_identity/20261028_v1/target_preflight_review_v1.json) |
-| analysis | passed | review | — | — | — | [independent_findings_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/independent_findings_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_index_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/completion_index_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_followup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/completion_followup_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/completion_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/publication_review_v1.json) |
-| analysis | passed | review | — | — | — | [prediction_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/analysis/prediction_replay_review_v1.json) |
-| analysis | complete_exploratory | analysis | — | passed | — | [analysis](/work/jvl210002/migration/codecue/reports/binding/diversity_identity_review_findings_v1.md) |
-| analysis | ready_and_running | review | — | — | — | [queue_handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/queue_handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [submission_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/submission_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/software_validation_review_v1.json) |
-| analysis | passed | review | — | — | — | [independent_findings_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/independent_findings_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_followup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/completion_followup_review_v1.json) |
-| analysis | complete | analysis | codellama/CodeLlama-34b-Instruct-hf | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture) |
-| analysis | passed_interim_llama8b_only | review | — | — | — | [interim_llama8b_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/interim_llama8b_review_v1.json) |
-| analysis | passed | review | — | — | — | [independent_execution_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/independent_execution_review_v1.json) |
-| analysis | unknown | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/comparison_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/publication_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/completion_logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [parameter_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json) |
-| analysis | updated | review | — | — | — | [validation_eligibility_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/validation_eligibility_review_v1.json) |
-| analysis | corrected | review | — | — | — | [readiness_selector_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/readiness_selector_review_v1.json) |
-| analysis | complete_exploratory | analysis | codellama/CodeLlama-34b-Instruct-hf | passed | — | [readouts](/work/jvl210002/migration/codecue/reports/binding/diversity_decoding_codellama34b_v1.md) |
-| analysis | passed | review | — | — | — | [build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/build_review_v1.json) |
-| analysis | passed | review | — | — | — | [identity_source_preflight_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_identity_review/20261028_v1/identity_source_preflight_review_v1.json) |
-| analysis | passed | review | — | — | — | [execution_health_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/execution_health_review_v1.json) |
-| run | complete | capture | codellama/CodeLlama-34b-Instruct-hf | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/codellama34b/capture) |
-| analysis | passed | review | — | — | — | [parameter_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json) |
-| analysis | complete_exploratory | analysis | meta-llama/Llama-3.1-8B-Instruct | passed | — | [readouts](/work/jvl210002/migration/codecue/reports/binding/diversity_decoding_llama8b_v1.md) |
-| analysis | ready_and_queued | review | — | — | — | [queue_handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/queue_handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [submission_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/submission_logging_review_v1.json) |
-| analysis | complete | analysis | meta-llama/Llama-3.1-8B-Instruct | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture) |
-| analysis | corrected | review | — | — | — | [readiness_selector_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/readiness_selector_review_v1.json) |
-| analysis | passed_source_availability | review | — | — | — | [source_availability_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/source_availability_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/regression_archive_review_v1.json) |
-| run | complete | capture | meta-llama/Llama-3.1-8B-Instruct | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/llama8b/capture) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/software_validation_review_v1.json) |
-| analysis | passed | review | — | — | — | [prepared_memory_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/prepared_memory_review_v1.json) |
-| analysis | passed | review | — | — | — | [target_preflight_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/target_preflight_review_v1.json) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/submission_review_v1.json) |
-| analysis | passed | review | — | — | — | [build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/diversity_decoding/20261028_v1/build_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [resource_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/resource_review_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/publication_review_v1.json) |
-| analysis | passed | review | — | — | — | [independent_posthoc_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/independent_posthoc_review_v1.json) |
-| analysis | passed | review | — | — | — | [figure_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/figure_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/software_validation_review_v1.json) |
-| analysis | passed | review | — | — | — | [source_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_diversity/20261028_v1/source_review_v1.json) |
-| dataset | recorded | — | — | — | — | [sources.manifest.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_diversity/20261028_v1/sources.manifest.json) |
-| analysis | passed | review | — | — | — | [prediction_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/analysis/prediction_replay_review_v1.json) |
-| analysis | complete_exploratory | analysis | — | passed | — | [analysis](/work/jvl210002/migration/codecue/reports/binding/schedule_score_review_findings_v1.md) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/submission_review_v1.json) |
-| analysis | passed | review | — | — | — | [build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_followup/20261028_v1/build_review_v1.json) |
-| analysis | passed | review | — | — | — | [independent_execution_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/independent_execution_review_v1.json) |
-| analysis | unknown | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/comparison_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/publication_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_followup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/completion_followup_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [completion_logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/completion_logging_review_v1.json) |
-| analysis | complete | analysis | meta-llama/Llama-3.1-8B-Instruct | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture) |
-| analysis | complete | analysis | codellama/CodeLlama-34b-Instruct-hf | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture) |
-| analysis | passed | review | — | — | — | [parameter_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/codellama34b/readouts/parameter_replay_review_v1.json) |
-| analysis | complete_exploratory | analysis | codellama/CodeLlama-34b-Instruct-hf | passed | — | [readouts](/work/jvl210002/migration/codecue/reports/binding/schedule_decoding_codellama34b_v1.md) |
-| run | complete | capture | codellama/CodeLlama-34b-Instruct-hf | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/codellama34b/capture) |
-| analysis | passed | review | — | — | — | [parameter_replay_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/llama8b/readouts/parameter_replay_review_v1.json) |
-| analysis | complete_exploratory | analysis | meta-llama/Llama-3.1-8B-Instruct | passed | — | [readouts](/work/jvl210002/migration/codecue/reports/binding/schedule_decoding_llama8b_v1.md) |
-| run | complete | capture | meta-llama/Llama-3.1-8B-Instruct | passed | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/llama8b/capture) |
-| analysis | ready_and_queued | review | — | — | — | [queue_handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/queue_handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/logging_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/software_validation_review_v1.json) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/submission_review_v1.json) |
-| analysis | passed | review | — | — | — | [build_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/build_review_v1.json) |
-| analysis | passed | review | — | — | — | [target_preflight_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/target_preflight_review_v1.json) |
-| analysis | passed_source_availability | review | — | — | — | [source_availability_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/schedule_decoding/20261028_v1/source_availability_review_v1.json) |
-| analysis | complete_audited | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/logging_review_v1.json) |
-| analysis | completed_without_retry | review | — | — | — | [backfill_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/backfill_review_v1.json) |
-| analysis | passed | review | — | — | — | [resource_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/resource_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [figure_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/figure_review_v1.json) |
-| analysis | complete_metadata_publication | review | — | — | — | [comparison_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/comparison_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/publication_review_v1.json) |
-| analysis | corrected_before_publication | review | — | — | — | [publication_setup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/publication_setup_review_v1.json) |
-| analysis | complete_audited | review | codellama/CodeLlama-34b-Instruct-hf | — | failed | [review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/codellama34b/review_v1.json) |
-| analysis | passed | review | — | — | — | [independent_execution_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/independent_execution_review_v1.json) |
-| run | complete | checkpoint_suite | codellama/CodeLlama-34b-Instruct-hf | passed | failed | [checkpoint_suite](/work/jvl210002/migration/codecue/reports/binding/computation_routing_codellama34b_v1.md) |
-| analysis | complete_audited | review | meta-llama/Llama-3.1-8B-Instruct | — | failed | [review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/llama8b/review_v1.json) |
-| analysis | passed_source_design_handoff | review | — | — | — | [source_handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/source_handoff_review_v1.json) |
-| run | complete | checkpoint_suite | meta-llama/Llama-3.1-8B-Instruct | passed | failed | [checkpoint_suite](/work/jvl210002/migration/codecue/reports/binding/computation_routing_llama8b_v1.md) |
-| analysis | passed | review | — | — | — | [schedule_preparation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/schedule_preparation_review_v1.json) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/submission_review_v1.json) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/software_validation_review_v1.json) |
-| analysis | passed | review | — | — | — | [schedule_source_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/relationships/schedule_source_review_v1.json) |
-| dataset | recorded | — | — | — | — | [schedule_sources_v1.manifest.json](/work/jvl210002/migration/codecue/artifacts/binding/relationships/schedule_sources_v1.manifest.json) |
-| analysis | corrected_before_source_publication | review | — | — | — | [schedule_setup_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/schedule_setup_review_v1.json) |
-| analysis | passed | review | — | — | — | [source_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/source_review_v1.json) |
-| dataset | recorded | — | — | — | — | [sources.manifest.json](/work/jvl210002/migration/codecue/artifacts/binding/computation_routing/20261028_v1/sources.manifest.json) |
-| analysis | complete_exploratory | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/handoff_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_archive_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/regression_archive_review_v1.json) |
-| analysis | passed | review | — | — | — | [postrun_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/postrun_review_v1.json) |
-| analysis | passed | review | — | — | — | [logging_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/logging_review_v1.json) |
-| analysis | complete_exploratory | review | — | — | — | [continuation_completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/continuation_completion_review_v1.json) |
-| analysis | passed | review | — | — | — | [behavior_link_findings_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/behavior_link_findings_review_v1.json) |
-| analysis | complete_exploratory | analysis | — | passed | — | [20261028_score_behavior_v1](/work/jvl210002/migration/codecue/reports/binding/overnight_score_behavior_v1.md) |
-| analysis | passed | review | — | — | — | [software_validation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/software_validation_review_v1.json) |
-| analysis | submitted | review | — | — | — | [continuation_submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/continuation_submission_review_v1.json) |
-| analysis | passed | review | — | — | — | [publication_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/publication_review_v1.json) |
-| analysis | passed | review | — | — | — | [figure_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/figure_review_v1.json) |
-| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261027_v1/suite/status_review_v1.json) |
-| analysis | passed | review | — | — | — | [independent_completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/independent_completion_review_v1.json) |
-| analysis | passed | review | — | — | — | [resource_accounting_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/resource_accounting_review_v1.json) |
-| analysis | passed | review | — | — | — | [accounting_refresh_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261028_completion_v1/accounting_refresh_review_v1.json) |
-| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261027_v1/suite/results_review_v1.json) |
-| analysis | complete_exploratory | review | — | — | — | [morning_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/overnight_relationships/20261027_v1/suite/morning_review_v1.json) |
-| analysis | complete_exploratory | analysis | codellama/CodeLlama-34b-Instruct-hf | passed | — | [readouts_computed_roots](/work/jvl210002/migration/codecue/reports/binding/overnight_20261027_codellama34b_computed_roots.md) |
-| analysis | complete_exploratory | analysis | meta-llama/Llama-3.1-8B-Instruct | passed | — | [readouts_computed_roots](/work/jvl210002/migration/codecue/reports/binding/overnight_20261027_llama8b_computed_roots.md) |
-| analysis | complete_exploratory | analysis | codellama/CodeLlama-34b-Instruct-hf | passed | — | [readouts_query_twins](/work/jvl210002/migration/codecue/reports/binding/overnight_20261027_codellama34b_query_twins.md) |
+| analysis | running | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/suite/status_review_v1.json) |
+| analysis | export_corrected_before_git_commit | review | — | — | — | [publication_correction_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/publication_correction_v1.json) |
+| analysis | audited_figure | review | — | — | — | [figure_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/figure_review_v1.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/qa/regression_review.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_capture_preparation/20261101_v1/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_capture_preparation/20261101_v1/results.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | superseded_never_submitted | review | — | — | — | [superseded_before_submission_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v1/superseded_before_submission_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired/20261101_v1/suite/status_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired/20261101_v1/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired/20261101_v1/report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired/20261101_v1/report/results.json) |
+| analysis | registered | analysis | — | — | — | [codellama34b_calibration](/scratch/juno/jvl210002/codecue/arithmetic_paired/20261101_v1/codellama34b_calibration) |
+| analysis | registered | analysis | — | — | — | [llama8b_calibration](/scratch/juno/jvl210002/codecue/arithmetic_paired/20261101_v1/llama8b_calibration) |
+| dataset | recorded | — | — | — | — | [paired_sources.manifest.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired/20261101_v1/paired_sources.manifest.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired/20261101_v1/qa/regression_review.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/suite/status_review_v1.json) |
+| analysis | rendered_existing_results | review | — | — | — | [strata_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/strata_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/report/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/semantic_audit/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/semantic_audit/results.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/qa/regression_review.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | rendered_existing_results | review | — | — | — | [semantic_figure_review_v3.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/semantic_figure_review_v3.json) |
+| analysis | rendered_existing_results | review | — | — | — | [semantic_figure_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_global_state/20261031_v1/semantic_figure_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/suite/status_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/report/results.json) |
+| analysis | regression_and_independent_labels_passed_fits_released | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/handoff_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/source_cache_view/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/source_cache_view/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/codellama34b_cache_view/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/codellama34b_cache_view/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/llama8b_cache_view/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/llama8b_cache_view/results.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/qa/regression_review.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | submitted_regression_gate | review | — | — | — | [launch_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v2/launch_review_v1.json) |
+| analysis | superseded_before_submission | review | — | — | — | [setup_superseded_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_semantic_controls/20261031_v1/setup_superseded_review_v1.json) |
+| analysis | reviewed_scoped_primary_sources | review | — | — | — | [probing_methods_20261031_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/probing_literature_review_20261031_v1.md) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_geometry/20261031_v1/suite/status_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_geometry/20261031_v1/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_geometry/20261031_v1/report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_geometry/20261031_v1/report/results.json) |
+| analysis | regression_passed_science_released | review | — | — | — | [handoff_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_geometry/20261031_v1/handoff_review_v1.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | submitted_regression_gate | review | — | — | — | [launch_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_geometry/20261031_v1/launch_review_v1.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_geometry/20261031_v1/qa/regression_review.json) |
+| analysis | planned_not_submitted | review | — | — | — | [planning_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_next_runs/20261031_v1/planning_review_v1.json) |
+| analysis | planned_not_submitted | review | — | — | — | [query_scope_design_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_next_runs/20261031_v1/query_scope_design_review_v1.json) |
+| analysis | planned_not_submitted | review | — | — | — | [draft_clarification_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_next_runs/20261031_v1/draft_clarification_review_v1.json) |
+| analysis | passed | review | — | — | — | [operations_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_audit/operations_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [postrun_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_review_v1.json) |
+| analysis | passed | review | — | — | — | [completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/postrun_audit/completion_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/suite/status_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/report/results.json) |
+| analysis | passed | review | — | — | — | [storage_publication_restore_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/storage_publication_restore_review_v1.json) |
+| analysis | relocated_verified | review | — | — | — | [storage_relocation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/storage_relocation_review_v1.json) |
+| analysis | recovered_verified | review | — | — | — | [storage_recovery_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/storage_recovery_review_v1.json) |
+| analysis | selection_locked | review | — | — | — | [width64_selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/saved_work_prefix/llama8b_root_definition/width64_selection_review_v1.json) |
+| analysis | selection_locked | review | — | — | — | [width256_selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/saved_work_prefix/llama8b_root_definition/width256_selection_review_v1.json) |
+| analysis | selection_locked | review | — | — | — | [width256_selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_root_definition/width256_selection_review_v1.json) |
+| analysis | selection_locked | review | — | — | — | [width64_selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_root_definition/width64_selection_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_cache/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/source_cache/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_cache/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/codellama34b_cache/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/llama8b_cache/results.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_numeric_exploration/20261031_v1/qa/regression_review.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_diagnostics/20261031_v1/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_diagnostics/20261031_v1/completion_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [render_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_diagnostics/20261031_v1/render_review_v1.json) |
+| analysis | ready_exploratory | review | — | — | — | [protocol_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_diagnostics/20261031_v1/protocol_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/suite/status_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/state_report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/state_report/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/compose/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/compose/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/capacity/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/capacity/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/numeric/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/numeric/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/binding/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/binding/results.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/numeric/selection_review_v1.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/binding/selection_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/capacity/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/capacity/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/compose/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/compose/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/numeric/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/numeric/results.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/numeric/selection_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/binding/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/binding/results.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/binding/selection_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/audit_report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/audit_report/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/audit/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [summary_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/codellama34b/audit/summary_review_v1.json) |
+| analysis | validated_and_released | review | — | — | — | [validated_release_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/suite/validated_release_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/audit/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [summary_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/llama8b/audit/summary_review_v1.json) |
+| analysis | needs_attention | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v1/suite/status_review_v1.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/qa/regression_review.json) |
+| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/suite/submission_review_v1.json) |
+| analysis | needs_attention | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v1/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_snapshot_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/completion_snapshot_review_v1.json) |
+| analysis | passed | review | — | — | — | [local_integrity_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v2/local_integrity_review_v1.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | superseded_before_state_analysis | review | — | — | — | [superseded_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_state_followup/20261030_v1/superseded_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/suite/status_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/codellama34b/probes/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/codellama34b/probes/results.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/codellama34b/probes/selection_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/llama8b/probes/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/llama8b/probes/results.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/llama8b/probes/selection_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/codellama34b/behavior/completion_manifest_v1.json) |
+| run | registered | behavior | codellama/CodeLlama-34b-Instruct-hf | — | — | [behavior](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/codellama34b/behavior) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/llama8b/behavior/completion_manifest_v1.json) |
+| run | registered | behavior | meta-llama/Llama-3.1-8B-Instruct | — | — | [behavior](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/llama8b/behavior) |
+| run | complete | capture | codellama/CodeLlama-34b-Instruct-hf | — | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/codellama34b/capture) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/codellama34b/capture/completion_manifest_v1.json) |
+| run | complete | capture | meta-llama/Llama-3.1-8B-Instruct | — | — | [capture](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/llama8b/capture) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/llama8b/capture/completion_manifest_v1.json) |
+| analysis | validated_and_released | review | — | — | — | [release_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/suite/release_review_v1.json) |
+| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/submission_review_v1.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | complete_exploratory | review | — | — | — | [figure_layout_review_v2.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/figure_layout_review_v2.json) |
+| analysis | complete_exploratory | review | — | — | — | [findings_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/findings_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b/results.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b/selection_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b/results.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b/selection_review_v1.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/qa/regression_review.json) |
+| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/suite/submission_review_v1.json) |
+| analysis | publication_blocked_after_cv | review | — | — | — | [publication_guard_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/publication_guard_review_v1.json) |
+| analysis | passed | review | — | — | — | [cache_verification_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/cache_verification_review_v1.json) |
+| analysis | verified_cache_inventory | review | — | — | — | [codellama34b_cv_reuse_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b_cv_reuse_review_v1.json) |
+| analysis | verified_cache_inventory | review | — | — | — | [llama8b_cv_reuse_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b_cv_reuse_review_v1.json) |
+| dataset | recorded | — | — | — | — | [sources.manifest.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/sources.manifest.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/submission_review_v1.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/codellama34b/selection_review_v1.json) |
+| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/llama8b/selection_review_v1.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/qa/regression_review.json) |
+| analysis | passed | review | — | — | — | [monitor_after_60_review.json](/work/jvl210002/migration/codecue/artifacts/binding/operations/20261030_debug_v1/monitor_after_60_review.json) |
+| analysis | passed | review | — | — | — | [monitor_after_30_review.json](/work/jvl210002/migration/codecue/artifacts/binding/operations/20261030_debug_v1/monitor_after_30_review.json) |
 
 ## Jobs
 
 | Job | Name | Status | Exit | Partition |
 |---|---|---|---|---|
-| 483374 | codecue_repository_export | complete | 0 | normal |
-| 481752 | oldvalue-log-recovery-v1 | complete | 0 | dev |
-| 481724 | oldvalue-watch-b69ced9ff61d | complete | 0 | dev,normal |
-| 481718 | oldvalue-watch-df7ed3649934 | complete | 0 | dev,normal |
-| 481709 | oldvalue-watch-527ef1100787 | complete | 0 | dev,normal |
-| 481708 | oldvalue-watch-start | complete | 0 | dev,normal |
-| 481707 | oldvalue-morning | complete | 0 | dev,normal |
-| 481706 | oldvalue-publication | complete | 0 | dev,normal |
-| 481705 | oldvalue-codellama34b_behavior | complete | 0 | h100,h200 |
-| 481704 | oldvalue-llama8b_behavior | complete | 0 | dev-a30,a30,h100,h200 |
-| 481694 | oldvalue-codellama34b_preflight | complete | 0 | dev,normal |
-| 481693 | oldvalue-llama8b_preflight | complete | 0 | dev,normal |
-| 481692 | oldvalue-regression | complete | 0 | dev,normal |
-| 481642 | binding-grammar-finish | complete | 0 | dev,normal |
-| 481635 | binding-grammar-scores | complete | 0 | dev,normal |
-| unassigned | binding-grammar-scores | submission_failed | 1 | dev,normal |
-| 481633 | binding-grammar-qa | complete | 0 | dev,normal |
-| 481552 | direct-identity-review-publication | complete | 0 | dev,normal |
-| 481541 | direct-identity-codellama34b | complete | 0 | dev,normal |
-| 481540 | direct-identity-llama8b | complete | 0 | dev,normal |
-| 481539 | direct-identity-regression | complete | 0 | dev,normal |
-| 481474 | diversity-identity-finish | complete | 0 | dev,normal |
-| 481458 | diversity-identity-analysis | complete | 0 | dev,normal |
-| 481457 | diversity-identity-regression | complete | 0 | dev |
-| 481436 | diversity-review-publication | complete | 0 | dev,normal |
-| 481415 | diversity-codellama34b-readouts | complete | 0 | dev,normal |
-| 481414 | diversity-codellama34b-capture | complete | 0 | h100,h200 |
-| 481413 | diversity-llama8b-readouts | complete | 0 | dev,normal |
-| 481412 | diversity-llama8b-capture | complete | 0 | dev-a30,a30,h100,h200 |
-| 481411 | diversity-regression | complete | 0 | dev,normal |
-| 481410 | diversity-codellama34b-prepare | complete | 0 | dev,normal |
-| 481409 | diversity-llama8b-prepare | complete | 0 | dev,normal |
-| 481374 | schedule-score-publication | complete | 0 | dev,normal |
-| 481362 | schedule-followup-source-diversity | complete | 0 | dev,normal |
-| 481361 | schedule-followup-score-review | complete | 0 | dev,normal |
-| 481360 | schedule-followup-regression | complete | 0 | dev,normal |
-| 481283 | schedule-review-publication | complete | 0 | dev,normal |
-| 481265 | schedule-codellama34b-readouts | complete | 0 | normal |
-| 481264 | schedule-codellama34b-capture | complete | 0 | h100,h200 |
-| 481263 | schedule-codellama34b-prepare | complete | 0 | dev,normal |
-| 481262 | schedule-llama8b-readouts | complete | 0 | normal |
-| 481261 | schedule-llama8b-capture | complete | 0 | dev-a30,a30,h100,h200 |
-| 481260 | schedule-llama8b-prepare | complete | 0 | dev,normal |
-| 481259 | schedule-regression | complete | 0 | normal |
-| 481109 | computation-routing-publication | complete | 0 | normal |
-| unassigned | computation-routing-publication | submission_failed | 1 | normal |
-| 481072 | computation-routing-audit-codellama34b | complete | 0 | normal |
-| 481071 | computation-routing-audit-llama8b | complete | 0 | normal |
-| 481070 | computation-routing-run-codellama34b | complete | 0 | h100,h200 |
-| 481069 | computation-routing-run-llama8b | complete | 0 | dev-a30,a30,h100,h200 |
-| 481068 | computation-routing-prep-codellama34b | complete | 0 | dev,normal |
-| 481065 | computation-routing-prep-llama8b | complete | 0 | dev,normal |
-| 481034 | computation-routing-regression | complete | 0 | normal |
-| 480988 | relationship-score-behavior-audit | complete | 0 | normal |
-| 480987 | relationship-score-behavior | complete | 0 | normal |
-| 480986 | relationship-continuation-tests | complete | 0 | normal |
-| 480772 | rel-night-controller | complete | 0 | dev |
-| 480763 | rel-night-controller | complete | 0 | dev |
-| 480751 | rel-night-controller | complete | 0 | dev |
-| 480750 | rel-night-controller | complete | 0 | dev |
-| 480745 | rel-night-codellama34b_computed_roots-b1e42c7d | complete | 0 | normal |
-| 480744 | rel-night-controller | complete | 0 | dev |
-| 480736 | rel-night-controller | complete | 0 | dev |
-| 480732 | rel-night-llama8b_computed_roots-69bc47c5 | complete | 0 | normal |
-| 480731 | rel-night-controller | complete | 0 | dev |
-| 480729 | rel-night-controller | complete | 0 | dev |
-| 480699 | rel-night-controller | complete | 0 | dev |
-| 480694 | rel-night-controller | complete | 0 | dev |
-| 480690 | rel-night-controller | complete | 0 | dev |
-| 480685 | rel-night-codellama34b_query_twins-2c96a187 | complete | 0 | normal |
-| 480684 | rel-night-codellama34b_numeric_replication-e6fd698f | complete | 0 | normal |
-| 480683 | rel-night-llama8b_query_twins-9028d3ae | complete | 0 | normal |
-| 480682 | rel-night-llama8b_numeric_replication-19ff532f | complete | 0 | normal |
-| 480681 | rel-night-controller | complete | 0 | dev |
-| 480675 | rel-night-controller | complete | 0 | dev |
-| 480665 | rel-night-controller | complete | 0 | dev |
-| 480660 | rel-night-controller | complete | 0 | dev |
-| 480654 | rel-night-controller | complete | 0 | dev |
-| 480651 | rel-night-codellama34b_audit-aee44e16 | complete | 0 | normal |
-| 480650 | rel-night-llama8b_audit-66c63c9d | complete | 0 | normal |
-| 480649 | rel-night-controller | complete | 0 | dev |
-| 480647 | rel-night-controller | complete | 0 | dev |
-| 480643 | rel-night-controller | complete | 0 | dev |
-| 480634 | rel-night-codellama34b_behavior-3560bda9 | complete | 0 | h100,h200 |
-| 480633 | rel-night-controller | complete | 0 | dev |
-| 480629 | rel-night-controller | complete | 0 | dev |
-| 480626 | rel-night-controller | complete | 0 | dev |
-| 480597 | rel-night-controller | complete | 0 | dev |
-| 480595 | rel-night-controller | complete | 0 | dev |
-| 480588 | rel-night-controller | complete | 0 | dev |
-| 480586 | rel-night-controller | complete | 0 | dev |
-| 480582 | rel-night-controller | complete | 0 | dev |
-| 480577 | rel-night-controller | complete | 0 | dev |
-| 480573 | rel-night-controller | complete | 0 | dev |
-| 480570 | rel-night-controller | complete | 0 | dev |
-| 480564 | rel-night-controller | complete | 0 | dev |
-| 480561 | rel-night-controller | complete | 0 | dev |
-| 480555 | rel-night-controller | complete | 0 | dev |
-| 480554 | rel-night-controller | complete | 0 | dev |
-| 480551 | rel-night-controller | complete | 0 | dev |
+| 488093 | paired-explore-check | submitted | None | dev,normal |
+| 488077 | rel-night-codellama34b_continuation-7a8734fe | submitted | None | h200 |
+| 488076 | rel-night-llama8b_continuation-1712e077 | submitted | None | h100,h200 |
+| 488075 | rel-night-audit_report-ea7f4b8d | complete | 0 | dev,normal |
+| 488074 | paired-explore-check | complete | 0 | dev,normal |
+| 488070 | rel-night-error_audit-0295a7f0 | complete | 0 | dev,normal |
+| 488069 | paired-explore-check | complete | 0 | dev,normal |
+| 488068 | paired-explore-check | complete | 0 | dev,normal |
+| 488065 | paired-capture-prep | complete | 0 | dev,normal |
+| 488060 | rel-night-software_validation-b76debb7 | complete | 0 | dev,normal |
+| 488059 | paired-explore-check | complete | 0 | dev,normal |
+| 487935 | rel-night-report-d02e26a0 | complete | 0 | dev,normal |
+| 487934 | paired-state-check | complete | 0 | dev,normal |
+| 487930 | paired-state-check | complete | 0 | dev,normal |
+| 487903 | paired-state-check | complete | 0 | dev,normal |
+| 487899 | paired-state-check | complete | 0 | dev,normal |
+| 487892 | paired-state-check | complete | 0 | dev,normal |
+| 487880 | paired-state-check | complete | 0 | dev,normal |
+| 487871 | paired-state-check | complete | 0 | dev,normal |
+| 487858 | paired-state-check | complete | 0 | dev,normal |
+| 487845 | paired-state-check | complete | 0 | dev,normal |
+| 487842 | paired-state-check | complete | 0 | dev,normal |
+| 487839 | paired-state-check | complete | 0 | dev,normal |
+| 487830 | paired-state-check | complete | 0 | dev,normal |
+| 487815 | paired-state-check | complete | 0 | dev,normal |
+| 487809 | paired-state-check | complete | 0 | dev,normal |
+| 487801 | paired-state-check | complete | 0 | dev,normal |
+| 487793 | paired-state-check | complete | 0 | dev,normal |
+| 487783 | paired-state-check | complete | 0 | dev,normal |
+| 487775 | paired-state-check | complete | 0 | dev,normal |
+| 487764 | paired-state-check | complete | 0 | dev,normal |
+| 487757 | paired-state-check | complete | 0 | dev,normal |
+| 487743 | rel-night-codellama34b_calibration-e95cbbe2 | complete | 0 | h200 |
+| 487742 | rel-night-llama8b_calibration-8375db94 | complete | 0 | h200 |
+| 487741 | paired-state-check | complete | 0 | dev,normal |
+| 487739 | rel-night-codellama34b_native-b8bc73fa | complete | 0 | dev,normal |
+| 487738 | rel-night-llama8b_native-e55bf064 | complete | 0 | dev,normal |
+| 487737 | paired-state-check | complete | 0 | dev,normal |
+| 487731 | rel-night-sources-475a6c23 | complete | 0 | dev,normal |
+| 487730 | paired-state-check | complete | 0 | dev,normal |
+| 487728 | paired-state-check | complete | 0 | dev,normal |
+| 487727 | rel-night-software_validation-c4f7e855 | complete | 0 | dev,normal |
+| 487726 | paired-state-check | complete | 0 | dev,normal |
+| 487182 | rel-night-report-a099f34a | complete | 0 | dev,normal |
+| 487181 | global-state-check | complete | 0 | dev,normal |
+| 487171 | rel-night-source_width8192-b835f0b7 | complete | 0 | normal |
+| 487170 | rel-night-source_width4096-4eb3ec51 | complete | 0 | normal |
+| 487169 | rel-night-source_width1024-8ebfe91a | complete | 0 | normal |
+| 487168 | rel-night-codellama34b_width8192-982587e9 | complete | 0 | normal |
+| 487167 | rel-night-codellama34b_width1024-4601ae9b | complete | 0 | normal |
+| 487166 | rel-night-llama8b_width4096-c7e7016e | complete | 0 | normal |
+| 487165 | rel-night-llama8b_width1024-0f729002 | complete | 0 | normal |
+| 487164 | global-state-check | complete | 0 | dev,normal |
+| 487158 | rel-night-cache-05dd82ae | complete | 0 | dev,normal |
+| 487157 | global-state-check | complete | 0 | dev,normal |
+| 487153 | rel-night-semantic_audit-bd02e0ef | complete | 0 | dev,normal |
+| 487152 | global-state-check | complete | 0 | dev,normal |
+| 487148 | global-state-check | complete | 0 | dev,normal |
+| 487138 | rel-night-software_validation-e01283ac | complete | 0 | dev,normal |
+| 487137 | global-state-check | complete | 0 | dev,normal |
+| 487082 | rel-night-report-9f91ff01 | complete | 0 | dev,normal |
+| 487081 | semantic-control-check | complete | 0 | dev |
+| 487076 | semantic-control-check | complete | 0 | dev |
+| 487069 | rel-night-source8192_computed_definition-3e830584 | complete | 0 | normal |
+| 487068 | rel-night-source4096_computed_definition-322c8e34 | complete | 0 | normal |
+| 487067 | rel-night-codellama34b_computed_definition-5e4333b1 | complete | 0 | normal |
+| 487066 | rel-night-llama8b_computed_definition-134ea5c9 | complete | 0 | normal |
+| 487065 | semantic-control-check | complete | 0 | dev |
+| 487064 | rel-night-labels-1ba3cdca | complete | 0 | dev,normal |
+| 487063 | semantic-control-check | complete | 0 | dev |
+| 487061 | semantic-control-check | complete | 0 | dev |
+| 487057 | rel-night-software_validation-f811b614 | complete | 0 | dev,normal |
+| 487056 | semantic-control-check | complete | 0 | dev |
+| 486981 | rel-night-report-bf745b62 | complete | 0 | dev,normal |
+| 486980 | numeric-geometry-check | complete | 0 | dev |
+| 486948 | numeric-geometry-check | complete | 0 | dev |
+| 486878 | rel-night-codellama34b_query_cache-dbc3e5d9 | complete | 0 | dev,normal |
+| 486877 | rel-night-llama8b_query_cache-e972719d | complete | 0 | dev,normal |
+| 486876 | rel-night-source8192_computed_definition-91d436a9 | complete | 0 | normal |
+| 486875 | rel-night-source8192_root_definition-edcc4c0e | complete | 0 | normal |
+| 486874 | rel-night-source4096_computed_definition-3f968c39 | complete | 0 | normal |
+| 486873 | rel-night-source4096_root_definition-062c6066 | complete | 0 | normal |
+| 486872 | rel-night-codellama34b_computed_definition-4e48156d | complete | 0 | normal |
+| 486871 | rel-night-codellama34b_root_definition-5fdd7478 | complete | 0 | normal |
+| 486870 | rel-night-llama8b_computed_definition-ad924167 | complete | 0 | normal |
+| 486869 | rel-night-llama8b_root_definition-0dfcce77 | complete | 0 | normal |
+| 486868 | numeric-geometry-check | complete | 0 | dev |
+| 486855 | rel-night-software_validation-f8981dba | complete | 0 | dev,normal |
+| 486854 | numeric-geometry-check | complete | 0 | dev |
+| 486693 | numeric-postrun-audit | complete | 0 | dev,normal |
+| 486606 | rel-night-report-a66ea2e3 | complete | 0 | dev,normal |
+| 486605 | numeric-exploration-check | complete | 0 | dev |
+| 486584 | numeric-exploration-check | complete | 0 | dev |
+| 486575 | numeric-exploration-check | complete | 0 | dev |
+| 486569 | rel-night-source_computed_definition-e123fbf3 | complete | 0 | normal |
+| 486568 | rel-night-source_root_definition-75ee30ca | complete | 0 | normal |
+| 486567 | rel-night-codellama34b_computed_definition-7e2de34c | complete | 0 | normal |
+| 486566 | rel-night-codellama34b_root_definition-8f0c99f0 | complete | 0 | normal |
+| 486565 | rel-night-llama8b_computed_definition-34f3402c | complete | 0 | normal |
+| 486564 | rel-night-llama8b_root_definition-a013197b | complete | 0 | normal |
 
 ## Indexing notices
 
