@@ -84,7 +84,10 @@ SCRIPT_NAMES = ('87_binding_preflight.py', '88_binding_pipeline.py', '89_binding
                 '219_binding_paired_postrun_review.py',
                 '220_binding_conditional_state.py',
                 '221_binding_conditional_suite.py',
-                '222_binding_conditional_setup.py')
+                '222_binding_conditional_setup.py',
+                '227_binding_penalty_path.py',
+                '228_binding_penalty_suite.py',
+                '229_binding_penalty_setup.py')
 
 
 def source_files(root):

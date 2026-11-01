@@ -1,0 +1,212 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "audit": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488416",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:13:27.780932+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_hidden": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488410",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:10:59.232505+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_joint": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488411",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:10:59.894868+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_shuffled_joint": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488412",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:11:00.544721+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_hidden": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488407",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:10:52.585717+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_joint": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488408",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:10:54.784880+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_shuffled_joint": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488409",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:10:57.031903+00:00",
+        "time_min": null
+      }
+    ],
+    "priors": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488375",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:06:37.625601+00:00",
+        "time_min": null
+      }
+    ],
+    "report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488423",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:20:45.232417+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488331",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T22:53:13.340666+00:00",
+        "time_min": null
+      }
+    ],
+    "source_source1024": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488405",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:10:51.225342+00:00",
+        "time_min": null
+      }
+    ],
+    "source_source2048": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488406",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T23:10:51.883772+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "dfa127767de23390a9c4075a33415e0bf6297b1abc5fd99322c9d7e0a6cf9b25",
+  "evaluation_role": "discovery_arithmetic_penalty_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "recorded_utc": "2026-11-01T23:22:01.267173+00:00",
+  "scheduler_errors": [],
+  "source": {
+    "frozen_manifest_sha256": "d6aef235d3c50ebbf362bd1399987d3743eeeb00001baad4d73f33c03607bdcf",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/98bd03c707756b99c11c0391",
+    "snapshot_id": "98bd03c707756b99c11c0391",
+    "source_sha256": "34c61d4f88554a6d59319b9c2a92ca99c8ee4d3713440d4d5f09267f0abffab2"
+  },
+  "stages": {
+    "audit": {
+      "job_id": "488416",
+      "state": "complete"
+    },
+    "codellama34b_hidden": {
+      "job_id": "488410",
+      "state": "complete"
+    },
+    "codellama34b_joint": {
+      "job_id": "488411",
+      "state": "complete"
+    },
+    "codellama34b_shuffled_joint": {
+      "job_id": "488412",
+      "state": "complete"
+    },
+    "llama8b_hidden": {
+      "job_id": "488407",
+      "state": "complete"
+    },
+    "llama8b_joint": {
+      "job_id": "488408",
+      "state": "complete"
+    },
+    "llama8b_shuffled_joint": {
+      "job_id": "488409",
+      "state": "complete"
+    },
+    "priors": {
+      "job_id": "488375",
+      "state": "complete"
+    },
+    "report": {
+      "job_id": "488423",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "488331",
+      "state": "complete"
+    },
+    "source_source1024": {
+      "job_id": "488405",
+      "state": "complete"
+    },
+    "source_source2048": {
+      "job_id": "488406",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}

@@ -1,0 +1,46 @@
+{
+  "alphas": [
+    1.0,
+    100.0,
+    10000.0,
+    100000.0,
+    1000000.0,
+    10000000.0
+  ],
+  "declared_plan": "reports/binding/arithmetic_penalty_path_plan_20261101_v1.md",
+  "declared_plan_sha256": "ef0bfb7407fe9dd2bdac7bd9089fd9e45ec90facbd76789656518a0bb908c33b",
+  "evaluation_role": "discovery_arithmetic_penalty_fit_v1",
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "prior_config": {
+    "bytes": 1241,
+    "path": "configs/binding/arithmetic_penalty_path_20261101_v1/priors.json",
+    "sha256": "538dd10aaf17f2cbef9458745204d08495181146f4d31646b21747a3075ea198"
+  },
+  "reference_audit": {
+    "bytes": 3553,
+    "path": "artifacts/binding/arithmetic_conditional/20261101_v1/postrun_audit/results.json",
+    "sha256": "63694f7629175a5620296c3ded14e001b42c60d8cdea028a7e22c8038e779c16"
+  },
+  "reference_worker": {
+    "bytes": 1267,
+    "path": "configs/binding/arithmetic_conditional_20261101_v1/llama8b_joint.json",
+    "sha256": "5332174ad604bfde57bf7df1051cc2958294eaa7c30dcc87a997ac81c61225c3"
+  },
+  "run_dir": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_joint",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "audit": {
+    "bytes": 2956,
+    "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/audit/results.json",
+    "sha256": "b3ddf67a63f566d4f1bfe35b8a2f686489288e1fae60b4fcd2f3cae32ba7ff4f"
+  },
+  "config_hash": "2097fe3059f730188b53887b9370d499edafe1956e556bc0adc76428c501de13",
+  "evaluation_role": "discovery_arithmetic_penalty_report_v1",
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "codellama34b/hidden": {
+      "bytes": 4804792,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_hidden/results.json",
+      "sha256": "ba91bcea03bbfe57b7fbdd5334c68523c3d9f1c74e369c2bf15eca7d993535d0"
+    },
+    "codellama34b/joint": {
+      "bytes": 6196717,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_joint/results.json",
+      "sha256": "9a547e111130bc56881e95faa5b3ea348e34d1bf1d1c695796a610c08dc47830"
+    },
+    "codellama34b/shuffled_joint": {
+      "bytes": 6187611,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_shuffled_joint/results.json",
+      "sha256": "0fac1d6461d154859afaceb4f92c847fff3a42f784c71dad2a35b257f3655517"
+    },
+    "llama8b/hidden": {
+      "bytes": 4805619,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_hidden/results.json",
+      "sha256": "ce128c8ec30d3989d8c5923ce6937f980ac5de0a421a5dfb18c3523d782db958"
+    },
+    "llama8b/joint": {
+      "bytes": 6196641,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_joint/results.json",
+      "sha256": "56d79fa7380456020db3685046c6ee5f095a4f5225fc1aa09701796511b5dd5b"
+    },
+    "llama8b/shuffled_joint": {
+      "bytes": 6188349,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_shuffled_joint/results.json",
+      "sha256": "a36f039e02e24d3e395f147b7fb9cd3e9933642ddd830e9593a5dddaca48ff1b"
+    },
+    "source/source1024": {
+      "bytes": 4797184,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source1024/results.json",
+      "sha256": "8c0fc03d3f5e74f3dd1e62c24a84c56aa314b0a39468153eae292a081749e903"
+    },
+    "source/source2048": {
+      "bytes": 4796173,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source2048/results.json",
+      "sha256": "33ed38136e361f4e8af93c967bd18ecee61c7210eb4500db834a4614ece32e19"
+    }
+  },
+  "new_model_queries": 0,
+  "new_prior_estimates": 36,
+  "new_readout_fits": 216,
+  "paired_family_contrasts": [
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "source/source1024",
+      "delta": -0.17841798564461872,
+      "families": 72,
+      "lower": -0.27990662775452807,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.08195861644474776
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "source/source2048",
+      "delta": -0.1927651155416855,
+      "families": 72,
+      "lower": -0.29229932217735205,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.09501689309439611
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "llama8b/hidden",
+      "delta": -0.01975570413507576,
+      "families": 72,
+      "lower": -0.08095462767825168,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.041694970567052854
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "llama8b/shuffled_joint",
+      "delta": -0.18405763184294127,
+      "families": 72,
+      "lower": -0.28989662848028463,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.07829440880154574
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "zero",
+      "delta": -0.34449368410551645,
+      "families": 72,
+      "lower": -0.5924621507914484,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.11070522564632443
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "mean",
+      "delta": -0.348562020901399,
+      "families": 72,
+      "lower": -0.5953448338136569,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.11663985777355178
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "median",
+      "delta": -0.34449368410551645,
+      "families": 72,
+      "lower": -0.5924621507914484,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.11070522564632443
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "llama8b/joint",
+      "comparator": "computed_median",
+      "delta": -0.34449368410551645,
+      "families": 72,
+      "lower": -0.5924621507914484,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.11070522564632443
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "source/source1024",
+      "delta": -0.22025961482752365,
+      "families": 72,
+      "lower": -0.32632920722847397,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.11359175485358354
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "source/source2048",
+      "delta": -0.23460674472459045,
+      "families": 72,
+      "lower": -0.33687271022941256,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.12821943227468352
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "codellama34b/hidden",
+      "delta": -0.02814890096909084,
+      "families": 72,
+      "lower": -0.07447294486592652,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.01924748288700266
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "codellama34b/shuffled_joint",
+      "delta": -0.23853638881075861,
+      "families": 72,
+      "lower": -0.3491630943603937,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.12433472967039855
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "zero",
+      "delta": -0.3863353132884214,
+      "families": 72,
+      "lower": -0.6530066108538347,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.13521450695022438
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "mean",
+      "delta": -0.39040365008430394,
+      "families": 72,
+      "lower": -0.6547330765436598,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.14277896643572963
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "median",
+      "delta": -0.3863353132884214,
+      "families": 72,
+      "lower": -0.6530066108538347,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.13521450695022438
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "cell": "codellama34b/joint",
+      "comparator": "computed_median",
+      "delta": -0.3863353132884214,
+      "families": 72,
+      "lower": -0.6530066108538347,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.13521450695022438
+    }
+  ],
+  "penalty_changes": {
+    "codellama34b/hidden": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    "codellama34b/joint": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    "codellama34b/shuffled_joint": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    "llama8b/hidden": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    "llama8b/joint": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    "llama8b/shuffled_joint": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    "source/source1024": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    "source/source2048": {
+      "bootstrap_replicates": 2000,
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    }
+  },
+  "reused_readout_banks": 240,
+  "source": {
+    "frozen_manifest_sha256": "d6aef235d3c50ebbf362bd1399987d3743eeeb00001baad4d73f33c03607bdcf",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/98bd03c707756b99c11c0391",
+    "snapshot_id": "98bd03c707756b99c11c0391",
+    "source_sha256": "34c61d4f88554a6d59319b9c2a92ca99c8ee4d3713440d4d5f09267f0abffab2"
+  },
+  "status": "complete_exploratory"
+}

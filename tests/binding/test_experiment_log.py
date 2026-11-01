@@ -87,6 +87,29 @@ refresh(root)
         (worker,index) for worker in range(4) for index in range(6)}
 
 
+def test_lifecycle_lock_contention_defers_without_blocking_or_losing_event(tmp_path):
+    code = '''import sys
+from codecue.binding.experiment_log import emit_event,safe_sync_job
+root=sys.argv[1]
+event=emit_event('job_started',root=root,job_id='42',payload={'name':'fixture','job_id':'42'})
+safe_sync_job(root=root,payload={'job_id':'42'},job_id='42')
+print(event['event_id'])
+'''
+    env = dict(os.environ)
+    env['PYTHONPATH'] = str(Path(__file__).resolve().parents[2] / 'src') + os.pathsep + env.get('PYTHONPATH', '')
+    # Hold the real interprocess lock until the lifecycle writer has returned.
+    # A blocking hook deadlocks here and fails the bounded child-process check.
+    with log._index(tmp_path):
+        child = subprocess.run([sys.executable, '-c', code, str(tmp_path)], env=env,
+            capture_output=True, text=True, timeout=5, check=True)
+        event_id = child.stdout.strip()
+        assert event_id in {e['event_id'] for e in events(tmp_path)}
+        assert 'index deferred' in child.stderr and 'sync deferred' in child.stderr
+    assert log.refresh(tmp_path)['events'] == 1
+    record = log.list_records(tmp_path, kind='job')[0]
+    assert record['job_id'] == '42' and record['status'] == 'running'
+
+
 def test_backfill_preserves_completed_negative_science_and_is_idempotent(tmp_path):
     folder,manifest=run_fixture(tmp_path,'measured_negative')
     write_json(folder/'audit.json',dict(status='passed',identity_hash=manifest['identity_hash'],evaluated=10))

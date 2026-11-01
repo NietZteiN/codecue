@@ -1,0 +1,484 @@
+{
+  "artifacts": {
+    "pdf": {
+      "bytes": 41530,
+      "path": "reports/binding/figures/arithmetic_penalty_path_v1.pdf",
+      "sha256": "964c7f503c1e5c513e6681a770e43203139f0cb469009e8c73f622dbeb88f6e6"
+    },
+    "png": {
+      "bytes": 254893,
+      "path": "reports/binding/figures/arithmetic_penalty_path_v1.png",
+      "sha256": "146b38f381ce4a2d6a6fecc43a7c2275de470046331df132a2e58335bef5b3bc"
+    },
+    "svg": {
+      "bytes": 141569,
+      "path": "reports/binding/figures/arithmetic_penalty_path_v1.svg",
+      "sha256": "bd5cc09472bd06e5da9f2ccd6953200fc3a98a358659aa0e586614a3f26e3ead"
+    }
+  },
+  "inputs": {
+    "codellama34b/hidden": {
+      "bytes": 4804792,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_hidden/results.json",
+      "sha256": "ba91bcea03bbfe57b7fbdd5334c68523c3d9f1c74e369c2bf15eca7d993535d0"
+    },
+    "codellama34b/joint": {
+      "bytes": 6196717,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_joint/results.json",
+      "sha256": "9a547e111130bc56881e95faa5b3ea348e34d1bf1d1c695796a610c08dc47830"
+    },
+    "codellama34b/shuffled_joint": {
+      "bytes": 6187611,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_shuffled_joint/results.json",
+      "sha256": "0fac1d6461d154859afaceb4f92c847fff3a42f784c71dad2a35b257f3655517"
+    },
+    "llama8b/hidden": {
+      "bytes": 4805619,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_hidden/results.json",
+      "sha256": "ce128c8ec30d3989d8c5923ce6937f980ac5de0a421a5dfb18c3523d782db958"
+    },
+    "llama8b/joint": {
+      "bytes": 6196641,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_joint/results.json",
+      "sha256": "56d79fa7380456020db3685046c6ee5f095a4f5225fc1aa09701796511b5dd5b"
+    },
+    "llama8b/shuffled_joint": {
+      "bytes": 6188349,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_shuffled_joint/results.json",
+      "sha256": "a36f039e02e24d3e395f147b7fb9cd3e9933642ddd830e9593a5dddaca48ff1b"
+    },
+    "source/source1024": {
+      "bytes": 4797184,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source1024/results.json",
+      "sha256": "8c0fc03d3f5e74f3dd1e62c24a84c56aa314b0a39468153eae292a081749e903"
+    },
+    "source/source2048": {
+      "bytes": 4796173,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source2048/results.json",
+      "sha256": "33ed38136e361f4e8af93c967bd18ecee61c7210eb4500db834a4614ece32e19"
+    }
+  },
+  "new_model_queries": 0,
+  "new_readout_fits": 0,
+  "plotted_values": {
+    "codellama34b": {
+      "codellama34b/hidden": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 7.0020142199854405,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.4039582474064884,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.107625237222511,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.247160694825939,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.489612026312836,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.623459183469909,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.107625237222511,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "codellama34b/joint": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 7.709523127675398,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.6224436581836335,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.069005097304675,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.210644584561972,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.4772508155434,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.621670164711194,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.069005097304675,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "codellama34b/shuffled_joint": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 8.696667764004278,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 6.2626042886099516,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.365730735393598,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.530924337392122,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.631179916187359,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.645939966874451,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.365730735393598,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "constant_line": {
+        "cv_mae": 5.635202331961592,
+        "kind": "prior",
+        "prior": "zero"
+      },
+      "source/source1024": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 5.703911679611903,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.609305017867955,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.328908909332297,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.517424285393577,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.629317196006838,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.645876225755539,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.328908909332297,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "source/source2048": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 5.7055779671671285,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.63582255855559,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.334045819590318,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.502965893901173,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.626442714030087,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.6455592560045496,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.334045819590318,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      }
+    },
+    "llama8b": {
+      "constant_line": {
+        "cv_mae": 5.635202331961592,
+        "kind": "prior",
+        "prior": "zero"
+      },
+      "llama8b/hidden": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 7.037152752724478,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.557391997598336,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.183064194943012,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.349018854290938,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.543428019665235,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.631250730611345,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.183064194943012,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "llama8b/joint": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 7.640316019154525,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.768705318963439,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.115355432475123,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.287588117103458,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.528597985463394,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.629392987014261,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.115355432475123,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "llama8b/shuffled_joint": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 8.287546280878228,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 6.176496266913986,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.370733944933055,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.5302125805331706,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.631823827970118,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.645985799144954,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.370733944933055,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "source/source1024": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 5.703911679611903,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.609305017867955,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.328908909332297,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.517424285393577,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.629317196006838,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.645876225755539,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.328908909332297,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      },
+      "source/source2048": {
+        "curve": [
+          {
+            "alpha": 1.0,
+            "cv_mae": 5.7055779671671285,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100.0,
+            "cv_mae": 5.63582255855559,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000.0,
+            "cv_mae": 5.334045819590318,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 100000.0,
+            "cv_mae": 5.502965893901173,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 1000000.0,
+            "cv_mae": 5.626442714030087,
+            "kind": "ridge"
+          },
+          {
+            "alpha": 10000000.0,
+            "cv_mae": 5.6455592560045496,
+            "kind": "ridge"
+          }
+        ],
+        "overall": {
+          "alpha": 10000.0,
+          "cv_mae": 5.334045819590318,
+          "kind": "ridge"
+        },
+        "ridge_alpha": 10000.0
+      }
+    }
+  },
+  "status": "audited_figure",
+  "utility": {
+    "path": "/work/jvl210002/migration/codecue/scripts/230_binding_penalty_path_figure.py",
+    "sha256": "2d9b1ef9def94dc18707aa22f23df85dbda45c6e94544a0ba5c46deaab85c579"
+  }
+}

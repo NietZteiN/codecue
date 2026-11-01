@@ -90,10 +90,10 @@ def _event(event_type,run_dir=None,stage=None,payload=None,job_id=None):
 
 
 @contextmanager
-def _index(root):
+def _index(root, *, blocking=True):
     _,base,_,database=_paths(root);base.mkdir(parents=True,exist_ok=True)
     with (base/'index.lock').open('a') as lock:
-        fcntl.flock(lock,fcntl.LOCK_EX)
+        fcntl.flock(lock,fcntl.LOCK_EX | (0 if blocking else fcntl.LOCK_NB))
         conn=sqlite3.connect(database,timeout=30)
         try:
             conn.execute('PRAGMA journal_mode=DELETE')
@@ -494,7 +494,9 @@ def emit_event(event_type,*,root=None,run_dir=None,stage=None,payload=None,job_i
     if observations:event['observations']=observations
     _spool(root,event)
     try:
-        with _index(root) as conn:
+        # The durable event already exists. A reconciler can replay it without
+        # making a running experiment wait behind a full-index refresh.
+        with _index(root, blocking=False) as conn:
             _insert_event(conn,event);_apply(conn,root,event);_exports(conn,root)
     except Exception as exc:
         print(f'Experiment log index deferred; durable event {event["event_id"]} retained: {type(exc).__name__}: {exc}',file=sys.stderr)
@@ -651,7 +653,9 @@ def refresh(root=None,*,reconcile_scheduler=False):
 def safe_sync_job(root=None,*,payload=None,job_id=None):
     root=workspace_root(root);payload=payload or {}
     try:
-        with _index(root) as conn:
+        # Finished-job manifests and spooled lifecycle events remain available
+        # to refresh(); indexing must not keep the allocation alive for a lock.
+        with _index(root, blocking=False) as conn:
             for argument in payload.get('argv',[]):
                 if not isinstance(argument,str) or not argument.endswith('.json'):continue
                 path=_resolve(root,argument)

@@ -1,0 +1,71 @@
+{
+  "audit_config": {
+    "bytes": 2500,
+    "path": "configs/binding/arithmetic_penalty_path_20261101_v1/audit.json",
+    "sha256": "3fc3385f4a9d726bdc0edc9863d38edccff8f4f93b6a03bfae0b77dff433a32f"
+  },
+  "declared_plan": "reports/binding/arithmetic_penalty_path_plan_20261101_v1.md",
+  "declared_plan_sha256": "ef0bfb7407fe9dd2bdac7bd9089fd9e45ec90facbd76789656518a0bb908c33b",
+  "evaluation_role": "discovery_arithmetic_penalty_report_v1",
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "report": "reports/binding/arithmetic_penalty_path_findings_20261101_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_penalty_path/20261101_v1/report",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "workers": [
+    {
+      "bytes": 1549,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/source_source1024.json",
+      "sha256": "b9a48300d76ff2de3b7731a7938d64dca6b45608350203d93ad75513af9508bf"
+    },
+    {
+      "bytes": 1549,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/source_source2048.json",
+      "sha256": "a8ad0054cd7faacbc439b81b5c2ffc5fa001aee55aaa8efc08a44a91d5ab51ec"
+    },
+    {
+      "bytes": 1543,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/llama8b_hidden.json",
+      "sha256": "a5efe7f76c2ad6fbd3d5f87a39cb2d8099aaf631904fc23b508ec53c883344f0"
+    },
+    {
+      "bytes": 1541,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/llama8b_joint.json",
+      "sha256": "53c6689f15abfdf6487a7b51e62853403bd3f68fc6871b3a9d09ed93f298efe2"
+    },
+    {
+      "bytes": 1559,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/llama8b_shuffled_joint.json",
+      "sha256": "ac43396c195caf5d143254de2d38b2b590d7e45792b3d82c3fe339600629410a"
+    },
+    {
+      "bytes": 1553,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/codellama34b_hidden.json",
+      "sha256": "a7ef91c9fe84410dec66da2c001f33b9fe8f653bc5ca0c9c9ad250389c209a98"
+    },
+    {
+      "bytes": 1551,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/codellama34b_joint.json",
+      "sha256": "8c9c19a8f7b94c6dde57693947c3966a29abc9ed7c44ecefe7e64b3e17282694"
+    },
+    {
+      "bytes": 1569,
+      "path": "configs/binding/arithmetic_penalty_path_20261101_v1/codellama34b_shuffled_joint.json",
+      "sha256": "26354dcdb0daabb7b27374489ca963384a65125dc7dbfa158545a82bd77e1ee7"
+    }
+  ]
+}

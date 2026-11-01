@@ -1,0 +1,248 @@
+{
+  "declared_plan": "reports/binding/arithmetic_penalty_path_plan_20261101_v1.md",
+  "declared_plan_sha256": "ef0bfb7407fe9dd2bdac7bd9089fd9e45ec90facbd76789656518a0bb908c33b",
+  "evaluation_role": "discovery_arithmetic_penalty_suite_v1",
+  "morning_at": "2026-11-02T08:00:00-06:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/qa.json",
+      "config_sha256": "8ffc1169372b1c338f21733ae1ed4d587fa5ae80d0359226ac3679d1da9b0cd7",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/qa/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/priors.json",
+      "config_sha256": "538dd10aaf17f2cbef9458745204d08495181146f4d31646b21747a3075ea198",
+      "cpus": 8,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "priors",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/priors/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "16G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/source_source1024.json",
+      "config_sha256": "b9a48300d76ff2de3b7731a7938d64dca6b45608350203d93ad75513af9508bf",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "source_source1024",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source1024/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/source_source2048.json",
+      "config_sha256": "a8ad0054cd7faacbc439b81b5c2ffc5fa001aee55aaa8efc08a44a91d5ab51ec",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "source_source2048",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source2048/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/llama8b_hidden.json",
+      "config_sha256": "a5efe7f76c2ad6fbd3d5f87a39cb2d8099aaf631904fc23b508ec53c883344f0",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_hidden",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_hidden/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/llama8b_joint.json",
+      "config_sha256": "53c6689f15abfdf6487a7b51e62853403bd3f68fc6871b3a9d09ed93f298efe2",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_joint",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/llama8b_shuffled_joint.json",
+      "config_sha256": "ac43396c195caf5d143254de2d38b2b590d7e45792b3d82c3fe339600629410a",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_shuffled_joint",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_shuffled_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/codellama34b_hidden.json",
+      "config_sha256": "a7ef91c9fe84410dec66da2c001f33b9fe8f653bc5ca0c9c9ad250389c209a98",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_hidden",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_hidden/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/codellama34b_joint.json",
+      "config_sha256": "8c9c19a8f7b94c6dde57693947c3966a29abc9ed7c44ecefe7e64b3e17282694",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_joint",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/codellama34b_shuffled_joint.json",
+      "config_sha256": "26354dcdb0daabb7b27374489ca963384a65125dc7dbfa158545a82bd77e1ee7",
+      "cpus": 16,
+      "dependencies": [
+        "priors"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_shuffled_joint",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_shuffled_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/audit.json",
+      "config_sha256": "3fc3385f4a9d726bdc0edc9863d38edccff8f4f93b6a03bfae0b77dff433a32f",
+      "cpus": 16,
+      "dependencies": [
+        "source_source1024",
+        "source_source2048",
+        "llama8b_hidden",
+        "llama8b_joint",
+        "llama8b_shuffled_joint",
+        "codellama34b_hidden",
+        "codellama34b_joint",
+        "codellama34b_shuffled_joint"
+      ],
+      "expected_cases": 0,
+      "key": "audit",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/audit/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_penalty_path_20261101_v1/report.json",
+      "config_sha256": "7532d091c3b1b9cf09bdf4a9ebf9913461f904b37da95b032b3a8dbd391e2884",
+      "cpus": 8,
+      "dependencies": [
+        "audit"
+      ],
+      "expected_cases": 0,
+      "key": "report",
+      "marker": "artifacts/binding/arithmetic_penalty_path/20261101_v1/report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "16G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/227_binding_penalty_path.py",
+      "time": "02:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_penalty_path_status_20261101_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_penalty_path/20261101_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_penalty_path/20261101_v1/qa/regression.xml",
+    "minimum_tests": 2697,
+    "review": "artifacts/binding/arithmetic_penalty_path/20261101_v1/qa/regression_review.json"
+  }
+}

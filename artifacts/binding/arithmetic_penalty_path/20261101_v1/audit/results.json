@@ -1,0 +1,67 @@
+{
+  "audit_status": "passed",
+  "config_hash": "5b84b80c0aa6686476866f507dcd0abb46a3ac9dc057f2bb436d15db61056e66",
+  "evaluation_role": "discovery_arithmetic_penalty_audit_v1",
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "codellama34b/hidden": {
+      "bytes": 4804792,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_hidden/results.json",
+      "sha256": "ba91bcea03bbfe57b7fbdd5334c68523c3d9f1c74e369c2bf15eca7d993535d0"
+    },
+    "codellama34b/joint": {
+      "bytes": 6196717,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_joint/results.json",
+      "sha256": "9a547e111130bc56881e95faa5b3ea348e34d1bf1d1c695796a610c08dc47830"
+    },
+    "codellama34b/shuffled_joint": {
+      "bytes": 6187611,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/codellama34b_shuffled_joint/results.json",
+      "sha256": "0fac1d6461d154859afaceb4f92c847fff3a42f784c71dad2a35b257f3655517"
+    },
+    "llama8b/hidden": {
+      "bytes": 4805619,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_hidden/results.json",
+      "sha256": "ce128c8ec30d3989d8c5923ce6937f980ac5de0a421a5dfb18c3523d782db958"
+    },
+    "llama8b/joint": {
+      "bytes": 6196641,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_joint/results.json",
+      "sha256": "56d79fa7380456020db3685046c6ee5f095a4f5225fc1aa09701796511b5dd5b"
+    },
+    "llama8b/shuffled_joint": {
+      "bytes": 6188349,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/llama8b_shuffled_joint/results.json",
+      "sha256": "a36f039e02e24d3e395f147b7fb9cd3e9933642ddd830e9593a5dddaca48ff1b"
+    },
+    "source/source1024": {
+      "bytes": 4797184,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source1024/results.json",
+      "sha256": "8c0fc03d3f5e74f3dd1e62c24a84c56aa314b0a39468153eae292a081749e903"
+    },
+    "source/source2048": {
+      "bytes": 4796173,
+      "path": "artifacts/binding/arithmetic_penalty_path/20261101_v1/source_source2048/results.json",
+      "sha256": "33ed38136e361f4e8af93c967bd18ecee61c7210eb4500db834a4614ece32e19"
+    }
+  },
+  "new_model_queries": 0,
+  "new_readout_fits": 0,
+  "source": {
+    "frozen_manifest_sha256": "d6aef235d3c50ebbf362bd1399987d3743eeeb00001baad4d73f33c03607bdcf",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/98bd03c707756b99c11c0391",
+    "snapshot_id": "98bd03c707756b99c11c0391",
+    "source_sha256": "34c61d4f88554a6d59319b9c2a92ca99c8ee4d3713440d4d5f09267f0abffab2"
+  },
+  "status": "complete_exploratory",
+  "totals": {
+    "max_intercept_residual": 2.0663999285735826e-14,
+    "max_prediction_abs_difference": 0.0,
+    "max_relative_normal_equation_residual": 1.1573310908189925e-11,
+    "new_cv": 216,
+    "new_selected": 0,
+    "prediction_coordinates": 3763584,
+    "reused_cv": 216,
+    "reused_selected": 24
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "change": "Lifecycle event emission and job-result sync now try the derived-index lock without blocking; events are spooled first, and refresh retains blocking serialization and replays deferred events.",
+  "code": {
+    "src/codecue/binding/experiment_log.py": {
+      "bytes": 40544,
+      "path": "src/codecue/binding/experiment_log.py",
+      "sha256": "b75eff51d8d17ae6b8a065eeb2541c4fad19a2b16b3aa0b849c8252b2ecabc8d"
+    },
+    "tests/binding/test_experiment_log.py": {
+      "bytes": 24979,
+      "path": "tests/binding/test_experiment_log.py",
+      "sha256": "db329abcc4787ec6f6521b5aa9f4d1b4c49a07c58408036dffef7e69f1e5df99"
+    }
+  },
+  "focused_validation": {
+    "contention_regression": "A child emits a lifecycle event and syncs while its parent holds the real index lock; it must finish within 5 seconds; later refresh recovers the event and running job.",
+    "passed": 77,
+    "seconds": 43.71,
+    "tests": [
+      "tests/binding/test_experiment_log.py",
+      "tests/binding/test_job_logging.py",
+      "tests/binding/test_log_scheduler.py",
+      "tests/binding/test_log_freshness.py",
+      "tests/binding/test_experiment_log_large_metadata.py",
+      "tests/binding/test_log_result_discovery.py"
+    ]
+  },
+  "frozen_scientific_snapshot": "98bd03c707756b99c11c0391",
+  "frozen_scientific_source_unchanged": true,
+  "new_model_queries": 0,
+  "new_readout_fits": 0,
+  "problem": "Job 488416 spent about 168 seconds in stamp.py start before launching the scientific audit, waiting on the derived experiment-log index lock.",
+  "status": "passed"
+}

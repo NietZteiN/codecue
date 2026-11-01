@@ -1,5 +1,13 @@
 # Variable binding, updating and relationships: master research report
 
+> **November 1 penalty continuation completed:** [Findings](../../reports/binding/arithmetic_penalty_path_findings_20261101_v1.md) · [Numerical and operational review](../../reports/binding/arithmetic_penalty_path_postrun_20261101_v1.md) · [Next experiments](../../reports/binding/arithmetic_after_penalty_plan_20261101_v1.md). All eight TRAIN selections remain alpha 10,000, now interior to the six-value grid. Added 216 fits, reused 240 banks, replayed 3,763,584 prediction coordinates exactly. Predictions are unchanged. All 2,697 frozen regression tests and 77 separate logging tests passed.
+
+> **Exact-value diagnostic:** [Full table and support audit](../../reports/binding/arithmetic_exact_value_diagnostic_20261101_v1.md). Both joint probes have 0.00% all-four exact recovery. Only 24/3,168 DEV computed slots (0.76%) have values unseen in the corresponding TRAIN slot. Zero/computed-family-mode exact accuracy (8.90%) exceeds joint (6.68% / 6.00%); joint still has lower MAE. Modes are postrun TRAIN-only statistics, not new selected probe models.
+
+![Audited TRAIN-fold penalty curves](../../reports/binding/figures/arithmetic_penalty_path_v1.png)
+
+[SVG](../../reports/binding/figures/arithmetic_penalty_path_v1.svg) · [PDF](../../reports/binding/figures/arithmetic_penalty_path_v1.pdf)
+
 > **November 1 baseline/endpoint diagnostic:** [Prior and penalty checks](../../reports/binding/arithmetic_conditional_prior_diagnostics_20261101_v1.md) · [Next wave](../../reports/binding/arithmetic_conditional_next_wave_20261101_v1.md). Joint probes beat zero/median on computed MAE (4.986 / 4.944 versus 5.331), but lose on exact rounded accuracy (6.68% / 6.00% versus 8.90%). All eight cells selected the largest tested penalty. Numerical proximity, exact recovery and penalty optimization remain distinct scientific questions.
 
 > **November 1 completed conditional probes:** [Results](../../reports/binding/arithmetic_conditional_findings_20261101_v1.md) · [Independent numerical audit](../../reports/binding/arithmetic_conditional_postrun_review_20261101_v1.md) · [Matched overwrite review](../../reports/binding/arithmetic_calibration_retention_review_20261101_v1.md). All 240 readout fits completed and 2,135,808 prediction coordinates replayed exactly. Joint source-plus-hidden computed MAE is 4.986 / 4.944, beating finite source and shuffled-hidden controls; exact recovery remains 6–7%. All 2,654 regression tests passed. This adds modest conditional predictive evidence and exploratory retention behavior, not a complete state or causal-use claim.
