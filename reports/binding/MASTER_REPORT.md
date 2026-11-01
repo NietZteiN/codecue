@@ -1,5 +1,7 @@
 # Master research document
 
+October 31 literature search: [23-paper probing methods review and ranked experiments](probing_literature_review_20261031_v1.md). Priorities are alternative-semantic controls on fixed states, conditional probing beyond source cues, and global state versus query-dependent retrieval. Shared structured readouts, learning-effort measures and gated causal model comparison follow. These additions are proposals, not submitted jobs.
+
 October 31 methods upgrade: [competing mechanisms and advanced methods](advanced_methods_20261031_v1.md) · [submitted geometry wave](arithmetic_numeric_geometry_launch_v1.md) · [controlled protocol](arithmetic_numeric_geometry_plan_v1.md). New code tests circular decimal/residue geometry against dimension-matched permutations and prepares native final-query vectors. This targeted addendum precedes the broader global-state fits below; shared slots, calibrated MDL and causal alignment remain proposed follow-ups.
 
 October 31 next-run planning: [latest results snapshot](arithmetic_results_for_next_runs_v1.md) · [ordered run plan](arithmetic_next_runs_20261031_plan_v1.md). First priority is cached full-width global decoding of all four values and direct relations; paired timing/overwrite/retention data preparation follows in parallel. The plan is prospective and not submitted; canonical grouping, native token sites and scratch-storage checks precede new GPU work.

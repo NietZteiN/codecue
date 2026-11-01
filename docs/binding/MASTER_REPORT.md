@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 31 literature search:** [23-paper methods review and ranked experiments](../../reports/binding/probing_literature_review_20261031_v1.md). Adds alternative-semantic controls, conditional probing and an explicit global-state versus query-dependent-retrieval comparison. Shared structured readouts, complexity-aware evaluation and causal model comparison remain planned methods.
+
 > **October 31 methods upgrade:** [Competing mechanisms and advanced methods](../../reports/binding/advanced_methods_20261031_v1.md) · [Submitted geometry wave](../../reports/binding/arithmetic_numeric_geometry_launch_v1.md) · [Controlled protocol](../../reports/binding/arithmetic_numeric_geometry_plan_v1.md). The new assay tests circular numeric geometry with matched permutations and prepares final-query vectors. Shared-slot models, calibrated MDL and causal alignment remain proposed follow-ups.
 
 > **October 31 next-run planning:** [Latest results snapshot](../../reports/binding/arithmetic_results_for_next_runs_v1.md) · [Ordered run plan](../../reports/binding/arithmetic_next_runs_20261031_plan_v1.md). Cached full-width global decoding of all four values/direct relations comes first, alongside paired timing/overwrite/retention dataset preparation. No new run is submitted by this planning step.

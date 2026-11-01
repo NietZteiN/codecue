@@ -1,5 +1,11 @@
 # From descriptive probes to discriminating mechanisms
 
+Follow-up: the [October 31 probing literature search](probing_literature_review_20261031_v1.md)
+adds 23 annotated primary papers and six ranked experiment proposals. It makes
+alternative-semantic controls and conditional probing explicit additions, and
+revisits the original binding paper's evidence for query-dependent routing.
+No new experiment is submitted by the literature review.
+
 October 31, 2026. The current linear, low-rank and shallow nonlinear readouts
 are useful baselines. Their main limitation is inferential: a decoder can learn
 a calculation from information in a state, while an unsuccessful decoder can

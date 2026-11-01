@@ -1,0 +1,362 @@
+{
+  "checked_local_date": "2026-10-31",
+  "core_reading_list": 22,
+  "early_stage_radar": 1,
+  "evaluation_role": "primary_probing_methods_literature_review_v1",
+  "evidence_policy": "Technical findings use original papers; surveys and third-party summaries used only for discovery, not evidence.",
+  "generated_holdouts_opened": false,
+  "limitations": [
+    "Targeted search, not exhaustive or systematic review.",
+    "Reading depth varies; no claim that every paper or appendix was read in full.",
+    "No code reproduction, independent figure digitization or proof verification.",
+    "P13 publisher forum/PDF requests met a browser-verification page; primary arXiv HTML used.",
+    "P22 publisher-linked PDF was rejected for application/octet-stream transport; abstract only.",
+    "P23 landing-record July submission conflicts with its 2609 identifier prefix; month not relied upon.",
+    "Unknown pretrained-LM data-generating causal model prevents automatic transfer of P09 identification assumptions."
+  ],
+  "local_context": {
+    "reports/binding/advanced_methods_20261031_v1.md": "78b3dc660e53165ee7155d017e32b4d1adb3af4a5ce080ffeedb7f5b62e1d299",
+    "reports/binding/arithmetic_numeric_postrun_review_v1.md": "54bea6cb6cd1c211fd9b6dd49adbce057077bf35020a9b0bddf1e850c08034c9",
+    "reports/binding/source_review_r1_r4.md": "3445a34b8d7c07c4272b297532e683d23fcafac3e078a36f696128dcddbca322",
+    "reports/binding/source_review_r5_r9.md": "1b854d0da35cdd6785f2cbb5c82ad8a7e15e975ed3faa749d0ce37e07ff0945d"
+  },
+  "new_model_queries": 0,
+  "new_readout_fits": 0,
+  "production_code_or_configs_edited": false,
+  "proposed_experiments": [
+    {
+      "id": "E1",
+      "launchable": false,
+      "name": "alternative_semantics_on_fixed_states",
+      "status": "proposed_not_submitted"
+    },
+    {
+      "id": "E2",
+      "launchable": false,
+      "name": "global_state_vs_query_dependent_retrieval",
+      "status": "proposed_not_submitted"
+    },
+    {
+      "id": "E3",
+      "launchable": false,
+      "name": "conditional_baseline_probing",
+      "status": "proposed_not_submitted"
+    },
+    {
+      "id": "E4",
+      "launchable": false,
+      "name": "shared_variable_and_relation_queries",
+      "status": "proposed_not_submitted"
+    },
+    {
+      "id": "E5",
+      "launchable": false,
+      "name": "complexity_geometry_and_learning_curves",
+      "status": "proposed_not_submitted"
+    },
+    {
+      "id": "E6",
+      "launchable": false,
+      "name": "gated_causal_arithmetic_model_comparison",
+      "status": "proposed_not_submitted"
+    }
+  ],
+  "recorded_utc": "2026-11-01T00:06:03.129297+00:00",
+  "report": "reports/binding/probing_literature_review_20261031_v1.md",
+  "report_sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd",
+  "report_word_count": 2991,
+  "schema_version": 1,
+  "search_strategy": [
+    "broad probing/selectivity/MDL/causal-method discovery",
+    "focused code execution, variable-binding and structural probing searches",
+    "targeted 2025-2026 nonlinear/sparse/transfer searches",
+    "follow primary references and verify publisher records where accessible"
+  ],
+  "selection_criteria": [
+    "hidden-state probing for values/binding/relationships",
+    "control tasks and probe complexity",
+    "program semantics and dynamic routing",
+    "causal use and distributional transfer"
+  ],
+  "source_count": 23,
+  "sources": [
+    {
+      "authors": "Hewitt and Liang",
+      "id": "P01",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/D19-1275/",
+      "reading_scope": "abstract and introduction",
+      "review_depth": "abstract_or_intro_screen",
+      "title": "Designing and Interpreting Probes with Control Tasks",
+      "topic": "selectivity",
+      "venue_status": "EMNLP",
+      "year": 2019
+    },
+    {
+      "authors": "Pimentel et al.",
+      "id": "P02",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2020.acl-main.420/",
+      "reading_scope": "abstract and introduction/section 2 excerpts",
+      "review_depth": "abstract_or_intro_screen",
+      "title": "Information-Theoretic Probing for Linguistic Structure",
+      "topic": "availability",
+      "venue_status": "ACL",
+      "year": 2020
+    },
+    {
+      "authors": "Voita and Titov",
+      "id": "P03",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2020.emnlp-main.14/",
+      "reading_scope": "PDF section 2, especially 2.2.2 online coding",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Information-Theoretic Probing with Minimum Description Length",
+      "topic": "complexity",
+      "venue_status": "EMNLP",
+      "year": 2020
+    },
+    {
+      "authors": "Hewitt et al.",
+      "id": "P04",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2021.emnlp-main.122/",
+      "reading_scope": "arXiv HTML section 2, including input construction",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Conditional probing: measuring usable information beyond a baseline",
+      "topic": "conditional_controls",
+      "venue_status": "EMNLP",
+      "year": 2021
+    },
+    {
+      "authors": "Ravichander, Belinkov and Hovy",
+      "id": "P05",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2021.eacl-main.295/",
+      "reading_scope": "primary abstract",
+      "review_depth": "abstract_or_intro_screen",
+      "title": "Probing the Probing Paradigm: Does Probing Accuracy Entail Task Relevance?",
+      "topic": "relevance",
+      "venue_status": "EACL",
+      "year": 2021
+    },
+    {
+      "authors": "Hewitt and Manning",
+      "id": "P06",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/N19-1419/",
+      "reading_scope": "PDF abstract and section 2 setup",
+      "review_depth": "abstract_or_intro_screen",
+      "title": "A Structural Probe for Finding Syntax in Word Representations",
+      "topic": "graph_geometry",
+      "venue_status": "NAACL",
+      "year": 2019
+    },
+    {
+      "authors": "Troshin and Chirkova",
+      "id": "P07",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2022.blackboxnlp-1.31/",
+      "reading_scope": "primary abstract",
+      "review_depth": "abstract_or_intro_screen",
+      "title": "Probing Pretrained Models of Source Codes",
+      "topic": "code_diagnostics",
+      "venue_status": "BlackboxNLP",
+      "year": 2022
+    },
+    {
+      "authors": "Jin and Rinard",
+      "id": "P08",
+      "independently_reproduced": false,
+      "primary_url": "https://proceedings.mlr.press/v235/jin24e.html",
+      "reading_scope": "arXiv 2305.11169v3 sections 3-4 and semantic intervention construction/results",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Emergent Representations of Program Semantics in Language Models Trained on Programs",
+      "topic": "alternate_semantics",
+      "venue_status": "ICML",
+      "year": 2024
+    },
+    {
+      "authors": "Jin and Rinard",
+      "id": "P09",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2407.13765v2",
+      "reading_scope": "sections 2-4, valid-baseline definition and restrictions; proofs not independently verified",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Latent Causal Probing: A Formal Perspective on Probing with Causal Models of Data",
+      "topic": "causal_data_model",
+      "venue_status": "preprint record; venue not reverified",
+      "year": 2024
+    },
+    {
+      "authors": "Wu, Geiger and Milliere",
+      "id": "P10",
+      "independently_reproduced": false,
+      "primary_url": "https://proceedings.mlr.press/v267/wu25j.html",
+      "reading_scope": "arXiv 2505.20896v2 section 3 and Appendix J; earlier local review cross-checked",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "How Do Transformers Learn Variable Binding in Symbolic Programs?",
+      "topic": "distributed_retrieval",
+      "venue_status": "ICML",
+      "year": 2025
+    },
+    {
+      "authors": "Feng and Steinhardt",
+      "id": "P11",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2310.17191v2",
+      "reading_scope": "abstract, section structure 3-4; earlier local methods reading reused",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "How do Language Models Bind Entities in Context?",
+      "topic": "binding_ids",
+      "venue_status": "ICLR",
+      "year": 2024
+    },
+    {
+      "authors": "Bogdan and Lindsey",
+      "id": "P12",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2604.21139v1",
+      "reading_scope": "section 2.1 routing equations, shared classifiers, training procedure",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Slot Machines: How LLMs Keep Track of Multiple Entities",
+      "topic": "shared_slots",
+      "venue_status": "preprint; no verified venue",
+      "year": 2026
+    },
+    {
+      "authors": "Lepori, Serre and Pavlick",
+      "id": "P13",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2311.04354v3",
+      "reading_scope": "sections 2-4; Appendices H-I and Q; selected methods/results, not all appendices",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Uncovering Intermediate Variables in Transformers using Circuit Probing",
+      "topic": "circuits",
+      "venue_status": "COLM; publisher PDF indexed, forum retrieval blocked",
+      "year": 2024
+    },
+    {
+      "authors": "Geiger et al.",
+      "id": "P14",
+      "independently_reproduced": false,
+      "primary_url": "https://proceedings.mlr.press/v236/geiger24a.html",
+      "reading_scope": "publisher abstract/method summary; prior local methods review reused",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations",
+      "topic": "DAS",
+      "venue_status": "CLeaR",
+      "year": 2024
+    },
+    {
+      "authors": "Elazar et al.",
+      "id": "P15",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2021.tacl-1.10/",
+      "reading_scope": "abstract and section 2 control excerpts",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Amnesic Probing: Behavioral Explanation with Amnesic Counterfactuals",
+      "topic": "erasure",
+      "venue_status": "TACL",
+      "year": 2021
+    },
+    {
+      "authors": "Belrose et al.",
+      "id": "P16",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2306.03819v4",
+      "reading_scope": "abstract and section 7 limitations; proofs not independently verified",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "LEACE: Perfect linear concept erasure in closed form",
+      "topic": "erasure",
+      "venue_status": "NeurIPS",
+      "year": 2023
+    },
+    {
+      "authors": "Dobrzeniecka, Fokkens and Sommerauer",
+      "id": "P17",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2025.findings-acl.674/",
+      "reading_scope": "abstract and section 2 excerpts, HTML methods/limitations structure",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Improving Causal Interventions in Amnesic Probing with Mean Projection or LEACE",
+      "topic": "erasure_controls",
+      "venue_status": "Findings ACL",
+      "year": 2025
+    },
+    {
+      "authors": "Levy and Geva",
+      "id": "P18",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2410.11781v2",
+      "reading_scope": "section 3; prior local full-method reading reused",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Language Models Encode Numbers Using Digit Representations in Base 10",
+      "topic": "numeric_geometry",
+      "venue_status": "NAACL",
+      "year": 2025
+    },
+    {
+      "authors": "Sun, Stolfo and Sachan",
+      "id": "P19",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2025.emnlp-main.411/",
+      "reading_scope": "arXiv 2507.12379 section 2.2 methods, primary abstract and selected results",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Probing for Arithmetic Errors in Language Models",
+      "topic": "behavior_prediction",
+      "venue_status": "EMNLP",
+      "year": 2025
+    },
+    {
+      "authors": "Gurnee et al.",
+      "id": "P20",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2305.01610",
+      "reading_scope": "section 3 and Appendix B.3-B.4 selection/training excerpts",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Finding Neurons in a Haystack: Case Studies with Sparse Probing",
+      "topic": "sparse_readouts",
+      "venue_status": "TMLR",
+      "year": 2023
+    },
+    {
+      "authors": "Klubicka and Kelleher",
+      "id": "P21",
+      "independently_reproduced": false,
+      "primary_url": "https://aclanthology.org/2022.blackboxnlp-1.34/",
+      "reading_scope": "abstract and limitations excerpts",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Probing with Noise: Unpicking the Warp and Weft of Embeddings",
+      "topic": "geometric_controls",
+      "venue_status": "BlackboxNLP",
+      "year": 2022
+    },
+    {
+      "authors": "Barin-Pacela et al.",
+      "id": "P22",
+      "independently_reproduced": false,
+      "primary_url": "https://proceedings.mlr.press/v337/barin-pacela26a.html",
+      "reading_scope": "publisher abstract only; linked PDF transport rejected",
+      "review_depth": "abstract_or_intro_screen",
+      "title": "Stop Probing, Start Coding: Why Linear Probes and Sparse Autoencoders Fail at Compositional Generalization",
+      "topic": "iterative_inference",
+      "venue_status": "UAI",
+      "year": 2026
+    },
+    {
+      "authors": "Yoo and Skapars",
+      "id": "P23",
+      "independently_reproduced": false,
+      "primary_url": "https://arxiv.org/html/2609.02893",
+      "reading_scope": "sections 3-5; target-informed oracle versus source-only selection and limitations",
+      "review_depth": "selected_primary_methods_or_results",
+      "title": "Probe Generalization as Subspace Selection for OOD Deception Detection",
+      "topic": "subspace_transfer_radar",
+      "venue_status": "preprint; no verified venue",
+      "year": 2026
+    }
+  ],
+  "status": "reviewed_scoped_primary_sources",
+  "timezone": "America/Chicago"
+}
