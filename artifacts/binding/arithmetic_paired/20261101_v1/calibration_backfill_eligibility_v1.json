@@ -1,0 +1,38 @@
+{
+  "actions": [
+    {
+      "command": [
+        "scontrol",
+        "update",
+        "JobId=487742",
+        "TimeMin=00:30:00"
+      ],
+      "job": "487742",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "scontrol",
+        "update",
+        "JobId=487743",
+        "TimeMin=00:30:00"
+      ],
+      "job": "487743",
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "maximum_walltime": "2-00:00:00",
+  "minimum_backfill_allocation": "00:30:00",
+  "protocol_note": "Actual scheduler allocation range only; no project allowance, prompt reduction, batch change or generation-token change. Immutable successful batches resume; scientific failures still stop.",
+  "reason": "Scheduler estimates were next-day for contiguous 48-hour requests; allow shorter backfill allocations for finite, batch-resumable calibration.",
+  "recorded_utc": "2026-11-01T15:54:16.866654+00:00",
+  "source": {
+    "frozen_manifest_sha256": "f55735feb7c8fa920d95e6e86c344a225faa6e2935430b98a36ec5dbcc35db1f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4da3d9b46a28a90f13ea58be",
+    "snapshot_id": "4da3d9b46a28a90f13ea58be",
+    "source_sha256": "aa28ae00297759c74b75db8443621e7ce3077e84d2c6270ff18b740b000a3e65"
+  },
+  "status": "reviewed_owned_jobs"
+}

@@ -43,6 +43,9 @@ GLOBAL_ROOT = 'artifacts/binding/arithmetic_global_state/20261031_v1'
 ROOTS += [GLOBAL_ROOT] + [GLOBAL_ROOT + '/' + name for name in (
     'cache', 'llama8b_width1024', 'llama8b_width4096', 'codellama34b_width1024',
     'codellama34b_width8192', 'source_width1024', 'source_width4096', 'source_width8192')]
+PAIRED_ROOT = 'artifacts/binding/arithmetic_paired/20261101_v1'
+ROOTS += [PAIRED_ROOT] + [PAIRED_ROOT + '/' + name for name in (
+    'sources', 'llama8b_native', 'codellama34b_native', 'llama8b_calibration', 'codellama34b_calibration')]
 MUTABLE = {'manifest.json', 'progress.json', 'jobs_live_v1.json', 'status_review_v1.json'}
 
 
@@ -91,6 +94,9 @@ def main():
     for relative in roots:
         folder = ROOT / relative
         for path in sorted(folder.rglob('*')):
+            if (path.name.startswith(('.', 'attempt_live_')) or '.pending.' in path.name
+                    or path.name.endswith(('.pending', '.tmp'))):
+                continue
             if not path.is_file() or '__pycache__' in path.parts or 'regression_sources' in path.parts or 'saved_work_prefix' in path.parts:
                 continue
             name = str(path.relative_to(ROOT))
@@ -108,7 +114,7 @@ def main():
             # Git cannot track children of the scratch-backed directory links.
             # Publish their immutable text through the existing lossless gzip
             # catalog, whose restore command recreates original artifact paths.
-            if path.suffix == '.jsonl' or relative.startswith(tuple(root + '/' for root in (NUMERIC_ROOT, GEOMETRY_ROOT, GLOBAL_ROOT, *SEMANTIC_ROOTS))):
+            if path.suffix == '.jsonl' or relative.startswith(tuple(root + '/' for root in (NUMERIC_ROOT, GEOMETRY_ROOT, GLOBAL_ROOT, PAIRED_ROOT, *SEMANTIC_ROOTS))):
                 target = ROOT / 'reproducibility/compressed' / (name + '.gz')
                 target.parent.mkdir(parents=True, exist_ok=True)
                 with target.open('wb') as raw:
@@ -138,7 +144,9 @@ def main():
         mirror = folder / 'regression_sources'
         if mirror.exists():
             label = 'local' if '/arithmetic_local/' in relative else 'selection'
-            if '/arithmetic_global_state/' in relative:
+            if '/arithmetic_paired/' in relative:
+                filename = f'arithmetic_paired_regression_{folder.name}.tar.gz'
+            elif '/arithmetic_global_state/' in relative:
                 filename = f'arithmetic_global_state_regression_{folder.name}.tar.gz'
             elif '/arithmetic_semantic_controls/' in relative:
                 filename = f'arithmetic_semantic_controls_regression_{folder.name}.tar.gz'

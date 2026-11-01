@@ -1,0 +1,32 @@
+{
+  "command": [
+    "scontrol",
+    "update",
+    "JobId=487737",
+    "StartTime=now"
+  ],
+  "native_reviews": {
+    "codellama34b": {
+      "bytes": 61741,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/codellama34b_native/results.json",
+      "sha256": "a8c873a5b6fbe04e893c52f45f73d9ebb4b09383b8621ec7f052529c76a81f39"
+    },
+    "llama8b": {
+      "bytes": 61733,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_native/results.json",
+      "sha256": "6648615744ac570dbf9bb4d2d6fefcffea09d38ec41e34fc8f30ad7d7698a1b8"
+    }
+  },
+  "reason": "Release both GPU calibration jobs after both native checks passed.",
+  "recorded_utc": "2026-11-01T15:48:22.966303+00:00",
+  "scientific_protocol_changed": false,
+  "source": {
+    "frozen_manifest_sha256": "f55735feb7c8fa920d95e6e86c344a225faa6e2935430b98a36ec5dbcc35db1f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4da3d9b46a28a90f13ea58be",
+    "snapshot_id": "4da3d9b46a28a90f13ea58be",
+    "source_sha256": "aa28ae00297759c74b75db8443621e7ce3077e84d2c6270ff18b740b000a3e65"
+  },
+  "status": "updated_owned_controller",
+  "stderr": "",
+  "stdout": ""
+}

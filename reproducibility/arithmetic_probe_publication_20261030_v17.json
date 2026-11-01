@@ -1,0 +1,37 @@
+{
+  "artifacts": {
+    "artifacts/binding/arithmetic_paired/20261101_v1/qa/regression.xml": {
+      "sha256": "553d7243f64a3354acbe1c95d1c60a5aea3969c53088c52c1dbe906766e7f16c"
+    },
+    "artifacts/binding/arithmetic_paired/20261101_v1/qa/regression_review.json": {
+      "sha256": "6c88c51e6cc51ad5fb5b6960e2839710e67fe0f363a97452078e40bff6bd365d"
+    },
+    "artifacts/binding/arithmetic_paired/20261101_v1/source_review_v1.json": {
+      "sha256": "8fd20c63200a5b4f40a2a3665e886b646f545f84d0fcff93664b1ea45c87ec7b"
+    }
+  },
+  "credentials_detected": 0,
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "policy": "Raw arrays remain local; source and immutable metadata published; JSONL and scratch-backed worker text losslessly compressed. Mutable live state excluded.",
+  "published_roots": [
+    "artifacts/binding/arithmetic_paired/20261101_v1",
+    "artifacts/binding/arithmetic_paired/20261101_v1/sources",
+    "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_native",
+    "artifacts/binding/arithmetic_paired/20261101_v1/codellama34b_native",
+    "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration",
+    "artifacts/binding/arithmetic_paired/20261101_v1/codellama34b_calibration"
+  ],
+  "recorded_utc": "2026-11-01T15:38:56.523411+00:00",
+  "regression_archives": [
+    {
+      "bytes": 1463616,
+      "path": "reproducibility/arithmetic_paired_regression_20261101_v1.tar.gz",
+      "sha256": "fff372c7903ec9fdcf0e71f11c886de5a1d2b7cce5ac2618870367d025157b50"
+    }
+  ],
+  "source_ids": [
+    "4da3d9b46a28a90f13ea58be"
+  ],
+  "status": "published_metadata"
+}

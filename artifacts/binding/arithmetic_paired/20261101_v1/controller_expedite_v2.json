@@ -1,0 +1,21 @@
+{
+  "command": [
+    "scontrol",
+    "update",
+    "JobId=487730",
+    "StartTime=now"
+  ],
+  "reason": "Start both native checks after independent execution and structural closure passed.",
+  "recorded_utc": "2026-11-01T15:44:20.897398+00:00",
+  "scientific_protocol_changed": false,
+  "source": {
+    "frozen_manifest_sha256": "f55735feb7c8fa920d95e6e86c344a225faa6e2935430b98a36ec5dbcc35db1f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4da3d9b46a28a90f13ea58be",
+    "snapshot_id": "4da3d9b46a28a90f13ea58be",
+    "source_sha256": "aa28ae00297759c74b75db8443621e7ce3077e84d2c6270ff18b740b000a3e65"
+  },
+  "status": "updated_owned_controller",
+  "stderr": "",
+  "stdout": "",
+  "upstream": "487731"
+}

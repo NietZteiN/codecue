@@ -1,0 +1,46 @@
+{
+  "dataset": {
+    "bytes": 246849945,
+    "path": "artifacts/binding/arithmetic_paired/20261101_v1/sources/sources.jsonl",
+    "sha256": "e4768bca4f36b4ac13d68d55266bc4ddf0249d57ed1f43a36d4035f18e6c62d7"
+  },
+  "evaluation_role": "registered_paired_sources_v1",
+  "feasibility": {
+    "arithmetic_components": 192,
+    "calibration_policy": "literal and copy controls remain outside probe fits because of ancestry collapse",
+    "candidate_templates": 192,
+    "components_if_copy_relatives_joined": 23,
+    "exclusions": "old arithmetic-graph and arithmetic-local prefix skeletons; not a new confirmation claim",
+    "selected_components": 128,
+    "split_components": {
+      "development": 32,
+      "train": 96
+    }
+  },
+  "generation_config_hash": "2d350c8cf56859ae3d260e78b7b381ab50718bae5c74b04c75d187f58a19bd75",
+  "preparation_manifest": {
+    "bytes": 4596,
+    "path": "artifacts/binding/arithmetic_paired/20261101_v1/sources/sources.manifest.json",
+    "sha256": "e95a9a734ab7706844435c97731333f001ae450adbe2c6f7d93791ab7b1c2658"
+  },
+  "role": "compatibility registration for automatic dataset index; source data unchanged",
+  "rows": 27864,
+  "sha256": "e4768bca4f36b4ac13d68d55266bc4ddf0249d57ed1f43a36d4035f18e6c62d7",
+  "source": {
+    "frozen_manifest_sha256": "f55735feb7c8fa920d95e6e86c344a225faa6e2935430b98a36ec5dbcc35db1f",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/4da3d9b46a28a90f13ea58be",
+    "snapshot_id": "4da3d9b46a28a90f13ea58be",
+    "source_sha256": "aa28ae00297759c74b75db8443621e7ce3077e84d2c6270ff18b740b000a3e65"
+  },
+  "summary": {
+    "contrast/binding": 9216,
+    "contrast/retention": 18648,
+    "nominated/calibration": 216,
+    "nominated/development": 1728,
+    "nominated/train": 5184,
+    "rows": 27864,
+    "split/calibration": 216,
+    "split/development": 6912,
+    "split/train": 20736
+  }
+}

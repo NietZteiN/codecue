@@ -1,0 +1,149 @@
+{
+  "declared_plan": "reports/binding/arithmetic_paired_plan_20261101_v1.md",
+  "declared_plan_sha256": "f1e151f85f251ab195588cc44b964e882d5c3e6dfbd25aae0ead4c507d71a710",
+  "evaluation_role": "discovery_arithmetic_paired_suite_v1",
+  "morning_at": "2026-11-02T08:00:00-06:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_paired_20261101_v1/qa.json",
+      "config_sha256": "fc9807c5700531c7b6e8973f97912391e71658891c5d8c1c31b2394bce6c3b9f",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_paired/20261101_v1/qa/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/211_binding_paired_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_20261101_v1/sources.json",
+      "config_sha256": "c35c7acc1614e29c4294fe59a9976248cb1968b2fc75edfb202bc8d34a40afc3",
+      "cpus": 8,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "sources",
+      "marker": "artifacts/binding/arithmetic_paired/20261101_v1/sources/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/211_binding_paired_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_20261101_v1/llama8b_native.json",
+      "config_sha256": "c5890478b6e1e36fbcd869c501a8d9c7622ad0e9ee7ea77c864d1638ab6adfe1",
+      "cpus": 16,
+      "dependencies": [
+        "sources"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_native",
+      "marker": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_native/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/211_binding_paired_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_20261101_v1/codellama34b_native.json",
+      "config_sha256": "10c4eda4732ab527abcafced03647c98cfd0c9af1ab3c3ef84c20398754ea97e",
+      "cpus": 16,
+      "dependencies": [
+        "sources"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_native",
+      "marker": "artifacts/binding/arithmetic_paired/20261101_v1/codellama34b_native/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/211_binding_paired_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_20261101_v1/llama8b_calibration.json",
+      "config_sha256": "bf133f548ea76accd43b2eadcf7e8ffa6cb31c10e1a9b49efe7b5952cf635324",
+      "cpus": 8,
+      "dependencies": [
+        "llama8b_native",
+        "codellama34b_native"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_calibration",
+      "marker": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "96G",
+      "partition": "h200",
+      "phase": "cpu",
+      "script": "scripts/211_binding_paired_state.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_20261101_v1/codellama34b_calibration.json",
+      "config_sha256": "505f251e57f998713d76efb4928c7533654bd8cd983c712f590ab1bd5043c62f",
+      "cpus": 8,
+      "dependencies": [
+        "llama8b_native",
+        "codellama34b_native"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_calibration",
+      "marker": "artifacts/binding/arithmetic_paired/20261101_v1/codellama34b_calibration/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "96G",
+      "partition": "h200",
+      "phase": "cpu",
+      "script": "scripts/211_binding_paired_state.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_paired_20261101_v1/report.json",
+      "config_sha256": "6d4d2e3c7a9e391d7f2c70129d21b9f045579706de52ad728ed865dd6e0ec199",
+      "cpus": 4,
+      "dependencies": [
+        "llama8b_calibration",
+        "codellama34b_calibration"
+      ],
+      "expected_cases": 0,
+      "key": "report",
+      "marker": "artifacts/binding/arithmetic_paired/20261101_v1/report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "8G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/211_binding_paired_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_paired_status_20261101_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_paired/20261101_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_paired/20261101_v1/qa/regression.xml",
+    "minimum_tests": 2570,
+    "review": "artifacts/binding/arithmetic_paired/20261101_v1/qa/regression_review.json"
+  }
+}
