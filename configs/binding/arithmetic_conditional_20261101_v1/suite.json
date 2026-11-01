@@ -1,0 +1,210 @@
+{
+  "declared_plan": "reports/binding/arithmetic_conditional_plan_20261101_v1.md",
+  "declared_plan_sha256": "3dc1782a38a927e0b4f3bb98bc96615325d9a2a059179138550b5f8f1568610d",
+  "evaluation_role": "discovery_arithmetic_conditional_suite_v1",
+  "morning_at": "2026-11-02T08:00:00-06:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/qa.json",
+      "config_sha256": "8931af86c4ccb08917622e837ba1c987a351d16e6a6a793004101b428e81e596",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/qa/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/source_source1024.json",
+      "config_sha256": "9c9a6adaee7318720bc61bef663055140d4a66c7be5805bf1c763c5155f4c4ce",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "source_source1024",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/source_source1024/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/source_source2048.json",
+      "config_sha256": "a3eeea0b64858d93a36d276e8b280a8582c3f3ab6ce9747f14dbf62790d158e1",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "source_source2048",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/source_source2048/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/llama8b_hidden.json",
+      "config_sha256": "fefb6368291b32d4743d7cda3a905f94161436a572af098e498f45ddef51ff3f",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_hidden",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/llama8b_hidden/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/llama8b_joint.json",
+      "config_sha256": "5332174ad604bfde57bf7df1051cc2958294eaa7c30dcc87a997ac81c61225c3",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_joint",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/llama8b_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/llama8b_shuffled_joint.json",
+      "config_sha256": "761655a89fb4119039698a8b830ba11ea47e184af10f0a4b1d45f618b4527569",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_shuffled_joint",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/llama8b_shuffled_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/codellama34b_hidden.json",
+      "config_sha256": "ea9817da130c57661056277c86198c3517176c99f7ebaa9f0ec35bd4a96dafad",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_hidden",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/codellama34b_hidden/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/codellama34b_joint.json",
+      "config_sha256": "9db4da6fb11b8ae19a040e1344a94c54bcb76da8f884affe8f0d8fa80cadda3a",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_joint",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/codellama34b_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/codellama34b_shuffled_joint.json",
+      "config_sha256": "a5c730b7c88a74c66f2a6771817a7fd5ba3ca17594ba0f1cf4491f1673d8a400",
+      "cpus": 16,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_shuffled_joint",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/codellama34b_shuffled_joint/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_conditional_20261101_v1/report.json",
+      "config_sha256": "1d58c6fee1c604470d3c3ff3904a189b63ba8840b00b5fb8b0954de8ea4cd173",
+      "cpus": 8,
+      "dependencies": [
+        "source_source1024",
+        "source_source2048",
+        "llama8b_hidden",
+        "llama8b_joint",
+        "llama8b_shuffled_joint",
+        "codellama34b_hidden",
+        "codellama34b_joint",
+        "codellama34b_shuffled_joint"
+      ],
+      "expected_cases": 0,
+      "key": "report",
+      "marker": "artifacts/binding/arithmetic_conditional/20261101_v1/report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "16G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/220_binding_conditional_state.py",
+      "time": "02:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_conditional_status_20261101_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_conditional/20261101_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_conditional/20261101_v1/qa/regression.xml",
+    "minimum_tests": 2654,
+    "review": "artifacts/binding/arithmetic_conditional/20261101_v1/qa/regression_review.json"
+  }
+}

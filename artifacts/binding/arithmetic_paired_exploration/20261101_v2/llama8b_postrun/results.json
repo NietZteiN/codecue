@@ -1,0 +1,4415 @@
+{
+  "alias": "llama8b",
+  "audited_continuations": 564,
+  "cases": 1296,
+  "cells": {
+    "intermediate_query/all": {
+      "ambiguous_wrong_candidate_rows": 3,
+      "components": 8,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 204,
+      "rows": 216,
+      "strict_accepted": 216,
+      "strict_correct": 204,
+      "target_correct": 207,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 2,
+        "other_current_binding": 1,
+        "recomputed_current_operands": 6
+      }
+    },
+    "intermediate_query/all/arithmetic/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "intermediate_query/all/arithmetic/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "recomputed_current_operands": 3
+      }
+    },
+    "intermediate_query/all/arithmetic/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 1
+      }
+    },
+    "intermediate_query/all/arithmetic/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/arithmetic/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "intermediate_query/all/copy/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/copy/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/all/literal/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single": {
+      "ambiguous_wrong_candidate_rows": 2,
+      "components": 8,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 206,
+      "rows": 216,
+      "strict_accepted": 216,
+      "strict_correct": 206,
+      "target_correct": 206,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 3,
+        "recomputed_current_operands": 4
+      }
+    },
+    "intermediate_query/single/arithmetic/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 1
+      }
+    },
+    "intermediate_query/single/arithmetic/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 1
+      }
+    },
+    "intermediate_query/single/arithmetic/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "intermediate_query/single/arithmetic/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/arithmetic/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "intermediate_query/single/copy/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/copy/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "intermediate_query/single/literal/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "intermediate_query/single/literal/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all": {
+      "ambiguous_wrong_candidate_rows": 10,
+      "components": 8,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 105,
+      "rows": 216,
+      "strict_accepted": 216,
+      "strict_correct": 105,
+      "target_correct": 138,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 11,
+        "other_current_binding": 16,
+        "recomputed_current_operands": 8,
+        "stale_target": 6
+      }
+    },
+    "output_only/all/arithmetic/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1
+      }
+    },
+    "output_only/all/arithmetic/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 2,
+        "other_current_binding": 3,
+        "stale_target": 1
+      }
+    },
+    "output_only/all/arithmetic/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 2,
+        "other_current_binding": 1,
+        "stale_target": 1
+      }
+    },
+    "output_only/all/arithmetic/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 2,
+        "other_current_binding": 1,
+        "stale_target": 1
+      }
+    },
+    "output_only/all/arithmetic/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/all/arithmetic/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "other_current_binding": 3
+      }
+    },
+    "output_only/all/arithmetic/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/all/arithmetic/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/arithmetic/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "stale_target": 1
+      }
+    },
+    "output_only/all/arithmetic/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "output_only/all/arithmetic/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 1,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "other_current_binding": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/all/copy/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 1
+      }
+    },
+    "output_only/all/copy/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/all/copy/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/all/copy/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 2,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 2,
+        "recomputed_current_operands": 1,
+        "stale_target": 1
+      }
+    },
+    "output_only/all/copy/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/copy/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 2,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 0,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 2,
+        "recomputed_current_operands": 2
+      }
+    },
+    "output_only/all/literal/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 0,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 0,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 0,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 0,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/all/literal/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single": {
+      "ambiguous_wrong_candidate_rows": 5,
+      "components": 8,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 115,
+      "rows": 216,
+      "strict_accepted": 212,
+      "strict_correct": 115,
+      "target_correct": 115,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 11,
+        "other_current_binding": 14,
+        "recomputed_current_operands": 3,
+        "stale_target": 21
+      }
+    },
+    "output_only/single/arithmetic/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 5,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/arithmetic/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 6,
+      "strict_accepted": 4,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1
+      }
+    },
+    "output_only/single/arithmetic/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/arithmetic/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 2,
+        "stale_target": 1
+      }
+    },
+    "output_only/single/arithmetic/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/arithmetic/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1
+      }
+    },
+    "output_only/single/arithmetic/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 5,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "output_only/single/arithmetic/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/single/arithmetic/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 2
+      }
+    },
+    "output_only/single/arithmetic/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/single/arithmetic/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 2
+      }
+    },
+    "output_only/single/arithmetic/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 1
+      }
+    },
+    "output_only/single/arithmetic/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1
+      }
+    },
+    "output_only/single/arithmetic/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1
+      }
+    },
+    "output_only/single/arithmetic/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1
+      }
+    },
+    "output_only/single/arithmetic/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 2
+      }
+    },
+    "output_only/single/arithmetic/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "other_current_binding": 1
+      }
+    },
+    "output_only/single/arithmetic/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "other_current_binding": 1
+      }
+    },
+    "output_only/single/copy/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 1
+      }
+    },
+    "output_only/single/copy/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 3
+      }
+    },
+    "output_only/single/copy/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/copy/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 2
+      }
+    },
+    "output_only/single/copy/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 1
+      }
+    },
+    "output_only/single/copy/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 0,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 3
+      }
+    },
+    "output_only/single/copy/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "output_only/single/copy/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/copy/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "output_only/single/copy/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/copy/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "output_only/single/copy/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/copy/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 1
+      }
+    },
+    "output_only/single/copy/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "stale_target": 2
+      }
+    },
+    "output_only/single/copy/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "stale_target": 1
+      }
+    },
+    "output_only/single/copy/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "stale_target": 2
+      }
+    },
+    "output_only/single/copy/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "stale_target": 2
+      }
+    },
+    "output_only/single/copy/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 1,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "stale_target": 2
+      }
+    },
+    "output_only/single/literal/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "output_only/single/literal/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 8,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 192,
+      "rows": 216,
+      "strict_accepted": 192,
+      "strict_correct": 174,
+      "target_correct": 184,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1,
+        "other_current_binding": 1,
+        "recomputed_current_operands": 2
+      }
+    },
+    "stepwise/all/arithmetic/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 5,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 5,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 2
+      }
+    },
+    "stepwise/all/arithmetic/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "opposite_operator": 1
+      }
+    },
+    "stepwise/all/arithmetic/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 4,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 5,
+      "strict_correct": 4,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 4,
+      "strict_correct": 3,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "stepwise/all/arithmetic/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 3,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 6,
+      "strict_accepted": 3,
+      "strict_correct": 1,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 4,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/arithmetic/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/copy/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/all/literal/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 8,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 197,
+      "rows": 216,
+      "strict_accepted": 120,
+      "strict_correct": 108,
+      "target_correct": 108,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 2,
+        "recomputed_current_operands": 8
+      }
+    },
+    "stepwise/single/arithmetic/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 6,
+      "strict_accepted": 4,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 4
+      }
+    },
+    "stepwise/single/arithmetic/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1
+      }
+    },
+    "stepwise/single/arithmetic/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "recomputed_current_operands": 3
+      }
+    },
+    "stepwise/single/arithmetic/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 6,
+      "target_correct": 6,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 6,
+      "rows": 6,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 4,
+      "strict_correct": 4,
+      "target_correct": 4,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 4,
+      "rows": 6,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/arithmetic/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 2,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 5,
+      "rows": 6,
+      "strict_accepted": 6,
+      "strict_correct": 5,
+      "target_correct": 5,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/copy/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 1,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 2,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {
+        "other_current_binding": 1,
+        "recomputed_current_operands": 1
+      }
+    },
+    "stepwise/single/literal/depth0/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth0/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth0/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 1,
+      "strict_correct": 1,
+      "target_correct": 1,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth0/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth0/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth0/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth1/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth1/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth1/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth1/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth1/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth1/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth2/instruction0/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth2/instruction0/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 0,
+      "strict_correct": 0,
+      "target_correct": 0,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth2/instruction1/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth2/instruction1/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 2,
+      "strict_correct": 2,
+      "target_correct": 2,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth2/instruction2/mutation-irrelevant": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    },
+    "stepwise/single/literal/depth2/instruction2/mutation-operand": {
+      "ambiguous_wrong_candidate_rows": 0,
+      "components": 1,
+      "correct_explicit_answer_but_truncated": 0,
+      "diagnostic_complete_correct": 3,
+      "rows": 3,
+      "strict_accepted": 3,
+      "strict_correct": 3,
+      "target_correct": 3,
+      "truncated": 0,
+      "wrong_target_candidate_matches": {}
+    }
+  },
+  "config": {
+    "bytes": 1107,
+    "path": "configs/binding/arithmetic_paired_exploration_20261101_v2/llama8b_continuation.json",
+    "sha256": "d95ab35f521883f2d0d26bb5d9e1b9cbd142eac2387dcca16917f5bb1c3fcfae"
+  },
+  "continuation_pins": {
+    "continuation_0000": {
+      "bytes": 395363,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0000.json",
+      "sha256": "fb77555309f1f1a7884d0695a4e3bcaaedaf1c58bc14a69ba29f738b9a40759f"
+    },
+    "continuation_0001": {
+      "bytes": 105678,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0001.json",
+      "sha256": "e4ae6258d71399449a9a5683ba759df9d3661a92e81f5aeeb0e65dff5d3dbeb5"
+    },
+    "continuation_0002": {
+      "bytes": 377115,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0002.json",
+      "sha256": "c5addce0edb77a2d331a5a35e291778ee56eb89c225b9bcfac78ab98b4736f6c"
+    },
+    "continuation_0003": {
+      "bytes": 364432,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0003.json",
+      "sha256": "8582993b7f09d0d32c9eb1b3de11c62d59cf276dabf694afdb0f410f023ec864"
+    },
+    "continuation_0004": {
+      "bytes": 384334,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0004.json",
+      "sha256": "b3c516c10026822f0eb15114ae1b97452548d00e827b60197793e6565cb33ceb"
+    },
+    "continuation_0005": {
+      "bytes": 389344,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0005.json",
+      "sha256": "ede3f92871ab828d832c55f7e40e4fe2b8b562b580254cfd0c53e40fcdaf4d9c"
+    },
+    "continuation_0006": {
+      "bytes": 364493,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0006.json",
+      "sha256": "6175447e256703bffbbd0e69586c354650d505bdaebb684b98b777ac3d26268d"
+    },
+    "continuation_0007": {
+      "bytes": 362895,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0007.json",
+      "sha256": "9dd3b1f2aa08764086b132ed84c5f52235d5e988e6bf13fe4c015d68659fdda6"
+    },
+    "continuation_0008": {
+      "bytes": 291012,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0008.json",
+      "sha256": "12249a1d75097bc3199c725f35d58bf9efba5fabd5d73accffae85566a5e1c37"
+    },
+    "continuation_0009": {
+      "bytes": 502502,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/continuation_0009.json",
+      "sha256": "925882468f0e196df25d122f94f5a935701c997af4d5314ae6dc199a8ff25644"
+    }
+  },
+  "eos_ids": [
+    128001,
+    128008,
+    128009
+  ],
+  "eos_origin": "cached_generation_config",
+  "formal_capture_submitted": false,
+  "generated_holdouts_opened": false,
+  "input_pins": {
+    "batch_000000": {
+      "bytes": 185220,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000000.json",
+      "sha256": "457a6f43e65c23abb6837dc8862715329bcf8a433359351255524563a34988c1"
+    },
+    "batch_000128": {
+      "bytes": 135658,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000128.json",
+      "sha256": "65d4fccf3f669e74d9375284ddfd17565981f8e2e802850920a75ac63f8afcf8"
+    },
+    "batch_000256": {
+      "bytes": 100246,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000256.json",
+      "sha256": "95391bb431fbac9c399054dc741b5d9bcf9e51afc9b0730d1d714956ac48b845"
+    },
+    "batch_000384": {
+      "bytes": 37860,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000384.json",
+      "sha256": "a6a008db35f5ece56d71552e6aaf329126d28a87185f4827a09df19e80c45cf9"
+    },
+    "batch_000432": {
+      "bytes": 354623,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000432.json",
+      "sha256": "8062e522ed89181921028ea2f5ee077f3e45cf7e5a12ea939cce79bbded0ec21"
+    },
+    "batch_000560": {
+      "bytes": 355793,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000560.json",
+      "sha256": "66f5c35cd74362c1d250a58401b1bc4a1fac5f65749ccce206467a2734906c9f"
+    },
+    "batch_000688": {
+      "bytes": 346900,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000688.json",
+      "sha256": "3ca39ed919cf501253abbb4b72b7045ecbe2c12f096268652f74c491891d3c05"
+    },
+    "batch_000816": {
+      "bytes": 133220,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000816.json",
+      "sha256": "e4d95fdec4a9fe9c490b621e5e17cf427c73d73d43d73302500b4d310f3d9eb8"
+    },
+    "batch_000864": {
+      "bytes": 930767,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000864.json",
+      "sha256": "3165b70cd4ca732bcf6aaa39290ee8415f82592675f9afffa97bfc988c338873"
+    },
+    "batch_000992": {
+      "bytes": 805412,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_000992.json",
+      "sha256": "45429e5e66a3043d1c4a4d81a9c443004ded957d1bb673e9c86a345164af7002"
+    },
+    "batch_001120": {
+      "bytes": 854827,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_001120.json",
+      "sha256": "9d0a6a1d66c68e8aaf0f38b385cdbb5e2dbdedbf19867efb4ac62d5203a1e4a4"
+    },
+    "batch_001248": {
+      "bytes": 275698,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/batch_001248.json",
+      "sha256": "185e3522304f17b793eef92aac313da28ecd066719e07f5bd5cad6c97b7a18eb"
+    },
+    "completion": {
+      "bytes": 3679,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_calibration/completion_manifest_v1.json",
+      "sha256": "ec2dc212cd23bf39cc999bbcf61040a01eea990f5f1160e01b1d9827d65c5191"
+    },
+    "config": {
+      "bytes": 1345,
+      "path": "configs/binding/arithmetic_paired_20261101_v1/llama8b_calibration.json",
+      "sha256": "bf133f548ea76accd43b2eadcf7e8ffa6cb31c10e1a9b49efe7b5952cf635324"
+    },
+    "prepared": {
+      "bytes": 158056470,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/llama8b_native/prepared_cases.jsonl",
+      "sha256": "a17eb70dfe09288c08552e47d275826de9a5bc738047ab1bfe43c6009252c194"
+    },
+    "source_dataset": {
+      "bytes": 246849945,
+      "path": "artifacts/binding/arithmetic_paired/20261101_v1/sources/sources.jsonl",
+      "sha256": "e4768bca4f36b4ac13d68d55266bc4ddf0249d57ed1f43a36d4035f18e6c62d7"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "original_scores_unchanged": true,
+  "panels": {
+    "diagnostic": {
+      "protocol": {
+        "all/intermediate_query": {
+          "other_correct": 204,
+          "other_only_correct": 102,
+          "output_only_correct": 105,
+          "output_only_exclusive_correct": 3,
+          "pairs": 216
+        },
+        "all/stepwise": {
+          "other_correct": 192,
+          "other_only_correct": 91,
+          "output_only_correct": 105,
+          "output_only_exclusive_correct": 4,
+          "pairs": 216
+        },
+        "single/intermediate_query": {
+          "other_correct": 206,
+          "other_only_correct": 94,
+          "output_only_correct": 115,
+          "output_only_exclusive_correct": 3,
+          "pairs": 216
+        },
+        "single/stepwise": {
+          "other_correct": 197,
+          "other_only_correct": 85,
+          "output_only_correct": 115,
+          "output_only_exclusive_correct": 3,
+          "pairs": 216
+        }
+      },
+      "scope": {
+        "intermediate_query": {
+          "all_only_correct": 8,
+          "all_target_correct": 207,
+          "pairs": 216,
+          "single_correct": 206,
+          "single_only_correct": 7
+        },
+        "output_only": {
+          "all_only_correct": 30,
+          "all_target_correct": 138,
+          "pairs": 216,
+          "single_correct": 115,
+          "single_only_correct": 7
+        },
+        "stepwise": {
+          "all_only_correct": 15,
+          "all_target_correct": 204,
+          "pairs": 216,
+          "single_correct": 197,
+          "single_only_correct": 8
+        }
+      }
+    },
+    "strict": {
+      "protocol": {
+        "all/intermediate_query": {
+          "other_correct": 204,
+          "other_only_correct": 102,
+          "output_only_correct": 105,
+          "output_only_exclusive_correct": 3,
+          "pairs": 216
+        },
+        "all/stepwise": {
+          "other_correct": 174,
+          "other_only_correct": 78,
+          "output_only_correct": 105,
+          "output_only_exclusive_correct": 9,
+          "pairs": 216
+        },
+        "single/intermediate_query": {
+          "other_correct": 206,
+          "other_only_correct": 94,
+          "output_only_correct": 115,
+          "output_only_exclusive_correct": 3,
+          "pairs": 216
+        },
+        "single/stepwise": {
+          "other_correct": 108,
+          "other_only_correct": 40,
+          "output_only_correct": 115,
+          "output_only_exclusive_correct": 47,
+          "pairs": 216
+        }
+      },
+      "scope": {
+        "intermediate_query": {
+          "all_only_correct": 8,
+          "all_target_correct": 207,
+          "pairs": 216,
+          "single_correct": 206,
+          "single_only_correct": 7
+        },
+        "output_only": {
+          "all_only_correct": 30,
+          "all_target_correct": 138,
+          "pairs": 216,
+          "single_correct": 115,
+          "single_only_correct": 7
+        },
+        "stepwise": {
+          "all_only_correct": 86,
+          "all_target_correct": 184,
+          "pairs": 216,
+          "single_correct": 108,
+          "single_only_correct": 10
+        }
+      }
+    }
+  },
+  "reused_completed_responses": 732,
+  "source_sha256": "58f859456f28b58e48341c2f9aa5d10560a5ed9efa6c7d1451e5f3d61b961362",
+  "source_snapshot_id": "8cd435cb3b81fce4fe55a146",
+  "status": "complete_audited_exploratory",
+  "utility": {
+    "path": "/work/jvl210002/migration/codecue/scripts/219_binding_paired_postrun_review.py",
+    "sha256": "bd666ca533ef9dc08e85791f616cac4192310a0839326c0f571d57bd2e43b088"
+  },
+  "worker_results": {
+    "bytes": 142015,
+    "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_continuation/results.json",
+    "sha256": "fed34081181cf24aa323a8bd5ce493cd63b2a41fa181c8705f57ef09f4ffc620"
+  }
+}

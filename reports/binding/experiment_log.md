@@ -1,6 +1,6 @@
 # Automatic experiment log
 
-Updated 2026-11-01T21:11:15.455626+00:00. 1499 indexed records: 671 analysis, 74 dataset, 659 job, 95 run.
+Updated 2026-11-01T22:11:51.721140+00:00. 1543 indexed records: 693 analysis, 74 dataset, 681 job, 95 run.
 
 Execution status, audit status and scientific reliability are separate. A completed/audited experiment can have a failed reliability gate. Full results remain in their original artifacts. This index reads metadata only; sealed final/extrapolation outcomes and raw prediction/activation payloads are excluded.
 
@@ -8,7 +8,29 @@ Execution status, audit status and scientific reliability are separate. A comple
 
 | Kind | Execution | Stage | Model | Audit | Scientific gate | Artifact |
 |---|---|---|---|---|---|---|
-| analysis | running | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/suite/status_review_v1.json) |
+| analysis | complete_exploratory_diagnostic | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/prior_diagnostics/completion_manifest_v1.json) |
+| analysis | complete_exploratory_diagnostic | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/prior_diagnostics/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/suite/status_review_v1.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/postrun_audit/completion_manifest_v1.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/postrun_audit/results.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/suite/results_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [status_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/suite/status_review_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/report/completion_manifest_v1.json) |
+| analysis | complete_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/report/results.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/retention_review/completion_manifest_v1.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/retention_review/results.json) |
+| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_conditional/20261101_v1/qa/regression_review.json) |
+| analysis | complete_exploratory | review | — | — | — | [results_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/suite/results_review_v1.json) |
+| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
+| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
+| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
+| analysis | completed_interpretation | review | — | — | — | [interpretation_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/interpretation_review_v1.json) |
+| analysis | audited_figure | review | — | — | — | [continuation_figure_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/continuation_figure_review_v1.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_postrun/completion_manifest_v1.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_postrun/results.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/codellama34b_postrun/completion_manifest_v1.json) |
+| analysis | complete_audited_exploratory | review | — | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/codellama34b_postrun/results.json) |
 | analysis | export_corrected_before_git_commit | review | — | — | — | [publication_correction_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/publication_correction_v1.json) |
 | analysis | audited_figure | review | — | — | — | [figure_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/figure_review_v1.json) |
 | analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_paired_exploration/20261101_v2/qa/regression_review.json) |
@@ -186,36 +208,36 @@ Execution status, audit status and scientific reliability are separate. A comple
 | analysis | complete_exploratory | review | — | — | — | [figure_layout_review_v2.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/figure_layout_review_v2.json) |
 | analysis | complete_exploratory | review | — | — | — | [findings_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/findings_review_v1.json) |
 | analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b/completion_manifest_v1.json) |
-| analysis | complete_exploratory | review | codellama/CodeLlama-34b-Instruct-hf | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b/results.json) |
-| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b/selection_review_v1.json) |
-| analysis | complete_exploratory | review | — | — | — | [completion_manifest_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b/completion_manifest_v1.json) |
-| analysis | complete_exploratory | review | meta-llama/Llama-3.1-8B-Instruct | — | — | [results.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b/results.json) |
-| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b/selection_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/qa/regression_review.json) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/suite/submission_review_v1.json) |
-| analysis | publication_blocked_after_cv | review | — | — | — | [publication_guard_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/publication_guard_review_v1.json) |
-| analysis | passed | review | — | — | — | [cache_verification_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/cache_verification_review_v1.json) |
-| analysis | verified_cache_inventory | review | — | — | — | [codellama34b_cv_reuse_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/codellama34b_cv_reuse_review_v1.json) |
-| analysis | verified_cache_inventory | review | — | — | — | [llama8b_cv_reuse_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v2/llama8b_cv_reuse_review_v1.json) |
-| dataset | recorded | — | — | — | — | [sources.manifest.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_local/20261030_v1/sources.manifest.json) |
-| analysis | recorded | review | — | — | — | [review.json](/work/jvl210002/migration/codecue/reports/binding/arithmetic_graph_morning_review_v1.md) |
-| analysis | recorded | review | — | — | — | [llama31_partial_review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_llama31_discovery.md) |
-| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/competition_results.md) |
-| analysis | recorded | review | — | — | — | [review_v1.json](/work/jvl210002/migration/codecue/reports/binding/llama_serialization_results.md) |
-| analysis | submitted | review | — | — | — | [submission_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/submission_review_v1.json) |
-| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/codellama34b/selection_review_v1.json) |
-| analysis | selection_locked | review | — | — | — | [selection_review_v1.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/llama8b/selection_review_v1.json) |
-| analysis | passed | review | — | — | — | [regression_review.json](/work/jvl210002/migration/codecue/artifacts/binding/arithmetic_probe_selection/20261030_v1/qa/regression_review.json) |
-| analysis | passed | review | — | — | — | [monitor_after_60_review.json](/work/jvl210002/migration/codecue/artifacts/binding/operations/20261030_debug_v1/monitor_after_60_review.json) |
-| analysis | passed | review | — | — | — | [monitor_after_30_review.json](/work/jvl210002/migration/codecue/artifacts/binding/operations/20261030_debug_v1/monitor_after_30_review.json) |
 
 ## Jobs
 
 | Job | Name | Status | Exit | Partition |
 |---|---|---|---|---|
-| 488093 | paired-explore-check | submitted | None | dev,normal |
-| 488077 | rel-night-codellama34b_continuation-7a8734fe | submitted | None | h200 |
-| 488076 | rel-night-llama8b_continuation-1712e077 | submitted | None | h100,h200 |
+| 488237 | conditional-prior-diagnostics | complete | 0 | dev,normal |
+| 488228 | conditional-postrun-audit | complete | 0 | dev,normal |
+| 488221 | rel-night-report-ca13fe0f | complete | 0 | dev,normal |
+| 488220 | conditional-state-check | complete | 0 | dev,normal |
+| 488201 | paired-retention-review | complete | 0 | dev,normal |
+| 488200 | rel-night-codellama34b_shuffled_joint-65a2fb8e | complete | 0 | dev,normal |
+| 488199 | rel-night-codellama34b_joint-72d9bcfe | complete | 0 | dev,normal |
+| 488198 | rel-night-codellama34b_hidden-55c9377f | complete | 0 | dev,normal |
+| 488197 | rel-night-llama8b_shuffled_joint-943bca4f | complete | 0 | dev,normal |
+| 488196 | rel-night-llama8b_joint-14cc4c9d | complete | 0 | dev,normal |
+| 488195 | rel-night-llama8b_hidden-56b2f004 | complete | 0 | dev,normal |
+| 488194 | rel-night-source_source2048-9566890c | complete | 0 | dev,normal |
+| 488193 | rel-night-source_source1024-ad4bede0 | complete | 0 | dev,normal |
+| 488192 | conditional-state-check | complete | 0 | dev,normal |
+| 488187 | conditional-state-check | complete | 0 | dev,normal |
+| 488131 | rel-night-software_validation-e0ce4d2e | complete | 0 | dev,normal |
+| 488130 | conditional-state-check | complete | 0 | dev,normal |
+| 488129 | rel-night-report-34c4a393 | complete | 0 | dev,normal |
+| 488128 | paired-explore-check | complete | 0 | dev,normal |
+| 488126 | paired-review-codellama34b | complete | 0 | dev,normal |
+| 488125 | paired-review-llama8b | complete | 0 | dev,normal |
+| 488116 | paired-explore-check | complete | 0 | dev,normal |
+| 488093 | paired-explore-check | complete | 0 | dev,normal |
+| 488077 | rel-night-codellama34b_continuation-7a8734fe | complete | 0 | h200 |
+| 488076 | rel-night-llama8b_continuation-1712e077 | complete | 0 | h100,h200 |
 | 488075 | rel-night-audit_report-ea7f4b8d | complete | 0 | dev,normal |
 | 488074 | paired-explore-check | complete | 0 | dev,normal |
 | 488070 | rel-night-error_audit-0295a7f0 | complete | 0 | dev,normal |
@@ -291,28 +313,6 @@ Execution status, audit status and scientific reliability are separate. A comple
 | 486948 | numeric-geometry-check | complete | 0 | dev |
 | 486878 | rel-night-codellama34b_query_cache-dbc3e5d9 | complete | 0 | dev,normal |
 | 486877 | rel-night-llama8b_query_cache-e972719d | complete | 0 | dev,normal |
-| 486876 | rel-night-source8192_computed_definition-91d436a9 | complete | 0 | normal |
-| 486875 | rel-night-source8192_root_definition-edcc4c0e | complete | 0 | normal |
-| 486874 | rel-night-source4096_computed_definition-3f968c39 | complete | 0 | normal |
-| 486873 | rel-night-source4096_root_definition-062c6066 | complete | 0 | normal |
-| 486872 | rel-night-codellama34b_computed_definition-4e48156d | complete | 0 | normal |
-| 486871 | rel-night-codellama34b_root_definition-5fdd7478 | complete | 0 | normal |
-| 486870 | rel-night-llama8b_computed_definition-ad924167 | complete | 0 | normal |
-| 486869 | rel-night-llama8b_root_definition-0dfcce77 | complete | 0 | normal |
-| 486868 | numeric-geometry-check | complete | 0 | dev |
-| 486855 | rel-night-software_validation-f8981dba | complete | 0 | dev,normal |
-| 486854 | numeric-geometry-check | complete | 0 | dev |
-| 486693 | numeric-postrun-audit | complete | 0 | dev,normal |
-| 486606 | rel-night-report-a66ea2e3 | complete | 0 | dev,normal |
-| 486605 | numeric-exploration-check | complete | 0 | dev |
-| 486584 | numeric-exploration-check | complete | 0 | dev |
-| 486575 | numeric-exploration-check | complete | 0 | dev |
-| 486569 | rel-night-source_computed_definition-e123fbf3 | complete | 0 | normal |
-| 486568 | rel-night-source_root_definition-75ee30ca | complete | 0 | normal |
-| 486567 | rel-night-codellama34b_computed_definition-7e2de34c | complete | 0 | normal |
-| 486566 | rel-night-codellama34b_root_definition-8f0c99f0 | complete | 0 | normal |
-| 486565 | rel-night-llama8b_computed_definition-34f3402c | complete | 0 | normal |
-| 486564 | rel-night-llama8b_root_definition-a013197b | complete | 0 | normal |
 
 ## Indexing notices
 

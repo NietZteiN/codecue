@@ -1,0 +1,121 @@
+{
+  "artifacts": {
+    "pdf": {
+      "bytes": 36756,
+      "path": "reports/binding/figures/arithmetic_calibration_continuation_v1.pdf",
+      "sha256": "563c82bd998f07155a8c1586c2823267dfdc46de2dacea5a6b3bd1362ad00799"
+    },
+    "png": {
+      "bytes": 169932,
+      "path": "reports/binding/figures/arithmetic_calibration_continuation_v1.png",
+      "sha256": "7237400117aef332d6c3baf30a89596e3e333839f267e6a0f967d615a63613e5"
+    },
+    "svg": {
+      "bytes": 119770,
+      "path": "reports/binding/figures/arithmetic_calibration_continuation_v1.svg",
+      "sha256": "9d694318d95f2f6978ffcc949def4d4ba4a6d11ab52fbda1d2bbf5db18cdacb0"
+    }
+  },
+  "inputs": {
+    "codellama34b": {
+      "bytes": 154393,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/codellama34b_postrun/results.json",
+      "sha256": "7edcdb00d98ca726e4e59cbf512d012262558f119d844ab1a595c655ce57d8a9"
+    },
+    "llama8b": {
+      "bytes": 147144,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/llama8b_postrun/results.json",
+      "sha256": "077a359eada752c5b93cd3eafa829f9944ffdc70b4b7ac81c80f05b3eeb193f5"
+    },
+    "original": {
+      "bytes": 321742,
+      "path": "artifacts/binding/arithmetic_paired_exploration/20261101_v2/error_audit/results.json",
+      "sha256": "79f0a11d4ec923afc879566b39b91b96f4677994f16d4894d53c26dc61ea9535"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "plotted_values": {
+    "codellama34b": {
+      "intermediate_query/all": {
+        "continued_heading": 92,
+        "continued_strict": 92,
+        "original_strict": 1,
+        "rows": 216
+      },
+      "intermediate_query/single": {
+        "continued_heading": 104,
+        "continued_strict": 104,
+        "original_strict": 54,
+        "rows": 216
+      },
+      "output_only/all": {
+        "continued_heading": 75,
+        "continued_strict": 75,
+        "original_strict": 64,
+        "rows": 216
+      },
+      "output_only/single": {
+        "continued_heading": 72,
+        "continued_strict": 72,
+        "original_strict": 72,
+        "rows": 216
+      },
+      "stepwise/all": {
+        "continued_heading": 177,
+        "continued_strict": 177,
+        "original_strict": 175,
+        "rows": 216
+      },
+      "stepwise/single": {
+        "continued_heading": 157,
+        "continued_strict": 157,
+        "original_strict": 157,
+        "rows": 216
+      }
+    },
+    "llama8b": {
+      "intermediate_query/all": {
+        "continued_heading": 204,
+        "continued_strict": 204,
+        "original_strict": 0,
+        "rows": 216
+      },
+      "intermediate_query/single": {
+        "continued_heading": 206,
+        "continued_strict": 206,
+        "original_strict": 0,
+        "rows": 216
+      },
+      "output_only/all": {
+        "continued_heading": 105,
+        "continued_strict": 105,
+        "original_strict": 69,
+        "rows": 216
+      },
+      "output_only/single": {
+        "continued_heading": 115,
+        "continued_strict": 115,
+        "original_strict": 115,
+        "rows": 216
+      },
+      "stepwise/all": {
+        "continued_heading": 192,
+        "continued_strict": 174,
+        "original_strict": 156,
+        "rows": 216
+      },
+      "stepwise/single": {
+        "continued_heading": 197,
+        "continued_strict": 108,
+        "original_strict": 100,
+        "rows": 216
+      }
+    }
+  },
+  "status": "audited_figure",
+  "utility": {
+    "path": "/work/jvl210002/migration/codecue/scripts/223_binding_continuation_figure.py",
+    "sha256": "ced9c59198d3bfc0858af9cf420b019567f17e1f4d6071a27fd11fb5b6edb08b"
+  }
+}

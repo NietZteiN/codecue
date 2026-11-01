@@ -1,0 +1,97 @@
+{
+  "cells": [
+    {
+      "name": "source/source1024",
+      "selected_alpha": 10000.0
+    },
+    {
+      "name": "source/source2048",
+      "selected_alpha": 10000.0
+    },
+    {
+      "name": "llama8b/hidden",
+      "selected_alpha": 10000.0
+    },
+    {
+      "name": "llama8b/joint",
+      "selected_alpha": 10000.0
+    },
+    {
+      "name": "llama8b/shuffled_joint",
+      "selected_alpha": 10000.0
+    },
+    {
+      "name": "codellama34b/hidden",
+      "selected_alpha": 10000.0
+    },
+    {
+      "name": "codellama34b/joint",
+      "selected_alpha": 10000.0
+    },
+    {
+      "name": "codellama34b/shuffled_joint",
+      "selected_alpha": 10000.0
+    }
+  ],
+  "generated_holdouts_opened": false,
+  "inputs": {
+    "codellama34b/hidden": {
+      "bytes": 1390714,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/codellama34b_hidden/results.json",
+      "sha256": "9629d4dd4e164442d697c87b1fda6a1e7d2fe7c681d44f54b9e834eb43e4ab26"
+    },
+    "codellama34b/joint": {
+      "bytes": 2782175,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/codellama34b_joint/results.json",
+      "sha256": "4890ebc24d0fd272aeaa918368740b988a1cc909782f6917ba86233c3fb43d4d"
+    },
+    "codellama34b/shuffled_joint": {
+      "bytes": 2775622,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/codellama34b_shuffled_joint/results.json",
+      "sha256": "d50ac3b41310b21608880c8b4e4211087895848e88df8f317492885970540ff1"
+    },
+    "llama8b/hidden": {
+      "bytes": 1391136,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/llama8b_hidden/results.json",
+      "sha256": "668e7ffb9c79aaaf2ebe662a01a678bbce8c20c138510af1c43da227d7e8adf3"
+    },
+    "llama8b/joint": {
+      "bytes": 2782318,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/llama8b_joint/results.json",
+      "sha256": "35f164d79413bb19300cbd136ee203a17ce1303a9ab56496296bfe5c566333cb"
+    },
+    "llama8b/shuffled_joint": {
+      "bytes": 2776135,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/llama8b_shuffled_joint/results.json",
+      "sha256": "087960d47759b258c1646e13ac80fe6c145135195e34b7ee96af3e20847c467e"
+    },
+    "source/source1024": {
+      "bytes": 1386914,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/source_source1024/results.json",
+      "sha256": "eb20c7a79a47402f163991f7cf8919955dbe629102ca16365fb47e71023e678e"
+    },
+    "source/source2048": {
+      "bytes": 1386408,
+      "path": "artifacts/binding/arithmetic_conditional/20261101_v1/source_source2048/results.json",
+      "sha256": "6009ef3051e9decd59c031251ea80fe0fb672f080786fbba8cd84f224c1cdac2"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "policy": "all 240 TRAIN input hashes/IDs/weights, normalization, ridge stationarity, predictions, donor partitions, independent metrics and selection checked; no refits",
+  "source_sha256": "f53aa2906d4ca272559e5728084a07c0b490e0d08075ccbbb0dc48a5a9c78d8c",
+  "source_snapshot_id": "b9d058163e86b66ef30c8a1c",
+  "status": "complete_audited_exploratory",
+  "totals": {
+    "cv_banks": 216,
+    "max_intercept_residual": 2.0663999285735826e-14,
+    "max_prediction_abs_difference": 0.0,
+    "max_relative_normal_equation_residual": 1.1573310908189925e-11,
+    "prediction_coordinates": 2135808,
+    "selected_banks": 24
+  },
+  "utility": {
+    "path": "/work/jvl210002/migration/codecue/scripts/225_binding_conditional_postrun_audit.py",
+    "sha256": "ad25d2abbe063e81407c923ace95a271cf8726cd47043595158cc65601619ddd"
+  }
+}

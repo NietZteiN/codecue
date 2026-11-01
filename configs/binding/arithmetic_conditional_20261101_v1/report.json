@@ -1,0 +1,66 @@
+{
+  "declared_plan": "reports/binding/arithmetic_conditional_plan_20261101_v1.md",
+  "declared_plan_sha256": "3dc1782a38a927e0b4f3bb98bc96615325d9a2a059179138550b5f8f1568610d",
+  "evaluation_role": "discovery_arithmetic_conditional_report_v1",
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "report": "reports/binding/arithmetic_conditional_findings_20261101_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_conditional/20261101_v1/report",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "workers": [
+    {
+      "bytes": 1275,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/source_source1024.json",
+      "sha256": "9c9a6adaee7318720bc61bef663055140d4a66c7be5805bf1c763c5155f4c4ce"
+    },
+    {
+      "bytes": 1275,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/source_source2048.json",
+      "sha256": "a3eeea0b64858d93a36d276e8b280a8582c3f3ab6ce9747f14dbf62790d158e1"
+    },
+    {
+      "bytes": 1269,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/llama8b_hidden.json",
+      "sha256": "fefb6368291b32d4743d7cda3a905f94161436a572af098e498f45ddef51ff3f"
+    },
+    {
+      "bytes": 1267,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/llama8b_joint.json",
+      "sha256": "5332174ad604bfde57bf7df1051cc2958294eaa7c30dcc87a997ac81c61225c3"
+    },
+    {
+      "bytes": 1285,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/llama8b_shuffled_joint.json",
+      "sha256": "761655a89fb4119039698a8b830ba11ea47e184af10f0a4b1d45f618b4527569"
+    },
+    {
+      "bytes": 1284,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/codellama34b_hidden.json",
+      "sha256": "ea9817da130c57661056277c86198c3517176c99f7ebaa9f0ec35bd4a96dafad"
+    },
+    {
+      "bytes": 1282,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/codellama34b_joint.json",
+      "sha256": "9db4da6fb11b8ae19a040e1344a94c54bcb76da8f884affe8f0d8fa80cadda3a"
+    },
+    {
+      "bytes": 1300,
+      "path": "configs/binding/arithmetic_conditional_20261101_v1/codellama34b_shuffled_joint.json",
+      "sha256": "a5c730b7c88a74c66f2a6771817a7fd5ba3ca17594ba0f1cf4491f1673d8a400"
+    }
+  ]
+}

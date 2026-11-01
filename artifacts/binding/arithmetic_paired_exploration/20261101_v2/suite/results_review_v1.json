@@ -1,0 +1,116 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "audit_report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488075",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T21:01:05.130017+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_continuation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488077",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T21:01:07.773422+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "error_audit": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488070",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T20:57:58.359795+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_continuation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488076",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T21:01:05.738957+00:00",
+        "time_min": "00:30:00"
+      }
+    ],
+    "report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488129",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T21:31:28.690510+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "488060",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-11-01T20:47:03.773308+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "b9cea5b1ea192bc70b100729bdb3aa9230022be254003185f13d312783f0e99c",
+  "evaluation_role": "discovery_arithmetic_paired_exploration_suite_v1",
+  "formal_capture_submitted": false,
+  "generated_holdouts_opened": false,
+  "recorded_utc": "2026-11-01T21:41:36.342640+00:00",
+  "scheduler_errors": [],
+  "source": {
+    "frozen_manifest_sha256": "019676ac5310fea5f47af6fa9efd4b6023ba9b63d3cd8c6cc19fee0ac56980f9",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8cd435cb3b81fce4fe55a146",
+    "snapshot_id": "8cd435cb3b81fce4fe55a146",
+    "source_sha256": "58f859456f28b58e48341c2f9aa5d10560a5ed9efa6c7d1451e5f3d61b961362"
+  },
+  "stages": {
+    "audit_report": {
+      "job_id": "488075",
+      "state": "complete"
+    },
+    "codellama34b_continuation": {
+      "job_id": "488077",
+      "state": "complete"
+    },
+    "error_audit": {
+      "job_id": "488070",
+      "state": "complete"
+    },
+    "llama8b_continuation": {
+      "job_id": "488076",
+      "state": "complete"
+    },
+    "report": {
+      "job_id": "488129",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "488060",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}
