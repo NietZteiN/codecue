@@ -1,5 +1,7 @@
 # Implementation checklist
 
+**Current checklist: November 1, 2026.** [Full consolidated status](#current-consolidated-checklist) · [New N1–N9 experiments](arithmetic_after_penalty_plan_20261101_v1.md). The entries preceding the consolidated checklist below preserve historical execution notes and their original counts.
+
 **Start here: [Master research report — plan, results, figures and next steps](../../docs/binding/MASTER_REPORT.md)** ([Markdown version](master_research_report_v4.md)). Updated October 29, 2026; includes the full original plan, 19 main figures, including four conceptual illustrations, the complete figure archive, every research branch and an ordered next-experiment plan.
 
 The [October 28–29 old-value suite](old_value_overnight_findings_v1.md) completed **40,320 audited responses**. Llama 8B scored **60.9%** overall and CodeLlama 34B **23.5%**; both failed all 24 fixed reliability cells. The [response diagnostics](old_value_postrun_response_diagnostics_v1.md) reconcile every score and oracle, identify CodeLlama’s formatting errors, and quantify Llama’s current-value answers on historical questions.
@@ -146,146 +148,150 @@ Latest completed evidence includes the [source-oracle-assisted identity diagnost
 
 ## Current consolidated checklist
 
-Checked means the specified implementation or experiment was completed, including negative or inconclusive experiments. Unchecked means the work or claim remains unfinished. The original failed gates are preserved; final/extrapolation model outcomes remain sealed.
+Updated **November 1, 2026**. Checked means that the stated implementation or experiment completed, including negative or inconclusive results. An unchecked claim is still open even when related software and pilots exist. New N1–N9 experiments are planned or gated, not submitted by this documentation update. Earlier task/test totals describe historical checkpoints, not this checklist.
 
-### Infrastructure, datasets and reproducibility
+Current consolidated inventory: **84 items — 42 completed, 37 open/partial core items and five optional/deferred items.** These grouped work items are not a percentage estimate of scientific completion and do not replace the historical per-study readiness inventories.
 
-- [x] Audit the existing CodeCue repository, manuscript, environment, model cache and scheduler.
-- [x] Implement the three original generator families: parallel chains, snapshots/overwrites and interleaved accumulators.
-- [x] Implement restricted-AST execution, versioned bindings, direct/transitive dependencies, liveness and diagnostic distractors.
-- [x] Validate rendered execution traces and lawful counterfactuals against independent Python execution.
-- [x] Implement semantic renaming, computed-value controls, noncommutative outputs and same-value-multiset/different-owner pairs.
-- [x] Build the 38,016-prompt computed-retention bank: fixed eight defined variables, 2/3/4 functional live bindings, matched schedules and independently checked checkpoint interventions.
-- [x] Implement structural splits, grouped relatives, stable identities, deduplication, manifests and identifier-vocabulary audits.
-- [x] Record raw generations, invalid outputs, ambiguous counterfactual-consistent error labels and per-cell counts.
-- [x] Correct tokenizer/serialization and answer-boundary errors; preserve the original erroneous or historical runs separately.
-- [x] Validate hooks, causal prefixes, fixed token geometry, replay identity and effective BF16 perturbation norms.
-- [x] Freeze source/configuration snapshots and enforce compatible resumes and artifact checksums.
-- [x] Automatically journal experiment/job lifecycles and result metadata; backfill historical runs and export a [dashboard and complete CSV](experiment_log.md), with periodic CPU scheduler reconciliation and sealed-outcome exclusions. See the [logging guide](experiment_logging.md).
-- [x] Remove project GPU-hour/stage/checkpoint/concurrency caps; retain usage accounting and actual scheduler constraints.
-- [x] Profile GPU throughput, use larger validated batches, and run independent finite jobs on eligible hardware.
-- [x] Keep activation storage under its separate policy and preserve sealed final/extrapolation outcomes.
-- [x] Pass the frozen diversity study's 2,044-test full regression suite, earlier focused maintenance checks and completed experiment audits.
-- [x] Certify the new identity extension's latest 2,088-test full regression and exact test-source archive.
+[Detailed new experiment plan and N1–N9 designs](arithmetic_after_penalty_plan_20261101_v1.md) · [Latest audited results](arithmetic_penalty_path_postrun_20261101_v1.md) · [Full master report](../../docs/binding/MASTER_REPORT.md) · [Original unchanged plan](../../docs/binding/dependvar_20261025.txt).
 
-### The ten authorized experiments
+The current evidence includes strong scoped local dependency decoding and modest computed-value MAE gains. The latest joint probes have 6.68% / 6.00% computed exact accuracy versus zero's 8.90%, and 0.00% all-four exact recovery. No general preserved-value/disrupted-binding account, selective binding repair or faithfulness claim is established.
 
-| Experiment | Updated completion status |
+### The ten original authorized experiments
+
+| Original experiment | Reconciled status |
 |---|---|
-| 1. Checkpoint and official prompt audit | Complete, including tokenizer, serialization and backend corrections. |
-| 2. Arithmetic versus program execution | Behavioral studies complete; the original computed-program reliability gates failed. |
-| 3. Arithmetic-free binding | Complete across cached checkpoints; CodeLlama 34B and Llama 3.1 8B qualified for scoped discovery. |
-| 4. Binding and version competition | Arithmetic-free discovery and the computed-retention behavioral study complete; computed reliability/generalization unresolved. |
-| 5. Naming × competition × updates | Scoped naming/version/distance experiments complete; a computed 2/3/4-live-binding scheduling factorial also completed, but failed reliability gates and remains coupled to computation timing/distance; the original explanatory claim is unfinished. |
-| 6. Tracking versus reconstruction | Timing and common-final-query controls complete; an identified algorithm and selective causal route remain unresolved. |
-| 7. Distributed-state probe diagnostics | Capture banks, readouts, 75 frequency-matched control fits and the 45-factorization/180-head queried/unqueried comparison complete. Decoder-specific accessibility is measured; general state representation and natural causal use remain unresolved. |
-| 8. Value, ownership and pathway interventions | Multiple audited assays complete; selective ownership/version/pathway mechanism unresolved. |
-| 9. Frozen failure prediction | Software and reserved datasets ready; empirical input/neutral-query discovery baselines completed. Mechanism C, genuine final registration and untouched scoring not run. |
-| 10. Second-family replication | Behavioral comparison complete; causal-mechanism replication not run. |
+| 1. Checkpoint and official prompt audit | Completed, including serialization/tokenizer/backend corrections. |
+| 2. Arithmetic versus program execution | Behavioral studies completed; original computed reliability gates failed. Fresh N1 calibration remains planned. |
+| 3. Arithmetic-free binding | Completed across cached checkpoints with scoped discovery qualification. |
+| 4. Binding and version competition | Multiple measured banks and identity readouts completed; integrated computed/CoT binding/version account remains open (N2–N4). |
+| 5. Naming × competition × updates | Scoped factorials completed with failed computed gates and timing/distance limitations; N8 controls remain planned. |
+| 6. Tracking versus reconstruction | Timing and common-query controls completed; causal route identification and temporal N2/N4 tests remain open. |
+| 7. Distributed-state probe diagnostics | Value/version/multiset, geometry, global-state, relationship and conditional/penalty studies completed; general full-state recovery remains unestablished. |
+| 8. Value, ownership and pathway interventions | Several audited transfer studies completed; selective owner/version/descendant effects remain unestablished (N6). |
+| 9. Frozen failure prediction | Discovery predictors, confidence/stress baselines and software completed; mechanism C, final registration/forecasts and untouched scoring remain gated (N9). |
+| 10. Second-family replication | Behavioral/readout comparisons completed; replication of a supported causal mechanism remains gated (N9). |
 
-### Behavioral studies and external datasets
+### A. Infrastructure and reproducibility
 
-- [x] Complete the original pilot, prompt calibration, arithmetic controls, difficulty ladder and failed-gate decisions.
-- [x] Complete the four-checkpoint capacity program: 20,152 predictions.
-- [x] Retrieve and pin published CRUXEval/BBH data; complete published-benchmark and serialization/interface evaluations.
-- [x] Complete two-family arithmetic-free competition discovery: 19,968 responses.
-- [x] Complete three-instruction timing/equivalent-copy studies: 4,536 baselines and 90,720 intervention forwards.
-- [x] Complete fresh ownership/common-final-query studies: 7,776 baselines and 96,768 intervention forwards.
-- [x] Complete and audit both computed-retention model runs: 76,032 predictions, all registered contrasts and both failed reliability gates preserved.
-- [x] Complete corrected 396-case-per-model backend replays and 24 uncached arithmetic controls; fix and archive the diagnostic prompt/completion stop-boundary error.
-- [x] Register and independently validate the fresh 3,072-program [arithmetic/readout bank](arithmetic_readout_plan.md): eight matched-answer 0/1/3-operation forms, six signed strata, disjoint nonzero prompts and explicit repeated zero-operation controls; pass both tokenizer preflights and 322 regression tests.
-- [x] Revalidate 768 existing two-operation calibration responses and retain every form/operator/sign/split cell as [context](arithmetic_readout_prior_context.md).
-- [x] Complete and audit the fresh arithmetic/readout study on both cached models: 12,288 responses, separate direct/trace gates, automatic comparison and figure export; all four reliability gates failed. See the [decision](arithmetic_readout_decision.md).
-- [ ] Establish a reliable computed-program regime for the full original explanatory study.
-- [ ] Isolate genuinely output-relevant live-variable load from irrelevant competitors, with matched arithmetic and surface controls.
-- [ ] Complete the original naming × relevant load × reassignment interaction study in that regime.
+- [x] Audit CodeCue, the existing manuscript, environments, cached checkpoints, native prompts and scheduler constraints.
+- [x] Implement immutable dataset/configuration/source identities, grouped splits, compatible resumes and checksum verification.
+- [x] Record raw generations, invalid outputs, seeds, native token sites, model revisions and actual resource use.
+- [x] Implement automatic experiment/result logging, scheduler reconciliation and publication inventories.
+- [x] Remove artificial project compute caps; retain actual scheduler limits, finite jobs and separate activation-storage policy.
+- [x] Complete the latest frozen 2,697-test experiment regression and repair logging lock contention with 77 targeted checks.
+- [x] Publish source, metadata, reports and figures to CodeCue; retain raw arrays on scratch and keep final/extrapolation outcomes sealed.
 
-### Representation diagnostics
+### B. Datasets, semantic ground truth and controls
 
-- [x] Implement and measure current, previous-version, whole-state and value-multiset recovery in the original pilot.
-- [x] Complete two 9,216-case discovery capture banks and the original three later readout suites.
-- [x] Fit neutral-training probes with train-only preprocessing, fixed regularization, surface/prior controls and naming-transfer evaluation.
-- [x] Complete the fixed regularization sensitivity and saved-weight replay checks.
-- [x] Audit the old identifier control and identify its two-label versus value-label difficulty mismatch.
-- [x] Complete 75 grouped shuffled-label fits with exact class-frequency/entropy matching and all original value predictions reproduced.
-- [x] Report complete layer/site/naming curves, label support, literal-proximity effects and measurement-boundary limitations.
-- [x] Complete the [queried/unqueried accessibility study](query_selectivity_findings.md): retain reciprocal query twins, all four 32-class heads, matched grouped-shuffle controls, raw 4,096-dimensional hidden/surface features and all 45 fixed layer/site/backend/seed fits; replay 414,720 saved-model rows exactly.
-- [x] Report the fixed block-24 neutral `pre_answer` gap and six-component conditional interval alongside every naming condition and layer/site curve; preserve the limits on information absence, natural causal use, ownership and tracking/reconstruction.
-- [ ] Establish robust value/owner/version recovery beyond literal proximity and query preparation on unfamiliar structures.
-- [ ] Resolve lexical/structural transfer failures with appropriately matched controls.
-- [x] Complete the declared 336-fit projection/rank/alignment sensitivity; preserve its projection limits and distinguish it from the later full-dimensional queried/unqueried accessibility study.
-- [x] Build prefix-safe versioned relationship labels, audit historical graph variation, and validate a 1,296-row/81-graph copy-routing bank with 432 value-matched provenance controls. See the [preparation findings](relationship_preparation_findings.md).
-- [x] Build algebraic equality/order/difference and sum/subtraction targets, validate the balanced 1,944-row numeric-control bank, and audit both target families on the same examples.
-- [x] Build the shared native-token capture, fixed readout/metric controls and automatic capture→audit→fit→refresh continuation; pass the full regression and real tokenizer preflight.
-- [x] Train and evaluate structural and algebraic relationship decoders on the fixed discovery bank, including surface/prior/coherent-shuffle controls and relations derived from independently decoded values; complete all 45 fits and 87,480 replays. Preserve the stronger source-value baseline, literal/scaffold limitations and position sensitivity in the [findings](relationship_results_findings_v1.md). General causal owner/version claims remain open.
-- [x] Complete the posthoc stronger-source, equal-state provenance-pair and unconstrained graph-validity controls on 18 pinned saved-score banks; preserve all original primaries and add zero model queries or fits.
+- [x] Build parallel-chain, snapshot/overwrite and interleaved-accumulator generators and validate restricted-AST execution independently against Python.
+- [x] Label values, assignment versions, directed/transitive dependencies, liveness and lawful counterfactual outputs.
+- [x] Build neutral/informative/misleading naming twins, computed-value controls and same-value-multiset/different-owner examples.
+- [x] Build literal/copy, varied-schedule, numeric relationship and computed-retention banks with structural grouping and overlap audits.
+- [x] Retrieve/pin cited CRUXEval and BBH datasets and run benchmark/interface evaluations.
+- [x] Prepare the 27,864-row paired source bank and validate both checkpoints' 45,360 native layouts; inventory potential prefix reuse.
+- [ ] Generate fresh closed calibration components for N1 without overlap with prior calibration or formal evaluation.
+- [ ] Generate integrated computed binding-swap, equal-value provenance and version/overwrite controls for N3/N4; earlier literal controls remain completed evidence.
 
-### Overnight relationship continuation (October 27–28)
+### C. Behavior, naming and calibration
 
-- [x] Build the shared 16,038-row discovery union, three 5,832-row views, matched computed twins and independent ordinary-Python/target-support checks.
-- [x] Freeze the two-model plan and execution source; submit durable preparation and supervision jobs; pass both native-tokenizer preparations and all 1,733 regression tests.
-- [x] Complete both frozen GPU captures and 14,580 greedy full-answer evaluations.
-- [x] Complete six readout panels, all 270 declared factorizations, saved-parameter replays and literal-to-computed transfer applications.
-- [x] Review the automatically aggregated morning results, including source-value controls, query strata and familiar-scaffold limitations; publish checksum-pinned summary JSON/CSV, report and inspected PNG/SVG.
-- [x] Complete and audit the [posthoc exact-ID score/answer and fixed-target query analysis](overnight_score_behavior_findings_v1.md), preserving fit-averaged joint masses and conditional denominator checks.
+- [x] Complete original pilots, arithmetic/readout controls, capacity comparisons and arithmetic-free binding studies.
+- [x] Complete relevant-live-load, computation/context/copy and historical-value studies; retain every failed competence gate.
+- [x] Complete timing/common-final-query and equivalent-source behavior controls; retain wording and formatting sensitivity.
+- [x] Complete paired protocol calibration and 941 continuations; audit all 2,592 merged responses with no remaining truncation.
+- [x] Complete the exploratory 36-pair operand-versus-irrelevant overwrite review; retain correlated-context and finite-candidate limitations.
+- [ ] Freeze and run N1: answer grammar, generation ceilings, wordings, protocols, parse/truncation reporting and prospective competence criteria.
+- [ ] Run N8 naming × genuinely relevant live-variable load × reassignment with arithmetic/distance/surface controls in an interpretable regime.
 
-### Interventions, timing and explanation specificity
+### D. Values, bindings, versions and state recovery
 
-- [x] Complete digit-aligned literal routing: 432 baselines and 20,160 intervention forwards, plus reciprocal/unchanged-answer controls.
-- [x] Complete computed/late-reference follow-ups: computed gates failed; the eligible reset assay and its controls completed.
-- [x] Test independent-statement reordering and consistent scratch renaming with earlier-copy transfers.
-- [x] Test fresh value pairings with separate/joint copy patches, both quantity queries, spatial/wrong-version/random/sham controls and analytic final-layer checks.
-- [x] Cross early/late queries with an identical final query and audit exact original-input replay differences.
-- [x] Report null/mixed effects: nominated ownership-site effects are weak/nonselective; the late-query advantage shrinks from 13.04 to 1.70 percentage points with the final cue.
-- [ ] Identify a reproducible account distinguishing binding interference, computation/accessibility, failure to use information, reconstruction and harmless representational change.
-- [ ] Demonstrate selective owner/version effects on predicted descendants while preserving unrelated quantities.
-- [ ] Distinguish tracking from reconstruction using selective causal-route tests, beyond cue-placement behavior alone.
-- [ ] Replicate a selected causal effect on an independently generated structural cohort and a second model family.
+- [x] Measure current/previous values, whole states, multisets and queried/unqueried accessibility with source/prior/shuffle controls.
+- [x] Complete varied-schedule owner/version and direct joint identity studies; preserve supplied-slot, source-map and rare-class limitations.
+- [x] Complete source-assisted taxonomy and saved-score grammar diagnostics; report symbolic assistance separately.
+- [x] Complete local dependency, current-state and global all-four scalar/categorical studies with saved-parameter audits.
+- [x] Audit exact-value failures and TRAIN mode/zero baselines: only 24/3,168 computed DEV slots have unseen slot values; both latest joint all-four scores are zero.
+- [ ] Run N2 same-example temporal values/bindings/versions, written-step and answer measurements at declared pre-value sites.
+- [ ] Distinguish numeric-value recovery from owner/version identity, including equal values with different provenance (N3/N4).
+- [ ] Establish robust value/binding/version recovery or a well-supported failure pattern on independent structures; failed decoding alone cannot establish absence.
 
-### Frozen prediction and unfamiliar programs
+### E. Directed dependencies and algebraic relationships
 
-- [x] Complete discovery confidence prediction with 13 tiers, 9,072 logistic fits and 24 fixed contrasts; reproduce all 294,912 baseline probabilities exactly and retain train-only preprocessing, proper scores and calibration outputs.
+- [x] Implement prefix-safe directed/operand-typed versioned def-use, ancestry and assignment-succession targets.
+- [x] Implement equality, ordering, signed difference and additive/subtractive pair/triple targets with support masks.
+- [x] Complete fixed-scaffold structural/algebraic readouts, equal-state provenance controls and stronger source/value-derived comparisons.
+- [x] Complete computed/global direct-versus-derived relation studies; preserve weak relation scores and supplied-candidate limitations.
+- [ ] Run N5 shared variable/pair/triple readouts with matched source/query/position/class-prior controls and complete graph/state metrics.
+- [ ] Test unprinted true algebraic relations and false structural distractors on the integrated fresh cohort.
+- [ ] Separate syntactic dependency from functional influence using interpreter-verified counterfactuals; evaluate optional consistency repair separately.
 
-- [x] Implement nested predictor fitting, train-only normalization, development selection, immutable registration/forecasts, calibration and clustered scoring.
-- [x] Reject declared sealed or mismatched forecasting inputs before opening outcomes; retain legacy discovery support and strict response-ID checks, with 44 focused fitting/measurement checks passing.
-- [x] Complete exploratory source-only versus distinct-neutral-query failure baselines on both checkpoints: 12,288 cached targets, six outer/five inner structural folds, three fixed partition seeds, 2,268 logistic fits, raw versus oracle-scored access and all proper-score/calibration outputs preserved. See the [decision](discovery_prediction_decision.md).
-- [x] Complete 5,292 further logistic fits across eight fixed capacity/access tiers; preserve original baseline probabilities, folds and fitted parameters exactly. Distinguish oracle access from deterministic score encoding and retain all 16 registered contrasts. See the [control decision](discovery_controls_decision.md).
-- [x] Collect pinned source/neutral/oracle-control discovery feature tables with explicit access contracts and no target model outcome features.
-- [x] Generate and independently validate four reserved structural-extrapolation banks; keep their model outcomes sealed.
-- [ ] Select an evidence-supported explanatory account and define its permissible measurements.
-- [ ] Register hypotheses, features, layers/sites, exclusions, ambiguity rules, query access/costs and multiplicity handling.
-- [ ] Collect additional permitted confidence/internal prediction measurements under a frozen contract, without target-correctness leakage; existing source/neutral/oracle-control discovery features are complete.
-- [ ] Freeze and validate model A for final unfamiliar-program prediction; exploratory input-only discovery CV is complete.
-- [ ] Freeze and validate model B with its declared confidence/clean-behavior access for final prediction; distinct-neutral-query discovery baselines are complete, exact-prompt next-token confidence collection is now complete (12,288 measurements), and discovery predictor fitting is complete; final validation remains unrun.
-- [ ] Fit and validate model C: the same features plus frozen internal measurements.
-- [x] Complete the discovery assignment-cue behavioral comparator: 12,288 full responses plus 256 qualification responses, five ungraded extra-query features, 28 fixed tiers and 70 contrasts, 20,412 corrected-analysis logistic fits and exact 23-tier replay. The declared extra-query allowance is a scientific access control; final confirmation remains unrun.
-- [ ] Freeze all forecasts before collecting/scoring final correctness outcomes.
-- [ ] Evaluate greater depth/distance, higher competition and unfamiliar transformation combinations with grouped uncertainty and cost reporting.
-- [ ] Add a genuinely new program family once the core result is stable; new numeric pairs do not count as a new family.
-- [ ] Complete independent generation/fitting replications and precision/power planning for a confirmatory study.
-- [ ] Report incremental log-loss/Brier/calibration performance, including a null result if internal measurements do not help.
+### F. Probe methods and competing explanations
 
-### Literature, manuscript and final handoff
+- [x] Complete frequency/entropy-matched grouped controls and projection/rank/alignment studies.
+- [x] Complete TRAIN-selected layer/rank/readout improvements and scalar/categorical/circular/ordinal geometry comparisons.
+- [x] Complete alternative-semantic controls on fixed states and source/hidden/joint/independently selected shuffled-hidden comparisons.
+- [x] Complete the penalty extension: 216 new CV fits, 240 reused banks, all eight selections still alpha 10,000; audit 3,763,584 coordinates exactly.
+- [ ] Compare independent heads, a shared variable-query decoder and one declared interaction/nonlinear comparator under TRAIN-only selection (N5).
+- [ ] Run endpoint-specific exact/probabilistic readout comparisons against TRAIN class priors with class-support and calibration reporting.
+- [ ] Run independent-family learning curves and, if pursued, valid prequential/MDL comparisons with prefix-only fitting and an actual probability model.
+- [ ] Distinguish binding interference, computation/accessibility, failure to use, query-time reconstruction and harmless readout/representation shift (N2–N9).
 
-- [x] Inspect the existing CodeCue paper and document how this proposed study differs.
-- [x] Read and compare four closest primary sources; record versions and provenance.
-- [x] Produce pilot reports, decision memos, scientific figures, resource records, reproduction commands and machine-readable handoffs.
-- [x] Review the original twelve primary-source identifiers and two confidence/calibration sources; record version/title/authorship discrepancies and reading limits.
-- [ ] Recheck versions and claim-specific novelty before submission; the current bounded review does not establish exhaustive novelty.
-- [ ] Establish the eventual supported claim's distinction from prior work; implementation differences alone do not establish novelty.
-- [ ] Produce a complete binding-study manuscript grounded in the supported claim.
-- [ ] Produce the unfamiliar-program predictive comparison/figure after real frozen validation exists.
-- [ ] Complete submission-level reproducibility and manuscript review.
+### G. Temporal capture and same-case measurement
 
-### Optional or deferred extensions
+- [x] Validate causal source prefixes and distinguish source position, model layer, execution step and query site in existing captures.
+- [x] Prepare paired compute/overwrite/delay/later-use sources with matched earlier prefixes and distinct RHS/newline native sites.
+- [x] Complete the metadata-only prefix inventory: 165,888 requested site rows map to 50,688 unique prefixes per model; reuse remains a potential optimization.
+- [ ] Audit full-prompt versus prefix-truncated activations numerically on GPU, including padding/batching conditions, before reuse.
+- [ ] Implement generated-trace capture with exact token boundaries, first target-value/claim occurrence, visibility flags and an explicit alignment policy.
+- [ ] Join interpreter truth, generated prefixes, probe predictions, written claims and final answers on identical case/event IDs (N2).
+- [ ] Collect pre-write/pretrace/preanswer states from natural generation; report already-visible, copied, omitted and unaligned targets separately.
+- [ ] Cross correct/incorrect probe predictions with written-step/answer correctness and formal operand/irrelevant-overwrite contrasts on the same cases (N2/N4).
 
-These remain subject to the original decision rules; their presence here does not launch them.
+### H. Internal interventions and selective use
 
-- [ ] Targeted language-model training: matched ordinary/obfuscation/binding-targeted training and shuffled-supervision controls, after a reproducible mechanism motivates it.
-- [ ] Dedicated explanation-transfer project: calibrated equivalence/difference/inconclusive controls, explicit correspondences, semantic-change controls and held-out transformations. Core renaming/reordering precursors are already complete.
-- [ ] Unlearning: fictional API mappings, forgetting/retention controls, retain-only adaptation reference and unseen retained-task failure prediction, after the core diagnostic is reliable.
-- [ ] Human experiments or broad multilingual evaluation: outside the initial pilot.
-- [ ] A large new-checkpoint download/model-sweep campaign: not started; existing cached-checkpoint evaluations are complete.
+- [x] Complete literal value transfers, computed/late-reference follow-ups and their sanity/control audits.
+- [x] Complete equivalent-source copy-site and fresh ownership single/joint patch studies with reciprocal and wrong-owner/version controls.
+- [x] Preserve weak/nonselective ownership results and the reduced timing gap under a common final query.
+- [ ] Freeze N6 donor/recipient correspondences, variable/version identity, sites, patch scope and interpreter-predicted counterfactuals.
+- [ ] Validate token geometry, no-op/self replay, effective perturbation and matched negative controls before causal interpretation.
+- [ ] Measure predicted descendant changes, unrelated-target stability, exact counterfactual answers and collateral damage.
+- [ ] Test selective binding/version restoration where the assay supports it; an accuracy gain or a decodable patched value alone is insufficient.
+- [ ] Replicate a supported selective effect on independent structures and a second checkpoint family; otherwise report inconclusive localization (N9).
+
+### I. Written reasoning interventions — newly added N7
+
+- [ ] Save natural CoT prefixes and construct unchanged, wrong-value, corrective-value, removed-step and matched paraphrase/irrelevant-edit branches.
+- [ ] Resume the same model with declared greedy/sampling settings; preserve original trajectories and record token/length differences.
+- [ ] Score both original program truth and edited-prefix counterfactuals, retaining ambiguous follows/corrects/ignores classifications.
+- [ ] Compare effects on downstream dependent and unrelated quantities with all branches grouped by source/prefix.
+- [ ] Keep edited-prefix dependence separate from claims about the original run's computation, pre-value decodability and faithfulness.
+
+### J. Prediction, confirmation and replication
+
+- [x] Implement frozen registrations/forecasts, access guards, proper scores, calibration and clustered uncertainty; prepare four reserved extrapolation banks.
+- [x] Complete discovery input/neutral/oracle-access predictors, capacity controls and exact-prompt confidence comparisons.
+- [x] Complete the discovery assignment-cue extra-query/stress comparator with explicit information and query-cost contracts.
+- [ ] Select an evidence-supported primary account and freeze N9 hypotheses, measurements, layers/sites, exclusions, ambiguity and multiplicity rules.
+- [ ] Freeze unfamiliar-program A input-only, B confidence/behavior and C internal-measurement predictors plus the cheap behavioral comparator and immutable forecasts.
+- [ ] Choose independent structural cohort size and precision/power targets; new numeric draws and fitting seeds do not substitute for structural replication.
+- [ ] Score authorized untouched depth/distance/competition/transformation outcomes only after registration and forecasts; report incremental proper scores, calibration, uncertainty and cost.
+- [ ] Add a genuinely new program family once the core assay/claim is stable and replicate the selected effect across model families.
+
+### K. Literature, paper and final handoff
+
+- [x] Inspect the original CodeCue paper, document the proposed extension and maintain evidence-linked master reports/figures.
+- [x] Complete the pinned 23-paper probing review plus prior primary-source/version checks; preserve their stated reading limits.
+- [ ] Fully review the newly identified code-structure and CoT text/internal-intervention sources; write an addendum without changing the frozen review/register.
+- [ ] Choose a supported causal/predictive or descriptive/negative-result contribution and verify claim-specific novelty.
+- [ ] Write the new manuscript and predictive figure after the relevant empirical evidence exists; complete reproducibility and submission review.
+
+### L. Optional or deferred branches
+
+These original branches remain listed. Adding them to the checklist does not launch them.
+
+- [ ] Targeted language-model training: matched ordinary, obfuscation and binding-targeted training plus shuffled-supervision controls, after a reproducible mechanism motivates it.
+- [ ] Separate explanation-transfer study: calibrated shared/different/inconclusive mechanisms, explicit correspondences and held-out semantic-preserving/changing transformations.
+- [ ] Unlearning: controlled fictional API mappings, forget/retain controls and prediction beyond cheap behavior, after the core diagnostic is reliable.
+- [ ] Human experiments and broad multilingual evaluation: outside the initial pilot.
+- [ ] Large new-checkpoint download/model-sweep campaign: deferred; existing cached-checkpoint comparisons remain completed.
 
 ## Historical pilot record
 
