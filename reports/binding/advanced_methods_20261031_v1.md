@@ -1,5 +1,9 @@
 # From descriptive probes to discriminating mechanisms
 
+Implementation update: [E1 alternate-semantics control is submitted](arithmetic_semantic_controls_launch_v2.md),
+with fixed captures, reused ordinary fits, source comparators and pinned
+literature. The other ranked literature proposals remain planned.
+
 Follow-up: the [October 31 probing literature search](probing_literature_review_20261031_v1.md)
 adds 23 annotated primary papers and six ranked experiment proposals. It makes
 alternative-semantic controls and conditional probing explicit additions, and

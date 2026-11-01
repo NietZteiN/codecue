@@ -1,5 +1,7 @@
 # Variable binding, updating and relationships: master research report
 
+> **October 31 literature-informed run:** [Alternate-semantics control submitted](../../reports/binding/arithmetic_semantic_controls_launch_v2.md) · [Frozen protocol](../../reports/binding/arithmetic_semantic_controls_plan_v2.md). Tests ordinary versus swapped-operator targets on unchanged captures, reuses ordinary baselines, and pins the literature review/register. Current-state and relationship oracle labels prepare later structured readouts; mechanism claims remain open.
+
 > **October 31 literature search:** [23-paper methods review and ranked experiments](../../reports/binding/probing_literature_review_20261031_v1.md). Adds alternative-semantic controls, conditional probing and an explicit global-state versus query-dependent-retrieval comparison. Shared structured readouts, complexity-aware evaluation and causal model comparison remain planned methods.
 
 > **October 31 methods upgrade:** [Competing mechanisms and advanced methods](../../reports/binding/advanced_methods_20261031_v1.md) · [Submitted geometry wave](../../reports/binding/arithmetic_numeric_geometry_launch_v1.md) · [Controlled protocol](../../reports/binding/arithmetic_numeric_geometry_plan_v1.md). The new assay tests circular numeric geometry with matched permutations and prepares final-query vectors. Shared-slot models, calibrated MDL and causal alignment remain proposed follow-ups.

@@ -1,5 +1,12 @@
 # Binding-study reproducibility records
 
+The [alternate-semantics run](../reports/binding/arithmetic_semantic_controls_launch_v2.md)
+uses source `8f7e0d51b270fa36abf4c84c`, hash-pinned literature and a separate
+`arithmetic_semantic_controls_regression_20261031_v2.tar.gz` validation mirror.
+Edition 1 was superseded before submission and is preserved with its own source
+and validation archive. Restore published immutable worker metadata using
+`python scripts/export_binding_repository.py restore --match arithmetic_semantic_controls/20261031_v2`.
+
 The repository publishes the implementation, tests, configurations, reports,
 figures, small scientific metadata and losslessly compressed large text artifacts.
 No experiment is rerun to publish this snapshot, and original result bytes are

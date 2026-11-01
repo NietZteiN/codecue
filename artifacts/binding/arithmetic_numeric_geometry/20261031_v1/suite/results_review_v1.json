@@ -1,0 +1,212 @@
+{
+  "all_terminal": true,
+  "attempts": {
+    "codellama34b_computed_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486872",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:13.549079+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_query_cache": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486878",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:20.183911+00:00",
+        "time_min": null
+      }
+    ],
+    "codellama34b_root_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486871",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:12.926969+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_computed_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486870",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:12.309540+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_query_cache": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486877",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:19.582085+00:00",
+        "time_min": null
+      }
+    ],
+    "llama8b_root_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486869",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:11.714533+00:00",
+        "time_min": null
+      }
+    ],
+    "report": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486981",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T22:08:30.239085+00:00",
+        "time_min": null
+      }
+    ],
+    "software_validation": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486855",
+        "progress_before": 0,
+        "reason": "None",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:37:32.728184+00:00",
+        "time_min": null
+      }
+    ],
+    "source4096_computed_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486874",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:17.753271+00:00",
+        "time_min": null
+      }
+    ],
+    "source4096_root_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486873",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:15.780766+00:00",
+        "time_min": null
+      }
+    ],
+    "source8192_computed_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486876",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:18.959651+00:00",
+        "time_min": null
+      }
+    ],
+    "source8192_root_definition": [
+      {
+        "dependencies": [],
+        "exit_code": "0:0",
+        "job_id": "486875",
+        "progress_before": 0,
+        "reason": "QOSMaxJobsPerUserLimit",
+        "state": "COMPLETED",
+        "submitted_utc": "2026-10-31T21:48:18.364946+00:00",
+        "time_min": null
+      }
+    ]
+  },
+  "config_hash": "ee183ec25e36611e581c026e5ba4211845ab63684fe22ce3709477f519705892",
+  "evaluation_role": "discovery_numeric_geometry_suite_v1",
+  "generated_holdouts_opened": false,
+  "new_model_queries": 0,
+  "recorded_utc": "2026-10-31T22:18:44.674730+00:00",
+  "scheduler_errors": [],
+  "source": {
+    "frozen_manifest_sha256": "e84f06829c1964811367e00d06a876d08d163162fe66d42b10e2f61737c86211",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/a154e0ecd0112622590fa080",
+    "snapshot_id": "a154e0ecd0112622590fa080",
+    "source_sha256": "540fb9168dfb9897f767510c3bd022410669c5cae0e2cb97f5e5b6c2f65f8da4"
+  },
+  "stages": {
+    "codellama34b_computed_definition": {
+      "job_id": "486872",
+      "state": "complete"
+    },
+    "codellama34b_query_cache": {
+      "job_id": "486878",
+      "state": "complete"
+    },
+    "codellama34b_root_definition": {
+      "job_id": "486871",
+      "state": "complete"
+    },
+    "llama8b_computed_definition": {
+      "job_id": "486870",
+      "state": "complete"
+    },
+    "llama8b_query_cache": {
+      "job_id": "486877",
+      "state": "complete"
+    },
+    "llama8b_root_definition": {
+      "job_id": "486869",
+      "state": "complete"
+    },
+    "report": {
+      "job_id": "486981",
+      "state": "complete"
+    },
+    "software_validation": {
+      "job_id": "486855",
+      "state": "complete"
+    },
+    "source4096_computed_definition": {
+      "job_id": "486874",
+      "state": "complete"
+    },
+    "source4096_root_definition": {
+      "job_id": "486873",
+      "state": "complete"
+    },
+    "source8192_computed_definition": {
+      "job_id": "486876",
+      "state": "complete"
+    },
+    "source8192_root_definition": {
+      "job_id": "486875",
+      "state": "complete"
+    }
+  },
+  "status": "complete_exploratory"
+}

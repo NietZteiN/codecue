@@ -1,0 +1,38 @@
+{
+  "all_variable_relation_labels_prepared_only": true,
+  "controller_jobs": [
+    "487056"
+  ],
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "minimum_full_regression_tests": 2507,
+  "new_fit_cells": 4,
+  "new_method_tests_passed": 21,
+  "new_model_queries": 0,
+  "operations_override": {
+    "job_id": "487056",
+    "partition": "dev,normal",
+    "reason": "Allow pending owned controller to use eligible normal CPU capacity while dev is occupied; no science recipe change."
+  },
+  "ordinary_baseline_fits_reused": true,
+  "recorded_utc": "2026-11-01T00:30:36.137512+00:00",
+  "scope": "Ordinary versus operator-swapped numerical targets on unchanged captured states; no causal mechanism claim.",
+  "software_validation_job": "487057",
+  "source": {
+    "code": "87fbe8c030a2bb72320da2a477a97d52a2e95b1613be380aa570c974096ac47a",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/8f7e0d51b270fa36abf4c84c",
+    "snapshot_id": "8f7e0d51b270fa36abf4c84c"
+  },
+  "status": "submitted_regression_gate",
+  "targeted_tests_passed": 61
+}

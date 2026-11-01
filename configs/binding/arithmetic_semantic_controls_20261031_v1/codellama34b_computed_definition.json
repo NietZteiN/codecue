@@ -1,0 +1,39 @@
+{
+  "audit_config": {
+    "bytes": 929,
+    "path": "configs/binding/arithmetic_state_followup_20261030_v2/codellama34b_audit.json",
+    "sha256": "8502b7884d52493737c0f3c957082569d94e32e387bc68465550e0045e76d084"
+  },
+  "backend": "hidden",
+  "cache_config": {
+    "bytes": 1044,
+    "path": "configs/binding/arithmetic_semantic_controls_20261031_v1/codellama34b_cache_view.json",
+    "sha256": "dbd4d61478b6fad0cddc924073e57bc0c653de70cc3641a2f4fed31154bf15d4"
+  },
+  "declared_plan": "reports/binding/arithmetic_semantic_controls_plan_v1.md",
+  "declared_plan_sha256": "bc90f454460c539d02f5fffe8fe26740826c7d8a6573eeb08d547d2d6db54008",
+  "evaluation_role": "discovery_semantic_control_fit_v1",
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "role": "computed_definition",
+  "run_dir": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/codellama34b_computed_definition",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "semantic": "operator_swap",
+  "widths": [
+    8192
+  ]
+}

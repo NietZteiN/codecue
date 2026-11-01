@@ -1,0 +1,96 @@
+{
+  "audit_config": {
+    "bytes": 909,
+    "path": "configs/binding/arithmetic_state_followup_20261030_v2/llama8b_audit.json",
+    "sha256": "2253783df26facde448f268806fcab9e088aa22ee9d31417652e84c684866da3"
+  },
+  "comparisons": [
+    {
+      "alternate": {
+        "bytes": 1365,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v1/llama8b_computed_definition.json",
+        "sha256": "397c0d69335edd0b580e29ceabeda24516a95cbb0fae820efbabfc9e6b1730d1"
+      },
+      "backend": "hidden",
+      "name": "llama8b",
+      "ordinary": {
+        "bytes": 888,
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/llama8b_computed_definition.json",
+        "sha256": "0446635badc9c7a102023413eaf6538ba25087de34e232ba04d45943775710a1"
+      },
+      "width": 4096
+    },
+    {
+      "alternate": {
+        "bytes": 1380,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v1/codellama34b_computed_definition.json",
+        "sha256": "72245c893b282d77975d6a089d992761de6b2fb8e0b718db92ec9c7a070cdd8d"
+      },
+      "backend": "hidden",
+      "name": "codellama34b",
+      "ordinary": {
+        "bytes": 903,
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/codellama34b_computed_definition.json",
+        "sha256": "ce567575440b20eb4ae31f9ceb3e28d887bdead09619eaf94ae9cf6c96ac3ab5"
+      },
+      "width": 8192
+    },
+    {
+      "alternate": {
+        "bytes": 1367,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v1/source4096_computed_definition.json",
+        "sha256": "fb16385ebe19456e70f9d97556dded66218c55a3429289d7e578835b9a80a6ae"
+      },
+      "backend": "source",
+      "name": "source4096",
+      "ordinary": {
+        "bytes": 896,
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_computed_definition.json",
+        "sha256": "c0ca7cae03b557ee76c63036ddfba2d6e054c736abc687949e2576030664905c"
+      },
+      "width": 4096
+    },
+    {
+      "alternate": {
+        "bytes": 1367,
+        "path": "configs/binding/arithmetic_semantic_controls_20261031_v1/source8192_computed_definition.json",
+        "sha256": "eaf32a743b98256b8a7130043f30667950af0660f34079b5937700cc5b11ae24"
+      },
+      "backend": "source",
+      "name": "source8192",
+      "ordinary": {
+        "bytes": 896,
+        "path": "configs/binding/arithmetic_numeric_exploration_20261031_v1/source_computed_definition.json",
+        "sha256": "c0ca7cae03b557ee76c63036ddfba2d6e054c736abc687949e2576030664905c"
+      },
+      "width": 8192
+    }
+  ],
+  "declared_plan": "reports/binding/arithmetic_semantic_controls_plan_v1.md",
+  "declared_plan_sha256": "bc90f454460c539d02f5fffe8fe26740826c7d8a6573eeb08d547d2d6db54008",
+  "evaluation_role": "discovery_semantic_control_report_v1",
+  "literature": {
+    "register": {
+      "bytes": 14843,
+      "path": "artifacts/binding/literature/probing_methods_20261031_review_v1.json",
+      "sha256": "0d3224bc2b4dfdf294a3c1d94da5312155eaffbf8690bc4e5e523794d42ae0d6"
+    },
+    "report": {
+      "bytes": 23037,
+      "path": "reports/binding/probing_literature_review_20261031_v1.md",
+      "sha256": "82d9009dcf2f288efeabf5464666af18bb8b2d3dc3e4d58382cd2f8f1b07bcfd"
+    }
+  },
+  "prepared": {
+    "bytes": 1684,
+    "path": "configs/binding/arithmetic_semantic_controls_20261031_v1/labels.json",
+    "sha256": "004e5598537aaeeddf25be2392924b074df25daa2651d57d5cf4368a9aba4d13"
+  },
+  "report": "reports/binding/arithmetic_semantic_controls_findings_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/report",
+  "seeds": [
+    11,
+    29,
+    47
+  ]
+}

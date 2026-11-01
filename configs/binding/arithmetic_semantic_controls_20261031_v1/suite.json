@@ -1,0 +1,149 @@
+{
+  "declared_plan": "reports/binding/arithmetic_semantic_controls_plan_v1.md",
+  "declared_plan_sha256": "bc90f454460c539d02f5fffe8fe26740826c7d8a6573eeb08d547d2d6db54008",
+  "evaluation_role": "discovery_semantic_control_suite_v1",
+  "morning_at": "2026-11-01T08:00:00-06:00",
+  "nodes": [
+    {
+      "command": "prepare",
+      "config": "configs/binding/arithmetic_semantic_controls_20261031_v1/qa.json",
+      "config_sha256": "fc96dab418306638b5c260fb440aebcd18de1950080f10b356613680cdfb5053",
+      "cpus": 8,
+      "dependencies": [],
+      "expected_cases": 0,
+      "key": "software_validation",
+      "marker": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/qa/regression_review.json",
+      "marker_status": "passed",
+      "mem": "24G",
+      "partition": "dev,normal",
+      "phase": "gpu",
+      "script": "scripts/203_binding_semantic_controls.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_semantic_controls_20261031_v1/labels.json",
+      "config_sha256": "004e5598537aaeeddf25be2392924b074df25daa2651d57d5cf4368a9aba4d13",
+      "cpus": 8,
+      "dependencies": [
+        "software_validation"
+      ],
+      "expected_cases": 0,
+      "key": "labels",
+      "marker": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/labels/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "8G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/203_binding_semantic_controls.py",
+      "time": "02:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_semantic_controls_20261031_v1/llama8b_computed_definition.json",
+      "config_sha256": "397c0d69335edd0b580e29ceabeda24516a95cbb0fae820efbabfc9e6b1730d1",
+      "cpus": 16,
+      "dependencies": [
+        "labels"
+      ],
+      "expected_cases": 0,
+      "key": "llama8b_computed_definition",
+      "marker": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/llama8b_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/203_binding_semantic_controls.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_semantic_controls_20261031_v1/codellama34b_computed_definition.json",
+      "config_sha256": "72245c893b282d77975d6a089d992761de6b2fb8e0b718db92ec9c7a070cdd8d",
+      "cpus": 16,
+      "dependencies": [
+        "labels"
+      ],
+      "expected_cases": 0,
+      "key": "codellama34b_computed_definition",
+      "marker": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/codellama34b_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/203_binding_semantic_controls.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_semantic_controls_20261031_v1/source4096_computed_definition.json",
+      "config_sha256": "fb16385ebe19456e70f9d97556dded66218c55a3429289d7e578835b9a80a6ae",
+      "cpus": 16,
+      "dependencies": [
+        "labels"
+      ],
+      "expected_cases": 0,
+      "key": "source4096_computed_definition",
+      "marker": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/source4096_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/203_binding_semantic_controls.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_semantic_controls_20261031_v1/source8192_computed_definition.json",
+      "config_sha256": "eaf32a743b98256b8a7130043f30667950af0660f34079b5937700cc5b11ae24",
+      "cpus": 16,
+      "dependencies": [
+        "labels"
+      ],
+      "expected_cases": 0,
+      "key": "source8192_computed_definition",
+      "marker": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/source8192_computed_definition/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "32G",
+      "partition": "normal",
+      "phase": "cpu",
+      "script": "scripts/203_binding_semantic_controls.py",
+      "time": "2-00:00:00",
+      "time_min": null
+    },
+    {
+      "command": "run",
+      "config": "configs/binding/arithmetic_semantic_controls_20261031_v1/report.json",
+      "config_sha256": "53c546bfc4cd1985b42ccce7616fb762853406cda451faf2069fd891a132d67d",
+      "cpus": 4,
+      "dependencies": [
+        "llama8b_computed_definition",
+        "codellama34b_computed_definition",
+        "source4096_computed_definition",
+        "source8192_computed_definition"
+      ],
+      "expected_cases": 0,
+      "key": "report",
+      "marker": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/report/completion_manifest_v1.json",
+      "marker_status": "complete_exploratory",
+      "mem": "8G",
+      "partition": "dev,normal",
+      "phase": "cpu",
+      "script": "scripts/203_binding_semantic_controls.py",
+      "time": "02:00:00",
+      "time_min": null
+    }
+  ],
+  "report": "reports/binding/arithmetic_semantic_controls_status_v1.md",
+  "run_dir": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/suite",
+  "software_validation": {
+    "junit": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/qa/regression.xml",
+    "minimum_tests": 2507,
+    "review": "artifacts/binding/arithmetic_semantic_controls/20261031_v1/qa/regression_review.json"
+  }
+}

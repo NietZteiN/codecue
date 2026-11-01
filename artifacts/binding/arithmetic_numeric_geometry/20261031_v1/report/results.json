@@ -1,0 +1,381 @@
+{
+  "config_hash": "c81fd614121bbdd8b2adb930422900ab669e8d11400405be958e90303ab9c941",
+  "evaluation_role": "discovery_numeric_geometry_report_v1",
+  "inputs": {
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/codellama34b_computed_definition.json": {
+      "bytes": 36966,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/codellama34b_computed_definition/results.json",
+      "sha256": "30b8c1f397fdc69825a88d3f01f98862e57938d26b646a45097f81c3c1bd5d12"
+    },
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/codellama34b_root_definition.json": {
+      "bytes": 60206,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/codellama34b_root_definition/results.json",
+      "sha256": "d3bc6769f9e0e98f3f34123292e3d4b8915b7691f576d639989a78d899372315"
+    },
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/llama8b_computed_definition.json": {
+      "bytes": 72512,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/llama8b_computed_definition/results.json",
+      "sha256": "1bc9c96b2ebed99f3fa7c68a4fd7a118dfcb4946a35206abaec1e4d2a9b4633f"
+    },
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/llama8b_root_definition.json": {
+      "bytes": 61329,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/llama8b_root_definition/results.json",
+      "sha256": "59868fe7df72bf3a6798ad704e01e13e687e160a78e49b0e2ead939f4521f861"
+    },
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/source4096_computed_definition.json": {
+      "bytes": 107914,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source4096_computed_definition/results.json",
+      "sha256": "8bdc499242ce2509c851ce42ad2e149e86d3e97a9c8310f7d078b7be5295bef6"
+    },
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/source4096_root_definition.json": {
+      "bytes": 30228,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source4096_root_definition/results.json",
+      "sha256": "56420ea8b439fbf58a8dd143a8e1cc8d6e5d590a9be435d4c1f1729f6d81589b"
+    },
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/source8192_computed_definition.json": {
+      "bytes": 72412,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source8192_computed_definition/results.json",
+      "sha256": "7269d70fa488bcae90ab452136989ae8003b4ec6636c18d1866c7508ce5c2c42"
+    },
+    "configs/binding/arithmetic_numeric_geometry_20261031_v1/source8192_root_definition.json": {
+      "bytes": 30226,
+      "path": "artifacts/binding/arithmetic_numeric_geometry/20261031_v1/source8192_root_definition/results.json",
+      "sha256": "811ac27eab9ac1e95e86c3528f650c98088a148dc5a41c8c0f8f030509dbf91e"
+    }
+  },
+  "new_fits": 0,
+  "new_model_queries": 0,
+  "paired_family_contrasts": [
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_root_definition: decimal_circle minus decimal_permuted",
+      "delta": 6.43004115226335e-05,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.00019290123456790055
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_root_definition: crt_circle minus crt_permuted",
+      "delta": 0.005915637860082295,
+      "families": 72,
+      "lower": 0.003406314300411511,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.009130658436213976
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_root_definition: decimal_circle hidden minus source",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_root_definition: decimal_permuted hidden minus source",
+      "delta": -6.43004115226335e-05,
+      "families": 72,
+      "lower": -0.00019290123456790055,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_root_definition: crt_circle hidden minus source",
+      "delta": -0.000128600823045267,
+      "families": 72,
+      "lower": -0.0003858024691358011,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_root_definition: crt_permuted hidden minus source",
+      "delta": -0.006044238683127561,
+      "families": 72,
+      "lower": -0.009387860082304514,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.003407921810699578
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_root_definition: ordinal hidden minus source",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_computed_definition: decimal_circle minus decimal_permuted",
+      "delta": 0.025377229080932786,
+      "families": 72,
+      "lower": 0.016289437585733882,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0340363511659808
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_computed_definition: crt_circle minus crt_permuted",
+      "delta": 0.08449074074074074,
+      "families": 72,
+      "lower": 0.07403120713305898,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.09608785579561042
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_computed_definition: decimal_circle hidden minus source",
+      "delta": 0.04323131001371742,
+      "families": 72,
+      "lower": 0.027883873456790123,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.058970979080932746
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_computed_definition: decimal_permuted hidden minus source",
+      "delta": 0.02638460219478738,
+      "families": 72,
+      "lower": 0.01163783864883402,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0420321073388203
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_computed_definition: crt_circle hidden minus source",
+      "delta": 0.04207390260631002,
+      "families": 72,
+      "lower": 0.029319915980795613,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.05489111796982168
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_computed_definition: crt_permuted hidden minus source",
+      "delta": 0.005186899862825788,
+      "families": 72,
+      "lower": 0.0008353695130315505,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.009667031035665293
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "llama8b_computed_definition: ordinal hidden minus source",
+      "delta": 0.04938271604938272,
+      "families": 72,
+      "lower": 0.03324331275720165,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.06736646947873798
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_root_definition: decimal_circle minus decimal_permuted",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_root_definition: crt_circle minus crt_permuted",
+      "delta": 0.0019933127572016414,
+      "families": 72,
+      "lower": 0.0009002057613168691,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.003343621399176947
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_root_definition: decimal_circle hidden minus source",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_root_definition: decimal_permuted hidden minus source",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_root_definition: crt_circle hidden minus source",
+      "delta": -6.43004115226335e-05,
+      "families": 72,
+      "lower": -0.00019290123456790055,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_root_definition: crt_permuted hidden minus source",
+      "delta": -0.0020576131687242752,
+      "families": 72,
+      "lower": -0.003407921810699583,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": -0.0009002057613168693
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_root_definition: ordinal hidden minus source",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_computed_definition: decimal_circle minus decimal_permuted",
+      "delta": 0.020426097393689988,
+      "families": 72,
+      "lower": 0.009601123113854595,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.03159293552812071
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_computed_definition: crt_circle minus crt_permuted",
+      "delta": 0.09767232510288065,
+      "families": 72,
+      "lower": 0.08536951303155008,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.1117557227366255
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_computed_definition: decimal_circle hidden minus source",
+      "delta": 0.052083333333333336,
+      "families": 72,
+      "lower": 0.03795814043209876,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.06830900634430725
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_computed_definition: decimal_permuted hidden minus source",
+      "delta": 0.040466392318244164,
+      "families": 72,
+      "lower": 0.023467506858710564,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.05849354852537721
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_computed_definition: crt_circle hidden minus source",
+      "delta": 0.0539909122085048,
+      "families": 72,
+      "lower": 0.03975480109739369,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.06869588048696844
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_computed_definition: crt_permuted hidden minus source",
+      "delta": 0.004329561042524006,
+      "families": 72,
+      "lower": 0.0003000685871056242,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.009002057613168725
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "codellama34b_computed_definition: ordinal hidden minus source",
+      "delta": 0.07272376543209877,
+      "families": 72,
+      "lower": 0.05450531550068587,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.09274369855967078
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source4096_root_definition: decimal_circle minus decimal_permuted",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source4096_root_definition: crt_circle minus crt_permuted",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source4096_computed_definition: decimal_circle minus decimal_permuted",
+      "delta": 0.008530521262002745,
+      "families": 72,
+      "lower": -0.0009039566186556927,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.018669088648834015
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source4096_computed_definition: crt_circle minus crt_permuted",
+      "delta": 0.047603737997256514,
+      "families": 72,
+      "lower": 0.04087202074759945,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.054976851851851846
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source8192_root_definition: decimal_circle minus decimal_permuted",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source8192_root_definition: crt_circle minus crt_permuted",
+      "delta": 0.0,
+      "families": 72,
+      "lower": 0.0,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.0
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source8192_computed_definition: decimal_circle minus decimal_permuted",
+      "delta": 0.008809156378600823,
+      "families": 72,
+      "lower": -0.00047260802469135845,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.01871141975308642
+    },
+    {
+      "bootstrap_replicates": 2000,
+      "comparison": "source8192_computed_definition: crt_circle minus crt_permuted",
+      "delta": 0.04801097393689987,
+      "families": 72,
+      "lower": 0.04098025977366255,
+      "unit": "structural family after averaging three fitting seeds",
+      "upper": 0.05540605709876542
+    }
+  ],
+  "source": {
+    "frozen_manifest_sha256": "e84f06829c1964811367e00d06a876d08d163162fe66d42b10e2f61737c86211",
+    "snapshot": "/work/jvl210002/migration/codecue/artifacts/binding/sources/a154e0ecd0112622590fa080",
+    "snapshot_id": "a154e0ecd0112622590fa080",
+    "source_sha256": "540fb9168dfb9897f767510c3bd022410669c5cae0e2cb97f5e5b6c2f65f8da4"
+  },
+  "status": "complete_exploratory"
+}
